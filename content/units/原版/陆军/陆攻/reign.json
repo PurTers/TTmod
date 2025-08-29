@@ -1,0 +1,9 @@
+{
+"abilities": [
+    {
+"type": "RegenAbility",
+"amount": 1.6
+}
+    ]
+"immunities": ["甲板损坏"
+	],}

@@ -1,0 +1,181 @@
+{
+	"type": "naval",
+	"name": "狼群",
+	"description": "超限集团的水下特殊单位，能够悄无声息的摧毁敌方舰船。\n\n[red]此单位不会在小地图上显示！！！\n\n[blue][超限技术特种单位]\n\n[贴图by为反复试听]",
+		"immunities": [
+"wet","spore-slowed","tarred","freezing","tarred","甲板损坏"
+	],
+	"speed":0.5,
+	"rotateSpeed":0.8,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 60,
+    "trailLength":24,
+    "waveTrailX":0,
+    "waveTrailY":-6,
+    "trailScl":2,
+	"hitSize":16, 
+	"health": 18280,
+	"armor":16,
+	"maxRange": 450,
+	"shadowElevationScl": 0
+	"drawMinimap":false
+	"weapons":[
+		{
+            "name": "狼群1",
+            "reload": 96
+            "x":0
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootWarmupSpeed": 0.032,
+		    "shootCone": 360,
+		    "recoil": 0,
+    "parts": [
+        {"type":"RegionPart",
+        "mirror":false
+        //"x": 0,"y": 0
+        "x":0,"y":0,
+        "suffix":"-主"
+        "layer":71,
+        "progress": "warmup"
+        "outline": false
+        "colorTo": "ffffff"
+        "color": "6476D500"
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        //"x": 0,"y": 0
+        "x":0,"y":0,
+        "suffix":"-主2"
+        "layer":70.9,
+        "progress": "warmup"
+        "outline": false
+        "colorTo": "ffffff"
+        "color": "6476D500"
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        //"x": 0,"y": 0
+        "x":0,"y":0,
+        "suffix":"-主3"
+        "layer":70.8,
+        "progress": "warmup"
+        "outline": false
+        "colorTo": "ffffff"
+        "color": "6476D500"
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        //"x": 0,"y": 0
+        "x":0,"y":0,
+        "suffix":"-盖"
+        "layer":72,
+        "progress": "warmup"
+        "outline": false
+        "colorTo": "ffffff"
+        "color": "6476D500"
+       "moves": [
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.95
+                            "end": 0.99
+                        }
+                        "x":0
+                        "y":-4
+                        "gy": 0
+                        "gx": 0
+                        "rot":0
+        		    }
+        		    ]
+        }
+			]
+			"showStatSprite": false
+			"shootStatusDuration": 120,
+	"shootStatus": "掩体无效",
+    "bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (4)",
+             "speed": 0,
+	               	}}
+	{
+			"name": "无",
+			"mirror": true,
+			"reload": 60,
+			"x": 8,
+			"y": 12,
+			"shootCone": 360,
+			"shootSound": "none",
+			"ignoreRotation": true,
+			"rotate": false,
+			"rotateSpeed": 0,
+			"inaccuracy": 0,
+			"shootEffect": "none",
+			"smokeEffect": "none",
+			"baseRotation":-90
+			"bullet": {
+			"homingRange": 240,
+            "homingPower": 0.3,
+            "homingDelay":10
+            "trailLength":3
+			"width": 8,
+				"height": 20,
+				"speed": 5,
+				"lifetime": 60
+				"damage": 320,
+				"splashDamageRadius": 35,
+				"splashDamage": 45,
+				"absorbable": false,
+				"collidesAir": false,
+				"collideFloor": true,
+				"hitEffect": "flakExplosionBig",
+				"hitSound": "explosion",
+				"despawnEffect": "flakExplosionBig",
+				"sprite": "missile",
+				"status": "甲板损坏",
+				"statusDuration": 220,
+				"trailLength": 6,
+				"trailWidth": 1.2,
+				"trailColor": "c0ecff",
+				"backColor": "1878BF60",
+				"frontColor": "1878BF60",
+				"trailChance": 1,
+				"trailInterval": 2,
+				"trailRotation": true,
+				"buildingDamageMultiplier":0.1
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"particles": 3,
+					"sizeFrom": 1,
+					"sizeTo": 3,
+					"lifetime": 45,
+					"interp": "pow10Out",
+					"baseLength": 3,
+					"cone": 30,
+					"length": -35,
+					"colorFrom": "1878BF30",
+					"colorTo": "1878BF00"
+				},
+			}
+		}
+	]
+/*	"research": {
+	"parent":"uAABT1Q浮卵"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "遗忘河滩"
+			}
+	]
+	}*/
+	//"controller": "DefenderAI"
+}

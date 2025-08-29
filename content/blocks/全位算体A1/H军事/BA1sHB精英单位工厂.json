@@ -1,0 +1,66 @@
+{
+	"type": "UnitFactory",
+	"name": "精英单位工厂",
+	"description": "可以生产一些特种单位，极为强大，但是建造时间长，无法受到超速影响。\n \n[orange][全位算体精英兵工厂]",
+    "health":3240,
+	"size":5
+	"consumes":{"power":8.6
+	"liquid": {"liquid":"cryofluid","amount":0.3,}},
+	"plans":[
+	{ "unit": "u1A1ha1狂战士", 
+	"time": 3600, 
+	"requirements": [ 
+{ "item": "titanium", "amount": 180 }
+	{ "item": "metaglass", "amount": 110}
+	{ "item": "thorium", "amount": 175 }
+	{ "item": "silicon", "amount": 350 },
+	{ "item": "graphite", "amount": 210},
+	{ "item": "plastanium", "amount": 145}
+	]	},	
+	{ "unit": "u1A1hb1扫荡者", 
+	"time": 3600, 
+	"requirements": [ 
+{ "item": "titanium", "amount": 180 }
+	{ "item": "metaglass", "amount": 110}
+	{ "item": "thorium", "amount": 175 }
+	{ "item": "silicon", "amount": 350 },
+	{ "item": "graphite", "amount": 210},
+	{ "item": "plastanium", "amount": 145}
+	]	},	
+	{ "unit": "u1A1hc1猎杀者", 
+	"time": 3600, 
+	"requirements": [ 
+{ "item": "titanium", "amount": 180 }
+	{ "item": "metaglass", "amount": 110}
+	{ "item": "thorium", "amount": 175 }
+	{ "item": "silicon", "amount": 350 },
+	{ "item": "graphite", "amount": 210},
+	{ "item": "plastanium", "amount": 145}
+	]	},	
+	]
+	"requirements": [
+	{ "item": "silicon", "amount": 450 },
+	{ "item": "copper", "amount": 600}
+    { "item": "thorium", "amount": 200}
+    { "item": "titanium","amount": 300},
+    { "item": "lead", "amount": 300},
+    { "item": "graphite", "amount": 420},	
+    { "item": "plastanium", "amount": 450}],
+	"category":"units",
+	"research": {
+	"parent":"BA1sHA精锐工厂"
+	"objectives": [
+	{
+				"type": "SectorComplete",
+				"preset": "超限工艺-stainedMountains"
+			}
+            /*{
+				"type": "SectorComplete",
+				"preset": "废弃研究所"
+			}*/
+	]
+	}
+	"buildVisibility":"campaignOnly"
+	"researchCostMultiplier": 0.5
+	"canOverdrive": false,
+}

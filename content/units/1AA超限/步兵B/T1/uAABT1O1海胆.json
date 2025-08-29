@@ -1,0 +1,111 @@
+{
+    "type": "hover",
+    "name":"鱿鱼"
+    "description": "支援型悬浮单位，可以在水上移动，能够释放弱化装甲的能量球。\n\n[blue][超限技术特殊作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred"
+	],
+    "speed": 0.9
+    "hitSize": 12
+    "health": 350,
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "hovering":true
+    "canDrown": false,
+    "armor":5
+    "itemCapacity": 5
+    "abilities": [
+	    {
+        "type": "RepairFieldAbility"
+        "amount":54
+        "reload": 120
+        "range": 32
+    }
+    ]
+    "parts": [
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 3,//X位置
+			"y": 3,//Y位置
+			"radius": 10,//大小
+			"color": "c0ecff",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 3,//X位置
+			"y": -3,//Y位置
+			"radius": 10,//大小
+			"color": "c0ecff",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "ShapePart",
+			"colorTo":"c0ecff",
+			"color": "c0ecff",
+			"layer":110,
+			"stroke": 5,
+			"strokeTo": 5,
+			"circle": true,
+			"hollow": false,
+			"radius": 2
+			"radiusTo": 2
+			"x": 0,    "y": 0,
+},
+		]
+    "weapons": [
+   {	"name": "无",	
+		"reload": 6
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360
+		"shootY":0
+		"ejectEffect":"none",
+		"shootSound":"sap",
+		"mirror":false,
+		"inaccuracy": 360,
+		"alternate": true,
+		"shootOnDeath":true,
+		"bullet":{
+			"speed":3.6
+			"damage": 1
+			"lifetime":50,
+			"width": 3, 			
+			"height":3
+			"shootEffect":"shootSmall",
+			"trailLength":3
+    "trailWidth":1.5,
+    "trailColor":"1878BF",
+	     	"backColor":"1878BF",
+			"frontColor":"1878BF"
+			"status": "脆裂",
+			"statusDuration": 46,
+			"homingDelay":5
+			"homingRange": 300,
+            "homingPower": 0.1,
+	}}
+    ]
+   // "research":"uAABT1A响应"
+   "research": {
+	"parent":"uAABT1O鱿鱼"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "overgrowth"
+			}
+	]
+	}
+}

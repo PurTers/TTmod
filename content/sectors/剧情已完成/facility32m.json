@@ -1,0 +1,16 @@
+{
+    "planet":"serpulo"
+    "sector": 65
+    "captureWave":26
+    "difficulty":3
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "超限工艺-fungalPass",
+		"objectives": [
+		"steam-generator"
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+			]}
+}

@@ -1,0 +1,27 @@
+{
+"localizedName": "边际海湾(半成品)",
+	"description": "这里探测到了海军单位科技的遗迹。 击退敌人的进攻，占领区块，获取技术。\n\n\n似乎哪里不一样了\n\n[blue](by 蓝细菌光合自养 改)",
+	"details":"..............",
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0//区块坐标
+    "difficulty":5
+    "captureWave":60
+    "research": {
+		"parent": "超限工艺-saltflats",
+		"objectives": [
+		"敬请期待1"
+		"敬请期待"
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-saltflats"
+			}
+			]}
+	/*"TeamRule":{
+ "team": "blue"
+}
+"teams":{
+ "team": blue
+}*/
+//"defaultTeam":"blue"
+}

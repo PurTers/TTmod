@@ -1,0 +1,34 @@
+{
+"name":"凋零",
+	"damageMultiplier":0.9,
+	"healthMultiplier":0.7,
+	"speedMultiplier":0.5,
+	"reloadMultiplier":0.5,
+	"effectChance":0.5
+	    "damage":2,
+	"effects": [
+        {	"type": "ParticleEffect",
+    "particles": 6,
+    "baseLength": 0,
+    "length":25,
+    "lifetime": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "colorFrom": "FEEBB3FF",
+    "colorTo": "FEEBB3FF",
+    "cone":360 },
+        {"type": "ParticleEffect",
+            "particles": 2,
+            "line": true,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lenFrom": 10,
+            "lenTo": 0,
+            "length": 23,
+            "baseLength": 0,
+            "lifetime": 10,
+            "colorFrom": "FEEBB3FF",
+            "colorTo": "FEEBB3FF",
+            "cone":360}
+        ]
+}

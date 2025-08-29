@@ -1,0 +1,15 @@
+{
+	"name": "共振石",
+	"description": "意外中发现的奇特矿石，是超限集团一些尖端设备的重要原材料，其属性存在巨大未知，目前已知的是通过不同的振幅可以使其充当不同的催化剂来改变物质的性质",
+	//"details":" ",
+	"cost":2,
+	"alwaysUnlocked":false,
+	"color": "64C6ED",
+	"radioactivity": 0
+	"explosiveness": 0
+	"flammability": 0
+	"charge":0.5
+	"hardness":7
+		"frames":11
+	//"research": "0铜铅合金"
+}

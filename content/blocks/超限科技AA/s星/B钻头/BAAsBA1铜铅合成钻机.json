@@ -1,0 +1,41 @@
+{
+    "name":"铜铅合成钻机",
+    "type": "Drill",
+    "description":"超限集团最基础的钻头，机械钻头的改良版，有更快的挖掘速度。\n \n[blue][超限技术钻机]",
+    "size": 3,
+    "health": 640,
+    "tier": 2,//挖掘等级
+    "drillTime": 450,//挖掘间隔
+    "liquidBoostIntensity":1.25,//加速倍率
+    "canOverdrive": true,
+    "warmupSpeed": 0.02,
+	"drillEffect": "mineBig",
+    "updateEffect": "mineBig",
+    "rotateSpeed": 2,
+    "drawMineItem": true,
+    "consumes": {
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.1,
+            "booster": true,
+            "optional": true
+        }
+    },
+    "itemCapacity": 40,//物品容量
+    "liquidCapacity": 20,//液体容量
+    "requirements": [	
+   { "item": "copper", "amount":20},
+   { "item": "lead", "amount":15}
+   ],
+    "category": "production",
+    "research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

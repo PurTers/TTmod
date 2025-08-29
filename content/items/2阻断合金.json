@@ -1,0 +1,12 @@
+{
+ "name":"阻断合金",//名称
+ "description":"阻断合金，稳定，反电光武器，较高硬度\n \n[blue][超限技术物品]",//描述
+ "color":"67888D",//颜色
+ "cost":1//建筑消耗时间，为1帧
+ "flammability":0,//燃烧性
+ "hardness":0//挖掘等级
+    "explosiveness":0,//爆炸性
+    "radioactivity":0,//辐射性
+    "charge":0//放电性
+    "research": "绝缘钢"
+}

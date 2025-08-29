@@ -1,0 +1,111 @@
+{
+	"type": "legs",
+	"legCount": 6
+	"legLength": 8
+	"legForwardScl": 1
+	
+	"legLengthScl":1
+	"legSpeed":0.3
+	"legMoveSpace": 0.01
+	"legBaseOffset":0
+	
+	"legExtension":1
+	"legPairOffset":0
+	
+	"legSplashDamage":8
+	"legSplashRange":12
+	"description": "核心单位，用于保护终界核心。\n\n[blue][超限集团重型核心爬虫]",
+				"immunities": [
+"burning","freezing","melting","wet","spore-slowed","shocked","electrified","列阵","甲板损坏"
+	],
+	"abilities": [
+	{
+        "type": "RepairFieldAbility"
+        "amount":22
+        "reload": 240
+        "range": 55
+    }
+		{
+			"type": "ForceFieldAbility",
+			"sides": 4,
+			"radius": 24
+			"max": 300,
+			"regen": 0.1
+			"cooldown": 240
+		}
+		{ "type": "StatusFieldAbility",
+    "duration": 600,
+    "reload": 300,
+    "range": 48,
+    "applyEffect":"none",
+    "effect":"列阵"  }
+	],
+			"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+	"hovering": true,
+	"canDrown": false,
+		"maxRange": 400
+	"name": "伊普西龙",
+	"canBoost": false,
+	"speed": 0.85
+	"hitSize": 6
+	"health": 720,
+	"armor": 3
+	"drag": 0.2,
+	"rotateSpeed": 0.85,
+	"itemCapacity": 90,
+	"buildSpeed":5
+	"mineTier":3
+	"mineSpeed":5
+	"faceTarget": true,
+	"weapons": [
+	{
+			"name": "袒护1",
+			"reload": 420,
+			"x": -3
+			"y": 0
+			"rotate": false,
+			"top": false,
+			"recoil": 3,
+			"inaccuracy": 0,
+			"alternate": true,
+			"mirror":false,
+			"shootSound": "laser",
+			//"controllable":false
+			"shake": 2,
+			"shootCone":30
+			"recoilTime": 120
+			"bullet": {
+			"type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["c0ecff","1878BF","FFFFFF"],
+	"status": "破甲",
+			"statusDuration": 400,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":6,
+	"lightningDelay":0.6,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":16,
+	"lightningColor":"c0ecff",
+	"damage": 218,
+	"pierceDamageFactor":0.4
+	"pierce": true
+	"width": 12
+	"length": 180,
+	"lifetime": 30,
+	"collidesAir": true
+	"buildingDamageMultiplier":0.1
+			}
+		}
+		]
+}

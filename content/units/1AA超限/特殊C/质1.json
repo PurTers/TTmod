@@ -1,0 +1,114 @@
+{
+		"immunities": [
+"wet","spore-slowed","tarred","蜂群","甲板损坏"
+	],
+	"name": " ",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"hitSize": 0
+	"engineOffset": 0,
+	"engineSize": 0,
+	"health": 1,
+	"armor": 0,
+	"speed": 0,
+	"lifetime": 1,
+	"rotateSpeed": 0,
+	"engineOffset": 0,
+	"missileAccelTime": 0,
+	"weapons": [
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 60,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootOnDeath":true,
+			"shoot":{
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {
+			"type": "BasicBulletType",
+			"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+			"killShooter":true,
+        "frontColor": "87CEEB",
+        "backColor": "87CEEB",
+        "width": 16,
+        "height": 16,       
+        "trailLength": 12,
+        "trailWidth": 4,
+        "trailColor": "87CEEB",
+        "speed": 9,
+        "lifetime": 100,
+        "splashDamageRadius":48
+	    "splashDamage":250
+        "damage":600
+        "collidesAir": true
+        "collidesGround": true
+        "buildingDamageMultiplier":0
+        "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+	"despawnEffect": [{
+	"type": "ParticleEffect",
+	"particles": 5,
+	"line": true,
+	"strokeFrom": 0.7,
+	"strokeTo": 0.5,
+	"lenFrom": 4,
+	"lenTo": 2,
+	"length": 16,
+	"baseLength": 0,
+	"lifetime": 18,
+	"colorFrom": "87CEEB",
+	"colorTo": "87CEEB"
+	"interp": "pow3Out",
+	"sizeInterp": "pow3In",
+        "cone": 30,}
+        {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":16
+				},
+				{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"1878BF",
+					"rotation":32
+				}
+				{
+				    "type": "WaveEffect",
+				    "lifetime": 30,
+				    "sizeFrom": 20,
+				    "sizeTo": 80,
+				    "strokeFrom": 8,
+				    "strokeTo": 0,
+				    "colorFrom": "c0ecff",
+				    "colorTo": "c0ecff"
+				}
+				]}}
+	],
+}

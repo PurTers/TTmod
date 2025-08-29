@@ -1,0 +1,11 @@
+{
+	"name": "ohno",
+	"description": " ohno",
+	"details":"ohno",
+	"cost":2,
+	"alwaysUnlocked":false,
+	"color": "EEC591",
+	"radioactivity": 0,
+	"explosiveness": 0,
+	"flammability": 0,
+}

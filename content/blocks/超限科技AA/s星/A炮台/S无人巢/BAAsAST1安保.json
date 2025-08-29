@@ -1,0 +1,78 @@
+{
+	"type": "ItemTurret",
+	"name": "安保",
+	"description": "超限集团杰出的防御装置，通过不断消耗资源，自动生产能够攻击敌方的无人机，无人机无法长久存在，但是非常强大。\n[石墨]-对空型自杀无人机\n[硅]-对地型自杀无人机\n[基础合金]-防卫型机枪无人机\n[集成电路]-防卫型导弹无人机\n\n[blue][超限集团特殊防御装置]",
+	"underBullets":true
+	"health": 1080,
+	"size": 4
+	"reload":900,
+	"range": 450,
+		"alwaysShooting": true,
+		"targetGround": true
+	"targetAir": true
+		"maxAmmo":70
+    "ammoPerShot": 5
+    "rotateSpeed": 0
+     "shootX":0
+	    "shootY":0
+    "shootCone":360
+    "ammoPerShot": 10
+	"consumes": {
+	"power": 12
+		},
+	"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"inaccuracy": 360
+	"shake":1,
+	"ammoTypes": {
+	"graphite": {
+	"reloadMultiplier":2
+	         "type": "BasicBulletType",
+             "spawnUnit": "小飞机A",
+             "speed": 0,
+		 }
+        "silicon": {
+        "reloadMultiplier":2
+	         "type": "BasicBulletType",
+             "spawnUnit": "小飞机B",
+             "speed": 0,
+		 }
+		 "0铜铅合金": {
+		 "ammoMultiplier": 3
+		 "reloadMultiplier":1.5
+	         "type": "BasicBulletType",
+             "spawnUnit": "小飞机C",
+             "speed": 0,
+		 }
+        "1集成电路": {
+        "ammoMultiplier": 5
+	         "type": "BasicBulletType",
+             "spawnUnit": "小飞机D",
+             "speed": 0,
+		 }
+	}, 
+	"requirements": [
+        { "item": "copper","amount": 140 },
+        { "item": "lead","amount": 240 },
+        { "item": "graphite", "amount": 80 }
+        { "item": "silicon", "amount": 120 }
+        { "item": "0铜铅合金", "amount": 120 }
+        {"item": "1集成电路", "amount": 120  },
+{ "item": "titanium", "amount": 140 }
+{ "item": "thorium", "amount": 120 }
+{ "item": "metaglass", "amount": 160 }
+        {"item": "plastanium", "amount": 80  },
+	],
+	"category": "turret",
+	/*"research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	    "researchCostMultiplier": 2,
+	    "canOverdrive":false
+}

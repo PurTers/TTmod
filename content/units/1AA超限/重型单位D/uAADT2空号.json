@@ -1,0 +1,314 @@
+{
+    "type": "flying",
+    "name":"空号"
+    "description": "重型飞行单位，通过侧面强大的火箭炮来攻击敌方单位，正方向有贯穿式激光，两门机枪进行辅助攻击。\n\n[blue][超限技术重型空军单位]",
+    "details":"超限集团当初设计这个的目的是以求直接突入敌人内部，对敌人造成巨大威胁，但事实上往往是那些为了收割敌人而装在侧面的副炮根本无法发挥作用，甚至为了防御还要专门把身子侧过来。\n\n于是单位设计师被建议拉出去拆了。"
+    "immunities": [
+"wet","spore-slowed","tarred","shocked","electrified","脆裂","甲板损坏"
+	],
+    "speed": 0.6
+    "hitSize":25
+    "health": 12980
+    	"rotateSpeed": 1.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "flying": true,
+    "armor":12
+    	"maxRange": 400
+    "targetFlags":["turret","battery","generator"],
+    "engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"engineLayer": 0,
+	"engineSize": 0,
+	"engineOffset": 0
+	"trailLength": 0,
+	"trailWidth": 0,
+	"itemCapacity": 25
+	"abilities": [
+    {
+        "type": "RepairFieldAbility"
+        "amount":33
+        "reload": 30
+        "range": 64
+    }
+		{
+			"type": "ForceFieldAbility",
+			"sides": 8,
+			"radius": 32
+			"max": 3500,
+			"regen": 2
+			"cooldown": 1200
+		}
+    ]
+    "weapons": [
+    {
+		    "name": "空号前"
+			"x": 10
+			"y": 9
+			"reload": 10,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": true,
+			"rotateSpeed": 0,
+			"useAmmo": false,
+			"alwaysShooting": true,
+			"continuous": true,
+			"display":false
+			"ejectEffect":"none",
+	        "shootSound":"none",
+			"recoil": 0,
+			"parts":[
+        	    {
+                    "type":"RegionPart",
+                    "mirror":false,
+                    "x":0,"y":0,
+                    "suffix":"叶"
+                    "layer":120,
+                    "moveX":0,
+                    "moveY":0
+                    "moveRot":360
+                    "outline": false,
+                    "progress":"reload",
+                }
+            ]
+			"bullet": {
+                "speed": 999
+                "lifetime":1
+                "width": 0,"height": 0,
+                "damage":0
+                "shootEffect": "none",
+				"hitEffect": "none",
+				"despawnEffect": "none"
+				"smokeEffect": "none"
+				"despawnSound":"none",
+			}
+		}
+		{
+		    "name": "空号后"
+			"x": 0,
+			"y": -12
+			"reload": 10,
+			"shootY": 0,
+			"mirror": false,
+			"rotate": true,
+			"rotateSpeed": 0,
+			"useAmmo": false,
+			"alwaysShooting": true,
+			"continuous": true,
+			"ejectEffect":"none",
+	        "shootSound":"none",
+			"recoil": 0,
+			"parts":[
+        	    {
+                    "type":"RegionPart",
+                    "mirror":false,
+                    "x":0,"y":0,
+                    "suffix":"叶"
+                    "layer":120,
+                    "moveX":0,
+                    "moveY":0
+                    "moveRot":360
+                    "outline": false,
+                    "progress":"reload",
+                }
+            ]
+			"bullet": {
+                "speed": 999
+                "lifetime":1
+                "width": 0,"height": 0,
+                "damage":0
+                "shootEffect": "none",
+				"hitEffect": "none",
+				"despawnEffect": "none"
+				"smokeEffect": "none"
+				"despawnSound":"none",
+			}
+		}
+    {	"name": "空号2",	
+	               	"shootCone":30,
+	               	"baseRotation":0
+			"rotationLimit":10,
+		"reload":35
+        "x": 5
+         "y": 20
+        "rotate": true,
+        "inaccuracy": 6
+		"shootSound": "missile",
+		"rotateSpeed": 1
+		"alternate": true,
+		"mirror":true
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":5
+	    "shotDelay":15
+	},
+	"shootX":0
+	    "shootY":2
+   "recoil": 1
+   "recoils": 1
+		"bullet":{
+		"type":"BasicBulletType",
+    "speed": 3
+    "lifetime":60
+	"width": 2
+	"height": 6
+	"damage":6,
+    "hitSize":40,
+    "pierceArmor": true,
+    "shootEffect": "shootBig"
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "trailLength":22,
+	"trailWidth":2,
+	"status": "破甲",
+			"statusDuration": 130,
+	 "trailColor":"c0ecff",
+	"frontColor":"1878BF",
+	"backColor":"c0ecff",
+	}
+	}
+   {	"name": "空号1",	
+	               	"shootCone":30,
+	               	"baseRotation":-90
+			"rotationLimit":120,
+		"reload":60
+        "x": 8
+         "y": -6
+        "rotate": true,
+        "inaccuracy": 6
+		"shootSound": "missile",
+		"rotateSpeed": 1
+		"alternate": true,
+		"mirror":true
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":2
+	    "shotDelay":30
+	},
+	"shootX":0
+	    "shootY":2
+   "recoil": 1
+   "recoils": 1
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (3)",
+             "speed": 0,
+			"shootEffect":"shootSmall",
+	}
+	}
+	{	"name": "空号1",	
+	               	"shootCone":30,
+	               	"baseRotation":-90
+			"rotationLimit":120,
+		"reload":60
+        "x": 8
+         "y": -3
+        "rotate": true,
+        "inaccuracy": 6
+		"shootSound": "missile",
+		"rotateSpeed": 1
+		"alternate": true,
+		"mirror":true
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":2
+	    "shotDelay":30
+	},
+	"shootX":0
+	    "shootY":2
+   "recoil": 2,
+   "recoils": 2,
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (3)",
+             "speed": 0,
+			"shootEffect":"shootSmall",
+	}
+	}
+	{	"name": "空号1",	
+	               	"shootCone":30,
+	               	"baseRotation":-90
+			"rotationLimit":120,
+		"reload":60
+        "x": 8
+         "y": 0
+        "rotate": true,
+        "inaccuracy": 6
+		"shootSound": "missile",
+		"rotateSpeed": 1
+		"alternate": true,
+		"mirror":true
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":2
+	    "shotDelay":30
+	},
+	"shootX":0
+	    "shootY":2
+   "recoil": 1
+   "recoils": 1
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (3)",
+             "speed": 0,
+			"shootEffect":"shootSmall",
+	}
+	}
+	{
+			"name": "无",
+			"reload": 300,
+			"x": 0
+			"y": 18
+			"rotate": false,
+			"top": false,
+			"recoil": 4,
+			"inaccuracy": 0,
+			"alternate": true,
+			"mirror":false,
+			"shootSound": "laser",
+			//"controllable":false
+			"shake": 2,
+			"shootCone":30
+			"bullet": {
+			"type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["c0ecff","1878BF","FFFFFF"],
+	"status": "脆裂",
+			"statusDuration": 330,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":6,
+	"lightningDelay":0.6,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":66,
+	"lightningColor":"c0ecff",
+	"damage": 218,
+	"pierceDamageFactor":0.4
+	"ammoMultiplier":1,
+	"pierce": true
+	"width": 28,	"length": 160,
+	"lifetime": 30,
+	"collidesAir": true
+	"buildingDamageMultiplier":2
+			}
+		}
+    ]
+ "research": {
+	"parent":"uAADT1天枭"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "遗忘河滩"
+			}
+	]
+	}
+}

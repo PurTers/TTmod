@@ -1,0 +1,50 @@
+{
+		"immunities": [
+	],
+	"name": "星辉导弹",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 1280,
+	"armor": 6,
+	"speed": 6
+	"lifetime": 80
+	"maxRange": 80
+	"rotateSpeed": 4
+	"trailColor": "FFFFFF",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"trailWidth":2
+	"missileAccelTime": 0,
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"abilities": [
+	{
+			"type": "SpawnDeathAbility",
+			"unit": "flare",
+			"amount": 0,
+			"randAmount": 4
+			"spread": 60,
+	    "faceOutwards": false,
+	},]
+	"weapons": [
+		{
+			"shootCone": 360,
+			"mirror": false,
+			"reload": 1,
+			"shake": 10,
+			"shootOnDeath": true,
+			"shootSound": "plasmaboom",
+			"bullet": {
+				"collidesGround": true
+	"collidesAir": true
+				"type": "ExplosionBulletType",
+				"hitColor": "FFB381FF",
+				"splashDamage": 128,
+				"splashDamageRadius": 36,
+		}
+		}
+	],
+}

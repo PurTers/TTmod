@@ -1,0 +1,45 @@
+{
+    "name": "能量洪流", 
+    "type": "ParticleWeather",//类型为创建粒子特效天气
+    "drawParticles": true,//下列参数仅在该参数为true时启用
+        "particleRegion": "circle-shadow",//天气粒子贴图，默认为中间向外渐变透明
+        // "color": "ffffff",//颜色
+        //"region": "",//不建议使用纹理图层
+        "yspeed": -2, "xspeed": 0.25,//粒子xy移动速度,相对于屏幕而不是地图
+       "padding": 16,//填充量,越大越密集
+       "sizeMin": 2.4, "sizeMax": 12,//粒子大小随机最大/最小
+        "density": 1200,//密集度,越大越密集
+        "minAlpha": 1, "maxAlpha": 1,//离子透明度随机最大/最小
+        "force": 0,//风力大小,方向取决于粒子方向
+        "sinSclMin": 30, "sinSclMax": 80,//粒子摆动周期
+        "sinMagMin": 1, "sinMagMax": 1,//粒子摆动幅度//关于粒子摆动(类似于子弹)的正弦参数
+        "useWindVector": false,//使用风的矢量(有关移动速度和方向)
+        "randomParticleRotation": false,//粒子随机角度偏转
+    "drawNoise": false,//下列参数仅在该参数为true时启用
+    "noiseLayers": 1,//噪声层数,不同层数之间会叠加
+        "noiseLayerSpeedM": 1.1,//噪声层移动
+        "noiseLayerAlphaM": 0.8,//噪声层透明度//其实我个人更偏向于每层的强度//不过你按照哪一种解释方式显示效果是一样的
+        "noiseLayerSclM": 0.99,//噪声层周期
+        "noiseLayerColorM": 1,//噪声层颜色强度
+        "noisePath": "天气",//噪声透明度贴图
+        // "noise": ""//不建议使用噪声纹理层
+    "duration": 10,//天气持续时间(删去本行可使用地图设置)
+    "opacityMultiplier": 1,//特效透明度倍率
+    "attrs": {//属性,水热光之类的
+        "light": 5
+        //"yyy": 数字
+    }
+    //"sound": none,//播放的音效,永远不要播放空音效
+    "soundVol": 0.1, "soundVolMin": 0,//音量最大/最小
+    "soundVolOscMag": 0,//音量变化幅度
+    "soundVolOscScl": 20,//声音长度周期
+    "hidden": false,//是否隐藏
+    //"status": "slow",//状态效果
+    "statusDuration": 1,//状态效果持续时间
+    "statusAir": true,//对空军施加效果
+    "statusGround": true,//对陆军施加效果
+    
+    //这里是一些内部的,以下部分内容不建议修改
+    //"rand": none,//最麻烦的参数,类似于星球的渲染
+}
+//by nan

@@ -1,0 +1,32 @@
+{
+    "type": "PowerTurret",
+    "name": "世界雷达",
+    "description": "超大范围索敌,特殊用途",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 2147483617,
+    "size": 1
+    "heatColor": "turretHeat",
+    "shootSound": "无",
+    "shake": 0.2,
+    "inaccuracy": 0
+     "shootCone":360,
+     "shootEffect":"none"
+    "shootType":{
+    "speed": 0
+	    "lifetime":1
+		"width": 1,"height": 1
+		"damage":0
+        "backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+				"healPercent": 100
+		"effect":"none"
+       }
+    "consumes": {
+    },
+    "reload": 0
+    "rotateSpeed": 99
+    "range": 12000
+    "category": "logic",
+     "buildVisibility": "sandboxOnly",
+}

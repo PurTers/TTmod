@@ -1,0 +1,71 @@
+{
+		"immunities": [
+	],
+	"name": " ",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": " ",
+	"health": 99999999,
+	"armor": 0
+	"speed": 0
+	"lifetime": 900
+	"maxRange": 0
+	"rotateSpeed": 0
+	"engineColor": "ffffff00",
+	"trailColor": "ffffff00",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 0,
+	"trailLength": 0,
+	"missileAccelTime": 0,
+	"lowAltitude": true,
+	"fogRadius": 0
+	"outlineColor": "ffffff00",
+	"isEnemy": false,
+	"template": "MissileUnitType",
+	"loopSoundVolume":1,
+	"omniMovement":true,//是否全方位移动
+	"lowAltitude":true,
+    "useUnitCap": false//没有单位数量上限
+    "destructibleWreck": false, //破坏性残骸（飞行专属）.死掉是否掉落砸向地面造成伤害。false是直接爆炸。
+    "immunities": [
+"甲板损坏"
+	],
+    "createWreck": false,//残骸
+    "createScorch": false,//燃烧痕迹
+	"abilities": [
+	{ "type": "StatusFieldAbility",
+    "duration": 5,
+    "reload": 5,
+    "range": 150
+    "applyEffect":"none",
+    "activeEffect":[{
+        "type": "ParticleEffect",
+        "particles": 14,
+        "sizeFrom": 12,
+                "sizeTo": 0,
+        "length": 0,
+        "baseLength": 150,
+        "lifetime": 60,
+        "colorFrom": "c0ecff60",
+        "colorTo": "c0ecff60"
+        "cone": 360
+        "layer":120
+            }
+            {
+        "type": "ParticleEffect",
+        "particles": 14,
+        "sizeFrom": 12,
+        "sizeTo": 0,
+        "length": 0,
+        "baseLength": 150,
+        "lifetime": 60,
+        "colorFrom": "1878BF60",
+        "colorTo": "1878BF60"
+        "cone": 360
+        "layer":120
+            }
+            ]
+    "effect":"shielded"  }
+    ]
+}

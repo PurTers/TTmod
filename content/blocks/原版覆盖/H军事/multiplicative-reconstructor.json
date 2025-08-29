@@ -1,0 +1,11 @@
+{
+"research": {
+	"parent":"additive-reconstructor"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-frontier"
+			}
+	]
+	}
+}

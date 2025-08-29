@@ -1,0 +1,26 @@
+{
+"localizedName": "冰封菌落(半成品)",
+	"description": "偏远的同时又被真菌所覆盖，四处散发着一种诡异气息，同时我们在这里发现未知飞行器的残骸，里面或许存在值得研究的东西\n\n[white](by 蓝细菌光合自养 作 没有炮台的炮台s 改)",
+	"details":"[blue]导弹狂潮",
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0
+    "captureWave":70
+    "difficulty":7
+    "research": {
+		"parent": "超限工艺-tarFields",
+		"objectives": [
+		"敬请期待"
+		"敬请期待1"
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-overgrowth"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-saltflats"
+			}
+			"BAAsAT4D刺蛇"
+			"BAAsAT4B电离"
+			]}
+}

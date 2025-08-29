@@ -1,0 +1,122 @@
+{
+	"name": "临界",
+	"type": "missile",
+	"template": "MissileUnitType",
+		"engineOffset": 3,
+		"hitSize": 8
+	"engineSize": 3,
+	"health": 2980,
+	"armor": 16,
+	"speed": 2,
+	"lifetime": 3600
+	"rotateSpeed": 1
+	"engineOffset": 0,
+	"missileAccelTime": 60,
+	"immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+	"abilities": [
+	{
+    "type":"ForceFieldAbility",
+    "radius": 33
+    "regen": 4,
+    "max": 180
+    "cooldown": 120,}
+        {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 200.0,
+        "max": 1800.0,
+        "reload": 30.0,
+        "range": 33
+    }
+        {
+        "type": "RepairFieldAbility"
+        "amount":220
+        "reload": 30
+        "range": 33
+    }
+    {
+			"type": "ShieldArcAbility",
+			"radius": 60,
+			"width": 4,
+			"max": 800,
+			"regen": 12,
+			"cooldown": 60,
+			"angle": 0,
+			"angleOffset": 0
+		},
+    {"type":"ArmorPlateAbility",
+	"healthMultiplier":2}
+	{
+			"type": "SpawnDeathAbility",
+			"unit": "侧卫-A",
+			"amount": 1,
+			"randAmount": 0
+			"spread": 0,
+	    "faceOutwards": false,
+	}
+    ],
+	"weapons": [
+		{	"name": "无",	
+		"reload":21,
+        "x": 3
+         "y": 2
+        "rotate": true,
+        "inaccuracy": 0,
+        "shootStatusDuration": 30,
+	"shootStatus": "unmoving",
+		"shootCone":60,
+		"shoot":{
+			"shots":2
+			"shotDelay":10
+		},
+		"shootSound": "pew",
+		"rotateSpeed": 0
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":16,	  
+	    "speed":3,
+	    "lifetime":55,
+	    "width":2,	 "height":10
+	    "homingRange": 40,
+            "homingPower": 0.1,
+	}	}
+	{	"name": "无",	
+	               	"shootCone":120,
+		"reload":61,
+        "x": 0
+         "y": 0
+        "rotate": false
+        "inaccuracy": 30
+		"shootSound": "missile",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":3
+	    "shotDelay":15
+	},
+   "recoil": 2,
+   "recoils": 2,
+		"bullet":{
+		"sprite":"missile",
+			"speed":2.5
+			"damage": 22
+			"lifetime":180,
+			"width": 9, 			
+			"height":16
+			 "weaveMag":2,
+	        "weaveScale":4,
+			"splashDamageRadius":15,
+		"splashDamage":78
+	    "makeFire":true,
+			"ammoMultiplier":5
+			"shootEffect":"shootSmall",
+	     	"backColor":"c0ecff",
+			"frontColor":"c0ecff"
+			"homingRange": 40,
+            "homingPower": 0.1,
+	}
+	}
+	]
+}

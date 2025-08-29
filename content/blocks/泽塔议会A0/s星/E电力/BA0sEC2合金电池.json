@@ -1,0 +1,39 @@
+{
+    "name":"超级电容器",
+	"health":1200,
+    "description": "更高级的电池，更加坚硬，储电量也更大。\n[red][泽塔议会电池]",
+    "requirements":[
+  { "amount": 600, "item": "lead" },
+  { "amount": 180, "item": "silicon" },
+  { "amount": 65, "item": "surge-alloy" },
+  { "amount": 80, "item": "plastanium" }
+    ],
+        "destroyBullet":{
+		"hitSound":"plasmaboom",
+		"width":16,	"height":16,
+		"sprite":"circle-bullet",
+		"shrinkY":0,
+		"hitShake":8,
+		"backColor":"25C9ABFF",
+		"frontColor":"FFFFFF",}
+	"consumesPower": true,
+	"outputsPower": true,
+    "consumes": 
+    {"powerBuffered": 100000},
+	"emptyLightColor":"FF000000",
+	"fullLightColor":"FFFFFFFF",
+    "size": 3,
+    "type": "Battery",
+	"category": "power",
+	"research": {
+	"parent":"BA0sEB1生物质发电机"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.3
+}

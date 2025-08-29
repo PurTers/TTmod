@@ -1,0 +1,18 @@
+{
+	"type": "flying",
+	"name":" ",
+	"description": " "
+	"accel":0.05,"drag":0.03,
+	"rotateSpeed":0
+	"speed": 0
+	"hitSize":1
+	"buildSpeed":0
+	"flying": true,
+	"hidden": true
+	"health":0,
+	"armor":0
+	"mineTier":0
+	"mineSpeed":0
+	"engineOffset": 0,
+	"engineSize": 0, 
+}

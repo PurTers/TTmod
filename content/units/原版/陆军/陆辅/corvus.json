@@ -1,0 +1,12 @@
+{
+"immunities": ["甲板损坏"
+	],
+	"research": {
+        "parent":"vela"
+	/*"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+	]*/
+    }}

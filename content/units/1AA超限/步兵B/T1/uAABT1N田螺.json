@@ -1,0 +1,130 @@
+{
+	"type": "naval",
+	"name": "海胆",
+	"description": "轻型战舰，甚至都不能将其称为战舰，相比之下他更像一个快艇，附带高射速的机枪攻击，对空对地，对建筑和空军有伤害加成。\n[blue][超限技术轻型海军]",
+		"immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+	"speed":0.6,
+	"rotateSpeed":0.9,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 60,
+    "trailLength":24,
+    "waveTrailX":0,
+    "waveTrailY":-6,
+    "trailScl":2,
+	"hitSize":16 
+	"health": 110,
+	"armor":5,
+	"faceTarget": false,
+	//"maxRange": 400,
+	"weapons":[
+		{"name": "机枪1",	
+			"shoot":{
+		"type":"ShootAlternate",
+		"barrels":3,
+		"spread":0.5
+	},
+	"shootCone":30
+			  "parts": [
+			  {
+				"type": "RegionPart",
+				"suffix": "-底",
+				"layer": 73
+			},
+			  {"type": "RegionPart",
+        "mirror": false
+        //"under":true,
+        "x": 0.5
+        "y": 0
+        "suffix": "-管",
+        "layer": 71
+        "moveX": -0.5
+        "moveY": 0
+        "moveRot":0
+        "progress": "reload",
+        }
+        {"type": "RegionPart",
+        "mirror": false
+        //"under":true,
+        "x": 0
+        "y": 0
+        "suffix": "-管",
+        "layer": 71
+        "moveX": -0.5
+        "moveY": 0
+        "moveRot":0
+        "progress": "reload",
+        }
+        {"type": "RegionPart",
+        "mirror": false
+        //"under":true,
+        "x": -0.5
+        "y": 0
+        "suffix": "-管",
+        "layer": 71
+        "moveX": 1
+        "moveY": 0
+        "moveRot":0
+        "progress": "reload",
+        }
+        {
+				"type": "RegionPart",
+				"suffix": "-口",
+				//"under":true,
+				"x":0
+				"y":0
+				"layer": 72
+				//"recoilIndex": 3
+				"moves": [{
+						"progress": "recoil",
+						"y": -0.2
+					}],
+				//"heatProgress": "heat"
+			}
+			]
+	"ammoUseEffect": "casing2Double",
+	//"shootSound":"respawn",
+	"reload":6,
+	"recoil":0
+        "x": 0,  "y": -3, 
+        "rotate": true,
+        "mirror":false
+		"shootY":4,
+        "rotateSpeed":2,
+        "inaccuracy": 0,
+	"bullet":{
+	"type":"BasicBulletType",
+    "speed": 5
+    "lifetime":30
+	"width": 1.5
+	"height": 5
+	"damage":3
+    "hitSize":4
+    "buildingDamageMultiplier":5
+    "fragBullets":3
+        "fragBullet":{
+        "damage": 3
+			"lifetime":0,
+			"width": 1, 			
+			"height":1
+			"splashDamageRadius":32,
+		"splashDamage":6
+		"collidesGround":false
+		"collidesAir":true,
+        }
+	               	}}
+	]
+	"research": {
+	"parent":"BAAsHA步兵厂"
+	/*"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]*/
+	}
+	//"controller": "DefenderAI"
+}

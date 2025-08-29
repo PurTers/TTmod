@@ -1,0 +1,283 @@
+{
+		"immunities": [
+	],
+	"name": " '天火'燃烧导弹",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 6968
+	"armor": 33
+	"speed": 2
+	"lifetime": 400
+	"rotateSpeed": 1.2
+	"maxRange": 30
+	"engineColor": "FF5B5B",
+	"trailColor": "FF5B5B",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 22
+	"missileAccelTime": 300
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "FF5B5B",
+	"weapons": [
+		{
+            "reload": 90,
+            "x": 6,
+            "y": 2,
+            "top": true,
+            "shootCone": 360,
+            "shootSound":"plasmaboom",
+            "ejectEffect": "casing1",
+	"shootOnDeath": true,
+
+		"bullet": {
+				"collidesGround": true
+	"collidesAir": true
+				"type": "ExplosionBulletType",
+				"hitColor": "FF8C00",
+				"splashDamage": 336
+				"splashDamageRadius": 36
+				"despawnShake": 3,
+				"fragVelocityMin": 1
+				"pierce": true,
+				"buildingDamageMultiplier":0.1
+				"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 1
+				"height": 1
+				"buildingDamageMultiplier":0.1
+				"backColor": "FF8C00",
+				"frontColor": "FF8C00",
+				"splashDamageRadius": 22
+				"splashDamage": 44
+				"lifetime": 155
+				"speed": 0
+				"makeFire":true,
+				"pierce": true,
+				 "buildingDamageMultiplier":0.2
+				  "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "FF8C00",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 48,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                    {
+			"type": "ShapePart",
+			"colorTo":"FF8C00",
+			"color": "FF8C00",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": false,
+			"hollow": true,
+			"radius": 5
+			"radiusTo": 5
+			"x": 0,    "y": 0,
+},
+                    {
+			"type": "ShapePart",
+			"colorTo":"FF8C00",
+			"color": "FF8C00",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 48
+			"radiusTo": 48
+			"x": 0,    "y": 0,
+},]
+				 "fragVelocityMin": 4
+				 "fragBullet": {
+				"type": "ShrapnelBulletType",
+            "length": 11
+            "damage": 67
+            "width": 3
+            "lifetime": 10,
+				"speed": 5
+            "fromColor": "FF8C00",
+            "toColor": "FF8C00",
+            "pierce": true,
+                "makeFire":true,
+			"status":"burning",
+			"statusDuration":88
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "FF8C00",
+                "colorTo": "FF8C00",
+                "cone": 60
+ }
+				 "buildingDamageMultiplier":0
+				 "sprite":"超限工艺-尖刺",
+				 "bulletInterval":0.5
+				 "intervalBullets":2
+        "intervalBullet":{
+        "collidesAir": false
+		"type":"BasicBulletType",
+		"despawnEffect":"none",
+		"width":12
+		"height":12,
+		"damage":4,
+        "lifetime":120,
+        "speed":0.05
+        "drag":0.005
+        "trailLength":12,
+	"trailWidth":1.5,
+	"makeFire":true,
+	"status":"melting",
+	"statusDuration":360
+	            "splashDamageRadius": 14
+				"splashDamage": 88
+	"sprite":"超限工艺-尖刺",
+	 "trailColor":"FF8C00",
+	 "frontColor":"FF8C00",
+	"backColor":"FF8C00",
+	"hitEffect": [{   
+        "type": "WaveEffect",
+        "lifetime": 125
+        "sizeFrom": 24
+        "sizeTo": 24
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "colorFrom": "FF8C00",
+    "colorTo": "FF8C0000",
+	   }
+	   {   
+        "type": "WaveEffect",
+        "lifetime": 125
+        "sizeFrom": 7
+        "sizeTo": 7
+        "strokeFrom": 7
+        "strokeTo": 7
+        "colorFrom": "FF8C00",
+    "colorTo": "FF8C00",
+	   }]
+		}
+			}
+			}
+			"shootEffect": {
+        "type": "MultiEffect",
+	"effects": [
+				  {"type": "ParticleEffect",
+    "startDelay":0
+    "particles": 22
+    "sizeFrom": 88
+    "sizeTo": 0
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 30
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "startDelay":30
+    "particles": 22
+    "sizeFrom": 88
+    "sizeTo": 0
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 30
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "startDelay":60
+    "particles": 22
+    "sizeFrom": 88
+    "sizeTo": 0
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 30
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "startDelay":90
+    "particles": 22
+    "sizeFrom": 88
+    "sizeTo": 0
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 30
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "startDelay":120
+    "particles": 22
+    "sizeFrom": 88
+    "sizeTo": 0
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 30
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00",
+    "cone": 360},
+    {"type": "WaveEffect",
+    "lifetime": 30
+    "sizeFrom": 88
+    "sizeTo": 0
+    "strokeFrom": 18
+    "strokeTo": 5
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00"}
+    {"type": "WaveEffect",
+    "startDelay":30
+    "lifetime": 30
+    "sizeFrom": 88
+    "sizeTo": 0
+    "strokeFrom": 18
+    "strokeTo": 5
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00"}
+    {"type": "WaveEffect",
+    "startDelay":60
+    "lifetime": 30
+    "sizeFrom": 88
+    "sizeTo": 0
+    "strokeFrom": 18
+    "strokeTo": 5
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00"}
+    {"type": "WaveEffect",
+    "startDelay":90
+    "lifetime": 30
+    "sizeFrom": 88
+    "sizeTo": 0
+    "strokeFrom": 18
+    "strokeTo": 5
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00"}
+    {"type": "WaveEffect",
+    "startDelay":120
+    "lifetime": 30
+    "sizeFrom": 88
+    "sizeTo": 0
+    "strokeFrom": 18
+    "strokeTo": 5
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C00"}
+    ]
+				 }
+		}
+
+		}
+		]
+}

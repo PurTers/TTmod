@@ -1,0 +1,36 @@
+{
+	"type": "GenericCrafter",
+	"name": "沙制造仪",
+	"description": "使用一定电力生成沙\n\n[blue][超限技术尖端装置]",
+	"outputItem": { "item": "sand", "amount": 2},
+	"size": 1,
+	"health":50,
+	"itemCapacity": 50,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 30,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+   "power":7
+		},
+"requirements": [
+    { "item": "lead", "amount": 120},
+	{ "item": "graphite", "amount": 180}
+	{ "item": "silicon", "amount": 185}
+	{ "item": "plastanium", "amount": 150}
+	{ "item": "1复合物", "amount": 120}
+	{ "item": "1集成电路", "amount": 160}
+	],
+	"category": "crafting",
+	    "research": {
+		"parent": "BAAsGT2D废料解析机",}
+	"researchCostMultiplier": 5
+	"buildCostMultiplier":0.5
+}

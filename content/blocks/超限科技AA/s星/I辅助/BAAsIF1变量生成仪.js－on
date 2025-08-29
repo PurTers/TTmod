@@ -1,0 +1,232 @@
+{
+	"type":"PowerTurret",//类型:消耗物品的炮塔
+	"name":"不稳定激发仪",//名字
+    "description":"多功能方块，通过消耗大量电量，对周围不断释放特殊的EMP电波，能够提高己方建筑的工作效率并压制敌方的建筑工作，同时能够修复有方的友方电用建筑，当敌方的单位进入电波范围以内会被压制。\n[超速:+125%]\n[压制:-50%]\n\n\n\n\n[blue][超限集团特殊防御]",//介绍
+    "details":"应该没人注意到这玩意儿时不时的会故障吧",
+    "minWarmup": 0.99
+    "shootWarmupSpeed": 0.033,
+	"size":3,//物品面积
+	"health":1800,//建筑血量
+	"range":300,
+	"reload":72
+	"canOverdrive": false,
+	"alwaysShooting": true,
+	"inaccuracy":0,
+	"ammoUseEffect": "none",
+	"rotateSpeed":0
+	"targetAir":false
+	"targetGround":false,
+	"heatColor":"FFFFFF",
+	"shootSound":"pulseBlast",
+	"recoilTime": 0,//后坐力恢复时间
+    "recoil": 0,//后坐力
+    "shootY": 0,
+    //"squareSprite": false
+    "shootCone":360
+    		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts":[
+        {
+		"type": "ShapePart",
+		"colorTo":"c0ecff",
+		"color": "c0ecff00",
+		"layer":110,
+		"stroke": 4,
+		"strokeTo": 4,
+		"circle": true,
+		"hollow": true
+		"radius": 300
+		"radiusTo": 300
+		"x": 0,    "y": 0,
+		},
+        {
+		"type": "ShapePart",
+		"colorTo":"c0ecff",
+		"color": "c0ecff00",
+		"layer":110,
+		"stroke": 3,
+		"strokeTo": 3,
+		"circle": true,
+		"hollow": false
+		"radius": 3
+		"radiusTo": 3
+		"x": 0,    "y": 0,
+		},
+		{
+		"type": "ShapePart",
+		"colorTo":"c0ecff",
+		"color": "c0ecff00",
+		"layer":110,
+		"stroke": 1,
+		"strokeTo": 1,
+		"circle": true,
+		"hollow": true,
+		"radius": 8
+		"radiusTo": 8
+		"x": 0,    "y": 0,
+		},
+		{
+		"type": "ShapePart",
+		"colorTo":"c0ecff",
+		"color": "c0ecff00",
+		"layer":110,
+		"stroke": 2,
+		"strokeTo": 2,
+		"circle": true,
+		"hollow": true,
+		"radius": 12
+		"radiusTo": 12
+		"x": 0,    "y": 0,
+		},
+		{
+		"type": "HaloPart",
+		"rotateSpeed":6
+		"sides": 3
+		"shapes": 4
+		"color": "c0ecff00",
+		"colorTo":"c0ecff",
+		"layer":110,
+		"tri": true,
+		"radius": -8,
+		"radiusTo": -8,
+		"triLength": 0,
+		"triLengthTo":3,
+		"haloRadius": -8,
+		"haloRadiusTo": -8,
+		"haloRotation": 10
+		"haloRotateSpeed": 0.6,
+		}
+		{
+		"type": "HaloPart",
+		"rotateSpeed":6
+		"sides": 3
+		"shapes": 4
+		"color": "c0ecff00",
+		"colorTo":"c0ecff",
+		"layer":110,
+		"tri": true,
+		"radius": 8,
+		"radiusTo": 8,
+		"triLength": 0,
+		"triLengthTo":3,
+		"haloRadius": 8,
+		"haloRadiusTo": 8,
+		"haloRotation": 10
+		"haloRotateSpeed": 0.6,
+		}
+		{
+		"type": "HaloPart",
+		"rotateSpeed":0
+		"sides": 3
+		"shapes": 3
+		"color": "c0ecff00",
+		"colorTo":"c0ecff",
+		"layer":110,
+		"tri": true,
+		"radius": 12,
+		"radiusTo": 12,
+		"triLength": 0,
+		"triLengthTo":6,
+		"haloRadius": 12,
+		"haloRadiusTo": 12,
+		"haloRotation": 10
+		"haloRotateSpeed": 0.6
+		}
+]}]}
+    "consumes":{
+		"power":16
+	},
+	"shootType":{
+	"type": "EmpBulletType",
+				"timeIncrease": 2.25,//己方建筑加速倍率
+				"collidesTiles":true,//碰撞方块
+				"collidesTeam":true,//碰撞自己的队友
+				"timeDuration": 144,//加速持续时间
+				"powerDamageScl": 0,//敌方电器损坏倍率
+				"powerSclDecrease": 0.5,//敌方电器功率下降倍率
+				"healPercent": 15
+				"radius": 300,
+				"pierce": true,//穿透单位
+				"width": 0,
+				"height": 0,
+				"damage": 10,
+				"keepVelocity": true,
+				"trailEffect": "none",
+				"backColor": "c0ecff",
+				"frontColor": "c0ecff",
+				"instantDisappear": true,//瞬间消失
+				"hitSound": "plasmaboom",
+				"status": "electrified",
+				"statusDuration": 72,
+				"despawnEffect": "hitEmpSpark"
+				"hitPowerEffect": [{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"1878BF",
+					"rotation":12
+				},]
+		    	"applyEffect": [{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"1878BF",
+					"rotation":12
+				},]
+		    	"hitEffect": [{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"1878BF",
+					"rotation":12
+				},]
+		    	"shootEffect":[{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":18
+				},
+{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"1878BF",
+					"rotation":24
+				},]
+    },
+	"requirements": [
+	{ "item":"0铜铅合金","amount":140},
+	{ "item":"1集成电路","amount":80},
+	{ "item":"titanium","amount":120},
+	{"item": "graphite","amount":60}
+	{ "item":"1绝缘钢","amount":90}
+	{ "item":"1共振石","amount":60}
+	{ "item":"1复合物","amount":120}
+    ],//造价
+    /*"research": {
+	"parent":"BAAsIC0小型护盾发生器"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	"category": "effect",//类型
+}

@@ -1,0 +1,240 @@
+{
+	"type": "ItemTurret",
+	"name": "天网",
+	"description": "发射多枚子母弹，子弹会自动飘浮到空中攻击空中单位，需要一定强大的后勤。\n[red][泽塔议会炮台]",
+	"health": 2460,
+	"size": 3,
+	"reload":160,
+	"range": 300,
+	"targetAir":true
+	"targetGround":false,
+		"maxAmmo":175,
+    "ammoPerShot": 5,
+	"consumes": {
+	"coolant":{"amount":1.4,"optional":true}  
+		},
+	"shoot":{
+		"shots":4,
+	    "shotDelay":40,
+		"type":"ShootAlternate",
+		"shootY":3,
+		"barrels":2,
+		"spread":8
+	},
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 4
+	"rotateSpeed": 4,
+	"shake":1,
+	"ammoTypes": {
+	"lead": {
+	    "reloadMultiplier":1
+			"speed": 7.5,
+			"damage": 3,
+			"lifetime":50,
+			"width": 12,
+			"height": 18,
+					"splashDamageRadius":35,
+		"splashDamage":47,
+	    "makeFire":true,
+	    "rangeChange": 75
+			"ammoMultiplier":4,
+			"shootEffect":"shootSmall",
+			
+	     	"statusDuration":360,	
+	     	"backColor":"768a9a",
+			"frontColor":"768a9a"
+			"trailWidth":1.5,
+			"trailLength":8
+			"collidesGround": false
+    "trailColor":"768a9a",
+			"fragBullets": 7,
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "768a9a",
+				"frontColor": "ffffffff",
+				"damage": 0
+				"lifetime": 20,
+				"speed": 1.5
+			"fragBullets": 1,
+			"collidesAir": false
+        "collidesGround": false
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "768a9a",
+				"frontColor": "ffffffff",
+				"damage": 1,
+				"splashDamageRadius": 20,
+				"splashDamage": 26,
+				"lifetime": 120,
+				"speed": 0
+				
+	     	"statusDuration":120,	
+	     	"collidesGround": false
+			}}
+	    },
+        "metaglass":{
+	    "reloadMultiplier":1.2,
+	    "speed": 10,  
+	    "lifetime":41,
+		"width": 12,"height": 18,
+		"damage":5
+		"rangeChange": 100
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":55,
+		"splashDamage":52,
+        "ammoMultiplier":7,
+        "fragLifeMin":0.1,
+        "backColor":"ffffffff",
+			"frontColor":"ffffffff"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"ffffffff",
+    "collidesGround": false
+			"fragBullets": 13,
+			"homingRange": 40,
+            "homingPower": 0.1,
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "ffffffff",
+				"frontColor": "ffffffff",
+				"damage": 0
+				"lifetime": 20,
+				"speed": 1.5
+			"fragBullets": 1,
+			"collidesAir": false
+        "collidesGround": false
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "ffffffff",
+				"frontColor": "ffffffff",
+				"damage": 4,
+				"collidesGround": false
+				"splashDamageRadius": 20,
+				"splashDamage": 32,
+				"lifetime": 120,
+				"speed": 0
+			}}}
+			"graphite": {
+	    "reloadMultiplier":0.8
+			"speed": 10,
+			"damage": 64,
+			"lifetime":35,
+			"width": 12,
+			"height": 18,
+	    "rangeChange": 50
+			"ammoMultiplier":7
+			"shootEffect":"shootSmall",
+	     	"backColor":"FFD700",
+			"frontColor":"ffffff"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"ffffffff",
+    "collidesGround": false
+			"fragBullets": 4,
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "FFD700",
+				"frontColor": "ffffffff",
+				"damage": 0
+				"lifetime": 20,
+				"speed": 1.5
+			"fragBullets": 1,
+			"collidesAir": false
+        "collidesGround": false
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "ffffffff",
+				"frontColor": "ffffffff",
+				"collidesGround": false
+				"damage": 11,
+				"splashDamageRadius": 20,
+				"splashDamage": 33,
+				"lifetime": 120,
+				"speed": 0
+				"shootEffect":"shootSmall",
+			}}
+	    },
+	    "pyratite": {
+	    "reloadMultiplier":1
+			"speed": 10,
+			"damage": 4,
+			"lifetime":35,
+			"width": 12,
+			"height": 18,
+	    "makeFire":true,
+	    "splashDamageRadius": 65,
+				"splashDamage": 23,
+	    "rangeChange": 50
+			"ammoMultiplier":4,
+			"shootEffect":"shootSmall",
+			"status":"burning",
+	     	"statusDuration":90,	
+	     	"backColor":"FFA95F",
+			"frontColor":"FFA95F"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"FFA95F",
+    "collidesGround": false
+			"fragBullets": 10,
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "FFA95F",
+				"frontColor": "FFA95F",
+				"damage": 0
+				"lifetime": 20,
+				"speed": 1.5
+			"fragBullets": 1,
+			"collidesAir": false
+        "collidesGround": false
+			"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 12,
+				"height": 12,
+				"backColor": "FFA95F",
+				"frontColor": "FFA95F",
+				"collidesGround": false
+				"damage": 11,
+				"splashDamageRadius": 28,
+				"splashDamage": 13,
+				"lifetime": 120,
+				"speed": 0
+				"shootEffect":"shootSmall",
+			"status":"burning",
+			}}
+	    },
+	    
+	}, 
+	"requirements": [
+{ "item": "copper", "amount": 65 }
+{ "item": "lead", "amount": 80 }
+{ "item": "metaglass", "amount": 85 }
+{ "item": "titanium", "amount": 45 }
+{ "item": "graphite", "amount": 85 }
+	],
+	"category": "turret",
+	"research": {
+        "parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+	]
+    }
+	    "researchCostMultiplier": 1
+	        "canOverdrive": false
+}

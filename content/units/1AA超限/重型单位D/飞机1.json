@@ -1,0 +1,204 @@
+{
+		"immunities": [
+"wet","spore-slowed","tarred","shocked","freezing","蜂群","甲板损坏"
+	],
+	//"targetPriority":-2
+	"name": "渊寻",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"engineOffset": 3,
+	"hitSize": 8
+	"engineSize": 3,
+	"health": 1680,
+	"armor": 32
+	"speed": 0.5,
+	"lifetime": 1500,
+	"rotateSpeed": 1,
+	"engineOffset": 0,
+	"missileAccelTime": 0,
+	"isEnemy":false
+    "allowedInPayloads":false
+    "logicControllable":false
+    "playerControllable":false
+	"abilities": [
+    { "type": "StatusFieldAbility",
+    "duration": 30,
+    "reload": 10,
+    "range": 100
+    "applyEffect":"none",
+    "activeEffect":"none",
+    "effect":"蜂群"  }
+    {"type":"ArmorPlateAbility",
+	"healthMultiplier":1.5}
+    ],
+	"weapons": [
+	{	"name": "无",	
+		"reload":92,
+        "x": 0,  "y": 0, 
+        "rotate": false,
+        "inaccuracy": 1,
+        "shootCone":30,
+	"continuous": true
+		"shoot":{
+			"shots":12,
+			"shotDelay":3
+		},
+		"shootSound": "pew",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+		"collidesGround":false,
+		"collidesAir":true,
+		"pierceArmor": true,
+	    "damage":36,	  
+	    "speed":3,
+	    "lifetime":35,
+	    "width":1.5,	 "height":5
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+    "homingDelay":5
+    "homingRange": 60
+    "homingPower": 0.03,
+	}	}
+	{	"name": "无",	
+		"reload":36,
+        "x": 1,  "y": 1, 
+        "rotate": true,
+        "inaccuracy": 1,
+        "shootCone":30,
+        "shootStatusDuration": 70,//发射时给自己的状态时间
+	"shootStatus": "静止",//发射时给自己的状态
+	"continuous": true
+		"rotateSpeed": 999
+		"shoot":{
+			"shots":6,
+			"shotDelay":3
+		},
+		"shootSound": "pew",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+		"collidesGround":true,
+		"collidesAir":false,
+		"pierceArmor": true,
+	    "damage":36,	  
+	    "speed":3,
+	    "lifetime":25,
+	    "width":1.5,	 "height":5
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+    "homingDelay":5
+    "homingRange": 60
+    "homingPower": 0.03,
+	}	}
+	{	"name": "无",	
+		//"minShootVelocity": 1.5,
+		"reload": 9999
+		"x": 0,  "y": 0,
+		//"ignoreRotation":true,
+		"rotate":  false
+		"shootCone":360,
+		"inaccuracy": 15,
+		"mirror": false,
+		"shootSound": "missile",
+		"bullet":{   
+	"collidesGround":true,
+	"collidesAir":false,
+	"splashDamage":602,
+	"splashDamageRadius":128,
+	"speed":1
+	"lifetime":120,
+	"width":8,	 "height":8,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+	"sprite":"missile-back",
+            "trailLength":3
+    "trailWidth":0.5,
+    "status": "甲板损坏",
+				"statusDuration": 220,
+    "trailColor":"1878BF",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+    "buildingDamageMultiplier":4
+	}	}
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 14,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 60,
+	"shootStatus": "僚机加速",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {"pierceArmor": true,
+	    "damage":0,	  
+	    "speed":0,
+	    "lifetime":1,
+	    "width":0,	 "height":0}}
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 14,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 60,
+	"shootStatus": "fast",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {"pierceArmor": true,
+	    "damage":0,	  
+	    "speed":0,
+	    "lifetime":1,
+	    "width":0,	 "height":0}}
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 1400,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 600,
+	"shootStatus": "冲刺",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {"pierceArmor": true,
+	    "damage":0,	  
+	    "speed":0,
+	    "lifetime":1,
+	    "width":0,	 "height":0}}
+	],
+	//"controller":"SuicideAI"
+}

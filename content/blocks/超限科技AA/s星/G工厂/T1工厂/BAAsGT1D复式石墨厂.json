@@ -1,0 +1,37 @@
+{
+	"type": "GenericCrafter",
+	"name": "复式石墨压缩机",
+	"health": 320,
+	"description": "能够快速加工石墨，以求前期的产量，但有大量损耗，尽管如此，它依旧被超限集团用于合成石墨。\n\n[blue][超限技术低级工厂]",
+	"outputItem": { "item": "graphite", "amount": 2 },
+	"updateEffect": "pulverizeMedium",
+	"alwaysUnlocked": false,
+	"size": 3,
+	"hasPower": false,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 40,
+	"itemCapacity": 10,
+	"consumes": {
+    "items": {	 "items": [
+    { "item": "coal", "amount": 4}
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 110 },
+	{ "item": "copper", "amount": 140 },
+	],
+	"category": "crafting",
+	"research": {
+	"parent":"BAAsGT1A铜铅熔合炉"
+	"objectives": [
+	"graphite-press"
+            {
+				"type": "SectorComplete",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"buildCostMultiplier":0.6
+	"researchCostMultiplier": 0.1
+}

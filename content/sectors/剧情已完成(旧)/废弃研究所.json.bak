@@ -1,0 +1,18 @@
+{
+"localizedName": "废弃研究所(待重做)",
+	"description": "[orange]该拿回我们失去的东西了。\n\n[green](by 没有炮台的炮台s )",
+    "planet":"serpulo"//母星名字。
+    "sector":83//区块坐标
+    "captureWave":13//胜利波次
+    "difficulty":2//难度1一5
+    "overrideLaunchDefaults": true,//进度覆盖
+    "research": {
+		"parent": "战役地图(超限工艺)",
+		"objectives": [
+		"敬请期待"
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-stainedMountains"
+			}
+			]}
+}

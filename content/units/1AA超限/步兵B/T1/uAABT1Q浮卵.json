@@ -1,0 +1,104 @@
+{
+	"type": "naval",
+	"name": "浮卵",
+	"description": "超限集团的航母，没有攻击能力，但是能发射无人机辅助战斗。[red]无人机重建较慢，无人机攻击状态时不会移动。\n[blue][超限技术航母]",
+		"immunities": [
+		"wet","spore-slowed","tarred"
+	],
+	"speed":0.6,
+	"rotateSpeed":0.9,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 60,
+    "trailLength":24,
+    "waveTrailX":0,
+    "waveTrailY":-6,
+    "trailScl":2,
+	"hitSize":10, 
+	"health": 240,
+	"armor":0,
+	"faceTarget": false,
+	"maxRange": 400,
+	    "abilities": [/*能力（如力场防御等） */
+        {
+        "type": "RepairFieldAbility"
+        "amount":133
+        "reload": 240
+        "range": 88
+    }]
+	"weapons":[
+	{	"name": "浮卵",	
+		"reload":600
+        "x": 0
+         "y": 0
+        "rotate": false,
+        "inaccuracy": 0
+		"shootSound": "respawn",
+		"rotateSpeed": 1
+		"alternate": true,
+		"shootCone": 360,
+		"ejectEffect":"casing1",
+		"shootY":0
+		"shootX":0
+		"mirror":false
+		"shootStatusDuration": 60,//发射时给自己的状态时间
+	"shootStatus": "静止",//发射时给自己的状态
+   "parts": [
+   {
+				"type": "RegionPart",
+				"suffix": "-1",
+				"layer": 72
+			},
+			{
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-2"
+      "x": 0
+      "y": 0
+      "layer": 71
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "mixColor": "FFFFFF00"
+      "mixColorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.999
+        "end": 1
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-2"
+      "x": 0
+      "y": 0
+      "layer": 71
+      "moveY": -7
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.2
+        "end": 0.3
+      }
+    }
+			]
+   "recoil": 0
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "无人机1",
+             "speed": 0,
+             }}
+	]
+	"research": {
+	"parent":"uAABT1N田螺"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "遗忘河滩"
+			}
+	]
+	}
+	//"controller": "DefenderAI"
+}

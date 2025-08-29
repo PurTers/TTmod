@@ -1,0 +1,52 @@
+{
+	"type": "ItemTurret",
+	"name": "护盾仪",
+	"description": "能够为周围的己方单位提供一定护盾，相对于小型护盾的回复量更大。\n\n\n\n\n护盾上限: [yellow]9000\n\n[red][泽塔议会特殊军用装置]",
+	"underBullets":true
+	"health": 1080,
+	"size": 3,
+	"reload":300,
+	"range": 220,
+	"alwaysShooting": true,
+		"targetGround": false
+	"targetAir": false
+		"maxAmmo":70
+    "ammoPerShot": 7
+    "rotateSpeed": 0
+     "shootX":0
+	    "shootY":0
+    "shootCone":360
+	"consumes": {
+	"power": 19
+		},
+	"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"inaccuracy": 360
+	"shake":1,
+	"ammoTypes": {
+        "phase-fabric": {
+	         "type": "BasicBulletType",
+             "spawnUnit": "盾2",
+             "speed": 0,
+		 }
+	}, 
+	"requirements": [
+        { "item": "titanium","amount": 540 },
+        { "item": "lead","amount": 740 },
+        { "item": "surge-alloy", "amount": 180 }
+        { "item": "phase-fabric", "amount": 180 }
+        { "item": "thorium", "amount": 320 }
+	],
+	"category": "units",
+/*	"research": {
+	"parent":"BA0slG1小型护盾仪"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+	    "researchCostMultiplier": 2,
+	    "canOverdrive":false
+}

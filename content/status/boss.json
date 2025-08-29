@@ -1,0 +1,9 @@
+{
+"name":"守护者( BOSS)",
+	"damageMultiplier":1.5,
+	"healthMultiplier":2,
+	"speedMultiplier":0.9,
+	"reloadMultiplier":1,
+	"damage":-1,
+	"effectChance":0.5,
+}

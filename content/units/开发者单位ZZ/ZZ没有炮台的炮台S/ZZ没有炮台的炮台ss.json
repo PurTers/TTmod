@@ -1,0 +1,244 @@
+{
+	"type": "flying",
+	"name": "没有炮台的炮台S(红温)",
+	"description": "奇点制作组的创始人，他的mod更新时间未知。",
+	"hidden":true,
+	"speed": 2.4,	
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":10,
+	"hidden": true,
+	    "abilities": [{
+        "type": "RepairFieldAbility"
+        "amount":2147483617
+        "reload":1
+        "range": 1
+    }
+    {//死亡时产生单位
+			"type": "SpawnDeathAbility",
+			"unit": "ZZ没有炮台的炮台S",
+			"amount": 1,//固定数量
+			"randAmount": 0//随机数量
+	},]
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 300,
+	"hitSize":10, 
+	"buildSpeed": 3,
+	"flying": true,
+	"faceTarget": true,
+	"health": 2147483617,
+	"armor":2147483617,
+	"engineOffset": 6,
+	"engineSize": 5,
+"mineSpeed": 15
+    "mineTier": 3
+    "weapons": [
+    {
+	"name": "无",	
+    "shoot":{
+		"shots":3
+	    "shotDelay":90
+	},
+	//"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"reload":1200
+        "x":24
+        "y":24
+        "rotate": false,
+        "rotateSpeed":0
+        "shootCone": 360,
+        "mirror":false
+        "alternate": false,
+	"bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "ZZ没有炮台的炮台s1",
+             "speed": 0,
+	               	}}
+	{
+	"name": "无",	
+    "shoot":{
+		"shots":3
+	    "shotDelay":90
+	},
+	//"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"reload":1200
+        "x":-24
+        "y":24
+        "rotate": false,
+        "rotateSpeed":0
+        "shootCone": 360,
+        "mirror":false
+        "alternate": false,
+	"bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "ZZ没有炮台的炮台s2",
+             "speed": 0,
+	               	}}
+	{
+	"name": "无",	
+    "shoot":{
+		"shots":3
+	    "shotDelay":90
+	},
+	//"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"reload":1200
+        "x":24
+        "y":-24
+        "rotate": false,
+        "rotateSpeed":0
+        "shootCone": 360,
+        "mirror":false
+        "alternate": false,
+	"bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "ZZ没有炮台的炮台s5",
+             "speed": 0,
+	               	}}
+	{
+	"name": "无",	
+    "shoot":{
+		"shots":3
+	    "shotDelay":90
+	},
+	//"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"reload":1200
+        "x":-24
+        "y":-24
+        "rotate": false,
+        "rotateSpeed":0
+        "shootCone": 360,
+        "mirror":false
+        "alternate": false,
+	"bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "ZZ没有炮台的炮台s6",
+             "speed": 0,
+	               	}}
+	{	"name": "没有炮台的炮台s1",	
+		"reload":21,
+        "x": 24
+         "y": 24
+        "rotate": true,
+        "inaccuracy": 0,
+         "mirror":false
+		"shootCone":60,
+		"shoot":{
+			"shots":33
+			"shotDelay":13
+		},
+		"shootSound": "机枪",
+		"rotateSpeed": 0
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":16,	  
+	    "speed":6.5
+	    "lifetime":60
+	    "width":2,	 "height":10
+	    "homingRange": 40,
+            "homingPower": 0.1,
+	}	}
+	{	"name": "没有炮台的炮台s2",	
+		"reload":99
+        "x": -24
+         "y": 24
+        "rotate": true,
+        "inaccuracy": 15
+         "mirror":false
+		"shootCone":60,
+		"shoot":{
+			"shots":33
+			"shotDelay":69
+		},
+		"shootSound": "火炮发射",
+		"rotateSpeed": 0
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":0
+	    "splashDamageRadius":60,
+		"splashDamage":120
+	    "speed":2
+	    "lifetime":230
+	    "width":20,	 "height":20
+	    "homingRange": 40,
+            "homingPower": 0.1,
+	}	}
+	{	"name": "没有炮台的炮台s5",	
+	               	"shootCone":30,
+		"reload":61,
+        "x": 24
+         "y": -24
+        "rotate": false
+        "inaccuracy": 0
+		"shootSound": "小导弹炮",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		 "mirror":false
+		"shoot":{
+		"shots":33
+	    "shotDelay":15
+	},
+   "recoil": 2,
+   "recoils": 2,
+		"bullet":{
+		"sprite":"missile",
+	    "reloadMultiplier":1.4
+			"speed":5
+			"damage": 330
+			"lifetime":98
+			"width": 8
+			"height":16
+			 "weaveMag":2,
+	        "weaveScale":4,
+			//"splashDamageRadius":15,
+		//"splashDamage":78
+	    "makeFire":true,
+			"ammoMultiplier":5
+			"shootEffect":"shootSmall",
+			"homingRange": 40,
+            "homingPower": 0.1,
+	}
+	}
+	{	"name": "没有炮台的炮台s6",	
+	               	"shootCone":30,
+		"reload":61,
+        "x": -24
+         "y": -24
+        "rotate": false
+        "inaccuracy": 0
+		"shootSound": "火炮",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		 "mirror":false
+		"shoot":{
+		"shots":33
+	    "shotDelay":15
+	},
+   "recoil": 2,
+   "recoils": 2,
+		"bullet":{
+		"sprite":"missile",
+	    "reloadMultiplier":1.4
+			"speed":320
+			"lifetime":1
+			"width": 8
+			"height":16
+			 "weaveMag":2,
+	        "weaveScale":4,
+			"splashDamageRadius":60,
+		"splashDamage":80
+	    "makeFire":true,
+			"ammoMultiplier":5
+			"shootEffect":"shootSmall"
+			"homingRange": 40,
+            "homingPower": 0.1,
+	}
+	}
+	               	]
+}
+//paotaiS

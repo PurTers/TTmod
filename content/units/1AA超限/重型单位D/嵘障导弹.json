@@ -1,0 +1,56 @@
+{
+		"immunities": ["甲板损坏"
+	],
+	"name": "盾形仪",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 680,
+	"armor": 12
+	"speed": 7
+	"lifetime": 40
+	"maxRange": 6,
+	"rotateSpeed": 0
+	"engineColor": "c0ecff",
+	"trailColor": "c0ecff60",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"missileAccelTime": 0,
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "1878BF",
+	"abilities": [
+    {//死亡时产生单位
+			"type": "SpawnDeathAbility",
+			"unit": "盾形仪",
+			"amount": 1,//固定数量
+			"randAmount": 0//随机数量
+			"spread": 0,
+	    "faceOutwards": false,
+	},]
+	"weapons": [
+		{
+			"shootCone": 360,
+			"mirror": false,
+			"reload": 1,
+			"shake": 10,
+			"shootOnDeath": true,
+			"shootSound": "plasmaboom",
+			"bullet": {
+				"collidesGround": true
+	"collidesAir": true
+				"type": "ExplosionBulletType",
+				"hitColor": "c0ecff",
+				"splashDamage": 336
+				"splashDamageRadius": 36
+				"despawnShake": 3,
+				"fragVelocityMin": 4
+				"buildingDamageMultiplier":0.1
+				"status": "破甲",
+			"statusDuration": 300,
+		}
+		}
+	],
+}

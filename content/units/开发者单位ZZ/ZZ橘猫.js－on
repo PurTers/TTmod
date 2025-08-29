@@ -1,0 +1,54 @@
+{
+"localizedName": "橘猫",
+	"type": "mech",
+	"hitSize": 12,
+	"canDrown": false,
+	"armor": 36,
+	"speed": 0.55,
+	"rotateSpeed": 1.5,
+	"health": 900,
+"buildSpeed": 1.2
+"description": "新任的地图师？"
+	"mechStepParticles": true,
+	"ammoCapacity": 350,
+		"abilities": [
+		{//死亡时产生单位
+			"type": "SpawnDeathAbility",
+			"unit": "ZZ橘猫",
+			"amount": 1,//固定数量
+			"randAmount": 0//随机数量
+	}]
+	"weapons": [{
+			"name": "橘猫1",
+			"reload": 16,
+			"shake": 3,
+			"recoil": 0,
+			"x": 0,
+			"y": 3,
+			"shootX": 0,
+			"shootY": 22,
+			"rotate": false,
+			"top": false,
+			"inaccuracy": 0.5,
+			"shootSound": "blaster",
+			"alternate": true,
+			"ejectEffect": "casing4",
+			"bullet": {
+	"type":"BasicBulletType",
+	"absorbable":false,
+	"damage":1,
+	"splashDamage":80,
+	"splashDamageRadius":12, 
+	"collides":true,
+	"speed":10
+	"sprite":"2024拜年寄-cross",
+	"spin":7,
+    "hitShake":5,
+	"lifetime":60
+	"shootEffect": "shootBig",
+    "width":20, "height":20,
+    "hitEffect":"explosion",
+    "despawnEffect":"flakExplosionBig",    
+		}	},
+	]
+}

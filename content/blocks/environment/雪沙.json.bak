@@ -1,0 +1,15 @@
+{
+    "type": "Floor",
+    "name": "雪沙",
+	"damageTaken":0,
+		"speedMultiplier":1
+	//单位在这个单位上的速度倍率
+	"statusDuration":0,	
+	"isLiquid": false,
+	"itemDrop":"sand"
+	"variants":3
+	"attributes": {
+		"oil": 0.3
+		"water": 0.1
+	},//增幅效果
+}

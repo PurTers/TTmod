@@ -1,0 +1,24 @@
+{
+    "description": "建立一个简易的储存器，可以使用卸载器取出物品，容量较小\n \n [超限集团储存单元]",
+    "requirements": [
+    {"amount": 100, "item": "copper"}
+    { "item": "lead", "amount": 50 }
+    { "item": "0铜铅合金", "amount": 50 }
+   ],
+    "type": "StorageBlock",
+    "name": "盒子",
+    "size": 1,
+    "itemCapacity": 90,
+    "research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+    "category": "effect"
+    "researchCostMultiplier": 0.5
+    "buildCostMultiplier":0.25
+}

@@ -1,0 +1,149 @@
+{
+    "type": "flying",
+    "name":"灾劫"
+    "description": "飞行单位，迅速，有及高的攻速，能够有效制空，两边的激光炮能有效攻击空中单位。\n\n[blue][超限技术飞行作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+    "speed": 3
+    "hitSize": 30
+    "health": 720
+    	"rotateSpeed": 12
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":true,  
+    "targetGround":true,
+    "flying": true,
+    "armor":22
+    "itemCapacity": 0
+    "targetFlags":["generator","core"],
+    "engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"engineLayer": 100,
+	"engineSize": 5.1,
+	"engineOffset": 9
+	"trailLength": 18,
+	"trailWidth": 2,
+	"itemCapacity": 30
+	"abilities": [
+        {
+    "type":"ForceFieldAbility",
+    "sides": 8,
+    "radius": 32,
+    "regen": 1.2
+    "max": 3000,
+    "cooldown": 120,}
+    ],
+    "weapons": [
+   {	"name": "无",	
+		"reload": 10, 
+		"x": 5,  "y": 5, 
+		"rotate": false,
+		"shootCone":30,
+		"ejectEffect":"none",
+		"shootSound":"blaster",
+		"mirror":true,
+		"inaccuracy": 0,
+		"alternate": true,
+		"bullet":{
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"status": "脆裂",
+			"statusDuration": 330,
+	//"pierceBuilding": true,
+		"collidesGround":false,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"damage": 312
+	//"buildingDamageMultiplier":0.35,
+	"pierceCap": 8
+	"width": 8,	"length": 90,
+	"lifetime": 40
+    }
+	   	}
+	   	{	"name": "无",	
+		"reload": 60, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":30,
+		"ejectEffect":"none",
+		"shootSound":"blaster",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"bullet":{
+    "type":"BasicBulletType",
+    "speed": 8
+    "lifetime":30
+	"width": 6
+	"height": 6
+	"damage":88
+    "hitSize":4
+    "collidesGround": false
+    "collidesAir": true
+    "status": "破甲",
+			"statusDuration": 46,
+			"trailLength":6
+    "trailWidth":3
+    "trailColor":"1878BF",
+    "backColor":"1878BF",
+    "frontColor":"7CF389"
+    "fragBullets":6
+    "fragRandomSpread": 30,
+    "fragBullet":{
+    "type":"BasicBulletType",
+    "speed": 0.5
+    "lifetime":30
+	"width": 3
+	"height": 10
+	"damage":11
+    "hitSize":4
+    "buildingDamageMultiplier":1.2
+    "collidesGround": false
+    "collidesAir": true
+    "status": "破甲",
+			"statusDuration": 46,
+			"trailLength":3
+    "trailWidth":1.5,
+    "trailColor":"1878BF",
+    "backColor":"1878BF",
+    "frontColor":"1878BF"
+    "fragBullets":6
+    "fragRandomSpread": 30,
+    "fragBullet":{
+    "type":"BasicBulletType",
+    "speed": 1
+    "lifetime":120
+	"width": 3
+	"height": 10
+	"damage":3
+    "hitSize":4
+    "buildingDamageMultiplier":1.2
+    "pierceCap": 3,
+    "pierceBuilding": true,
+    "pierceArmor": true,
+    "status": "破甲",
+			"statusDuration": 46,
+			"trailLength":3
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+    }
+    }
+    }
+	   	}
+    ]
+  /* "research": {
+	"parent":"uAABT2K掠影"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "saltflats"
+			}
+	]
+	}*/
+}

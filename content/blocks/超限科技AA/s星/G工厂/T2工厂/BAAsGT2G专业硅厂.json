@@ -1,0 +1,49 @@
+{
+	"type": "GenericCrafter",
+	"name": "专业硅炉",
+	"health": 1040,
+	"description": "专业加工硅，有更大产量，同时你需要有更大的物品供应让其正常运作\n\n[blue][超限技术中级工厂]",
+	"outputItem": { "item": "silicon", "amount": 5 },
+	"alwaysUnlocked": false,
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 30,
+	"itemCapacity": 50,
+	"craftEffect": "pulverizeSmall"
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+	"power": 3,
+    "items": {	 "items": [
+    { "item": "coal", "amount": 4}
+    { "item": "sand", "amount": 8}
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 180 },
+	{ "item": "copper", "amount": 220 },
+	{ "item": "graphite", "amount": 120}
+	{ "amount": 90, "item": "plastanium" }
+	{ "amount": 100, "item": "0铜铅合金" }
+	{ "amount": 40, "item": "1集成电路" }
+	],
+	"category": "crafting",
+	"research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

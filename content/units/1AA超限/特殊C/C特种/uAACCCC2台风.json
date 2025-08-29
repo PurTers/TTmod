@@ -1,0 +1,239 @@
+{
+	"type": "naval",
+	"name": "台风",
+	"description": "超限集团的水下特殊单位，能够悄无声息的摧毁敌方舰船，在水下可以发射导弹以打击地面和空中单位，浮上水面时可以对敌方建筑发动致命性的核打击。\n\n[red]此单位不会在小地图上显-示！！！\n\n[blue][超限技术特种单位]",
+		"immunities": [
+"wet","spore-slowed","tarred","freezing","tarred","甲板损坏"
+	],
+	"speed":0.25,
+	"rotateSpeed":0.38,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 60,
+    "trailLength":24,
+    "waveTrailX":0,
+    "waveTrailY":-6,
+    "trailScl":2,
+	"hitSize":48, 
+	"health": 89280,
+	"armor":80,
+	"shadowElevationScl": 0
+	"drawMinimap":false
+	"weapons":[
+	    {
+            "name": "无",
+            "reload": 96
+            "x":0
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootWarmupSpeed": 0.064,
+		    "shootCone": 360,
+		    "recoil": 0,
+			"showStatSprite": false
+			"shoot":{
+	"shots": 4
+        "shotDelay": 20
+        "type": "ShootBarrel",
+        "barrels": [
+        25,20,-90,
+        -25,20,90,
+        
+        25,15,-90,
+        -25,15,90,
+        ]}
+			"shootStatusDuration": 75,
+	"shootStatus": "掩体无效",
+    "bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (4)",
+             "speed": 0,
+	               	}}
+		{
+            "name": "台风1",
+            "reload": 3600
+            "x":0
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootWarmupSpeed": 0.016,
+		    "shootCone": 360,
+		    "recoil": 0,
+    "parts": [
+        {"type":"RegionPart",
+        "mirror":false
+        //"x": 0,"y": 0
+        "x":0,"y":0,
+        "suffix":"-1"
+        "layer":71,
+        "progress": "warmup"
+        "outline": false
+        "colorTo": "ffffff"
+        "color": "6476D540"
+        }
+        {"type":"RegionPart",
+        "mirror":true
+        //"x": 0,"y": 0
+        "x":0,"y":0,
+        "suffix":"-盖子"
+        "layer":72,
+        "progress": "warmup"
+        "outline": false
+        "colorTo": "ffffff"
+        "color": "6476D540"
+       "moves": [
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.95
+                            "end": 0.99
+                        }
+                        "x":-12
+                        "y":0
+                        "gy": 0
+                        "gx": 0
+                        "rot":0
+        		    }
+        		    ]
+        }
+			]
+			"showStatSprite": false
+			"shootStatusDuration": 1200,
+	"shootStatus": "掩体无效",
+    "bullet":{
+                "speed": 100
+                "lifetime":1
+                "width": 0,"height": 0,
+                "damage":0
+                "shootEffect": "none",
+				"hitEffect": "none",
+				"despawnEffect": "none"
+				"smokeEffect": "none"
+				"despawnSound":"none",
+				"fragBullets": 1,
+        "fragBullet": {
+	         "type": "BasicBulletType",
+             "spawnUnit": "阿尔法聚变导弹 (1)",
+             "speed": 0,
+	               	}
+	               	}
+	               	}
+	{
+			"name": "台风2",
+			"mirror": false,
+			"reload": 96,
+			"x": 0,
+			"y": 0,
+			"shootCone": 360,
+			"shootSound": "none",
+			"ignoreRotation": true,
+			"rotate": false,
+			"rotateSpeed": 0,
+			"inaccuracy": 0,
+			"shootEffect": "none",
+			"smokeEffect": "none",
+			//"baseRotation":-90
+			"minWarmup": 0.99
+		    //"rotationLimit": 0
+		    "mirror": false,
+		    "shootWarmupSpeed": 0.128,
+		    "parts": [
+        {"type":"RegionPart",
+        "mirror":true
+        "moveX":12
+        "x":0,"y":0,
+        "suffix":"-1"
+        "layer":61,
+        "progress": "warmup"
+        "outline": false
+        "colorTo": "6476D560"
+        "color": "6476D560"
+        }]
+		    "shoot":{
+	"shots": 10
+        "shotDelay": 0
+        "type": "ShootBarrel",
+        "barrels": [
+        35,20,-90,
+        35,10,-90,
+        35,0,-90,
+        35,-10,-90,
+        35,-20,-90,
+        
+        -35,20,90,
+        -35,10,90,
+        -35,0,90,
+        -35,-10,90,
+        -35,-20,90,
+        ]}
+			"bullet": {
+			"homingRange": 240,
+            "homingPower": 0.6,
+            "homingDelay":5
+            "trailLength":3
+			"width": 8,
+				"height": 40,
+				"speed": 2,
+				"lifetime": 240
+				"damage": 120,
+				"splashDamageRadius": 35,
+				"splashDamage": 45,
+				"absorbable": false,
+				"collidesAir": false,
+				"collideFloor": true,
+				"hitEffect": "flakExplosionBig",
+				"hitSound": "explosion",
+				"despawnEffect": "flakExplosionBig",
+				"sprite": "missile",
+				"status": "甲板损坏",
+				"statusDuration": 300,
+				"trailLength": 12,
+				"trailWidth": 1.2,
+				"trailColor": "c0ecff",
+				"backColor": "1878BF60",
+				"frontColor": "1878BF60",
+				"trailChance": 1,
+				"trailInterval": 2,
+				"trailRotation": true,
+				"buildingDamageMultiplier":0.1
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"particles": 3,
+					"sizeFrom": 1,
+					"sizeTo": 3,
+					"lifetime": 45,
+					"interp": "pow10Out",
+					"baseLength": 3,
+					"cone": 30,
+					"length": -35,
+					"colorFrom": "1878BF30",
+					"colorTo": "1878BF00"
+				},
+			}
+		}
+	]
+/*	"research": {
+	"parent":"uAABT1Q浮卵"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "遗忘河滩"
+			}
+	]
+	}*/
+	//"controller": "DefenderAI"
+}

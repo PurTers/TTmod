@@ -1,0 +1,61 @@
+{
+    "name": "融化炉",
+    "type": "GenericCrafter",
+    "description": "能够更为高效的融化废料，同时有更多的矿渣产出\n\n[blue][超限技术中级工厂]",
+    "itemCapacity": 40,
+    "health": 500,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 25,
+    "updateEffect": "fireballsmoke",
+	"craftEffect": "blastsmoke"
+    "drawer":{
+	    "type":"DrawMulti",
+	    "drawers":[
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-bottom"
+	    },
+	    {
+	       "type":"DrawLiquidTile",
+	    "drawLiquid":"slag"
+	    },
+	    "DrawDefault"
+	]},
+    "updateEffect": "melting",
+    "consumes": {
+        "power": 5,
+        "items": {
+        "items":[
+                {
+                "item": "scrap",
+                "amount": 7
+                },
+                ]
+        },
+    },
+    "liquidCapacity": 480,
+    	"outputLiquid": {"liquid": "slag", "amount": 2.1},
+    "requirements": [
+        { "item": "titanium","amount": 160 },
+        { "item": "graphite","amount":120 },
+	{ "amount": 90, "item": "0铜铅合金" }
+        { "item": "silicon", "amount": 150},
+        {  "item": "lead","amount": 200}
+        { "amount": 120, "item": "1集成电路" }
+    ],
+    "category": "crafting",
+    "research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+    "researchCostMultiplier": 0.5
+    "buildCostMultiplier":0.25
+}

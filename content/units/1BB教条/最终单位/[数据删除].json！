@@ -1,0 +1,1469 @@
+{
+	"type": "flying",
+	"name": "[数据删除]",
+	"description": "[数据删除]"
+	"ammoCapacity": 100,
+    "speed": 1
+	"flying": true,
+	"engineOffset": 0,
+	"engineSize": 0
+    "hitSize": 20,
+    "targetAir":"true",
+    "health": 666666,
+    "armor": 0,
+    "rotateSpeed": 2.5
+    "engineColor":"FF5B5B",
+    "itemCapacity": 0,
+       "abilities": [/*能力（如力场防御等） */
+        {
+        "type": "RepairFieldAbility"
+        "amount":60
+        "reload": 1
+        "range": 1
+    }
+        {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 100.0,
+        "max": 80000.0,
+        "reload": 1.0,
+        "range": 1.0,
+    }
+    {
+        "type": "EnergyFieldAbility"
+        "damage": 32.0
+        "reload": 5.0
+        "range": 500.0
+        "status": "electrified"
+        "statusDuration": 360.0
+        "targetGround": true
+        "targetAir": true
+        "hitBuildings": true
+        "hitUnits": true
+        "healPercent": 0.1
+        "maxTargets": 16
+        "useAmmo": true
+        "color": "FF5B5B"
+    }
+    ],
+    "parts": [
+{
+			"type": "HaloPart",
+			"rotateSpeed":0
+			"sides": 3,
+			"shapes": 6
+			"color": "FF5B5B",
+			"colorTo":"FF5B5B",
+			"layer":110,
+			"tri": true,
+			"radius": 24,
+			"radiusTo": 0,
+			"triLength": 50,
+			"triLengthTo":0,
+			"haloRadius": 0,
+			"haloRadiusTo": 0,
+			"haloRotation": 0
+			"haloRotateSpeed": 1
+}
+{
+			"type": "HaloPart",
+			"rotateSpeed":0
+			"sides": 3,
+			"shapes": 1
+			"color": "FF5B5B",
+			"colorTo":"FF5B5B",
+			"layer":110,
+			"tri": true,
+			"radius": 18,
+			"radiusTo": 33,
+			"triLength": 80,
+			"triLengthTo":160,
+			"haloRadius": 0,
+			"haloRadiusTo": 0,
+			"haloRotation": 120
+			"haloRotateSpeed": 0.1
+}
+{
+			"type": "HaloPart",
+			"rotateSpeed":0
+			"sides": 3,
+			"shapes": 1
+			"color": "FF5B5B",
+			"colorTo":"FF5B5B",
+			"layer":110,
+			"tri": true,
+			"radius": 18,
+			"radiusTo": 33,
+			"triLength": 60,
+			"triLengthTo":120,
+			"haloRadius": 0,
+			"haloRadiusTo": 0,
+			"haloRotation": 10
+			"haloRotateSpeed": 0.6
+}
+{
+			"type": "ShapePart",
+			"colorTo":"FF5B5B",
+			"color": "FF5B5B",
+			"layer":110,
+			"stroke": 10,
+			"strokeTo": 10,
+			"circle": true,
+			"hollow": false,
+			"radius": 14
+			"radiusTo": 22
+			"x": 0,    "y": 0,
+},
+{
+			"type": "ShapePart",
+			"colorTo":"272727",
+			"color": "272727",
+			"layer":110,
+			"stroke": 10,
+			"strokeTo": 10,
+			"circle": true,
+			"hollow": false,
+			"radius": 15
+			"radiusTo": 8
+			"x": 0,    "y": 0,
+},
+{
+			"type": "ShapePart",
+			"colorTo":"272727",
+			"color": "272727",
+			"layer":110,
+			"stroke": 0,
+			"strokeTo": 5,
+			"circle": true,
+			"hollow": true,
+			"radius": 0
+			"radiusTo": 18
+			"x": 0,    "y": 0,
+},
+{
+			"type": "ShapePart",
+			"colorTo":"FF5B5B",
+			"color": "FF5B5B",
+			"layer":110,
+			"stroke": 10,
+			"strokeTo": 10,
+			"circle": true,
+			"hollow": true,
+			"radius": 0
+			"radiusTo": 80
+			"x": 0,    "y": 0,
+},
+{
+			"type": "ShapePart",
+			"colorTo":"FF5B5B",
+			"color": "FF5B5B",
+			"layer":110,
+			"stroke": 10,
+			"strokeTo": 10,
+			"circle": true,
+			"hollow": true,
+			"radius": 66
+			"radiusTo": 120
+			"x": 0,    "y": 0,
+},
+{
+			"type": "HaloPart",
+			"rotateSpeed":3
+			"sides": 4
+			"shapes": 6
+			"color": "FF5B5B",
+			"colorTo":"FF5B5B",
+			"layer":110,
+			"tri": false,
+			"radius": 0,
+			"radiusTo": 80,
+			"triLength": 0,
+			"triLengthTo":50,
+			"haloRadius": 0,
+			"haloRadiusTo": 0,
+			"haloRotation": 0
+			"haloRotateSpeed": -8
+}
+{
+                "type": "HaloPart",
+                "rotateSpeed": 0,
+                "sides": 3,
+                "shapes": 8,
+                "color": "FF5B5B",
+                "colorTo":"ffffff",
+                "tri": true,
+                "hollow": true,
+                "stroke": 0,
+                "strokeTo": 0,
+                "radius": 66,
+                "radiusTo": 120,
+                "triLength": 24,
+                "triLengthTo": 24,
+                "haloRadius": 44,
+                "haloRotation": 80,
+                "haloRotateSpeed": 1.5,
+                "layer": 110
+            }
+    ]
+    "weapons": [
+    
+    //？？？？？？？？？？？？？？？？？？？？？
+    
+    {	"name": "nono",	
+	
+		"reload": 1200
+        "x": 0,  "y": 0, 
+        "rotate": true,
+        "rotateSpeed":8,
+        "mirror":false,
+        "inaccuracy": 0,
+	"ejectEffect":"casing1",
+	"shootSound": "nono",
+		"alternate": false
+		"bullet":{
+		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":666
+	    "speed":5
+	    "splashDamageRadius":48,
+	"splashDamage":666,
+	"knockback": 1,
+	    "lifetime":90,
+	    "width":12,	 "height":12
+	    "homingRange": 60,
+        "homingPower": 0.5,
+    "weaveMag":2,
+	"weaveScale":4,
+	"makeFire":true,
+            "pierceArmor": true,
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "FF5B5B",
+                        "stroke": 4,
+                        "radius": 0,
+                        "radiusTo": 62,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                    {
+			"type": "ShapePart",
+			"colorTo":"FF5B5B",
+			"color": "FF5B5B",
+			"layer":110,
+			"stroke": 5
+			"strokeTo": 5
+			"circle": true,
+			"hollow": true,
+			"radius": 24
+			"radiusTo": 24
+			"x": 0,    "y": 0,
+},
+{
+			"type": "ShapePart",
+			"colorTo":"FF5B5B",
+			"color": "FF5B5B",
+			"layer":110,
+			"stroke": 10,
+			"strokeTo": 10,
+			"circle": true,
+			"hollow": false,
+			"radius": 14
+			"radiusTo": 14
+			"x": 0,    "y": 0,
+},
+                    {
+			"type": "ShapePart",
+			"colorTo":"FF5B5B",
+			"color": "FF5B5B",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 48
+			"radiusTo": 48
+			"x": 0,    "y": 0,
+},
+{
+                "type": "HaloPart",
+                "rotateSpeed": 0,
+                "sides": 3,
+                "shapes": 8,
+                "color": "FF5B5B",
+                "colorTo":"FF5B5B",
+                "tri": true,
+                "hollow": true,
+                "stroke": 0,
+                "strokeTo": 0,
+                "radius": 66,
+                "radiusTo": 120,
+                "triLength": 24,
+                "triLengthTo": 24,
+                "haloRadius": 44,
+                "haloRotation": 80,
+                "haloRotateSpeed": 1.5,
+                "layer": 110
+            }]
+"fragBullets":9,
+"fragRandomSpread": 0,
+	"fragSpread": 40,
+        "fragBullet":{
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":63,
+	    "speed":0.1
+	    "splashDamageRadius":12,
+	"splashDamage":60,
+	"knockback": 1,
+	    "lifetime":100,
+	    "width":3,	 "height":7
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "FF5B5B",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+
+                "fragBullets":3
+        "fragBullet":{
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":0
+	    "speed":0,
+	"knockback": 1,
+	    "lifetime":10,
+	    "width":3,	 "height":7
+	    "lightningDamage":23,
+            "lightningColor": "FF5B5B",
+    "lightning":7
+    "lightningLength":10
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragBullets":1
+        "fragBullet":{
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":0
+	    "speed":0,
+	"knockback": 1,
+	    "lifetime":10,
+	    "width":3,	 "height":7
+	    "lightningDamage":23,
+            "lightningColor": "FF5B5B",
+    "lightning":7
+    "lightningLength":18
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragBullets":1
+        "fragBullet":{
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":0
+	    "speed":0,
+	"knockback": 1,
+	    "lifetime":10,
+	    "width":3,	 "height":7
+	    "lightningDamage":23,
+            "lightningColor": "FF5B5B",
+    "lightning":7
+    "lightningLength":18
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragBullets":1
+        "fragBullet":{
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":0
+	    "speed":0,
+	"knockback": 1,
+	    "lifetime":10,
+	    "width":3,	 "height":7
+	    "lightningDamage":23,
+            "lightningColor": "FF5B5B",
+    "lightning":7
+    "lightningLength":18
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragBullets":1
+        "fragBullet":{
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":0
+	    "speed":0,
+	"knockback": 1,
+	    "lifetime":10,
+	    "width":3,	 "height":7
+	    "lightningDamage":23,
+            "lightningColor": "FF5B5B",
+    "lightning":7
+    "lightningLength":18
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragBullets":1
+        "fragBullet":{
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":0
+	    "speed":0,
+	"knockback": 1,
+	    "lifetime":10,
+	    "width":3,	 "height":7
+	    "lightningDamage":23,
+            "lightningColor": "FF5B5B",
+    "lightning":7
+    "lightningLength":18
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+        }
+        }
+        }
+        
+        }
+        }
+        }
+        }
+                "intervalBullets":1 ,
+                "intervalBullet": {
+        "sprite":"超限工艺-eye",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":63,
+	    "speed":0
+	    "splashDamageRadius":12,
+	"splashDamage":66,
+	"knockback": 1,
+	    "lifetime":400,
+	    "width":12,	 "height":12
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+             "intervalBullets":1 ,
+            "intervalBullet": {
+            "despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "sprite":"超限工艺-尖刺1",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":63,
+	    "speed":1
+	    "splashDamageRadius":12,
+	"splashDamage":66,
+	"knockback": 1,
+	    "lifetime":60,
+	    "width":12,	 "height":12
+	"makeFire":true,
+	 "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            }
+            }
+	}
+	}
+	
+	//？？？？？？？？？？？？？？？？？？？？？？
+	
+	
+        {	"name": "nono1",	
+	
+		"reload": 120
+        "x": 0,  "y": 0, 
+        "rotate": true,
+        "rotateSpeed":8,
+        "mirror":false,
+        "inaccuracy": 0,
+	"ejectEffect":"casing1",
+	"shootSound": "nono",
+		"alternate": false
+		"shoot": {
+            "type": "ShootSpread",
+        "shots": 3,
+            "spread": 30,
+        "shotDelay": 20
+    },
+		"bullet":{
+		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":666
+	    "speed":5
+	    "splashDamageRadius":48,
+	"splashDamage":666,
+	"knockback": 1,
+	    "lifetime":90,
+	    "width":12,	 "height":12
+	    "homingRange": 50,
+        "homingPower": 0.5,
+    "weaveMag":2,
+	"weaveScale":4,
+	"makeFire":true,
+            "pierceArmor": true,
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "FF5B5B",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 48,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                    {
+			"type": "ShapePart",
+			"colorTo":"FF5B5B",
+			"color": "FF5B5B",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 48
+			"radiusTo": 48
+			"x": 0,    "y": 0,
+},]
+"fragBullets":9,
+"fragRandomSpread": 0,
+	"fragSpread": 40,
+        "fragBullet":{
+        "intervalBullets":1 ,
+        "shootEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 48,
+            "strokeFrom": 96,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 48,
+            "sizeTo": 48,
+            "strokeFrom": 48,
+            "strokeTo": 94,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":63,
+	    "speed":6
+	    "splashDamageRadius":12,
+	"splashDamage":60,
+	"knockback": 1,
+	    "lifetime":100,
+	    "width":3,	 "height":7
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "FF5B5B",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+                "fragBullets":1,
+"fragRandomSpread": 0,
+	"fragSpread": 1,
+        "fragBullet":{
+        		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":63,
+	    "speed":-3
+	    "splashDamageRadius":12,
+	"splashDamage":60,
+	"knockback": 1,
+	    "lifetime":200,
+	    "width":3,	 "height":7
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "FF5B5B",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]}
+			"intervalBullet": {
+        "sprite":"超限工艺-eye",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":63,
+	    "speed":0
+	    "splashDamageRadius":12,
+	"splashDamage":66,
+	"knockback": 1,
+	    "lifetime":400,
+	    "width":12,	 "height":12
+	"makeFire":true,
+	        "pierce":true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            }
+        }
+	}
+	}
+	
+	
+	
+	//？？？？？？？？？？？
+	
+	
+	        {	"name": "nono2",	
+	
+		"reload": 600
+        "x": 0,  "y": 0, 
+        "rotate": true,
+        "rotateSpeed":8,
+        "mirror":false,
+        "inaccuracy": 360,
+	"ejectEffect":"casing1",
+	"shootSound": "nono",
+		"alternate": false,
+		"shoot":{
+		"shots":73
+	    "shotDelay":5
+	},
+		"bullet":{
+		"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 360,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "FF5B5B",
+            "colorTo": "FF5B5B00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 360,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FF5B5B",
+        "colorTo": "FF5B5B00"
+	   }
+	   ]
+		"frontColor":"FF5B5B"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"FF5B5B",
+    "backColor":"FF5B5B",
+    "frontColor":"FF5B5B"
+		"targetair": true
+	    "damage":63,
+	    "speed":3
+	    "splashDamageRadius":12,
+	"splashDamage":66,
+	"knockback": 1,
+	    "lifetime":200,
+	    "width":3,	 "height":7
+	    "homingRange": 60,
+        "homingPower": 0.5,
+    "weaveMag":2,
+	"weaveScale":4,
+	"makeFire":true,
+	        "pierceCap": 6
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "FF5B5B",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+	}
+	}
+	               				{"name": "无",	
+	"reload":18000,
+	"mirror":false
+        "x": -30,  "y": 0, 
+        "rotate": true,
+		"shootY":3,
+        "rotateSpeed":24,
+        "inaccuracy": 0,
+	"bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "日 (1)",
+             "speed": 0,
+	               	}}
+			]
+}

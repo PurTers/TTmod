@@ -1,0 +1,109 @@
+{
+    "type": "mech",
+    "name":"压制"
+    "description": "以响应为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，不能防空\n\n[blue][超限技术作战中机甲]",
+    "immunities": [
+		"wet","spore-slowed","甲板损坏"
+	],
+    "speed": 0.9
+    "hitSize": 18
+    "health": 620,
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":8
+    "itemCapacity": 30
+    "abilities": [
+    {
+    "type": "ShieldArcAbility",
+		"whenShooting":false,//是否射击时存在(Flash为一直存在)
+		"radius": 30,//半径
+		"width": 10,//宽度
+		"max": 500,//最大容量
+		"regen": 0.12,//再生速度
+		"cooldown": 80,//护盾冷却时间
+		"angle": 180,//护盾弧度
+		"angleOffset": 1//护盾角度
+	}
+    ]
+    "weapons": [
+       {
+            "name": "压制1",
+            "reload": 20
+            "x":0
+            "y":0
+             "inaccuracy": 5
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootX":0
+	    "shootY":22
+	    "shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 3
+		"spread": 2
+		"shots":3
+		"shotDelay":10,
+	},
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 6.8
+        "y": 2
+        "suffix": "-手1",
+        "layer": 59.9
+        "moveX": -1
+        "moveY": 2.7
+        "moveRot":20
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-6.8,"y":2,
+        "suffix":"-手2"
+        "layer":59.9
+        "moveX":-1
+        "moveY":1.5
+        "moveRot":-55
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":10
+        "suffix":"-炮"
+        "layer":60
+        "moveX":0
+        "moveY":0
+        "moveRot":90
+        }
+			]
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 6
+    "lifetime":40
+	"width": 5
+	"height": 12
+	"damage":12
+    "hitSize":4
+    "knockback":0.2,
+    "status": "破甲",
+			"statusDuration": 46,
+   // "pierceArmor": true,
+    "collidesAir": false
+    "trailLength":3
+    "trailWidth":1.5,
+    "trailColor":"1878BF",
+    "backColor":"1878BF",
+    "frontColor":"1878BF"
+    "buildingDamageMultiplier":2
+    }}
+    ]
+    "research":"uAABT1A响应"
+}

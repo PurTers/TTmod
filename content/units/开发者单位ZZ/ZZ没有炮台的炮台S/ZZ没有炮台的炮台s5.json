@@ -1,0 +1,55 @@
+{
+		//"immunities": [    ],
+	"name": "萨姆T3",
+	"type": "missile",
+	"template": "MissileUnitType",
+		"engineOffset": 3,
+		"hitSize":12
+	"engineSize": 3,
+	"health": 99999
+	"armor": 0
+	"speed": 5
+	"lifetime": 3600
+	"rotateSpeed": 1
+	"engineOffset": 0,
+	"missileAccelTime": 60,
+	"weapons": [
+	{	"name": "没有炮台的炮台s5",	
+	               	"shootCone":30,
+		"reload":61,
+        "x": 0
+         "y": 0
+        "rotate": false
+        "inaccuracy": 0
+		"shootSound": "小导弹炮",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shootStatusDuration": 600
+	"shootStatus": "unmoving",
+		"shoot":{
+		"shots":33
+	    "shotDelay":15
+	},
+   "recoil": 2,
+   "recoils": 2,
+		"bullet":{
+		"sprite":"missile",
+	    "reloadMultiplier":1.4
+			"speed":5
+			"damage": 330
+			"lifetime":98
+			"width": 8
+			"height":16
+			 "weaveMag":2,
+	        "weaveScale":4,
+			//"splashDamageRadius":15,
+		//"splashDamage":78
+	    "makeFire":true,
+			"ammoMultiplier":5
+			"shootEffect":"shootSmall",
+			"homingRange": 40,
+            "homingPower": 0.1,
+	}
+	}
+	]
+}

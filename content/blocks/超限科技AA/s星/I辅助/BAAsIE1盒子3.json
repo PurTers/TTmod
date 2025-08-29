@@ -1,0 +1,18 @@
+{
+    "description": "超限集团研究出的特化型的储存器，可以使用卸载器取出物品，容量巨大，同时能分担核心的部分算力以提供额外单位上限\n \n [超限集团储存单元]",
+    "requirements": [
+    {"amount": 1200, "item": "titanium"}
+    { "amount": 600, "item": "1复合物" }
+	{ "amount": 600, "item": "1绝缘钢" }
+	{ "item": "0铜铅合金", "amount": 1800 }
+	{ "item": "1集成电路", "amount": 600 }
+   ],
+    "type": "StorageBlock",
+    "name": "智能仓库",
+    "size": 3,
+    "itemCapacity": 6000,
+    "unitCapModifier": 3
+    //"research": "BAAsIE1盒子",
+    "category": "effect"
+    "researchCostMultiplier": 0.5
+}

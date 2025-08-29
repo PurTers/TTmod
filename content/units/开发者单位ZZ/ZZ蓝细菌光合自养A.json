@@ -1,0 +1,93 @@
+{
+	"type": "flying",
+	"name": "超  级  细  菌 的克隆体",
+	"description": "mod重要的建议提供者(新单位，新物品，平衡性方面),同时是地表最强的细菌的克隆体(雾
+	
+	[blue]可以自爆,比本体更慢的自我复制
+	",
+	"hidden":true,
+	"abilities": [
+	{
+        "type": "RepairFieldAbility"
+        "amount":2147483617
+        "reload":180
+        "range": 1
+    }
+	{
+            "type": "UnitSpawnAbility",
+            "unit": "ZZ蓝细菌光合自养A",
+            "spawnX": 0,
+            "spawnY": 0,
+            "spawnTime": 120
+        },]
+	"speed": 2.4,	
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":10,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 2147483617,
+	"hitSize":48
+	"buildSpeed": 0.01,
+	"flying": true,
+	"faceTarget": true,
+	"health": 2147483617,
+	"armor":2147483617,
+	"engineOffset": 6,
+	"engineSize": 5,
+		"weapons":[
+	{	"name": "无",	
+		"reload": 10, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":270,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"top":false,
+		"shootOnDeath":true,
+		"bullet":{
+		"killShooter":true,
+		"splashDamageRadius":20.24,
+		"instantDisappear":true,
+		"collides": false,
+		"splashDamage":100,
+		"speed":1,"lifetime":10,
+		"type": "ExplosionBulletType",
+		"hitEffect":"massiveExplosion",
+		"despawnEffect":{"type": "MultiEffect",
+			"effects": [
+			{"type": "ParticleEffect",
+			"particles": 18,
+			"sizeFrom": 6,
+			"sizeTo": 0,
+			"length": 45,
+			"baseLength": 3,
+			"lifetime": 35,
+			"colorFrom": "ffffff",
+			"colorTo": "ffffff",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 9,
+			"sizeTo": 0,
+			"length": 53,
+			"baseLength": 20,
+			"lifetime": 22,
+			"colorFrom": "FFFFFF",
+			"colorTo": "ffffff",
+			"cone": 360},
+			{"type": "WaveEffect",
+			"lifetime": 15,
+			"sizeFrom": 0,
+			"sizeTo": 70,
+			"strokeFrom": 4,
+			"strokeTo": 0,
+			"colorFrom": "ffffff",
+			"colorTo": "ffffff"}]},
+	   }	}
+	]
+}

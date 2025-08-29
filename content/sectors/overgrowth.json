@@ -1,0 +1,27 @@
+{
+"localizedName": "增生区(半成品)",
+	"description": "这里的孢子靠近它最初的发源地，因此得以疯狂生长。\n\n敌人在此处建立了一个前哨站，建造尖刀单位来摧毁它。\n\n[red]警告，此处变化翻天覆地！！！\n\n[blue][超限集团基地]\n\n[blue](by 蓝细菌光合自养 改)",
+	"details":"[red]三 国 鼎 立",
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0//区块坐标
+    "difficulty":7
+    "research": {
+		"parent": "超限工艺-craters",
+		"objectives": [
+		"敬请期待"
+		"敬请期待1"
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-冰冷山区"
+			}
+			 {
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-impact0078"
+			}
+			]}
+}

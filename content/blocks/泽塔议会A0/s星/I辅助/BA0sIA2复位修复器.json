@@ -1,0 +1,44 @@
+{
+    "name":"复位修复器"
+	"type":"MendProjector",
+	"description":"对较大范围内的建筑进行修复，它的修复效率极高，但是需要消耗电量，可以通过消耗一定资源对其进行加强。\n[red][泽塔议会修复器]",
+	"details":"那所以你还修不上来吗",
+	"health":800,
+	"size":4,
+	"range":180,
+	"reload":30,
+	"phaseBoost":5
+	"phaseRangeBoost":120
+	"useTime":600
+	"healPercent":3.4375
+	"consumes": {
+		"power": 12,
+        "items":{
+			"items":[
+				{"item":"silicon","amount":1}
+				{"item":"phase-fabric","amount":1}
+				{"item":"surge-alloy","amount":1}
+			],
+			"booster":true,
+			"optional":true
+		}
+	},
+	"requirements": [
+		{ "item":"phase-fabric","amount": 120},
+		{ "item": "lead", "amount": 320 },
+		{ "item": "silicon", "amount": 220 },
+		{ "item": "titanium", "amount": 180 }
+		{ "item":"surge-alloy","amount": 80},
+		{ "item": "plastanium", "amount": 120 },   
+	],
+	"category":"effect",
+	/*"research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+}

@@ -1,0 +1,36 @@
+{
+	"type": "flying",
+	"name": "没有炮台的炮台S",
+	"description": "奇点制作组的创始人，他的mod更新时间未知。",
+	"speed": 2.4,	
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":10,
+	"hidden":true,
+	    "abilities": [{
+        "type": "RepairFieldAbility"
+        "amount":233
+        "reload":233
+        "range": 233
+    }
+    {//死亡时产生单位
+			"type": "SpawnDeathAbility",
+			"unit": "ZZ没有炮台的炮台ss",
+			"amount": 1,//固定数量
+			"randAmount": 0//随机数量
+	},]
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 300,
+	"hitSize":10, 
+	"buildSpeed": 3,
+	"flying": true,
+	"faceTarget": true,
+	"health": 2333,
+	"armor":2147483617,
+	"engineOffset": 6,
+	"engineSize": 5,
+"mineSpeed": 15
+    "mineTier": 3
+}
+//paotaiS

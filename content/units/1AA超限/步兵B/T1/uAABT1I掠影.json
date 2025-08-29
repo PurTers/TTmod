@@ -1,0 +1,120 @@
+{
+    "type": "flying",
+    "name":"流星"
+    "description": "用于突击敌方建筑的自爆单位，飞行单位，用高强度爆炸与敌人同归于尽。\n\n[blue][超限技术特殊作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+    "speed": 2.5
+    "hitSize": 10
+    "health": 360,
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "flying": true,
+    "armor":0
+    "targetFlags":["turret","core"],
+    "engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"trailWidth": 2,
+	"itemCapacity": 5
+    "weapons": [
+   {	"name": "无",	
+		"reload": 10, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootOnDeath":true,
+		"bullet":{
+		"lightningDamage":19,
+            "lightningColor": "c0ecffFF",
+    "lightning":4
+    "lightningLength":12
+		"killShooter":true,
+		"splashDamageRadius":68,
+		"instantDisappear":true,
+		"collides": false,
+		"splashDamage":110,
+		"speed":1,"lifetime":10,
+		"hitEffect":"massiveExplosion",
+		"despawnEffect":{"type": "MultiEffect",
+			"effects": [
+			{"type": "ParticleEffect",
+			"particles": 18,
+			"sizeFrom": 6,
+			"sizeTo": 0,
+			"length": 45,
+			"baseLength": 3,
+			"lifetime": 35,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 9,
+			"sizeTo": 0,
+			"length": 53,
+			"baseLength": 20,
+			"lifetime": 22,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "WaveEffect",
+			"lifetime": 15,
+			"sizeFrom": 0,
+			"sizeTo": 70,
+			"strokeFrom": 4,
+			"strokeTo": 0,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff"}]},
+		"width":0,	 "height":0
+		"intervalBullets":6
+        "intervalBullet":{
+        "type": "EmpBulletType",
+				"timeIncrease": 0,//己方建筑加速倍率
+				"collidesTiles": "false",//碰撞方块
+				"collidesTeam": "false"//碰撞自己的队友
+				"timeDuration": 0,//加速持续时间
+				"powerDamageScl": 3,//敌方电器损坏倍率
+				"powerSclDecrease": 0.5,//敌方电器功率下降倍率
+				"radius": 12,
+				"pierce": true,//穿透单位
+				"splashDamageRadius": 16,
+				"splashDamage": 12,
+				"width": 0,
+				"height": 0,
+				"damage": 10,
+				"keepVelocity": true,
+				"trailEffect": "none",
+				"backColor": "c0ecff",
+				"frontColor": "c0ecff",
+				"instantDisappear": true,//瞬间消失
+				"hitSound": "plasmaboom",
+				"despawnEffect": "hitEmpSpark"
+				"hitPowerEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+		    	"applyEffect": "none"
+		    	"hitEffect": "none"
+		    	"shootEffect": "none"
+			}
+	   }
+	   	}
+    ]
+  "research":"uAABT1H火花"
+}

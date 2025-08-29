@@ -1,0 +1,12 @@
+{
+	"name": "ohno",
+	"type": "Liquid",
+	"description": "ohno",
+	"alwaysUnlocked":false,
+	"color": "6ecdec",
+	"flammability": 0,
+	"temperature": 0.3,
+	"heatCapacity": 999999.9,
+	"viscosity": 0.3,
+	"explosiveness": 0,
+}

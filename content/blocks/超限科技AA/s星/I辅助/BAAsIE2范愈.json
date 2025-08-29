@@ -1,0 +1,171 @@
+{
+    "type": "PowerTurret",
+    "name": "范愈",
+    "description": "超限集团以监管为基础研发一种更为强大的修复炮台，相比于监管能够进行范围修复，适合延缓防线破坏程度，自动修复友方建筑。\n\n[blue][超限技术修复装置]",
+    "targetAir": false,
+    "targetGround": false,
+    "targetHealing":true,
+    "health": 1680,
+    "size": 3,
+    "heatColor": "turretHeat",
+    "shootSound": "sap",
+    "shake": 0.2,
+    "inaccuracy": 0
+    "recoil": 0,
+    "shoot": {
+        "type": "ShootAlternate",
+        "barrels": 1,
+        "spread": 4
+    },
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+    {"type": "RegionPart",
+        "mirror": true,
+        "x": 0,
+        "y": 0,
+        "suffix": "-后",
+        "layer": 50,
+        "moveX": -2
+        "moveY": 2
+        "moveRot":0
+        "progress":"reload",
+        "under":true
+        }          
+    {"type": "RegionPart",
+        "mirror": true,
+        "x": 0,
+        "y": 0,
+        "suffix": "-前",
+        "layer": 50,
+        "moveX": 0,
+        "moveY": -2
+        "moveRot":0
+        "progress":"reload",
+        "under":true
+        }          
+    ]}
+    ]},
+    "recoilTime": 100,
+	"targetHealing":true,
+	"canOverdrive": false,
+    "shootType": {
+    "type":"ArtilleryBulletType",
+	"frontColor":"97FFA8FF",
+	"backColor":"97FFA8FF",
+	"trailColor":"97FFA8FF",
+	"trailLength":8
+	"trailWidth":2
+	"width": 5
+	"height": 10
+	"speed": 10,
+	"lifetime":36,
+      	"healPercent": 2.5
+      	"splashDamageRadius":48
+	    "splashDamage":50
+        "damage":0
+        "collidesAir": true
+        "collidesGround": true
+                "collidesTeam":true,
+                
+        "shootEffect": {
+        "type": "MultiEffect",
+	"effects": [
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 60
+    "sizeFrom": 0
+    "sizeTo": 8
+    "strokeFrom": 3
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 30
+    "sizeFrom": 0
+    "sizeTo": 3
+    "strokeFrom": 0
+    "strokeTo": 6
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    ]}
+    "hitEffect": {
+        "type": "MultiEffect",
+	"effects": [
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 60
+    "sizeFrom": 12
+    "sizeTo": 0
+    "strokeFrom": 24
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 120
+    "sizeFrom": 24
+    "sizeTo": 24
+    "strokeFrom": 6
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    ]}
+    "despawnEffect": {
+        "type": "MultiEffect",
+	"effects": [
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 60
+    "sizeFrom": 12
+    "sizeTo": 0
+    "strokeFrom": 24
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 120
+    "sizeFrom": 24
+    "sizeTo": 24
+    "strokeFrom": 6
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    ]}
+    },
+    "consumes": {
+        "liquids":[
+    {
+        "liquid": "00再构流体"
+        "amount": 0.06
+        "booster": true
+    }
+    ]
+    },
+    "reload": 36,
+    "rotateSpeed": 12,
+    "range": 240,
+    "category": "effect",
+    "research": "mend-projector",
+    "requirements": [
+    {"amount": 70, "item": "0铜铅合金"},
+    { "item":"titanium","amount":80}
+    {"amount": 50, "item": "metaglass"},
+    { "item":"plastanium","amount":20}
+    ]
+   /*  "research": {
+	"parent":"BAAsIE1监管"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "fungalPass"
+			}
+	]
+	}*/
+	    "researchCostMultiplier": 0.5,
+	       // "canOverdrive": false,
+}

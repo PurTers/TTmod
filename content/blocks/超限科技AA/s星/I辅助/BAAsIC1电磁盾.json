@@ -1,0 +1,43 @@
+{
+	"type":"ForceProjector",
+	"name":"电磁立场盾发生器",
+	"description":"生成一个范围能量盾立场，保护一定区内的单位，较为坚固，但是请务必保护好发生装置，他极为脆弱\n\n[blue][超限技术护盾发生器]",
+	"health":600,
+	"size":4,
+	"radius":220,
+	"shieldHealth": 8000,//护盾血量
+	//"phaseUseTime":1200,//物品消耗时间
+	//"phaseRadiusBoost":50,
+	"cooldownNormal":4,
+	"cooldownLiquid":1,
+	"cooldownBrokenBase":12,//破坏后回复速度
+	"consumes":{
+		"power":12,
+		/*"items":{
+			"items":[
+				{"item":"1复合物","amount":1}
+			],
+			"booster":true,
+			"optional":true
+		}*/
+	},
+	"requirements":[
+	{ "item":"0铜铅合金","amount":180},
+	{ "item":"1集成电路","amount":150},
+	{ "item":"titanium","amount":250},
+	{ "item":"1绝缘钢","amount":120}
+    {"item": "graphite","amount":80}
+	    ],
+	"itemCapacity":10,
+	"research": {
+	"parent":"BAAsIC0小型护盾发生器"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	"category": "effect"
+	"researchCostMultiplier": 0.5,
+}

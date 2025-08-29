@@ -1,0 +1,23 @@
+{
+"localizedName": "萃取前哨(半成品)",
+	"description": "一座遥远的前哨，敌人建造它向其他区块发射资源。\n跨区块运输是征服这个星球不可或缺的一项技术。\n\n摧毁敌方基地，研究发射台。\n\n\n变化显著\n\n[blue](by 蓝细菌光合自养 改)",
+	"details":"[yellow]物流中心，启动！",
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0//区块坐标
+    "difficulty":5
+    "research": {
+		"parent": "超限工艺-fungalPass",
+		"objectives": [
+		"敬请期待"
+		"敬请期待1"
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+			 {
+				"type": "SectorComplete",
+				"preset": "超限工艺-污染小道"
+			}
+			]}
+}

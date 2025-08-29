@@ -1,0 +1,40 @@
+{
+"name":"星际加速器"
+	"description":"对一整个区块的建筑进行超速，极为昂贵且巨大，需要消耗大量的冷却液来保持其正常运作。\n[red][泽塔议会超速]",
+	"details":"[red]MADE IN HEAVEN",
+	"type": "OverdriveProjector",
+	"health": 120000,
+	"size": 7,
+	"range": 99999,
+	"speedBoost": 4,
+	"useTime":36000
+	"itemCapacity": 6000
+	"consumes": {
+		"power": 42.6
+		"liquid": {
+			"liquid": "cryofluid", "amount":2.1
+		},
+        "items":{
+			"items":[
+				{"item":"silicon","amount":2000}
+				{"item":"phase-fabric","amount":1000}
+				{ "item":"surge-alloy","amount": 2000},
+				{ "item": "plastanium", "amount": 3000 }, 
+			],
+			"booster":false,
+			"optional":false
+		}
+	},
+	"requirements": [
+		{ "item": "lead", "amount": 12000 },		
+		{ "item": "copper", "amount": 14000 },		
+		{ "item": "silicon", "amount": 8000 },
+		{ "item": "thorium", "amount": 4000 },
+		{"item": "phase-fabric","amount":2500},
+		{ "item": "titanium", "amount": 6000 }
+		{ "item":"surge-alloy","amount": 4000},
+		{ "item": "plastanium", "amount": 4500 },        
+	],
+	"category":"effect",
+	//"research":"BA0sIA1修复穹顶"
+}

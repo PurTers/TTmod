@@ -1,0 +1,182 @@
+{
+	"type": "mech",
+	"name": "狂战士",
+	"description": "强力战斗单位，向附近的敌人发射火焰榴弹炮，榴弹炮可以直接飞过建筑，带四个机枪辅助攻击，近战可纵火。\n[orange][全位算体精英部队]",
+			"immunities": [
+		"burning","甲板损坏"
+	],
+    "speed": 0.8,
+    "hitSize": 22,
+    "abilities": [
+	{
+"type": "RegenAbility",
+"amount": 0.6
+},]
+		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+    "ammoResupplyAmount":1,/*弹药补给倍率 */
+    "health": 1680,
+    "armor": 7,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+        "targetAir":true,  
+    "targetGround":true,
+	"weapons":[{	"name": "狂战士1",	
+		"reload":96,
+        "x": 10,  "y": 0.9, 
+       "rotate": false,
+        "inaccuracy": 6,
+        "shootSound": "artillery",
+		"shoot":{
+			"shots":2,
+			"shotDelay":30
+		},
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+		"type": "ArtilleryBulletType",
+	    "damage":6,	  
+	    "speed":4,
+	    "lifetime":70,
+	"splashDamageRadius":25,
+	"splashDamage":55,
+	    "width":15,	 "height":15
+	    	"status":"burning",
+	    	"makeFire": true,
+	"statusDuration":300,
+	}	}
+		{	"name": "狂战士3",	
+		"reload":30,
+        "x": -3,  "y": -1.5, 
+        "rotate": true,
+        "rotateSpeed":24,
+        "inaccuracy": 0,
+		"shoot":{
+			"shots":3,
+			"shotDelay":7.5
+		},
+		"shootStatusDuration": 10,//发射时给自己的状态时间
+	"shootStatus": "静止",//发射时给自己的状态
+		"shootSound": "pew",
+		"rotateSpeed": 1,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":7,	  
+	    "speed":3,
+	    "lifetime":50,
+	    "width":7,	 "height":10
+	    "status":"burning",
+	"statusDuration":30,
+	}	}
+	{	"name": "狂战士3",	
+		"reload":30
+        "x": -3,  "y": 1.5, 
+        "rotate": true,
+        "rotateSpeed":24,
+        "inaccuracy": 0,
+		"shoot":{
+			"shots":3,
+			"shotDelay":7.5
+		},
+		"shootStatusDuration": 10,//发射时给自己的状态时间
+	"shootStatus": "静止",//发射时给自己的状态
+		"shootSound": "pew",
+		"rotateSpeed": 1,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":7	  
+	    "speed":3,
+	    "lifetime":50,
+	    "width":7,	 "height":10
+	    "status":"burning",
+	"statusDuration":30,
+	}	}
+	{	"name": "狂战士2",	
+		"reload":3,
+        "x": 8,  "y": 0, 
+       "rotate": false,
+        "inaccuracy": 6,
+        "shootSound": "flame",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shootStatusDuration": 15,//发射时给自己的状态时间
+	"shootStatus": "静止",//发射时给自己的状态
+		"bullet":{
+			"type": "BulletType",
+			"hitSize":10,
+			"status": "burning",
+			"statusDuration": 180,
+			"speed": 8,
+			"lifetime": 11,
+			"splashDamageRadius":35,
+	"splashDamage":30,
+			"ammoMultiplier": 3,
+			"collidesAir": false
+        "collidesGround": true
+        "makeFire": true,
+			"pierceCap": 6,
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"particles": 13,
+				"lifetime": 33,
+				"sizeFrom": 1.88,
+				"sizeTo": 0,
+				"interp": "pow5Out",
+				"sizeInterp": "pow10In",
+				"length": 88,
+				"baseLength": 0,
+				"colorFrom": "f68021",
+				"colorTo": "f68021A8",
+				"cone": 12
+			},
+			"smokeEffect": {
+				"type": "ParticleEffect",
+				"particles": 3,
+				"line": true,
+				"strokeFrom": 1.8,
+				"strokeTo": 0,
+				"lenFrom": 20,
+				"lenTo": 8,
+				"length": 86,
+				"baseLength": 0,
+				"lifetime": 12,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFE176FF",
+				"cone": 10
+			},
+			"hitEffect":{
+				"type":"MultiEffect",
+				"effects":[
+				{"type": "ParticleEffect",
+					"particles": 2,
+					"line": true,
+					"strokeFrom": 1.3,
+					"strokeTo": 0,
+					"lenFrom": 8,
+					"lenTo": 8,
+					"length": 24,
+					"baseLength": 0,
+					"lifetime": 15,
+					"colorFrom": "f8ad42",
+					"colorTo": "FFE176FF",
+					"cone": 23},
+				{"type": "ParticleEffect",
+				"particles": 4,
+				"lifetime": 10,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"colorFrom": "FF8C00",
+				"colorTo": "FF8C00"}
+				]},
+			"despawnEffect": "none"
+		}	}
+	]
+	"research": {
+	"parent":"BA1sHB精英单位工厂"
+	}
+}

@@ -1,0 +1,199 @@
+{
+    "type": "mech",
+    "name":"收容"
+    "description": "专业的狙击机甲，拥有极高的伤害，能够将被集中的单位定住一会儿\n\n[blue][超限技术作战大型机甲]",
+    "immunities": [
+		"wet","spore-slowed","甲板损坏"
+	],
+    "speed": 0.75
+    "hitSize": 24
+    "health": 7640,
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":12
+    "itemCapacity": 30
+    "abilities": [
+	{
+    "type":"ForceFieldAbility",
+    "sides": 8,
+    "radius": 28
+    "regen": 0.8
+    "max": 800,
+    "cooldown": 120,}
+    ]
+    "weapons": [
+       {
+            "name": "收容1",
+            "reload": 150
+            "x":0
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"pulseBlast",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootX":12
+	    "shootY":32
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 6.8
+        "y": 2
+        "suffix": "-右手",
+        "layer": 59.9
+        "moveX": -2
+        "moveY": -2.7
+        "moveRot":-5
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-6.8,"y":2,
+        "suffix":"-左手"
+        "layer":59.9
+        "moveX":3
+        "moveY":-1.5
+        "moveRot":-80
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":15
+        "suffix":"-枪"
+        "layer":60
+        "moveX":12
+        "moveY":0
+        "moveRot":-90
+        }
+			]
+            "shootStatusDuration": 45,
+	"shootStatus": "静止",
+		"bullet":{
+		"sprite":"超限工艺-波",
+    "type": "PointBulletType",
+			//"hitEffect": "instHit",
+			//"smokeEffect": "smokeCloud",
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 1,
+				"baseLength": -8,
+				"lifetime": 50,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 5.5,
+				"lenTo": 5.5,
+				"strokeFrom": 3.5,
+				"strokeTo": 0,
+				"colorFrom": "c0ecff",
+				"colorTo": "c0ecff",
+				"cone": 0
+			},
+			"despawnEffect": {"type": "WaveEffect",
+			"lifetime": 60,
+			"sizeFrom": 12,
+			"sizeTo": 12,
+			"strokeFrom": 12,
+			"strokeTo": 0,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff00"}
+			
+			
+			"status": "破甲",
+			"statusDuration": 120,
+			"trailSpacing": 8,
+			"damage": 800,
+			"hitShake": 6,
+			"ammoMultiplier": 1,
+			"lightningDamage": 40,
+			"lightning": 7,
+			"lightningLength": 15,
+			"speed": 8
+			"lifetime": 60,
+			"lightningColor":"1878BF",
+			
+			
+			
+			"shootEffect":[
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 0
+			"sizeTo": 9,
+			"length": 0,
+			"baseLength": 53,
+			"lifetime": 25,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 20},
+			{"type": "WaveEffect",
+			"lifetime": 30,
+			"sizeFrom": 0,
+			"sizeTo": 16,
+			"strokeFrom": 2,
+			"strokeTo": 0,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff"}
+			]
+			"chargeEffect": [{
+                "type": "ParticleEffect",
+                "particles": 12
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55,
+                "baseLength": 0,
+                "lifetime": 30,
+                "colorFrom": "c0ecff",
+                "colorTo": "c0ecff",
+                "cone": 60}
+ {"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 6
+			"sizeTo": 0,
+			"length": 53,
+			"baseLength": 0,
+			"lifetime": 30,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360}
+			{"type": "WaveEffect",
+			"lifetime": 30,
+			"sizeFrom": 0,
+			"sizeTo": 3,
+			"strokeFrom": 0,
+			"strokeTo": 6,
+			"colorFrom": "c0ecff00",
+			"colorTo": "c0ecff"}
+			{"type": "WaveEffect",
+			"lifetime": 30,
+			"sizeFrom": 0,
+			"sizeTo": 6,
+			"strokeFrom": 0,
+			"strokeTo": 12,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff80"}
+			{"type": "WaveEffect",
+			"startDelay":15
+			"lifetime": 30,
+			"sizeFrom": 0,
+			"sizeTo": 12,
+			"strokeFrom": 4,
+			"strokeTo": 0,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff00"}]
+			"buildingDamageMultiplier": 0.75
+			 "collidesGround": true
+    "collidesAir": true
+    }
+    }
+    ]
+   // "research":"uAABT2B穿云"
+}

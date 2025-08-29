@@ -1,0 +1,355 @@
+{
+	"type":"ItemTurret",//类型:消耗物品的炮塔
+	"name":"天罚",//名字
+    "description":"超限集团将炮口尽可能的往上调，从而造就了天罚这一种远程打击武器，其弹头可以根据装填的弹药而展现不同的攻击方式\n[orange]硫-火龙卷弹头\n[white]孢子荚-油渍弹头\n[red]爆炸混合物-爆裂弹头\n[pink]钍-聚变弹头\n[white]绝缘钢-弹片风暴弹头\n\n[blue][超限技术[red]战略武器[blue]]",
+    "details":"啊克安呢，咦味呦呦呦呦呦呦呦，啊，碰！啊咦噙哚栖安的，我的天啊"
+    "liquidCapacity": 500,
+	"size":4,
+	"health":3450,
+	"ammoPerShot": 25,
+	"range":600,
+	"reload":300,
+	"inaccuracy":10,
+	"ammoUseEffect": "none",
+	"rotateSpeed":1
+	"maxAmmo":500,
+	"targetAir":false
+	"targetGround":true,
+	"velocityRnd":0.05
+	"shootY": 8,
+	"shootSound":"artillery",
+	"recoilTime": 30,//后坐力恢复时间
+    "recoil": 2,//后坐力
+    "squareSprite": false//是否为正方形(如果不是传送带和液体管道向内延伸)
+    "minRange":120
+    "minWarmup": 0.99
+    "coolantMultiplier": 2.5
+    "shoot": {
+        "shots": 6
+        "shotDelay": 0
+    },
+    "consumes": {
+	"power": 12.6
+       "coolant":{"amount":0.4,"optional":true}  
+		},
+    "outlineColor": 535353,
+    "drawer":{"type":"DrawTurret",
+	    //"basePrefix": "GJ1214b-"//底座类型
+        "parts":[
+            {
+                "type":"RegionPart",
+                "mirror":false,//是否开启镜像
+                "x":0,"y":5,//初始位置
+                "suffix":"-炮-前"//,贴图后
+                "layer":50,//层，49-110
+                "yScl": 1
+                "y": -3
+    			"moves": [
+    				{
+        				//"y": -2
+        				"gy": -0.5
+    				}
+    			]
+    		}
+            {
+                "type":"RegionPart",
+                "mirror":false,//是否开启镜像
+                "x":0,"y":0,//初始位置
+                "suffix":"-炮"//,贴图后
+                "layer":50,//层，49-11
+                //"mixColor": 00000000
+                //"mixColorTo": ffffff40
+    			"moves": [
+    				{
+        				"gy": -0.25
+        				"y": -2
+    				}
+    			]
+    			"children": [
+                    {
+                        "type":"RegionPart",
+                        "mirror":false,//是否开启镜像
+                        "x":0,"y":6.25,//初始位置
+                        "suffix":"-炮口"//,贴图后
+                        "layer":50,//层，49-110
+                        "yScl": 0
+                        "y": 13,
+            			"moves": [
+            				{
+                				"y": -10,
+                				"gy": 0.75
+            				}
+            			]
+            		}
+    			]
+			}
+		]
+	}
+	"ammoTypes":{
+	"pyratite":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":120,
+	    "splashDamage":1
+	    "speed":2
+	    "damage":0
+	    "makeFire":true,
+    "backColor":"FFB90F",
+    "frontColor":"E3E3E3",
+	"trailColor":"FFB90F",
+	    "lifetime":300
+	    "status":"burning",
+	    "statusDuration":480,
+		"width": 24
+		"height": 24
+        "ammoMultiplier": 8
+        "buildingDamageMultiplier":0.25
+	    "hitEffect":"flakExplosion"
+	     "fragBullets": 4
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":36
+	    "splashDamage":44
+	    "speed":1
+	    "damage":6
+	    "makeFire":true,
+    "backColor":"FFB90F",
+    "frontColor":"E3E3E3",
+	"trailColor":"FFB90F",
+	    "lifetime":60
+	    "status":"burning",
+	    "statusDuration":320,
+		"width": 16
+		"height": 16
+        "buildingDamageMultiplier":5
+	    "hitEffect":"flakExplosion"
+	    "fragBullets": 1
+			"fragBullet": {
+	    "type": "FireBulletType",
+				"speed": 8,
+				"lifetime": 2,
+				"damage": 2,
+				"status": "burning",
+				"statusDuration": 360,
+				"makeFire": true
+			}
+			}
+	},
+	"spore-pod":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":600,
+	    "rangeChange": -150
+	    "splashDamage":1
+	    "speed":2
+	    "damage":0
+    "backColor":"f4ba6e",
+    "frontColor":"f4ba6e",
+	"trailColor":"f4ba6e",
+	    "lifetime":225
+	    "status":"spore-slowed",
+	    "statusDuration":480,
+		"width": 24
+		"height": 24
+        "ammoMultiplier": 2
+        "buildingDamageMultiplier":0
+	    "hitEffect":"flakExplosion"
+	     "fragBullets": 12
+			"fragBullet": {
+			"drag":0.01
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":80
+	    "splashDamage":0
+	    "speed":3
+	    "damage":0
+    "backColor":"f4ba6e",
+    "frontColor":"f4ba6e",
+	"trailColor":"f4ba6e",
+	    "lifetime":60
+	    "status":"tarred",
+	    "statusDuration":320,
+		"width": 16
+		"height": 16
+        "buildingDamageMultiplier":0
+	    "hitEffect":"flakExplosion"
+			}
+	},
+	"blast-compound":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":60,
+	    "splashDamage":88
+	    "speed":1.5
+	    "damage":17,
+		"status":"blasted",
+	    "backColor":"FF7F24",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":400
+		"width": 24
+		"height": 24
+        "ammoMultiplier": 12
+	    "hitEffect":"flakExplosion"
+	    "buildingDamageMultiplier":0.25
+	    "knockback":5
+	     "fragBullets": 8
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":60,
+	    "splashDamage":64
+	    "speed":4
+	    "damage":3
+		"status":"blasted",
+	    "backColor":"FF7F24",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":25,
+		"width": 16
+		"height":  16
+		"knockback":5
+        "buildingDamageMultiplier":0.25
+	    "hitEffect":"flakExplosion"
+			}
+	}
+	"thorium":{
+	"reloadMultiplier":0.5,
+	"type":"ArtilleryBulletType",
+	"speed":1
+	    "damage":360,
+		"status":"blasted",
+	    "lifetime":600
+		"width": 24
+		"height": 24
+	"collidesGround": true
+	"collidesAir": true
+	"sprite":"missile-large",
+				"hitColor": "ffffffff",
+				"splashDamage": 520
+				"splashDamageRadius": 49
+				"despawnShake": 3,
+				"fragVelocityMin": 4
+				"reloadMultiplier": 0.5
+	"buildingDamageMultiplier":0.25
+	"trailLength":12
+    "trailWidth":8
+    "trailColor":"FFFFFF",
+	"hitEffect": {
+        "type": "MultiEffect",
+	"effects": [
+    {"type": "ParticleEffect",
+    "particles": 1
+    "sizeFrom": 48
+    "sizeTo": 24
+    "length": 0
+    "baseLength": 0
+    "lifetime": 20
+    "colorFrom": "ffffff60",
+    "colorTo": "ffffff00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "particles": 1
+    "sizeFrom": 16
+    "sizeTo": 40
+    "length": 0
+    "baseLength": 0
+    "lifetime": 56
+    "colorFrom": "ffffff60",
+    "colorTo": "ffffff00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "particles": 8
+    "sizeFrom": 12
+    "sizeTo": 20
+    "length": 16
+    "baseLength": 0
+    "lifetime": 90
+    "colorFrom": "ffeda640",
+    "colorTo": "ffeda600",
+    "cone": 360},
+     {"type": "WaveEffect",
+    "startDelay":30
+    "lifetime": 36
+    "sizeFrom": 16
+    "sizeTo": 64
+    "strokeFrom": 6
+    "strokeTo": 0
+    "colorFrom": "ffffff",
+    "colorTo": "ffffff00"}
+    ]
+    }}
+    "1绝缘钢":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":0
+	    "splashDamage":0
+	    "speed":2
+	    "damage":0
+	    "backColor":"cbd97f",
+	    "frontColor":"cbd97f", 
+	    "trailColor":"aaaaaa",
+	    "lifetime":300
+		"width": 24
+		"height": 24
+        "ammoMultiplier": 8
+	    "hitEffect":"flakExplosion"
+	    "buildingDamageMultiplier":0.25
+	    "fragBullets": 7
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":24,
+	    "splashDamage":66
+	    "speed":0.5
+	    "damage":12
+	    "backColor":"cbd97f",
+	    "frontColor":"cbd97f", 
+	    "trailColor":"cbd97f",
+	    "lifetime":60
+		"width": 16
+		"height": 16
+        "buildingDamageMultiplier":0.25
+	    "hitEffect":"flakExplosion"
+	    "fragBullets":5
+			"fragBullet": {
+            "type": "ShrapnelBulletType",
+            "length": 11
+            "damage": 36
+            "width": 3
+            "fromColor": "cbd97f",
+            "toColor": "aaaaaa",
+            "pierce": true,
+                "makeFire":true,
+			"status":"burning",
+			"statusDuration":88
+			"status": "脆裂",
+			"statusDuration": 30,
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "cbd97f",
+                "colorTo": "aaaaaa",
+                "cone": 60
+ }}
+	    }
+	},
+    }
+	"requirements": [
+        {"item": "titanium", "amount": 250  },
+{"item": "1绝缘钢", "amount": 220  }
+        { "item": "thorium", "amount": 320 }
+        {"item": "plastanium", "amount": 220  },
+        { "item": "0铜铅合金", "amount":320},
+    ],//造价
+    "research": {
+	"parent":"BAAsAT3C落锤"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰封菌落"
+			}
+	]
+	}
+	"category": "turret",//类型
+	"researchCostMultiplier": 0.325,
+}

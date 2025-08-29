@@ -1,0 +1,15 @@
+{
+	"name": "风暴催化剂",
+	"description": "以共振石为基础而研发出来的催化剂，其特殊的性质甚至能使物质与能量发生转化，同时内部蕴含的大量能量，通过极端条件可以让其释放出毁灭性的能量。",
+	"details":"[black]奇点催化剂",
+	"cost":2,
+	"alwaysUnlocked":false,
+	"color": "0783FF",
+	"radioactivity": 0
+	"explosiveness": 0
+	"flammability": 0
+	"charge":0.5
+	"hardness":0
+		"frames":4
+	//"research": "0铜铅合金"
+}

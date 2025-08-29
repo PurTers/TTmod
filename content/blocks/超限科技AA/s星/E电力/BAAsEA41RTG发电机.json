@@ -1,0 +1,44 @@
+{
+    "type":"ConsumeGenerator",//类型
+    "name":"T-RTG衰变装置",//名字
+    "description":"更加有效的将放射性衰变的能量进行转化,发电效率更高\n \n[blue][超限技术发电装置]",//简介
+    "size":3,//大小
+    "health":960,//生命
+    "hasPower":true,//储存电量
+    "hasLiquids":false,//储存液体
+    "hasItems":true,//储存物品
+    "itemCapacity":30,//物品容量
+    "powerProduction":11.6,//电量生产1=60电
+    "itemDuration":420,//一个物品用多久
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            "DrawWarmupRegion",
+        ]
+    },
+    "generateEffect": "generatespark",
+    "consumes":{
+    "itemRadioactive": { "minRadioactivity": 0.7 }
+    }
+    "requirements":[
+        {"item":"1集成电路","amount":35},
+        { "item": "1绝缘钢", "amount": 85 }
+        {"item":"lead","amount":180}
+        { "item": "phase-fabric", "amount": 90 }
+        { "item": "0铜铅合金", "amount": 40 }
+        ],//建造需求
+        "ambientSound": "smelter",
+    "ambientSoundVolume": 0.06,
+        "category":"power",//类别
+        "research": {
+	"parent":"BAAsEA2强化涡轮发电机"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

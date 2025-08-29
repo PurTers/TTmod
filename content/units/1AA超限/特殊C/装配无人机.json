@@ -1,0 +1,37 @@
+{
+    "type":"tether",
+	"name": "组装无人机",
+	"speed": 1.15, 
+	"drag":0.06,"accel":0.09,
+	"rotateSpeed":2.5,
+    "immunities":["electrified","unmoving","甲板损坏"],
+	"hitSize":1,
+	"buildBeamOffset":11,
+	"buildSpeed": 0.5,
+	"flying": true,
+	"faceTarget": false,
+    "useUnitCap": true,
+	"health": 3360,
+	"engineOffset":9,
+	"engineSize":3.6,
+    "isEnemy":true,
+    "hidden":true,
+    "createWreck":false,
+    "allowedInpayloads":false,
+    "logiccontrollable":false,
+    "defaultController": "AssemblerAI",
+    "playerControllable":false,
+    "weapons":[
+        {"name":"1",
+        "type":"RepairBeamWeapon",
+        "x":0,"y":1.75,
+	    "rotateSpeed": 3.2,
+        "shootY":0,
+        "beamWidth":0.6,
+        "mirror":false,
+        "repairSpeed":2.6,
+        "bullet":{
+        "maxRange":66}}
+    ]
+}
+//by RA2-RA2

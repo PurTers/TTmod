@@ -1,0 +1,30 @@
+{
+    "type": "ThermalGenerator",
+    "name": "孢子生物质发电机",
+    "description": "孢子发电机，利用生物技术，将地表上的孢子反应发电，发电效率一般。\n[red][泽塔议会发电机]",
+    "size": 2,
+    "health": 460,
+    "hasLiquids": false,
+    "hasItems": false,
+    "powerProduction": 1.8,
+    "requirements": [
+        { "item": "titanium", "amount": 80 }
+        {"item": "graphite","amount": 125},
+        {"item": "silicon","amount": 90}
+        { "item": "lead", "amount": 180 }
+        { "amount": 120, "item": "copper" },
+    ],
+    "research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-ruinousShores"
+			}
+	]
+	}
+    "floating": true,
+    "attribute": "spores",
+    "category": "power",
+    "research": "thermal-generator"
+}

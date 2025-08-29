@@ -1,0 +1,55 @@
+{
+    "name": "大型合金冶炼厂",
+    "type": "GenericCrafter",
+    "description": "用于加工巨浪合金，产量更多，速度更快，需要大量的电力与冷却液支持。\n[red][泽塔议会工厂]",
+    "itemCapacity": 80,
+    "health": 2800,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 20,
+    "updateEffect": "none",
+    	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+    "consumes": {
+    "power": 8,
+        "items": {
+            "items": [
+            { "item": "copper",  "amount": 10 },
+            { "item": "lead",  "amount": 14 }
+            { "item": "titanium", "amount": 7 },
+            {"item": "silicon","amount": 11 },
+            ]
+        },
+        "liquid": {
+            "liquid": "water",
+            "amount": 1.26
+        }
+    },
+    "outputItem": {"item": "surge-alloy", "amount": 5}
+    "requirements": [
+    {"item": "titanium","amount": 690},
+        { "item": "graphite","amount":450},
+	{ "item": "surge-alloy", "amount": 350 }
+        {"item": "thorium","amount": 350},
+        {"item": "plastanium","amount": 280}
+        {"item": "phase-fabric","amount": 360}
+        { "amount": 420, "item": "silicon" }
+    ],
+    "category": "crafting",
+    /*"research": {
+    "parent":"BA0s泽塔议会",
+    "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "无风海湾"
+			}
+	]}*/
+    "researchCostMultiplier": 0.5
+}

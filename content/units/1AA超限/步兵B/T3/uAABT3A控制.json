@@ -1,0 +1,119 @@
+{
+    "type": "mech",
+    "name":"控制"
+    "description": "超限集团的主战机甲，通过音波炮对敌方进行伤害\n\n[blue][超限技术作战大型机甲]",
+    "immunities": [
+		"wet","spore-slowed","甲板损坏"
+	],
+    "speed": 0.7
+    "hitSize": 24
+    "health": 8280,
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":16
+    "itemCapacity": 30
+    "abilities": [
+    {
+    "type": "ShieldArcAbility",
+		"whenShooting":false,//是否射击时存在(Flash为一直存在)
+		"radius": 30,//半径
+		"width": 10,//宽度
+		"max": 400,//最大容量
+		"regen": 0.25,//再生速度
+		"cooldown": 80,//护盾冷却时间
+		"angle": 180,//护盾弧度
+		"angleOffset": 0//护盾角度
+	}
+	{
+    "type":"ForceFieldAbility",
+    "sides": 8,
+    "radius": 44,
+    "regen": 0.8
+    "max": 1200,
+    "cooldown": 120,}
+    ]
+    "weapons": [
+       {
+            "name": "控制1",
+            "reload": 15
+            "x":0
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"flux",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootX":12
+	    "shootY":32
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 6.8
+        "y": 2
+        "suffix": "-右手",
+        "layer": 59.9
+        "moveX": -2
+        "moveY": -2.7
+        "moveRot":-5
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-6.8,"y":2,
+        "suffix":"-左手"
+        "layer":59.9
+        "moveX":3
+        "moveY":-1.5
+        "moveRot":-80
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":15
+        "suffix":"-枪"
+        "layer":60
+        "moveX":12
+        "moveY":0
+        "moveRot":-90
+        }
+			]
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 6
+    "lifetime":60
+	"width": 24
+	"height": 6
+	"damage":33
+    "hitSize":4
+    "knockback":5,
+    "pierceCap": 8,
+    "pierceBuilding": true,
+    "status": "破甲",
+			"statusDuration": 120,
+    "pierceArmor": true,
+    "collidesAir": false
+    "trailLength":0
+    "trailWidth":0,
+    "trailColor":"1878BF80",
+    "backColor":"1878BF80",
+    "frontColor":"1878BF80"
+    "shrinkY": -5//压缩长度
+	        "shrinkX": -5//压缩长度
+	        "hitEffect":"none"
+"shootEffect":"none"
+"despawnEffect":"none"
+"smokeEffect":"none"
+"trailEffect":"none"
+"pointEffect": "none"
+"buildingDamageMultiplier":4
+    }}
+    ]
+   // "research":"uAABT2A压制"
+}

@@ -1,0 +1,55 @@
+{
+	"type":"PowerTurret",//类型:消耗物品的炮塔
+	"name":"力墙发生器",//名字
+    "description":"生成一个弧形力墙拦截前方子弹，但是容易被速度快的子弹击穿。\n\n[blue][超限集团特殊防御]",//介绍
+	"size":3,//物品面积
+	"health":2100,//建筑血量
+	"range":420,//攻击范围
+	"reload":300//攻击速度（每多少帧射击一次）(一秒60帧)
+	"canOverdrive": false,
+	"alwaysShooting": true,
+	"inaccuracy":0,//误差(度)
+	"ammoUseEffect": "none",
+	"rotateSpeed":99,//旋转速度
+	"targetAir":true//攻击天空
+	"targetGround":true,//攻击地面
+	"heatColor":"FFFFFF",
+	"shootSound":"sap",
+	"recoilTime": 0,//后坐力恢复时间
+    "recoil": 0,//后坐力
+    "shootY": 0,
+    "squareSprite": false//是否为正方形(如果不是传送带和液体管道向内延伸)
+    "shootCone":60
+    "consumes":{
+		"power":4,
+		/*"items":{
+			"items":[
+				{"item":"1复合物","amount":1}
+			],
+			"booster":true,
+			"optional":true
+		}*/
+	},
+	"shootType":{
+	"type": "BasicBulletType",
+        "spawnUnit":"力墙发生器"
+        "shootEffect": "none",
+    },
+	"requirements": [
+	{ "item":"0铜铅合金","amount":100},
+	{ "item":"1集成电路","amount":40},
+	{ "item":"titanium","amount":60},
+	{ "item":"1绝缘钢","amount":40}
+    {"item": "graphite","amount":60}
+    ],//造价
+    /*"research": {
+	"parent":"BAAsIC0小型护盾发生器"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	"category": "effect",//类型
+}

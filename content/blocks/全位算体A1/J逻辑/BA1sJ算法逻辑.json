@@ -1,0 +1,22 @@
+{
+"name": "算法逻辑处理器",
+	"description": "更加高效的逻辑处理器，可控制的范围更大。\n[orange][全位算体逻辑]"
+"type": "LogicBlock"
+"hasLiquids": false
+"instructionsPerTick": 10
+"range": 320
+"size": 1
+"health": 420,
+"consumes":{
+	},
+"requirements": [
+  "graphite/80"
+  "silicon/100"
+  "copper/120"
+  "titanium/55"
+]
+"category": "logic"
+"research": "BA1s超位算体"
+"researchCostMultiplier": 0
+"buildVisibility":"campaignOnly"
+}

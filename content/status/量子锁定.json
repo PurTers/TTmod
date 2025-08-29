@@ -1,0 +1,71 @@
+{
+"name":"量子锁定",
+	"speedMultiplier":0.3
+	"damageMultiplier":0.3,
+	"healthMultiplier":0.7,
+	"reloadMultiplier":0.5,
+	"effects": [
+        {	"type": "ParticleEffect",
+    "particles": 6,
+    "baseLength": 0,
+    "length":25,
+    "lifetime": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "colorFrom": "FFFFFF",
+    "colorTo": "FFFFFF",
+    "cone":360 },
+    {	"type": "ParticleEffect",
+    "particles": 6,
+    "baseLength": 0,
+    "length":25,
+    "lifetime": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "colorFrom": "1878BF",
+    "colorTo": "1878BF",
+    "cone":360 },
+        {"type": "ParticleEffect",
+            "particles": 2,
+            "line": true,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lenFrom": 10,
+            "lenTo": 0,
+            "length": 23,
+            "baseLength": 0,
+            "lifetime": 10,
+            "colorFrom": "FFFFFF",
+            "colorTo": "FFFFFF",
+            "cone":360}
+            {"type": "ParticleEffect",
+            "particles": 2,
+            "line": true,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lenFrom": 10,
+            "lenTo": 0,
+            "length": 23,
+            "baseLength": 0,
+            "lifetime": 10,
+            "colorFrom": "1878BF",
+            "colorTo": "1878BF",
+            "cone":360}
+            {"type": "WaveEffect",
+    "lifetime": 60
+    "sizeFrom": 24
+    "sizeTo": 24
+    "strokeFrom": 18
+    "strokeTo": 18,
+    "colorFrom": "1878BF",
+    "colorTo": "1878BF"}
+    {"type": "WaveEffect",
+    "lifetime": 60
+    "sizeFrom": 24
+    "sizeTo": 24
+    "strokeFrom": 18
+    "strokeTo": 18,
+    "colorFrom": "FFFFFF",
+    "colorTo": "FFFFFF"}
+        ]
+	}

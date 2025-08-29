@@ -1,0 +1,11 @@
+{
+	"name": "世界单位增幅器",
+	"description": "单位上线+9999",
+	"type": "Wall",
+	"health": 2147483617,
+	"armor":2147483617,
+	"size": 1,
+	"category": "logic",
+	"buildVisibility": "sandboxOnly",
+	"unitCapModifier": 9999
+}

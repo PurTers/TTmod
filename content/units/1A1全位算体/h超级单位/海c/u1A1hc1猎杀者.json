@@ -1,0 +1,64 @@
+{
+	"type": "naval",
+	"name": "猎杀者",
+	"description": "装备有轨道炮的海军，可以精准高效的狙击敌人。\n[orange][全位算体精英部队]",
+		"immunities": [
+"wet","freezing","tarred","甲板损坏"
+	],
+	"speed":0.6,
+	"rotateSpeed":0.9,
+	"abilities": [
+	{
+"type": "RegenAbility",
+"amount": 0.3
+},]
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 60,
+    "trailLength":24,
+    "waveTrailX":0,
+    "waveTrailY":-6,
+    "trailScl":2,
+	"hitSize":22 
+	"health": 1360,
+	"armor":11,
+	"faceTarget": false,
+	//"maxRange": 400,
+	"weapons":[
+		{"name": "猎杀1",	
+	"shootCone":0
+	"ammoUseEffect": "casing2Double",
+	"shootSound":"mediumCannon",
+	"reload":126,
+	"recoil":0
+        "x": 0
+        "y": 0
+        "rotate": true,
+        "mirror":false
+		"shootY":4,
+        "rotateSpeed":3,
+        "inaccuracy": 0,
+	"bullet":{
+	"type": "RailBulletType",
+      "damage": 725,
+      "length": 350,
+      "pointEffectSpace":60
+      "hitShake": 10,
+      "collidesTiles": true,
+      "pieces":true
+    "buildingDamageMultiplier":0.5
+    "trailEffect": "instTrail",
+    "pierceEffect":"railHit"
+    "pointEffect":"railHit"
+      "smokeEffect": "smokeCloud",
+      "shootEffect": "instShoot",
+      "despawnEffect": "instHit",
+      "hitEffect": "instHit"
+	               	}}
+	]
+	"research": {
+	"parent":"BA1sHB精英单位工厂"
+	}
+	//"controller": "DefenderAI"
+}

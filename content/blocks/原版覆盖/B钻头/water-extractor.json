@@ -1,0 +1,12 @@
+{
+"maxBoost":10
+"research": {
+	"parent":"mechanicalDrill"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-saltflats"
+			}
+	]
+	}
+}

@@ -1,0 +1,218 @@
+{
+    "type": "hover",
+    "name":"帝钳"
+    "description": "用于突击敌方建筑的悬浮单位，可以在水上移动，有一门强力的激光切割器来摧毁敌方的建筑，装甲相对其前两款机型更为厚重。\n\n[blue][超限技术特殊作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred","freezing","tarred"
+	],
+    "speed": 0.9
+    "hitSize": 44
+    "health": 4500,
+    	"rotateSpeed": 1.5
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "hovering":true
+    "canDrown": false,
+    "armor":11
+    "itemCapacity": 15
+    "abilities": [
+	{
+    "type":"ForceFieldAbility",
+    "sides": 8,
+    "radius": 28
+    "regen": 0.6
+    "max": 6200,
+    "cooldown": 120,}
+    {
+    "type": "ShieldArcAbility",
+		"whenShooting":false,//是否射击时存在(Flash为一直存在)
+		"radius": 36,//半径
+		"width": 10,//宽度
+		"max": 1800,//最大容量
+		"regen": 0.6,//再生速度
+		"cooldown": 160,//护盾冷却时间
+		"angle": 61,//护盾弧度
+		"angleOffset": -90//护盾角度
+	}
+	{
+    "type": "ShieldArcAbility",
+		"whenShooting":false,//是否射击时存在(Flash为一直存在)
+		"radius": 36,//半径
+		"width": 10,//宽度
+		"max": 1800,//最大容量
+		"regen": 0.6,//再生速度
+		"cooldown": 160,//护盾冷却时间
+		"angle": 59,//护盾弧度
+		"angleOffset": 90//护盾角度
+	}
+    ]
+    "parts": [
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 12,//X位置
+			"y": 12,//Y位置
+			"radius": 15,//大小
+			"color": "1878BF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": false,//镜像对称
+			"x": 0,//X位置
+			"y": 0,//Y位置
+			"radius": 40,//大小
+			"color": "c0ecff",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 12,//X位置
+			"y": -12,//Y位置
+			"radius": 15,//大小
+			"color": "1878BF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		]
+    "weapons": [
+{
+			"name": "帝钳1",
+			"reload":6,
+			"recoil": 0,
+			"x": 0,
+			"y": 0,
+			"rotate": true,
+			"rotateSpeed": 5,
+			"mirror": false,
+			"inaccuracy": 0,
+			"targetAir":true,
+	"targetGround": true,
+			//"ejectEffect": "lightningShoot",
+			"shootEffect": "none",
+			"alternate": false,
+			"shootSound": "flux",
+			"shootCone":0,
+			"shake":0
+			"shootY":6
+			"bullet": {
+			"type": "PointBulletType",
+			"smokeEffect": "none",
+			"trailEffect": [
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"Length":0
+				"baseLength": -12,
+				"lifetime": 2,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 60,
+				"lenTo": 0,
+				"strokeFrom": 12,
+				"strokeTo": 0,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF",
+				"cone": 0
+			}
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"Length":0
+				"baseLength": -12,
+				"lifetime": 2,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 60,
+				"lenTo": 0,
+				"strokeFrom": 18,
+				"strokeTo": 0,
+				"colorFrom": "1878BF",
+				"colorTo": "1878BF",
+				"cone": 0
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"Length":0
+				"baseLength": -12,
+				"lifetime": 2,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 60,
+				"lenTo": 0,
+				"strokeFrom": 12,
+				"strokeTo": 0,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF",
+				"cone": 0
+			},]
+			"shootEffect": "none",
+			"hitEffect": {
+	"type": "ParticleEffect",
+	"particles": 5,
+	"line": true,
+	"strokeFrom": 0.7,
+	"strokeTo": 0.5,
+	"lenFrom": 4,
+	"lenTo": 2,
+	"length": 16,
+	"baseLength": 0,
+	"lifetime": 18,
+	"colorFrom": "87CEEB",
+	"colorTo": "87CEEB"
+	"interp": "pow3Out",
+	"sizeInterp": "pow3In",
+        "cone": 360,}
+				"despawnEffect": [{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":2
+				},
+				{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"1878BF",
+					"rotation":4
+				},]
+				"stepShake":0
+			"buildingDamageMultiplier":2
+			"pierceArmor": true,
+			"collidesAir": true
+			"collidesGround": true,
+			"damage":54
+			"trailSpacing": 8,
+			"hitShake": 6,
+			"speed": 200,
+			"lifetime": 1,
+			}
+		"recoil":0
+		"status": "破甲",
+			"statusDuration": 60
+		}
+    ]
+   /*"research": {
+	"parent":"uAABT2O蚌蜊"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "遗忘河滩"
+			}
+	]
+	}*/
+}

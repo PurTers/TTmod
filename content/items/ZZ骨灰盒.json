@@ -1,0 +1,10 @@
+{
+	"name": "骨灰盒",
+	"description": "这里装着的是一位故人",
+	"cost":2,
+	"alwaysUnlocked":false,
+	"color": "FF7F7F7F",
+	"radioactivity": 0,
+	"explosiveness": 0,
+	"flammability": 0,
+}

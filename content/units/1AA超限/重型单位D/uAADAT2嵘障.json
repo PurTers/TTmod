@@ -1,0 +1,277 @@
+{
+	"type": "legs",
+	"legCount": 2
+	"legLength": 16
+	"legForwardScl": 1
+	
+	"legLengthScl":1
+	"legSpeed":0.1
+	"legMoveSpace": 0.1
+	"legBaseOffset":5
+	
+	"legExtension":1
+	"legPairOffset":0
+	
+	"legSplashDamage":88
+	"legSplashRange":24
+	//"hidden": true
+				"immunities": [
+"wet","spore-slowed","tarred","shocked","electrified","脆裂","甲板损坏"
+	],
+	"abilities": [
+    {
+    "type": "ShieldArcAbility",
+		"whenShooting":false,//是否射击时存在(Flash为一直存在)
+		"radius": 45,//半径
+		"width": 20,//宽度
+		"max": 800,//最大容量
+		"regen": 0.25,//再生速度
+		"cooldown": 80,//护盾冷却时间
+		"angle": 180,//护盾弧度
+		"angleOffset": 0//护盾角度
+	}
+	{
+        "type": "RepairFieldAbility"
+        "amount":44
+        "reload": 60
+        "range": 64
+    }
+		{
+			"type": "ForceFieldAbility",
+			"sides": 8,
+			"radius": 64
+			"max": 3500,
+			"regen": 1.8
+			"cooldown": 600
+		}
+		{ "type": "StatusFieldAbility",
+    "duration": 1000,
+    "reload": 60,
+    "range": 128,
+    "applyEffect":"none",
+    "effect":"列阵"  }
+	],
+			"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+	"hovering": true,
+	"canDrown": false,
+	"name": "嵘障",
+	"description": "重型单位，可以踩过建筑，拥有强大的火力同时可以发射出护盾仪来保护单位\n\n[blue][超限技术重型单位]",
+	"canBoost": false,
+	"speed": 0.17
+	"hitSize": 42
+	"health": 18640,
+	"armor": 22
+	"drag": 0.2,
+	"rotateSpeed": 0.85,
+	"itemCapacity": 150,
+	"faceTarget": true,
+	"weapons": [
+	{
+			"name": "嵘障右手",
+			"reload": 90,
+			"x": 18
+			"y": 0
+			"rotate": false,
+			"top": false,
+			"recoil": 4,
+			"inaccuracy": 0,
+			"alternate": true,
+			"mirror":false,
+			"shootSound": "laser",
+			//"controllable":false
+			"shake": 2,
+			"rotationLimit":30
+			"shootCone":30
+			  "parts": [
+        {
+				"type": "RegionPart",
+				"suffix": "-炮管",
+				"x":-18
+				"y":-2
+				//"recoilIndex": 3
+				"moves": [{
+						"progress": "recoil",
+						"y": -8
+					}],
+				//"heatProgress": "heat"
+			},]
+			"bullet": {
+			"type": "ArtilleryBulletType",
+                "speed": 20,
+                "damage": 22
+                "width": 21,
+                "height": 29,
+                "lifetime": 25
+                "shootEffect": "shootBig",
+        "drag":0.005
+        "status": "破甲",
+			"statusDuration": 600,
+        "collidesAir": true
+        "trailLength":12
+         "trailWidth":7
+    "trailColor":"1878BF",
+	     	"backColor":"c0ecff",
+			"frontColor":"c0ecff"
+			"bulletInterval":4
+			"intervalRandomSpread":60
+				 "intervalBullets":2
+        "intervalBullet":{
+					"type":"BasicBulletType",
+					"sprite":"超限工艺-八角",
+    "speed": 4
+    "lifetime":80
+	"width": 7
+	"height": 7
+	"damage":24
+    "hitSize":40,
+    "shootEffect": "shootBig"
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "trailLength":9
+	"trailWidth":1.5
+	 "trailColor":"c0ecff",
+	"frontColor":"1878BF",
+	"backColor":"c0ecff",
+	"homingRange": 200
+            "homingPower": 0.1,
+			}
+        "fragBullets":4
+        "fragBullet":{
+					"sprite":"超限工艺-八角",
+			"speed":3
+			"damage": 224
+			"lifetime":30,
+			"width": 16, 			
+			"height":16
+			"spin":6,//子弹贴图持续旋转
+			"splashDamageRadius":15,
+		"splashDamage":94
+	    "makeFire":true,
+	    "pierceBuilding": true
+			"shootEffect":"shootSmall",
+			"trailLength":12
+			"status": "脆裂",
+			"statusDuration": 240,
+			"pierceCap": 5
+    "trailWidth":7
+    "trailColor":"1878BF",
+	     	"backColor":"c0ecff",
+			"frontColor":"c0ecff"
+			"homingRange": 80
+            "homingPower": 0.01,
+			}}
+		}
+		{	"name": "嵘障左手",	
+	               	"shootCone":30,
+			"rotationLimit":30
+		"reload":120
+        "x": -18
+         "y": 0
+        "rotate": false
+        "inaccuracy": 0
+		"shootSound": "plasmaboom",
+		"rotateSpeed": 0
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"mirror":false,
+	"parts": [
+        {
+				"type": "RegionPart",
+				"suffix": "-部件",
+				"x":0
+				"y":6
+				//"recoilIndex": 3
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				//"heatProgress": "heat"
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-部件2",
+				"x":18
+				"y":-3
+				//"recoilIndex": 3
+				"moves": [{
+						"progress": "recoil",
+						"y": -6
+					}],
+				//"heatProgress": "heat"
+			},]
+   "recoil": 0
+   "recoils": 0
+		"bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "嵘障导弹",
+             "speed": 0,
+	               	}}
+	               	{
+            "name": "嵘障1",
+            "reload": 30
+            "x":-8
+            "y":-4
+            "shootSound":"plasmaboom",
+            "ejectEffect": "casing1",
+            "rotate": "true",
+	"rotateSpeed":1.2
+	"shootX":2
+	    "shootY":5
+		"shootCone":10
+			"baseRotation":50
+			"rotationLimit":120,
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 4
+    "lifetime":30
+	"width": 2
+	"height": 6
+	"damage":36,
+    "hitSize":40,
+   "pierceArmor": true,
+    "shootEffect": "shootBig"
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "trailLength":22,
+	"trailWidth":2,
+	"status": "破甲",
+			"statusDuration": 130,
+	 "trailColor":"c0ecff",
+	"frontColor":"1878BF",
+	"backColor":"c0ecff",
+	"fragRandomSpread":60
+			"fragBullets":8
+        "fragBullet":{
+					"type":"BasicBulletType",
+    "speed": 0.25
+    "lifetime":180
+	"width": 1
+	"height": 3
+	"damage":12
+    "hitSize":40,
+    "shootEffect": "shootBig"
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "trailLength":6
+	"trailWidth":0.5
+	 "trailColor":"c0ecff",
+	"frontColor":"1878BF",
+	"backColor":"c0ecff",
+	"homingRange": 40,
+            "homingPower": 0.02
+			}
+			}}
+		]
+		"research": {
+	"parent":"BAAsHL低级装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰封菌落"
+			}
+	]
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "？？的墓碑",
+	"description": "？？之墓",
+	"type": "Wall",
+	"health": 23333333,
+	"armor":0,
+	"size": 3,
+	"absorbLasers":true,
+	"insulated":true,//绝缘
+}

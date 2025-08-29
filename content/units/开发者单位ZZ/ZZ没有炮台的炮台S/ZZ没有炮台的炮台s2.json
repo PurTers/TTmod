@@ -1,0 +1,45 @@
+{
+		//"immunities": [    ],
+	"name": "火炮T2",
+	"type": "missile",
+	"template": "MissileUnitType",
+		"engineOffset": 3,
+		"hitSize":12
+	"engineSize": 3,
+	"health": 99999
+	"armor": 0
+	"speed": 5
+	"lifetime": 3600
+	"rotateSpeed": 1
+	"engineOffset": 0,
+	"missileAccelTime": 60,
+	"weapons": [
+		{	"name": "没有炮台的炮台s2",	
+		"reload":99
+        "x": 0
+         "y": 0
+        "rotate": true,
+        "inaccuracy": 0,
+        "shootStatusDuration": 600
+	"shootStatus": "unmoving",
+		"shootCone":60,
+		"shoot":{
+			"shots":33
+			"shotDelay":69
+		},
+		"shootSound": "火炮发射",
+		"rotateSpeed": 0
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":0
+	    "splashDamageRadius":60,
+		"splashDamage":120
+	    "speed":2
+	    "lifetime":230
+	    "width":20,	 "height":20
+	    "homingRange": 40,
+            "homingPower": 0.1,
+	}	}
+	]
+}

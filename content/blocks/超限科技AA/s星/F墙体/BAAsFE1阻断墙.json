@@ -1,0 +1,16 @@
+{
+	"name": "阻断墙",
+	"description": "极端坚硬,可阻挡激光与电流\n\n[blue][超限技术高级装甲墙]",
+	"type": "Wall",
+	"health": 2800,
+	"size": 1,
+	"absorbLasers":true,
+	"insulated":true,//绝缘
+	"armor":45
+	"requirements": [
+	{ "item": "2阻断合金", "amount": 12} 
+	{ "item": "1绝缘钢", "amount": 12} 
+	],
+	"category": "defense",
+	"research": "BAAsFD2大型绝缘钢墙"
+}

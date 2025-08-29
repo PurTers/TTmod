@@ -1,0 +1,12 @@
+{
+ "name":"集成电路",//名称
+ "description":"精密电路，用于一些高级超限技术的设施\n \n[blue][超限技术物品]",//描述
+ "color":"949399",//颜色
+ "cost":1//建筑消耗时间，为1帧
+ "flammability":0,//燃烧性
+ "hardness":0//挖掘等级
+    "explosiveness":0,//爆炸性
+    "radioactivity":0,//辐射性
+    "charge":0//放电性
+"research": "铜铅合金"
+}

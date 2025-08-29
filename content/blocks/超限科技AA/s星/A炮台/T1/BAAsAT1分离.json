@@ -1,0 +1,293 @@
+{
+	"type": "ItemTurret",
+	"name": "分离",
+	"description": "由分裂炮改装而来的简易炮台，作为超限集团被驱逐之后早期的主要武器，这种炮台能将子弹反复分裂，形成大量的弹片打击敌人。\n \n[blue][超限技术炮台]",
+	"health": 500,
+	"size": 2,
+	"reload": 9
+	"range": 180,
+		"maxAmmo":50,
+    "ammoPerShot": 2
+    "recoils":3
+    "coolantMultiplier": 5
+    "liquidCapacity": 20,
+	"consumes": {
+	"coolant":{"amount":0.2,"optional":true}  
+		},
+	"shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 3
+		"spread": 1
+	},
+	"recoil": 2,
+	//"recoils":2,
+	"shootCone":35,
+	"recoilTime": 18,
+	"cooldownTime": 90,
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 25
+	"rotateSpeed": 4,
+	"shake":1,
+			"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {
+				"type": "RegionPart",
+				"suffix": "-1",
+				"under":true,
+				"recoilIndex": 0
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-2",
+				"under":true,
+				"recoilIndex": 1
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			}
+			{
+				"type": "RegionPart",
+				"suffix": "-3",
+				"under":true,
+				"recoilIndex": 2
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			}
+    ]}
+    ]
+   }
+	"ammoTypes": {
+			"lead":{
+			"ammoMultiplier": 11
+	    "speed": 3,  
+	    "lifetime":30
+		"width": 7,"height": 8,
+		"damage":8
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":10,
+		"splashDamage":7,
+        "ammoMultiplier":1,
+        	    "splashDamageRadius":16
+		"splashDamage":12
+        "fragLifeMin":0
+        "fragRandomSpread":10
+				"fragBullets": 3
+			"fragBullet": {
+				
+	    "damage":6
+	    "splashDamageRadius":16
+		"splashDamage":8
+	    "speed":1.5
+	    "lifetime":50
+	    "width":6
+	     "height":6
+
+	"fragLifeMin":0
+			"fragRandomSpread":10
+				"fragBullets": 2
+			"fragBullet": {
+				
+	    "damage":3
+	    "splashDamageRadius":16
+		"splashDamage":6
+	    "speed":1.5
+	    "lifetime":50
+	    "width":6
+	     "height":6
+
+			}}}
+						"graphite":{
+						"ammoMultiplier": 7
+	    "speed": 2
+	    "lifetime":45
+		"width": 7,"height": 8,
+		"damage":16
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":10,
+		"splashDamage":7,
+        "ammoMultiplier":2
+        "splashDamageRadius":16
+		"splashDamage":15
+        "fragLifeMin":0
+        "fragRandomSpread":10
+				"fragBullets": 2
+			"fragBullet": {
+				
+	    "damage":6
+	    "speed":3
+	    "lifetime":25
+	    "width":6
+	     "height":6
+"splashDamageRadius":16
+		"splashDamage":12
+	"fragLifeMin":0
+			"fragRandomSpread":10
+				"fragBullets": 2
+			"fragBullet": {
+				
+	    "damage":4
+	    "speed":3
+	    "lifetime":25
+	    "width":6
+	     "height":6
+"splashDamageRadius":16
+		"splashDamage":8
+			}}}
+			"pyratite":{
+			"ammoMultiplier":  11
+	    "speed": 2
+	    "lifetime":45
+		"width": 7,"height": 8,
+		"damage":1
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":10,
+		"splashDamage":7,
+        "ammoMultiplier":2
+        "splashDamageRadius":16
+		"splashDamage":12
+        "fragLifeMin":0
+        "makeFire":true,
+        "backColor":"FFD700",
+			"frontColor":"FFD700"
+        			"status":"burning",
+	     	"statusDuration":120,	
+        "fragRandomSpread":10
+				"fragBullets": 4
+			"fragBullet": {
+				
+	    "damage":6
+	    "speed":3
+	    "lifetime":25
+	    "width":6
+	     "height":6
+"splashDamageRadius":16
+		"splashDamage":6
+	"fragLifeMin":0
+	"makeFire":true,
+	"backColor":"FFD700",
+			"frontColor":"FFD700"
+			"status":"burning",
+	     	"statusDuration":60,	
+			"fragRandomSpread":10
+				"fragBullets": 2
+			"fragBullet": {
+				"splashDamageRadius":16
+		"splashDamage":4
+	    "damage":4
+	    "speed":3
+	    "lifetime":25
+	    "width":6
+	     "height":6
+"status":"burning",
+	     	"statusDuration":30,	
+			}}}
+									"silicon":{
+									"ammoMultiplier": 6
+	    "speed": 2
+	    "lifetime":50
+		"width": 7,"height": 8,
+		"damage":12
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":10,
+		"splashDamage":3
+        "fragLifeMin":0
+        "fragRandomSpread":10
+				"homingDelay":20
+				"homingRange": 40
+            "homingPower": 0.06,
+				"fragBullets": 3
+			"fragBullet": {
+				"splashDamageRadius":16
+		"splashDamage":6
+	    "damage":3
+	    "speed":3
+	    "lifetime":25
+	    "width":6
+	     "height":6
+"homingRange": 45
+            "homingPower": 0.06,
+	"fragLifeMin":0
+			"fragRandomSpread":10
+				"fragBullets": 2
+			"fragBullet": {
+				"splashDamageRadius":16
+		"splashDamage":3
+	    "damage":2
+	    "speed":3
+	    "lifetime":25
+	    "width":6
+	     "height":6
+"homingRange": 15
+            "homingPower": 0.06,
+			}}}
+			"metaglass":{
+			"ammoMultiplier": 8
+	    "speed": 3,  
+	    "lifetime":30
+		"width": 7,"height": 8,
+		"damage":8
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":10,
+		"splashDamage":7,
+        "ammoMultiplier":1,
+        	    "splashDamageRadius":16
+		"splashDamage":24
+        "fragLifeMin":0
+        "fragRandomSpread":10
+				"fragBullets": 3
+			"fragBullet": {
+				
+	    "damage":6
+	    "splashDamageRadius":16
+		"splashDamage":16
+	    "speed":1.5
+	    "lifetime":50
+	    "width":6
+	     "height":6
+
+	"fragLifeMin":0
+			"fragRandomSpread":10
+				"fragBullets": 4
+			"fragBullet": {
+				
+	    "damage":3
+	    "splashDamageRadius":16
+		"splashDamage":8
+	    "speed":1.5
+	    "lifetime":50
+	    "width":6
+	     "height":6
+
+			}}}
+	}, 
+	"researchCostMultiplier": 0.5,
+	"requirements": [
+{ "item": "copper", "amount": 35 }
+{ "item": "lead", "amount": 25 }
+{ "item": "0铜铅合金", "amount": 10}
+	],
+	"category": "turret",
+	"research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.05
+}

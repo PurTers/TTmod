@@ -1,0 +1,491 @@
+{
+	"type": "PowerTurret",
+	"name": "沸腾",
+	"description": "超限集团原本是想来以一种更高效的方式回收矿渣，但也正是这样意外发现了将矿渣作为子弹的巨大威力，沸腾由此诞生\n \n[blue][超限技术炮台]",
+	"targetAir": true,
+	"targetGround": true,
+	"health": 3680,
+	"size": 4
+	"shootSound":"largeExplosion",
+	"shake":2,
+	"inaccuracy": 0
+	"recoil": 6
+	"recoilTime":10
+	"coolantMultiplier": 2.5
+	"minWarmup": 0.99
+	"liquidCapacity": 500,
+	"shootWarmupSpeed": 0.032,
+	"moveWhileCharging": false,
+	"shoot":{
+	    "firstShotDelay":300
+		"type":"ShootAlternate",
+	},
+	"drawer": {
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type":"RegionPart",
+                "mirror":false,
+                "x":0,"y":0,
+                "suffix":"-炮口"
+                "layer":49.9,
+                "y": 0
+                "moveY": 0
+        		"moves": [{
+            		"progress": "recoil",
+            		"y": -4
+        		}],
+        	}
+        	{
+                "type":"RegionPart",
+                "mirror":true,
+                "x":0,"y":0,
+                "suffix":"-边"
+                "layer":50,
+                "moveY": 0
+                "moveX": 2
+                "moveRot":-20//旋转
+                "progress": {
+                    "type": "warmup"
+                    "op": "compress"
+                    "start": 0
+                    "end": 0.5
+                }
+        	}
+        	{
+                "type":"RegionPart",
+                "mirror":true,
+                "x":0,"y":0,
+                "suffix":"-侧"
+                "layer":50,
+                "moveY": 0
+                "moveX": 2
+                "progress": {
+                    "type": "warmup"
+                    "op": "compress"
+                    "start": 0.5
+                    "end": 1
+                }
+        	}
+		]
+    },
+	"shootType": {	
+	"type" : "BasicBulletType",
+	"damage": 1262,//伤害
+	"splashDamageRadius":64,
+	"splashDamage":969,
+	"makeFire":true,
+	"sprite":"超限工艺-尖刺2",
+	"width": 48
+	"height": 48
+    "trailLength":80
+	"trailWidth":16
+	"homingRange": 20,
+    "homingPower": 0.03,
+    "trailColor":"FF8C00",
+	"frontColor":"FFD700",
+	"backColor":"FF8C00",
+	"status":"melting",
+	"statusDuration":666,
+	"speed": 20
+	"lifetime": 20,
+		"fragBullets":8,
+        "fragBullet":{
+        "sprite":"超限工艺-尖刺",
+        "pierce": true,
+	"type" : "BasicBulletType",
+	"damage": 62,//伤害
+	"splashDamageRadius":22,
+	"splashDamage":278,
+		"weaveMag":4,
+	"weaveScale":4,
+	"makeFire":true,
+    "trailLength":125
+	"trailWidth":12
+	            "homingRange": 20,
+    "homingPower": 0.01,
+    "trailColor":"FF8C00",
+	"frontColor":"FFD700",
+	"backColor":"FF8C00",
+	"width": 16,
+	"height": 16
+	"status":"melting",
+	"statusDuration":360,
+	"speed": 0.4166666,
+	"lifetime": 300,
+	"hitEffect": {
+"type": "MultiEffect",
+	"effects": [
+	{"type": "ParticleEffect",
+    "particles": 16,
+    "sizeFrom": 24,
+    "sizeTo": 0,
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 25,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "WaveEffect",
+    "lifetime": 15,
+    "sizeFrom": 1,
+    "sizeTo": 64,
+    "strokeFrom": 8
+    "strokeTo": 0,
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C0000"}]
+	},
+	"despawnEffect":"none",
+	"shootEffect": {     
+        "type": "WaveEffect",
+        "lifetime": 16,
+        "sizeFrom": 1,
+        "sizeTo": 64,
+        "strokeFrom": 8
+        "strokeTo": 0,
+        "colorFrom": "FFFFFF",
+        "colorTo": "FFD700"
+	   }
+					"intervalBullets":3,
+			"intervalBullet": {
+	"type" : "BasicBulletType",
+	"damage": 32,//伤害
+	"splashDamageRadius":32
+	"splashDamage":120
+	"makeFire":true,
+    "trailLength":4,
+	"trailWidth":1.5,
+	            "homingRange": 20,
+    "homingPower": 0.01,
+    "trailColor":"FF8C00",
+	"frontColor":"FFD700",
+	"backColor":"FF8C00",
+	"width": 2,
+	"height": 8,
+	"status":"burning",
+	"statusDuration":180,
+	"speed": 0.3,
+	"lifetime": 120,
+	"ammoMultiplier":3,
+	"hitEffect": {
+"type": "MultiEffect",
+	"effects": [
+	{"type": "ParticleEffect",
+    "particles": 16,
+    "sizeFrom": 6,
+    "sizeTo": 0,
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 25,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "WaveEffect",
+    "lifetime": 15,
+    "sizeFrom": 1,
+    "sizeTo": 30,
+    "strokeFrom": 3,
+    "strokeTo": 0,
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C0000"}]
+	},
+	"despawnEffect":"none",
+	"shootEffect": {     
+        "type": "WaveEffect",
+        "lifetime": 16,
+        "sizeFrom": 1,
+        "sizeTo": 32,
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFF",
+        "colorTo": "FFD700"
+	   }
+			}
+	},
+	"hitEffect": {
+"type": "MultiEffect",
+	"effects": [
+	{"type": "ParticleEffect",
+    "particles": 22
+    "sizeFrom": 22,
+    "sizeTo": 0,
+    "length": 0,
+    "baseLength":32,
+    "lifetime": 300,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+   {"type": "ParticleEffect",
+    "particles": 22
+    "sizeFrom": 22,
+    "sizeTo": 0,
+    "length": 0,
+    "baseLength":22,
+    "lifetime": 180,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "particles": 22
+    "sizeFrom": 22,
+    "sizeTo": 0,
+    "length": 0,
+    "baseLength":22,
+    "lifetime": 60,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "particles": 22
+    "sizeFrom": 12,
+    "sizeTo": 12,
+    "length": 12,
+    "baseLength":22,
+    "lifetime": 120,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+	{"type": "ParticleEffect",
+    "particles": 22
+    "sizeFrom": 0
+    "sizeTo": 12
+    "length": 0,
+    "baseLength": 64,
+    "lifetime": 60,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "WaveEffect",
+    "lifetime": 30
+    "sizeFrom": 0,
+    "sizeTo": 64
+    "strokeFrom": 0
+    "strokeTo": 128
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C0000"}
+    {"type": "WaveEffect",
+    "lifetime": 300
+    "sizeFrom": 64
+    "sizeTo": 64
+    "strokeFrom": 128
+    "strokeTo": 128
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C0000"}
+ ]
+	},
+	"despawnEffect":"none",
+	"chargeEffect": {
+        "type": "MultiEffect",
+	"effects": [
+	{"type": "ParticleEffect",
+	    "startDelay":300
+    "particles": 22
+    "sizeFrom": 12,
+    "sizeTo": 0,
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 150,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 30},
+    {"type": "ParticleEffect",
+    "particles": 22
+    "sizeFrom": 12,
+    "sizeTo": 0,
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 300,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "particles": 22
+    "sizeFrom": 0,
+    "sizeTo": 22,
+    "length": 35,
+    "baseLength": 0,
+    "lifetime": 300,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "WaveEffect",
+    "lifetime": 300
+    "sizeFrom": 120,
+    "sizeTo": 0,
+    "strokeFrom": 60
+    "strokeTo": 0,
+    "colorFrom": "FF8C0000",
+    "colorTo": "FF8C00"}
+    {"type": "WaveEffect",
+    "lifetime": 75
+    "sizeFrom": 45
+    "sizeTo": 0
+    "strokeFrom": 22.5
+    "strokeTo": 0,
+    "colorFrom": "FF8C0000",
+    "colorTo": "FF8C00"}
+    {"type": "WaveEffect",
+    "lifetime": 150
+    "sizeFrom": 90
+    "sizeTo": 0
+    "strokeFrom": 45
+    "strokeTo": 0,
+    "colorFrom": "FF8C0000",
+    "colorTo": "FF8C00"}
+    
+    
+   /* {
+    "startDelay":200
+		"particles": 1,//数量
+		"randLength": false//是否有随机量
+		"length" : 60//移动量
+		"baseLength" : 0//初始移动量
+		"region": "超限工艺-尖刺",
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"sizeFrom": 20
+		"sizeTo": 0
+		"lifetime": 60,
+		"colorFrom": "FF8C00",
+		"colorTo": "FF8C00",
+		"cone": 0
+	    },
+	    {
+	    "startDelay":100
+		"particles": 1,//数量
+		"randLength": false//是否有随机量
+		"length" : 40//移动量
+		"baseLength" : 0//初始移动量
+		"region": "超限工艺-菱形",
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"sizeFrom": 20
+		"sizeTo": 0
+		"lifetime": 45,
+		"colorFrom": "FF8C00",
+		"colorTo": "FF8C00",
+		"cone": 0
+	    }  
+	    {
+		"particles": 1,//数量
+		"randLength": false//是否有随机量
+		"length" : 20//移动量
+		"baseLength" : 0//初始移动量
+		"region": "超限工艺-菱形",
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"sizeFrom": 20
+		"sizeTo": 0
+		"lifetime": 30,
+		"colorFrom": "FF8C00",
+		"colorTo": "FF8C00",
+		"cone": 0
+	    }  
+	    {
+		"particles": 1,//数量
+		"randLength": false//是否有随机量
+		"length" : 30//移动量
+		"baseLength" : 0//初始移动量
+		"offsetY" : -9//位置偏移
+		"line": true,
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"lenFrom": 0,//长度
+		"lenTo": 100,
+		"strokeFrom": 7,//粗细
+		"strokeTo": 7,
+		"lifetime": 300,
+		"colorFrom": "FF8C00",
+		"colorTo": "FF8C00",
+		"cone": 0
+	    },
+	    {
+		"particles": 1,//数量
+		"randLength": false//是否有随机量
+		"length" : 30//移动量
+		"baseLength" : 0//初始移动量
+		"offsetY" : 9//位置偏移
+		"line": true,
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"lenFrom": 0,//长度
+		"lenTo": 100,
+		"strokeFrom": 7,//粗细
+		"strokeTo": 7,
+		"lifetime": 300,
+		"colorFrom": "FF8C00",
+		"colorTo": "FF8C00",
+		"cone": 0
+	    },
+	    {
+		"particles": 1,//数量
+		"randLength": false//是否有随机量
+		"length" : 20//移动量
+		"baseLength" : 0//初始移动量
+		"offsetY" : -12//位置偏移
+		"line": true,
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"lenFrom": 0,//长度
+		"lenTo": 100,
+		"strokeFrom": 4,//粗细
+		"strokeTo": 4,
+		"lifetime": 300,
+		"colorFrom": "FF8C00",
+		"colorTo": "FF8C00",
+		"cone": 0
+	    },
+	    {
+		"particles": 1,//数量
+		"randLength": false//是否有随机量
+		"length" : 20//移动量
+		"baseLength" : 0//初始移动量
+		"offsetY" : 12//位置偏移
+		"line": true,
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"lenFrom": 0,//长度
+		"lenTo": 100,
+		"strokeFrom": 4,//粗细
+		"strokeTo": 4,
+		"lifetime": 300,
+		"colorFrom": "FF8C00",
+		"colorTo": "FF8C00",
+		"cone": 0
+	    },*/
+    ]
+	   }
+	},
+	   "consumes": {
+		"power":23.8
+		"liquids":[
+    {
+        "liquid": "slag"
+        "amount": 1.2
+        "booster": true
+    }
+    ]
+	},
+	"reload": 520,//发射间隔
+	"rotateSpeed": 1,//炮台转速
+	"range": 430,
+	"category": "turret",
+	    "research": {
+	"parent":"BAAsAT3AB热浪"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰封菌落"
+			}
+	]
+	}
+	"requirements": [
+{"item": "1绝缘钢", "amount": 120  },
+{"item": "1集成电路", "amount": 240  },
+{ "item": "titanium", "amount": 270 }
+{ "item": "1共振石", "amount":280},
+{ "item": "1复合物", "amount":120},
+{ "item": "metaglass", "amount": 160 }
+	]
+	"researchCostMultiplier": 0.5
+}

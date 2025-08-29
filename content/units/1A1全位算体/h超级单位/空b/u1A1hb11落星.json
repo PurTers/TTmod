@@ -1,0 +1,86 @@
+{
+	"type": "flying",
+	"name": "落星",
+	"description": "更加强大的星辉，能够发射导弹。",
+			"immunities": ["甲板损坏"
+	],
+	"speed": 1.6,	
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":5,
+	"lowAltitude":true
+	"targetFlags": ["battery","core"],
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 300,
+	"abilities": [
+	{
+"type": "RegenAbility",
+"amount": 0.15
+},]
+	    "health": 320,
+	"hitSize":8, 
+	"flying": true,
+	"faceTarget": true,
+	"circleTarget": true,
+	"armor":3,
+	"engineOffset": 6,
+	"engineSize": 3,
+	"itemCapacity": 0,
+		"weapons":[{	"name": "无",	
+		"reload":15,
+        "x": 1.2,  "y": 0.8, 
+        "rotate": true,
+        "rotateSpeed":24,
+        "inaccuracy": 0,
+        "shootCone":12,
+		"shoot":{
+			"shots":2,
+			"shotDelay":3
+		},
+		"shootSound": "pew",
+		"rotateSpeed": 0,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":10,	  
+	    "speed":3,
+	    "lifetime":55,
+	    "width":7,	 "height":10
+	}	}
+	{	"name": "无",	
+		"reload":126
+        "x": 3,  "y": 6, 
+        "rotate": true,
+        "mirror":true,
+        "inaccuracy": 0
+		"shootSound": "missile",
+		"rotateSpeed": 0,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":3
+	    "shotDelay":5
+	},
+		"bullet":{
+			"sprite":"missile",
+			"splashDamageRadius":35,
+	"splashDamage":15
+	    "damage":1
+	    "speed":3,
+	    "weaveMag":2,
+	"weaveScale":4,
+	    "lifetime":60,
+	    "width":2,	 "height":7
+	"trailLength":3,
+	"trailWidth":1,
+	"homingRange": 60,
+    "homingPower": 0.1,
+    "homingDelay":10
+    }}
+]
+"research": {
+	"parent":"BA1sHA精锐工厂"
+	}
+	"researchCostMultiplier": 0,
+}

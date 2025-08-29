@@ -1,0 +1,117 @@
+{
+		"immunities": [
+"wet","spore-slowed","tarred","蜂群","甲板损坏"
+	],
+	"name": "飞蚊",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"hitSize": 6
+	"engineOffset": 3,
+	"engineSize": 3,
+	"health": 120,
+	"armor": 0,
+	"speed": 0.6,
+	"lifetime": 600,
+	"rotateSpeed": 2,
+	"engineOffset": 0,
+	"missileAccelTime": 0,
+	"abilities": [
+    {"type":"ArmorPlateAbility",
+	"healthMultiplier":2}
+	{
+"type": "RegenAbility",
+"amount": 0.3
+}
+    ],
+	"weapons": [
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 14,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 60,
+	"shootStatus": "僚机加速",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {"pierceArmor": true,
+	    "damage":0,	  
+	    "speed":0,
+	    "lifetime":1,
+	    "width":0,	 "height":0}}
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 9999,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 9999
+	"shootStatus": "fast",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {"pierceArmor": true,
+	    "damage":0,	  
+	    "speed":0,
+	    "lifetime":1,
+	    "width":0,	 "height":0}}
+	    {	"name": "无",	
+		"reload":20,
+        "x": 1,  "y": 1, 
+        "rotate": false,
+        "inaccuracy": 1,
+		"shootSound": "pew",
+		"rotateSpeed": 5,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+		"collidesGround":true,
+		"collidesAir":false,
+	    "damage":16,	  
+	    "speed":3,
+	    "lifetime":55,
+	    "width":7,	 "height":10
+	}	}
+		{	"name": "无",	
+		"reload":20,
+        "x": 0,  "y": 0, 
+        "rotate": true,
+        "inaccuracy": 1,
+        "shootStatusDuration": 40,//发射时给自己的状态时间
+	"shootStatus": "静止",//发射时给自己的状态
+		"rotateSpeed": 999
+		"shootSound": "pew",
+		"rotateSpeed": 5,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+		"collidesGround":true,
+		"collidesAir":false,
+	    "damage":16,	  
+	    "speed":3,
+	    "lifetime":35,
+	    "width":7,	 "height":10
+	}	}
+	],
+}

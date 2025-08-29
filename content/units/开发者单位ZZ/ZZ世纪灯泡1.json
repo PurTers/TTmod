@@ -1,0 +1,85 @@
+{
+"type":"legs",
+"name": "世纪灯泡",
+"description": "画图师？？？？",
+"hidden":true,
+"armor": 30,
+"speed": 0.76,
+"rotateSpeed": 2.5,
+"hitSize":24,
+"legPairOffset":1.5,
+"legExtension":-10,
+"legBaseOffset":4,
+"stepShake":1.2,
+"legCount":4,
+"legLength":40,
+"legMoveSpace":1,
+"rippleScale":1.6,
+"legSplashDamage":88,
+"legSplashRange":46,
+"drownTimeMultiplier":6,
+"hovering":true,
+"allowLegStep":true,
+	    "abilities": [{
+        "type": "RepairFieldAbility"
+        "amount":120
+        "reload":60
+        "range": 1
+    }
+        {//死亡时产生单位
+			"type": "SpawnDeathAbility",
+			"unit": "ZZ世纪灯泡2",
+			"amount": 1,//固定数量
+			"randAmount": 0//随机数量
+	},]
+	"weapons": [
+	{
+			"name": "无",
+			"reload": 600,
+			"recoil": 0,
+			"x": 0,
+			"y": 0,
+			"rotate": true,
+			"rotateSpeed": 2.5,
+			"mirror": false,
+			"inaccuracy": 0.5,
+			"ejectEffect": "casing1",
+			"shootSound": "artillery",
+			"alternate": false,
+				"heatColor":"FFFFFFFF",
+			"bullet": {
+			"shootSound": "artillery",
+				"damage":66
+				"speed": 3,
+				"lifetime": 90,
+				"width": 13,
+				"height": 23
+				"pierceCap": 3,
+				"sprite":"2024拜年寄-AA",
+				"intervalBullets":6 ,
+				"status":"corroded",
+	"statusDuration":180,
+	"makeFire":true,
+			"intervalBullet": {
+			"sprite":"2024拜年寄-AA",
+			"pierceCap": 2,
+"homingRange": 80,
+"homingPower": 0.03,
+	    "damage":63,	  
+	    "speed":1.5,
+	    "lifetime":40,
+	    "width":10,	 "height":10
+	    "status":"corroded",
+	"statusDuration":60,
+	"makeFire":true,
+			}
+			}
+		}]
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 300,
+	"buildSpeed": 1,
+	"health": 25000,
+	"armor":2147483617,
+}

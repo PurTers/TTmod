@@ -1,0 +1,69 @@
+{
+    "type": "legs",
+    "name":"侧卫-A"
+    "description": "超限集团装配在一些特殊飞行器上的突袭单位，移动速度快，但是武器威力和装甲偏低，但是其小巧的体型可以使其免疫一些异常状态\n\n[blue][超限技术特战机甲]",
+    "details":"一个比尖刀更小的机动作战单位,也不是动员兵",
+    "legCount": 2
+	"legLength": 1
+	"legForwardScl": 1
+	
+	"legLengthScl":1
+	"legSpeed":0.1
+	"legMoveSpace": 0.04
+	"legBaseOffset":0
+	
+	"legExtension":1
+	"legPairOffset":0
+	
+	"legSplashDamage":0
+	"legSplashRange":0
+    "immunities": [
+		"wet","甲板损坏"
+	],
+    "speed": 0.7
+    "hitSize": 6
+    "health": 320,
+    "itemCapacity": 0
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":0
+    	"abilities": [
+	{
+			"type": "SpawnDeathAbility",
+			"unit": "爆炸1",
+			"amount": 1,
+			"randAmount": 0
+			"spread": 0,
+	    "faceOutwards": false,
+	},]
+    "weapons": [
+       {
+            "name": "侧卫-A1",
+            "reload": 9
+            "x":3
+            "y":0
+             "inaccuracy": 1,
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"shootCone":15
+		    "rotationLimit": 15
+		    "mirror": false,
+		    "shootX":3
+		    "shootY":6
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 4.5
+    "lifetime":40
+	"width": 1.5
+	"height": 5
+	"damage":12
+    "hitSize":4
+    "buildingDamageMultiplier":1.25
+   // "collidesAir": false
+    }}
+    ]
+}

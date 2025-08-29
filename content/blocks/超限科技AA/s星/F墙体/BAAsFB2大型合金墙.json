@@ -1,0 +1,17 @@
+{
+	"name": "大型基础合金墙",
+	"description": "基础合金构筑而成，可以吸收闪电\n\n[blue][超限技术低级装甲墙]",
+	"type": "Wall",
+	"health": 1680,
+	"size":2,
+	"insulated":true,//绝缘
+	"requirements": [
+	{ "item": "0铜铅合金", "amount": 24} 
+	{ "item": "graphite", "amount": 12} 
+	],
+	"category": "defense",
+	"research": "BAAsFB1合金墙"
+	"armor":2
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":1.6
+}

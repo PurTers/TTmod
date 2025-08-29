@@ -1,0 +1,49 @@
+{
+	"type": "GenericCrafter",
+	"name": "精细化硅调控厂",
+	"health": 320,
+	"description": "通过精确调控与计算，新加工生产硅，能够高度利用资源，产量大。\n[orange][全位算体精加工厂]",
+	"craftEffect": "pulverizeSmall"
+	"outputItem": { "item": "silicon", "amount": 50 },
+	"alwaysUnlocked": false,
+		"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 600,
+	"itemCapacity": 80,
+	"consumes": {
+	"power":4.2,
+    "items": {	 "items": [
+    { "item": "pyratite", "amount": 15}
+    { "item": "sand", "amount": 40}
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 180 },
+	{ "item": "copper", "amount": 140 },
+	{ "item": "graphite", "amount": 80 },
+		{ "item": "metaglass", "amount": 20 },
+				{ "item": "titanium", "amount": 20 },
+	],
+	"category": "crafting",
+	"research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "超限工艺-facility32m"
+			}
+	]
+	}
+	"researchCostMultiplier": 0,
+	    "canOverdrive": false,
+	    "buildVisibility":"campaignOnly"
+}

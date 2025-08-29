@@ -1,0 +1,66 @@
+{
+    "type":"ConsumeGenerator",
+    "name":"强化涡轮发电机",
+    "description":"一个强化涡轮发电机，发电效率大大增加，但需要更多可燃物\n \n[blue][超限技术发电装置]",
+    "size":3,
+    "health":360,
+    "hasPower":true,
+    "hasLiquids":true,
+    "hasItems":true,
+    "itemCapacity":30,
+    "liquidCapacity":160,
+    "powerProduction":14,
+    "itemDuration":60,
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            "DrawWarmupRegion",
+            {
+                "type": "DrawRegion",
+                "suffix": "-turbine",
+                "rotateSpeed":2
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-turbine",
+                "rotateSpeed":-2,
+                "rotation":45
+            }
+            {
+        "type":"DrawRegion",
+        "suffix":"-cap",
+        "rotateSpeed":0
+        },
+        ]
+    },
+    "generateEffect": "generatespark",
+    "consumes":{
+    "itemFlammable": {},
+             "liquid": {
+            "liquid": "water",
+            "amount": 0.18
+        }}
+    "requirements":[
+        {"item":"silicon","amount":145},
+        { "item": "titanium", "amount": 125 }
+        {"item":"graphite","amount":90}
+        { "item": "metaglass", "amount": 90 }
+        { "item": "0铜铅合金", "amount": 40 }
+        ],//建造需求
+        "ambientSound": "smelter",
+    "ambientSoundVolume": 0.06,
+        "category":"power",//类别
+        "research": {
+	"parent":"BAAsEA1大型火力发电站"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "未知废墟"
+			}
+			"steam-generator"
+	]
+	}
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.5
+}

@@ -1,0 +1,51 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "大型火力发电站",
+    "description": "大型火力发电机，佣有更快发电。\n \n[blue][超限技术发电装置]",
+    "size": 2,
+    "health": 280,
+    "hasLiquids": false,
+    "hasItems": true,
+    "itemDuration": 40,
+    "powerProduction": 5,
+    "itemCapacity": 20,
+    "drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+    "generateEffect": "generatespark",
+    "consumes": {
+        "itemFlammable": {},
+    },
+    "requirements": [
+        {
+            "item": "0铜铅合金",
+            "amount": 30
+        },
+        {
+            "item": "lead",
+            "amount": 35
+        },
+        {
+            "item": "graphite",
+            "amount": 15
+        },
+    ],
+    "ambientSound": "smelter",
+    "ambientSoundVolume": 0.06,
+    "category": "power",
+    "research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+			"combustion-generator"
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

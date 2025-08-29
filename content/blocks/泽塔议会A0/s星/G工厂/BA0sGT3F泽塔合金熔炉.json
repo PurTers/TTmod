@@ -1,0 +1,54 @@
+{
+    "name": "泽塔合金熔炉",
+    "type": "GenericCrafter",
+    "description": "内部能够产生极端条件，用于加工泽塔合金。\n[red][泽塔议会工厂]",
+    "itemCapacity": 80,
+    "health": 4800,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 33,
+    "updateEffect": "none",
+    	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+    "consumes": {
+    "power": 18,
+        "items": {
+            "items": [
+            { "item": "surge-alloy",  "amount": 5 },
+            { "item": "thorium",  "amount": 7 }
+            { "item": "blast-compound", "amount": 4 },
+            ]
+        },
+        "liquid": {
+            "liquid": "slag",
+            "amount": 0.9
+        }
+    },
+    "outputItem": {"item": "00磁暴合金", "amount": 3}
+    "requirements": [
+    {"item": "titanium","amount": 690},
+        { "item": "graphite","amount":450},
+	{ "item": "surge-alloy", "amount": 550 }
+        {"item": "thorium","amount": 350},
+        {"item": "plastanium","amount": 350}
+        {"item": "phase-fabric","amount": 420}
+        { "amount": 480, "item": "silicon" }
+    ],
+    "category": "crafting",
+    /*"research": {
+    "parent":"BA0s泽塔议会",
+    "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "无风海湾"
+			}
+	]}*/
+    "researchCostMultiplier": 0.5
+}

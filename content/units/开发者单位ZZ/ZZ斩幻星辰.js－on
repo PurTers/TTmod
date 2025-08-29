@@ -1,0 +1,30 @@
+{
+	"type": "flying",
+	"name": "斩幻星辰",
+	"description": "这是一个鸽子？",
+	"speed": 5	
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":10,
+	    "abilities": [
+    {//死亡时产生单位
+			"type": "SpawnDeathAbility",
+			"unit": "ZZ斩幻星辰",
+			"amount": 1,//固定数量
+			"randAmount": 0//随机数量
+	},]
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 300,
+	"hitSize":10, 
+	"buildSpeed": 5
+	"flying": true,
+	"faceTarget": true,
+	"health": 2147483617,
+	"armor":2147483617,
+	"engineOffset": 6,
+	"engineSize": 5,
+"mineSpeed": 30
+    "mineTier": 1
+}
+//paotaiS

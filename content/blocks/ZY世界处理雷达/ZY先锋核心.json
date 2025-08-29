@@ -1,0 +1,14 @@
+{
+    "name":"先锋核心(类无敌版)",
+    "type":"CoreBlock",
+    "description": "几乎无敌，单位上限增加9999，没有核心建造者",
+    "requirements": [
+    ],
+    "unitType":"无",
+    "health": 99999999,
+    "itemCapacity": 2500,
+    "size": 2,
+    "buildVisibility": "sandboxOnly",
+    "unitCapModifier": 9999,
+    "category": "logic"
+}

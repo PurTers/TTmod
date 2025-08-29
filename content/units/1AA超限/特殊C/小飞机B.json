@@ -1,0 +1,80 @@
+{
+		"immunities": [
+"wet","spore-slowed","tarred","shocked","freezing","蜂群","甲板损坏"
+	],
+	"name": "护卫A",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"hitSize": 8
+	"engineOffset": 3,
+	"engineSize": 3,
+	"health": 680,
+	"armor": 6,
+	"speed": 3
+	"lifetime": 5400,
+	"rotateSpeed": 2.5,
+	"engineOffset": 0,
+	"missileAccelTime": 60,
+	"weapons": [
+	{	"name": "无",	
+		"reload": 10, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootOnDeath":true,
+		"bullet":{
+		"collidesGround":true
+		"collidesAir":false,
+		"lightningDamage":19,
+            "lightningColor": "c0ecffFF",
+    "lightning":4
+    "lightningLength":12
+		"killShooter":true,
+		"splashDamageRadius":68,
+		"instantDisappear":true,
+		"collides": false,
+		"splashDamage":220,
+		"speed":1,"lifetime":10,
+		"hitEffect":"massiveExplosion",
+		"buildingDamageMultiplier":0
+		"despawnEffect":{"type": "MultiEffect",
+			"effects": [
+			{"type": "ParticleEffect",
+			"particles": 18,
+			"sizeFrom": 6,
+			"sizeTo": 0,
+			"length": 45,
+			"baseLength": 3,
+			"lifetime": 35,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 9,
+			"sizeTo": 0,
+			"length": 53,
+			"baseLength": 20,
+			"lifetime": 22,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "WaveEffect",
+			"lifetime": 15,
+			"sizeFrom": 0,
+			"sizeTo": 70,
+			"strokeFrom": 4,
+			"strokeTo": 0,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff"}]},
+		"width":0,	 "height":0
+	   }
+	   	}
+	],
+}

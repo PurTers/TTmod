@@ -1,0 +1,53 @@
+{
+	"type": "GenericCrafter",
+	"name": "阻断合金冶炼炉",
+	"description": "再次加工绝缘钢制作阻断合金\n\n[blue][超限技术高级工厂]",
+	"health": 640,
+	"outputItem": { "item": "2阻断合金", "amount": 8},
+	"itemCapacity": 24,
+	"size": 4,
+    "hasItems": true,
+	"solid": true,
+	"hasPower": true,
+	"craftTime": 30,
+		"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+		"power": 6,
+		"items":{
+		"items":[
+		{"item":"thorium","amount":8}
+		{"item":"silicon","amount":10}
+		{ "item": "1绝缘钢", "amount": 8} 	
+		]
+		}
+		"liquid": {
+            "liquid": "oil",
+            "amount": 0.9
+        }
+		},
+	"requirements": [
+	{ "item": "titanium", "amount": 200 }
+	{ "item": "graphite", "amount": 70 },
+	{ "item": "plastanium", "amount": 80},
+	{ "item": "2高能芯片", "amount": 140 },
+		{ "item": "1绝缘钢", "amount": 40} 	
+		{ "item": "1集成电路", "amount": 140} 
+	],
+	"category": "crafting",
+	"research": {
+	"parent":"BAAsGT2E绝缘钢工厂"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "无风海湾"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

@@ -1,0 +1,33 @@
+{
+    "type": "missile",
+	"template": "MissileUnitType",
+    "name":" "
+    "description": " ",
+    "immunities": [
+		"wet","spore-slowed","tarred"
+	],
+    "speed": 0
+    "hitSize": 12
+    "health": 999999999,
+    	"rotateSpeed": 0
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+	"deathExplosionEffect":"none"
+        "targetAir":false,  
+    "targetGround":true,
+    "hovering":true
+    "armor":0
+    "itemCapacity": 0
+    "lifetime":120
+    "hidden": true,//是否隐藏？
+    "engineOffset": 0
+	"engineSize": 0
+    "abilities": [
+        { "type": "StatusFieldAbility",
+    "duration": 120,
+    "reload": 60,
+    "range": 999999
+    "applyEffect":"none",
+    "activeEffect":"none",
+    "effect":"闪电突袭"  }]
+}

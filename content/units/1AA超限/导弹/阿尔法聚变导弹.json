@@ -1,0 +1,88 @@
+{
+		"immunities": [
+	],
+	"name": "阿尔法聚变导弹",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 3968
+	"armor": 33
+	"speed": 4
+	"lifetime": 400
+	"maxRange": 18,
+	"rotateSpeed": 1.2
+	"engineColor": "ffffffff",
+	"trailColor": "ffffffff",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 22
+	"missileAccelTime": 300
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "ffffffff",
+	"weapons": [
+		{
+			"shootCone": 360,
+			"mirror": false,
+			"reload": 1,
+			"shake": 10,
+			"shootOnDeath": true,
+			"shootSound": "plasmaboom",
+			"bullet": {
+				"collidesGround": true
+	"collidesAir": true
+				"type": "ExplosionBulletType",
+				"hitColor": "ffffffff",
+				"splashDamage": 13600
+				"splashDamageRadius": 384
+				"despawnShake": 3,
+				"fragVelocityMin": 4
+				"buildingDamageMultiplier":0.25
+				"shootEffect": {
+        "type": "MultiEffect",
+	"effects": [{"type": "ParticleEffect",
+    "particles": 1
+    "sizeFrom": 384
+    "sizeTo": 184
+    "length": 0
+    "baseLength": 0
+    "lifetime": 20
+    "colorFrom": "ffffff60",
+    "colorTo": "ffffff00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "particles": 1
+    "sizeFrom": 128
+    "sizeTo": 320
+    "length": 0
+    "baseLength": 0
+    "lifetime": 56
+    "colorFrom": "ffffff60",
+    "colorTo": "ffffff00",
+    "cone": 360},
+    {"type": "ParticleEffect",
+    "particles": 32
+    "sizeFrom": 18
+    "sizeTo": 30
+    "length": 128
+    "baseLength": 0
+    "lifetime": 90
+    "colorFrom": "ffeda640",
+    "colorTo": "ffeda600",
+    "cone": 360},
+     {"type": "WaveEffect",
+    "startDelay":30
+    "lifetime": 36
+    "sizeFrom": 128
+    "sizeTo": 512
+    "strokeFrom": 16
+    "strokeTo": 0
+    "colorFrom": "ffffff",
+    "colorTo": "ffffff00"}
+    ]
+    }
+		}
+		}
+	],
+}

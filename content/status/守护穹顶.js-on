@@ -1,0 +1,34 @@
+{
+"name":"守护穹顶",
+	"damageMultiplier":1.2,
+	"healthMultiplier":1.5,
+	"speedMultiplier":1.2,
+	"reloadMultiplier":1.5,
+	"effectChance":1.2
+	    "damage":-3,
+	"effects": [
+        {	"type": "ParticleEffect",
+    "particles": 6,
+    "baseLength": 0,
+    "length":25,
+    "lifetime": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "colorFrom": "FEEBB3FF",
+    "colorTo": "FEEBB3FF",
+    "cone":360 },
+        {"type": "ParticleEffect",
+            "particles": 2,
+            "line": true,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lenFrom": 10,
+            "lenTo": 0,
+            "length": 23,
+            "baseLength": 0,
+            "lifetime": 10,
+            "colorFrom": "FEEBB3FF",
+            "colorTo": "FEEBB3FF",
+            "cone":360}
+        ]
+}

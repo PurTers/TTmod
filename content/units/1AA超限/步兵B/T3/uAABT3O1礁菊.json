@@ -1,0 +1,212 @@
+{
+	"type": "hover",
+	"name": "礁菊",
+	"description": "悬浮堡垒，对空对地，很能够发射火箭弹，拥有立场治疗友军。\n[blue][超限技术特殊作战单元]",
+	//"details":"这玩意儿跟红警三里的超级要塞没关系",
+		"immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+	"speed":0.8,
+	"rotateSpeed":0.3
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 60,    
+	"hovering":true
+    "canDrown": false,
+	"hitSize":36, 
+	"health": 7460,
+	"armor":14,
+	"rotateSpeed": 99
+	"faceTarget": false,
+	//"maxRange": 400,
+	"abilities": [
+	{
+    "type":"ForceFieldAbility",
+    "radius": 22
+    "regen": 0.6
+    "max": 4000
+    "cooldown": 360,}
+        {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 20.0,
+        "max": 800.0,
+        "reload": 30.0,
+        "range": 48
+    }
+    {
+        "type": "RepairFieldAbility"
+        "amount":180
+        "reload": 120
+        "range": 48
+    }
+    {
+			"type": "ShieldArcAbility",
+			"radius": 20,
+			"width": 12,
+			"max": 600
+			"regen": 12,
+			"cooldown": 60,
+			"angle": 0,
+			"angleOffset": 0
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 20,
+			"width": 12,
+			"max": 600
+			"regen": 12,
+			"cooldown": 60,
+			"angle": -90
+			"angleOffset": 0
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 20,
+			"width": 12,
+			"max": 600
+			"regen": 12,
+			"cooldown": 60,
+			"angle": 90
+			"angleOffset": 0
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 20,
+			"width": 12,
+			"max": 600
+			"regen": 12,
+			"cooldown": 60,
+			"angle": 180
+			"angleOffset": 0
+		},
+		{
+        "type": "EnergyFieldAbility"
+        "damage": 12.0
+        "reload": 60.0
+        "range": 120.0
+        "status": "electrified"
+        "statusDuration": 120.0
+        "targetGround": true
+        "targetAir": true
+        "hitBuildings": true
+        "hitUnits": true
+        "healPercent": 0.5
+        "maxTargets": 16
+        "useAmmo": true
+        "color": "c0ecff"
+    }
+    ],
+	"weapons":[
+	{  	"name":"无"
+	    "shootCone":360,
+		"rotationLimit":0,
+		"reload":360
+        "x": 0
+         "y": 0
+        "rotate": false,
+        "inaccuracy": 0
+		"shootSound": "missile",
+		"rotateSpeed": 0
+		"baseRotation":0
+		"alternate": true,
+		"ejectEffect":"casing1",
+   "recoil": 2,
+   "shoot":{
+		"shots":4
+	    "shotDelay":30
+		"type": "ShootBarrel",
+        "barrels": [
+        -3,3,45,
+        -3,-3,145,
+        3,-3,235,
+        3,3,315,
+        ]
+	},
+	"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (1)",
+             "speed": 0,
+			"shootEffect":"shootSmall",
+	}
+	}
+	{  	"name":"无"
+	    "shootCone":30,
+		"reload":60
+        "x": 0
+         "y": 0
+        "rotate": true,
+        "inaccuracy": 0
+		"shootSound": "laser",
+		"rotateSpeed": 999
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"mirror":false
+		"recoils": 2,
+		"inaccuracy":10,
+		"recoil": 0,
+		"velocityRnd":0.05
+		"shoot":{
+		"shots":3}
+	"bullet":{
+	         "type":"ArtilleryBulletType",
+	    "splashDamageRadius":12
+	    "splashDamage":24
+	    "speed":4
+	    "damage":3
+	    "backColor":"c0ecff",
+	    "frontColor":"c0ecff", 
+	    "trailColor":"c0ecff",
+	    "lifetime":60
+		"width": 4
+		"height": 4
+	    "hitEffect":"flakExplosion"
+	    "buildingDamageMultiplier":1.25
+	    "fragBullets": 1
+			"fragBullet": {
+			"type": "EmpBulletType",
+				"timeIncrease": 0,//己方建筑加速倍率
+				"collidesTiles": "false",//碰撞方块
+				"collidesTeam": "false"//碰撞自己的队友
+				"timeDuration": 0,//加速持续时间
+				"powerDamageScl": 3,//敌方电器损坏倍率
+				"powerSclDecrease": 0.7,//敌方电器功率下降倍率
+				"buildingDamageMultiplier": 2
+				"radius": 14,
+				"pierce": true,//穿透单位
+				"splashDamageRadius": 16,
+				"splashDamage": 12,
+				"width": 0,
+				"height": 0,
+				"damage": 10,
+				"keepVelocity": true,
+				"trailEffect": "none",
+				"backColor": "c0ecff",
+				"frontColor": "c0ecff",
+				"instantDisappear": true,//瞬间消失
+				"hitSound": "plasmaboom",
+				"despawnEffect": "hitEmpSpark"
+				"hitPowerEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+		    	"applyEffect": "none"
+		    	"hitEffect": "none"
+		    	"shootEffect": "none"
+			}
+	               	}
+	}
+	]
+	/*"research": {
+	"parent":"uAABT1N田螺"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "遗忘河滩"
+			}
+	]
+	}*/
+	//"controller": "DefenderAI"
+}

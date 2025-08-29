@@ -1,0 +1,45 @@
+{
+    "name": "专业爆炸物混合工厂",
+    "type": "GenericCrafter",
+    "description": "专业加工爆炸混合物，有更大产量同时需要更大的供应量以支持其正常生产\n\n[blue][超限技术中级工厂]",
+    "itemCapacity": 20,
+    "health": 1860,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 50,
+    "updateEffect": true,
+    "updateEffect": "explosion",
+    "consumes": {
+    	"liquid": 
+	{"liquid": "oil", "amount": 0.05 }
+	"power": 7,
+        "items": {
+            "items": [{"item": "spore-pod","amount": 3 },
+                { "item": "pyratite","amount": 4 },
+            ]
+        },
+    },
+  
+    "outputItem": { "item": "blast-compound", "amount": 5}
+    "requirements": [
+        {"item": "titanium","amount": 120},
+        { "item": "0铜铅合金","amount": 180 }
+        { "amount": 180, "item": "graphite" }
+	{ "amount": 90, "item": "1绝缘钢" }
+	{ "amount": 120, "item": "0铜铅合金" }
+	{ "amount": 60, "item": "1集成电路" }
+    ],
+    "category": "crafting",
+    "research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+    "buildCostMultiplier":0.4
+}

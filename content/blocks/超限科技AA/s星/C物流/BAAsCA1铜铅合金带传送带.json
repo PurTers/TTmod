@@ -1,0 +1,22 @@
+{
+	"type": "Conveyor",
+	"name": "合成带传送带",
+	"description": "速度较慢于钛带，但在前期的动力不错。\n \n[blue][超限技术物流装置]",
+	"health": 50,
+	"requirements": [
+	{ "item": "copper", "amount":1},
+   { "item": "lead", "amount":1}
+	],
+	"category": "distribution",
+	"research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"speed": 0.06,
+	"displayedSpeed": 8.7
+}

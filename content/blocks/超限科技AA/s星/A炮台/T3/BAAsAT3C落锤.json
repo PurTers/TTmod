@@ -1,0 +1,176 @@
+{
+	"type": "ItemTurret",
+	"name": "落锤",
+	"description": "几乎疯狂的设计，连发的榴弹炮，超限集团为了追求火力一时脑热的产物，但在实际使用时发现了诸多问题，最后经过多次整改，他已经可以稳定发射而不是炸膛，在结构的优化下，它可以更加快的速度来有效的打击远程的目标\n \n[blue][超限技术炮台]",
+	"health": 660,
+	"size": 3
+	"reload": 25,
+	"range": 280,
+	"maxAmmo":80
+	"shake":1,
+	"targetAir" :false
+	"targetGround": true,
+	"ammoUseEffect": "none",
+	"shootSound":"artillery",
+	"inaccuracy": 2
+	"rotateSpeed": 10,
+	"ammoPerShot": 7
+	"coolantMultiplier": 2.5
+	"liquidCapacity": 100,
+	 "consumes": {
+    "power":2.2
+	"coolant":{"amount":0.6,"optional":true} 
+}
+	    "shoot": {
+        "shots": 4
+         "shotDelay": 30
+    },
+        		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": true,
+        "under":true,
+        "x": 0
+        "y": -1
+        "suffix": "-1",
+        "layer": 50,
+        "moveX": 0
+        "moveY": 3
+        }
+        {"type":"RegionPart",
+        "mirror":true,
+        "under":true,
+        "x":0,"y":0,
+        "suffix":"-翼"
+        "layer":50,
+        "moveX":3
+        "moveY":2.5
+        "moveRot":-60
+        }
+			]
+			}
+			]
+   },
+	"ammoTypes": {
+	"graphite":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":24,
+	    "splashDamage":25
+	    "speed":2
+	    "damage":10, 
+	    "backColor":"B0C4DE",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"B0C4DE",
+	    "lifetime":140
+		"width": 16,
+		"height": 16,
+        "ammoMultiplier": 2,
+	    "hitEffect":"flakExplosion"
+	    "fragBullets": 3
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":24,
+	    "splashDamage":18
+	    "speed":0.5
+	    "damage":12
+	    "backColor":"B0C4DE",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"B0C4DE",
+	    "lifetime":60
+		"width": 8,
+		"height": 8,
+	    "hitEffect":"flakExplosion"
+	    }
+	},
+	"pyratite":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":20,
+	    "splashDamage":22
+	    "speed":2
+	    "damage":12,
+	    "makeFire":true,
+    "backColor":"FFB90F",
+    "frontColor":"E3E3E3",
+	"trailColor":"FFB90F",
+	    "lifetime":140
+	    "status":"burning",
+	    "statusDuration":180,
+		"width": 16,
+		"height": 16,
+        "ammoMultiplier": 9
+	    "hitEffect":"flakExplosion"
+	     "fragBullets": 3
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":20,
+	    "splashDamage":16
+	    "speed":0.5
+	    "damage":6
+	    "makeFire":true,
+    "backColor":"FFB90F",
+    "frontColor":"E3E3E3",
+	"trailColor":"FFB90F",
+	    "lifetime":60
+	    "status":"burning",
+	    "statusDuration":180,
+		"width": 8,
+		"height": 8,
+        "ammoMultiplier": 2,
+	    "hitEffect":"flakExplosion"
+			}
+	},
+	"blast-compound":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":30,
+	    "splashDamage":42
+	    "speed":8,
+	    "damage":17,
+		"status":"blasted",
+	    "backColor":"FF7F24",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":35,
+		"width": 16,
+		"height": 16,
+        "ammoMultiplier": 4,
+	    "hitEffect":"flakExplosion"
+	     "fragBullets": 5
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":30,
+	    "splashDamage":22
+	    "speed":2.5,
+	    "damage":3
+		"status":"blasted",
+	    "backColor":"FF7F24",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":25,
+		"width": 8,
+		"height":  8,
+        "ammoMultiplier": 4,
+	    "hitEffect":"flakExplosion"
+			}
+	}
+	},
+	"requirements": [
+	{ "item": "lead", "amount": 240 },		
+	{ "item": "graphite", "amount": 170 }
+	{ "item": "0铜铅合金", "amount": 80 }
+	{ "item": "titanium", "amount": 130 }
+	],
+	"category": "turret",
+	"research": {
+	"parent":"BAAsAT2B重击"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

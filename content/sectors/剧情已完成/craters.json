@@ -1,0 +1,18 @@
+{
+	"overrideLaunchDefaults": true,//进度覆盖
+    "planet":"serpulo"
+    "sector":219
+    "difficulty":2
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "超限工艺-taintedWoods",
+		"objectives": [
+		"ground-factory"
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-taintedWoods"
+			}
+			"ground-factory"
+			"air-factory"
+			]}
+}

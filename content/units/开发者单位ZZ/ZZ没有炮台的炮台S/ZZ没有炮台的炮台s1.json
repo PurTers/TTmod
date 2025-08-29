@@ -1,0 +1,43 @@
+{
+		//"immunities": [    ],
+	"name": "机枪T3",
+	"type": "missile",
+	"template": "MissileUnitType",
+		"engineOffset": 3,
+		"hitSize":12
+	"engineSize": 3,
+	"health": 99999
+	"armor": 0
+	"speed": 5
+	"lifetime": 3600
+	"rotateSpeed": 1
+	"engineOffset": 0,
+	"missileAccelTime": 60,
+	"weapons": [
+		{	"name": "没有炮台的炮台s1",	
+		"reload":21,
+        "x": 0
+         "y": 0
+        "rotate": true,
+        "inaccuracy": 0,
+        "shootStatusDuration": 600
+	"shootStatus": "unmoving",
+		"shootCone":60,
+		"shoot":{
+			"shots":33
+			"shotDelay":13
+		},
+		"shootSound": "机枪",
+		"rotateSpeed": 0
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":16,	  
+	    "speed":6.5
+	    "lifetime":60
+	    "width":2,	 "height":10
+	    "homingRange": 40,
+            "homingPower": 0.1,
+	}	}
+	]
+}

@@ -1,0 +1,116 @@
+{
+		"immunities": [
+	],
+	"name": "刺蛇导弹",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 680,
+	"armor": 12
+	"speed": 3,
+	"lifetime": 235
+	"maxRange": 6,
+	"rotateSpeed": 2.4
+	"engineColor": "ffffffff",
+	"trailColor": "ffffffff",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"missileAccelTime": 60,
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "6E7080FF",
+	"weapons": [
+		{
+			"shootCone": 360,
+			"mirror": false,
+			"reload": 1,
+			"shake": 10,
+			"shootOnDeath": true,
+			"shootSound": "plasmaboom",
+			"bullet": {
+				"collidesGround": true
+	"collidesAir": true
+				"type": "ExplosionBulletType",
+				"hitColor": "53565c",
+				"splashDamage": 336
+				"splashDamageRadius": 36
+				"despawnShake": 3,
+				"fragVelocityMin": 4
+				"buildingDamageMultiplier":0.1
+				"status": "破甲",
+			"statusDuration": 600,
+				"fragBullet": {
+				"status": "破甲",
+			"statusDuration": 120,
+	   "collidesGround": true
+	"collidesAir": true
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"pierceCap": 3
+		"splashDamage": 40
+				"splashDamageRadius": 36
+	    "damage":63,
+	    "speed":3
+	    //"drag":-0.00005
+	    "lifetime":20
+	    "width":8,	 "height":8
+	"makeFire":true,
+	        "pierce": true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragVelocityMin": 1
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+            "intervalBullets": 1,
+		"bulletInterval": 1
+                            "intervalBullet":{
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["1878BF","1878BF50","FFFFFF"],
+	"status": "量子锁定",
+			"statusDuration": 46,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":3,
+	"lightningDelay":0.1,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":8,
+	"lightningColor":"1878BF",
+	"damage": 6,
+	"pierceDamageFactor":0.4
+	"pierce": true
+	"width": 6,	"length": 12
+	"lifetime": 30,
+	"collidesAir": true
+    }
+				 "buildingDamageMultiplier":0.1}
+			}
+		}
+	],
+}

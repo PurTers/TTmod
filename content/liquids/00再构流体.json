@@ -1,0 +1,14 @@
+{
+	"name": "再构流体",
+	"type": "Liquid",
+	"description": "具有机械性的流体，可以通过人工控制",
+	"alwaysUnlocked":false,
+	"color": "97F0EC",
+	"flammability": 0,
+	"temperature": 0.4,
+	"heatCapacity": 1.3,
+	"viscosity": 0.3,
+	"explosiveness": 0,
+	//"frames":12
+	//"research": "cryofluid"
+}

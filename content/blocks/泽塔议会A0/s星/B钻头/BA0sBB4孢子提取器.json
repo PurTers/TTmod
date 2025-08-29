@@ -1,0 +1,34 @@
+ {
+ "type":"WallCrafter"
+ "name":"孢子提取器",
+ "size": 1
+ "health": 60,
+ "description":"以较缓慢的速度挖掘孢子。\n[red][泽塔议会特殊采集装置]",
+  "requirements": [	
+   { "item": "titanium", "amount": 45 }
+    { "item": "silicon", "amount":30}
+    { "item": "copper", "amount":70}
+   { "item": "lead", "amount": 80 }
+   ],
+            "consumes": {
+            "power": 4.2
+    },
+    "liquidBoostIntensity":1.5,//加速倍率
+            "drillTime":72
+            "category": "production",
+            "size":1
+            "attribute":"spores"
+            "output":"spore-pod"
+            "fogRadius":0
+            "ambientSound":"drill"
+            "ambientSoundVolume":0.04
+            /*"research": {
+	"parent":"BA0sBA4相位钻头"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "tarFields"
+			}
+	]
+	}*/
+        }

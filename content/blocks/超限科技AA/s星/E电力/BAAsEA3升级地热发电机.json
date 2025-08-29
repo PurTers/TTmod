@@ -1,0 +1,49 @@
+{
+    "type": "ThermalGenerator",
+    "name": "高级热能发电机",
+    "description": "高级的热能发电机，地热高效利用，发电效率高\n \n[blue][超限技术发电装置]",
+    "size": 3,
+    "health": 460,
+    "hasLiquids": false,
+    "hasItems": false,
+    "powerProduction": 2.5,
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 160
+        },
+        {
+            "item": "thorium",
+            "amount": 120
+        },
+        {
+            "item": "metaglass",
+            "amount": 160
+        },
+        {
+            "item": "graphite",
+            "amount": 140
+        },
+        {
+            "item": "silicon",
+            "amount": 140
+        }
+        { "item": "0铜铅合金", "amount": 180 }
+        { "item": "plastanium", "amount": 45 }
+    ],
+    "floating": true,
+    "attribute": "heat",
+    "category": "power",
+    "research": {
+	"parent":"BAAsEA1大型火力发电站"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+			"thermal-generator"
+	]
+	}
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.3
+}

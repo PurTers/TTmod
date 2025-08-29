@@ -1,0 +1,17 @@
+{
+"localizedName": "记忆碎片-零号地区",
+	"description": "被遗忘的故事",
+	"details":"第10波是剧情杀，没打过很正常",
+    "planet":"记忆碎片"//母星名字。
+    "sector":1//区块坐标
+    "captureWave":10//胜利波次
+    "difficulty":1//难度1一5
+    "research": {
+		"parent": "groundZero",
+		"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "groundZero"
+			}
+			]}
+}

@@ -1,0 +1,281 @@
+{
+    "type": "PowerTurret",
+    "name": "嗔雷",
+    "description": "\n \n[blue][超限技术炮台]",
+    "health": 72460,
+    "size": 6
+    "reload": 10
+    "range": 600,
+    "maxAmmo": 150
+      "shootCone": 20,
+      "armor":32
+  "recoil": 0
+	"recoilTime": 0
+      "shake": 5,
+      "coolantMultiplier": 0.0825
+      "minWarmup": 0.99
+	"shootWarmupSpeed": 0.0365,
+	"linearWarmup": false,//开启线性计算
+    "consumes": {
+    "power": 380
+    },
+        		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {"type":"RegionPart",
+        "mirror":false,
+        //"under":true,
+        "x":0,"y":0,
+        "suffix":"3"
+        "layer":70,
+        "under":true
+        "color":"ffffffff"
+        "moveX": 23
+        "moveY": -13
+        "start": 1
+        "end": 1.04
+        }
+        {"type":"RegionPart",
+        "mirror":false,
+        //"under":true,
+        "x":0,"y":0,
+        "suffix":"3"
+        "layer":70,
+        "under":true
+        "color":"ffffffff"
+        "moveX": -23
+        "moveY": -13
+        "start": 1
+        "end": 1.04
+        }
+        {"type":"RegionPart",
+        "mirror":false,
+        "x":0,"y":0,
+        "suffix":"3"
+        "layer":70,
+        "under":true
+        "color":"ffffffff"
+        "moveX": 46
+        "moveY": -26
+        "start": 3.2
+        "end": 3.24
+        }
+        {"type":"RegionPart",
+        "mirror":false,
+        "x":0,"y":0,
+        "suffix":"3"
+        "layer":70,
+        "under":true
+        "color":"ffffffff"
+        "moveX": -46
+        "moveY": -26
+        "start": 3.2
+        "end": 3.24
+        }
+        ]
+        }
+			]
+   },
+    "shoot": {
+        "shots": 3
+        "shotDelay": 3
+        "type": "ShootBarrel",
+        "barrels": [
+        -3,7,0,
+        3,7,0,
+        30,-6,0,
+        26,-6,0,
+        -26,-6,0,
+        -20,-6,0,
+         43,-19,0,
+        49,-19,0,
+        -49,-19,0,
+        -43,-19,0,
+        ]
+    },
+    "shootSound": "shotgun",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 10,
+    "shake": 3,
+    "shootCone": 20,
+    "shootType": {	
+        "sprite":"超限工艺-尖刺",
+        //"weaveScale": 3,//数字越大摆动越大
+        //"weaveMag": 9,//数字越大转的越快
+        //"weaveRandom": true,//随机
+        "speed": 6
+	    "lifetime":100
+		"width": 6,"height": 13
+		"trailLength": 66,"trailWidth": 1.5,
+		"damage":4
+		"shootEffect": "shootSmall",
+		"pierceCap": 2
+		"trailColor": "7457ce",
+        "backColor": "7457ce",
+		"frontColor": "bf92f9",
+		"status": "破甲",
+		"statusDuration": 240
+		"lightning": 6
+      "lightningDamage": 22
+      "lightningLength": 12
+      "lightningCone": 360,
+      "lightningColor": "bf92f9",
+      "homingDelay":20
+      "homingRange": 96
+      "homingPower": 0.3
+    
+    //"intervalLifeMin": 1
+    "intervalLifeMax": 1
+    "intervalVelocityMin": 0,
+    "bulletInterval":5
+    "intervalRandomSpread":30
+    "intervalAngle":180,//分裂起始角度
+    "intervalBullets":1
+    "intervalBullet":{
+    "absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹？
+    "weaveScale": 0,//数字越大摆动越大
+    "weaveMag": 0,//数字越大转的越快
+    "weaveRandom": false,//随机
+        "damage": 6
+      "width": 1
+      "pierce": true
+      "lifetime": 0
+      "speed":0
+      "length":1
+      //"serrations": 3,
+      "trailColor": "7457ce",
+        "backColor": "7457ce",
+		"frontColor": "bf92f9",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+      "statusDuration": 20
+      "parts":[
+			{
+		"type": "ShapePart",
+			"colorTo":"bf92f9",
+			"color": "bf92f9",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 1
+			"radiusTo": 1
+			}]
+      "lightning": 1
+      "lightningDamage": 10
+      "lightningLength": 4
+      "lightningCone": 30,
+      "lightningColor": "bf92f9",
+      }
+    
+    
+    "fragLifeMin": 1
+    "fragLifeMax": 1
+    "fragVelocityMin": 1,
+    "fragVelocityMax": 1,
+    "fragRandomSpread": 120,
+	"fragSpread": 0,
+    "fragBullets":1
+	"fragBullet": {
+	"sprite":"超限工艺-尖刺",
+    "absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹？
+    "weaveScale": 0,//数字越大摆动越大
+    "weaveMag": 0,//数字越大转的越快
+    "weaveRandom": false,//随机
+        "damage": 6
+      "width": 4
+      "trailLength": 33,"trailWidth": 0.5,
+      "pierce": true
+      "lifetime": 20
+      "speed":4
+      "height": 16
+      "pierceCap": 2
+      "trailColor": "c0ecff",
+        "backColor": "c0ecff",
+		"frontColor": "1878BF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+      "statusDuration": 20
+      "lightning": 10
+      "lightningDamage": 10
+      "lightningLength": 5
+      "lightningCone": 360,
+      "lightningColor": "1878BF",
+      "intervalLifeMax": 1
+    "intervalVelocityMin": 0,
+    "fragVelocityMax": 0,
+    "bulletInterval":5
+    "intervalBullets":1
+    "intervalBullet":{
+    "absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹？
+    "weaveScale": 0,//数字越大摆动越大
+    "weaveMag": 0,//数字越大转的越快
+    "weaveRandom": false,//随机
+        "damage": 6
+      "width": 1
+      "pierce": true
+      "lifetime": 0
+      "speed":0
+      "length":1
+      //"serrations": 3,
+      "trailColor": "7457ce",
+        "backColor": "7457ce",
+		"frontColor": "bf92f9",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+      "statusDuration": 20
+      "parts":[
+			{
+		"type": "ShapePart",
+			"colorTo":"bf92f9",
+			"color": "bf92f9",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 1
+			"radiusTo": 1
+			}]
+      "lightning": 6
+      "lightningDamage": 10
+      "lightningLength": 3
+      "lightningCone": 360,
+      "lightningColor": "bf92f9",
+      }
+    }
+	}
+    "rotateSpeed":3
+    "requirements": [
+{ "item": "titanium", "amount": 4000 },
+{"item": "plastanium", "amount": 3000},
+{"item": "1复合物", "amount": 1500},
+{"item": "1共振石", "amount": 1000},
+{"item": "1绝缘钢", "amount": 2500  },
+{"item": "1集成电路", "amount": 1500  },
+{"item": "0铜铅合金", "amount": 6000  },{ "item": "copper", "amount": 2000 },
+{ "item": "lead", "amount": 1000 },
+{ "item": "2高能芯片", "amount":500}
+    ],
+    "category": "turret",
+    "research": {
+	"parent":"BAAsAT4A破碎"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "无风海湾"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

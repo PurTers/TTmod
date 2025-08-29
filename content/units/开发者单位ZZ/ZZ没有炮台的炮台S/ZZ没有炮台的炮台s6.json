@@ -1,0 +1,54 @@
+{
+		//"immunities": [    ],
+	"name": "高射炮",
+	"type": "missile",
+	"template": "MissileUnitType",
+		"engineOffset": 3,
+		"hitSize":12
+	"engineSize": 3,
+	"health": 99999
+	"armor": 0
+	"speed": 5
+	"lifetime": 3600
+	"rotateSpeed": 1
+	"engineOffset": 0,
+	"missileAccelTime": 60,
+	"weapons": [
+	{	"name": "没有炮台的炮台s6",	
+	               	"shootCone":30,
+		"reload":61,
+        "x": 0
+         "y": 0
+        "rotate": false
+        "inaccuracy": 0
+		"shootSound": "火炮",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shootStatusDuration": 600
+	"shootStatus": "unmoving",
+		"shoot":{
+		"shots":33
+	    "shotDelay":15
+	},
+   "recoil": 2,
+   "recoils": 2,
+		"bullet":{
+		"sprite":"missile",
+	    "reloadMultiplier":1.4
+			"speed":320
+			"lifetime":1
+			"width": 8
+			"height":16
+			 "weaveMag":2,
+	        "weaveScale":4,
+			"splashDamageRadius":60,
+		"splashDamage":80
+	    "makeFire":true,
+			"ammoMultiplier":5
+			"shootEffect":"shootSmall",
+			"homingRange": 40,
+            "homingPower": 0.1,
+	}
+	}
+	]
+}

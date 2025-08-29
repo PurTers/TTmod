@@ -1,0 +1,72 @@
+{
+   "type":"UnitAssembler",
+   "name": "封穹级装配厂",
+   "description": "生产特化战争单位，通常他们都极为强大，但是其组装过程过于繁琐。\n\n[blue][超限技术装配工厂]",
+   "details":"相信我，组装无人机修复单位老快了",
+   "health":8680,
+   "size":5,
+   "liquidCapacity":120,
+   "consumes":{
+       "power":8,
+       "liquid": {"liquid": "cryofluid", "amount": 1}
+   },
+   "areaSize":12
+   "plans":[
+       {
+           "unit":"uAADT1天枭",
+           "time":1800,
+           "tier":0
+           "requirements":[
+        "plastanium-wall-large/5",
+        "超限工艺-uAABT1K无形/5",
+        "超限工艺-uAABT1J预言/5",
+           ]
+       }
+       {
+           "unit":"uAADT2空号",
+           "time":4800,
+           "tier":1
+           "requirements":[
+           "超限工艺-uAABT2K掠影/3"
+           "超限工艺-uAABT2J先知/3"
+           "thorium-wall-large/10"
+           "超限工艺-BAAsFB2大型合金墙/10"
+           "超限工艺-BAAsFD2大型绝缘钢墙/10"
+           ]
+       }
+              {
+           "unit":"uAADT3蔽日",
+           "time":5400,
+           "tier":2
+           "requirements":[
+        "超限工艺-BAAsFB2大型合金墙/30"
+           "超限工艺-BAAsFD2大型绝缘钢墙/10"
+           "thorium-wall-large/10",
+        "plastanium-wall-large/5",
+        "超限工艺-uAADT1天枭/5"
+        "超限工艺-BAAsHNO泰坦之心/1"
+           ]
+       }
+   ],
+   "droneType":"装配无人机",
+	"requirements": [
+    { "item": "copper", "amount": 600},
+	{ "item": "1集成电路", "amount": 280},
+    { "item": "titanium","amount": 300},
+    { "item": "lead", "amount": 450},
+    { "item": "0铜铅合金", "amount": 600},	
+    { "item": "plastanium", "amount": 550}
+    ],
+	"category":"units",
+	"canOverdrive": false,
+	"research": {
+	"parent":"BAAsHH抑灾级装配厂"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "遗忘河滩"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

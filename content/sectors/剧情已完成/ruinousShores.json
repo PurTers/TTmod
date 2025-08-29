@@ -1,0 +1,20 @@
+{
+    "planet":"serpulo"
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":97
+    "difficulty":3
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "超限工艺-saltflats",
+		"objectives": [
+		"kiln"
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-facility32m"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+			]}
+}

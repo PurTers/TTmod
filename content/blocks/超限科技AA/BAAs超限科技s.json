@@ -1,0 +1,28 @@
+{
+	"name": "[blue]超限科技",
+	"description": "超限集团属于从赛普罗原势力中分裂出来的科学集团，受到以泽塔议会势力的迫害而被驱逐并且处于濒临剿灭的地步，",
+	"details":"但这就是真相？",
+	"health":500,
+	"hasShadow":false
+	"armor":0,
+	"size": 2
+	"category": "logic",
+	"type": "Wall",
+	"buildCostMultiplier":99999999
+	"requirements": [
+    ]
+	"research": {
+        "root":true,
+        "name": "[blue]超限科技"
+       "planet":"serpulo"
+       "objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+        },
+            "canOverdrive": false,
+            "researchCostMultiplier": 0
+            "buildVisibility": "sandboxOnly",
+}

@@ -1,0 +1,69 @@
+{
+	"type": "ItemTurret",
+	"name": "战术中心-闪电突袭",
+	"description": "用于调控整支部队的作战方式，有多个不同的战术，不过我要试图多个叠加，只会适得其反。\n\n[orange][全位算体特殊军用装置]",
+	"underBullets":true
+	"health": 1080,
+	"size": 3
+	"reload":120,
+	"range": 0,
+		"alwaysShooting": true,
+		"targetGround": false
+	"targetAir": false
+    "rotateSpeed": 0
+     "shootX":0
+	    "shootY":0
+    "shootCone":360
+	"consumes": {
+	"power": 12
+		},
+		"drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+    {"type": "RegionPart",
+        //"mirror": true,
+        "x": 0,
+        "y": 0,
+        "suffix": "-a",
+        "layer": 50,
+        "moveX": 0,
+        "moveY": 5
+        "moveRot":0
+        "progress":"reload",
+        "under":true
+        }          
+    ]}
+    ]},
+	"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"inaccuracy": 360
+	"shake":1,
+	"ammoTypes": {
+        "silicon": {
+	         "type": "BasicBulletType",
+             "spawnUnit": "战1",
+             "speed": 0,
+		 }
+	}, 
+	"requirements": [
+        { "item": "copper","amount": 540 },
+        { "item": "lead","amount": 640 },
+        { "item": "silicon", "amount": 180 }
+        { "item": "thorium", "amount": 220 }
+	],
+	"category": "units",
+	/*"research": {
+	"parent":"BA1sHF战术中心1"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	    "researchCostMultiplier": 0
+	    "canOverdrive":false
+	    "buildVisibility":"campaignOnly"
+}

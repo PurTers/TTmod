@@ -1,0 +1,9 @@
+{
+"name":"煅烧",
+	"damageMultiplier":1.2,
+	"healthMultiplier":0.85,
+	"speedMultiplier":0.9,
+	"reloadMultiplier":0.9,
+	"effectChance":0.5
+	    "damage":12,
+	}

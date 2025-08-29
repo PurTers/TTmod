@@ -1,0 +1,1054 @@
+{
+	"type": "naval",
+	"name": "巡蛟",
+	"description": "极端重型海军，超限集团造出的最大航母，拥有八门舰炮以及一门火箭炮，[red]只能依靠僚机来进行攻击以及防御，每隔一段时间要进行长达20秒的武器重置，在此期间不能攻击或起飞僚机。\n\n[white]奇了机上装备的双连穿甲炮以及一枚一次性的高爆炸弹，高爆炸弹能够有效的攻击敌方舰船。\n\n[blue][超限技术重型海军]",
+	"details":"这玩意绝对没有参考企业号",
+		"immunities": [
+		"wet","spore-slowed","tarred","列阵"
+	],
+	"fogRadius":600
+	"speed":0.22,
+	"rotateSpeed":0.3,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 60,
+    "trailLength":24,
+    "waveTrailX":0,
+    "waveTrailY":-6,
+    "trailScl":2,
+	"hitSize":96, 
+	"health": 46460,
+	"armor":45,
+	"faceTarget": false,
+	"abilities": [
+    {
+        "type": "RepairFieldAbility"
+        "amount":120
+        "reload": 240
+        "range": 240
+    }
+	{ "type": "StatusFieldAbility",
+    "duration": 1200,
+    "reload": 60,
+    "range": 190,
+    "applyEffect":"none",
+    "effect":"列阵"  }
+    {
+"type": "RegenAbility",
+"amount": 0.6
+}
+    ]
+	"weapons":[
+	{	"name": "舰炮2",	
+		"reload":72,
+        "x": 20
+         "y": -36
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":-90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+	{	"name": "舰炮2",	
+		"reload":72,
+        "x": 24
+         "y": -24
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":-90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": 20
+         "y": -12
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":-90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": 20
+         "y": 0
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":-90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": 20
+         "y": 12
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":-90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": 20
+         "y": 24
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":-90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": 18
+         "y": 36
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":-90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				
+		{	"name": "舰炮2",	
+		"reload":72,
+        "x": -36
+         "y": -36
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+	{	"name": "舰炮2",	
+		"reload":72,
+        "x": -18
+         "y": -24
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": -18
+         "y": -12
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": -18
+         "y": 0
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": -18
+         "y": 12
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": -18
+         "y": 24
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				{	"name": "舰炮2",	
+		"reload":72,
+        "x": -18
+         "y": 36
+        "rotate": true,
+        "inaccuracy": 3
+		"shootSound": "artillery",
+		"rotateSpeed": 1
+		//"alternate": true,
+		"shootCone":30,
+	    "baseRotation":90
+		"rotationLimit":180,
+		"ejectEffect":"casing1",
+		"shootY":8
+		"mirror":false
+		"bullet":{
+	    "speed": 8
+	    "lifetime":30
+		"width": 4,"height": 12,
+		"collidesGround":true,
+			"collidesAir":false,
+		"damage":66
+		"shootEffect": "shootSmall",
+			"status": "破甲",
+			"statusDuration": 220,
+			"splashDamageRadius":32,
+	"splashDamage":44
+        "backColor":"c0ecff",
+        			"frontColor":"c0ecff"
+        			"trailLength":8
+        "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor": "c0ecff",
+				"frontColor": "c0ecff",}}
+				
+	{	"name": "巡蛟3",	
+		"reload":200,
+        "x": 0
+         "y": 0
+        "rotate": false,
+        "inaccuracy": 0
+		"shootSound": "respawn",
+		"rotateSpeed": 1
+		"alternate": true,
+		"shootCone": 360,
+		"ejectEffect":"casing1",
+		"shootY":0
+		"shootX":0
+		"mirror":false
+/*	"minWarmup": 0.99
+	"shootWarmupSpeed": 0.033,
+	"linearWarmup": true,//开启线性计算*/
+	"shoot":{
+		"shots":2,
+	    "shotDelay":50
+	    "type": "ShootBarrel",
+		"barrels": [
+    -6, 24, 0,
+    -6, 12, 0, 
+  ]
+	},
+   "parts": [
+   {
+				"type": "RegionPart",
+				"suffix": "-仓",
+				"layer": 72
+			},
+			{
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -6
+      "y": 12
+      "layer": 71
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.749
+        "end": 0.75
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -6
+      "y": 12
+      "layer": 71
+      "moveY": -12
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.1
+        "end": 0.13
+      }
+      }
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -6
+      "y": 24
+      "layer": 71
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.999
+        "end": 1
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -6
+      "y": 24
+      "layer": 71
+      "moveY": -24
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.2
+        "end": 0.23
+      }
+      }
+			]
+   "recoil": 0
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "飞机1",
+             "speed": 0,
+             }}
+	{	"name": "巡蛟3",	
+		"reload":500,
+        "x": 0
+         "y": 0
+        "rotate": false,
+        "inaccuracy": 0
+		"shootSound": "respawn",
+		"rotateSpeed": 1
+		"alternate": true,
+		"shootCone": 360,
+		"ejectEffect":"casing1",
+		"shootY":24
+		"shootX":6
+		"mirror":false
+/*	"minWarmup": 0.99
+	"shootWarmupSpeed": 0.033,
+	"linearWarmup": true,//开启线性计算*/
+	"shoot":{
+		"shots":4,
+	    "shotDelay":50
+	    "type": "ShootBarrel",
+		"barrels": [
+    6, 24, 0,
+    6, 12, 0, 
+    6, 0, 0,
+    6, -12, 0, 
+  ]
+	},
+   "parts": [
+			{
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": -12
+      "layer": 71
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.699
+        "end": 0.70
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": -12
+      "layer": 71
+      "moveY": -12
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.2
+        "end": 0.23
+      }
+      }
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": -24
+      "layer": 71.1
+      "color": "00000000"
+      "colorTo": "000000"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.23
+        "end": 0.25
+      }
+      }
+      
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": 0
+      "layer": 71
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.799
+        "end": 0.80
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": 0
+      "layer": 71.2
+      "moveY": -24
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.25
+        "end": 0.28
+      }
+      }
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": -24
+      "layer": 71.3
+      "color": "00000000"
+      "colorTo": "000000"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.28
+        "end": 0.3
+      }
+      }
+      
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": 12
+      "layer": 71
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.899
+        "end": 0.9
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": 12
+      "layer": 71.4
+      "moveY": -36
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.3
+        "end": 0.33
+      }
+      }
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": -24
+      "layer": 71.5
+      "color": "00000000"
+      "colorTo": "000000"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.33
+        "end": 0.35
+      }
+      }
+      
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": 24
+      "layer": 71
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.999
+        "end": 1
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": 24
+      "layer": 71.6
+      "moveY": -48
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.35
+        "end": 0.38
+      }
+      }
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": 6
+      "y": -24
+      "layer": 71.7
+      "color": "00000000"
+      "colorTo": "000000"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.38
+        "end": 0.4
+      }
+      }]
+   "recoil": 0
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "飞机1",
+             "speed": 0,
+             }}
+             {	"name": "巡蛟3",	
+		"reload":500,
+        "x": 0
+         "y": 0
+        "rotate": false,
+        "inaccuracy": 0
+		"shootSound": "respawn",
+		"rotateSpeed": 1
+		"alternate": true,
+		"shootCone": 360,
+		"ejectEffect":"casing1",
+		"shootY":24
+		"shootX":6
+		"mirror":false
+/*	"minWarmup": 0.99
+	"shootWarmupSpeed": 0.033,
+	"linearWarmup": true,//开启线性计算*/
+	"shoot":{
+		"shots":4,
+	    "shotDelay":50
+	    "type": "ShootBarrel",
+		"barrels": [
+    -24, 24, 0,
+    -24, 12, 0, 
+    -24, 0, 0,
+    -24, -12, 0, 
+  ]
+	},
+   "parts": [
+   {
+				"type": "RegionPart",
+				"suffix": "-下",
+				"layer": 49
+			},
+			{
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": -12
+      "layer": 49
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.699
+        "end": 0.70
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": -12
+      "layer": 49
+      "moveX": 24
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.2
+        "end": 0.23
+      }
+      }
+      
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": 0
+      "layer": 49
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.799
+        "end": 0.80
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": 0
+      "layer": 49.2
+      "moveX": 24
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.25
+        "end": 0.28
+      }
+      }
+      
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": 12
+      "layer": 49
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.899
+        "end": 0.9
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": 12
+      "layer": 49.4
+      "moveX": 24
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.3
+        "end": 0.33
+      }
+      }
+      
+      {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": 24
+      "layer": 49
+      "color": "FFFFFF00"
+      "colorTo": "FFFFFF"
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.999
+        "end": 1
+      }
+    }
+    {
+      "type": "RegionPart"
+      "outline": false
+      "suffix": "-飞"
+      "x": -24
+      "y": 24
+      "layer": 49.6
+      "moveX": 24
+      "progress": {
+        "type": "smoothReload"
+        "op": "compress"
+        "start": 0.35
+        "end": 0.38
+      }
+      }
+      ]
+   "recoil": 0
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "飞机1",
+             "speed": 0,
+             }}
+             {	"name": "磐石1",	
+	               	"shootCone":120,
+		"reload":12
+        "x": 0
+         "y": -48
+        "rotate": true,
+        "inaccuracy": 6
+		"shootSound": "missile",
+		"rotateSpeed": 1
+		"alternate": true,
+		"mirror":false
+		"ejectEffect":"casing1",
+		"shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 2
+		"spread": 16
+	},
+	"shootX":0
+	    "shootY":8
+   "recoil": 0
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "火箭弹",
+             "speed": 0,
+			"shootEffect":"shootSmall",
+	}
+	}
+	]
+	/*"research": {
+	"parent":"uAABT1N田螺"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "遗忘河滩"
+			}
+	]
+	}*/
+	//"controller": "DefenderAI"
+}

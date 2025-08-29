@@ -1,0 +1,11 @@
+{
+"name":"共振矿",//名字
+"type":"OreBlock",//类型，这里是矿物地块。
+"playerUnmineable":true,
+"itemDrop":"1共振石",//挖出来的矿物，单纯的背景可以去掉这行代码。
+"mapColor":"c1e8f5",//地图上的颜色。
+"useColor":true,
+"oreDefault":true,
+"oreThreshold":1,
+"oreScale":35
+}

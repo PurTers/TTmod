@@ -1,0 +1,51 @@
+{
+	"type": "ItemTurret",
+	"name": "小型护盾仪",
+	"description": "泽塔议会的杰出作品，能够为周围的己方单位提供一定护盾。\n\n\n\n\n护盾上限: [yellow]3000\n\n[red][泽塔议会特殊军用装置]",
+	"underBullets":true
+	"health": 1080,
+	"size": 2
+	"reload":300,
+	"range": 180,
+		"alwaysShooting": true,
+		"targetGround": false
+	"targetAir": false
+		"maxAmmo":70
+    "ammoPerShot": 7
+    "rotateSpeed": 0
+     "shootX":0
+	    "shootY":0
+    "shootCone":360
+	"consumes": {
+	"power": 12
+		},
+	"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"inaccuracy": 360
+	"shake":1,
+	"ammoTypes": {
+        "silicon": {
+	         "type": "BasicBulletType",
+             "spawnUnit": "盾1",
+             "speed": 0,
+		 }
+	}, 
+	"requirements": [
+        { "item": "copper","amount": 540 },
+        { "item": "lead","amount": 640 },
+        { "item": "silicon", "amount": 180 }
+        { "item": "thorium", "amount": 220 }
+	],
+	"category": "units",
+	"research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	    "researchCostMultiplier": 2,
+	    "canOverdrive":false
+}

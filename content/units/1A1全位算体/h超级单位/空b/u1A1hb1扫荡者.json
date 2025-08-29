@@ -1,0 +1,189 @@
+{
+	"type": "flying",
+	"name": "猎杀者",
+	"description": "向附近的地面敌人发射海量导弹，每颗导弹中包含大量矿渣溶液，对建筑造成毁灭性打击，其激光主炮依旧有极端可怕的威胁。\n[orange][全位算体精英部队]",
+			"immunities": ["甲板损坏"
+			],
+	"speed": 1.75
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":1.15,
+	"targetFlags":["battery","turret","core"],
+	"abilities": [
+	{
+"type": "RegenAbility",
+"amount": 0.25
+},]
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 300,
+	    "health": 3540,
+	"hitSize":24, 
+	"flying": true,
+	"armor":12
+	"engineOffset": 9,
+	"engineSize": 6,
+	"itemCapacity": 0,
+		"weapons":[
+		{
+       	"name": "无",
+       	"x": 0
+            "y": 4
+			"shake": 8,
+			"reload": 96
+			"rotateSpeed":0
+		    "shootY":9
+			"shootSound":"none",
+			                "bullet":{
+			                "type": "LaserBulletType",
+			                "lifetime": 180,
+			                "status": "破甲",
+			"statusDuration": 120
+"damage":22
+	"shootEffect":{
+    "type": "ParticleEffect",
+    "particles": 5,
+    "line": true,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "length": 15,
+    "baseLength": 0,
+    "lifetime": 15,
+    "colorFrom": "FF7F24",
+    "colorTo": "E3E3E3",
+    "cone": 30},
+"collidesTeam":true,
+"sideAngle":55,
+"sideWidth":7,
+"sideLength":7,
+"lifetime": 10
+"colors":["FF7F24", "E3E3E3", "FFB90F"],
+"width":15, "length":120
+"fragLifeMin":0
+"shootSound":"laserblast",
+	}
+			}
+			{
+       	"name": "无",
+       	"x": 0
+            "y": 4
+			"shake": 8,
+			"reload": 900
+			"rotateSpeed":0
+		    "shootY":9
+			"shootSound":"none",
+			"shoot": {
+        "shots": 12
+        "shotDelay": 10
+    },
+			                "bullet":{
+			                "type": "LaserBulletType",
+			                "lifetime": 180,
+			                "status": "破甲",
+			"statusDuration": 120
+"damage":44
+	"shootEffect":{
+    "type": "ParticleEffect",
+    "particles": 5,
+    "line": true,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "length": 15,
+    "baseLength": 0,
+    "lifetime": 15,
+    "colorFrom": "FF7F24",
+    "colorTo": "E3E3E3",
+    "cone": 30},
+"collidesTeam":true,
+"sideAngle":55,
+"sideWidth":7,
+"sideLength":7,
+"lifetime": 10
+"colors":["FF7F24", "E3E3E3", "FFB90F"],
+"width":15, "length":120
+"fragLifeMin":0
+"shootSound":"laserblast",
+	}
+			}
+		{	"name": "无",	
+		"reload":166
+        "x": 3,  "y": 6, 
+        "rotate": true,
+        "mirror":true,
+        "inaccuracy": 0
+		"shootSound": "missile",
+		"rotateSpeed": 0,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":6
+	    "shotDelay":15
+	},
+		"bullet":{
+			"sprite":"missile",
+			"splashDamageRadius":35,
+	"splashDamage":45
+	    "damage":14
+	    "speed":6,
+	    "buildingDamageMultiplier":3.0,
+	    "weaveMag":2,
+	"weaveScale":4,
+	    "lifetime":40,
+	    "width":8,	 "height":28
+	    "status":"melting",
+	"statusDuration":240,
+	"makeFire":true,
+	"trailLength":6,
+	"trailWidth":3,
+	"homingRange": 80,
+    "homingPower": 0.1,
+    "homingDelay":10
+	"fragBullets": 4,
+	"fragRandomSpread": 12,
+			"fragBullet": {
+				"type": "LiquidBulletType",
+	"liquid": "slag",
+	"speed": 2.34,
+	"lifetime":6,
+	"buildingDamageMultiplier":2.0,
+	"knockback":0.3,
+	"statusDuration":120,
+	"status":"melting",
+	"damage": 3.25
+	"makeFire":true,
+	"fragBullets": 4,
+	"fragRandomSpread": 12,
+			"fragBullet": {
+				"type": "LiquidBulletType",
+	"liquid": "slag",
+	"speed": 2.34,
+	"lifetime":2
+	"buildingDamageMultiplier":2.0,
+	"knockback":0.3,
+	"statusDuration":120,
+	"status":"melting",
+	"damage": 0.75
+	"makeFire":true,"fragBullets": 4,
+	"fragRandomSpread": 12,
+			"fragBullet": {
+				"type": "LiquidBulletType",
+	"liquid": "slag",
+	"speed": 2.34,
+	"lifetime":2
+	"buildingDamageMultiplier":2.0,
+	"knockback":0.3,
+	"statusDuration":120,
+	"status":"melting",
+	"damage": 0.25
+	"makeFire":true,}}}
+			}
+	}
+]
+"research": {
+	"parent":"BA1sHB精英单位工厂"
+	}
+}

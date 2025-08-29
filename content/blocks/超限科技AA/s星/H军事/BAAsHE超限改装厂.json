@@ -1,0 +1,55 @@
+{
+    "type": "Reconstructor",
+	"name": "超限改装厂",
+	"description": "对一些次级单位进行改装升级，这将再次增强他们的作战能力，或者是其他的能力\n \n[blue][超限集团改装工厂]",
+	"size": 6
+	"constructTime": 3600,
+	"consumes": {
+		"power": 19.6
+		"liquid": 
+	{"liquid":"cryofluid","amount":0.8,}
+	"items": [
+	{ "item": "thorium", "amount": 450 }
+	{ "item": "metaglass", "amount": 420}
+	{ "item": "1绝缘钢", "amount": 280 }
+	{ "item": "1集成电路", "amount": 120 },
+	{ "item": "phase-fabric", "amount": 150 }
+	],}
+	"upgrades": [
+        ["uAABT2A压制", "uAABT3A控制"],
+        ["uAABT2B穿云","uAABT3B收容"]
+        ["uAABT2C闪流","uAABT3C保护"]
+//        ["uAABT1H火花","uAABT2H电光"]
+        
+        ["uAABT2I天星","uAABT3I苍啸"]
+        ["uAABT2K掠影","uAABT3K灾劫"]
+        ["uAABT2J先知","uAABT3J启示"]
+      ["uAABT2L超限重拳","uAABT3L扩张"]
+        
+        ["uAABT2N寄居","uAABT3N1青鲨"]
+        ["uAABT2O1河豚","uAABT3O1礁菊"]
+        ["uAABT2O蚌蜊","uAABT3O帝钳"]
+        ["uAABT2Q水巢","uAABT3Q赤潮"]
+	],
+	"requirements": [
+	{ "item": "copper", "amount": 1200},
+    { "item": "lead", "amount": 800},
+    { "item": "phase-fabric", "amount": 340 }
+    { "item": "1绝缘钢", "amount": 340 }
+    { "item": "plastanium", "amount": 350}
+    { "item": "titanium", "amount": 440 }
+	{ "item": "1集成电路", "amount": 450 },
+	{ "item": "0铜铅合金", "amount":  345 }
+	],
+	"category": "units",
+/*	   "research": {
+	"parent":"BAAsHA步兵厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+}

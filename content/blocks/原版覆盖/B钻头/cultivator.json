@@ -1,0 +1,11 @@
+{
+"research": {
+	"parent":"pneumatic-drill"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "超限工艺-facility32m"
+			}
+	]
+	}
+}

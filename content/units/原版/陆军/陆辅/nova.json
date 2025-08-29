@@ -1,0 +1,13 @@
+{
+"immunities": ["甲板损坏"
+	],
+	"research": {
+        "parent":"dagger"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+	]
+    }
+	}

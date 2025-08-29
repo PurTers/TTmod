@@ -1,0 +1,91 @@
+    {
+    "type": "PowerTurret",
+    "name": "厚堡",
+    "description": "对空对地的重机炮攻击，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 4500,
+    "size": 3,
+    "heatColor": "turretHeat",
+    "shake": 0.2,
+    "inaccuracy": 5,
+    "recoil": 2,
+    //"hasPower": false,
+    "shoot": {
+    "shots":2,
+        "type": "ShootAlternate",
+        "barrels": 3,
+        "spread": 2
+        "shotDelay":18
+    },
+    "shootSound": "artillery",//子弹音效
+    "recoilTime": 10,
+    "buildCostMultiplier":2
+    "drawer":{"type":"DrawTurret",
+	    "basePrefix": "cwst-"
+	    }
+    "shootType": {
+			"speed": 3,
+			"lifetime": 83,
+			"width": 15,
+			"height": 15,
+			"knockback": 0.1,
+			"damage": 33,
+			"backColor": "FF8C00",
+			"frontColor": "FFB90F",
+			"shootEffect": "shootBig",
+			"status": "slow",
+			"statusDuration": 30,
+			"hitEffect": "explosion",
+			"despawnEffect": "explosion"
+			"makeFire":true,
+			"trailLength":4,
+			"trailWidth":1.5,
+			"trailColor":"FFB90F",
+	"fragBullets": 4,
+			"fragBullet": {
+			"type": "ArtilleryBulletType",
+			"backColor": "FF8C00",
+			"frontColor": "FFB90F",
+			"damage": 33,
+			"collidesAir": true
+			"width": 5,
+			"height": 5,
+			"splashDamageRadius": 30,
+			"splashDamage": 12,
+				"speed": 2,
+				"lifetime": 40,
+				"damage": 2,
+	}}
+    "consumes": {
+    },
+    "reload": 33,
+    "rotateSpeed": 12,
+    "range": 240,
+    "category": "turret",
+    "research": {
+	"parent":"BA1sAT2A防卫"
+	"objectives": [
+	{
+				"type": "SectorComplete",
+				"preset": "超限工艺-stainedMountains"
+			}
+            /*{
+				"type": "SectorComplete",
+				"preset": "废弃研究所"
+			}*/
+	]
+	}
+    "researchCostMultiplier": 0.2,
+    "requirements": [
+{ "item": "copper", "amount":420},
+{ "item": "lead", "amount":320}
+{ "item": "graphite", "amount":210}
+{ "item": "titanium", "amount": 310 }
+{ "item": "plastanium", "amount":160},
+{ "item": "silicon", "amount":250},
+{ "item": "metaglass", "amount":240},
+    ]
+    "researchCostMultiplier": 0.5
+    "buildVisibility":"campaignOnly"
+}

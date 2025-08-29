@@ -1,0 +1,40 @@
+{
+    "name":"电室",
+	"health":5500,
+    "description": "更好的电力储存设备，更加坚固，储电量巨大。\n[red][泽塔议会电池]",
+    "requirements": [
+  { "amount": 530, "item": "lead" },
+  { "amount": 260, "item": "silicon" },
+  { "amount": 225, "item": "surge-alloy" },
+  { "amount": 180, "item": "phase-fabric" }
+  { "amount": 180, "item": "plastanium" }
+    ],
+        "destroyBullet":{
+		"hitSound":"plasmaboom",
+		"width":16,	"height":16,
+		"sprite":"circle-bullet",
+		"shrinkY":0,
+		"hitShake":8,
+		"backColor":"25C9ABFF",
+		"frontColor":"FFFFFF",}
+	"consumesPower": true,
+	"outputsPower": true,
+    "consumes": 
+    {"powerBuffered": 2500000},
+	"emptyLightColor":"FF000000",
+	"fullLightColor":"FFFFFFFF",
+    "size": 5
+    "type": "Battery",
+	"category": "power",
+/*	"research": {
+	"parent":"BA0sEC2合金电池"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

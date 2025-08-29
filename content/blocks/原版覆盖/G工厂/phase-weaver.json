@@ -1,0 +1,8 @@
+{
+"requirements": [
+{ "item": "thorium", "amount": 75 }
+{ "item": "lead", "amount":100},
+{ "item": "silicon", "amount":120},
+{ "item": "metaglass", "amount": 40 }
+	]
+}

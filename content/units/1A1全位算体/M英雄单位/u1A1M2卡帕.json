@@ -1,0 +1,162 @@
+{
+	"type": "mech",
+	"name": "卡帕",
+	"description": "全位算体工业区管理员卡帕的专属机甲，高机动性且小巧，由于其对技术要求极高，极其难以量产。\n[orange][全位算体 英雄单位-布兰达]",
+    "speed":  1.2,
+    "hitSize": 12,
+    "canBoost": true,
+    "hovering":true,
+    "canDrown": false,
+    		"immunities": [
+    		"freezing","burning","wet","tarred","spore-slowed","electrified","sapped","slow","脆裂","甲板损坏"
+    		
+	],
+		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+    "ammoResupplyAmount":1,/*弹药补给倍率 */
+    "health": 660,
+    "armor": 22
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "buildSpeed":5
+    "itemCapacity": 120,
+    "targetAir":true,  
+    "targetGround":true,
+    "mineTier":5
+	"mineSpeed":12
+        "abilities": [/*能力（如力场防御等） */
+        {
+"type": "RegenAbility",
+"amount": 0.9
+},
+{
+			"type": "SpawnDeathAbility",
+			"unit": "卡帕",
+			"amount": 1,
+			"randAmount": 0
+			"spread": 0,
+	    "faceOutwards": false,
+	}
+		]
+	"weapons":[{
+            "name": "卡帕1",
+            "reload": 108
+            "x": -6.4
+            "y": 1.3
+            "ejectEffect": "casing1",
+            "shootSound":"laser",
+            "rotate":false
+            "mirror":false
+	"rotateSpeed":0,
+	"shootCone":5,
+	"shootStatusDuration": 60,
+	"rotationLimit":60
+	"shootStatus": "静止",
+	"bullet":{
+            "keepVelocity":false,//受惯性影响
+            "shootSound":"laser",
+             "despawnSound":"laser",
+        "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF38990","97FFA880","FFFFFF"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 185
+	"healPercent":30
+	"pierceDamageFactor":0.4
+	 "collidesTeam":true,
+	"pierceCap": 8,
+	"width": 24,	
+	"length": 120
+	"lifetime": 30,}}
+	{
+			"name": "卡帕3",
+			"reload": 48,
+			"recoil": 0,
+			"x": 6.4,
+			"y": 1.3,
+			"rotate": true,
+			"rotateSpeed": 15,
+			"mirror": false,
+			"inaccuracy": 12,
+			"ejectEffect": "casing1",
+			"shootSound": "pew",
+			"alternate": false,
+			"rotationLimit":60
+			"shootY":6
+				"recoilTime":120, //后坐力和后坐力恢复时间
+				//"baseRotation":30
+				"shootCone":30,
+				"shoot":{
+			"shots":6,
+			"shotDelay":0
+		},
+			"bullet": {
+				"damage":8,
+				"speed": 6,
+				"lifetime": 30,
+				"width": 8,
+				"height": 22
+				"pierceCap": 3,
+				"buildingDamageMultiplier":2.0,
+				"healPercent":2
+				"pierceBuilding": true,
+				"trailColor":"7CF38990"
+				"backColor":"97FFA880",
+				"frontColor":"FFFFFF"
+				 "collidesTeam":true,
+				 "fragBullets": 4,
+			"fragBullet": {
+	    "damage":1
+	    "speed":12,
+	    "weaveMag":2,
+	"weaveScale":4,
+	    "lifetime":5,
+	    "width":2,	 "height":7
+	"trailLength":3,
+	"trailWidth":1,
+	"pierceCap": 1
+	"healPercent":2
+	"collidesTeam":true,
+	"pierceBuilding": true,
+	"trailColor":"7CF38990"
+	"backColor":"97FFA880",
+	"frontColor":"FFFFFF"
+	"homingRange": 20,
+            "homingPower": 0.1,
+            "homingDelay":1}
+		}}
+		{"name":"卡帕2",
+        "type":"RepairBeamWeapon",
+        "x":-3.4,"y":-1
+	    "rotateSpeed": 3.2,
+        "shootY":0,
+        "beamWidth":0.6,
+        "mirror":false,
+        "repairSpeed":1.6,
+        "bullet":{
+        "maxRange":66}}
+]
+	"researchCostMultiplier": 0,
+	"details":"卡帕，工业区0032管理员，同时是全位算体后勤部长，负责全位算体的资源调备。",
+	"research": {
+	"parent":"u1A1M1布兰达"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "facility32m"
+			}
+	]
+	}
+}

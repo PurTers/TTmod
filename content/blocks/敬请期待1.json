@@ -1,0 +1,22 @@
+{
+	"name": "地图尚未完成",
+	"description": " ",
+	"health":500,
+	"hasShadow":false
+	"armor":0,
+	"size": 2
+	"category": "logic",
+	"type": "Wall",
+	"buildCostMultiplier":99999999
+	"requirements": [
+    ]
+    "alwaysUnlocked": true,
+	/*"research": {
+        "root":true,
+        "name": "[blue]战役地图(超限工艺mod)"
+       "planet":"serpulo"
+        },*/
+            "canOverdrive": false,
+            //"researchCostMultiplier": 0
+            "buildVisibility": "sandboxOnly",
+}

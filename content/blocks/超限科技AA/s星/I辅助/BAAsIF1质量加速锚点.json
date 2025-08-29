@@ -1,0 +1,36 @@
+{
+	"name": "质量加速锚点",
+	"description": "实行长距离能量打击，需要另外一个锚点与之相连，用于定位。\n[伤害:850/发]\n \n[blue][超限技术特殊发射器]",
+	"type": "MassDriver",
+	"size": 5,
+	"hasItems": true,
+	"itemCapacity": 0
+	"reload": 15,
+	"range": 900,
+	"health": 4680,
+	"consumes": {
+		"power": 22.5
+	},
+	"minDistribute":0
+	"bullet": {
+    "spawnUnit": "质1",
+    }
+	"requirements": [
+	{ "item": "0铜铅合金", "amount": 400 },
+	{ "item": "thorium", "amount": 320},
+	{"item":"1集成电路","amount":280}
+  {"item":"1共振石","amount":320}
+  {"item":"plastanium","amount":280}
+	],
+	/*"research": {
+	"parent":"BAAsCE2质量驱动器"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	"category": "effect"
+	"buildCostMultiplier":0.6
+}

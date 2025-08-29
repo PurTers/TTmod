@@ -1,0 +1,19 @@
+ {
+ "type":"WallCrafter"
+ "name":"矿井",
+ "size": 2,
+ "health": 640,
+ "description":"以较缓慢的速度挖掘矿物",
+  "requirements": [	
+   { "item": "copper", "amount":20},
+   { "item": "lead", "amount":15}
+   ],
+            "consumes":{"Power":60}
+            "drillTime":99999999
+            "size":2
+            "attribute":"sand"
+            "output":"sand"
+            "fogRadius":0
+            "ambientSound":"drill"
+            "ambientSoundVolume":0.04
+        }

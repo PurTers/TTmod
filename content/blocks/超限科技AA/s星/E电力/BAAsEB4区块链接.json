@@ -1,0 +1,31 @@
+{
+    "type":"PowerNode",
+    "name":"区块链接",
+	"description":"极为强大的电力节点，超远距离传输电力，几乎覆盖整个区块\n \n[blue][超限技术电力传输装置]\n\n[red]警告:渣机使用时会非常卡(指点开此建筑手动连接和建造此建筑的时候)",
+    "health":25000,
+	"size":5,
+    "maxNodes":400,
+    "laserRange":500,
+    "consumesPower": true,
+	"outputsPower": true,
+    "consumes": 
+    {"powerBuffered": 1750000},
+	 "research": {
+	"parent":"BAAsEB2升级电力节点"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	"requirements": [
+	{"item": "0铜铅合金", "amount": 5000},
+	{"item": "titanium", "amount": 3000},
+	{"item": "1集成电路", "amount": 1800},
+	{ "item": "1绝缘钢", "amount":1500},
+	{ "item": "lead", "amount":2800}
+	],
+	"category":"power"
+	"researchCostMultiplier": 0.5
+}

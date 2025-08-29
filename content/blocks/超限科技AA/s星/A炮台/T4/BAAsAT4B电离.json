@@ -1,0 +1,131 @@
+{
+    "type": "PowerTurret",
+    "name": "极磁",
+    "description": "在电磁领域的深度研究使得超限集团研发了这种特制的炮台，其轨迹近似于磁场，以几乎唯美的移动来攻击敌方单位，其强大的磁场使得会不断向周围的单位靠拢，在命中后对该单位释放巨大能量\n \n[blue][超限技术炮台]",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 1620,
+    "size": 4,
+    "heatColor": "turretHeat",
+    "shootSound": "激光",
+    "shake": 0.2,
+    "inaccuracy": 60
+    "liquidCapacity": 500,
+    "recoil": 2,
+    "shoot": {
+        "shots": 6
+        "shotDelay": 30
+    },
+    		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": true,
+        "x": 0
+        "y": 0
+        "suffix": "-1",
+        "layer": 50,
+        "moveX": 3.7
+        "moveY": 2.4
+        }
+			]
+			}
+			]
+   },
+    "recoilTime": 100,
+    "shootType":{
+    "speed": 5
+	    "lifetime":90,
+		"width": 3,"height": 12
+		"damage":6
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":20,
+		"splashDamage": 38,
+        "ammoMultiplier":4,
+        "backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+				"trailLength":6
+    "trailWidth":1.5,
+    "trailColor":"FFFFFF",
+				"sprite":"超限工艺-尖刺",
+        "fragLifeMin":0.1,
+            "lightningDamage":23,
+            "lightningColor": "FFFFFFFF",
+    "lightning":7
+    "lightningLength":10
+    "homingDelay":20
+    "homingRange": 9999
+            "homingPower": 0.03,
+    "fragBullets": 3,
+    "status": "electrified",
+			"statusDuration": 90
+			"fragBullet": {
+			"speed": 3,  
+	    "lifetime":10,
+		"width": 8,"height": 8,
+		"damage":6
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":20,
+		"splashDamage":22,
+        "ammoMultiplier":4,
+        "backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+        "fragLifeMin":0.1,
+            "lightningDamage":13,
+            "lightningColor": "FFFFFFFF",
+    "lightning":3
+    "lightningLength":5
+    "status": "electrified",
+			"statusDuration": 60
+       },
+       "intervalBullet": {
+       "speed": 4,  
+	    "lifetime":0,
+		"width": 2,"height": 2
+		"shootEffect": "shootSmall",
+        "backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+        "fragLifeMin":0.1,
+            "lightningDamage":9,
+            "lightningColor": "FFFFFFFF",
+    "lightning":2
+    "lightningLength":10
+    "status": "electrified",
+			"statusDuration": 30
+       }
+       }
+    "consumes": {
+        "power": 22
+        "liquids":[
+    {
+        "liquid": "cryofluid"
+        "amount": 1.6
+        "booster": true
+    }
+    ]
+    },
+    "reload": 66
+    "rotateSpeed": 12,
+    "range": 400
+    "category": "turret",
+    //"research": "BAAsAT3A极磁",
+    "research": {
+	"parent":"BAAsAT3B极磁"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+    "requirements": [
+        {"item": "graphite", "amount": 240  },
+{"item": "1绝缘钢", "amount": 180  },
+{"item": "1集成电路", "amount": 200  },
+{ "item": "titanium", "amount": 380 }
+{ "item": "0铜铅合金", "amount":220},
+    ]
+    "researchCostMultiplier": 0.5
+}

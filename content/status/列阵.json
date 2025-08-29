@@ -1,0 +1,8 @@
+{
+"name":"列阵",
+	"speedMultiplier":0.5
+	"reloadMultiplier":1.2
+	"effectChance":0.6,
+	"healthMultiplier":1.5
+	"damageMultiplier":1.2
+	}

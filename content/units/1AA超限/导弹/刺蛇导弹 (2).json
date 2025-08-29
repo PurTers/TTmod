@@ -1,0 +1,91 @@
+{
+		"immunities": [
+	],
+	"name": "刺蛇导弹",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 680,
+	"armor": 12
+	"speed": 3,
+	"lifetime": 235
+	"maxRange": 6,
+	"rotateSpeed": 2.4
+	"engineColor": "ffffffff",
+	"trailColor": "ffffffff",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"missileAccelTime": 60,
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "6E7080FF",
+	"weapons": [
+		{
+			"shootCone": 360,
+			"mirror": false,
+			"reload": 1,
+			"shake": 10,
+			"shootOnDeath": true,
+			"shootSound": "plasmaboom",
+			"bullet": {
+				"collidesGround": true
+	"collidesAir": true
+				"type": "ExplosionBulletType",
+				"hitColor": "53565c",
+				"splashDamage": 336
+				"splashDamageRadius": 36
+				"despawnShake": 3,
+				"fragVelocityMin": 4
+				"buildingDamageMultiplier":0.1
+				"status": "破甲",
+			"statusDuration": 600,
+				"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 8,
+				"height": 9,
+				"buildingDamageMultiplier":0.1
+				"backColor": "53565c",
+				"frontColor": "53565c",
+				"splashDamageRadius": 22
+				"splashDamage": 44
+				"lifetime": 20,
+				"speed": 0.5
+				"status": "破甲",
+			"statusDuration": 300,
+				 "buildingDamageMultiplier":0.2
+				 "fragVelocityMin": 4
+				 "fragBullet": {
+				"type": "ShrapnelBulletType",
+            "length": 11
+            "damage": 67
+            "width": 3
+            "fromColor": "53565c",
+            "toColor": "53565c",
+            "pierce": true,
+                "makeFire":true,
+			"status":"burning",
+			"statusDuration":88
+			"status": "脆裂",
+			"statusDuration": 600
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "cbd97f",
+                "colorTo": "aaaaaa",
+                "cone": 60
+ }
+				 "buildingDamageMultiplier":0.1
+			}
+			}
+		}
+		}
+	],
+}

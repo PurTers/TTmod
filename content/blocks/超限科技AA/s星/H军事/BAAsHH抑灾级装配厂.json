@@ -1,0 +1,76 @@
+{
+   "type":"UnitAssembler",
+   "name": "抑灾级装配厂",
+   "description": "生产特化战争单位，通常他们都极为强大，但是其组装过程过于繁琐。\n\n[blue][超限技术装配工厂]",
+   "details":"相信我，组装无人机修复单位老快了",
+   "health":8680,
+   "size":5,
+   "liquidCapacity":120,
+   "consumes":{
+       "power":8,
+       "liquid": {"liquid": "cryofluid", "amount": 1}
+   },
+   "areaSize":12
+   "plans":[
+       {
+           "unit":"uAADAT1磐石",
+           "time":3600,
+           "tier":0
+           "requirements":[
+        "thorium-wall-large/10",
+        "plastanium-wall-large/5",
+        "超限工艺-uAABT1A响应/8"
+        "超限工艺-uAABT1C列兵/8"
+        "超限工艺-uAABT1B卫兵/2"
+        "超限工艺-BAAsFB2大型合金墙/10"
+           ]
+       }
+       {
+           "unit":"uAADAT2嵘障",
+           "time":5400,
+           "tier":1
+           "requirements":[
+           "超限工艺-uAABT2A压制/1"
+           "超限工艺-uAABT2B穿云/1"
+           "超限工艺-uAABT2C闪流/1"
+           "thorium-wall-large/10",
+           "超限工艺-BAAsFB2大型合金墙/20"
+           "超限工艺-BAAsFD2大型绝缘钢墙/10"
+           ]
+       }
+             {
+           "unit":"uAADAT3穹垒",
+           "time":6200,
+           "tier":2
+           "requirements":[
+        "超限工艺-BAAsFB2大型合金墙/40"
+           "超限工艺-BAAsFD2大型绝缘钢墙/15"
+           "thorium-wall-large/10",
+        "plastanium-wall-large/5",
+        "超限工艺-uAADAT1磐石/1"
+        "超限工艺-BAAsHNO泰坦之心/1"
+           ]
+       }
+   ],
+   "droneType":"装配无人机",
+	"requirements": [
+    { "item": "copper", "amount": 800},
+	{ "item": "1集成电路", "amount": 200},
+    { "item": "titanium","amount": 300},
+    { "item": "lead", "amount": 600},
+    { "item": "0铜铅合金", "amount": 420},	
+    { "item": "plastanium", "amount": 550}
+    ],
+	"category":"units",
+	"canOverdrive": false,
+	"research": {
+	"parent":"BAAsHA步兵厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

@@ -1,0 +1,96 @@
+{
+    "type": "PowerTurret",
+    "name": "色散",
+    "description": "超限集团以一种较为粗制的方法制成的光束炮，受限于资源导致其威力极为低下，但是又意外的导致其有较远的射程，炮台通过四连发光束来打击敌人。\n\n[blue][超限技术炮台]",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 400,
+    "size": 2,
+    "heatColor": "turretHeat",
+    "shootSound": "激光",
+    "shake": 0.2,
+    "inaccuracy": 12,
+    "recoil": 2,
+    "coolantMultiplier": 5
+    "liquidCapacity": 50,
+    "shoot": {
+    "shots":12,
+        "type": "ShootAlternate",
+        "barrels": 3,
+        "spread": 2
+    },
+    "shootSound": "shotgun",//子弹音效
+    "recoilTime": 10,
+    "shootType": {
+        "type": "BasicBulletType",
+        "damage": 12
+        "frontColor": "87CEEB",
+        "backColor": "87CEEB",
+        "width": 4,
+        "height": 8,       
+        "trailLength": 2,
+        "trailWidth": 1.5,
+        "pierceCap": 6
+        "trailColor": "87CEEB",
+        "speed": 22,
+        "lifetime": 10,
+        "ammoMultiplier": 1,
+	"hitEffect": {
+	"type": "ParticleEffect",
+	"particles": 5,
+	"line": true,
+	"strokeFrom": 0.7,
+	"strokeTo": 0.5,
+	"lenFrom": 4,
+	"lenTo": 2,
+	"length": 16,
+	"baseLength": 0,
+	"lifetime": 18,
+	"colorFrom": "87CEEB",
+	"colorTo": "87CEEB"
+	"interp": "pow3Out",
+	"sizeInterp": "pow3In",
+        "cone": 30,}
+	"despawnEffect": {
+	"type": "ParticleEffect",
+	"particles": 5,
+	"line": true,
+	"strokeFrom": 0.7,
+	"strokeTo": 0.5,
+	"lenFrom": 4,
+	"lenTo": 2,
+	"length": 16,
+	"baseLength": 0,
+	"lifetime": 18,
+	"colorFrom": "87CEEB",
+	"colorTo": "87CEEB"
+	"interp": "pow3Out",
+	"sizeInterp": "pow3In",
+        "cone": 30,}}
+    "consumes": {
+        "power": 2.4,
+        "coolant": {
+            "amount": 0.4,
+            "optional": true
+        }
+    },
+    "reload": 72,
+    "rotateSpeed": 12,
+    "range": 220,
+    "category": "turret",
+    "research": {
+	"parent":"BAAsAT1分离"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+    "requirements": [
+        { "item": "silicon", "amount":15},
+{ "item": "lead", "amount":60}
+{ "item": "0铜铅合金", "amount": 15 }
+    ]
+    "researchCostMultiplier": 0.5
+}

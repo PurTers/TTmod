@@ -1,0 +1,120 @@
+{
+    "type": "mech",
+    "name":"穿云"
+    "description": "以卫兵为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，能够有效打击重型单位，射程远，但是攻击间隔长\n\n[blue][超限技术作战中机甲]",
+    "speed": 0.9
+    "hitSize": 18
+    "health": 620,
+    "immunities": [
+		"甲板损坏"
+	],
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":8
+    "itemCapacity": 30
+    "targetFlags":["turret","core"],
+    "weapons": [
+       {
+            "name": "穿云1",
+            "reload": 126
+            "x":0
+            "y":0
+             "inaccuracy": 0.1
+             "chargeSound":"flux",
+            "shootSound":"malignShoot",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootX":0
+	    "shootY":22
+	    "shootStatusDuration": 30,
+	"shootStatus": "静止",
+	    "shoot":{
+	    "firstShotDelay":30
+	    "type": "ShootAlternate",
+		"barrels": 1
+		"spread": 0
+	},
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 6.8
+        "y": 2
+        "suffix": "-手1",
+        "layer": 59.9
+        "moveX": -1
+        "moveY": 2.7
+        "moveRot":20
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-6.8,"y":2,
+        "suffix":"-手2"
+        "layer":59.9
+        "moveX":-1
+        "moveY":1.5
+        "moveRot":-55
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":10
+        "suffix":"-炮"
+        "layer":60
+        "moveX":0
+        "moveY":0
+        "moveRot":90
+        }
+			]
+            "bullet": {
+    "type":"BasicBulletType",
+    "buildingDamageMultiplier":0.3
+    "speed": 14
+    "lifetime":20
+	"width": 2
+	"height": 9
+	"damage":336
+    //"sprite":"超限工艺-尖刺1",
+    "pierceArmor": true,
+    "collidesAir": false
+    "trailLength":12
+    "trailWidth":0.7,
+    "pierceCap": 6,
+    "pierceBuilding": true,
+    "trailColor":"c0ecff",
+    "backColor":"1878BF",
+    "frontColor":"1878BF"
+    "chargeEffect":{
+		"type": "MultiEffect",
+		"lifetime": 30,
+		"effects": [
+		   {
+           "type": "ParticleEffect",
+                    "particles": 1,
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "lenFrom": 280,
+                    "lenTo": 280,
+                    "line": true,
+                    "randLength": false,
+                    "length": 0,
+                    "baseLength": 1,
+                    "lifetime": 45,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "c0ecff",
+                    "cone": 0
+                }, 
+                ]
+		   }
+    }}
+    ]
+    "research":"uAABT1B卫兵"
+}

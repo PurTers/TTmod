@@ -1,0 +1,66 @@
+{
+	"type": "AttributeCrafter",
+	"name": "共振石矿井",
+	"health": 1040,
+	"description": "超限集团在一次意外中发现的共振石，出一期极为广大的使用前景，超限集团研发出了这种专门的开采装置\n\n[red]警告:只能建立在地热上！！！\n\n[blue][超限技术中级工厂]",
+	"outputItem": { "item": "1共振石", "amount": 1},
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			"DrawFlame"
+			{
+		"type": "DrawGlowRegion",
+		"alpha": 0.7,
+		"color": "30F582FF60",
+		"glowIntensity": 0.3,
+		"glowScale": 6
+			},
+		]
+	}
+	"updateEffect":[{"type": "WaveEffect",
+		"lifetime": 10,
+		"sizeFrom": 0,
+		"sizeTo": 18,
+		"strokeFrom": 2,
+		"strokeTo": 0,
+		//"spirit":"超限工艺-菱形"
+		"colorFrom": "0097f5",
+		"colorTo": "0097f5"},"freezing",]
+	"craftEffect": "blastsmoke"
+	"alwaysUnlocked": false,
+	"size": 2
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"attribute": "heat",
+	"craftTime": 42
+	"liquidCapacity": 60,
+	"itemCapacity": 30,
+	"baseEfficiency": 0,
+    "maxBoost":2.0,
+	"consumes": {
+	"power": 8
+	"liquids": 
+	[{"liquid": "water", "amount": 0.4 }]
+	  "items": {	 "items": [
+    { "item": "phase-fabric", "amount": 1}]}
+	},
+"requirements": [
+	{ "amount": 320, "item": "plastanium" }
+	{ "amount": 250, "item": "1集成电路" }
+	{ "amount": 180, "item": "metaglass" }
+	{ "item": "thorium", "amount": 150 }
+	],
+	"category": "production",
+	"research": {
+	"parent":"BAAsBC1大型抽水机"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "裂谷前哨"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

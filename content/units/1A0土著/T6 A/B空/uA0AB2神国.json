@@ -1,0 +1,320 @@
+{
+	"type": "payload",
+	"payloadCapacity": 6000
+	"name": "神国",
+	"description": "极其厚实的血量与众多的功能，能够生产众多实用单位，能够高速采集高硬度矿物和高速建造建筑，在一定范围内提供高强化立场。\n[red][泽塔议会永恒级单位]",
+	"immunities": [
+		"协攻","甲板损坏"
+	],
+		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 1400,
+    "ammoResupplyAmount":1,
+    "speed": 0.75,
+	"flying": true,
+	"engineOffset": 1,
+	"engineSize": 8,
+    "hitSize": 104,
+    "health": 92300,
+    "armor": 85,
+    "mineSpeed": 15,
+    "mineTier": 5,
+    "buildSpeed": 10.0,
+    	"engineOffset": 52,
+	"engineSize": 14, 
+	"faceTarget": false,
+	"lowAltitude":true,
+    "rotateSpeed": 1,
+    "itemCapacity": 700,
+    "rotateShooting": true,
+    "abilities": [
+        {
+            "type": "UnitSpawnAbility",
+            "unit": "mega",
+            "spawnX": 0,
+            "spawnY": 40,
+            "spawnTime": 14400
+        },
+        {
+            "type": "UnitSpawnAbility",
+            "unit": "poly",
+            "spawnX": -20,
+            "spawnY": -40,
+            "spawnTime": 7200
+        },
+        {
+            "type": "UnitSpawnAbility",
+            "unit": "poly",
+            "spawnX": 20,
+            "spawnY": -40,
+            "spawnTime": 7200
+        },
+        {
+            "type": "UnitSpawnAbility",
+            "unit": "mono",
+            "spawnX": 50,
+            "spawnY": -30,
+            "spawnTime": 3600
+        },
+        {
+            "type": "UnitSpawnAbility",
+            "unit": "mono",
+            "spawnX": -50,
+            "spawnY": -30,
+            "spawnTime": 3600
+        },
+        {
+        "type": "RepairFieldAbility"
+        "amount":600
+        "reload": 30
+        "range": 208
+    }
+        {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 100.0,
+        "max": 8000.0,
+        "reload": 300.0,
+        "range": 208.0,
+    }
+    {
+        "type": "EnergyFieldAbility"
+        "damage": 72.0
+        "reload": 120.0
+        "range": 450.0
+        "status": "electrified"
+        "statusDuration": 360.0
+        "targetGround": true
+        "targetAir": true
+        "hitBuildings": true
+        "hitUnits": true
+        "healPercent": 2.5
+        "maxTargets": 16
+        "useAmmo": true
+        "color": "98ffa9"
+    }
+    { "type": "StatusFieldAbility",
+    "duration": 120,
+    "reload": 60,
+    "range": 208,
+    "applyEffect":"none",
+    "effect":"协攻"  }
+        {
+    "type":"ForceFieldAbility",
+    "radius": 208,
+    "regen": 4,
+    "max": 82000,
+    "cooldown": 1200,}
+    ],
+    "weapons": [
+		{"name":"神国解离",
+	"type":"PointDefenseWeapon",
+	"x":40
+	"y":0
+	"rotate": true,
+	"recoil":0,
+	"rotateSpeed":90
+    "reload":1
+    "targetInterval":6,
+    "targetSwitchInterval":6,
+    "bullet":{
+	"speed": 30,"lifetime": 20,
+    "shootEffect":"sparkShoot",
+    "hitEffect":"pointHit",
+    "maxRange":520,
+    "damage":20}},
+    {"name":"神国脉冲炮",
+	"x":0
+	"y":-15
+	"mirror":false
+	"rotate": true,
+	"recoil":0,
+	"rotateSpeed":2,
+    "reload":66
+    "shootSound": "bolt",
+    "bullet":{
+	"type":"BasicBulletType",
+	"frontColor":"97FFA8FF",
+	"backColor":"97FFA8FF",
+	"trailColor":"97FFA8FF",
+	"trailLength":8
+	"trailWidth":2
+	"width": 5
+	"height": 10
+	"speed": 10,
+	"lifetime":36,
+      	"healPercent": 7.5
+      	"splashDamageRadius":96
+	    "splashDamage":64
+        "damage":33
+        "collidesTeam":true,
+        "weaveScale": 4,//数字越大摆动越大
+        "weaveMag": 4,//数字越大转的越快
+        "collidesTeam":true,
+        "homingRange": 250,
+    "homingPower": 0.1,
+                "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "97FFA8FF",
+                        "stroke": 2,
+                        "radius": 12,
+                        "radiusTo": 24,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                    {
+			"type": "ShapePart",
+			"colorTo":"97FFA8FF",
+			"color": "97FFA8FF",
+			"layer":110,
+			"stroke": 8,
+			"strokeTo": 8,
+			"circle": true,
+			"hollow": true,
+			"radius": 4
+			"radiusTo": 8
+			"x": 0,    "y": 0,
+			},
+			{
+			"type": "ShapePart",
+			"colorTo":"97FFA8FF",
+			"color": "97FFA8FF",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 0
+			"radiusTo": 96
+			"x": 0,    "y": 0,
+			},]
+               "fragVelocityMin": 32
+				 "fragBullet": {
+        "type": "EmpBulletType",
+        "healPercent": 12.5
+        "collidesTeam":true,
+				"timeIncrease": 1.25
+				"collidesTiles": true
+				"collidesTeam": true
+				"timeDuration": 200,
+				"powerDamageScl": 3,
+				"powerSclDecrease": 0.25,
+				"radius": 28,
+				"pierce": true,
+				"splashDamageRadius": 16,
+				"splashDamage": 32,
+				"width": 0,
+				"height": 0,
+				"damage": 10,
+				"keepVelocity": true,
+				"trailEffect": "none",
+				"backColor": "97FFA8FF",
+				"frontColor": "97FFA8FF",
+				"instantDisappear": true,//瞬间消失
+				"hitSound": "plasmaboom",
+				"despawnEffect": "hitEmpSpark"
+				"hitPowerEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"97FFA8FF",
+					"rotation":8
+				},
+		    	"applyEffect": "none"
+		    	"hitEffect": "none"
+		    	"shootEffect": "none"
+			}
+        "shootEffect": {
+        "type": "MultiEffect",
+	"effects": [
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 60
+    "sizeFrom": 0
+    "sizeTo": 8
+    "strokeFrom": 3
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 30
+    "sizeFrom": 0
+    "sizeTo": 3
+    "strokeFrom": 0
+    "strokeTo": 6
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    ]}
+    "hitEffect": {
+        "type": "MultiEffect",
+	"effects": [
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 60
+    "sizeFrom": 24
+    "sizeTo": 0
+    "strokeFrom": 48
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 120
+    "sizeFrom": 48
+    "sizeTo": 48
+    "strokeFrom": 3
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 120
+    "sizeFrom": 96
+    "sizeTo": 96
+    "strokeFrom": 6
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    ]}
+    "despawnEffect": {
+        "type": "MultiEffect",
+	"effects": [
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 60
+    "sizeFrom": 24
+    "sizeTo": 0
+    "strokeFrom": 48
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 120
+    "sizeFrom": 48
+    "sizeTo": 48
+    "strokeFrom": 3
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    {"type": "WaveEffect",
+    "startDelay":0
+    "lifetime": 120
+    "sizeFrom": 96
+    "sizeTo": 96
+    "strokeFrom": 6
+    "strokeTo": 0
+    "colorFrom": "97FFA8FF",
+    "colorTo": "97FFA8FF"}
+    ]}
+    },},
+    ]
+    //"research":"oct"
+    "payloadCapacity": 3872
+    	"controller": "DefenderAI",
+}

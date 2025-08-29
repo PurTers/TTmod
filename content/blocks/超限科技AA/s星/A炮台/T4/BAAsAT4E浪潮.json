@@ -1,0 +1,302 @@
+{
+	"type": "ItemTurret",
+	"name": "浪潮",
+	"description": "由退散改装而来，极为强大的击退能力，如同海浪一般的子弹会将敌人拒之门外。\n \n[blue][超限技术炮台]",
+	"health": 3500,
+	"size": 4,
+	"reload": 4
+	"range": 360,
+	"maxAmmo":120,
+    "ammoPerShot": 1
+    "recoils":4
+    "coolantMultiplier": 6
+    "liquidCapacity": 20,
+	"consumes": {
+	"coolant":{"amount":0.2,"optional":true}  
+		},
+	"shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 4
+		"spread": 6
+	},
+	"recoil": 2,
+	"shootCone":35,
+	"recoilTime": 18,
+	"cooldownTime": 90,
+	"shootY":11
+	"shootSound": "bolt",
+	"drawer": {
+	"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {
+				"type": "RegionPart",
+				"suffix": "-炮1",
+				"under":true,
+				"recoilIndex": 0
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-炮2",
+				"under":true,
+				"recoilIndex": 1
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			}
+			{
+				"type": "RegionPart",
+				"suffix": "-炮3",
+				"under":true,
+				"recoilIndex": 2
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			}
+			{
+				"type": "RegionPart",
+				"suffix": "-炮4",
+				"under":true,
+				"recoilIndex": 3
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			}
+    ]}
+    ]
+   }
+	//"ammoUseEffect": "casing2Double",那就是抛壳特效
+	"inaccuracy": 5,
+	"rotateSpeed": 4,
+	"shake":1,
+	"ammoTypes": {
+	"titanium":{
+	    "reloadMultiplier":1.5,
+	    "speed": 9,  
+	    "lifetime":40,
+		"width": 3,"height": 4.5,
+		"shootEffect": "shootSmall",
+		"ammoMultiplier":12
+		"damage":7
+        "ammoMultiplier":1,
+        "fragLifeMin":0.1,
+        "backColor":"A0B0C9",
+        			"frontColor":"A0B0C9"
+        			"trailLength":5
+        "trailWidth":0.5,
+    "trailColor":"A0B0C9",
+     "knockback":1
+			}
+			"thorium":{
+	    "reloadMultiplier":1,
+	    "speed": 6,  
+	    "lifetime":60,
+		"width": 3.5,"height": 5,
+		"shootEffect": "shootSmall",
+			"ammoMultiplier":16
+			"status": "破甲",
+			"statusDuration": 130,
+			"pierceBuilding": true,
+			"knockback":1.5
+		"damage":9
+        "pierceCap": 5
+        "fragLifeMin":0.1,
+        "backColor":"F9A3C6",
+        			"frontColor":"F9A3C6"
+        			"trailLength":5
+        "trailWidth":4
+    "trailColor":"F9A3C6",
+    }
+    "phase-fabric":{
+	    "reloadMultiplier":0.5,
+	    "rangeChange": 60
+	    "speed": 6,  
+	    "lifetime":70,
+		"width": 3,"height": 5,
+		"shootEffect": "shootSmall",
+		"weaveScale": 0.5
+		"weaveMag": 1
+		"weaveRandom": true
+			"ammoMultiplier":12
+			"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+			"knockback":0.5
+		"damage":9
+        "backColor":"FF8E38FF",
+        			"frontColor":"FF8E38FF"
+        			"trailLength":7
+        "trailWidth":1
+    "trailColor":"FF8E38FF",
+    "bulletInterval":10
+    "intervalBullets": 2
+    "status": "slow",
+			"statusDuration": 60
+			"despawnEffect":"none"
+       "intervalBullet": {
+        "type": "PointBulletType"
+        "speed": 0.5
+        "knockback":5
+            "trailEffect": {//飞行特效
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "length": 0,
+                    "baseLength": 1,
+                    "lifetime": 13,
+                    "line": false,
+                    "randLength": false,//随机长度
+                    "lenFrom": 10,//长度
+                    "lenTo": 10,
+                    "strokeFrom": 2,
+                    "strokeTo": 2,
+                    "colorFrom": "FF8E38FF",
+                    "colorTo": "00000000",
+                    "cone": 0
+        }
+       }
+       "fragBullets": 1
+       "fragBullet":{
+       	    "speed": 6,  
+	    "lifetime":30,
+		"width": 3,"height": 5,
+		"shootEffect": "shootSmall",
+		"weaveScale": 0.5
+		"weaveMag": 1145
+		"weaveRandom": true
+		"homingPower": 0.01
+		"homingRange": 360
+			"ammoMultiplier":12
+			"pierce": true,
+			"pierceBuilding": true,
+			"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+			"knockback":0.5
+		"damage":9
+        "pierceCap": 5
+        "fragLifeMin":0.1,
+        "backColor":"FF8E38FF",
+        			"frontColor":"FF8E38FF"
+        			"trailLength":7
+        "trailWidth":1
+    "trailColor":"FF8E38FF",    
+    "despawnEffect":"none"
+    
+       "intervalBullet": {
+        "type": "PointBulletType"
+        "speed": 0.5
+        "knockback":5
+            "trailEffect": {//飞行特效
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "length": 0,
+                    "baseLength": 1,
+                    "lifetime": 13,
+                    "line": false,
+                    "randLength": false,//随机长度
+                    "lenFrom": 10,//长度
+                    "lenTo": 10,
+                    "strokeFrom": 2,
+                    "strokeTo": 2,
+                    "colorFrom": "FF8E38FF",
+                    "colorTo": "00000000",
+                    "cone": 0
+        }
+       }
+       }
+       }
+    "1共振石":{
+	    "reloadMultiplier":0.5
+	    "speed": 6,  
+	    "lifetime":90,
+		"width": 1,"height": 2,
+		"rangeChange": 60
+		"shootEffect": "shootSmall",
+			"ammoMultiplier":16
+			"status": "slow",
+			"statusDuration": 130
+			"pierce": true,
+			"pierceBuilding": true,
+			"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+			"knockback":1.5
+		"damage":9
+        "pierceCap": 5
+        "fragLifeMin":0.1,
+        "backColor":"c0ecff00",
+        			"frontColor":"c0ecff00"
+    "homingDelay":10
+    "homingRange": 180
+    "homingPower": 6
+    "bulletInterval":4
+       "intervalBullet": {
+       "speed": 6,  
+	    "lifetime":30,
+		"width": 1,"height": 2,
+		"rangeChange": 60
+		"shootEffect": "shootSmall",
+			"ammoMultiplier":16
+			"status": "slow",
+			"statusDuration": 130
+			"pierce": true,
+			"pierceBuilding": true,
+			"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+			"knockback":1.5
+		"damage":9
+        "pierceCap": 2
+        "backColor":"c0ecff00",
+        			"frontColor":"c0ecff00"
+    "homingDelay":5
+    "homingRange": 180
+    "homingPower": 999
+	"despawnEffect":"none"
+	"hitEffect": {
+"type": "MultiEffect",
+	"effects": [
+    {"type": "WaveEffect",
+    "lifetime": 15,
+    "sizeFrom": 1,
+    "sizeTo": 32,
+    "strokeFrom": 8
+    "strokeTo": 0,
+    "colorFrom": "c0ecff",
+    "colorTo": "c0ecff"}]
+	},
+       }
+    }
+    }
+	"researchCostMultiplier": 0.5,
+	"requirements": [
+{"item": "graphite", "amount": 120  },
+{"item": "0铜铅合金", "amount": 160  },
+{"item": "1绝缘钢", "amount": 240  },
+{ "item": "thorium", "amount": 160 }
+{ "item": "titanium", "amount": 230 }
+	],
+	"category": "turret",
+	/*"research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.05
+}

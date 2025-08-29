@@ -1,0 +1,24 @@
+{
+"localizedName": "热力带(半成品)",
+	"description": "此地区有极为酷热，有着极为丰富的地热资源，较为简单的区块\n\n[green](by 没有炮台的炮台s 作)",
+	"details":"你猜猜这个地方为什么没人",
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0
+    "captureWave":30//胜利波次
+    "difficulty":3//难度1一5
+    "research": {
+		"parent": "超限工艺-冰冷山区",
+		"objectives": [
+		"敬请期待"
+		"敬请期待1"
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-冰冷山区"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-overgrowth"
+			}
+			]}
+}

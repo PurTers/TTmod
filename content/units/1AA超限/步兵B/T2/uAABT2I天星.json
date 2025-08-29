@@ -1,0 +1,138 @@
+{
+    "type": "payload",
+    "name":"天星"
+    "payloadCapacity": 368
+    "description": "用于突击敌方建筑，向地面单位泼洒高能炸弹，飞行单位，迅速而坚硬，能够运载少量单位或建筑\n\n[blue][超限技术特殊作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+    "speed": 2
+    "hitSize": 28
+    "health": 840,
+    	"rotateSpeed": 2.5
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "faceTarget": false,
+		"circleTarget": true,
+    "flying": true,
+    "armor":12
+    "targetFlags":["turret","core"],
+    "engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"trailWidth": 2,
+	"itemCapacity": 5
+	"abilities": [
+	{
+"type": "RegenAbility",
+"amount": 0.2
+}
+]
+    "weapons": [
+   {	"name": "无",	
+		"reload": 540, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		//"shootOnDeath":true,
+		 "shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 4
+		"spread": 6
+		"shots":12
+		"shotDelay":10,
+	},
+		"bullet":{
+		"lightningDamage":19,
+            "lightningColor": "c0ecffFF",
+    "lightning":4
+    "lightningLength":12
+		//"killShooter":true,
+		"splashDamageRadius":32,
+		"instantDisappear":true,
+		"collides": false,
+		"splashDamage":66,
+		"speed":1,"lifetime":60,
+		"hitEffect":"massiveExplosion",
+		"despawnEffect":{"type": "MultiEffect",
+			"effects": [
+			    {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+				{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"1878BF",
+					"rotation":16
+				}
+				{
+				    "type": "WaveEffect",
+				    "lifetime": 30,
+				    "sizeFrom": 10,
+				    "sizeTo": 40,
+				    "strokeFrom": 4,
+				    "strokeTo": 0,
+				    "colorFrom": "c0ecff",
+				    "colorTo": "c0ecff"
+				}
+				]},
+		"width":1,	 "height":1
+ "fragBullets":1
+        "fragBullet":{
+        "type": "EmpBulletType",
+				"timeIncrease": 0,//己方建筑加速倍率
+				"collidesTiles": "false",//碰撞方块
+				"collidesTeam": "false"//碰撞自己的队友
+				"timeDuration": 0,//加速持续时间
+				"powerDamageScl": 3,//敌方电器损坏倍率
+				"powerSclDecrease": 0.5,//敌方电器功率下降倍率
+				"radius": 36,
+				"pierce": true,//穿透单位
+				"splashDamageRadius": 16,
+				"splashDamage": 12,
+				"width": 0,
+				"height": 0,
+				"damage": 10,
+				"keepVelocity": true,
+				"trailEffect": "none",
+				"backColor": "c0ecff",
+				"frontColor": "c0ecff",
+				"instantDisappear": true,//瞬间消失
+				"hitSound": "plasmaboom",
+				"despawnEffect": "none"
+				"hitPowerEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+		    	"applyEffect": "none"
+		    	"hitEffect": "none"
+		    	"shootEffect": "none"
+			}
+	   }
+	   	}
+    ]
+   "research": {
+	"parent":"uAABT1I掠影"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "saltflats"
+			}
+	]
+	}
+}

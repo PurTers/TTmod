@@ -1,0 +1,63 @@
+{
+    "type": "flying",
+    "name":"预言"
+    "description": "飞行单位，为攻城而生，能够有效攻击建筑，不能攻击空中单位\n\n[blue][超限技术特殊作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+    "speed": 1.4
+    "hitSize": 12
+    "health": 120
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "flying": true,
+    "armor":0
+    "targetFlags":["turret","battery","generator"],
+    "engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"trailWidth": 2,
+	"itemCapacity": 5
+    "weapons": [
+   {	"name": "无",	
+		"reload": 60, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"bullet":{
+    "type":"ArtilleryBulletType",
+    "speed": 2
+    "lifetime":100
+	"width": 8
+	"height": 8
+	"damage":22
+    "hitSize":4
+    "buildingDamageMultiplier":2
+    "collidesAir": false
+    "makeFire":true,
+    "splashDamageRadius":30,
+		"splashDamage":33
+    }
+	   	}
+    ]
+  "research": {
+	"parent":"uAABT1B卫兵"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}
+}

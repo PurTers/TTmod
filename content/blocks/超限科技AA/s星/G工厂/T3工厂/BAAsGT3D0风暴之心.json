@@ -1,0 +1,70 @@
+{
+    "name": "风暴之心",
+    "type": "GenericCrafter",
+    "description": "用于生产风暴催化剂\n\n[blue][超限技术高级工厂]",
+    "itemCapacity": 100,
+    "health": 1280,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 200,
+    "updateEffect": "none",
+        "drawer": [
+         {
+                "type": "DrawRegion",
+                "suffix": "-bottom",
+                "rotateSpeed":0,
+                "rotation":0
+            }
+            {
+                "type": "DrawRegion",
+                "suffix": "-weave",
+                "rotateSpeed":-2,
+                "rotation":45
+            }           
+            {
+                "type":"DrawSpikes"
+                //"suffix": "-weave",
+                "color":"ffd59e"
+                "stroke":1.5
+                "layers":2
+                "amount":12
+                "rotateSpeed":0.5
+                "layerSpeed":-0.9
+            }
+            {
+                "type":"DrawHeatRegion"
+                "suffix": "-vents",
+                "color":"ffd59e"
+            }
+        "DrawMultiWeave"
+        "DrawWeave",
+        "DrawWarmupRegion",
+        "DrawDefault",
+    ],
+    "consumes": {
+    "power": 12,
+        "items": {
+            "items": [   { "item": "1复合物","amount": 15 },
+                { "amount": 10, "item": "2阻断合金" }
+                { "amount": 30, "item": "1共振石" }
+           ]
+        },
+        "liquids": 
+	[{"liquid": "00冷凝流体", "amount": 1.2 }]
+    },
+    "liquidCapacity": 60,
+    "outputItem": {"item": "6风暴催化剂","amount": 1}
+    "requirements": [
+        { "item": "titanium","amount": 350},
+        {"item": "graphite","amount":300},
+	{ "amount": 240, "item": "1绝缘钢" }
+	{"item": "1集成电路","amount": 160},
+        {"item": "2阻断合金","amount": 300},
+        {"item": "1复合物","amount": 160},
+        {"item": "lead","amount": 800}
+    ],
+    "category": "crafting",
+    "buildCostMultiplier":0.4
+}

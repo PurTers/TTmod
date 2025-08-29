@@ -1,0 +1,124 @@
+{
+    "type": "mech",
+    "name":"闪流"
+    "description": "以列兵为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，通过激光以贯穿敌人，对电击有一定免疫\n\n[blue][超限技术作战中机甲]",
+    "immunities": [
+		"shocked","electrified","甲板损坏"
+	],
+    "speed": 0.9
+    "hitSize": 18
+    "health": 920,
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+        "itemCapacity": 30
+    "targetGround":true,
+    "armor":9
+    "abilities": [
+    {
+    "type": "ShieldArcAbility",
+		"whenShooting":false,//是否射击时存在(Flash为一直存在)
+		"radius": 30,//半径
+		"width": 10,//宽度
+		"max": 800,//最大容量
+		"regen": 0.2,//再生速度
+		"cooldown": 160,//护盾冷却时间
+		"angle": 61,//护盾弧度
+		"angleOffset": -90//护盾角度
+	}
+	{
+    "type": "ShieldArcAbility",
+		"whenShooting":false,//是否射击时存在(Flash为一直存在)
+		"radius": 30,//半径
+		"width": 10,//宽度
+		"max": 800,//最大容量
+		"regen": 5,//再生速度
+		"cooldown": 160,//护盾冷却时间
+		"angle": 59,//护盾弧度
+		"angleOffset": 90//护盾角度
+	}
+    ]
+    "weapons": [
+       {
+            "name": "闪流1",
+            "reload": 66
+            "x":0
+            "y":0
+             "inaccuracy": 5
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "shootX":0
+	    "shootY":22
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 6.8
+        "y": 2
+        "suffix": "-手1",
+        "layer": 59.9
+        "moveX": -1
+        "moveY": 2.7
+        "moveRot":20
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-6.8,"y":2,
+        "suffix":"-手2"
+        "layer":59.9
+        "moveX":-1
+        "moveY":1.5
+        "moveRot":-55
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":10
+        "suffix":"-炮"
+        "layer":60
+        "moveX":0
+        "moveY":0
+        "moveRot":90
+        }
+			]
+            "bullet": {
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["1878BF","1878BF50","FFFFFF"],
+	"status": "unmoving",
+			"statusDuration": 46,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":6,
+	"lightningDelay":0.6,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":16,
+	"lightningColor":"1878BF",
+	"status": "脆裂",
+	"statusDuration": 186,
+	"damage": 24,
+	"pierceDamageFactor":0.4
+	"buildingDamageMultiplier":0.5
+	"pierce": true
+	"width": 6,	"length": 182,
+	"lifetime": 30,
+	"collidesAir": true
+	"ejectEffect":"none"
+    }}
+    ]
+    "research":"uAABT1C列兵"
+}

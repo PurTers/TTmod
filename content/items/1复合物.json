@@ -1,0 +1,13 @@
+{
+	"name": "复合物",
+	"description": "柔软而稳定的空间材料。 ",
+	"details":"当数量充足时，它可造成空间扭曲\n \n[blue][超限技术物品]",
+	"cost":2,
+	"alwaysUnlocked":false,
+	"color": "E17A7B",
+	"radioactivity": 4,
+	"explosiveness": 0,
+	"flammability": 0,
+	"hardness":0
+	"research": "相位球"
+}

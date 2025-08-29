@@ -1,0 +1,96 @@
+{
+    "type": "mech",
+    "name":"卫兵"
+    "description": "超限集团为了早期防御，研究出的特殊轻机甲，移动速度快，有较高对建筑的伤害，同时攻击空中单位会有额外的范围伤害，廉价，但是攻击速度偏慢且装甲偏低，其小巧的体型使其可以免疫一些异常状态。\n\n[blue][超限技术作战轻机甲]",
+    "details":"筒子兵，但不是筒子超人",
+    "immunities": [
+		"wet","甲板损坏"
+	],
+	"targetFlags":["turret","core"],
+    "speed": 0.87
+    "hitSize": 6
+    "health": 90,
+    "itemCapacity": 0
+    "ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":20},
+    	"rotateSpeed": 1.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":0
+    "weapons": [
+       {
+            "name": "卫兵1",
+            "reload": 114
+            "x":0
+            "y":6.5
+             "inaccuracy": 0.1
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 2.8
+        "y": -5
+        "suffix": "-手1",
+        "layer": 59.9
+        "moveX": 0
+        "moveY": 2.7
+        "moveRot":20
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-2.8,"y":-5,
+        "suffix":"-手2"
+        "layer":59.9
+        "moveX":0
+        "moveY":1.5
+        "moveRot":-55
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":-2,
+        "suffix":"-枪"
+        "layer":59.9,
+        "moveX":0
+        "moveY":2.3
+        "moveRot":90
+        }
+			]
+    "bullet":{
+		"sprite":"missile",
+			"speed":2
+			"damage": 33
+			"lifetime":110
+			"width": 9, 			
+			"height":16
+			"shootEffect":"shootSmall",
+	     	"backColor":"1878BF",
+			"frontColor":"1878BF"
+            "status": "脆裂",
+			"statusDuration": 46,
+			"buildingDamageMultiplier":2.5
+            "fragBullets":1
+        "fragBullet":{
+        "damage": 0
+			"lifetime":0,
+			"width": 1, 			
+			"height":1
+			"splashDamageRadius":35,
+		"splashDamage":66
+		"collidesGround":false
+		"collidesAir":true,
+        }}}
+    ]
+    "research":"uAABT1A响应"
+}

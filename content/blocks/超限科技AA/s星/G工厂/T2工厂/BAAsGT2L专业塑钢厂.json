@@ -1,0 +1,97 @@
+{
+    "name": "专业塑钢加工厂",
+    //名字
+    "type": "GenericCrafter",
+    //类型:制作站
+    "description": "用于加工塑钢，相较于小型塑钢厂产量更多，速度更快。\n\n[blue][超限技术中级工厂]",
+    //介绍
+    "itemCapacity": 50
+    //物品容量
+    "health": 1200,
+    //血量
+    "size": 3,
+    //大小（1为一格）
+    "hasPower": true,
+    //需求电力
+    "hasLiquids": true,
+    //需求液体
+    "hasItems": true,
+    //需求物品
+    "craftTime": 30,
+    //生产时间
+    "craftEffect": "pulverizeSmall"
+	"updateEffect": "fireballsmoke",
+    "consumes": {
+    //输入
+    "power": 8,
+        "items": {
+        //物品
+            "items": [
+            //物品
+                {
+                    "item": "titanium",
+                    //物品:铜
+                    "amount": 5
+                    //输入数量
+                },
+            ]
+        },
+        "liquid": {
+        //液体
+            "liquid": "oil",
+            //液体:水
+            "amount": 0.9
+            //输入数量（此输入将*60）
+        }
+    },
+    "liquidCapacity": 60,
+    //液体容量
+    "outputItem": {
+    //输出
+        "item": "plastanium",
+        //物品
+        "amount": 6
+        //输出数量
+    }
+    "requirements": [
+    //建造需求
+        {
+            "item": "titanium",
+            //物品:铜
+            "amount": 160
+            //需求数量
+        },
+        {
+            "item": "graphite",
+            //物品:玻璃
+            "amount":120
+            //需求数量
+        },
+	{ "amount": 90, "item": "1绝缘钢" }
+        {
+            "item": "silicon",
+            //物品:硅
+            "amount": 150
+            //需求数量
+        },
+        {
+            "item": "0铜铅合金",
+            //物品:铅
+            "amount": 200
+            //需求数量
+        }
+        { "amount": 120, "item": "1集成电路" }
+    ],
+    "category": "crafting",
+    //分类
+    "research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "裂谷前哨"
+			}
+	]
+	}
+    "buildCostMultiplier":0.5
+}

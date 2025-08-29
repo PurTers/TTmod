@@ -1,0 +1,30 @@
+{
+    "type":"LaunchPad", 
+    "name":"重型发射台", 
+    "description":"通过对发射台的进一步开发，重型发射台可以发射更多物品支援其他区块，更短充能时间与更大的发射量。\n[red][泽塔议会发射台]", 
+    "health":3000,
+    "size":5, 
+    "itemCapacity":200, 
+    //"heatColor":"FF0000FF",
+    "launchTime":720,
+    "hasPower":true, 
+    "consumes": {"power":16  },
+	"requirements": [
+    { "item":"copper","amount":750},
+    { "item":"lead","amount":500},
+	{ "item":"silicon","amount":350},
+	{ "item":"titanium","amount":400},
+	{ "item": "thorium", "amount":300 } ,
+	{ "item":"phase-fabric","amount":100}	],
+	"category": "effect",
+	"research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	"buildVisibility":"campaignOnly"
+}

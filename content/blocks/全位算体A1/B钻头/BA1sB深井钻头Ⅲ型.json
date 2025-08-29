@@ -1,0 +1,60 @@
+{
+	"name":"深井钻头III型"
+	"type":"Separator"
+	"description": "通过深度挖掘来开凿地下深处的矿物。\n\n[orange][全位算体深井钻头]",
+	"itemCapacity":40,
+	"health":240,
+	"size":3
+	"hasPower": true
+	"hasItems": true,
+	"craftTime":34,
+	"liquidCapacity":160,
+		"craftEffect":"smeltsmoke",
+        	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+        "DrawDefault",
+        {
+        "type":"DrawRegion",
+        "suffix":"-rotate",
+        "rotateSpeed":4
+        },
+        {
+        "type":"DrawRegion",
+        "suffix":"-top",
+        "rotateSpeed":0
+        },
+            ]
+    },
+	"consumes": {
+	 "power": 2.3
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.2
+        }
+	}
+	"results": [
+	{"item": "sand", "amount": 6},
+	{"item": "scrap", "amount": 6},
+	{"item": "copper", "amount": 7},
+	{"item": "lead", "amount": 7},
+	{"item": "coal", "amount": 5},
+	{"item": "titanium", "amount": 3},
+	],
+	"requirements": [
+		{ "item": "copper", "amount": 180 },
+		{"item": "lead", "amount": 95},
+		{"item": "graphite", "amount": 85},
+	],
+	"category": "production",
+	"buildVisibility":"campaignOnly"
+	/*"research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "超限工艺-facility32m"
+			}
+	]
+	}*/
+}

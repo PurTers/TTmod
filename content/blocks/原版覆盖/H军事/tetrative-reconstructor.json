@@ -1,0 +1,11 @@
+{
+"research": {
+	"parent":"exponential-reconstructor"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-overgrowth"
+			}
+	]
+	}
+}

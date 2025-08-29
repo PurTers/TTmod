@@ -1,0 +1,9 @@
+{
+"requirements": [
+{"item": "copper", "amount": 45  },
+{ "item": "titanium", "amount": 25 }
+{ "item": "lead", "amount":40},
+{ "item": "silicon", "amount":50},
+{ "item": "metaglass", "amount": 40 }
+	]
+}

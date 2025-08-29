@@ -1,0 +1,137 @@
+{"localizedName": "记忆碎片",
+	"generator": {
+		"min": 0, //小行星数量
+		"max": 0,
+		"octaves": 2, //噪音特性
+		"persistence": 0.4,
+		"scale": 30,
+		"mag": 0.4,
+		"thresh": 1,
+		"foct": 3,
+		"fmag": 0.5,
+		"fscl": 50,
+		"fper": 0.6,
+		"radMin": 0 //小行星半径
+		"radMax": 0,
+		"stoneChance": 0, //石头地板概率
+		"iceChance": 1, //地形生成几率，顺序为：冰>碳>绿柱石>铁
+		"carbonChance": 0,
+		"berylChance": 0,
+		"ferricChance": 0
+	},
+	"orbitSpacing": 1, //父（this）和卫星之间的间距
+	"radius": 0.5, //星球半径
+	    "sectorSize": 2,//区块大小
+	"minZoom": 10, //最小缩放
+	"drawOrbit": false, //是否绘制轨道
+	"atmosphereRadIn": 0, //基本大气层偏移
+	"atmosphereRadOut": 0.3,
+	"accessible": true, //是否可以登陆
+	"tidalLock": false,
+	"allowLaunchSchematics": false,//允许核心蓝图
+	"alwaysUnlocked": true,
+    "allowSectorInvasion": false,//存在区块入侵
+	"updateLighting": true, //昼夜循环
+	"sectorSeed": 1, //生成器的种子。 如果-1，则为小行星
+	"bloom": false, //是否开启bloom渲染
+	"visible": true, //是否显示
+	"hasAtmosphere": false, //是否有大气层
+	//"atmosphereColor": "ffffff", //大气层颜色
+	"icon": "planet", //左上角显示的图标文件
+	"iconColor": "ffffff", ///左上角显示的行星图标的颜色
+    "startSector": 1,//开始区块的序号
+	"allowWaveSimulation": false, //在后台时是否模拟波次
+    "allowLaunchLoadout": true,//允许选择落地资源
+    "launchCapacityMultiplier": 0.5,//选择核心蓝图时核心能容纳的物品数量关于其实际数量的倍数。例：初代核心是4k容量，此值为1则发射时可以塞4k物品，如果为0.5只能塞2k。想一想，为2会发生什么？
+	"clearSectorOnLose": true, //区块丢失时是否重置区块
+	"allowWaves": true, //区块丢失时是否重置波次
+	//"defaultCore": "初代核心", //星球默认核心
+	"parent": "sun", //星球绕什么公转
+	"solarSystem": "记忆碎片", //星系系统
+	"allowLaunchToNumbered":false
+	"launchCandidates": [], //可以从这个星球前往的行星。 可能没用，因为行星际加速器仍然不工作
+	"hiddenItems": [ //这个星球上没有的物品
+	]
+}
+
+
+
+
+
+
+
+
+
+/*旧版代码。
+{
+//行星的id不包括mod.name，因此bundle如下：
+//planet.phursol.name= ES赛普罗
+而非：
+//planet.forced-landing-phursol.name=ES赛普罗
+//公转中心
+    "parent": "sun",
+//公转半径
+    "radius": 1,
+//区块大小
+    "sectorSize": 3,
+//是否始终解锁
+    "alwaysUnlocked": true,
+//默认核心
+    "defaultCore": "初代核心",
+//是否允许在列表显示，如果不alwaysUnlocked就写research
+    "accessible": true,
+//mesh
+//区块生成器，填什么都会解析成小行星生成器，但必须填上
+    "generator": {
+        "type": "AsteroidGenerator",
+//#type非必要，但以防未来允许自定义
+//#铍生成了也没用，，，
+        "carbonChance": 0.7,
+        "stoneChance": 0.3,
+        "iceChance": 0.1,
+        "min": 35,
+        "max": 45,
+        //这几个scl越低越富
+        "thoriumScl": 0.9,
+        "copperScale": 0.7,
+        "leadScale": 0.7,
+        "berylliumScale": 0.7,
+        "tungstenScale": 0.9,
+        "titaniumScale": 0.8,
+        "graphiteScale": 0.7
+    },
+//选择核心蓝图时核心能容纳的物品数量关于其实际数量的倍数。例：初代核心是4k容量，此值为1则发射时可以塞4k物品，如果为0.5只能塞2k。想一想，为2会发生什么？
+    "launchCapacityMultiplier": 0.5,
+//区块种子
+    "sectorSeed": 2,
+//存在波次
+    "allowWaves": true,
+//存在后台模拟
+    "allowWaveSimulation": false,
+//存在区块入侵
+    "allowSectorInvasion": true,
+//允许核心蓝图
+    "allowLaunchSchematics": true,
+//攻击图转为生存图时，原核心位置是否变为出怪点
+    "enemyCoreSpawnReplace": true,
+//允许选择落地资源
+    "allowLaunchLoadout": true,
+//大气层颜色
+"clearSectorOnLose": true, // 区块输了是否重置区块(一次过是吧)
+    "atmosphereColor": "7d4dff",
+//大气层内径
+    "atmosphereRadIn": 0.02,
+//大气层外径
+    "atmosphereRadOut": 0.3,
+//开始区块的序号
+    "startSector": 1,
+//云层颜色，Pal.spore是7457ce，cpy方法原样返回，a方法加alpha
+    "landCloudColor": "7457ce",
+//禁用物品，不写就是全都可用
+    "hiddenItems": ["copper","lead","metaglass","graphite","sand","coal","titanium","thorium","scrap","silicon","plastanium","phase-fabric","surge-alloy","spore-pod","blast-compound","pyratite","beryllium","tungsten","oxide","carbide"
+    ]
+    "hiddenIblocks":[
+    ]
+    "research": {
+		"root": true}
+}

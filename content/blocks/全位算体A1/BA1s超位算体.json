@@ -1,0 +1,27 @@
+{
+	"name": "[orange]全位算体",
+	"description": "第一次赛普罗战争的战败者，不过在暗中发射的核心如今成为了我们卷土重来的资本。",
+	"health":500,
+	"armor":0,
+	"size": 3
+	"category": "logic",
+	"type": "Wall",
+	"hasShadow":false
+	"buildCostMultiplier":99999999
+	"requirements": [
+    ]
+	"research": {
+        "root":true,
+        "name": "[orange]全位算体"
+       "planet":"serpulo"
+       "objectives": [
+     {
+				"type": "OnSector",
+				"preset": "超限工艺-taintedWoods"
+			}
+	]
+        },
+            "canOverdrive": false,
+            "researchCostMultiplier": 0
+            "buildVisibility": "sandboxOnly",
+}

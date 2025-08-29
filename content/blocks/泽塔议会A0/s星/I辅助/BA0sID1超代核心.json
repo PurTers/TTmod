@@ -1,0 +1,33 @@
+{
+    "name":"超代核心",
+    "type":"CoreBlock",
+    "description": "极端重型的超代核心，装甲极厚重，容量极大，能够击败他的或许只有他自己。\n[red][泽塔议会最终核心]",
+    "details":"很好，所以为什么没有更大的，这点储存空间根本不够。",
+    "requirements": [
+    {"amount": 13000, "item": "copper"},
+    {"amount": 13000, "item": "lead"},
+    { "item":"titanium","amount":9000},
+	{ "item": "thorium", "amount":6000 } ,
+	{ "item": "silicon", "amount": 9000 },
+	{ "item":"surge-alloy","amount": 4000},
+	{"item":"phase-fabric","amount":3000}
+    ],
+    "hitTime":5
+    "flashHit":true
+    "unitType":"uA0CCZ1欧米茄",
+    "health": 50000,
+    "armor":100
+    "itemCapacity": 25000,
+    "size": 6,
+    "research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComp",
+				"preset": "overgrowth"
+			}
+	]
+	}
+    "unitCapModifier": 48,
+    "category": "effect"
+}

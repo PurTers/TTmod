@@ -1,0 +1,21 @@
+{
+"localizedName": "边陲哨站(待重做)",
+	"description": "偏远地区的哨站，危险程度较低。\n\n[green](by alpha 改 )",
+    "planet":"serpulo"//母星名字。
+    "sector":50//区块坐标
+    "difficulty":2//难度1一5
+    "overrideLaunchDefaults": true,//进度覆盖
+    "research": {
+		"parent": "超限工艺-stainedMountains",
+		"objectives": [
+		"敬请期待"
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-stainedMountains"
+			}
+			/*{
+				"type": "SectorComplete",
+				"preset": "废弃研究所"
+			}*/
+			]}
+}

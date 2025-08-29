@@ -1,0 +1,31 @@
+{
+    "type": "ShockMine",
+    "name": "深水炸弹",
+    "description": "超限集团布置在水上的水雷，威力巨大，能够轻松将轻型船只炸沉"
+"details":"真是险恶",
+    "health": 900,
+    "hasShadow":false
+    "requiresWater":true,
+    "requirements": [
+        { "item": "0铜铅合金", "amount": 25 },
+        { "item": "lead", "amount": 60 }
+	{ "item": "silicon", "amount": 15 },
+    ],
+    "category": "effect",
+    "cooldown": 10,//冷却时间
+    "tileDamage": 90,//地雷得到的伤害
+    "damage": 4,//闪电的伤害
+    "length": 6,//闪电长度
+    "tendrils": 10,//踩中触发攻击次数
+    "shots": 1,//子弹发射数量
+    "teamAlpha": 0.8,//队伍贴图透明度
+/*    "research": {
+	"parent":"shock-mine"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "热力带"
+			}
+	]
+	}*/
+}

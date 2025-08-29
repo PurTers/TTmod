@@ -1,0 +1,78 @@
+{
+    "type": "mech",
+    "name":"列兵"
+    "description": "超限集团为了早期防御，研究出的特殊轻机甲，移动速度快，能对敌方发射闪电，有效打击重装甲单位，廉价，但是攻击速度偏慢且装甲偏低，不能防空，其小巧的体型时期可以免疫一些异常状态。\n\n[blue][超限技术作战轻机甲]",
+    "details":"磁 暴 步 兵",
+    "immunities": [
+		"wet","甲板损坏"
+	],
+    "speed": 1
+    "hitSize": 6
+    "health": 90,
+    "itemCapacity": 0
+    	"rotateSpeed": 1.8
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":0
+    "weapons": [
+       {
+            "name": "列兵1",
+            "reload": 94
+            "x":0
+            "y":6.5
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 2.8
+        "y": -5
+        "suffix": "-手1",
+        "layer": 59.9
+        "moveX": 0
+        "moveY": 2.7
+        "moveRot":20
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-2.8,"y":-5,
+        "suffix":"-手2"
+        "layer":59.9
+        "moveX":0
+        "moveY":1.5
+        "moveRot":-55
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":-2,
+        "suffix":"-枪"
+        "layer":59.9,
+        "moveX":0
+        "moveY":2.3
+        "moveRot":90
+        }
+			]
+    "bullet":{
+    "buildingDamageMultiplier":0.25
+		"type":"LightningBulletType",
+    "damage":88,
+    "lightningLength":20,
+    "collidesAir": false
+    "status": "slow",
+			"statusDuration": 126,
+			"ejectEffect":"none"
+	}}
+    ]
+    "research":"uAABT1A响应"
+}

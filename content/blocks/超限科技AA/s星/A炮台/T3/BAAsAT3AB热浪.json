@@ -1,0 +1,49 @@
+{
+	"name": "热浪",
+	"description": "超限集团根据融毁的原理而研发的一种小型融毁，与融毁相似，发射高温激光对中程敌人持续轰击，造成较高伤害\n \n[blue][超限技术炮台]",
+	"type": "LaserTurret",
+	"size": 3,
+	"health": 1060,
+	"shootEffect":"none",
+	"shootSound":"pulse",
+	"range": 180,
+	"reload":3,
+	"liquidCapacity": 100,
+	"inaccuracy": 0,
+	"recoil": 3,
+	"rotateSpeed": 9,
+	"shake": 2,
+	"coolEffect":"steam",
+	"cooldownTime":20,
+	"consumes":{
+	"power":9
+	"liquid":
+{"liquid":"water","amount":0.6}
+},
+	"shootType": {
+	"type": "ContinuousLaserBulletType",
+	"hitEffect": "hitMeltdown",
+	"width":4,	"length":162.5,
+	"knockback":0.2,
+	"damage":12
+	},
+	"shootDuration": 270,
+	 "research": {
+	"parent":"BAAsAT2AA色散"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "污染小道"
+			}
+	]
+	}
+	"requirements": [
+	{ "item": "copper", "amount": 120 }
+	{ "item": "lead", "amount":140},
+	{ "item": "0铜铅合金", "amount":80},
+	{ "item": "graphite", "amount":80},
+	{ "item": "metaglass", "amount": 100 }
+	]
+"category": "turret",
+"researchCostMultiplier": 0.5
+}

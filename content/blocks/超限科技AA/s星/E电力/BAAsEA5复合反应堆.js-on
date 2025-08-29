@@ -1,0 +1,100 @@
+{
+	"type": "NuclearReactor",
+	"name": "复合反应堆",
+	"description": "依靠复合物与液体反应产生大量能量发电，摧毁后会发生巨大爆炸,发电量与复合物成正比。\n \n[blue][超限技术反应堆]",
+	"size":5,
+	"health":3200
+	"liquidCapacity": 40,
+	"itemCapacity":20,
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsPower": true,
+	"powerProduction": 172
+	"itemDuration": 40,
+	"lightColor":"FFFFFF",
+	"heating":0.2,
+	"fuelItem":"1复合物",
+	"itemDuration":360,//一个物品用多久
+	"consumes": {"items": {"items": ["1复合物/1"]}
+	"liquid": {
+		"liquid": "cryofluid",
+		"amount": 0.4
+		},
+	},
+	"destroyEffect": {
+    "type": "MultiEffect",
+	"effects": [
+	{
+            "type": "WaveEffect",
+            "lifetime": 40,
+            "sizeFrom": 40,
+            "sizeTo": 480,
+            "strokeFrom": 12,
+            "strokeTo": 0,
+            "colorFrom": "FFFFFFFF",
+            "colorTo": "FFFFBF7F"
+        },
+    {"type": "ParticleEffect",
+    "particles": 26,
+    "sizeFrom": 35,
+    "sizeTo": 0,
+    "length": 160,
+    "baseLength": 100,
+    "lifetime": 360,
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "FFFFBF7F",
+    "cone": 360
+        },
+{"type": "ParticleEffect",
+    "particles": 35,
+    "sizeFrom": 30,
+    "sizeTo": 0,
+    "length": 180,
+    "baseLength": 300,
+    "lifetime": 360,
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "FFFFBF7F",
+    "cone": 360
+        },
+{
+        "type": "ParticleEffect",
+        "particles": 35,
+        "line": true,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "lenFrom": 60,
+        "lenTo": 0,
+        "length": 460,
+        "baseLength": 50,
+        "lifetime": 10,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "FFFFBF7F",
+        "cone": 360
+            }
+        ]    },
+	"destroyBullet": {
+            "type":"BasicBulletType",
+            "width": 0,
+            "height": 0,
+            "speed": 0,
+            "lifetime": 1,
+            "damage": 4000,
+            "hitShake": 20,
+            "hitSound": "DBZ1",
+            "despawnEffect": "none",
+            "hitEffect": "none",
+            "splashDamageRadius": 80,
+            "splashDamage": 2500},
+	"requirements": [
+	{"item": "titanium", "amount": 140},
+		{ "item": "graphite",   "amount": 600},
+		{ "item": "silicon",    "amount": 900},
+		{ "item": "0铜铅合金", "amount": 400 }
+		{ "item": "surge-alloy","amount": 1000 },
+	    {"item":"thorium","amount":900}
+	    { "item": "1复合物", "amount": 145 }
+	    { "item": "1绝缘钢", "amount": 245 }
+	],
+	"category": "power",
+	//"research": "BAAsEA4低效反应堆"
+}

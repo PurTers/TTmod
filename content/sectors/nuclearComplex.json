@@ -1,0 +1,21 @@
+{
+"localizedName": "核裂阵(半成品)",
+	"description": "曾用来生产加工钍的设施，如今已变成了废墟。\n这里有大量的敌人，不断搜寻着入侵者。\n\n[lightgray]研究钍以及它的各种用途。\n\n\n\n变化显著\n\n[green](by 没有炮台的炮台s 改)",
+	"details":"好消息:敌人撤军了并且大量基础设施完善\n坏消息:敌人没走远",
+    "planet":"serpulo"
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0
+    "captureWave":50
+    "difficulty":7
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "超限工艺-fungalPass",
+		"objectives": [
+		"敬请期待"
+		"敬请期待1"
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-fungalPass"
+			}
+			]}
+}

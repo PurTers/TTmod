@@ -1,0 +1,9 @@
+{
+"name":"冲刺",
+	"damageMultiplier":1,
+	"healthMultiplier":2,
+	"speedMultiplier":5,
+	"reloadMultiplier":1,
+	"damage":0
+	"effectChance":0.5,
+}

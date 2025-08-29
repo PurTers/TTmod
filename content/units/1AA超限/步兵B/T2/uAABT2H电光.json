@@ -1,0 +1,117 @@
+{
+    "type": "mech",
+    "name":"电光"
+    "description": "以火花为基础研究出的特殊轻机甲，移动速度快，近战，武器威力和装甲也更高，通过激光刃以贯穿敌人，特殊改造的外壳让他可以免疫绝大多数buff\n\n[blue][超限技术作战中机甲]",
+    "immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+    "speed": 1.5
+    "hitSize": 18
+    "health": 1620,
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+        "itemCapacity": 30
+    "targetGround":true,
+    "armor":12
+    "abilities": [
+    {
+    "type": "ShieldArcAbility",
+		"radius": 30,//半径
+		"width": 10,//宽度
+		"max": 2000,//最大容量
+		"regen": 5,//再生速度
+		"cooldown": 160,//护盾冷却时间
+		"angle": 190,//护盾弧度
+		"angleOffset": 0//护盾角度
+	}
+	 {
+        "type": "RepairFieldAbility"
+        "amount":55
+        "reload":60
+        "range": 1
+    }
+    {//死亡时产生单位
+			"type": "SpawnDeathAbility",
+			"unit": "电光1",
+			"amount": 1,//固定数量
+			"randAmount": 0//随机数量
+	}
+	{
+"type": "RegenAbility",
+"amount": 1.2
+}
+    ]
+    "weapons": [
+       {
+            "name": "电光",
+            "reload": 23
+            "x":6
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":180
+		    "rotationLimit": 0
+		    "mirror": true,
+		    "shootX":10
+	    "shootY":-10
+	    "baseRotation":30
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 0
+        "y": 0
+        "suffix": "-手",
+        "layer": 59.9
+        "moveX": -1
+        "moveY": 2.7
+        "moveRot":-150
+        "progress":"reload",
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "x":12,"y":9,
+        "suffix":"-刀"
+        "progress":"reload",
+        "layer":59.9
+        "moveX":-12
+        "moveY":-24
+        "moveRot":-300
+        }
+			]
+            "bullet": {
+            "type": "ShrapnelBulletType",
+	"status": "unmoving",
+			"statusDuration": 10,
+			"buildingDamageMultiplier":3.0,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"damage":288
+	"pierceDamageFactor":0.4
+	"ammoMultiplier":1,
+	"pierce": true
+	"width": 8
+	"length": 26
+	"lifetime": 18
+	"collidesAir": true
+	"ejectEffect":"none"
+    }}
+    ]
+    //"research":"uAABT1C列兵"
+     "research": {
+	"parent":"uAABT1H火花"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "saltflats"
+			}
+	]
+	}
+}

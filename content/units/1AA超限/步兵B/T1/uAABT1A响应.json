@@ -1,0 +1,79 @@
+{
+    "type": "mech",
+    "name":"响应"
+    "description": "超限集团为了早期防御，研究出的特殊轻机甲，移动速度快，廉价，但是武器威力和装甲偏低，不能防空，但是其小巧的体型可以使其免疫一些异常状态。\n\n[blue][超限技术作战轻机甲]",
+    "details":"一个比尖刀更小的机动作战单位,不是动员兵",
+    "immunities": [
+		"wet","甲板损坏"
+	],
+    "speed": 1.1
+    "hitSize": 6
+    "health": 90,
+    "itemCapacity": 0
+    	"rotateSpeed": 5
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "armor":0
+    "weapons": [
+       {
+            "name": "响应1",
+            "reload": 2
+            "x":0
+            "y":6.5
+             "inaccuracy": 3,
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 2.8
+        "y": -5
+        "suffix": "-手1",
+        "layer": 59.9
+        "moveX": 0
+        "moveY": 2.7
+        "moveRot":20
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x":-2.8,"y":-5,
+        "suffix":"-手2"
+        "layer":59.9
+        "moveX":0
+        "moveY":1.5
+        "moveRot":-55
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":false
+        "x":0,"y":-2,
+        "suffix":"-枪"
+        "layer":59.9,
+        "moveX":0
+        "moveY":2.3
+        "moveRot":90
+        }
+			]
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 4
+    "lifetime":30
+	"width": 1.5
+	"height": 5
+	"damage":6
+    "hitSize":4
+    "buildingDamageMultiplier":0.5
+    "collidesAir": false
+    }}
+    ]
+    "research":"BAAsHA步兵厂"
+}

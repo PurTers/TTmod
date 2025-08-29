@@ -1,0 +1,20 @@
+{
+	"name": "[blue]说明",
+	"description": "欢迎来到超限工艺！\n由于为了防止玩家按照原版的路线玩，本mod独立出了一条科技树，你可以在科技树选择上查看(头顶上那个赛普罗)。",
+	"health":500,
+	"hasShadow":false
+	"armor":0,
+	"size": 2
+	"category": "logic",
+	"type": "Wall",
+	"buildCostMultiplier":99999999
+	"requirements": [
+    ]
+    "alwaysUnlocked": true,
+	"research": {
+        "parent":"groundZero"
+        },
+            "canOverdrive": false,
+            "researchCostMultiplier": 0
+            "buildVisibility": "sandboxOnly",
+}

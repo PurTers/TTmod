@@ -1,0 +1,185 @@
+{
+	"type": "legs",
+	"legCount": 6
+	"legLength": 22
+	"legForwardScl": 1
+	
+	"legLengthScl":1
+	"legSpeed":0.05
+	"legMoveSpace": 0.4
+	"legBaseOffset":8
+	
+	"legExtension":1
+	"legPairOffset":0
+	
+	"legSplashDamage":88
+	"legSplashRange":24
+	"description": "重型单位，顶部配备导弹发射器以及两挺机枪，前端的大口径激光炮可以高频摧毁前方一小距离内的单位，可以踩过建筑，推荐用于攻城。\n\n[blue][超限技术重型单位]",
+				"immunities": [
+"burning","freezing","melting","wet","spore-slowed","shocked","electrified","列阵","甲板损坏"
+	],
+	"abilities": [
+	{
+        "type": "RepairFieldAbility"
+        "amount":155
+        "reload": 120
+        "range": 48
+    }
+		{
+			"type": "ForceFieldAbility",
+			"sides": 8,
+			"radius": 54
+			"max": 1200,
+			"regen": 0.8
+			"cooldown": 240
+		}
+		{ "type": "StatusFieldAbility",
+    "duration": 600,
+    "reload": 60,
+    "range": 88,
+    "applyEffect":"none",
+    "effect":"列阵"  }
+	],
+			"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+	"hovering": true,
+	"canDrown": false,
+		"maxRange": 400
+	"name": "磐石",
+	"canBoost": false,
+	"speed": 0.3
+	"hitSize": 42
+	"health": 9640,
+	"armor": 12
+	"drag": 0.2,
+	"rotateSpeed": 0.85,
+	"itemCapacity": 150,
+	"faceTarget": true,
+	"weapons": [
+	{
+			"name": "无",
+			"reload": 120,
+			"x": 0
+			"y": 18
+			"rotate": false,
+			"top": false,
+			"recoil": 4,
+			"inaccuracy": 0,
+			"alternate": true,
+			"mirror":false,
+			"shootSound": "laser",
+			//"controllable":false
+			"shake": 2,
+			"shootCone":30
+			"bullet": {
+			"type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["c0ecff","1878BF","FFFFFF"],
+	"status": "脆裂",
+			"statusDuration": 330,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":6,
+	"lightningDelay":0.6,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":66,
+	"lightningColor":"c0ecff",
+	"damage": 218,
+	"pierceDamageFactor":0.4
+	"ammoMultiplier":1,
+	"pierce": true
+	"width": 28,	"length": 80,
+	"lifetime": 30,
+	"collidesAir": false
+	"buildingDamageMultiplier":2
+			}
+		}
+		{
+            "name": "磐石2",
+            "reload": 30
+            "x":-12
+            "y":8
+            "shootSound":"plasmaboom",
+            "ejectEffect": "casing1",
+            "rotate": "true",
+	"rotateSpeed":1.2
+	"shootX":2
+	    "shootY":5
+            "shoot":{
+			"shots":4
+			"shotDelay":9
+		},
+		"shootCone":10
+			"baseRotation":50
+			"rotationLimit":120,
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 3
+    "lifetime":60
+	"width": 2
+	"height": 6
+	"damage":36,
+    "hitSize":40,
+   // "pierceArmor": true,
+    "shootEffect": "shootBig"
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "trailLength":22,
+	"trailWidth":2,
+	"status": "破甲",
+			"statusDuration": 130,
+	 "trailColor":"c0ecff",
+	"frontColor":"1878BF",
+	"backColor":"c0ecff",}}
+	{	"name": "磐石1",	
+	               	"shootCone":300,
+			"rotationLimit":120,
+		"reload":150
+        "x": 0
+         "y": -15
+        "rotate": true,
+        "inaccuracy": 6
+		"shootSound": "missile",
+		"rotateSpeed": 1
+		"alternate": true,
+		"mirror":false
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":2
+	    "shotDelay":35
+	    "type": "ShootAlternate",
+		"barrels": 2
+		"spread": 16
+	},
+	"shootX":0
+	    "shootY":2
+   "recoil": 2,
+   "recoils": 2,
+		"bullet":{
+		"type": "BasicBulletType",
+             "spawnUnit": "火箭弹",
+             "speed": 0,
+			"shootEffect":"shootSmall",
+	}
+	}
+		]
+		"research": {
+	"parent":"BAAsHH抑灾级装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}
+	"researchCostMultiplier": 0
+}

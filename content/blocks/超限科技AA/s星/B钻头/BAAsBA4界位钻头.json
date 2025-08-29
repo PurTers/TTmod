@@ -1,0 +1,104 @@
+{
+    "name":"界位钻头",
+    "type": "Drill",
+    "description":"可以开采钍，需要消耗电力，加入冷却液之后可以获得极快的速度，开采需要的时间非常长。\n \n[blue][超限技术钻机]",
+    "size": 4
+    "health": 640,
+    "tier": 7,//挖掘等级
+    "drillTime": 170,//挖掘间隔
+    "liquidBoostIntensity":2.1,//加速倍率
+    "canOverdrive": true,
+    "warmupSpeed": 0.0002,
+	"drillEffect": "mineBig",
+    "updateEffect": "mineBig",
+    "rotateSpeed": 6
+    "drawMineItem": true,
+    "drawRim":true
+    "consumes": {
+    "power": 5.6
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 0.097
+            "booster": true,
+            "optional": true
+        }
+    },
+    "itemCapacity": 40,//物品容量
+    "liquidCapacity": 20,//液体容量
+    "drillEffect": {"type": "MultiEffect",
+"effects": [
+{"type": "ParticleEffect",
+"particles": 12
+"sizeFrom": 3
+"sizeTo": 0,
+"interp": "fastSlow",
+"length": 12
+"baseLength": 66
+"lifetime": 180
+"colorFrom": "1878BF",
+"colorTo": "1878BF",
+"cone": 360},
+{"type": "ParticleEffect",
+"particles": 8
+"sizeFrom": 0,
+"sizeTo": 6
+"length": 22
+"baseLength": 33
+"lifetime": 180
+"colorFrom": "FFFFFF60",
+"colorTo": "FFFFFF00",
+"cone": 360},
+{"type": "WaveEffect",
+"lifetime": 30
+"sizeFrom": 0,
+"sizeTo": 6
+"strokeFrom":12
+"strokeTo": 12
+"colorFrom": "c0ecff",
+"colorTo": "c0ecff80"}
+{"type": "WaveEffect",
+"lifetime": 60
+"sizeFrom": 0,
+"sizeTo": 38
+"strokeFrom":2
+"strokeTo": 0
+"colorFrom": "c0ecff",
+"colorTo": "c0ecff00"}
+{"type": "WaveEffect",
+"lifetime": 60
+"sizeFrom": 0,
+"sizeTo": 38
+"strokeFrom":2
+"strokeTo": 0
+"colorFrom": "FFFFFF",
+"colorTo": "FFFFFF00"}
+{"type": "WaveEffect",
+"startDelay":29
+"lifetime": 30
+"sizeFrom": 6
+"sizeTo": 0
+"strokeFrom":12
+"strokeTo": 0,
+"colorFrom": "c0ecff",
+"colorTo": "c0ecff80"}
+]},
+    "requirements": [	
+    { "item": "titanium", "amount": 45 }
+   { "item": "0铜铅合金", "amount":65},
+   { "item": "1集成电路", "amount":25},
+   { "item": "graphite", "amount":40}
+   { "item": "thorium", "amount": 80 }
+   { "amount": 30, "item": "metaglass" }
+   ],
+    "category": "production",
+    "research": {
+	"parent":"BAAsBA41过载钻头"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}
+    "researchCostMultiplier": 0.5
+}

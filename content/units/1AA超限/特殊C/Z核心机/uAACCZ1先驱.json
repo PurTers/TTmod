@@ -1,0 +1,22 @@
+{
+	"type": "flying",
+	"name":"西",
+	"description": "先锋核心的眼睛,自身没有攻击力\n \n[blue][超限集团核心机]",
+	"speed": 5.8,
+	"immunities": [
+"甲板损坏"
+	],
+	"accel":0.05,"drag":0.03,
+	"rotateSpeed":5,
+	"ammoType":"titanium",
+	"ammoCapacity": 300,
+	"hitSize":15, 
+	"buildSpeed":0.55
+	"flying": true,
+	"health":1280,
+	"armor":0
+	"mineTier":1
+	"mineSpeed":1.5
+	"engineOffset": 0,
+	"engineSize": 0, 
+}

@@ -1,0 +1,113 @@
+{
+    "type": "PowerTurret",
+    "name": "电离",
+    "description": "鉴于超限集团在电磁领域的日益成熟，球状闪电武器也搬上了日程，电力作为这一类武器的代表，能够发射球状闪电打击敌人，但由于对球状闪电的研究依旧不够透彻，他无法打击远距离的敌人\n \n[blue][超限技术炮台]",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 800,
+    "size": 3,
+    "heatColor": "turretHeat",
+    "shootSound": "激光",
+    "shake": 0.2,
+    "inaccuracy": 0
+    "recoil": 2,
+    "coolantMultiplier": 4.5
+    "liquidCapacity": 100,
+    		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": true,
+        "under":true,
+        "x": -2
+        "y": -1
+        "suffix": "-1",
+        "layer": 50,
+        "moveX": 2
+        "moveY": 1
+        }
+			]
+			}
+			]
+   },
+    "recoilTime": 100,
+    "shootType":{
+    "speed": 4,  
+	    "lifetime":40,
+		"width": 12,"height": 12
+		"damage":6
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":20,
+		"splashDamage": 22,
+        "ammoMultiplier":4,
+        "backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+        "fragLifeMin":0.1,
+            "lightningDamage":11,
+            "lightningColor": "FFFFFFFF",
+    "lightning":7
+    "lightningLength":10
+    "fragBullets": 3
+			"fragBullet": {
+			"speed": 3,  
+	    "lifetime":10,
+		"width": 8,"height": 8,
+		"damage":6
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":20,
+		"splashDamage":20,
+        "backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+        "fragLifeMin":0.1,
+            "lightningDamage":24,
+            "lightningColor": "FFFFFFFF",
+    "lightning":1
+    "lightningLength":5
+       },
+       "bulletInterval":10
+       "intervalBullet": {
+       "speed": 4,  
+	    "lifetime":0,
+		"width": 20,"height": 20
+		"shootEffect": "shootSmall",
+        "backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+        "fragLifeMin":0.1,
+            "lightningDamage":9,
+            "lightningColor": "FFFFFFFF",
+    "lightning":2
+    "lightningLength":10
+       }
+       }
+    "consumes": {
+        "power": 6
+	"coolant":{"amount":0.3,"optional":true} 
+    },
+    "reload": 138
+    "rotateSpeed": 12,
+    "range": 180
+    "category": "turret",
+    	"research": {
+	"parent":"BAAsAT2A磁化"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "污染小道"
+			}
+			/*{
+				"type": "OnComplete",
+				"preset": "污染小道"
+			}*/
+	]
+	}
+    "requirements": [
+        {"item": "0铜铅合金", "amount": 40  },
+        { "item": "copper","amount": 80 },
+        { "item": "lead","amount": 60 },
+        { "item": "silicon", "amount": 45 }
+        { "item": "titanium", "amount": 35 }
+    ]
+    "researchCostMultiplier": 0.5
+}

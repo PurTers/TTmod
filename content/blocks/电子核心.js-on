@@ -1,0 +1,23 @@
+{
+    "name":"电子核心",
+    "type":"CoreBlock",
+    "description": " ",
+    "requirements": [
+    ],
+    "unitType":"电1",
+    "health": 2000,
+    "itemCapacity": 0,
+    "size": 3,
+   /* "research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "craters"
+			}
+	]
+	}*/
+    "unitCapModifier": 1,
+    "category": "effect"
+    "researchCostMultiplier": 9
+}

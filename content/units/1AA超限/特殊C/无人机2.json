@@ -1,0 +1,143 @@
+{
+		"immunities": [
+"wet","spore-slowed","tarred","shocked","freezing","蜂群","甲板损坏"
+	],
+	"name": "蝇虫",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"hitSize": 8
+	"engineOffset": 3,
+	"engineSize": 3,
+	"health": 240,
+	"armor": 2,
+	"speed": 0.3,
+	"lifetime": 1200,
+	"rotateSpeed": 1.5,
+	"engineOffset": 0,
+	"missileAccelTime": 0,
+	"abilities": [
+    {"type":"ArmorPlateAbility",
+	"healthMultiplier":2}
+	{
+"type": "RegenAbility",
+"amount": 0.6
+}
+    ],
+	"weapons": [
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 14,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 60,
+	"shootStatus": "僚机加速",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {"pierceArmor": true,
+	    "damage":0,	  
+	    "speed":0,
+	    "lifetime":1,
+	    "width":0,	 "height":0}}
+	{
+			"x": 0,
+			"y": 0,
+			"reload": 9999,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"useAmmo": false,
+			"alwaysShooting": true,//总是射击
+			"shootSound": "none",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 9999,
+	"shootStatus": "fast",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {"pierceArmor": true,
+	    "damage":0,	  
+	    "speed":0,
+	    "lifetime":1,
+	    "width":0,	 "height":0}}
+	{	"name": "无",	
+		//"minShootVelocity": 1.5,
+		"reload": 120 
+	"shoot":{
+	"shots":12},
+		"x": 0,  "y": 0,
+		//"ignoreRotation":true,
+		"rotate": true,
+			"rotateSpeed": 99999
+		"shootCone":360,
+		"inaccuracy": 360,
+		"mirror": false,
+		"shootSound": "missile",
+		"bullet":{   
+	"splashDamage":22,
+	"splashDamageRadius":32,
+	"status":"burning",
+	"speed":1
+	"lifetime":160,
+	"width":1,	 "height":3,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+	"sprite":"missile-back",
+            "homingRange": 120,
+            "homingPower": 0.1,
+            "homingDelay":15
+            "trailLength":3
+    "trailWidth":0.5,
+    "trailColor":"1878BF",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+	}	}
+	{	"name": "无",	
+		//"minShootVelocity": 1.5,
+		"reload": 12
+	"shootStatusDuration": 60,//发射时给自己的状态时间
+	"shootStatus": "静止",//发射时给自己的状态
+		"x": 0,  "y": 0,
+		//"ignoreRotation":true,
+		"rotate": true,
+			"rotateSpeed": 99999
+		"shootCone":30,
+		"inaccuracy": 6,
+		"mirror": false,
+		"shootSound": "missile",
+		"bullet":{   
+		"collidesGround":true,
+		"collidesAir":false,
+	"splashDamage":42,
+	"splashDamageRadius":32,
+	"status":"burning",
+	"speed":4
+	"lifetime":40,
+	"width":1,	 "height":3,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+	"sprite":"missile-back",
+            "trailLength":3
+    "trailWidth":0.5,
+    "trailColor":"1878BF",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+	}	}
+	],
+}

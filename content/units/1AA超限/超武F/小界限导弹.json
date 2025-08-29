@@ -1,0 +1,125 @@
+{
+		"immunities": ["甲板损坏"
+	],
+	"name": "界限导弹II型",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 680,
+	"armor": 12
+	"speed": 9
+	"lifetime": 1200
+	"rotateSpeed": 2.2
+	"engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 3
+	"trailLength": 9
+	"missileAccelTime": 60,
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "6044AF",
+	"weapons": [
+			{	"name": "无",	
+		"reload":60
+        "x": 3
+         "y": 2
+        "rotate": true,
+        "inaccuracy": 30
+        "shootStatusDuration": 30,
+	"shootStatus": "unmoving",
+		"shootSound": "none",
+		"rotateSpeed": 99
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shootCone": 150,
+			"shootOnDeath": true,
+			"shoot":{
+			"shots":6
+			"shotDelay":0
+		},
+		"bullet":{
+		"killShooter":true
+	    "despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 30,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 60,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 60,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 60,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   ]
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"targetair": true
+	    "damage":63,
+	    "speed":6
+	    "splashDamageRadius":12,
+	"splashDamage":99
+	"knockback": 1,
+	    "lifetime":60,
+	    "width":8,	 "height":8
+	   // "homingRange": 360
+        //"homingPower": 0.5,
+    "weaveMag":2,
+	"weaveScale":4,
+	"makeFire":true,
+	        "pierceCap": 6
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+	}	}
+	],
+}

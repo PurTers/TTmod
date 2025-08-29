@@ -1,0 +1,50 @@
+{
+	"type": "Separator",
+	"name": "废料解析机",
+	"description":"用更高的耗电量解析废料，并从中提取出有用的材料。\n\n[blue][超限技术中级工厂]",
+	"results": [
+	{"item": "metaglass", "amount": 9},
+	{"item": "graphite", "amount": 9},
+	{"item": "titanium", "amount": 6},
+	{"item": "silicon", "amount": 5},
+	{"item": "plastanium", "amount": 4},
+	{"item": "thorium", "amount": 5},
+	{"item": "blast-compound", "amount": 3},
+	{"item": "surge-alloy", "amount": 2},
+	{ "item": "phase-fabric", "amount": 1 },
+	],
+	"health": 1600,
+	"drawer": [
+        {
+            "type": "DrawRegion"
+            "suffix": "-bottom",
+        },
+        "DrawWeave",
+        "DrawDefault",
+    ],
+	"size": 4,
+	"itemCapacity": 20,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 20,
+	//"spinnerSpeed": 6,
+	"consumes": {
+		"power": 7,
+		"items": [{ "item": "scrap", "amount": 4 }
+	]},
+	"requirements": [
+	{ "item": "graphite", "amount": 180 },
+	{ "item": "titanium", "amount": 220 },
+	{ "item": "1集成电路", "amount": 100 },
+	{ "item": "0铜铅合金", "amount": 90 }
+	{ "item": "1绝缘钢", "amount": 70 }
+	{"item": "metaglass", "amount": 280},
+	{"item": "thorium", "amount": 50},
+	],
+	"category": "crafting",
+		/*"research": {
+		"parent": "BAAsGT2C熔化炉",}*/
+		"researchCostMultiplier": 0.5
+		"buildCostMultiplier":0.8
+}

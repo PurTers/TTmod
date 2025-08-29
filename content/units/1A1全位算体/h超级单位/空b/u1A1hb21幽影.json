@@ -1,0 +1,69 @@
+{
+	"type": "flying",
+	"name":"幽影",
+	"description": "更为强大的独影，能够发射轻型修复导弹，拥有更大的在互聊和更快的采矿速度。",
+	"details":"武装牛车",
+"immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+	"allowedInPayloads":false
+	"speed": 1.5
+	"accel":0.05,"drag":0.03,
+	"rotateSpeed":2,
+	"ammoType":"titanium",
+	"ammoCapacity": 300,
+	"hitSize":15, 
+	"flying": true
+	"health":680,
+	"armor":5
+	"mineTier":2
+	"mineSpeed":6
+	"engineOffset": 6,
+	"engineSize": 3, 
+	"itemCapacity": 120
+	"abilities": [
+	{
+	"type": "RegenAbility",
+	"amount": 0.25
+	},]
+    "weapons": [
+	{	"name": "无",	
+		//"minShootVelocity": 1.5,
+		"reload": 120 
+		"x": 0,  "y": 0,
+		//"ignoreRotation":true,
+		"rotate": true,
+			"rotateSpeed": 0
+		"shootCone":360,
+		"inaccuracy": 360,
+		"mirror": false,
+		"shootSound": "missile",
+		"bullet":{   
+	"splashDamage":22,
+	"splashDamageRadius":32,
+	"status":"burning",
+	"speed":6
+	"lifetime":30,
+	"width":1,	 "height":3,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+	"sprite":"missile-back",
+	"healPercent":2
+	 "collidesTeam":true,
+            "homingRange": 120,
+            "homingPower": 0.1,
+            "homingDelay":1
+            "trailLength":3
+    "trailWidth":0.5,
+    "trailColor":"7CF38990",
+    "backColor":"97FFA880",
+    "frontColor":"FFFFFF"
+    "buildingDamageMultiplier":0.1
+	}	}
+    ]
+"research": {
+	"parent":"BA1sHA精锐工厂"
+	}
+	"researchCostMultiplier": 0,
+	"defaultController": "MinerAI",
+}

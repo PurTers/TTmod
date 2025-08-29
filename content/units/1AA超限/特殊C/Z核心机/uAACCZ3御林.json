@@ -1,0 +1,87 @@
+{
+	"type": "legs",
+	"legCount": 4
+	"legLength": 6
+	"legForwardScl": 1
+	
+	"legLengthScl":1
+	"legSpeed":0.3
+	"legMoveSpace": 0.01
+	"legBaseOffset":0
+	
+	"legExtension":1
+	"legPairOffset":0
+	
+	"description": "核心单位，用于保护进阶核心。\n\n[blue][超限集团重型核心爬虫]",
+				"immunities": [
+"burning","freezing","melting","spore-slowed","shocked","列阵","甲板损坏"
+	],
+	"abilities": [
+	{
+        "type": "RepairFieldAbility"
+        "amount":6
+        "reload": 240
+        "range": 55
+    }
+		{ "type": "StatusFieldAbility",
+    "duration": 600,
+    "reload": 300,
+    "range": 48,
+    "applyEffect":"none",
+    "effect":"列阵"  }
+	],
+			"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+	"hovering": true,
+	"canDrown": false,
+		"maxRange": 400
+	"name": "克西",
+	"canBoost": false,
+	"speed": 0.95
+	"hitSize": 4
+	"health": 640,
+	"armor": 3
+	"drag": 0.2,
+	"rotateSpeed": 0.85,
+	"itemCapacity": 70,
+	"buildSpeed":2.5
+	"mineTier":2
+	"mineSpeed":4
+	"faceTarget": true,
+	"weapons": [
+	{
+			"name": "袒护1",
+			"reload": 180,
+			"x": -3
+			"y": 0
+			"rotate": false,
+			"top": false,
+			"recoil": 2,
+			"inaccuracy": 0,
+			"alternate": true,
+			"mirror":false,
+			"shootSound": "laser",
+			//"controllable":false
+			"shake": 2,
+			"shootCone":30
+			"recoilTime": 60
+			"bullet": {
+	"status": "脆裂",
+			"statusDuration": 330,
+	"pierceBuilding": false,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"damage": 246,
+	"pierceCap": 4
+	"speed":8,
+	"lifetime":20,
+	"width":7,	 "height":12
+	"collidesAir": true
+	"buildingDamageMultiplier":0.1
+			}
+		}
+		]
+}

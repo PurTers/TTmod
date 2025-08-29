@@ -1,0 +1,46 @@
+{
+		"immunities": [
+"wet","spore-slowed","tarred","shocked","freezing","蜂群","甲板损坏"
+	],
+	"name": "护卫C",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"hitSize": 8
+	"engineOffset": 3,
+	"engineSize": 3,
+	"health": 1380,
+	"armor": 6,
+	"speed": 9.5,
+	"lifetime": 5400,
+	"rotateSpeed": 9
+	"engineOffset": 0,
+	"missileAccelTime": 60,
+	"weapons": [
+	{	"name": "无",	
+		"reload":12,
+        "x": 0,  "y": 0, 
+        "rotate": true,
+        "inaccuracy": 0,
+		"rotateSpeed": 9999
+		"shoot":{
+			"shots":1,
+		},
+		"shootSound": "pew",
+		"shootCone":30,
+			"rotationLimit":60,
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":32,	  
+	    "speed":3,
+	    "lifetime":55,
+	    "width":1,	 "height":3
+	    "trailLength":3
+    "trailWidth":0.5,
+    "trailColor":"1878BF",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+    "buildingDamageMultiplier":0
+	}	}
+	],
+}

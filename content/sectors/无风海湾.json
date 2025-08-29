@@ -1,0 +1,31 @@
+{
+"localizedName": "无风海湾(半成品)",
+	"description": "这里似乎是超限集团某个大型基地的旧址，不过因为某些原因变成了一片汪洋。防御超限集团的进攻并在这里研究新的科技。\n\n\n似乎哪里不一样了\n\n[blue](by 蓝细菌光合自养 改)",
+	"details":"实际上这个汪洋可以是闪电风暴气象弹试验的产物",
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0
+    "difficulty":7
+    "captureWave":60
+    "research": {
+		"parent": "超限工艺-saltflats",
+		"objectives": [
+		"敬请期待"
+		"敬请期待1"
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-coastline"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-遗忘河滩"
+			}
+			]}
+	/*"TeamRule":{
+ "team": "blue"
+}
+"teams":{
+ "team": blue
+}*/
+//"defaultTeam":"blue"
+}

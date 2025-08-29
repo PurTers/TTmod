@@ -1,0 +1,61 @@
+{
+    "type": "flying",
+    "name":"无形"
+    "description": "飞行单位,小巧而迅速，有及高的攻速，强力的反建筑机枪，不能攻击空中单位。\n\n[blue][超限技术特殊作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+    "speed": 2.8
+    "hitSize": 12
+    "health": 30,
+    	"rotateSpeed": 12
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "flying": true,
+    "armor":0
+    "targetFlags":["generator","core"],
+    "engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"trailWidth": 2,
+	"itemCapacity": 0
+    "weapons": [
+   {	"name": "无",	
+		"reload": 10, 
+		"x": 0,  "y": 0, 
+		"rotate": true,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"blaster",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"rotateSpeed": 12
+		"bullet":{
+    "type":"BasicBulletType",
+    "speed": 5
+    "lifetime":35
+	"width": 1.5
+	"height": 5
+	"damage":2
+    "hitSize":4
+    "buildingDamageMultiplier":7.5
+    "collidesAir": false
+    }
+	   	}
+    ]
+  "research": {
+	"parent":"uAABT1A响应"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "saltflats"
+			}
+	]
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"type": "mech",
+	"name": "利刃",
+	"description": "比普通的尖刀更加强力。",
+    "speed":  0.9,
+    "hitSize": 12,
+    "immunities": ["甲板损坏"
+    ],
+		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+    "ammoResupplyAmount":1,/*弹药补给倍率 */
+    "health": 480,
+    "abilities": [
+	{
+"type": "RegenAbility",
+"amount": 0.15
+},]
+    "armor": 3,
+    "drag": 0.2,
+    "rotateSpeed": 2.5,
+    "itemCapacity": 30,
+        "targetAir":true,  
+    "targetGround":true,
+	"weapons":[{	"name": "精英尖刀0",	
+		"reload":23,
+        "x": 6,  "y": 1.5, 
+        "rotate": false
+        "inaccuracy": 0,
+        "shootCone":12,
+		"shoot":{
+			"shots":3,
+			"shotDelay":3
+		},
+		"shootSound": "pew",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":19,	  
+	    "speed":3,
+	    "lifetime":50,
+	    "width":7,	 "height":10
+	}	}
+]
+"research": {
+	"parent":"BA1sHA精锐工厂"
+	}
+	"researchCostMultiplier": 0,
+}

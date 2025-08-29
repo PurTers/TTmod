@@ -1,0 +1,12 @@
+{
+	"name": "伪无敌墙",
+	"description": "硬，可挡激光闪电",
+	"type": "Wall",
+	"health": 2147483617,
+	"armor":2147483617,
+	"size": 1,
+	"absorbLasers":true,
+	"insulated":true,//绝缘
+	"category": "logic",
+	"buildVisibility": "sandboxOnly",
+}

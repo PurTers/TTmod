@@ -1,0 +1,115 @@
+{
+    "type": "missile",
+	"template": "MissileUnitType",
+    "name":"护盾核心"
+    "description": " ",
+    "immunities": [
+		"wet","spore-slowed","tarred"
+	],
+    "speed": 0
+    "hitSize": 12
+    "health": 999999999,
+    	"rotateSpeed": 0
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+    "targetGround":true,
+    "hovering":true
+    "armor":0
+    "deathExplosionEffect":"none"
+    "itemCapacity": 0
+    "lifetime":120
+    "hidden": true,//是否隐藏？
+    "engineOffset": 0
+	"engineSize": 0
+    "abilities": [
+        {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 40.0,
+        "max": 9000.0,
+        "reload": 60.0,
+        "range": 220
+    }]
+    "parts":[
+    {
+			"type": "ShapePart",
+			/*"colorTo":"c0ecff",
+			"color": "c0ecff",*/
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 220
+			"radiusTo": 220
+			"x": 0,    "y": 0,
+},
+{
+		"type": "HaloPart",//多边形
+		"rotateSpeed":0//自转速度
+		"sides": 3,//多边形边数("tri":false时候可用)
+		"shapes": 6,//围绕旋转的图形数量
+		/*"color": "c0ecff",//开始时的颜色
+		"colorTo":"c0ecff",//结束时的颜色*/
+		"layer":110,//所在图层高度
+		"tri": true,//是否三角形
+		"radius": 48,//开始时的大小
+		"radiusTo": 48,//结束时的大小
+		"triLength": -64,//三角形开始时的尖锐程度
+		"triLengthTo":-64,//三角形结束时的尖锐程度
+		"haloRadius": 220,//开始时的围绕半径
+		"haloRadiusTo": 220,//结束时的围绕半径
+		"haloRotation": 0,//开始时的角度
+		"haloRotateSpeed": 3//旋转速度
+    }
+    {
+			"type": "ShapePart",
+			/*"colorTo":"c0ecff",
+			"color": "c0ecff",*/
+			"layer":110,
+			"stroke": 3,
+			"strokeTo": 3,
+			"circle": true,
+			"hollow": true,
+			"radius": 1.5
+			"radiusTo": 1.5
+			"x": 0,    "y": 0,
+},
+{
+		"type": "HaloPart",//多边形
+		"rotateSpeed":0//自转速度
+		"sides": 3,//多边形边数("tri":false时候可用)
+		"shapes": 4,//围绕旋转的图形数量
+		/*"color": "c0ecff",//开始时的颜色
+		"colorTo":"c0ecff",//结束时的颜色*/
+		"layer":110,//所在图层高度
+		"tri": true,//是否三角形
+		"radius": 2,//开始时的大小
+		"radiusTo": 3,//结束时的大小
+		"triLength": 4,//三角形开始时的尖锐程度
+		"triLengthTo":4,//三角形结束时的尖锐程度
+		"haloRadius": 2,//开始时的围绕半径
+		"haloRadiusTo": 2,//结束时的围绕半径
+		"haloRotation": 0,//开始时的角度
+		"haloRotateSpeed": 4//旋转速度
+    }
+    {
+		"type": "HaloPart",//多边形
+		"rotateSpeed":0//自转速度
+		"sides": 3,//多边形边数("tri":false时候可用)
+		"shapes": 2,//围绕旋转的图形数量
+		/*"color": "c0ecff",//开始时的颜色
+		"colorTo":"c0ecff",//结束时的颜色*/
+		"layer":110,//所在图层高度
+		"tri": true,//是否三角形
+		"radius": 2,//开始时的大小
+		"radiusTo": 3,//结束时的大小
+		"triLength": 8,//三角形开始时的尖锐程度
+		"triLengthTo":8,//三角形结束时的尖锐程度
+		"haloRadius": 2,//开始时的围绕半径
+		"haloRadiusTo": 2,//结束时的围绕半径
+		"haloRotation": 0,//开始时的角度
+		"haloRotateSpeed": -1//旋转速度
+    }
+    ]
+}

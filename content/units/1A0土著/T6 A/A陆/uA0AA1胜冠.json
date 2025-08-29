@@ -1,0 +1,325 @@
+{
+    "type": "legs",
+    	"legCount": 2
+	"legLength": 16
+	"legForwardScl": 1
+	
+	"legLengthScl":1
+	"legSpeed":0.1
+	"legMoveSpace": 4
+	"legBaseOffset":5
+	
+	"legExtension":1
+	"legPairOffset":0
+	
+	"legSplashDamage":88
+	"legSplashRange":24
+    "name":"胜冠"
+    "description": "此单位拥有强大的火力，装载了两个强力功城炮,两个电碎磁炮以及两门穿甲机炮，移动速度缓慢。\n不过为了弥补其移动速度上的不足，泽塔议会在其背后装备了火箭推进器，在必要的时候可以为其提供额外的动力，大幅提高移动速度。\n[red][泽塔议会永恒级单位]",
+    "immunities": [
+		"burning","甲板损坏"
+	],
+    "speed": 0.3
+    "hitSize": 48
+    "health": 90200,
+    "itemCapacity": 300,
+    	"ammoType":"surge-alloy",
+	"ammoCapacity": 300,
+    "armor":60
+    "rotateSpeed":0.7,
+    "abilities": [
+	{
+    "type":"ForceFieldAbility",
+    "radius": 0.1,
+    "regen": 4,
+    "max": 19500,
+    "cooldown": 120,}
+    ]
+    "weapons": [
+       {
+            "name": "胜冠1",
+            "reload": 5.619
+            "x": 43,
+            "y": 0
+            "top": false,
+            "shootSound":"plasmaboom",
+            "ejectEffect": "casing1",
+            "rotate": "true",
+	"rotateSpeed":0.2
+		 "shootX":0
+	    "shootY":20
+		"shootCone":20,
+			"rotationLimit":20,
+			"baseRotation":0
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 16
+    "lifetime":30
+	"width": 12
+	"height": 26
+	"damage":450
+	"pierceArmor": true,
+    "shootEffect": "shootBig"
+    "buildingDamageMultiplier":2
+	"splashDamageRadius":80
+	"splashDamage":96
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "lightningDamage":32
+    "lightning":2
+    "lightningLength":4
+    "trailLength":8
+	"trailWidth":6
+	 "trailColor":"F3E979FF",
+	"frontColor":"F3E979FF",
+	"backColor":"FFF8AFFF",
+	"status": "melting",
+			"statusDuration": 180,
+        "fragBullets":2
+        "fragBullet":{
+        "buildingDamageMultiplier":2
+        "lightningDamage":56,
+    "lightning":2
+    "lightningLength":5
+	"frontColor":"F3E979FF",
+	"backColor":"FFF8AFFF",
+		"type":"BasicBulletType",
+		"despawnEffect":"none",
+		"status":"burning",
+	    "statusDuration":360,
+		"pierce": true,
+		"width":15
+		"height":15,
+		"damage":98
+		"buildingDamageMultiplier":2
+        "lifetime":120
+        "speed":0.5
+        "homingRange": 30,
+    "homingPower": 0.05,
+		}
+        }}
+                {
+            "name": "胜冠2",
+            "reload": 60
+            "x": 33
+            "y": 0
+            "top": true,
+            "shootSound":"artillery",
+            "ejectEffect": "casing1",
+                       "rotate": "true",
+	"rotateSpeed":1,
+            "shoot":{
+			"shots":3,
+			"shotDelay":20
+		},
+		"rotateSpeed": 2,
+            "bullet": {
+            "buildingDamageMultiplier":2
+                "speed": 4
+                "damage": 0
+                "lightningDamage":66
+    "lightning":8
+    "lightningLength":12
+                "width": 21,
+                "height": 21,
+                "lifetime": 90
+                "shootEffect": "shootBig",
+        "drag":0.005
+        "collidesAir": true
+	"hitEffect": [{   
+        "type": "WaveEffect",
+        "lifetime": 125
+        "sizeFrom": 24
+        "sizeTo": 24
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "colorFrom": "F3E979FF",
+    "colorTo": "F3E97900",
+	   }
+	   {   
+        "type": "WaveEffect",
+        "lifetime": 125
+        "sizeFrom": 7
+        "sizeTo": 7
+        "strokeFrom": 7
+        "strokeTo": 7
+        "colorFrom": "F3E979FF",
+    "colorTo": "F3E979FF",
+	   }]
+        "intervalBullets":4
+        "intervalBullet":{
+        "buildingDamageMultiplier":2
+        "lightningDamage":56
+    "lightning":1
+    "lightningLength":9
+    	"splashDamageRadius":0
+	"splashDamage":0
+	"makeFire":true,
+	"frontColor":"F3E979FF",
+	"backColor":"F3E979FF",
+		"despawnEffect":"none",
+		"pierce": true,
+		"width":15
+		"height":15,
+		"damage":0
+        "lifetime":1
+        "speed":0
+		}
+           }
+       }
+       {
+            "name": "胜冠3",
+            "reload": 6
+            "x":16
+            "y":-6
+            "shootSound":"plasmaboom",
+            "ejectEffect": "casing1",
+            "rotate": "true",
+	"rotateSpeed":1.2
+		"shootCone":10
+			"baseRotation":30
+            "bullet": {
+    "type":"BasicBulletType",
+    "buildingDamageMultiplier":4
+    "speed": 4.3
+    "lifetime":80
+	"width": 2
+	"height": 6
+	"damage":72,
+    "hitSize":40,
+    "pierceArmor": true,
+    "shootEffect": "shootBig"
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "trailLength":22,
+	"trailWidth":2,
+	"status":"burning",
+	"statusDuration":320,
+	 "trailColor":"F3E979FF",
+	"frontColor":"F3E979FF",
+	"backColor":"FFF8AFFF",}}
+	{
+			"x": 14,
+			"y": -18,
+			"reload": 1200,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": false,
+			"shootCone": 360,//允许射击角度
+			"rotationLimit": 0,//旋转最大角度
+			"baseRotation":-180
+			"useAmmo": false,
+			"shootSound": "laserbeam",
+			"continuous": true,//总是连续
+			"alternate": false
+			"shootStatusDuration": 300,
+	"shootStatus": "冲刺",
+			"shoot":{
+			"spread": 1
+			"shots":1,
+			"shotDelay":0,
+			},
+			"bullet": {
+				"type": "ContinuousFlameBulletType",
+				"colors": [//颜色依次从外到内
+					"FFFFFF00",
+					"FFFFFF00",
+					"ec7458CC",
+					"ff9c5a",
+					"ffffff"
+				],
+				"damage": 0,
+				"lifetime": 300,
+				"length": 160,//长度
+				"width": 15,
+				//"recoil": -1,//后座力
+				"drawFlare": false,
+				"fragBullets":1
+        "fragBullet":{
+        "splashDamageRadius":120,
+		"instantDisappear":true,
+		"collides": false,
+		"splashDamage":6600,
+		"speed":1,"lifetime":10,
+		"hitEffect":"massiveExplosion",
+		"despawnEffect":{"type": "MultiEffect",
+			"effects": [
+			{"type": "ParticleEffect",
+			"particles": 18,
+			"sizeFrom": 6,
+			"sizeTo": 0,
+			"length": 0,
+			"baseLength": 90,
+			"lifetime": 35,
+			"colorFrom": "F3E979FF",
+			"colorTo": "F3E979FF",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 24,
+			"sizeTo": 0,
+			"length": 0,
+			"baseLength": 120,
+			"lifetime": 22,
+			"colorFrom": "F3E979FF",
+			"colorTo": "F3E979FF",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 24,
+			"sizeTo": 0,
+			"length": 0,
+			"baseLength": 60,
+			"lifetime": 22,
+			"colorFrom": "F3E979FF",
+			"colorTo": "F3E979FF",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 24,
+			"sizeTo": 0,
+			"length": 65,
+			"baseLength": 15,
+			"lifetime": 90,
+			"colorFrom": "F3E979FF",
+			"colorTo": "F3E979FF",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 24,
+			"sizeTo": 0,
+			"length": 95,
+			"baseLength": 25,
+			"lifetime": 90,
+			"colorFrom": "F3E979FF",
+			"colorTo": "F3E979FF",
+			"cone": 360},
+			{"type": "WaveEffect",
+			"lifetime": 15,
+			"sizeFrom": 0,
+			"sizeTo": 120,
+			"strokeFrom": 9,
+			"strokeTo": 9,
+			"colorFrom": "F3E979FF",
+			"colorTo": "F3E979FF"}
+			{"type": "WaveEffect",
+			"startDelay":15
+			"lifetime": 90,
+			"sizeFrom": 120,
+			"sizeTo": 120,
+			"strokeFrom": 9,
+			"strokeTo": 0,
+			"colorFrom": "F3E979FF",
+			"colorTo": "F3E979FF"}
+			]},
+		"width":0,	 "height":0
+        }
+			}
+		}
+    ]
+    //"research":"reign"
+}

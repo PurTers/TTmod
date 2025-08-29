@@ -1,0 +1,13 @@
+{
+	"name": "冷凝流体",
+	"type": "Liquid",
+	"description": "低温，适合用于散热。",
+	"alwaysUnlocked":false,
+	"color": "0057FF",
+	"flammability": 0,
+	"temperature": 0.3,
+	"heatCapacity": 1.9,
+	"viscosity": 0.3,
+	"explosiveness": 0,
+	//"research": "cryofluid"
+}

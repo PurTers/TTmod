@@ -1,0 +1,41 @@
+{
+"name":"复位加速器"
+	"description":"为大范围的建筑提供超速，可以通过消耗冷却液以及一部分资源来进行加强。\n[red][泽塔议会超速]",
+	"details":"[yellow]Made in heaven",
+	"type": "OverdriveProjector",
+	"health": 1200,
+	"size": 4,
+	"range": 300,
+	"phaseRangeBoost": 60,
+	"speedBoostPhase": 2.25,
+	"speedBoost": 2.25,
+	"useTime":1200
+	"itemCapacity": 60
+	"consumes": {
+		"power": 12.6
+		"liquid": {
+			"liquid": "cryofluid", "amount":0.9
+		},
+        "items":{
+			"items":[
+				{"item":"silicon","amount":5}
+				{"item":"phase-fabric","amount":3}
+				{ "item":"surge-alloy","amount": 1},
+			],
+			"booster":true,
+			"optional":true
+		}
+	},
+	"requirements": [
+		{ "item": "lead", "amount": 320 },		
+		{ "item": "copper", "amount": 420 },		
+		{ "item": "silicon", "amount": 380 },
+		{ "item": "thorium", "amount": 240 },
+		{"item": "phase-fabric","amount":250},
+		{ "item": "titanium", "amount": 260 }
+		{ "item":"surge-alloy","amount": 140},
+		{ "item": "plastanium", "amount": 150 },        
+	],
+	"category":"effect",
+	//"research":"BA0sIA1修复穹顶"
+}

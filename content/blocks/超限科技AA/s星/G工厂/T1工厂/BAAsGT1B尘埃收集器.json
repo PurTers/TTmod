@@ -1,0 +1,36 @@
+{
+	"type": "GenericCrafter",
+	"name": "尘埃收集器",
+	"health": 320,
+	"description": "超限集团为了应对资源匮乏且没有方法生产用于合成硅的沙子的区块而研发，这个装置吸收大气的尘埃，缓慢收集并将齐聚合，以及会慢的速度生产沙子低。\n\n[blue][超限技术收集装置]",
+	"outputItem": { "item": "sand", "amount": 1},
+	"alwaysUnlocked": false,
+	"size": 2,
+	"hasPower": false,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 90,
+	"itemCapacity": 10,
+	"updateEffect": "mine",
+	"craftEffect": "blastsmoke"
+	"consumes": {
+  "power": 0.6,
+  }
+"requirements": [
+{ "amount": 20, "item": "0铜铅合金" }
+	{ "item": "lead", "amount": 10 },
+	{ "item": "copper", "amount": 20 },
+	],
+	"category": "crafting",
+	"research": {
+	"parent":"BAAsGT1A铜铅熔合炉"
+	"objectives": [
+            {
+				"type": "OnComplete",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"buildCostMultiplier":0.6
+	"researchCostMultiplier": 0.1
+}

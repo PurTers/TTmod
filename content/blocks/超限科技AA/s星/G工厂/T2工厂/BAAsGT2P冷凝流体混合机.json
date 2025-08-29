@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"name": "冷凝流体混合机",
+	"description": "利用各种物品合成冷凝流体\n\n[blue][超限技术中级工厂]",
+	"health": 360,
+		"outputLiquid": {"liquid": "00冷凝流体", "amount": 1},
+	"itemCapacity": 30
+	"liquidCapacity":30
+	"size": 3,
+    "hasItems": true,
+	"hasLiquids": true,
+	"solid": true,
+	"drawer":{
+	    "type":"DrawMulti",
+	    "drawers":[
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-bottom"
+	    },
+	    {
+	       "type":"DrawLiquidTile",
+	    "drawLiquid":"cryofluid"
+	    },
+	    "DrawDefault"
+	]},
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 30,
+	"consumes": {
+		"power": 8,
+		"items":{
+		"items":[
+		{"item":"titanium","amount":2}
+		{"item":"phase-fabric","amount":1}]}
+	"liquids": 
+	[{"liquid": "cryofluid", "amount": 1 }]
+		},
+	"requirements": [
+	{ "item": "titanium", "amount": 150 }
+	{ "item": "0铜铅合金", "amount": 120 },
+	{ "item": "graphite", "amount": 70 },
+	{ "item": "metaglass", "amount": 120}
+	{ "item": "1绝缘钢", "amount": 80},
+	{ "item": "1集成电路", "amount": 120 },
+	],
+	"category": "crafting",
+	"buildCostMultiplier":0.8
+	//"research": "专业冷却液工厂"
+}

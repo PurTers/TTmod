@@ -1,0 +1,27 @@
+{
+"localizedName": "冰冷山区(半成品)",
+	"description": "偏远而又寒冷的山区,但此地的矿产异常丰富,似乎现在被超限集团占领\n\n[blue][超限集团基地]\n\n[green](by 没有炮台的炮台s 作)",
+	"details":"[blue]导弹狂潮",
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":0
+    "difficulty":5
+    "research": {
+		"parent": "超限工艺-biomassFacility",
+		"objectives": [
+		"敬请期待"
+		"敬请期待1"
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-tarFields"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "超限工艺-nuclearComplex"
+			}
+			 {
+				"type": "SectorComplete",
+				"preset": "超限工艺-impact0078"
+			}
+			]}
+}

@@ -1,0 +1,16 @@
+{
+	"type": "GenericCrafter",
+	"name": "骨灰盒工厂",
+	"description": "生成群主骨灰盒。",
+	"outputItem": { "item": "ZZ骨灰盒", "amount": 1},
+	"size": 3,
+	"health":50,
+	"itemCapacity": 50,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 60,
+	"consumes": {
+		},
+"BuildVisibility":"sandboxOnly"
+}

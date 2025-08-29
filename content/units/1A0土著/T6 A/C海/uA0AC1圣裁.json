@@ -1,0 +1,191 @@
+{
+    "type": "naval",
+        "name":"圣裁"
+    "description": "永恒级单位，拥有一门特殊的轨道炮，他能够扫清一切障碍，内置单位建造厂，通过将单位装入火箭的方式来快速部署到战场。",
+    "speed": 0.4,
+    "hitSize": 84,
+    "health": 85000,
+    "rotateSpeed":0.62,
+        "armor": 35,
+    		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 1400,
+    "targetFlags": [
+        "factory",
+    ],
+    "abilities": [
+	{
+			"type": "SpawnDeathAbility",
+			"unit": "uA0AC1圣裁 (1)",
+			"amount": 1,
+			"randAmount": 0
+			"spread": 0,
+	    "faceOutwards": false,
+	},
+	]
+    "weapons": [
+        {
+            "name": "仲裁",
+            "reload": 600
+            "x": -27
+            "y": -32
+            "ejectEffect": "casing1",
+                        "shootSound":"missile",
+            "rotate":true
+            "mirror":false
+	"rotateSpeed":0.62,
+	"shoot":{
+		"shots":36
+	    "shotDelay":5
+		"type":"ShootAlternate",
+		"barrels":3,
+		"spread":6
+	},
+            "bullet": {
+                "type": "BasicBulletType",
+             "spawnUnit": "星辉导弹",
+             "speed": 0,
+            }
+        }
+        {
+            "name": "仲裁",
+            "reload": 600
+            "x": 27
+            "y": -32
+            "ejectEffect": "casing1",
+                        "shootSound":"missile",
+            "rotate":true
+            "mirror":false
+	"rotateSpeed":0.62,
+	"shoot":{
+		"shots":18
+	    "shotDelay":10
+		"type":"ShootAlternate",
+		"barrels":4,
+		"spread":6
+	},
+            "bullet": {
+                "type": "BasicBulletType",
+             "spawnUnit": "天垠导弹",
+             "speed": 0,
+            }
+        }
+                {
+            "name": "裁决",
+            "reload": 720
+            "x": 0
+            "y": 0
+            "shootSound":"railgun",
+            "ejectEffect": "casing1",
+            "mirror":false
+           "rotate": true
+	"rotateSpeed":0.45
+	"shootCone": 1
+	"shootStatusDuration": 300,
+	"shootStatus": "静止",
+	"shootY":20
+	"parentizeEffects": true,
+            "bullet":{
+"sprite":"超限工艺-尖刺",
+        "speed": 42
+	    "lifetime":20
+		"width": 24,"height": 72
+		"trailLength": 122,
+		"trailWidth": 12
+		"damage":12882
+		"shootEffect": "shootSmall",
+		"pierceCap": 3
+		"trailColor": "FF8E38FF",
+        "backColor": "FF8E38FF",
+		"frontColor": "F3E979FF",
+		"lightningDamage":64
+    "lightning":6
+    "lightningLength":16
+    "trailLength":8
+	"trailWidth":6
+	"lightningColor":"FF8E38FF"
+		"status": "sapped",
+		"statusDuration": 600
+		"splashDamageRadius":96,
+		"splashDamage": 2666,
+		
+		    "bulletInterval":1
+    "intervalRandomSpread":0
+    "intervalAngle":0,
+    "intervalBullets":4
+    "intervalBullet":{
+        "weaveScale": 3,
+        "weaveMag": 9,
+        "weaveRandom": true,
+        "speed": 2
+	    "lifetime":60
+		"width": 12,"height": 36
+		"trailLength": 61,
+		"trailWidth": 6
+		"damage":328
+		"shootEffect": "shootSmall",
+		"pierceCap": 6
+		"trailColor": "FF8E38FF",
+        "backColor": "FF8E38FF",
+		"frontColor": "F3E979FF",
+		"status": "slow",
+		"statusDuration": 300
+		"splashDamageRadius":24,
+		"splashDamage": 144,
+		"hitEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"F3E979FF",
+					"rotation":24
+				},
+		"fragRandomSpread":120
+		"fragAngle":120,
+		"fragBullets":3
+        "fragBullet":{
+        "despawnSound":"laser",
+        "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["F3E97980","F3E979FF","FFFFFF"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"lightningSpacing":35,
+	"lightningLength":6,
+	"lightningDelay":0.6,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":12,
+	"lightningColor":"F3E979FF",
+	"damage": 60,
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 70
+	"lifetime": 10,
+	"speed": 0
+"shake":2}
+    }
+    "hitEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"F3E979FF",
+					"rotation":96
+				},
+				"shootEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"F3E979FF",
+					"rotation":48
+				},
+	}}]
+    //"research":"omura"
+}

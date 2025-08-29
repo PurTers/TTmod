@@ -1,0 +1,122 @@
+{
+    "type": "mech",
+    "name":"电光(红温)"
+    "description": "以火花为基础研究出的特殊轻机甲，移动速度快，近战，武器威力和装甲也更高，通过快手拳击以击杀敌人\n\n[blue][超限技术作战中机甲]",
+    "speed": 1.9
+    "hitSize": 18
+    "health": 1620,
+    "allowedInPayloads":false
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+        "itemCapacity": 30
+    "targetGround":true,
+     "hidden": true,//是否隐藏？
+    "armor":12
+    "immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+	"abilities": [
+	{
+"type": "RegenAbility",
+"amount": 1.2
+}
+]
+    "weapons": [
+       {
+            "name": "电光",
+            "reload": 13
+            "x":3
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":180
+		    "rotationLimit": 0
+		    "mirror": true,
+		    "shootX":0
+	    "shootY":0
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": false
+        "x": 0
+        "y": 0
+        "suffix": "-手",
+        "layer": 59.9
+        "moveX": -1
+        "moveY": 10
+        "moveRot":0
+        "progress":"reload",
+        }
+			]
+            "bullet": {
+           "lightningDamage":16
+            "lightningColor": "c0ecffFF",
+    "lightning":4
+    "lightningLength":3
+		"killShooter":false,
+		"splashDamageRadius":28,
+		"instantDisappear":true,
+		"collides": false,
+		"splashDamage":66,
+		"speed":30,"lifetime":1
+		"hitEffect":"massiveExplosion",
+		"despawnEffect":{"type": "MultiEffect",
+			"effects": [
+			{"type": "ParticleEffect",
+			"particles": 18,
+			"sizeFrom": 6,
+			"sizeTo": 0,
+			"length": 45,
+			"baseLength": 3,
+			"lifetime": 35,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 9,
+			"sizeTo": 0,
+			"length": 53,
+			"baseLength": 20,
+			"lifetime": 22,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "WaveEffect",
+			"lifetime": 15,
+			"sizeFrom": 0,
+			"sizeTo": 70,
+			"strokeFrom": 4,
+			"strokeTo": 0,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff"}]},
+		"width":10	 
+		"height":8
+	"collidesAir": true
+    }}
+    {"name": "无",
+            "reload": 600
+            "x":6
+            "y":0
+            "alwaysShooting": true,
+            "minWarmup": 0.99
+             "inaccuracy": 0
+             "shootWarmupSpeed": 0.0032,
+             "showStatSprite": false
+    		"shootStatusDuration": 600,
+	"shootStatus": "自毁",
+    "bullet":{
+	         "damage":0
+	"width": 0.1
+	"length": 0.1
+	"lifetime": 0
+	               	}}
+    ]
+    //"research":"uAABT1C列兵"
+}

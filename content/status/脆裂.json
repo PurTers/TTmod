@@ -1,0 +1,17 @@
+{
+"name":"损伤",
+	"speedMultiplier":0.9,
+	"reloadMultiplier":0.85,
+	"effectChance":0.6,
+	"healthMultiplier":0.9,
+	"effect":{	"type": "ParticleEffect",
+	"particles": 1,  
+	"baseLength": 10,
+	"length":8,
+	"lifetime": 20,
+	"sizeFrom": 1,
+	"sizeTo": 0,
+	"colorFrom": " FFFFFFFF",
+	"colorTo": " FFFFFFFF",
+	"cone":360 }
+}

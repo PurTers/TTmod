@@ -1,0 +1,60 @@
+{
+	"type": "UnitFactory",
+	"name": "精锐单位工厂",
+	"description": "可以生产一些特种单位，极为强大，但是建造时间长，无法受到超速影响。\n \n[orange][全位算体精英兵工厂]",
+    "health":1640,
+	"size":3
+	"consumes":{"power":3.6},
+	"plans":[
+	{ "unit": "u1A1ha11利刃", 
+	"time": 2400, 
+	"requirements": [ 
+    { "item": "titanium", "amount": 10 }
+	{ "item": "metaglass", "amount": 30}
+	{ "item": "silicon", "amount": 50 },
+	{ "item": "graphite", "amount": 50},
+	]	},	
+	{ "unit": "u1A1hb11落星", 
+	"time": 1800, 
+	"requirements": [ 
+    { "item": "titanium", "amount": 15 }
+	{ "item": "silicon", "amount": 70 },
+	{ "item": "graphite", "amount": 60},
+	]	},	
+	{ "unit": "u1A1hb21幽影", 
+	"time": 1800, 
+	"requirements": [ 
+    { "item": "titanium", "amount": 35 }
+	{ "item": "silicon", "amount": 60 },
+	{ "item": "graphite", "amount": 50},
+	]	},	
+	{ "unit": "u1A1hb22幻象", 
+	"time": 2400, 
+	"requirements": [ 
+    { "item": "titanium", "amount": 45 }
+	{ "item": "metaglass", "amount": 45}
+	{ "item": "silicon", "amount": 80 },
+	{ "item": "graphite", "amount": 70},
+	]	},	
+	]
+	"requirements": [
+	{ "item": "silicon", "amount": 150 },
+	{ "item": "copper", "amount": 120}
+    { "item": "titanium","amount": 120},
+    { "item": "lead", "amount": 140},
+    { "item": "graphite", "amount": 90},	
+    ],
+	"category":"units",
+	"research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "超限工艺-facility32m"
+			}
+	]
+	}
+	"buildVisibility":"campaignOnly"
+	"researchCostMultiplier": 0
+	"canOverdrive": false,
+}

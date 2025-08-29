@@ -1,0 +1,16 @@
+{
+	"name": "大型铜铅合金墙",
+	"description": "使用铜和铅交替构造而成，简易而优质的墙体\n\n[blue][超限技术低级装甲墙]",
+	"type": "Wall",
+	"health": 1440,
+	"size":2,
+	//"insulated":true,//绝缘
+	"requirements": [
+	{ "item": "copper", "amount": 16} 
+	{ "item": "lead", "amount": 16} 
+	],
+	"category": "defense",
+	"research": "BAAsFA1铜铅合金墙"
+	"armor":1
+	"researchCostMultiplier": 0.5
+}
