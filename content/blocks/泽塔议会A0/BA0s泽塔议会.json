@@ -5,6 +5,7 @@
 	"health":500,
 	"armor":0,
 	"size": 3
+	"hasShadow":false
 	"category": "logic",
 	"type": "Wall",
 	"buildCostMultiplier":99999999
