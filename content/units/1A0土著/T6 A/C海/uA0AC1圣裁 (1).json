@@ -4,7 +4,7 @@
     "description": "永恒级单位，拥有一门特殊的轨道炮，他能够扫清一切障碍，内置单位建造厂，通过将单位装入火箭的方式来快速部署到战场。",
     "speed": 0.4,
     "hitSize": 84,
-    "health": 99999999,
+    "health": 1,
     "rotateSpeed":0,
         "armor": 0,
         "hidden": true,
@@ -17,14 +17,37 @@
     ],
     "weapons": [
     {
+		"reload": 99999999, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"alwaysShooting": true,
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootOnDeath":true,
+		"shootStatusDuration": 180
+		"shootStatus": "不灭",
+		"bullet":{
+		"width": 0,
+		"height": 0
+		"damage":0
+		"instantDisappear":true,
+		"collides": false,
+		"speed":9999,"lifetime":1,
+		"splashDamageRadius": 9999,
+				"splashDamage": 0,
+		}
+		}
+	{
 		"reload": 10, 
 		"x": 0,  "y": 0, 
 		"rotate": false,
 		"shootCone":360,
 		"ejectEffect":"none",
 		"shootSound":"explosionbig",
-		"shootWarmupSpeed": 0.006
-		"minWarmup": 0.99
 		"alwaysShooting": true,
 		"mirror":false,
 		"inaccuracy": 0,
@@ -33,7 +56,56 @@
 		"bullet":{
 		"width": 0,
 		"height": 0
-		"killShooter":true,
+		"damage":0
+		"instantDisappear":true,
+		"collides": false,
+		"speed":9999,"lifetime":1,
+		"splashDamageRadius": 9999,
+				"splashDamage": 0,
+		}
+		}
+	{
+		"reload": 10, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"alwaysShooting": true,
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootOnDeath":true,
+		"shootStatusDuration": 999
+	"shootStatus": "burning",
+		"bullet":{
+		"width": 0,
+		"height": 0
+		"damage":0
+		"instantDisappear":true,
+		"collides": false,
+		"speed":9999,"lifetime":1,
+		"splashDamageRadius": 9999,
+				"splashDamage": 0,
+		}
+		}
+    {
+		"reload": 10, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"alwaysShooting": true,
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootOnDeath":true,
+		"shootStatusDuration": 999
+	"shootStatus": "melting",
+		"bullet":{
+		"width": 0,
+		"height": 0
 		"damage":0
 		"instantDisappear":true,
 		"collides": false,
@@ -53,8 +125,6 @@
 		"mirror":false,
 		"inaccuracy": 360,
 		"alternate": true,
-		"shootStatusDuration": 999
-	"shootStatus": "不灭",
 		"bullet":{
 	"type" : "BasicBulletType",
 	"damage": 0
