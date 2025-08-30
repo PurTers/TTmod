@@ -65,5 +65,5 @@
 	"parent":"BA1sHA精锐工厂"
 	}
 	"researchCostMultiplier": 0,
-	"defaultController": "MinerAI",
+	"UnitCommand": "mineCommand",
 }

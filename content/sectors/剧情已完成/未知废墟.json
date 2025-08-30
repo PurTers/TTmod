@@ -5,7 +5,7 @@
     "captureWave":30//胜利波次
     "difficulty":3//难度1一5
     "research": {
-		"parent": "战役地图(超限工艺)",
+		"parent": "超限工艺-groundZero",
 		"objectives": [
 		"underflow-gate"
 		"distributor"

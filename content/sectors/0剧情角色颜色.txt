@@ -5,6 +5,7 @@
 "[orange]欧米茄：“”"
 "[#dc143cff]贝塔：“”"
 
+普雷尔
 
 accent重点
 gray灰色

@@ -66,14 +66,10 @@
     "research": {
 	"parent":"BA1sAT2A防卫"
 	"objectives": [
-	{
-				"type": "SectorComplete",
-				"preset": "超限工艺-stainedMountains"
-			}
-            /*{
+            {
 				"type": "SectorComplete",
 				"preset": "废弃研究所"
-			}*/
+			}
 	]
 	}
     "researchCostMultiplier": 0.2,

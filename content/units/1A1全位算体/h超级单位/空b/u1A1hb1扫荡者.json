@@ -17,10 +17,10 @@
 	"type":"PowerAmmoType",
 	"totalPower":100},
 	"ammoCapacity": 300,
-	    "health": 3540,
+	    "health": 2540,
 	"hitSize":24, 
 	"flying": true,
-	"armor":12
+	"armor":8
 	"engineOffset": 9,
 	"engineSize": 6,
 	"itemCapacity": 0,

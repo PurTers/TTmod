@@ -21,7 +21,7 @@
     "waveTrailY":-6,
     "trailScl":2,
 	"hitSize":22 
-	"health": 1360,
+	"health": 1860,
 	"armor":11,
 	"faceTarget": false,
 	//"maxRange": 400,

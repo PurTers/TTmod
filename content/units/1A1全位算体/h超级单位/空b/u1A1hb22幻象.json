@@ -45,14 +45,14 @@
 		"shootSound": "missile",
 		"bullet":{   
 	"splashDamage":6,
-	"splashDamageRadius":32,
+	"splashDamageRadius":48,
 	"speed":6
 	"lifetime":30,
 	"width":1,	 "height":3,
 	"hitEffect":"flakExplosion",
 	"despawnEffect":"flakExplosion"
 	"sprite":"missile-back",
-	"healPercent":2
+	"healPercent":1
 	 "collidesTeam":true,
             "homingRange": 20,
             "homingPower": 0.1,
@@ -69,5 +69,5 @@
 	"parent":"BA1sHA精锐工厂"
 	}
 	"researchCostMultiplier": 0,
-	"defaultController": "BuilderAI",
+	"UnitCommand": "rebuildCommand",
 }

@@ -58,15 +58,15 @@
     "rotateSpeed": 12,
     "range": 240,
     "category": "turret",
-    /*"research": {
+    "research": {
 	"parent":"BA1s超位算体"
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-facility32m"
+				"preset": "超限工艺-废弃研究所"
 			}
 	]
-	}*/
+	}
 	"researchCostMultiplier": 0
     "requirements": [
         { "item": "copper", "amount":160},

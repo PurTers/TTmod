@@ -10,10 +10,9 @@
 	{ "unit": "u1A1ha1狂战士", 
 	"time": 3600, 
 	"requirements": [ 
-{ "item": "titanium", "amount": 180 }
+{ "item": "titanium", "amount": 220 }
 	{ "item": "metaglass", "amount": 110}
-	{ "item": "thorium", "amount": 175 }
-	{ "item": "silicon", "amount": 350 },
+	{ "item": "silicon", "amount": 250 },
 	{ "item": "graphite", "amount": 210},
 	{ "item": "plastanium", "amount": 145}
 	]	},	
@@ -22,8 +21,7 @@
 	"requirements": [ 
 { "item": "titanium", "amount": 180 }
 	{ "item": "metaglass", "amount": 110}
-	{ "item": "thorium", "amount": 175 }
-	{ "item": "silicon", "amount": 350 },
+	{ "item": "silicon", "amount": 320 },
 	{ "item": "graphite", "amount": 210},
 	{ "item": "plastanium", "amount": 145}
 	]	},	
@@ -31,9 +29,8 @@
 	"time": 3600, 
 	"requirements": [ 
 { "item": "titanium", "amount": 180 }
-	{ "item": "metaglass", "amount": 110}
-	{ "item": "thorium", "amount": 175 }
-	{ "item": "silicon", "amount": 350 },
+	{ "item": "metaglass", "amount": 180}
+	{ "item": "silicon", "amount": 250 },
 	{ "item": "graphite", "amount": 210},
 	{ "item": "plastanium", "amount": 145}
 	]	},	
@@ -50,14 +47,10 @@
 	"research": {
 	"parent":"BA1sHA精锐工厂"
 	"objectives": [
-	{
+            {
 				"type": "SectorComplete",
-				"preset": "超限工艺-stainedMountains"
+				"preset": "超限工艺-废弃研究所"
 			}
-            /*{
-				"type": "SectorComplete",
-				"preset": "废弃研究所"
-			}*/
 	]
 	}
 	"buildVisibility":"campaignOnly"

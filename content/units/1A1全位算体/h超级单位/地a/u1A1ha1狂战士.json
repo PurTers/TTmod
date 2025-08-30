@@ -17,15 +17,15 @@
 	"totalPower":2200},
 	"ammoCapacity": 700
     "ammoResupplyAmount":1,/*弹药补给倍率 */
-    "health": 1680,
-    "armor": 7,
+    "health": 2280,
+    "armor": 12,
     "drag": 0.2,
     "rotateSpeed": 2.5,
     "itemCapacity": 30,
         "targetAir":true,  
     "targetGround":true,
 	"weapons":[{	"name": "狂战士1",	
-		"reload":96,
+		"reload":116,
         "x": 10,  "y": 0.9, 
        "rotate": false,
         "inaccuracy": 6,
@@ -49,7 +49,7 @@
 	"statusDuration":300,
 	}	}
 		{	"name": "狂战士3",	
-		"reload":30,
+		"reload":46,
         "x": -3,  "y": -1.5, 
         "rotate": true,
         "rotateSpeed":24,
@@ -58,8 +58,6 @@
 			"shots":3,
 			"shotDelay":7.5
 		},
-		"shootStatusDuration": 10,//发射时给自己的状态时间
-	"shootStatus": "静止",//发射时给自己的状态
 		"shootSound": "pew",
 		"rotateSpeed": 1,//炮台转头速度
 		"alternate": true,
@@ -73,7 +71,7 @@
 	"statusDuration":30,
 	}	}
 	{	"name": "狂战士3",	
-		"reload":30
+		"reload":46
         "x": -3,  "y": 1.5, 
         "rotate": true,
         "rotateSpeed":24,
@@ -97,29 +95,25 @@
 	"statusDuration":30,
 	}	}
 	{	"name": "狂战士2",	
-		"reload":3,
+		"reload":18,
         "x": 8,  "y": 0, 
        "rotate": false,
         "inaccuracy": 6,
         "shootSound": "flame",
 		"alternate": true,
 		"ejectEffect":"casing1",
-		"shootStatusDuration": 15,//发射时给自己的状态时间
-	"shootStatus": "静止",//发射时给自己的状态
 		"bullet":{
 			"type": "BulletType",
 			"hitSize":10,
 			"status": "burning",
-			"statusDuration": 180,
+			"statusDuration": 240,
 			"speed": 8,
 			"lifetime": 11,
-			"splashDamageRadius":35,
-	"splashDamage":30,
-			"ammoMultiplier": 3,
+			"damage":46
 			"collidesAir": false
         "collidesGround": true
         "makeFire": true,
-			"pierceCap": 6,
+			"pierceCap": 3,
 			"shootEffect": {
 				"type": "ParticleEffect",
 				"particles": 13,

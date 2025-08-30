@@ -110,11 +110,10 @@
 	    
 	}, 
 	"requirements": [
-{ "item": "copper", "amount": 65 }
-{ "item": "lead", "amount": 80 }
-{ "item": "thorium", "amount": 85 }
-{ "item": "titanium", "amount": 45 }
-{ "item": "graphite", "amount": 85 }
+{"item": "copper", "amount": 185  },
+{ "item": "thorium", "amount": 125 }
+{ "item": "titanium", "amount": 185 }
+{ "item": "graphite", "amount": 205 }
 	],
 	"category": "turret",
 	/*"research": {
