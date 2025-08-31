@@ -487,6 +487,7 @@
                         }
                     }
 ]
+                            "fragBullets": 1
                             "fragBullet": {
                              "type": "EmpBulletType",
 				"collidesTiles": true,//碰撞方块
@@ -650,6 +651,7 @@
                         }
                     }
 ]
+                            "fragBullets": 1
                             "fragBullet": {
                              "type": "EmpBulletType",
 				"collidesTiles": true,//碰撞方块

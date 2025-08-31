@@ -35,7 +35,7 @@
 				"type": "ExplosionBulletType",
 				"hitColor": "FFB381FF",
 				"splashDamage": 148,
-				"splashDamageRadius": 16,
+				"splashDamageRadius": 64,
 				"despawnShake": 3,
 				"fragVelocityMin": 4
 				"buildingDamageMultiplier":0.1

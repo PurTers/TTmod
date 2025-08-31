@@ -35,12 +35,13 @@
 				"type": "ExplosionBulletType",
 				"hitColor": "FFB381FF",
 				"splashDamage": 68,
-				"splashDamageRadius": 16,
+				"splashDamageRadius": 44,
 				"despawnShake": 3,
 				"fragVelocityMin": 4
 				"buildingDamageMultiplier":0.1
 				"status": "脆裂",
 			"statusDuration": 300
+			"fragBullets": 9
 				"fragBullet": {
 				"despawnEffect": "flakExplosionBig",
 				"width": 8,

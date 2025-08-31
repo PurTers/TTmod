@@ -34,13 +34,14 @@
 	"collidesAir": true
 				"type": "ExplosionBulletType",
 				"hitColor": "FFB381FF",
-				"splashDamage": 68,
-				"splashDamageRadius": 16,
+				"splashDamage": 168,
+				"splashDamageRadius": 22,
 				"despawnShake": 3,
 				"fragVelocityMin": 4
 				"buildingDamageMultiplier":0.1
 				"status": "脆裂",
-			"statusDuration": 300
+			"statusDuration": 600
+			"fragBullets": 3
 				"fragBullet": {
 				"despawnEffect": "flakExplosionBig",
 				"width": 8,
@@ -48,10 +49,9 @@
 				"buildingDamageMultiplier":0.1
 				"backColor": "FFFFFFFF",
 				"frontColor": "FFFFFFFF",
-				"splashDamageRadius": 12,
-				"splashDamage": 19,
-				"lifetime": 20,
-				"speed": 0.5
+				"damage": 44,
+				"lifetime": 30,
+				"speed": 3
 				 "buildingDamageMultiplier":0.2
 			}
 		}

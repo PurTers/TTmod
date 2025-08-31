@@ -76,7 +76,7 @@
 		"alternate": true,
 		"bullet":{
     "type":"BasicBulletType",
-    "speed": 19
+    "speed": 11
     "lifetime":20
 	"width": 6
 	"height": 6

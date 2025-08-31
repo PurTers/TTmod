@@ -12,8 +12,8 @@
 	"range": 500,
 		"targetGround": true,
 	"targetAir": true,
-		"maxAmmo":70
-    "ammoPerShot": 7
+		"maxAmmo":30
+    "ammoPerShot": 2
     "rotateSpeed": 0
      "shootX":0
 	    "shootY":0
@@ -60,6 +60,11 @@
 		 "pyratite": {
 	         "type": "BasicBulletType",
              "spawnUnit": "尾针导弹 (1)",
+             "speed": 0,
+		 }
+		 "graphite": {
+	         "type": "BasicBulletType",
+             "spawnUnit": "尾针导弹 (2)",
              "speed": 0,
 		 }
 	}, 

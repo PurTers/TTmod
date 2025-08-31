@@ -41,6 +41,7 @@
 				"buildingDamageMultiplier":0.1
 				"status": "破甲",
 			"statusDuration": 600,
+			"fragBullets": 9
 				"fragBullet": {
 				"despawnEffect": "flakExplosionBig",
 				"width": 8,
@@ -55,6 +56,7 @@
 				"status": "破甲",
 			"statusDuration": 300,
 				 "buildingDamageMultiplier":0.2
+				 "fragBullets": 3
 				 "fragVelocityMin": 4
 				 "fragBullet": {
 				"type": "ShrapnelBulletType",

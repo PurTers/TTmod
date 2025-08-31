@@ -42,6 +42,7 @@
 				"buildingDamageMultiplier":0
 				"status": "脆裂",
 			"statusDuration": 300
+			"fragBullets": 9
 				"fragBullet": {
 				"collidesGround": false
 				"collidesAir": true

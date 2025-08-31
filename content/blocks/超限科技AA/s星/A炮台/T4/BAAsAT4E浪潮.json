@@ -193,7 +193,7 @@
         "trailWidth":1
     "trailColor":"FF8E38FF",    
     "despawnEffect":"none"
-    
+    "intervalBullets":3
        "intervalBullet": {
         "type": "PointBulletType"
         "speed": 0.5
@@ -242,6 +242,7 @@
     "homingRange": 180
     "homingPower": 6
     "bulletInterval":4
+    "intervalBullets":1
        "intervalBullet": {
        "speed": 6,  
 	    "lifetime":30,

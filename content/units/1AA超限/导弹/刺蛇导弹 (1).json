@@ -41,6 +41,7 @@
 				"buildingDamageMultiplier":0.1
 				"status": "破甲",
 			"statusDuration": 600,
+			"fragBullets":9
 				"fragBullet": {
 				"status": "破甲",
 			"statusDuration": 120,

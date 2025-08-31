@@ -13,8 +13,8 @@
 		"targetGround": true,
 	"targetAir": true,
 	"liquidCapacity": 500,
-		"maxAmmo":50
-    "ammoPerShot": 10
+		"maxAmmo":30
+    "ammoPerShot": 3
     "rotateSpeed": 0
     "shootCone":360
      "minWarmup": 0.99

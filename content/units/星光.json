@@ -74,7 +74,7 @@
 			"statusDuration": 12
 "damage":3000
 "buildingDamageMultiplier":0.05
-"maxDamageFraction":0.01
+"maxDamageFraction":0.05
 	"shootEffect":{
     "type": "ParticleEffect",
     "particles": 5,
@@ -120,7 +120,7 @@
 			"statusDuration": 12
 "damage":300
 "buildingDamageMultiplier":0.5
-"maxDamageFraction":0.01
+"maxDamageFraction":0.05
 	"shootEffect":{
     "type": "ParticleEffect",
     "particles": 5,
@@ -162,7 +162,7 @@
 			"statusDuration": 120
 "damage":9999
 "buildingDamageMultiplier":1.5
-"maxDamageFraction":0.01
+"maxDamageFraction":0.05
 	"shootEffect":{
     "type": "ParticleEffect",
     "particles": 5,
@@ -199,7 +199,7 @@
 			"inaccuracy": 360
 		    "shootCone": 360,
 			"bullet":{
-			"maxDamageFraction":0.01
+			"maxDamageFraction":0.05
 			"buildingDamageMultiplier":3
 			"homingDelay":7
 			"sprite":"missile",
@@ -231,7 +231,7 @@
 			"inaccuracy": 30
 		    "shootCone": 30,
 			"bullet":{
-			"maxDamageFraction":0.01
+			"maxDamageFraction":0.05
 			"homingDelay":7
 			"sprite":"missile",
 			"speed":2
@@ -252,7 +252,7 @@
 			"statusDuration": 30,
 			"fragBullets": 1,
 			"fragBullet": {
-			"maxDamageFraction":0.01
+			"maxDamageFraction":0.05
 			"type":"BasicBulletType",
 		//"killShooter":true,
 		"splashDamageRadius":32,
@@ -297,7 +297,7 @@
 				},]
                 "fragBullets": 8,
 			"fragBullet": {
-			"maxDamageFraction":0.01
+			"maxDamageFraction":0.05
 			"type": "LaserBulletType",
 			                "lifetime": 120,
 			                "status": "disarmed",

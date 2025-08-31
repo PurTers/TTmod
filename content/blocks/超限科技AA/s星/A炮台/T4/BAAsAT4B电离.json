@@ -80,6 +80,7 @@
     "status": "electrified",
 			"statusDuration": 60
        },
+       "intervalBullets":3
        "intervalBullet": {
        "speed": 4,  
 	    "lifetime":0,

@@ -190,7 +190,7 @@
 	"height": 8,
 	"speed": 0,
 	"lifetime": 1,
-	"status": "freezing",
+	"status": "slow",
 			"statusDuration": 600,
 	//"pierceBuilding": true,
 		"collidesGround":true,

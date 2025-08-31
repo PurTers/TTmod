@@ -145,7 +145,7 @@
 	"lifetime":36,
       	"healPercent": 7.5
       	"splashDamageRadius":96
-	    "splashDamage":64
+	    "splashDamage":184
         "damage":33
         "collidesTeam":true,
         "weaveScale": 4,//数字越大摆动越大
@@ -193,7 +193,8 @@
 			"radiusTo": 96
 			"x": 0,    "y": 0,
 			},]
-               "fragVelocityMin": 32
+               //"fragVelocityMin": 32
+               "fragBullets": 1
 				 "fragBullet": {
         "type": "EmpBulletType",
         "healPercent": 12.5

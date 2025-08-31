@@ -17,6 +17,7 @@
     "trailScl":2,
 	"hitSize":16, 
 	"health": 18280,
+	"hidden":true,
 	"armor":16,
 	"maxRange": 450,
 	"shadowElevationScl": 0

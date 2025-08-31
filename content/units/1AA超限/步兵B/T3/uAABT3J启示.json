@@ -352,13 +352,13 @@
 			"trailSpacing": 8,
 			"damage": 80,
 			"hitShake": 6,
-			"lightningDamage": 4,
+			"lightningDamage": 14,
 			"lightning": 7,
-			"lightningLength": 15,
+			"lightningLength": 18,
 			"speed": 30
 			"lifetime": 1,
 			"lightningColor":"1878BF",
-			"fragBullets":3
+			"fragBullets":1
         "fragBullet":{
         "type": "EmpBulletType",
 				"timeIncrease": 0,//己方建筑加速倍率

@@ -45,7 +45,7 @@
       
       "trailEffect": "railTrail",
       "smokeEffect": "smokeCloud",
-      "buildingDamageMultiplier":0
+      "buildingDamageMultiplier": 0
      "fragRandomSpread":90
 				"fragBullets": 10
 			"fragBullet": {
@@ -57,7 +57,7 @@
 	    "lifetime":10
 	    "width":20
 	     "height":20
-	     "buildingDamageMultiplier":0
+	     "buildingDamageMultiplier": 0
              "hitEffect": {
                 "type":"ParticleEffect",
                 "particles": 5,
@@ -76,12 +76,12 @@
 		"sizeInterp": "pow3In",
 		}
              "despawnEffect": "none"
-             "buildingDamageMultiplier":0
+             "buildingDamageMultiplier": 0
         "fragLifeMin":0
 			"fragRandomSpread":10
 				"fragBullets": 10
 			"fragBullet": {
-				"buildingDamageMultiplier":0
+				"buildingDamageMultiplier": 0
 	    "damage":2.5
 	    "splashDamageRadius":16
 		"splashDamage":5
@@ -138,7 +138,6 @@
       "damage": 3160,
       "splashDamageRadius":24,
 	  "splashDamage":320
-      "buildingDamageMultiplier": 0
       "lightning": 8,
       "lightningLength": 17,
       "lightningDamage": 125,
@@ -148,7 +147,8 @@
       "hitShake": 7,
       "collidesTiles": true,
       "trailSpacing": 20,
-      "buildingDamageMultiplier":0
+      "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
       "trailEffect": "instTrail",
       "smokeEffect": "smokeCloud",
       "shootEffect": "instShoot",
@@ -161,7 +161,6 @@
       "damage": 380
       "splashDamageRadius":12,
 	  "splashDamage":32
-      "buildingDamageMultiplier": 0
       "lightning": 8,
       "lightningLength": 17,
       "lightningDamage": 55,
@@ -170,7 +169,8 @@
       "hitShake": 7,
       "collidesTiles": true,
       "trailSpacing": 20,
-      "buildingDamageMultiplier":0
+      "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
       "trailEffect": "instTrail",
       "smokeEffect": "smokeCloud",
       "shootEffect": "instShoot",
@@ -184,7 +184,6 @@
       "damage": 220,
       "splashDamageRadius":36
 	  "splashDamage":600
-      "buildingDamageMultiplier": 0
       "ammoMultiplier": 7
       "rangeChange": 300
       "speed": 1050,
@@ -192,7 +191,8 @@
       "hitShake": 7,
       "collidesTiles": true,
       "trailSpacing": 20,
-      "buildingDamageMultiplier":0
+      "buildingDamageMultiplier": 0
+"maxDamageFraction":0.75
       "trailEffect": "instTrail",
       "smokeEffect": "smokeCloud",
       "despawnEffect": "none" 
@@ -225,13 +225,13 @@
       "damage": 160,
       "splashDamageRadius":36
 	  "splashDamage":64
-      "buildingDamageMultiplier": 0
       "speed": 25,
       "lifetime":1
       "hitShake": 7,
       "collidesTiles": true,
       "trailSpacing": 20,
-      "buildingDamageMultiplier":0
+      "buildingDamageMultiplier": 0
+"maxDamageFraction":0.75
       "trailEffect": "instTrail",
       "smokeEffect": "none"
       "shootEffect": "none"
@@ -243,13 +243,13 @@
       "damage": 90,
       "splashDamageRadius":32,
 	  "splashDamage":44
-      "buildingDamageMultiplier": 0
       "speed": 25,
       "lifetime":1
       "hitShake": 7,
       "collidesTiles": true,
       "trailSpacing": 20,
-      "buildingDamageMultiplier":0
+      "buildingDamageMultiplier": 0
+"maxDamageFraction":0.75
       "trailEffect": "instTrail",
       "smokeEffect": "none"
       "shootEffect": "none"
@@ -299,13 +299,13 @@
       "damage": 40,
       "splashDamageRadius":32,
 	  "splashDamage":24
-      "buildingDamageMultiplier": 0
       "speed": 25,
       "lifetime":1
       "hitShake": 7,
       "collidesTiles": true,
       "trailSpacing": 20,
-      "buildingDamageMultiplier":0
+      "buildingDamageMultiplier": 0
+"maxDamageFraction":0.75
       "trailEffect": "instTrail",
       "smokeEffect": "none"    
       "shootEffect": "none" 
@@ -339,7 +339,8 @@
     "reloadMultiplier":0.15
       "type": "pointBulletType",
       "damage": 6250,
-      "buildingDamageMultiplier": 0
+      "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
       "ammoMultiplier": 1
       "speed": 750
       "lifetime":1
@@ -421,7 +422,8 @@
 			"type":"ShrapnelBulletType",
 	    "speed":5
 	    "damage":550
-	     "buildingDamageMultiplier": 0
+	    "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
 		"status":"破甲",
         "statusDuration": 240,
 	    "backColor":"FF7F24",
@@ -437,7 +439,8 @@
 			"type":"ShrapnelBulletType",
 	    "speed":1
 	    "damage":200
-	    "buildingDamageMultiplier": 0
+	    "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
 		"status":"脆裂",
 		"statusDuration": 60,
 	    "backColor":"FF7F24",
@@ -448,6 +451,192 @@
 		"height":  0.1
 		"knockback":0.25
 	    "hitEffect":"flakExplosion"
+			}
+			}
+    }
+    "00磁暴合金": {
+    "reloadMultiplier":0.5
+      "type": "pointBulletType",
+      "damage": 12750,
+      "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
+      "ammoMultiplier": 1
+      "speed": 750
+      "lifetime":1
+      "hitShake": 7,
+      "collidesTiles": true,
+      "trailSpacing": 20,
+      
+      "trailEffect": [
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"Length":0
+				"baseLength": -12,
+				"lifetime": 30,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 20,
+				"lenTo": 0,
+				"strokeFrom": 6,
+				"strokeTo": 0,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF",
+				"cone": 0
+			}
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"Length":0
+				"baseLength": -12,
+				"lifetime": 30,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 20,
+				"lenTo": 0,
+				"strokeFrom": 9,
+				"strokeTo": 0,
+				"colorFrom": "FF6547FF",
+				"colorTo": "FF6547FF",
+				"cone": 0
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"Length":0
+				"baseLength": -12,
+				"lifetime": 30,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 20,
+				"lenTo": 0,
+				"strokeFrom": 6,
+				"strokeTo": 0,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF",
+				"cone": 0
+			},
+			{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"FF6547FF",
+					"rotation":8
+				},
+			]
+      "smokeEffect": "smokeCloud",
+      "hitEffect": {
+                "type":"ParticleEffect",
+                "particles": 10,
+		"line": true,
+		"strokeFrom": 0.7,
+		"strokeTo": 0.5,
+		"lenFrom": 3,
+		"lenTo": 0,
+                "length": 16,
+                "baseLength": 0,
+                "lifetime": 20,
+                "colorFrom": "FF6547FF",
+                "colorTo": "FF6547FF",
+                "cone": 30,
+		"interp": "pow3Out",
+		"sizeInterp": "pow3In",
+		}
+		"shootEffect":{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"FF6547FF",
+					"rotation":12
+				},
+        "despawnEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"FF6547FF",
+					"rotation":64
+				},
+      "lightningDamage":155,
+            "lightningColor": "FF6547FF",
+    "lightning":8
+    "lightningLength":18
+       "fragBullets": 8
+			"fragBullet": {
+			"type":"ShrapnelBulletType",
+	    "speed":5
+	    "damage":780
+	    "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
+		"status":"electrified",
+        "statusDuration": 120,
+	    "backColor":"FF6547FF",
+	    "frontColor":"FF6547FF", 
+	    "trailColor":"FF6547FF",
+	    "lifetime":4,
+		"width": 0.8
+		"height":  0.2
+		"knockback":0.5
+	    "hitEffect":"flakExplosion"
+	    "lightningDamage":84,
+            "lightningColor": "FFFFFFFF",
+    "lightning":1
+    "lightningLength":14
+    "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "FF6547FF",
+                "colorTo": "FF6547FF",
+                "cone": 60
+ }
+    "despawnEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"FF6547FF",
+					"rotation":36
+				},
+	        "fragBullets": 4
+			"fragBullet": {
+			"type":"ShrapnelBulletType",
+	    "speed":1
+	    "damage":360
+	    "buildingDamageMultiplier": 0.1
+"maxDamageFraction":0.75
+		"status":"sapped",
+		"statusDuration": 60,
+	    "backColor":"FF6547FF",
+	    "frontColor":"FF6547FF", 
+	    "trailColor":"FF6547FF",
+	    "lifetime":50,
+		"width": 0.3
+		"height":  0.1
+		"knockback":0.25
+	    "hitEffect":"flakExplosion"
+	    "lightningDamage":44,
+            "lightningColor": "FF6547FF",
+    "lightning":1
+    "lightningLength":8
+    "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "FF6547FF",
+                "colorTo": "FF6547FF",
+                "cone": 60
+ }
+    "despawnEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"FF6547FF",
+					"rotation":18
+				},
 			}
 			}
     }

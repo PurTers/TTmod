@@ -279,6 +279,7 @@
                     }
 ]
 			"bulletInterval": 99,
+			"intervalBullets":3
         "intervalBullet":{
         "type": "LiquidBulletType",
 	"liquid": "slag",
