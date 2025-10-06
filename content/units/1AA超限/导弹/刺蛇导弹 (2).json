@@ -30,6 +30,7 @@
 			"shootOnDeath": true,
 			"shootSound": "plasmaboom",
 			"bullet": {
+			"killShooter":true,
 				"collidesGround": true
 	"collidesAir": true
 				"type": "ExplosionBulletType",

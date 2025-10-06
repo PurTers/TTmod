@@ -1,7 +1,7 @@
 {
 	"type": "flying",
 	"name":"幽影",
-	"description": "更为强大的独影，能够发射轻型修复导弹，拥有更大的在互聊和更快的采矿速度。",
+	"description": "更为强大的独影，能够发射轻型修复导弹，拥有更大的在互聊和更快的采矿速度。\n\n[orange][全位算体支援部队]",
 	"details":"武装牛车",
 "immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
@@ -9,7 +9,7 @@
 	"allowedInPayloads":false
 	"speed": 1.5
 	"accel":0.05,"drag":0.03,
-	"rotateSpeed":2,
+	"rotateSpeed":5,
 	"ammoType":"titanium",
 	"ammoCapacity": 300,
 	"hitSize":15, 

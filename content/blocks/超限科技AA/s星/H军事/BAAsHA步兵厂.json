@@ -53,9 +53,8 @@
 	{ "unit": "uAABT1L基础基座移动", 
 	"time": 1500, 
 	"requirements": [ 
-{ "item": "graphite", "amount": 45},
-{ "item": "silicon", "amount": 55}
-{ "item": "0铜铅合金", "amount": 65}
+{ "item": "silicon", "amount": 25}
+{ "item": "0铜铅合金", "amount": 35}
 	]	},	
 		{ "unit": "uAABT1N田螺", 
 	"time": 1200, 

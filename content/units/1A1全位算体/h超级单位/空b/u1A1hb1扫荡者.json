@@ -4,9 +4,9 @@
 	"description": "向附近的地面敌人发射海量导弹，每颗导弹中包含大量矿渣溶液，对建筑造成毁灭性打击，其激光主炮依旧有极端可怕的威胁。\n[orange][全位算体精英部队]",
 			"immunities": ["甲板损坏"
 			],
-	"speed": 1.75
+	"speed": 1.7
 	"drag":0.05,"accel":0.1,
-	"rotateSpeed":1.15,
+	"rotateSpeed":5,
 	"targetFlags":["battery","turret","core"],
 	"abilities": [
 	{

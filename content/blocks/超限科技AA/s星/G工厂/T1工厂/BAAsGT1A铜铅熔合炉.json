@@ -3,7 +3,7 @@
 	"name": "合金熔炉",
 	"health": 320,
 	"description": "简易的合金熔炉，能加工铜,铅,石墨从而制成基础合金，这是超限集团对基础资源的二次利用。\n\n[blue][超限技术低级工厂]",
-	"outputItem": { "item": "0铜铅合金", "amount": 3 },
+	"outputItem": { "item": "0铜铅合金", "amount": 4 },
 	"alwaysUnlocked": false,
 	"size": 2,
 	"craftEffect": "smoke",

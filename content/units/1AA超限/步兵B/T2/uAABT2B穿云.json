@@ -16,6 +16,8 @@
     "armor":8
     "itemCapacity": 30
     "targetFlags":["turret","core"],
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "weapons": [
        {
             "name": "穿云1",

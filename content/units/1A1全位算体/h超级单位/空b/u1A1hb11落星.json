@@ -1,10 +1,10 @@
 {
 	"type": "flying",
 	"name": "落星",
-	"description": "更加强大的星辉，能够发射导弹。",
+	"description": "星辉的强化版，向地面的敌人一次性发射两枚标准子弹并发射一发导弹。\n\n[orange][全位算体常规部队]",
 			"immunities": ["甲板损坏"
 	],
-	"speed": 1.6,	
+	"speed": 2.7,	
 	"drag":0.05,"accel":0.1,
 	"rotateSpeed":5,
 	"lowAltitude":true

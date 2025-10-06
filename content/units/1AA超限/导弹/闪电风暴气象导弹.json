@@ -59,6 +59,7 @@
     "rotateSpeed": 0,
     "shootSound": "none",
     "bullet": {
+    "killShooter":true,
     "collidesGround": true
 	"collidesAir": true
 				"type": "ExplosionBulletType",

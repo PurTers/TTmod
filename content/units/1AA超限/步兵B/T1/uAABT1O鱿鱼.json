@@ -9,6 +9,8 @@
     "hitSize": 12
     "health": 120,
     	"rotateSpeed": 2.1
+    	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     	"ammoType":"copper",
 	"ammoCapacity": 300,
         "targetAir":false,  

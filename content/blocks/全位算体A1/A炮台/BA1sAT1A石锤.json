@@ -1,0 +1,58 @@
+{
+    "type": "PowerTurret",
+    "name": "石锤",
+    "description": "对地火箭炮攻击，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
+    "targetAir": false,
+    "targetGround": true,
+    "insulated":true,
+    "health": 320,
+    "size": 1,
+    "heatColor": "turretHeat",
+    "shake": 0.2,
+    "inaccuracy": 5,
+    "recoil": 1,
+    "shootSound": "artillery",//子弹音效
+    "recoilTime": 10,
+    "buildCostMultiplier":2
+    "drawer":{"type":"DrawTurret",
+	    "basePrefix": "cwst-"
+	    }
+    "shootType": {
+    "sprite":"missile",
+			"speed": 4,
+			"lifetime": 50,
+			"width": 5,
+			"height": 10,
+			"knockback": 0.25,
+			"backColor": "FFFFFF",
+			"frontColor": "FFFFFF",
+			"shootEffect": "shootBig",
+			"splashDamageRadius": 35
+			"splashDamage": 18,
+			"hitEffect": "explosion",
+			"despawnEffect": "explosion"
+			"collidesGround":true
+			"collidesAir":false,
+			}
+    "consumes": {
+    },
+    "reload": 96,
+    "rotateSpeed": 12,
+    "range": 200,
+    "category": "turret",
+    "research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "超限工艺-facility32m"
+			}
+	]
+	}
+	"researchCostMultiplier": 0
+    "requirements": [
+        { "item": "copper", "amount":120},
+{ "item": "lead", "amount":80}
+    ]
+    "buildVisibility":"campaignOnly"
+}

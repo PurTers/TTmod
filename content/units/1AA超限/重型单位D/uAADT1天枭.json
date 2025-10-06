@@ -16,6 +16,8 @@
     "targetGround":true,
     "flying": true,
     "armor":8
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     	"maxRange": 400
     "targetFlags":["turret","battery","generator"],
     "engineColor": "c0ecff",

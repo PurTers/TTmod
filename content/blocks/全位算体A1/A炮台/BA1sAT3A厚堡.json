@@ -5,6 +5,7 @@
     "targetAir": true,
     "targetGround": true,
     "health": 4500,
+    "insulated":true,
     "size": 3,
     "heatColor": "turretHeat",
     "shake": 0.2,
@@ -14,8 +15,8 @@
     "shoot": {
     "shots":2,
         "type": "ShootAlternate",
-        "barrels": 3,
-        "spread": 2
+        "barrels": 2,
+        "spread": 4
         "shotDelay":18
     },
     "shootSound": "artillery",//子弹音效

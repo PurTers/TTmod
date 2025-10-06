@@ -1,0 +1,34 @@
+{
+    "type": "Reconstructor",
+	"name": "英雄单位修复工厂",
+	"description": "对于损坏的英雄单位的核心进行修复，无需消耗资源但时间长。\n \n[orange][全位算体英雄单位修复工厂]",
+	"size": 3,
+	"constructTime": 7200,
+	"consumes": {
+		"power": 5
+		}
+	"upgrades": [
+        ["布兰达", "u1A1M1布兰达"],
+        ["卡帕","u1A1M2卡帕"]
+        //["uAABT1C列兵","uAABT2C闪流"]
+       // ["uAABT1H火花","uAABT2H电光"]
+	],
+	"requirements": [
+	{ "item": "copper", "amount": 400},
+    { "item": "lead", "amount": 180},
+    { "item": "silicon", "amount": 110 },
+	],
+	"category": "units",
+	"research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+	"canOverdrive": false,
+	"buildVisibility":"campaignOnly"
+}

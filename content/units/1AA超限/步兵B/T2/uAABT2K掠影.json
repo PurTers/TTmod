@@ -25,6 +25,8 @@
 	"trailLength": 18,
 	"trailWidth": 2,
 	"itemCapacity": 10
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"abilities": [
         {
     "type":"ForceFieldAbility",

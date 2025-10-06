@@ -5,6 +5,8 @@
     "immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "hidden": false,//是否隐藏？
     "speed":0.35
     "hitSize": 218

@@ -20,6 +20,8 @@
 	"armor":8,
 	"faceTarget": false,
 	//"maxRange": 400,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"weapons":[
 		{"name": "机枪1",	
 			"shoot":{

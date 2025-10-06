@@ -17,9 +17,11 @@
     	"rotateSpeed": 1.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,
-        "targetAir":false,  
+        "targetAir":true,  
     "targetGround":true,
     "armor":0
+   "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "weapons": [
        {
             "name": "卫兵1",
@@ -81,6 +83,8 @@
 			"statusDuration": 46,
 			"buildingDamageMultiplier":2.5
             "fragBullets":1
+            "collidesGround":true
+		"collidesAir":true,
         "fragBullet":{
         "damage": 0
 			"lifetime":0,

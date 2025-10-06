@@ -15,6 +15,8 @@
 	"buildSpeed":1.2
 	"flying": true
 	"health":1280,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"armor":0
 	"mineTier":4
 	"mineSpeed":5

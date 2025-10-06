@@ -16,6 +16,8 @@
     "hovering":true
     "armor":8
     "itemCapacity": 5
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "parts": [
 		{
 			"type": "HoverPart",//悬浮特效

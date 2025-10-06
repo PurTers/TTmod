@@ -7,6 +7,8 @@
 	],
 	"speed":0.6,
 	"rotateSpeed":0.9,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"ammoType":{
 	"type":"PowerAmmoType",
 	"totalPower":100},

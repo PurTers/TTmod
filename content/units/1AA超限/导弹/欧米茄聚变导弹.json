@@ -33,6 +33,7 @@
 	"shootOnDeath": true,
 
 		"bullet": {
+		"killShooter":true,
 				"collidesGround": true
 	"collidesAir": true
 				"type": "ExplosionBulletType",

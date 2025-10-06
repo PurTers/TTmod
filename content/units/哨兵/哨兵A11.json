@@ -1,0 +1,190 @@
+{
+	"type": "flying",
+	"name": "哨兵A11",
+	"description": "[访问无效]",
+			"immunities": ["甲板损坏","disarmed","spore-slowed","slow","超限工艺-静止","unmoving"],
+	"speed": 1.9
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":2.15,
+	"targetFlags":["battery","turret","core"],
+	"abilities": [
+	{
+"type": "RegenAbility",
+"amount": 0.9
+},]
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":100},
+	"ammoCapacity": 300,
+	    "health": 1540,
+	"hitSize":24, 
+	"flying": true,
+	"armor":34
+	"engineOffset": 0,
+	"engineSize": 0,
+	"itemCapacity": 0,
+	"healColor": "000000"
+  "shieldColor": "000000"
+	"parts": [
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 0,//X位置
+			"y": 0,//Y位置
+			"radius": 30,//大小
+			"color": "010101FF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 6,//圈子界限
+			"stroke": 1,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 0,//X位置
+			"y": 0,//Y位置
+			"radius": 15,//大小
+			"color": "010101FF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		]
+		"weapons":[
+		{
+       	"name": "无",
+       	"x": 0
+            "y": 0
+			"shake": 8,
+			"reload": 120
+			"rotate":false
+			"shootCone": 360,
+			"shootSound":"laserblast",
+			"shoot":{
+			"type": "ShootSpread",
+			"barrels": 6
+		"spread": 5
+			"shots":6,
+		},
+			                "bullet":{
+			                "type": "LaserBulletType",
+			                "lifetime": 120,
+			                "status": "disarmed",
+			"statusDuration": 12
+"damage":360
+"buildingDamageMultiplier":0.05
+"maxDamageFraction":0.05
+	"shootEffect":{
+    "type": "ParticleEffect",
+    "particles": 5,
+    "line": true,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "length": 15,
+    "baseLength": 0,
+    "lifetime": 15,
+    "colorFrom": "010101FF",
+    "colorTo": "010101FF",
+    "cone": 30},
+"collidesTeam":true,
+"pierceCap":999
+"pierceBuilding":true
+"removeAfterPierce":false
+"collideTerrain":true
+"sideAngle":55,
+"sideWidth":7,
+"sideLength":7,
+"lifetime": 10
+"colors":["FFFFFF", "010101FF", "FFFFFF"],
+"width":4, "length":280
+"fragLifeMin":0
+"shootSound":"laserblast",
+
+"fragBullets": 1
+"fragBullet": {
+"maxDamageFraction":0.05
+			"type":"BasicBulletType",
+		//"killShooter":true,
+		"splashDamageRadius":32,
+		"splashDamage":240,
+		"speed":0.25,"lifetime":300,
+				 "width":6,	 "height":6
+				 "backColor": "010101FF",
+				"frontColor": "010101FF",
+				 "trailLength":3
+    "trailWidth":1.5,
+    "trailColor":"010101FF",
+    "pierce":true
+    "pierceBuilding":true
+    "buildingDamageMultiplier":10
+    "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "010101FF",
+                        "color2": "FFFFFF",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+                "despawnEffect": [{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"010101FF",
+					"rotation":2
+				},
+				{
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"FFFFFF",
+					"rotation":4
+				},]
+				"fragBullets": 1
+"fragBullet": {
+"maxDamageFraction":0.05
+			"type": "LaserBulletType",
+			                "lifetime": 120,
+			                "status": "disarmed",
+			"statusDuration": 12
+"damage":120
+"buildingDamageMultiplier":10
+	"shootEffect":{
+    "type": "ParticleEffect",
+    "particles": 5,
+    "line": true,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "length": 15,
+    "baseLength": 0,
+    "lifetime": 15,
+    "colorFrom": "010101FF",
+    "colorTo": "010101FF",
+    "cone": 30},
+"collidesTeam":true,
+"sideAngle":55,
+"sideWidth":7,
+"sideLength":7,
+"lifetime": 10
+"colors":["FFFFFF", "010101FF", "FFFFFF"],
+"width":12, "length":80
+"fragLifeMin":0
+"shootSound":"laserblast",
+}}
+	}
+			}
+
+]
+}

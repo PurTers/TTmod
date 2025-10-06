@@ -27,6 +27,8 @@
 	"trailLength": 18,
 	"trailWidth": 2,
 	"itemCapacity": 5
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"abilities": [
 	{
 "type": "RegenAbility",
@@ -35,35 +37,52 @@
 ]
     "weapons": [
    {	"name": "无",	
-		"reload": 540, 
+		"reload": 270, 
 		"x": 0,  "y": 0, 
 		"rotate": false,
 		"shootCone":360,
 		"ejectEffect":"none",
 		"shootSound":"explosionbig",
 		"mirror":false,
-		"inaccuracy": 0,
+		"inaccuracy": 360,
+		"minShootVelocity":0.1
 		"alternate": true,
 		//"shootOnDeath":true,
 		 "shoot":{
 	    "type": "ShootAlternate",
 		"barrels": 4
 		"spread": 6
-		"shots":12
-		"shotDelay":10,
+		"shots":6
+		"shotDelay":30,
 	},
 		"bullet":{
+		"type":"BasicBulletType",
+		"maxRange":60
 		"lightningDamage":19,
             "lightningColor": "c0ecffFF",
     "lightning":4
     "lightningLength":12
 		//"killShooter":true,
+		"sprite":"large-bomb"
 		"splashDamageRadius":32,
-		"instantDisappear":true,
+		"keepVelocity":false,//受惯性影响
+		//"instantDisappear":true,
 		"collides": false,
+		"collidesGround":true,
+		"collidesAir":false,
 		"splashDamage":66,
-		"speed":1,"lifetime":60,
+		"speed":0.1,"lifetime":120,
+		"drag":0.005
 		"hitEffect":"massiveExplosion",
+		"width":8,	 "height":8
+		"backColor": "c0ecff",
+		"frontColor": "c0ecff",
+		"trailLength":3
+		"trailWidth":0.25,
+		"trailColor":"1878BF",
+		"spin":2
+        "shrinkX":0.3
+        "shrinkY":0.3
 		"despawnEffect":{"type": "MultiEffect",
 			"effects": [
 			    {
@@ -89,7 +108,6 @@
 				    "colorTo": "c0ecff"
 				}
 				]},
-		"width":1,	 "height":1
  "fragBullets":1
         "fragBullet":{
         "type": "EmpBulletType",
@@ -103,6 +121,8 @@
 				"pierce": true,//穿透单位
 				"splashDamageRadius": 16,
 				"splashDamage": 12,
+				"collidesGround":true,
+			    "collidesAir":false,
 				"width": 0,
 				"height": 0,
 				"damage": 10,

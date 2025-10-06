@@ -21,6 +21,8 @@
 	"health": 46460,
 	"armor":45,
 	"faceTarget": false,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"abilities": [
     {
         "type": "RepairFieldAbility"

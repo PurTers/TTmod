@@ -1,0 +1,280 @@
+{
+	"type": "flying",
+	"name":"重工[移动]",
+	"description": "超限集团转移基地时会一并带走的移动兵工厂,部署之后会伸出底部的钻头,从地下挖掘部分矿物在经过简易加工建造的一些简单的战斗单位,同时开启回复立场,带有一定的建造能力，部署之后40秒之内不能收起工厂。\n \n[blue][超限集团移动兵工厂]",
+	"immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+	"details":"他在飞行时还是个很好用的采矿机",
+	"speed": 0.2
+	"accel":0.05,"drag":0.03,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
+	"rotateSpeed":0.5
+	"ammoType":"titanium",
+	"ammoCapacity": 300,
+	"hitSize":24, 
+	"buildSpeed":1.2
+	"flying": true
+	"health":1280,
+	"armor":0
+	"mineTier":4
+	"mineSpeed":5
+	"engineOffset": 0,
+	"engineSize": 0, 
+	"itemCapacity": 300
+	    "abilities": [
+        {
+        "type": "RepairFieldAbility"
+        "amount":324
+        "reload": 300
+        "range": 64
+    }
+    ]
+    "weapons": [
+	{
+            "name": "超限重拳1",
+            "reload": 94
+            "x":0
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "minWarmup": 0.99
+		    "shootWarmupSpeed": 0.0064,
+		    "shootCone": 360,
+    "parts": [
+        {"type":"RegionPart",
+        "mirror":true
+        "under":true
+        //"x": 0,"y": 0
+        "x":-10,"y":-10,
+        "suffix":"-上底"
+        "layer":59.9,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.5
+                            "end": 0.9
+                        }
+                        "x":10
+                        "y":10
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {"type":"RegionPart",
+        "mirror":true
+        "under":true
+        //"x": 0,"y": 0
+        "x":-10,"y":10,
+        "suffix":"-下底"
+        "layer":59.9,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.5
+                            "end": 0.9
+                        }
+                        "x":10
+                        "y":-10
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {"type":"RegionPart",
+        "mirror":true
+        "under":true
+        //"x": 0,"y": 0
+        "x":-10,"y":-10,
+        "suffix":"-上左右"
+        "layer":59.9,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.5
+                            "end": 0.9
+                        }
+                        "x":10
+                        "y":10
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {"type":"RegionPart",
+        "mirror":true
+        "under":true
+        //"x": 0,"y": 0
+        "x":-10,"y":10,
+        "suffix":"-下左右"
+        "layer":59.9,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.5
+                            "end": 0.9
+                        }
+                        "x":10
+                        "y":-10
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {"type": "RegionPart",
+        "mirror": false
+        "under":true,
+        "x": 0,"y": 0
+        //"x": 0,"y": -10
+        "suffix": "-边上",
+        "layer": 59.9
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.5
+                        }
+                        "x":0
+                        "y":-10
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {"type":"RegionPart",
+        "mirror":false
+        "under":true,
+        "x": 0,"y": 0
+        //"x":0,"y":10,
+        "suffix":"-边下"
+        "layer":59.9
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.5
+                        }
+                        "x":0
+                        "y":10
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {"type":"RegionPart",
+        "mirror":true
+        "under":true
+        "x": 0,"y": 0
+        //"x":-10,"y":0,
+        "suffix":"-边左右"
+        "layer":59.9,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.5
+                        }
+                        "x":-10
+                        "y":0
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+			]
+			"showStatSprite": false
+			"shootStatusDuration": 600,
+	"shootStatus": "自毁",
+    "bullet":{
+	         "type": "BasicBulletType",
+             "spawnUnit": "uAACCCA1超限重拳工厂",
+             "speed": 0,
+	               	}}
+	               	{
+		"reload": 99999999, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"alwaysShooting": true,
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootStatusDuration": 180
+	"shootStatus": "静止",
+		"bullet":{
+		"width": 0,
+		"height": 0
+		"damage":0
+		"instantDisappear":true,
+		"collides": false,
+		"speed":9999,"lifetime":1,
+		"splashDamageRadius": 9999,
+				"splashDamage": 0,
+		}
+		}
+		{
+		"reload": 99999999, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"alwaysShooting": true,
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootStatusDuration": 2400
+	"shootStatus": "disarmed",
+		"bullet":{
+		"width": 0,
+		"height": 0
+		"damage":0
+		"instantDisappear":true,
+		"collides": false,
+		"speed":9999,"lifetime":1,
+		"splashDamageRadius": 9999,
+				"splashDamage": 0,
+		}
+		}
+    ]
+    /* "research": {
+	"parent":"uAACCA1基础基座移动"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+}

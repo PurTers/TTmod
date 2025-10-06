@@ -18,6 +18,8 @@
 	"hitSize":48, 
 	"health": 89280,
 	"armor":80,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"shadowElevationScl": 0
 	"drawMinimap":false
 	"weapons":[

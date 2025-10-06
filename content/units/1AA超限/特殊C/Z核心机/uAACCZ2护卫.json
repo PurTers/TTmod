@@ -43,6 +43,8 @@
 	"buildSpeed":1
 	"mineTier":1
 	"mineSpeed":3
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"faceTarget": true,
 	"weapons": [
 	{

@@ -1,0 +1,83 @@
+{
+		"immunities": ["甲板损坏","disarmed","spore-slowed","slow","超限工艺-静止","unmoving"
+	],
+	"name": "哨兵A01",
+	"type": "flying",
+	"description": "[访问无效]",
+	"health": 800,
+	"armor": 26,
+	"speed": 3
+	"lifetime": 120
+	"maxRange": 20
+	"rotateSpeed": 0.1
+	"engineColor": "000000",
+	"trailColor": "FFFFFF",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"trailWidth":2
+	"missileAccelTime": 0,
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "000000",
+	"healColor": "000000"
+  "shieldColor": "000000"
+  "destructibleWreck": false, //破坏性残骸（飞行专属）.死掉是否掉落砸向地面造成伤害。false是直接爆炸。
+  "createWreck": false,//残骸
+    "createScorch": false,//燃烧痕迹
+	"abilities": [
+	{
+"type": "RegenAbility",
+"amount": 6
+},]
+	"parts": [
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 0,//X位置
+			"y": 0,//Y位置
+			"radius": 20,//大小
+			"color": "010101FF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 6,//圈子界限
+			"stroke": 1,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 0,//X位置
+			"y": 0,//Y位置
+			"radius": 10,//大小
+			"color": "010101FF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		]
+	"weapons": [
+		{
+			"shootCone": 1,
+			"mirror": false,
+			"reload": 1,
+			"shake": 10,
+			"shootOnDeath": true,
+			"shootSound": "plasmaboom",
+			"inaccuracy": 0,
+			"shoot": {
+        "shots": 6
+        "shotDelay": 0
+    },
+			"bullet": {
+			"killShooter":true,
+				"type": "BasicBulletType",
+             "spawnUnit": "哨兵A01 (1)",
+             "speed": 0,
+		}
+		}
+	],
+}

@@ -32,8 +32,8 @@
 			"height": 18,
 			"shootEffect":"shootSmall",
 	     	"statusDuration":360,	
-	     	"backColor":"d99d73",
-			"frontColor":"d99d73"
+	     	"backColor":"d39169",
+			"frontColor":"eac1a8"
 			"trailWidth":1.5,
 			"trailLength":8
     "trailColor":"d99d73",
@@ -48,8 +48,8 @@
 			"height": 18,
 			"shootEffect":"shootSmall",
 	     	"statusDuration":360,	
-	     	"backColor":"b2c6d2",
-			"frontColor":"b2c6d2"
+	     	"backColor":"7d89d8",
+			"frontColor":"dae1ee"
 			"trailWidth":1.5,
 			"trailLength":8
     "trailColor":"b2c6d2",

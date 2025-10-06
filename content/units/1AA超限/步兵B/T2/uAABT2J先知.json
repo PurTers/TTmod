@@ -24,6 +24,8 @@
 	"trailLength": 18,
 	"trailWidth": 2,
 	"itemCapacity": 25
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"abilities": [
     {
     "type": "ShieldArcAbility",
@@ -35,6 +37,7 @@
 		"cooldown": 20,//护盾冷却时间
 		"angle": 180,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":false
 	}
     ]
     "weapons": [

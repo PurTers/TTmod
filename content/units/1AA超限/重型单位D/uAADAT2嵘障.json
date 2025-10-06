@@ -15,6 +15,8 @@
 	"legSplashDamage":88
 	"legSplashRange":24
 	//"hidden": true
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 				"immunities": [
 "wet","spore-slowed","tarred","shocked","electrified","脆裂","甲板损坏"
 	],
@@ -29,6 +31,7 @@
 		"cooldown": 80,//护盾冷却时间
 		"angle": 180,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":false
 	}
 	{
         "type": "RepairFieldAbility"

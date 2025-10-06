@@ -1,0 +1,10 @@
+{
+	"research": {
+		"parent": "melter",
+		"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "超限工艺-废弃研究所"
+			}
+			]}
+}

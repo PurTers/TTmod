@@ -1,11 +1,13 @@
 {
 	"type": "naval",
-	"name": "狼群",
+	"name": "狼群X",
 	"description": "超限集团的水下特殊单位，能够悄无声息的摧毁敌方舰船。\n\n[red]此单位不会在小地图上显示！！！\n\n[blue][超限技术特种单位]\n\n[贴图by为反复试听]",
 		"immunities": [
 "wet","spore-slowed","tarred","freezing","tarred","甲板损坏"
 	],
 	"speed":0.5,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"rotateSpeed":0.8,
 	"ammoType":{
 	"type":"PowerAmmoType",
@@ -18,7 +20,7 @@
 	"hitSize":16, 
 	"health": 18280,
 	"hidden":true,
-	"armor":16,
+	"armor":22,
 	"maxRange": 450,
 	"shadowElevationScl": 0
 	"drawMinimap":false

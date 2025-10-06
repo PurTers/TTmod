@@ -28,6 +28,8 @@
     	"ammoType":"copper",
 	"ammoCapacity": 300,
         "targetAir":false,  
+        "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "targetGround":true,
     "armor":0
     	"abilities": [

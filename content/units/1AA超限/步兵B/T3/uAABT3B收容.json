@@ -5,15 +5,17 @@
     "immunities": [
 		"wet","spore-slowed","甲板损坏"
 	],
-    "speed": 0.75
+    "speed": 0.6
     "hitSize": 24
-    "health": 7640,
+    "health": 8280,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,
         "targetAir":false,  
     "targetGround":true,
     "armor":12
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "itemCapacity": 30
     "abilities": [
 	{

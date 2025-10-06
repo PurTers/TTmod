@@ -10,6 +10,8 @@
 	"speed": 0
 	"accel":0.05,"drag":0.03,
 	"rotateSpeed":0,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"ammoType":"titanium",
 	"ammoCapacity": 300,
 	"hitSize":24, 

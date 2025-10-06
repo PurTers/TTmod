@@ -7,7 +7,7 @@
 	],
     "speed": 1.5
     "hitSize": 18
-    "health": 1620,
+    "health": 2220,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,
@@ -15,6 +15,8 @@
         "itemCapacity": 30
     "targetGround":true,
     "armor":12
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "abilities": [
     {
     "type": "ShieldArcAbility",
@@ -25,6 +27,7 @@
 		"cooldown": 160,//护盾冷却时间
 		"angle": 190,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":false
 	}
 	 {
         "type": "RepairFieldAbility"
@@ -32,12 +35,6 @@
         "reload":60
         "range": 1
     }
-    {//死亡时产生单位
-			"type": "SpawnDeathAbility",
-			"unit": "电光1",
-			"amount": 1,//固定数量
-			"randAmount": 0//随机数量
-	}
 	{
 "type": "RegenAbility",
 "amount": 1.2
@@ -46,7 +43,7 @@
     "weapons": [
        {
             "name": "电光",
-            "reload": 23
+            "reload": 16
             "x":6
             "y":0
              "inaccuracy": 0

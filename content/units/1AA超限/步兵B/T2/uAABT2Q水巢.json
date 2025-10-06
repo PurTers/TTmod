@@ -20,6 +20,8 @@
 	"armor":4,
 	"faceTarget": false,
 	"maxRange": 450,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	    "abilities": [/*能力（如力场防御等） */
         {
         "type": "RepairFieldAbility"

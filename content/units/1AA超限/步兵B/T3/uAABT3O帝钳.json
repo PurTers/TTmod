@@ -13,6 +13,8 @@
 	"ammoCapacity": 300,
         "targetAir":false,  
     "targetGround":true,
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "hovering":true
     "canDrown": false,
     "armor":11
@@ -35,6 +37,7 @@
 		"cooldown": 160,//护盾冷却时间
 		"angle": 61,//护盾弧度
 		"angleOffset": -90//护盾角度
+		"pushUnits":false
 	}
 	{
     "type": "ShieldArcAbility",
@@ -46,6 +49,7 @@
 		"cooldown": 160,//护盾冷却时间
 		"angle": 59,//护盾弧度
 		"angleOffset": 90//护盾角度
+		"pushUnits":false
 	}
     ]
     "parts": [

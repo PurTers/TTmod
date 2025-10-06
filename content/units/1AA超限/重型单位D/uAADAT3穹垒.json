@@ -16,6 +16,8 @@
 	"legSplashRange":24
 	"legContinuousMove":true
 	"lockLegBase":true
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"description": "绝对强大的移动要塞，后部装有持续发射火箭弹的蜂巢炮，中部有一门将激光散射的光棱炮，前端拥有两门破碎炮负责辅助的攻击，近战可以将敌人切割。\n\n[blue][超限技术重型单位]",
 				"immunities": [
 "burning","freezing","melting","wet","spore-slowed","shocked","electrified","列阵","甲板损坏"
@@ -31,6 +33,7 @@
 		"cooldown": 120,//护盾冷却时间
 		"angle": 180,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":true
 	}
 	{
         "type": "RepairFieldAbility"

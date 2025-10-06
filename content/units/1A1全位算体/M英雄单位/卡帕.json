@@ -26,31 +26,14 @@
 "amount": 99999
 },
 		]
-		"weapons":[
-	{
-            "name": "无",
-            "reload": 94
-            "x":0
-            "y":0
-             "inaccuracy": 0
-            "shootSound":"blaster",
-            "ejectEffect": "casing1",
-            "rotate": false
-			"baseRotation":0
-			"minWarmup": 0.99
-			"shootCone":15
-		    "rotationLimit": 0
-		    "mirror": false,
-		    "minWarmup": 0.99
-		    "shootWarmupSpeed": 0.00032,
-		    "linearWarmup": true,
-		    "shootCone": 360,
-			"showStatSprite": false
-			"shootStatusDuration": 600,
-	"shootStatus": "自毁",
-    "bullet":{
-	         "type": "BasicBulletType",
-             "spawnUnit": "u1A1M2卡帕",
-             "speed": 0,
-	               	}}]
+		"researchCostMultiplier": 0,
+	               	"research": {
+	"parent":"u1A1M2卡帕"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "facility32m"
+			}
+	]
+	}
 }

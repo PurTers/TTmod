@@ -12,6 +12,8 @@
 	"type":"PowerAmmoType",
 	"totalPower":100},
 	"ammoCapacity": 60,    
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"hovering":true
     "canDrown": false,
 	"hitSize":36, 
@@ -49,6 +51,7 @@
 			"cooldown": 60,
 			"angle": 0,
 			"angleOffset": 0
+			"pushUnits":false
 		},
 		{
 			"type": "ShieldArcAbility",
@@ -59,6 +62,7 @@
 			"cooldown": 60,
 			"angle": -90
 			"angleOffset": 0
+			"pushUnits":false
 		},
 		{
 			"type": "ShieldArcAbility",
@@ -69,6 +73,7 @@
 			"cooldown": 60,
 			"angle": 90
 			"angleOffset": 0
+			"pushUnits":false
 		},
 		{
 			"type": "ShieldArcAbility",
@@ -79,6 +84,7 @@
 			"cooldown": 60,
 			"angle": 180
 			"angleOffset": 0
+			"pushUnits":false
 		},
 		{
         "type": "EnergyFieldAbility"

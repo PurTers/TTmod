@@ -457,9 +457,9 @@
     "00磁暴合金": {
     "reloadMultiplier":0.5
       "type": "pointBulletType",
-      "damage": 12750,
-      "buildingDamageMultiplier": 0.1
-"maxDamageFraction":0.75
+      "damage": 14750,
+      "buildingDamageMultiplier": 0.01
+"maxDamageFraction":0.95
       "ammoMultiplier": 1
       "speed": 750
       "lifetime":1
@@ -559,88 +559,51 @@
     "lightningLength":18
        "fragBullets": 8
 			"fragBullet": {
-			"type":"ShrapnelBulletType",
-	    "speed":5
-	    "damage":780
-	    "buildingDamageMultiplier": 0.1
-"maxDamageFraction":0.75
-		"status":"electrified",
-        "statusDuration": 120,
-	    "backColor":"FF6547FF",
-	    "frontColor":"FF6547FF", 
-	    "trailColor":"FF6547FF",
-	    "lifetime":4,
-		"width": 0.8
-		"height":  0.2
-		"knockback":0.5
-	    "hitEffect":"flakExplosion"
-	    "lightningDamage":84,
-            "lightningColor": "FFFFFFFF",
-    "lightning":1
-    "lightningLength":14
-    "shootEffect": {
-                "type": "ParticleEffect",
-                "particles": 9,
-                "sizeFrom": 9,
-                "sizeTo": 0,
-                "line": true,
-                "length": 55,
-                "baseLength": 0,
-                "lifetime": 15,
-                "colorFrom": "FF6547FF",
-                "colorTo": "FF6547FF",
-                "cone": 60
- }
-    "despawnEffect": {
+			"speed": 30,
+			"damage": 0,
+			"lifetime":5,
+			"width": 12,
+			"height": 18,
+					"splashDamageRadius":30,
+		"splashDamage":300
+	     	"backColor":"FF654700",
+			"frontColor":"FF654700"
+			"pierce": true,
+        "despawnEffect": {
 					"type":"WrapEffect",
 					"effect":"dynamicSpikes",
 					"color":"FF6547FF",
-					"rotation":36
+					"rotation":64
 				},
-	        "fragBullets": 4
-			"fragBullet": {
-			"type":"ShrapnelBulletType",
-	    "speed":1
-	    "damage":360
-	    "buildingDamageMultiplier": 0.1
-"maxDamageFraction":0.75
-		"status":"sapped",
-		"statusDuration": 60,
-	    "backColor":"FF6547FF",
-	    "frontColor":"FF6547FF", 
-	    "trailColor":"FF6547FF",
-	    "lifetime":50,
-		"width": 0.3
-		"height":  0.1
-		"knockback":0.25
-	    "hitEffect":"flakExplosion"
-	    "lightningDamage":44,
+      "lightningDamage":65,
             "lightningColor": "FF6547FF",
-    "lightning":1
-    "lightningLength":8
-    "shootEffect": {
-                "type": "ParticleEffect",
-                "particles": 9,
-                "sizeFrom": 9,
-                "sizeTo": 0,
-                "line": true,
-                "length": 55,
-                "baseLength": 0,
-                "lifetime": 15,
-                "colorFrom": "FF6547FF",
-                "colorTo": "FF6547FF",
-                "cone": 60
- }
-    "despawnEffect": {
+    "lightning":8
+    "lightningLength":18
+			"bulletInterval":1
+				 "intervalBullets":1
+        "intervalBullet":{
+        "speed": 6,
+			"damage": 0,
+			"lifetime":45,
+			"width": 12,
+			"height": 18,
+					"splashDamageRadius":30,
+		"splashDamage":130
+	     	"backColor":"FF654700",
+			"frontColor":"FF654700"
+        "despawnEffect": {
 					"type":"WrapEffect",
 					"effect":"dynamicSpikes",
 					"color":"FF6547FF",
-					"rotation":18
+					"rotation":32
 				},
-			}
-			}
+      "lightningDamage":35,
+      "lightningColor": "FF6547FF",
+    "lightning":4
+    "lightningLength":4
+        }
     }
-    }
+    }}
 	"requirements": [
 	{"item": "copper", "amount": 1750  },
 	{"item": "lead", "amount": 1550  },
@@ -649,7 +612,7 @@
         { "item": "thorium", "amount": 440 }
         {"item": "plastanium", "amount": 750  },
         { "item": "metaglass", "amount":650},
-        { "item": "00磁暴合金", "amount":450},
+        { "item": "00磁暴合金", "amount":650},
     ],//造价
     "research": {
 	"parent":"BA0sAT3D天网"

@@ -21,6 +21,8 @@
 	"engineLayer": 100,
 	"engineSize": 3.1,
 	"engineOffset": 6,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"trailLength": 18,
 	"trailWidth": 2,
 	"itemCapacity": 0

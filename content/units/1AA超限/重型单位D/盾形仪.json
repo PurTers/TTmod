@@ -5,8 +5,8 @@
 	"type": "missile",
 	"template": "MissileUnitType",
 	"description": "导弹",
-	"health": 600,
-	"armor": 12
+	"health": 400,
+	"armor": 0
 	"speed": 0
 	"lifetime": 180
 	"maxRange": 0
@@ -25,142 +25,14 @@
     {
     "type": "ShieldArcAbility",
 		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
+		"radius": 360,//半径
 		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
+		"max": 8000,//最大容量
+		"regen": 0,//再生速度
 		"cooldown": 99999,//护盾冷却时间
 		"angle": 60,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":true
 	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-	{
-    "type": "ShieldArcAbility",
-		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 60,//半径
-		"width": 45,//宽度
-		"max": 800,//最大容量
-		"regen": 0.25,//再生速度
-		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
-		"angleOffset": 0//护盾角度
-	}
-		{
-			"type": "ForceFieldAbility",
-			"sides": 8,
-			"radius": 32
-			"max": 4000,
-			"regen": 1.8
-			"cooldown": 99
-		}
 	],
 }

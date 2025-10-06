@@ -44,6 +44,8 @@
 	"health": 640,
 	"armor": 3
 	"drag": 0.2,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"rotateSpeed": 0.85,
 	"itemCapacity": 70,
 	"buildSpeed":2.5

@@ -15,6 +15,8 @@
     "targetGround":true,
     "flying": true,
     "armor":22
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "itemCapacity": 0
     "targetFlags":["generator","core"],
     "engineColor": "c0ecff",
@@ -31,13 +33,13 @@
     "sides": 8,
     "radius": 32,
     "regen": 1.2
-    "max": 3000,
+    "max": 4200,
     "cooldown": 120,}
     ],
     "weapons": [
    {	"name": "无",	
 		"reload": 10, 
-		"x": 5,  "y": 5, 
+		"x": 7,  "y": 4, 
 		"rotate": false,
 		"shootCone":30,
 		"ejectEffect":"none",
@@ -65,7 +67,7 @@
     }
 	   	}
 	   	{	"name": "无",	
-		"reload": 60, 
+		"reload": 282, 
 		"x": 0,  "y": 0, 
 		"rotate": false,
 		"shootCone":30,
@@ -120,7 +122,6 @@
 	"height": 10
 	"damage":11
     "hitSize":4
-    "buildingDamageMultiplier":1.2
     "collidesGround": false
     "collidesAir": true
     "status": "破甲",
@@ -138,12 +139,12 @@
     "lifetime":120
 	"width": 3
 	"height": 10
-	"damage":3
+	"damage":120
     "hitSize":4
-    "buildingDamageMultiplier":1.2
     "pierceCap": 3,
-    "pierceBuilding": true,
-    "pierceArmor": true,
+    "collidesGround": false
+    "collidesAir": true
+    "maxDamageFraction":0.01
     "status": "破甲",
 			"statusDuration": 46,
 			"trailLength":3

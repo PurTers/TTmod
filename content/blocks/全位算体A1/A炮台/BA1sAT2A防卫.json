@@ -5,6 +5,7 @@
     "targetAir": false,
     "targetGround": true,
     "health": 1600,
+    "insulated":true,
     "size": 2,
     "heatColor": "turretHeat",
     "shake": 0.2,
@@ -14,8 +15,8 @@
     "shoot": {
     "shots":2,
         "type": "ShootAlternate",
-        "barrels": 3,
-        "spread": 2
+        "barrels": 2,
+        "spread": 3
         "shotDelay":30
     },
     "shootSound": "artillery",//子弹音效
@@ -35,7 +36,7 @@
 			"frontColor": "FFB90F",
 			"shootEffect": "shootBig",
 			"splashDamageRadius": 35
-			"splashDamage": 42,
+			"splashDamage": 32,
 			"status": "slow",
 			"statusDuration": 30,
 			"hitEffect": "explosion",
@@ -59,7 +60,7 @@
     "range": 240,
     "category": "turret",
     "research": {
-	"parent":"BA1s超位算体"
+	"parent":"BA1sAT1A石锤"
 	"objectives": [
 	{
 				"type": "OnSector",

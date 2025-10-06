@@ -22,6 +22,8 @@
 	"engineSize": 3.1,
 	"engineOffset": 6,
 	"trailLength": 18,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"trailWidth": 2,
 	"itemCapacity": 5
     "weapons": [

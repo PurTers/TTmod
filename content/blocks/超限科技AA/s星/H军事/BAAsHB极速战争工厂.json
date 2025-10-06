@@ -54,9 +54,8 @@
 	{ "unit": "uAABT1L基础基座移动", 
 	"time": 900, 
 	"requirements": [ 
-{ "item": "graphite", "amount": 30},
-{ "item": "silicon", "amount": 35}
-{ "item": "0铜铅合金", "amount": 45}
+{ "item": "silicon", "amount": 20}
+{ "item": "0铜铅合金", "amount": 30}
 	]	},	
 		{ "unit": "uAABT1N田螺", 
 	"time": 600, 
@@ -245,18 +244,26 @@
 {"item": "metaglass", "amount":40}
 	]
 	},
-	{ "unit": "uAACCCB1框架", 
-	"time": 2600, 
+	{ "unit": "uAACCCA1超限重拳", 
+	"time": 3600, 
 	"requirements": [ 
-{ "item": "titanium", "amount": 120 }
+{ "item": "titanium", "amount": 220 }
 	{ "item": "metaglass", "amount": 90}
-	{ "item": "0铜铅合金", "amount": 190 }
+	{ "item": "0铜铅合金", "amount": 180 }
+	{ "item": "1集成电路", "amount": 105 },
+	]	},	
+	{ "unit": "uAACCCB1框架", 
+	"time": 2400, 
+	"requirements": [ 
+{ "item": "titanium", "amount": 80 }
+	{ "item": "metaglass", "amount": 90}
+	{ "item": "0铜铅合金", "amount": 120 }
 	{ "item": "1集成电路", "amount": 15 },
 	]	},	
 	{ "unit": "uAACCCC1狼群", 
 	"time": 3600, 
 	"requirements": [ 
-{ "item": "titanium", "amount": 240 }
+{ "item": "titanium", "amount": 140 }
 	{ "item": "metaglass", "amount": 120}
 	{ "item": "0铜铅合金", "amount": 220 }
 	{ "item": "1集成电路", "amount": 85 },

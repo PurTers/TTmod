@@ -85,9 +85,9 @@
 	"hitEffect": "hitMeltdown",
 	"width":12,	"length":487.5,
 	"knockback":0.2,
-	"damage":248
+	"damage":280
 	"status": "煅烧",
-			"statusDuration": 480,
+			"statusDuration": 900,
 			"intervalLifeMin": 1
     "intervalLifeMax": 1
     "intervalVelocityMin": 1,
@@ -277,12 +277,12 @@
 	"requirements": [
 	{"item": "copper", "amount": 1750  },
 	{"item": "lead", "amount": 1550  },
-        {"item": "surge-alloy", "amount": 650  },
-{"item": "phase-fabric", "amount": 650  }
-        { "item": "titanium", "amount": 640 }
+        {"item": "surge-alloy", "amount": 850  },
+{"item": "phase-fabric", "amount": 850  }
+        { "item": "titanium", "amount": 940 }
         {"item": "plastanium", "amount": 550  },
         { "item": "graphite", "amount":750},
-        { "item": "00磁暴合金", "amount":150},
+        { "item": "00磁暴合金", "amount":350},
 	]
 "category": "turret"
 }

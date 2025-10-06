@@ -5,15 +5,17 @@
     "immunities": [
 		"wet","spore-slowed","甲板损坏"
 	],
-    "speed": 0.7
+    "speed": 0.65
     "hitSize": 24
     "health": 8280,
-    	"rotateSpeed": 2.1
+    	"rotateSpeed": 7.5
     	"ammoType":"copper",
 	"ammoCapacity": 300,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
         "targetAir":false,  
     "targetGround":true,
-    "armor":16
+    "armor":12
     "itemCapacity": 30
     "abilities": [
     {
@@ -21,11 +23,12 @@
 		"whenShooting":false,//是否射击时存在(Flash为一直存在)
 		"radius": 30,//半径
 		"width": 10,//宽度
-		"max": 400,//最大容量
+		"max": 1200,//最大容量
 		"regen": 0.25,//再生速度
 		"cooldown": 80,//护盾冷却时间
 		"angle": 180,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":false
 	}
 	{
     "type":"ForceFieldAbility",
@@ -38,7 +41,7 @@
     "weapons": [
        {
             "name": "保护1",
-            "reload": 44
+            "reload": 22
             "x":0
             "y":0
              "inaccuracy": 0
@@ -217,6 +220,9 @@
 	"width": 6,	"length": 12
 	"lifetime": 30,
 	"collidesAir": true
+	"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
     }}}
     ]
   //  "research":"uAABT2C闪流"

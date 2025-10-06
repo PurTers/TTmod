@@ -1,7 +1,7 @@
 {
 "maxBoost":10
 "research": {
-	"parent":"mechanicalDrill"
+	"parent":"pneumatic-drill"
 	"objectives": [
             {
 				"type": "SectorComplete",

@@ -8,8 +8,8 @@
 	"range": 270,
 	"targetAir":true
 	"targetGround":false,
-		"maxAmmo":160,
-    "ammoPerShot": 7,
+		"maxAmmo":80,
+    "ammoPerShot": 4,
 	"consumes": {
 	"coolant":{"amount":1.4,"optional":true}  
 		},
@@ -87,7 +87,7 @@
 		"splashDamage":52,
         "ammoMultiplier":5,
         "fragLifeMin":0.1,
-        "backColor":"ffffffff",
+        "backColor":"b9c9df",
 			"frontColor":"ffffffff"
 			"trailWidth":1.5,
 			"trailLength":8
@@ -98,7 +98,7 @@
 				"despawnEffect": "flakExplosionBig",
 				"width": 12,
 				"height": 12,
-				"backColor": "ffffffff",
+				"backColor": "b9c9df",
 				"frontColor": "ffffffff",
 				"damage": 0
 				"lifetime": 20,
@@ -110,7 +110,7 @@
 				"despawnEffect": "flakExplosionBig",
 				"width": 12,
 				"height": 12,
-				"backColor": "ffffffff",
+				"backColor": "b9c9df",
 				"frontColor": "ffffffff",
 				"damage": 4,
 				"collidesGround": false
@@ -128,8 +128,8 @@
 			"height": 18,
 			"ammoMultiplier":5
 			"shootEffect":"shootSmall",
-	     	"backColor":"FFD700",
-			"frontColor":"ffffff"
+	     	"backColor":"7d89d8",
+			"frontColor":"dae1ee"
 			"trailWidth":1.5,
 			"trailLength":8
     "trailColor":"ffffffff",
@@ -139,8 +139,8 @@
 				"despawnEffect": "flakExplosionBig",
 				"width": 12,
 				"height": 12,
-				"backColor": "FFD700",
-				"frontColor": "ffffffff",
+				"backColor": "7d89d8",
+				"frontColor": "dae1ee",
 				"damage": 0
 				"lifetime": 20,
 				"speed": 1.5
@@ -151,8 +151,8 @@
 				"despawnEffect": "flakExplosionBig",
 				"width": 12,
 				"height": 12,
-				"backColor": "ffffffff",
-				"frontColor": "ffffffff",
+				"backColor": "7d89d8",
+				"frontColor": "dae1ee",
 				"collidesGround": false
 				"damage": 44,
 				"lifetime": 120,

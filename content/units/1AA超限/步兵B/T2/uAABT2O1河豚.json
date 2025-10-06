@@ -17,6 +17,8 @@
     "canDrown": false,
     "armor":15
     "itemCapacity": 15
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
      "abilities": [
     {
     "type":"ForceFieldAbility",

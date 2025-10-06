@@ -16,17 +16,17 @@
 	"totalPower":2200},
 	"ammoCapacity": 700
     "ammoResupplyAmount":1,/*弹药补给倍率 */
-    "health": 980,
+    "health": 620,
     "armor": 26
     "drag": 0.2,
-    "rotateSpeed": 2.5,
+    "rotateSpeed": 7.5,
     "itemCapacity": 30,
         "targetAir":true,  
     "targetGround":true,
         "abilities": [/*能力（如力场防御等） */
         {
 "type": "RegenAbility",
-"amount": 0.6
+"amount": 0.8
 },
 {
 			"type": "SpawnDeathAbility",
@@ -61,52 +61,60 @@
 			"shotDelay":6
 		},
 			"bullet": {
-				"damage":16,
+				"damage":18,
 				"speed": 6,
 				"lifetime": 30,
 				"width": 5,
 				"height": 9
 				"pierceCap": 3,
-				"buildingDamageMultiplier":2.0,
+				"buildingDamageMultiplier":0.1,
 				"pierceBuilding": true,
 		}}
 	{
 			"name": "尖刀队长2",
-			"reload": 120,
+			"reload": 188,
 			"recoil": 0,
 			"x": 5.2,
 			"y": 1.3,
 			"rotate": true,
 			"rotateSpeed": 15,
 			"mirror": false,
-			"inaccuracy": 0.5,
+			"inaccuracy": 5,
 			"ejectEffect": "casing1",
 			"shootSound": "artillery",
 			"alternate": false,
+			"targetAir": false,
+			"targetGround": true,
 			"rotationLimit":60
 				"recoilTime":120, //后坐力和后坐力恢复时间
 				"baseRotation":-30
 				"shootCone":30,
 				"shoot":{
-			"shots":1,
-			"shotDelay":3
-			"firstShotDelay":120
+			"shots":3,
+			"shotDelay":12
 		},
 			"bullet": {
+			 "type": "ArtilleryBulletType",
 			"backColor": "FFFFFFFF",
 				"frontColor": "c1e8f5",
-				"damage":166,
+				"damage":33,
+				"splashDamageRadius":35,
+				"splashDamage":145
 				"speed": 3,
-				"lifetime": 90,
-				"width": 9,
-				"height": 19
-				"pierceCap": 3,
-				"buildingDamageMultiplier":2.0,
-				"sprite":"超限工艺-尖刺",
+				"lifetime": 40,
+				"width": 12,
+				"height": 12
+				"maxDamageFraction":0.999999
+				"buildingDamageMultiplier":5.0,
+				//"sprite":"超限工艺-尖刺",
+				"collides":true
+                "collidesTiles":true
 				"pierceBuilding": true,
+				"collidesGround":true
+				"collidesAir":false
 		}}
 	{	"name": "尖刀队长1",	
-		"reload":65,
+		"reload":32,
         "x": 3.4,  "y": -1, 
         "rotate": true,
        "rotationLimit":10,
@@ -115,31 +123,35 @@
 			"shots":6,
 			"shotDelay":6
 		},
+		"targetAir": true,
+		"targetGround": false,
 		"shootSound": "missile",
 		"alternate": true,
 		"ejectEffect":"casing1",
 		"bullet":{
 	    "sprite":"missile",
 			"splashDamageRadius":35,
-	"splashDamage":15
-	    "damage":1
-	    "speed":3,
+	"splashDamage":18
+	    "damage":18
+	    "speed":5,
 	    "weaveMag":2,
 	"weaveScale":4,
-	    "lifetime":60,
+	    "lifetime":40,
 	    "width":2,	 "height":7
 	"trailLength":3,
 	"trailWidth":1,
 	"homingRange": 60,
     "homingPower": 0.1,
     "homingDelay":10
+    "collidesGround":false
+	"collidesAir":true,
 	}	}
 
 ]
 	"researchCostMultiplier": 0,
 	"details":"谁不喜欢在上班的时候说些闲话",
 	"research": {
-	"parent":"BA1s超位算体"
+	"parent":"BA1sHA1英雄单位修复工厂"
 	"objectives": [
             {
 				"type": "OnSector",

@@ -56,6 +56,8 @@
 	"drag": 0.2,
 	"rotateSpeed": 0.85,
 	"itemCapacity": 90,
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"buildSpeed":5
 	"mineTier":3
 	"mineSpeed":5

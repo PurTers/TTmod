@@ -16,6 +16,8 @@
         "targetAir":false,  
     "targetGround":true,
     "armor":0
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "weapons": [
        {
             "name": "响应1",

@@ -14,6 +14,8 @@
         "targetAir":false,  
     "targetGround":true,
     "flying": true,
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "armor":18
     "targetFlags":["turret","battery","generator"],
     "engineColor": "c0ecff",
@@ -35,17 +37,19 @@
 		"cooldown": 80,//护盾冷却时间
 		"angle": 180,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":false
 	}
 	{
     "type": "ShieldArcAbility",
 		"whenShooting":false,//是否射击时存在(Flash为一直存在)
 		"radius": 47,//半径
 		"width": 10,//宽度
-		"max": 800,//最大容量
-		"regen": 1,//再生速度
+		"max": 3000,//最大容量
+		"regen": 1.6,//再生速度
 		"cooldown": 80,//护盾冷却时间
 		"angle": 180,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":true
 	}
 	{
     "type": "ShieldArcAbility",
@@ -57,6 +61,7 @@
 		"cooldown": 80,//护盾冷却时间
 		"angle": 120,//护盾弧度
 		"angleOffset": 60//护盾角度
+		"pushUnits":false
 	}
 	{
     "type": "ShieldArcAbility",
@@ -68,6 +73,7 @@
 		"cooldown": 80,//护盾冷却时间
 		"angle": 120,//护盾弧度
 		"angleOffset": -60//护盾角度
+		"pushUnits":false
 	}
     ]
     "weapons": [

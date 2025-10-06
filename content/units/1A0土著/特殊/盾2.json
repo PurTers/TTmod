@@ -22,6 +22,9 @@
     "hidden": true,//是否隐藏？
     "engineOffset": 0
 	"engineSize": 0
+	"destructibleWreck": false, //破坏性残骸（飞行专属）.死掉是否掉落砸向地面造成伤害。false是直接爆炸。
+  "createWreck": false,//残骸
+    "createScorch": false,//燃烧痕迹
     "abilities": [
         {
         "type": "ShieldRegenFieldAbility",

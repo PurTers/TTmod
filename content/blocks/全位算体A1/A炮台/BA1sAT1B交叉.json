@@ -1,0 +1,64 @@
+    {
+    "type": "PowerTurret",
+    "name": "交叉",
+    "description": "对空高频高射机枪，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
+    "targetAir": true,
+    "targetGround": false,
+    "health": 320,
+    "insulated":true,
+    "size": 1,
+    "heatColor": "turretHeat",
+    "shake": 0.2,
+    "inaccuracy": 0,
+    "recoil": 1,
+    "shootSound": "artillery",//子弹音效
+    "recoilTime": 10,
+    "buildCostMultiplier":2
+    "drawer":{"type":"DrawTurret",
+	    "basePrefix": "cwst-"
+	    }
+	    "shoot": {
+    "shots":2,
+        "type": "ShootAlternate",
+        "barrels": 2,
+        "spread": 2
+        "shotDelay":17
+    },
+    "shootType": {
+			"speed": 5,
+			"lifetime": 44,
+			"width": 5,
+			"height": 10,
+			"knockback": 0.1,
+			"backColor": "FFFFFF",
+			"frontColor": "FFFFFF",
+			"shootEffect": "shootBig",
+			"damage": 4,
+			"hitEffect": "explosion",
+			"despawnEffect": "explosion"
+			"collidesGround":false
+			"collidesAir":true,
+			}
+    "consumes": {
+    },
+    "reload": 34,
+    "rotateSpeed": 12,
+    "range": 220,
+    "category": "turret",
+    "research": {
+	"parent":"BA1sAT1A石锤"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "超限工艺-facility32m"
+			}
+	]
+	}
+	"researchCostMultiplier": 0
+    "requirements": [
+        { "item": "copper", "amount":80},
+{ "item": "lead", "amount":75}
+{ "item": "graphite", "amount":25}
+    ]
+    "buildVisibility":"campaignOnly"
+}

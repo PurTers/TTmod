@@ -20,7 +20,7 @@
     "health": 2280,
     "armor": 12,
     "drag": 0.2,
-    "rotateSpeed": 2.5,
+    "rotateSpeed": 5,
     "itemCapacity": 30,
         "targetAir":true,  
     "targetGround":true,

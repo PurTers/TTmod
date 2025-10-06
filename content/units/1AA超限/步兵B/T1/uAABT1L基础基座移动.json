@@ -1,179 +1,32 @@
 {
 	"type": "flying",
-	"name":"基石[移动]",
-	"description": "超限集团为作战应急修复单位研发的基础基座，通常用于迅速部署来修复单位，飞行状态能用于协助构造或采矿，形态转换有冷却。\n \n[blue][超限集团移动前哨站]",
+	"name":"筑基",
+	"description": "超限集团为作战应急修复单位研发的机动飞行单位，能用于协助构造或采矿。\n \n[blue][超限集团辅助飞行器]",
 	"details":"他在飞行时还是个很好用的采矿机",
 	"immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],
-	"speed": 2.4
+	"speed": 3
 	"accel":0.05,"drag":0.03,
-	"rotateSpeed":1.2
+	"rotateSpeed":20
 	"ammoType":"titanium",
 	"ammoCapacity": 300,
-	"hitSize":15, 
-	"buildSpeed":0.5
+	"hitSize":5, 
+	"buildSpeed":0.3
 	"flying": true
 	"health":180,
 	"armor":0
 	"mineTier":2
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"mineSpeed":2.5
-	"engineOffset": 0,
-	"engineSize": 0, 
-	"itemCapacity": 60
-    "weapons": [
-	{
-            "name": "基础基座1",
-            "reload": 94
-            "x":0
-            "y":0
-             "inaccuracy": 0
-            "shootSound":"blaster",
-            "ejectEffect": "casing1",
-            "rotate": false
-			"baseRotation":0
-			"minWarmup": 0.99
-			"shootCone":15
-		    "rotationLimit": 0
-		    "mirror": false,
-		    "minWarmup": 0.99
-		    "shootWarmupSpeed": 0.032,
-		    "linearWarmup": true,
-		    "shootCone": 360,
-    "parts": [
-    {
-			"type": "HaloPart",
-			"rotateSpeed":0
-			"sides": 3,
-			"shapes": 6
-			"color": "7CF38900",
-			"colorTo":"7CF38990",
-			"layer":140,
-			"tri": true,
-			"radius": 0
-			"radiusTo": 8
-			"triLength": 0
-			"triLengthTo":4
-			"haloRadius": 0,
-			"haloRadiusTo": 0,
-			"haloRotation": 0
-			"haloRotateSpeed": 1
-}
-{
-			"type": "ShapePart",
-			"colorTo":"7CF38900",
-			"color": "7CF38990",
-			"layer":140,
-			"stroke": 10,
-			"strokeTo": 10,
-			"circle": true,
-			"hollow": false,
-			"radius": 0
-			"radiusTo": 0
-			"x": 0,    "y": 0,
-},
-    {
-    "type":"RegionPart",
-        "mirror":false
-        "x": 0,"y": 0
-        //"x":0,"y":10,
-        "suffix":"-顶上"
-        "layer":120
-        "moveX":0
-        "moveY":2
-        "moveRot":0
-        }
-        {
-    "type":"RegionPart",
-        "mirror":false
-        "x": 0,"y": 0
-        //"x":0,"y":10,
-        "suffix":"-顶下"
-        "layer":120
-        "moveX":0
-        "moveY":-2
-        "moveRot":0
-        }
-        /*{"type":"RegionPart",
-        "mirror":true
-        "under":true,
-        "x": -2,"y": 0
-        //"x":0,"y":10,
-        "suffix":"-侧翼-1"
-        "layer":59.9
-        "moveX":2
-        "moveY":0
-        "moveRot":0
-        }*/
-        {"type":"RegionPart",
-        "mirror":true
-        "x": 0,"y": 0
-        //"x":-10,"y":0,
-        "suffix":"-侧翼-2"
-        "layer":59.9,
-        "moveX":-2
-        "moveY":0
-        "moveRot":0
-        }
-			]
-			"showStatSprite": false
-			"shootStatusDuration": 600,
-	"shootStatus": "自毁",
-    "bullet":{
-	         "type": "BasicBulletType",
-             "spawnUnit": "uAABT1L基础基座",
-             "speed": 0,
-	               	}}
-	
-	{
-		"reload": 99999999, 
-		"x": 0,  "y": 0, 
-		"rotate": false,
-		"shootCone":360,
-		"ejectEffect":"none",
-		"shootSound":"explosionbig",
-		"alwaysShooting": true,
-		"mirror":false,
-		"inaccuracy": 0,
-		"alternate": true,
-		"shootStatusDuration": 180
-	"shootStatus": "静止",
-		"bullet":{
-		"width": 0,
-		"height": 0
-		"damage":0
-		"instantDisappear":true,
-		"collides": false,
-		"speed":9999,"lifetime":1,
-		"splashDamageRadius": 9999,
-				"splashDamage": 0,
-		}
-		}
-		{
-		"reload": 99999999, 
-		"x": 0,  "y": 0, 
-		"rotate": false,
-		"shootCone":360,
-		"ejectEffect":"none",
-		"shootSound":"explosionbig",
-		"alwaysShooting": true,
-		"mirror":false,
-		"inaccuracy": 0,
-		"alternate": true,
-		"shootStatusDuration": 1200
-	"shootStatus": "disarmed",
-		"bullet":{
-		"width": 0,
-		"height": 0
-		"damage":0
-		"instantDisappear":true,
-		"collides": false,
-		"speed":9999,"lifetime":1,
-		"splashDamageRadius": 9999,
-				"splashDamage": 0,
-		}
-		}
-    ]
+	"engineOffset": 5,
+	"engineColor": "c0ecff",
+	"trailColor": "1878BF",
+	"trailLength": 18,
+	"trailWidth": 2,
+	"engineSize": 1, 
+	"itemCapacity": 10
     "research": {
 	"parent":"BAAsHA步兵厂"
 	"objectives": [

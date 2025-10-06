@@ -17,6 +17,8 @@
     "flying": true,
     "armor":55
     	"maxRange": 400
+    "healColor": "c0ecff"
+    "shieldColor": "c0ecff"
     "targetFlags":["turret","battery","generator"],
     "engineColor": "c0ecff",
 	"trailColor": "1878BF",
@@ -32,6 +34,7 @@
         "amount":240
         "reload": 180
         "range": 240
+        "healColor": "c0ecff"
     }
     {
     "type": "ShieldArcAbility",
@@ -43,6 +46,8 @@
 		"cooldown": 120,//护盾冷却时间
 		"angle": 80,//护盾弧度
 		"angleOffset": 70//护盾角度
+		"shieldColor": "c0ecff"
+		"pushUnits":false
 	}
 	{
     "type": "ShieldArcAbility",
@@ -54,6 +59,7 @@
 		"cooldown": 120,//护盾冷却时间
 		"angle": 80,//护盾弧度
 		"angleOffset": -70//护盾角度
+		"shieldColor": "c0ecff"
 	}
 	{ "type": "StatusFieldAbility",
     "duration": 1200,
@@ -64,6 +70,7 @@
     {
 "type": "RegenAbility",
 "amount": 7.2
+"healColor": "c0ecff"
 }
     ]
     "weapons": [

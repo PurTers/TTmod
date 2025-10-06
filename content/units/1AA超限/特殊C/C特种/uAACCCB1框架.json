@@ -14,6 +14,8 @@
 	"ammoCapacity": 300,
         "targetAir":false,  
     "targetGround":true,
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "faceTarget": false,
 		"circleTarget": true,
     "flying": true,

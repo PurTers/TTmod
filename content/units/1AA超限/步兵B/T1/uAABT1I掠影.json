@@ -24,6 +24,8 @@
 	"trailLength": 18,
 	"trailWidth": 2,
 	"itemCapacity": 5
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "weapons": [
    {	"name": "无",	
 		"reload": 10, 

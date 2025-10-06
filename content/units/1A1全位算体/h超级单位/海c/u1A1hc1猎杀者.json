@@ -5,8 +5,8 @@
 		"immunities": [
 "wet","freezing","tarred","甲板损坏"
 	],
-	"speed":0.6,
-	"rotateSpeed":0.9,
+	"speed":0.7,
+	"rotateSpeed":2.5,
 	"abilities": [
 	{
 "type": "RegenAbility",
@@ -30,7 +30,7 @@
 	"shootCone":0
 	"ammoUseEffect": "casing2Double",
 	"shootSound":"mediumCannon",
-	"reload":126,
+	"reload":192,
 	"recoil":0
         "x": 0
         "y": 0
@@ -41,20 +41,23 @@
         "inaccuracy": 0,
 	"bullet":{
 	"type": "RailBulletType",
-      "damage": 725,
+      "damage": 925,
       "length": 350,
       "pointEffectSpace":60
       "hitShake": 10,
       "collidesTiles": true,
       "pieces":true
+      "pierceDamageFactor":0.7
     "buildingDamageMultiplier":0.5
-    "trailEffect": "instTrail",
+    "pointEffectSpace":30
+    //"trailEffect": "instTrail",
     "pierceEffect":"railHit"
     "pointEffect":"railHit"
-      "smokeEffect": "smokeCloud",
-      "shootEffect": "instShoot",
+      "smokeEffect": "shootBig2",
+      "shootEffect": "railShoot",
       "despawnEffect": "instHit",
-      "hitEffect": "instHit"
+      "hitEffect": "massiveExplosion"
+      "maxDamageFraction":0.999999
 	               	}}
 	]
 	"research": {

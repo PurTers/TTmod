@@ -8,24 +8,27 @@
     "speed": 0.7
     "hitSize": 24
     "health": 8280,
-    	"rotateSpeed": 2.1
+    	"rotateSpeed": 5
     	"ammoType":"copper",
 	"ammoCapacity": 300,
         "targetAir":false,  
     "targetGround":true,
-    "armor":16
+    "armor":12
     "itemCapacity": 30
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "abilities": [
     {
     "type": "ShieldArcAbility",
 		"whenShooting":false,//是否射击时存在(Flash为一直存在)
 		"radius": 30,//半径
 		"width": 10,//宽度
-		"max": 400,//最大容量
+		"max": 800,//最大容量
 		"regen": 0.25,//再生速度
 		"cooldown": 80,//护盾冷却时间
 		"angle": 180,//护盾弧度
 		"angleOffset": 0//护盾角度
+		"pushUnits":false
 	}
 	{
     "type":"ForceFieldAbility",
@@ -35,6 +38,7 @@
     "max": 1200,
     "cooldown": 120,}
     ]
+    "smokeEffect":"none"
     "weapons": [
        {
             "name": "控制1",
@@ -52,6 +56,26 @@
 		    "mirror": false,
 		    "shootX":12
 	    "shootY":32
+	    "shootEffect":[{
+            "type": "WaveEffect",
+            "lifetime": 20,
+            "sizeFrom": 5,
+            "sizeTo": 18,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "colorTo": "1878BF",
+            "colorFrom": "1878BF"
+        },
+        {
+            "type": "WaveEffect",
+            "lifetime": 20,
+            "sizeFrom": 5,
+            "sizeTo": 18,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "colorTo": "c0ecff",
+            "colorFrom": "c0ecff"
+        },]
     "parts": [
         {"type": "RegionPart",
         "mirror": false
@@ -85,11 +109,15 @@
         }
 			]
             "bullet": {
+            "type":"MultiBulletType"
+"bullets":[
+    {
     "type":"BasicBulletType",
+    "sprite":"超限工艺-波"
     "speed": 6
     "lifetime":60
 	"width": 24
-	"height": 6
+	"height": 24
 	"damage":33
     "hitSize":4
     "knockback":5,
@@ -101,19 +129,94 @@
     "collidesAir": false
     "trailLength":0
     "trailWidth":0,
-    "trailColor":"1878BF80",
-    "backColor":"1878BF80",
-    "frontColor":"1878BF80"
-    "shrinkY": -5//压缩长度
-	        "shrinkX": -5//压缩长度
-	        "hitEffect":"none"
+    "trailColor":"c0ecff80",
+    "backColor":"c0ecff80",
+    "frontColor":"c0ecff80"
+    "shrinkY": -3//压缩长度
+	        "shrinkX": -3//压缩长度
+	        "hitEffect":{
+            "type": "WaveEffect",
+            "lifetime": 20,
+            "sizeFrom": 5,
+            "sizeTo": 18,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "colorTo": "c0ecff",
+            "colorFrom": "c0ecff"
+        },
 "shootEffect":"none"
 "despawnEffect":"none"
 "smokeEffect":"none"
 "trailEffect":"none"
 "pointEffect": "none"
 "buildingDamageMultiplier":4
-    }}
+"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+    }
+    {
+	"speed":0
+	"lifetime":10,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+    "type":"BasicBulletType",
+    "sprite":"超限工艺-波"
+    "speed": 6
+    "lifetime":60
+	"width": 24
+	"height": 24
+	"damage":11
+    "hitSize":4
+    "knockback":5,
+    "pierceCap": 8,
+    "pierceBuilding": true,
+    "status": "脆裂",
+			"statusDuration": 120,
+    "pierceArmor": true,
+    "collidesAir": false
+    "trailLength":0
+    "trailWidth":0,
+    "trailColor":"1878BF80",
+    "backColor":"1878BF80",
+    "frontColor":"1878BF80"
+    "shrinkY": -2//压缩长度
+	        "shrinkX": -2//压缩长度
+	        "hitEffect":{
+            "type": "WaveEffect",
+            "lifetime": 20,
+            "sizeFrom": 5,
+            "sizeTo": 18,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "colorTo": "1878BF",
+            "colorFrom": "1878BF"
+        },
+"shootEffect":"none"
+"despawnEffect":"none"
+"smokeEffect":"none"
+"trailEffect":"none"
+"pointEffect": "none"
+"buildingDamageMultiplier":4
+"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+	}}
+    ]}}
     ]
    // "research":"uAABT2A压制"
 }

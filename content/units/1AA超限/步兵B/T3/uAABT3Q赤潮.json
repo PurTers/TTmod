@@ -16,6 +16,8 @@
     "waveTrailY":-6,
     "trailScl":2,
 	"hitSize":36, 
+	"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
 	"health": 4580,
 	"armor":8,
 	"faceTarget": false,

@@ -16,6 +16,8 @@
     "hovering":true
     "canDrown": false,
     "armor":5
+    "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
     "itemCapacity": 5
     "abilities": [
 	    {
