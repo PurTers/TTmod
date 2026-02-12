@@ -1,0 +1,275 @@
+{
+    "type": "ItemTurret",
+    "name": "破碎",
+    "description": "出于断裂成功，超限集团根据其原理改进而研发出的炮台，该武器通过发射特制的子弹，中途不断释放特殊弹药能够在子弹的一整条路线上释放类似于雷光的弹片\n \n[blue][超限技术炮台]",
+    "health": 1260,
+    "size": 4
+    "liquidCapacity": 500,
+    "reload": 96
+    "range": 230,
+    "maxAmmo": 50
+      "shootCone": 20,
+  "recoil": 2.5
+	"recoilTime": 60
+      "shake": 5,
+      "coolantMultiplier": 2.5
+      "ammoPerShot": 3
+    "consumes": {
+    "power": 12
+        "coolant": {
+            "amount": 1.2
+            "optional": true
+        }
+    },
+        		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {"type":"RegionPart",
+        "mirror":true,
+        "under":true,
+        "x":0,"y":0,
+        "suffix":"-翼"
+        "layer":50,
+        "moveX":-2
+        "moveY":2.5
+        "moveRot":30
+        }
+			]
+			}
+			]
+   },
+    "shoot": {
+        "type": "ShootSpread",
+        "shots": 3
+        "spread": 15
+        "shotDelay": 0
+    },
+    "ammoPerShot": 4
+    "shootSound": "shotgun",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 0,
+    "shake": 3,
+    "shootCone": 20,
+    "ammoTypes": {
+    "surge-alloy": {
+    "sprite":"超限工艺-尖刺",
+    "ammoMultiplier": 5
+    "reloadMultiplier":0.7
+        "speed": 10
+	    "lifetime":23
+		"width": 15,"height": 15
+		"damage":8
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":33,
+		"splashDamage": 55
+		"pierceCap": 2
+        "ammoMultiplier":4,
+        "backColor": "FF8E38FF",
+				"frontColor": "F3E979FF",
+				"status": "脆裂",
+			"statusDuration": 240
+        "fragLifeMin":0.1,
+        "bulletInterval":2
+        "intervalBullets":3
+        "intervalBullet":{
+        "damage": 11
+      "width": 3
+      "pierce": "true",
+      "type": "ShrapnelBulletType",
+      "lifetime": 18,
+      "length":16
+      "serrations": 8,
+      "fromColor": "FF8E38FF",
+      "toColor": "F3E979FF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+			"statusDuration": 20
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
+      "ammoMultiplier": 5,
+      "lightning": 2
+      "lightningDamage": 3
+      "lightningLength": 4
+      "lightningCone": 20,
+      "lightningLengthRand": 5}
+    "fragBullets":4
+			"fragBullet": {
+      "damage": 22
+      "width": 7
+      "pierce": "true",
+      "type": "ShrapnelBulletType",
+      "lifetime": 18,
+      "length":22
+      "serrations": 8,
+      "ammoMultiplier":3,
+      "fromColor": "FF8E38FF",
+      "toColor": "F3E979FF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+			"statusDuration": 180
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
+      "ammoMultiplier": 5,
+      "lightning": 2
+      "lightningDamage": 3
+      "lightningLength": 4
+      "lightningCone": 20,
+      "lightningLengthRand": 13}}
+  "1绝缘钢": {
+  "ammoMultiplier": 4
+        "speed": 10
+        "sprite":"超限工艺-尖刺2",
+	    "lifetime":23
+		"width": 15,"height": 15
+		"damage":66
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":50,
+		"splashDamage": 22
+        "ammoMultiplier":4,
+        "backColor": "cbd97f",
+				"frontColor": "aaaaaa",
+				"status": "脆裂",
+			"statusDuration": 180
+        "fragLifeMin":0.1,
+        "reloadMultiplier": 1.5
+        "pierceCap": 4
+        "bulletInterval":2
+        "intervalBullets":3
+        "intervalBullet":{
+			"type": "ShrapnelBulletType",
+            "length": 10
+            "damage": 12
+            "width": 2
+            "fromColor": "cbd97f",
+            "toColor": "aaaaaa",
+            "pierce": true,
+			"statusDuration":44
+			"status": "脆裂",
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "cbd97f",
+                "colorTo": "aaaaaa",
+                "cone": 60
+ }
+        "fragLifeMin":0.1,
+    "fragBullets":4
+			"fragBullet": {
+            "type": "ShrapnelBulletType",
+            "length": 6
+            "damage": 8
+            "width": 1
+            "fromColor": "cbd97f",
+            "toColor": "aaaaaa",
+            "pierce": true,
+			"statusDuration":22
+			"status": "脆裂",
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "cbd97f",
+                "colorTo": "aaaaaa",
+                "cone": 60
+ }
+  }}
+    "fragBullets":4
+			"fragBullet": {
+			"sprite":"超限工艺-尖刺",
+        "speed": 2.5
+	    "lifetime":30
+		"width": 7,"height": 7
+		"damage":55
+		"shootEffect": "shootSmall",
+		"splashDamageRadius":20,
+		"splashDamage": 26
+        "ammoMultiplier":4,
+        "backColor": "cbd97f",
+				"frontColor": "aaaaaa",
+				"status": "脆裂",
+			"statusDuration": 120
+        "fragLifeMin":0.1,
+    "fragBullets":4
+			"fragBullet": {
+            "type": "ShrapnelBulletType",
+            "length": 11
+            "damage": 26
+            "width": 3
+            "fromColor": "cbd97f",
+            "toColor": "aaaaaa",
+            "pierce": true,
+                "makeFire":true,
+			"status":"burning",
+			"statusDuration":88
+			"status": "脆裂",
+			"statusDuration": 30,
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "particles": 9,
+                "sizeFrom": 9,
+                "sizeTo": 0,
+                "line": true,
+                "length": 55,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "cbd97f",
+                "colorTo": "aaaaaa",
+                "cone": 60
+ }
+  }}}
+   }
+    "rotateSpeed":3
+    "requirements": [
+        {"item": "1绝缘钢", "amount": 120  },
+{"item": "1集成电路", "amount": 240  },
+{ "item": "titanium", "amount": 270 }
+{ "item": "0铜铅合金", "amount":280},
+        {"item": "plastanium", "amount": 480},
+        {"item": "thorium", "amount": 180}
+    ],
+    "category": "turret",
+    /*"research": {
+	"parent":"BAAsAT3A断裂"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "遗忘河滩"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+}

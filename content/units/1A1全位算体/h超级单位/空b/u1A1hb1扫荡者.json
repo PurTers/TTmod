@@ -1,6 +1,6 @@
 {
 	"type": "flying",
-	"name": "猎杀者",
+	"name": "扫荡",
 	"description": "向附近的地面敌人发射海量导弹，每颗导弹中包含大量矿渣溶液，对建筑造成毁灭性打击，其激光主炮依旧有极端可怕的威胁。\n[orange][全位算体精英部队]",
 			"immunities": ["甲板损坏"
 			],
@@ -39,7 +39,7 @@
 			                "lifetime": 180,
 			                "status": "破甲",
 			"statusDuration": 120
-"damage":22
+"damage":32
 	"shootEffect":{
     "type": "ParticleEffect",
     "particles": 5,
@@ -109,8 +109,8 @@
 "shootSound":"laserblast",
 	}
 			}
-		{	"name": "无",	
-		"reload":166
+			{	"name": "无",	
+		"reload":16
         "x": 3,  "y": 6, 
         "rotate": true,
         "mirror":true,
@@ -120,7 +120,56 @@
 		"alternate": true,
 		"ejectEffect":"casing1",
 		"shoot":{
-		"shots":6
+	    "type": "ShootAlternate",
+		"barrels": 9
+		"spread": 1
+	},
+		"bullet":{
+			"sprite":"missile",
+			"splashDamageRadius":25,
+	"splashDamage":15
+	    "damage":7
+	    "speed":6,
+	    "buildingDamageMultiplier":3.0,
+	    "weaveMag":2,
+	"weaveScale":4,
+	    "lifetime":40,
+	    "width":2,	 "height":4
+	    "status":"melting",
+	"statusDuration":240,
+	"makeFire":true,
+	"trailLength":6,
+	"trailWidth":3,
+	"homingRange": 80,
+    "homingPower": 0.1,
+    "homingDelay":10
+	"fragBullets": 4,
+	"fragRandomSpread": 12,
+			"fragBullet": {
+				"type": "LiquidBulletType",
+	"liquid": "slag",
+	"speed": 2.34,
+	"lifetime":6,
+	"buildingDamageMultiplier":2.0,
+	"knockback":0.3,
+	"statusDuration":120,
+	"status":"melting",
+	"damage": 3.25
+	"makeFire":true,}
+			}
+	}
+		{	"name": "无",	
+		"reload":190
+        "x": 3,  "y": 6, 
+        "rotate": true,
+        "mirror":true,
+        "inaccuracy": 0
+		"shootSound": "missile",
+		"rotateSpeed": 0,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":3
 	    "shotDelay":15
 	},
 		"bullet":{

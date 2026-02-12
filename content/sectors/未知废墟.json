@@ -1,0 +1,25 @@
+{
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":124//区块坐标
+    "captureWave":30//胜利波次
+    "difficulty":3//难度1一5
+    "research": {
+		"parent": "零号地区",
+		"objectives": [
+		"underflow-gate"
+		"distributor"
+		"bridge-conveyor"
+		"inverted-sorter"
+		"copper-wall-large"
+		"scatter"
+            {
+				"type": "SectorComplete",
+				"preset": "零号地区"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "冰冻森林"
+			}
+			]}
+}

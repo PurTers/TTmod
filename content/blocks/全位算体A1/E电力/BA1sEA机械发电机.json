@@ -1,0 +1,53 @@
+{
+    "type": "ThermalGenerator",
+    "name": "机械发电机",
+    "description": "简易的风力发电装置，容易受地区气候影响，水上发电效率更高。\n[orange][全位算体电力设备]",
+    "size": 2,
+    "health": 120,
+    "hasLiquids": false,
+    "hasItems": false,
+    "itemDuration": 0,
+    "powerProduction": 0.025,
+    "itemCapacity": 0,
+    //"maxBoost":3
+    "minEfficiency":1
+    "generateEffect": "generatespark",
+   "drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+                "type": "DrawRegion",
+                "suffix": "-top",
+                "rotateSpeed":2,
+            }
+            ]
+    },
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 20
+        },
+        {
+            "item": "lead",
+            "amount": 15
+        },
+    ],
+    "ambientSound": "smelter",
+    "ambientSoundVolume": 0.06,
+    "floating": true,
+    "attribute": "water",
+    "category": "power",
+    "placeableLiquid":true
+        "research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "工业区0032"
+			}
+	]
+	}
+     "researchCostMultiplier": 0
+         "canOverdrive": false,
+}

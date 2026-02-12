@@ -1,0 +1,28 @@
+{
+    "type":"PowerNode",
+    "name":"电力枢纽",
+	"description":"相较于普通的电力节点可以进行更远距离的传输，同时能够接入更多的设施。\n \n[blue][超限技术电力传输装置]",
+    "health":50,
+	"size":1,
+    "maxNodes":14,
+    "laserRange":10
+    "laserColor1": "c0ecff"
+	"laserColor2": "1878BF"
+		"research": {
+	"parent":"BAAsEA1大型火力发电站"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"requirements": [
+	{"item": "0铜铅合金", "amount": 3},
+	{"item": "copper", "amount": 4},
+	{"item": "silicon", "amount": 2},
+	],
+	"category":"power"
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.4
+}

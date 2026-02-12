@@ -1,0 +1,33 @@
+{"type": "BurstDrill"
+"name": "专钍钻头I型"
+"category": "production"
+"description": "无损耗挖掘，只能开采钍，需要电力。\n\n[orange][全位算体专业化采集设备]",
+"requirements": [
+    "copper/20", "lead/25" "graphite/10","titanium/15"
+]
+"drillTime":  420
+"size": 2
+"hasPower": true
+"tier": 4
+//"liquidBoostIntensity":1.5,
+"drillEffect": [
+    "mineImpact", "drillSteam", "mineImpactWave"
+]
+"research": {
+	"parent":"BA1sB4专钛钻头I型"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "工业区0032"
+			}
+	]
+	}
+"shake": 4
+"itemCapacity": 40
+"blockedItems": ["sand","scrap","copper","lead","coal","beryllium","titanium"]
+"researchCostMultiplier": 1.5
+"consumes": {
+    "power":0.28
+}
+"canOverdrive": true
+}

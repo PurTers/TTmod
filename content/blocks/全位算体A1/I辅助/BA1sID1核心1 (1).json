@@ -1,0 +1,17 @@
+{
+    "name":"一型核心",
+    "type":"CoreBlock",
+    "description": "小型核心，装甲较为厚重，容量较大。\n\n[orange][全位算体初代核心]",
+    "requirements": [
+    {"amount": 1200, "item": "copper"},
+    {"amount": 1000, "item": "lead"},
+	{ "item": "silicon", "amount": 1000 },
+    ],
+    "unitType":"无",
+    "health": 40,
+    "armor":5
+    "itemCapacity": 1000,
+    "size": 3,
+    "unitCapModifier": 12,
+    "category": "effect"
+}

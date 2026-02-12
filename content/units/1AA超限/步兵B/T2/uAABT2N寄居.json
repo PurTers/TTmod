@@ -359,7 +359,7 @@
         ]
 	}	}
 	]
-	"research": {
+	/*"research": {
 	"parent":"uAABT1N田螺"
 	"objectives": [
             {
@@ -367,6 +367,5 @@
 				"preset": "遗忘河滩"
 			}
 	]
-	}
-	//"controller": "DefenderAI"
+	}*/
 }

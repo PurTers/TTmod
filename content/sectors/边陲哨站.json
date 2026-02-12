@@ -1,0 +1,14 @@
+{
+    "planet":"serpulo"//母星名字。
+    "sector":126//区块坐标
+    "difficulty":2//难度1一5
+    "overrideLaunchDefaults": true,//进度覆盖
+    "research": {
+		"parent": "废弃研究所",
+		"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "废弃研究所"
+			}
+			]}
+}

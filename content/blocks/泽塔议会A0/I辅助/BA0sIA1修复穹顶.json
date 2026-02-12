@@ -1,0 +1,41 @@
+{
+    "name":"修复穹顶"
+	"type":"MendProjector",
+	"description":"对较大范围内的建筑进行修复，它的修复效率极高，但是需要消耗电量和一定资源。\n[red][泽塔议会修复器]",
+	"details":"那所以你修的上来吗",
+	"health":800,
+	"size":3,
+	"range":240,
+	"reload":7.5,
+	"phaseBoost":0
+	"phaseRangeBoost":0
+	"useTime":600
+	"healPercent":3.4375
+	"consumes": {
+		"power": 12,
+        "items":{
+			"items":[
+				{"item":"silicon","amount":1}
+				{"item":"phase-fabric","amount":1}
+			],
+			"booster":false,
+			"optional":false
+		}
+	},
+	"requirements": [
+		{ "item":"phase-fabric","amount": 100},
+		{ "item": "lead", "amount": 280 },
+		{ "item": "silicon", "amount": 150 },
+		{ "item": "titanium", "amount": 100 }
+	],
+	"category":"effect",
+	/*"research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+}

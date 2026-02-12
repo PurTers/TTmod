@@ -1,0 +1,42 @@
+{
+    "name": "大型抽水机",
+    "type": "SolidPump",
+    "description": "用巨大动力抽出地下的水，费电，但是量大。\n \n[blue][超限技术提取器]",
+    "health": 500,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "floating":true
+    "placeableLiquid":true
+    "consumes": {
+        "power": 5.1,
+    },
+    "liquidCapacity": 24,
+    "requirements": [
+        {"item": "0铜铅合金","amount": 35},
+        {"item": "silicon","amount": 35},
+        {"item": "lead","amount": 45}
+        { "amount": 90, "item": "graphite" }
+        { "amount": 30, "item": "plastanium" }
+        { "item": "thorium", "amount": 40 }
+        { "item": "phase-fabric", "amount": 10 }
+    ],
+"pumpAmount": 0.48,
+"rotateSpeed": 2.9,
+"maxBoost":10
+"result":"water",
+"baseEfficiency": 1,
+"attribute": "water",
+"category": "production",
+/*"research": {
+	"parent":"BAAsBA3钛钻机"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+}

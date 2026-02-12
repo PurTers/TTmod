@@ -12,14 +12,14 @@
 	"ammoType":"titanium",
 	"ammoCapacity": 300,
 	"hitSize":5, 
-	"buildSpeed":0.3
+	"buildSpeed":0.5
 	"flying": true
-	"health":180,
+	"health":380,
 	"armor":0
 	"mineTier":2
 	"healColor": "c0ecff"
   "shieldColor": "c0ecff"
-	"mineSpeed":2.5
+	"mineSpeed":3
 	"engineOffset": 5,
 	"engineColor": "c0ecff",
 	"trailColor": "1878BF",
@@ -27,7 +27,7 @@
 	"trailWidth": 2,
 	"engineSize": 1, 
 	"itemCapacity": 10
-    "research": {
+    /*"research": {
 	"parent":"BAAsHA步兵厂"
 	"objectives": [
             {
@@ -35,5 +35,5 @@
 				"preset": "overgrowth"
 			}
 	]
-	}
+	}*/
 }

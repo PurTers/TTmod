@@ -1,0 +1,125 @@
+{
+	"type": "flying",
+	"name":"伽马",
+	"description": "泽塔议会所研发的核心的防卫飞行器，能够以较快的速度建造，同时开采一些矿物，只有两门火焰炮与修复系统。\n[red][泽塔议会核心机]",
+	"speed": 2.2,
+	"accel":0.05,"drag":0.03,
+	"rotateSpeed":5,
+	"ammoType":"titanium",
+	"ammoCapacity": 300,
+	"hitSize":22, 
+	"buildSpeed":1.25
+	"flying": true,
+	"health":960,
+	"armor":12
+	"immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+	"abilities": [
+	{
+        "type": "RepairFieldAbility"
+        "amount":44
+        "reload": 66
+        "range": 16
+    }
+    {
+"type": "RegenAbility",
+"amount": 1.2
+}
+    ]
+	"mineTier":2
+	"mineSpeed":3
+	"engineOffset": 8,
+	"engineSize": 2
+	"weapons": [
+       {
+            "name": "阿尔法1",
+            "reload": 12
+            "x":0
+            "y":0
+             "inaccuracy": 1,
+            "shootSound":"shootFlame",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": true
+		    "shootX":4
+		    "shootY":7
+		    "shoot":{
+			"shots":4,
+			"shotDelay":7
+		},
+            "bullet": {
+    "type": "BulletType",
+			"damage": 8,
+			"hitSize":10,
+			"status": "燃烧",
+			"statusDuration": 180,
+			"speed": 8,
+			"lifetime": 11,
+			"ammoMultiplier": 3,
+			"collidesAir": false
+        "collidesGround": true
+			"pierceCap": 4,
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"particles": 13,
+				"lifetime": 33,
+				"sizeFrom": 1.88,
+				"sizeTo": 0,
+				"interp": "pow5Out",
+				"sizeInterp": "pow10In",
+				"length": 88,
+				"baseLength": 0,
+				"colorFrom": "f68021",
+				"colorTo": "f68021A8",
+				"cone": 12
+			},
+			"smokeEffect": {
+				"type": "ParticleEffect",
+				"particles": 3,
+				"line": true,
+				"strokeFrom": 1.8,
+				"strokeTo": 0,
+				"lenFrom": 20,
+				"lenTo": 8,
+				"length": 86,
+				"baseLength": 0,
+				"lifetime": 12,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFE176FF",
+				"cone": 10
+			},
+			"hitEffect":{
+				"type":"MultiEffect",
+				"effects":[
+				{"type": "ParticleEffect",
+					"particles": 2,
+					"line": true,
+					"strokeFrom": 1.3,
+					"strokeTo": 0,
+					"lenFrom": 8,
+					"lenTo": 8,
+					"length": 24,
+					"baseLength": 0,
+					"lifetime": 15,
+					"colorFrom": "f8ad42",
+					"colorTo": "FFE176FF",
+					"cone": 23},
+				{"type": "ParticleEffect",
+				"particles": 4,
+				"lifetime": 10,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"colorFrom": "FF8C00",
+				"colorTo": "FF8C00"}
+				]},
+				"statusDuration":120,
+	"status":"melting",
+			"despawnEffect": "none"
+	     	"buildingDamageMultiplier":0.01
+    }}
+    ]
+}

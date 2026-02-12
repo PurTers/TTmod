@@ -1,0 +1,27 @@
+{
+    "name":"进阶核心",
+    "type":"CoreBlock",
+    "description": "以初代核心为原型的特殊核心，拥有作战能力更强大的核心爬虫。\n \n[blue][超限集团核心]",
+    "requirements": [
+    {"amount": 4000, "item": "copper"},
+    {"amount": 3000, "item": "lead"},
+    {"amount": 2500, "item": "0铜铅合金"},
+    {"amount": 3000, "item": "silicon"},
+    ],
+    "unitType":"uAACCZ3御林",
+    "health": 3500,
+    "itemCapacity": 10000,
+    "size": 4,
+   /* "research": {
+	"parent":"BAAsID2原点核心"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "污染小道"
+			}
+	]
+	}*/
+    "unitCapModifier": 36,
+    "category": "effect"
+    "researchCostMultiplier": 0.5
+}

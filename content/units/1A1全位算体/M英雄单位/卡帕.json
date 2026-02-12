@@ -1,6 +1,6 @@
 {
 	"type": "flying",
-	"name":"卡帕:没事的\n(控制此单位然后长按攻击以让他恢复)",
+	"name":"卡帕:没事的\n(此英雄已损坏)",
 	"description": " ",
 	"speed": 5.8,
 	"immunities": [

@@ -3,7 +3,8 @@
 	"name": "英雄单位修复工厂",
 	"description": "对于损坏的英雄单位的核心进行修复，无需消耗资源但时间长。\n \n[orange][全位算体英雄单位修复工厂]",
 	"size": 3,
-	"constructTime": 7200,
+	"health":1640,
+	"constructTime": 18000,
 	"consumes": {
 		"power": 5
 		}
@@ -24,11 +25,11 @@
 	"objectives": [
             {
 				"type": "OnSector",
-				"preset": "未知废墟"
+				"preset": "孢染丛林"
 			}
 	]
 	}
 	"researchCostMultiplier": 0.5
 	"canOverdrive": false,
-	"buildVisibility":"campaignOnly"
+	//"buildVisibility":"campaignOnly"
 }

@@ -266,7 +266,7 @@
     }
 	   	}
     ]
-   "research": {
+   /*"research": {
 	"parent":"uAABT1J预言"
 	"objectives": [
             {
@@ -274,5 +274,5 @@
 				"preset": "saltflats"
 			}
 	]
-	}
+	}*/
 }

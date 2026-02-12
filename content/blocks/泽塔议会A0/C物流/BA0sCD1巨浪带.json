@@ -1,0 +1,24 @@
+{
+	"type": "Conveyor",
+	"name": "合金传送带",
+	"description": "利用巨浪合金产生巨大的磁场,传输物品速度极高，但是在被摧毁后可能会导致你的产线崩溃。\n[red][泽塔议会运输装置]",
+	"health": 150,
+	"baseExplosiveness":5,
+	"hasShadow": true,
+	"destroyBullet":{
+    "lifetime":1,//弹药存在时间（帧）
+    "lightningDamage": 45,//闪电伤害
+	"lightning": 10,//闪电数量
+    "lightningLength": 11,//闪电长度
+	"despawnEffect":"none",
+    "hitEffect":"none"},
+	"requirements": [
+	{"item": "phase-fabric", "amount": 1},
+	{"item": "surge-alloy", "amount": 1},
+	{ "item": "silicon", "amount": 1 }
+	],
+	"category": "distribution",
+	//"research":"titanium-conveyor",
+	"speed": 0.42,
+	"displayedSpeed": 45
+}

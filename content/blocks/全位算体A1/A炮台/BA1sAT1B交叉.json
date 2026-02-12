@@ -41,7 +41,7 @@
 			}
     "consumes": {
     },
-    "reload": 34,
+    "reload": 17,
     "rotateSpeed": 12,
     "range": 220,
     "category": "turret",
@@ -50,7 +50,7 @@
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-facility32m"
+				"preset": "工业区0032"
 			}
 	]
 	}
@@ -60,5 +60,5 @@
 { "item": "lead", "amount":75}
 { "item": "graphite", "amount":25}
     ]
-    "buildVisibility":"campaignOnly"
+  //  "buildVisibility":"campaignOnly"
 }

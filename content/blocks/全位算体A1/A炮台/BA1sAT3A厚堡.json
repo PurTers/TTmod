@@ -13,11 +13,11 @@
     "recoil": 2,
     //"hasPower": false,
     "shoot": {
-    "shots":2,
+    "shots":4,
         "type": "ShootAlternate",
         "barrels": 2,
         "spread": 4
-        "shotDelay":18
+        "shotDelay":22
     },
     "shootSound": "artillery",//子弹音效
     "recoilTime": 10,
@@ -84,5 +84,5 @@
 { "item": "metaglass", "amount":240},
     ]
     "researchCostMultiplier": 0.5
-    "buildVisibility":"campaignOnly"
+   // "buildVisibility":"campaignOnly"
 }

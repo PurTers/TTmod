@@ -7,7 +7,7 @@
 	],
     "speed": 1.11
     "hitSize": 18
-    "health": 320,
+    "health": 620,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,
@@ -64,10 +64,10 @@
     "lightning":5
     "lightningLength":12
 		"killShooter":true,
-		"splashDamageRadius":128,
+		"splashDamageRadius":68,
 		"instantDisappear":true,
 		"collides": false,
-		"splashDamage":110,
+		"splashDamage":32,
 		"speed":1,"lifetime":10,
 		"hitEffect":"massiveExplosion",
 		"despawnEffect":{"type": "MultiEffect",
@@ -102,132 +102,10 @@
 			"colorFrom": "c0ecff",
 			"colorTo": "c0ecff"}]},
 		"width":0,	 "height":0
-		"intervalBullets":6
-        "intervalBullet":{
-        "type": "EmpBulletType",
-				"timeIncrease": 0,//己方建筑加速倍率
-				"collidesTiles": "false",//碰撞方块
-				"collidesTeam": "false"//碰撞自己的队友
-				"timeDuration": 0,//加速持续时间
-				"powerDamageScl": 3,//敌方电器损坏倍率
-				"powerSclDecrease": 0.5,//敌方电器功率下降倍率
-				"radius": 18,
-				"pierce": true,//穿透单位
-				"splashDamageRadius": 16,
-				"splashDamage": 12,
-				"width": 0,
-				"height": 0,
-				"damage": 10,
-				"keepVelocity": true,
-				"trailEffect": "none",
-				"backColor": "c0ecff",
-				"frontColor": "c0ecff",
-				"instantDisappear": true,//瞬间消失
-				"hitSound": "plasmaboom",
-				"despawnEffect": "hitEmpSpark"
-				"hitPowerEffect": {
-					"type":"WrapEffect",
-					"effect":"dynamicSpikes",
-					"color":"c0ecff",
-					"rotation":8
-				},
-		    	"applyEffect": "none"
-		    	"hitEffect": "none"
-		    	"shootEffect": "none"
-			}
-			"fragBullets":1
-        "fragBullet":{
-		"instantDisappear":true,
-		"collides": false,
-		"damage":0,
-		"speed":3,"lifetime":60,
-		"hitEffect":"massiveExplosion",
-		"width":0,	 "height":0
-		"fragBullets":1
-        "fragBullet":{
-        "lightningDamage":19,
-            "lightningColor": "c0ecffFF",
-    "lightning":4
-    "lightningLength":12
-		"killShooter":true,
-		"splashDamageRadius":68,
-		"instantDisappear":true,
-		"collides": false,
-		"splashDamage":110,
-		"speed":0,"lifetime":600,
-		"hitEffect":"massiveExplosion",
-		"despawnEffect":{"type": "MultiEffect",
-			"effects": [
-			{"type": "ParticleEffect",
-			"particles": 18,
-			"sizeFrom": 6,
-			"sizeTo": 0,
-			"length": 45,
-			"baseLength": 3,
-			"lifetime": 35,
-			"colorFrom": "c0ecff",
-			"colorTo": "c0ecff",
-			"cone": 360},
-			{"type": "ParticleEffect",
-			"particles": 32,
-			"line":true,
-			"sizeFrom": 9,
-			"sizeTo": 0,
-			"length": 53,
-			"baseLength": 20,
-			"lifetime": 22,
-			"colorFrom": "c0ecff",
-			"colorTo": "c0ecff",
-			"cone": 360},
-			{"type": "WaveEffect",
-			"lifetime": 15,
-			"sizeFrom": 0,
-			"sizeTo": 70,
-			"strokeFrom": 4,
-			"strokeTo": 0,
-			"colorFrom": "c0ecff",
-			"colorTo": "c0ecff"}]},
-		"width":0,	 "height":0
-		"intervalBullets":6
-        "intervalBullet":{
-        "type": "EmpBulletType",
-				"timeIncrease": 0,//己方建筑加速倍率
-				"collidesTiles": "false",//碰撞方块
-				"collidesTeam": "false"//碰撞自己的队友
-				"timeDuration": 0,//加速持续时间
-				"powerDamageScl": 3,//敌方电器损坏倍率
-				"powerSclDecrease": 0.5,//敌方电器功率下降倍率
-				"radius": 18,
-				"pierce": true,//穿透单位
-				"splashDamageRadius": 16,
-				"splashDamage": 12,
-				"width": 0,
-				"height": 0,
-				"damage": 10,
-				"keepVelocity": true,
-				"trailEffect": "none",
-				"backColor": "c0ecff",
-				"frontColor": "c0ecff",
-				"instantDisappear": true,//瞬间消失
-				"hitSound": "plasmaboom",
-				"despawnEffect": "hitEmpSpark"
-				"hitPowerEffect": {
-					"type":"WrapEffect",
-					"effect":"dynamicSpikes",
-					"color":"c0ecff",
-					"rotation":8
-				},
-		    	"applyEffect": "none"
-		    	"hitEffect": "none"
-		    	"shootEffect": "none"
-			}
-        }
-	   }
 	   }
 	   	}
     ]
-   // "research":"uAABT1A响应"
-   "research": {
+   /*"research": {
 	"parent":"BAAsHA步兵厂"
 	"objectives": [
             {
@@ -235,5 +113,5 @@
 				"preset": "冰冷山区"
 			}
 	]
-	}
+	}*/
 }

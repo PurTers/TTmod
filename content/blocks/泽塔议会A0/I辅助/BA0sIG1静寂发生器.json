@@ -1,0 +1,134 @@
+{
+	"type": "PowerTurret",
+	"name": "静寂发生器",
+	"description": "泽塔议会为了对抗飞行速度极快的小型飞行器制造的特殊立场，能够有效降低进入立场的飞机的移动速度。\n[red][泽塔议会特殊辅助装置]",
+	"underBullets":true
+	"health": 1080,
+	"size": 3
+	"reload":30,
+	"range": 300,
+		"alwaysShooting": true,
+		"targetGround": false
+	"targetAir": true
+		"maxAmmo":70
+    "ammoPerShot": 7
+    "rotateSpeed": 0
+     "shootX":0
+	    "shootY":0
+    "shootCone":360
+    "recoilTime": 0
+    "recoil": 0
+    "drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts":[
+    {
+			"type": "ShapePart",
+			"colorTo":"87CEEB",
+			"color": "87CEEB",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 300
+			"radiusTo": 300
+			"x": 0,    "y": 0,
+},
+{
+		"type": "HaloPart",//多边形
+		"rotateSpeed":0//自转速度
+		"sides": 3,//多边形边数("tri":false时候可用)
+		"shapes": 3,//围绕旋转的图形数量
+		"color": "87CEEB",//开始时的颜色
+		"colorTo":"87CEEB",//结束时的颜色*/
+		"layer":110,//所在图层高度
+		"tri": true,//是否三角形
+		"radius": 24,//开始时的大小
+		"radiusTo": 24,//结束时的大小
+		"triLength": 32,//三角形开始时的尖锐程度
+		"triLengthTo":32,//三角形结束时的尖锐程度
+		"haloRadius": -300,//开始时的围绕半径
+		"haloRadiusTo": -300,//结束时的围绕半径
+		"haloRotation": 0,//开始时的角度
+		"haloRotateSpeed": 3//旋转速度
+    }
+    {
+			"type": "ShapePart",
+			"colorTo":"87CEEB",
+			"color": "87CEEB",
+			"layer":110,
+			"stroke": 2
+			"strokeTo": 2
+			"circle": true,
+			"hollow": true,
+			"radius": 1
+			"radiusTo": 1
+			"x": 0,    "y": 0,
+},
+{
+		"type": "HaloPart",//多边形
+		"rotateSpeed":0//自转速度
+		"sides": 3,//多边形边数("tri":false时候可用)
+		"shapes": 3,//围绕旋转的图形数量
+		"color": "87CEEB",//开始时的颜色
+		"colorTo":"87CEEB",//结束时的颜色
+		"layer":110,//所在图层高度
+		"tri": true,//是否三角形
+		"radius": 2,//开始时的大小
+		"radiusTo": 3,//结束时的大小
+		"triLength": 4,//三角形开始时的尖锐程度
+		"triLengthTo":4,//三角形结束时的尖锐程度
+		"haloRadius": -12,//开始时的围绕半径
+		"haloRadiusTo": -12,//结束时的围绕半径
+		"haloRotation": 0,//开始时的角度
+		"haloRotateSpeed": 3//旋转速度
+    }
+    ]
+    }]}
+	"consumes": {
+	"power": 12
+		},
+	"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"inaccuracy": 360
+	"shake":1,
+	"shootType": {
+	        "type": "BasicBulletType",
+			"damage": 0
+			"hittable":false,
+        	"absorbable":false,
+			"pierce": true,
+			"pierceBuilding":true
+			"status": "slow",
+			"statusDuration": 120,
+			"speed": 0,
+			"lifetime": 1,
+			"width": 0,
+			"height": 0,
+			//"hitSound": "explosion",
+			"splashDamageRadius":300,
+			"splashDamage":0
+			"collidesAir": true
+			"collidesGround": false
+	}, 
+	"requirements": [
+        { "item": "copper","amount": 240 },
+        { "item": "lead","amount": 320 },
+        { "item": "silicon", "amount": 180 }
+        { "item": "plastanium", "amount": 120 }
+	],
+	"category": "effect",
+	/*"research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	    "researchCostMultiplier": 2,
+	    "canOverdrive":false
+}

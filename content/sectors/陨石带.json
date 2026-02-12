@@ -1,0 +1,18 @@
+{
+	"overrideLaunchDefaults": true,//进度覆盖
+    "planet":"serpulo"
+    "sector":219
+    "difficulty":2
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "孢染丛林",
+		"objectives": [
+		"ground-factory"
+            {
+				"type": "SectorComplete",
+				"preset": "孢染丛林"
+			}
+			"ground-factory"
+			"air-factory"
+			]}
+}

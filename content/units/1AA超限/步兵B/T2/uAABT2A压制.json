@@ -1,18 +1,36 @@
 {
-    "type": "mech",
+    "type": "legs",
     "name":"压制"
-    "description": "以响应为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，不能防空\n\n[blue][超限技术作战中机甲]",
+    "description": "以响应为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，配备有导弹仓用于发射导弹。\n\n[blue][超限技术作战中机甲]",
     "immunities": [
 		"wet","spore-slowed","甲板损坏"
 	],
-    "speed": 0.9
     "hitSize": 18
+    
+      "targetAir": true,
+  "targetGround": true,
+  "speed": 0.7,
+  "drag": 0.2,
+  "rotateSpeed": 0.95,
+  
+  "legCount": 4,
+  "legLength": 18,
+  "legForwardScl": 0.3,
+  "legExtension": -3,
+  
+  "legGroupSize": 3,
+  
+  "legMoveSpace": 0.6,
+  "lockLegBase": true,
+  
+  "hovering": false,
+  
+  "faceTarget": true,
+  
     "health": 620,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
-	"ammoCapacity": 300,
-        "targetAir":false,  
-    "targetGround":true,
+	"ammoCapacity": 300
     "armor":8
     "itemCapacity": 30
     "healColor": "c0ecff"
@@ -32,81 +50,291 @@
 	}
     ]
     "weapons": [
-       {
-            "name": "压制1",
-            "reload": 20
-            "x":0
-            "y":0
-             "inaccuracy": 5
-            "shootSound":"blaster",
-            "ejectEffect": "casing1",
-            "rotate": false
-			"baseRotation":0
-			"minWarmup": 0.99
-			"shootCone":15
-		    "rotationLimit": 0
-		    "mirror": false,
-		    "shootX":0
-	    "shootY":22
-	    "shoot":{
-	    "type": "ShootAlternate",
-		"barrels": 3
-		"spread": 2
-		"shots":3
-		"shotDelay":10,
-	},
-    "parts": [
-        {"type": "RegionPart",
-        "mirror": false
-        "x": 6.8
-        "y": 2
-        "suffix": "-手1",
-        "layer": 59.9
-        "moveX": -1
-        "moveY": 2.7
-        "moveRot":20
+    {
+      "name": "压制",
+      "reload": 12,
+      "shootSound": "blaster",
+      "x": 0,
+      "top": false,
+      "y": 0,
+      "rotate": false,
+      "mirror": false,
+      "minWarmup": 0.99
+      "shootWarmupSpeed": 0.005,
+      "linearWarmup": true,//开启线性计算
+      "alternate": true,
+      "recoil": 0,
+      "shootCone":35,
+      "recoilTime": 0,
+      "shootY":7
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-2",
+          "under":true
+          "mirror":true
+          "x": 0,
+          "y": 0
+          "layer": 60,
+           "moves": [
+        
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.3
+                        }
+                        "x":1
+                        "y":-1
+                        "gy": -0.25
+                        "gx": -0.25
+                        "rot":-30
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.3
+                            "end": 0.6
+                        }
+                        "x":0
+                        "y":-1
+                        "gy": -0.25
+                        "gx": -0.25
+                        "rot":-60
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":0
+                        "gy": -0.5
+                        "gx": -0.5
+                        "rot":-90
+        		    }
+        		    ]
         }
-        {"type":"RegionPart",
-        "mirror":false
-        "under":true,
-        "x":-6.8,"y":2,
-        "suffix":"-手2"
-        "layer":59.9
-        "moveX":-1
-        "moveY":1.5
-        "moveRot":-55
+        {
+				"type": "RegionPart",
+				"suffix": "-1-1",
+				//"under":true,
+				"x":0
+				"y":-6
+				"layer": 60
+				"moves": [
+				{
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":6
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }],
+				//"heatProgress": "heat"
+			}
+			{
+				"type": "RegionPart",
+				"suffix": "-1-2",
+				//"under":true,
+				"x":0
+				"y":-6
+				"layer": 60
+				"moves": [
+				{
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":6
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }],
+				//"heatProgress": "heat"
+			}
+			{
+				"type": "RegionPart",
+				"suffix": "-1-3",
+				//"under":true,
+				"x":0
+				"y":-6
+				"layer": 60
+				"moves": [
+				{
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":6
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }],
+				//"heatProgress": "heat"
+			}
+			{
+          "type": "RegionPart",
+          "suffix": "-1",
+          "under":true
+          "mirror":false
+          "x": 0
+          "y": -6
+          "layer": 60,
+           "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":6
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    
+        		    /*{
+						"progress": "recoil",
+						"y": -1
+					}*/
+        		    ]
         }
-        {"type":"RegionPart",
-        "mirror":false
-        "under":false
-        "x":0,"y":10
-        "suffix":"-炮"
-        "layer":60
-        "moveX":0
-        "moveY":0
-        "moveRot":90
-        }
-			]
-            "bullet": {
-    "type":"BasicBulletType",
+      ],
+      "shoot": {
+        "type":"ShootAlternate",
+		"barrels":3,
+		"spread":1
+      },
+      "ejectEffect": "casing1",
+      "bullet": {
+         "type":"BasicBulletType",
     "speed": 6
     "lifetime":40
 	"width": 5
-	"height": 12
-	"damage":12
+	"height": 5
+	"damage":6
     "hitSize":4
     "knockback":0.2,
     "status": "破甲",
-			"statusDuration": 46,
-   // "pierceArmor": true,
+    "splashDamageRadius": 33,
+	"splashDamage": 22,
+	"statusDuration": 46,
+    "pierceArmor": true,
     "collidesAir": false
     "trailLength":3
     "trailWidth":1.5,
     "trailColor":"1878BF",
     "backColor":"1878BF",
-    "frontColor":"1878BF"
+    "frontColor":"c0ecff"
     "buildingDamageMultiplier":2
-    }}
+    "sprite":"large-orb"
+      }
+    }
+    
+    {
+      "name": "导弹仓",
+      "reload": 120,
+      "shootSound": "blaster",
+      "x": 0,
+      "top": false,
+      "y": 0,
+      "rotate": false,
+      "mirror": true,
+      "minWarmup": 0.99
+      "shootWarmupSpeed": 0.005,
+      "linearWarmup": true,//开启线性计算
+      "recoil": 0,
+      "shootCone":360,
+      "recoilTime": 0,
+      "recoils": 3
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-2",
+          "under":true
+          "mirror":true
+          "x": 0,
+          "y": 4
+          "layer": 60,
+           "moves": [
+        
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":-4
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {
+          "type": "RegionPart",
+          "suffix": "-1",
+          "under":true
+          "mirror":false
+          "x": 0
+          "y": 0
+          "layer": 60,
+           "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":2
+                        "y":4
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    {
+						"progress": "recoil",
+						"y": -1
+					}
+        		    ]
+        }
+      ],
+      "shoot": {
+        "type": "ShootBarrel",
+        "barrels": 1
+		"barrels": [
+    -3, -3, -180, 
+  ]
+		"spread":0.75
+      },
+      "ejectEffect": "casing1",
+      "bullet": {
+ 	"type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (5)",
+             "speed": 0,
+      }
+    }
     ]
-    "research":"uAABT1A响应"
+    //"research":"uAABT1A响应"
 }

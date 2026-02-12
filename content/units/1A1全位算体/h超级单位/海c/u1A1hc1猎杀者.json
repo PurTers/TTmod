@@ -1,6 +1,6 @@
 {
 	"type": "naval",
-	"name": "猎杀者",
+	"name": "猎杀",
 	"description": "装备有轨道炮的海军，可以精准高效的狙击敌人。\n[orange][全位算体精英部队]",
 		"immunities": [
 "wet","freezing","tarred","甲板损坏"
@@ -26,6 +26,46 @@
 	"faceTarget": false,
 	//"maxRange": 400,
 	"weapons":[
+	{	"name": "猎杀2",	
+		"reload":20,
+        "x": -4,  "y": 14, 
+        "rotate": true,
+        "inaccuracy": 0,
+		"shoot":{
+			"shots":3,
+			"shotDelay":15
+		},
+		"shootSound": "pew",
+		"rotateSpeed": 9,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":16,	  
+	    "speed":5,
+	    "lifetime":30,
+	    "width":7,	 "height":10
+	    "buildingDamageMultiplier":3.0,
+	}	}
+	{	"name": "猎杀2",	
+		"reload":20,
+        "x": -8,  "y": 8, 
+        "rotate": true,
+        "inaccuracy": 0,
+		"shoot":{
+			"shots":3,
+			"shotDelay":15
+		},
+		"shootSound": "pew",
+		"rotateSpeed": 9,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "damage":16,	  
+	    "speed":5,
+	    "lifetime":30,
+	    "width":7,	 "height":10
+	    "buildingDamageMultiplier":3.0,
+	}	}
 		{"name": "猎杀1",	
 	"shootCone":0
 	"ammoUseEffect": "casing2Double",
@@ -59,6 +99,41 @@
       "hitEffect": "massiveExplosion"
       "maxDamageFraction":0.999999
 	               	}}
+	{	"name": "猎杀3",	
+		"reload":66
+        "x": 5,  "y": -11, 
+        "rotate": true,
+        "mirror":true,
+        "inaccuracy": 0
+		"shootSound": "missile",
+		"rotateSpeed": 5,//炮台转头速度
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 3
+		"spread": 1
+		"shots":3,
+		"shotDelay":15
+	},
+		"bullet":{
+			"sprite":"missile",
+			"splashDamageRadius":25,
+	"splashDamage":15
+	    "damage":7
+	    "speed":6,
+	    "buildingDamageMultiplier":0.5,
+	    "weaveMag":2,
+	"weaveScale":4,
+	    "lifetime":40,
+	    "width":2,	 "height":4
+	"trailLength":6,
+	"trailWidth":3,
+	"homingRange": 80,
+    "homingPower": 0.1,
+    "homingDelay":10
+			}
+	}
 	]
 	"research": {
 	"parent":"BA1sHB精英单位工厂"

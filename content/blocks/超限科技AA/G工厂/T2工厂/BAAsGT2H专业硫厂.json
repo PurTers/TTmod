@@ -1,0 +1,49 @@
+{
+	"type": "GenericCrafter",
+	"name": "专业硫化物合成机",
+	"health": 1040,
+	"description": "专业加工硫，能高速生产硫，同时你需要更大的供应量保证其正常生产",
+	"outputItem": { "item": "pyratite", "amount": 5 },
+	"alwaysUnlocked": false,
+	"size": 3,
+	"updateEffect": "fireballsmoke",
+	"craftEffect": "blastsmoke"
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 30,
+	"itemCapacity": 40,
+	"drawer": [
+		"DrawDefault",
+		"DrawWarmupRegion",
+    ],
+	"consumes": {
+	"power": 5,
+		"liquid": 
+	{"liquid": "oil", "amount": 0.05}
+    "items": {	 "items": [
+    { "item": "sand", "amount": 5 }
+    { "item": "lead", "amount": 5 }
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 180 },
+	{ "item": "copper", "amount": 220 },
+	{ "amount": 180, "item": "titanium" }
+	{ "amount": 90, "item": "1绝缘钢" }
+	{ "amount": 40, "item": "0铜铅合金" }
+	{ "amount": 60, "item": "1集成电路" }
+	],
+	"category": "crafting",
+	/*"research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

@@ -14,10 +14,10 @@
 	"ammoCapacity": 300,
 	"hitSize":15, 
 	"flying": true
-	"health":680,
+	"health":480,
 	"armor":5
 	"mineTier":2
-	"mineSpeed":6
+	"mineSpeed":5
 	"engineOffset": 6,
 	"engineSize": 3, 
 	"itemCapacity": 120
@@ -44,7 +44,7 @@
 	"status":"burning",
 	"speed":6
 	"lifetime":30,
-	"width":1,	 "height":3,
+	"width":4,	 "height":8,
 	"hitEffect":"flakExplosion",
 	"despawnEffect":"flakExplosion"
 	"sprite":"missile-back",
@@ -58,7 +58,7 @@
     "trailColor":"7CF38990",
     "backColor":"97FFA880",
     "frontColor":"FFFFFF"
-    "buildingDamageMultiplier":0.1
+    "buildingDamageMultiplier":0.5
 	}	}
     ]
 "research": {

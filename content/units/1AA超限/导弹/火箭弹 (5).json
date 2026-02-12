@@ -1,0 +1,47 @@
+{
+		"immunities": [
+	],
+	"name": "火箭弹",
+	"type": "missile",
+	"template": "MissileUnitType",
+	"description": "导弹",
+	"health": 120,
+	"armor": 6,
+	"speed": 4
+	"lifetime": 90
+	"maxRange": 20
+	"rotateSpeed": 12
+	"engineColor": "FEB380",
+	"trailColor": "FEB380",
+	"engineLayer": 100,
+	"engineSize": 3.1,
+	"engineOffset": 6,
+	"trailLength": 18,
+	"trailWidth":2
+	"missileAccelTime": 0,
+	"lowAltitude": true,
+	"fogRadius": 8,
+	"outlineColor": "6E7080FF",
+	"weapons": [
+		{
+			"shootCone": 360,
+			"mirror": false,
+			"reload": 1,
+			"shake": 10,
+			"shootOnDeath": true,
+			"shootSound": "plasmaboom",
+			"bullet": {
+			"killShooter":true,
+				"collidesGround": true
+	"collidesAir": true
+				"type": "ExplosionBulletType",
+				"hitColor": "FFB381FF",
+				"splashDamage": 22,
+				"splashDamageRadius": 36,
+				"despawnShake": 3,
+				"fragVelocityMin": 4
+				"buildingDamageMultiplier":3
+		}
+		}
+	],
+}

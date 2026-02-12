@@ -1,0 +1,58 @@
+{
+	"type": "flying",
+	"name":"阿尔法",
+	"description": "泽塔议会所研发的核心的防卫飞行器，能够以较快的速度建造，同时开采一些矿物，只有两门火箭炮。\n[red][泽塔议会核心机]",
+	"speed": 2.2,
+	"accel":0.05,"drag":0.03,
+	"rotateSpeed":5,
+	"ammoType":"titanium",
+	"ammoCapacity": 300,
+	"hitSize":22, 
+	"buildSpeed":0.75
+	"flying": true,
+	"health":220,
+	"armor":6
+	"immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+	"mineTier":1
+	"mineSpeed":3
+	"engineOffset": 8,
+	"engineSize": 2
+	"weapons": [
+       {
+            "name": "阿尔法1",
+            "reload": 96
+            "x":0
+            "y":0
+             "inaccuracy": 1,
+            "shootSound":"shootMissilePlasmaShort",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": true
+		    "shootX":4
+		    "shootY":7
+		    "shoot":{
+			"shots":3,
+			"shotDelay":18
+		},
+            "bullet": {
+    "sprite":"missile-large",
+			"speed":8
+			"damage": 6
+			"lifetime":30,
+			"width": 4, 			
+			"height":9
+			"trailLength":12
+	"trailWidth":3
+			"splashDamageRadius":35,
+		"splashDamage":22
+	    "makeFire":true,
+			"shootEffect":"shootSmall",
+	     	"buildingDamageMultiplier":0.01
+    }}
+    ]
+}

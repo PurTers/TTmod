@@ -1,0 +1,17 @@
+{
+	"overrideLaunchDefaults": true,//进度覆盖
+    "planet":"serpulo"
+    "sector": 23
+    "captureWave":10
+    "difficulty":1
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "孢染丛林",
+		"objectives": [
+		"steam-generator"
+			{
+				"type": "SectorComplete",
+				"preset": "陨石带"
+			}
+			]}
+}

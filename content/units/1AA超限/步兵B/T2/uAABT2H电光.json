@@ -101,8 +101,7 @@
 	"ejectEffect":"none"
     }}
     ]
-    //"research":"uAABT1C列兵"
-     "research": {
+    /*"research": {
 	"parent":"uAABT1H火花"
 	"objectives": [
             {
@@ -110,5 +109,5 @@
 				"preset": "saltflats"
 			}
 	]
-	}
+	}*/
 }

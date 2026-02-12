@@ -1,7 +1,7 @@
 {
 	"type": "naval",
 	"name": "海胆",
-	"description": "轻型战舰，甚至都不能将其称为战舰，相比之下他更像一个快艇，附带高射速的机枪攻击，对空对地，对建筑和空军有伤害加成。\n[blue][超限技术轻型海军]",
+	"description": "轻型战舰，前方有一门主炮，后方附带高射速的机枪攻击，对空对地，机枪对建筑和空军有伤害加成。\n[blue][超限技术轻型海军]",
 		"immunities": [
 		"wet","spore-slowed","tarred","甲板损坏"
 	],
@@ -18,11 +18,40 @@
     "waveTrailY":-6,
     "trailScl":2,
 	"hitSize":16 
-	"health": 110,
+	"health": 620,
 	"armor":5,
 	"faceTarget": false,
 	//"maxRange": 400,
 	"weapons":[
+	{
+"name": "田螺1",
+"top": true,
+"y": 4,
+"x": 0,
+"reload": 95,
+"recoil": 2,
+"shake": 1,
+"ejectEffect": "casing2",
+"mirror": false,
+"shootSound": "shoot",
+"rotate": true,
+"baseRotation":180
+"bullet": {
+"type": "ArtilleryBulletType",
+"speed": 2,
+"damage": 40,
+"sprite": "shell",
+"hitEffect": "blastExplosion",
+"knockback": 0.8,
+"lifetime": 100,
+"width": 10,
+"height": 10,
+"collides": true,
+"collidesTiles": true,
+"splashDamageRadius": 35,
+"splashDamage": 40
+}
+},
 		{"name": "机枪1",	
 			"shoot":{
 		"type":"ShootAlternate",
@@ -106,27 +135,44 @@
 	"damage":3
     "hitSize":4
     "buildingDamageMultiplier":5
-    "fragBullets":3
+    "fragBullets":1
         "fragBullet":{
-        "damage": 3
+        "damage": 0
 			"lifetime":0,
 			"width": 1, 			
 			"height":1
 			"splashDamageRadius":32,
-		"splashDamage":6
+		"splashDamage":15
 		"collidesGround":false
 		"collidesAir":true,
+			"despawnEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 3,
+							"sizeFrom": 4,
+							"sizeTo": 8,
+							"sizeInterp": "pow10In",
+							"length": 8,
+							"baseLength": 9,
+							"lifetime": 20,
+							"colorFrom": "00000050",
+							"colorTo": "00000000",
+							"cone": 360
+						}
+					]
+				},
         }
 	               	}}
 	]
-	"research": {
+	/*"research": {
 	"parent":"BAAsHA步兵厂"
-	/*"objectives": [
+	"objectives": [
             {
 				"type": "SectorComplete",
 				"preset": "冰冷山区"
 			}
-	]*/
-	}
-	//"controller": "DefenderAI"
+	]
+	}*/
 }

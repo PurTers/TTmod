@@ -1,0 +1,41 @@
+{
+	"type": "GenericCrafter",
+	"name": "「静置」法还原硅炉",
+	"health": 320,
+	"description": "利用衰变把沙子转化为硅\n\n[blue][超限技术特种工厂]",
+	"details":"我们从虚空中借来了一些电子，塞给二氧化硅来还原出硅单质\n其实原理并不重要，但请允许我喊出那句口号:[blue]超限科技，震撼人心",
+	"outputItem": { "item": "silicon", "amount": 1 },
+	"alwaysUnlocked": false,
+	"size": 2,
+	"hasPower": false,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 20,
+	"itemCapacity": 30,
+	"consumes": {
+    "items": {	 "items": [
+    { "item": "sand", "amount": 9}
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 140 },
+	{ "item": "thorium", "amount": 80 },
+	{ "amount": 80, "item": "0铜铅合金" }
+	{"item":"silicon","amount":80}
+	],
+	"category": "crafting",
+	"updateEffect": "pulverizeSmall",
+	"craftEffect": "blastsmoke"
+	//"research": "BAAsGT1B尘埃收集器"
+	/*"research": {
+	"parent":"BAAsGT1B尘埃收集器"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.7
+}

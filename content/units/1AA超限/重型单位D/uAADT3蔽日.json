@@ -282,7 +282,7 @@
 		    "name": "蔽日边"
 			"x": 16
 			"y": -4
-			"reload": 10,
+			"reload": 60,
 			"shootY": 0,
 			"mirror": true,
 			"rotate": true,
@@ -318,14 +318,14 @@
 				"hitEffect": "none",
 				"despawnEffect": "none"
 				"smokeEffect": "none"
-				"despawnSound":"none",
+				"hitSound":"none",
 			}
 		}
     {
 		    "name": "蔽日中"
 			"x": 0
 			"y": 9
-			"reload": 10,
+			"reload": 60,
 			"shootY": 0,
 			"mirror": false,
 			"rotate": true,
@@ -334,7 +334,7 @@
 			"alwaysShooting": true,
 			"continuous": true,
 			"ejectEffect":"none",
-	        "shootSound":"none",
+	        "shootSound":"电风扇",
 			"recoil": 0,
 			"parts":[
         	    {
@@ -361,7 +361,7 @@
 				"hitEffect": "none",
 				"despawnEffect": "none"
 				"smokeEffect": "none"
-				"despawnSound":"none",
+				"hitSound":"none",
 			}
 		}
     ]

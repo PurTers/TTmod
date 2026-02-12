@@ -47,8 +47,6 @@
 		"shoot":{
 		"shots":2
 	    "shotDelay":22
-	    "barrels": 3
-		"spread": 4
 	},
    "recoil": 0
    "recoils": 0
@@ -159,7 +157,7 @@
 		"shots":2
 	    "shotDelay":90
 	},
-	"ammoUseEffect": "casing2Double",
+	//"ammoUseEffect": "casing2Double",
 	"shootSound":"respawn",
 	"reload":1200
         "x":49
@@ -194,8 +192,6 @@
 		"shoot":{
 		"shots":2
 	    "shotDelay":22
-	    "barrels": 3
-		"spread": 4
 	},
    "recoil": 0
    "recoils": 0
@@ -319,8 +315,6 @@
 		"shoot":{
 		"shots":2
 	    "shotDelay":22
-	    "barrels": 3
-		"spread": 4
 	},
    "recoil": 0
    "recoils": 0

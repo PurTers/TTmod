@@ -1,0 +1,43 @@
+{
+	"type": "GenericCrafter",
+	"name": "脱硫机",
+	"description": "利用科技的手段分离石油中分离出硫，这极大的降低了硫生产的复杂程度。\n\n[blue][超限技术低级工厂]",
+	"health": 360,
+	"outputItem": { "item": "pyratite", "amount": 1 },
+	"itemCapacity": 14,
+	"size": 3,
+    "hasItems": true,
+	"hasLiquids": true,
+	"solid": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 30,
+	"updateEffect": "fireballsmoke",
+	"craftEffect": "blastsmoke"
+	"consumes": {
+		"power": 2,
+	"liquid": 
+	{"liquid": "oil", "amount": 0.15 }
+		},
+	"requirements": [
+	{ "item": "titanium", "amount": 80 }
+	{ "item": "0铜铅合金", "amount": 120 },
+	{ "item": "graphite", "amount": 70 },
+	{ "item": "metaglass", "amount": 60}
+	{ "item": "plastanium", "amount": 80},
+	{ "item": "silicon", "amount": 80 },
+	],
+	"category": "crafting",
+	/*"research": {
+	"parent":"BAAsGT1A铜铅熔合炉"
+	"objectives": [
+            {
+				"type": "OnComplete",
+				"preset": "污染小道"
+			}
+	]
+	}*/
+	"buildCostMultiplier":0.25
+	"researchCostMultiplier": 0.1
+}

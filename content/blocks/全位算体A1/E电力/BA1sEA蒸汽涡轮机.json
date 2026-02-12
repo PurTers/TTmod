@@ -1,0 +1,57 @@
+{
+    "type":"ConsumeGenerator",
+    "name":"温压发电机",
+    "description":"通过高速的焰流来驱动涡轮发电，疯子般的想法。\n[orange][全位算体电力设备]",
+    "size":3,
+    "health":360,
+    "hasPower":true,
+    "hasLiquids":true,
+    "hasItems":true,
+    "itemCapacity":20,
+    "liquidCapacity":320,
+    "powerProduction":12,
+    "itemDuration":320,
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            "DrawWarmupRegion",
+            {
+                "type": "DrawRegion",
+                "suffix": "-turbine",
+                "rotateSpeed":6
+            },
+        ]
+    },
+    "generateEffect": "generatespark",
+    "consumes":{
+    "itemFlammable": { },
+    "items": {	 "items": [
+    { "item": "pyratite", "amount": 1},
+    ],}
+             "liquid": {
+            "liquid": "water",
+            "amount": 0.35
+        }}
+    "requirements":[
+    {"item":"copper","amount":75},
+    {"item":"lead","amount":55},
+        {"item":"silicon","amount":45},
+        { "item": "titanium", "amount": 55 }
+        {"item":"graphite","amount":40}
+        ],
+        "ambientSound": "smelter",
+    "ambientSoundVolume": 0.06,
+        "category":"power",
+        "research": {
+	"parent":"BA1sEA机械发电机"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "工业区0032"
+			}
+	]
+	}
+	"researchCostMultiplier": 0
+	"buildCostMultiplier":0.5
+}

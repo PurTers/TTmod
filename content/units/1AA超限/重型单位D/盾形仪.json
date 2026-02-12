@@ -25,12 +25,12 @@
     {
     "type": "ShieldArcAbility",
 		"whenShooting":false,//是否射击时存在(Flash为一直存在)
-		"radius": 360,//半径
-		"width": 45,//宽度
+		"radius": 36,//半径
+		"width": 3,//宽度
 		"max": 8000,//最大容量
 		"regen": 0,//再生速度
 		"cooldown": 99999,//护盾冷却时间
-		"angle": 60,//护盾弧度
+		"angle": 360,//护盾弧度
 		"angleOffset": 0//护盾角度
 		"pushUnits":true
 	}

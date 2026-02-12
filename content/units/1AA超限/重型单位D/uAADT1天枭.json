@@ -190,7 +190,7 @@
 	}
 	}
     ]
-   "research": {
+   /*"research": {
 	"parent":"BAAsHI净空级装配厂"
 	"objectives": [
             {
@@ -198,5 +198,5 @@
 				"preset": "遗忘河滩"
 			}
 	]
-	}
+	}*/
 }

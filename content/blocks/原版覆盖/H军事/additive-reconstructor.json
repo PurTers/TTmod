@@ -1,10 +1,17 @@
 {
+"consumes": {
+		"power": 3
+	"items": [
+	{ "item": "copper", "amount": 80 }
+	//{ "item": "graphite", "amount": 25 }
+	//{ "item": "silicon", "amount": 15 },
+	],}
 "research": {
 	"parent":"ground-factory"
 	"objectives": [
             {
 				"type": "OnSector",
-				"preset": "超限工艺-fungalPass"
+				"preset": "真菌通道"
 			}
 	]
 	}

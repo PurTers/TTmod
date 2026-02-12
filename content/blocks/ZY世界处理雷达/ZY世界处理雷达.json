@@ -20,7 +20,11 @@
         "backColor": "FFFFFFFF",
 				"frontColor": "FFFFFFFF",
 				"healPercent": 100
-		"effect":"none"
+		"despawnEffect": "none"
+	"shootEffect": "none"
+	//"receiveEffect": "none"
+	"smokeEffect": "none"
+	"shootSound": "none"
        }
     "consumes": {
     },

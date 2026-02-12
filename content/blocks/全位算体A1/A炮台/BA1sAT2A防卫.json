@@ -13,11 +13,11 @@
     "recoil": 2,
    // "hasPower": false,
     "shoot": {
-    "shots":2,
+    "shots":4,
         "type": "ShootAlternate",
         "barrels": 2,
         "spread": 3
-        "shotDelay":30
+        "shotDelay":22
     },
     "shootSound": "artillery",//子弹音效
     "recoilTime": 10,
@@ -55,7 +55,7 @@
 	}}
     "consumes": {
     },
-    "reload": 114,
+    "reload": 144,
     "rotateSpeed": 12,
     "range": 240,
     "category": "turret",
@@ -64,7 +64,7 @@
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-废弃研究所"
+				"preset": "废弃研究所"
 			}
 	]
 	}
@@ -75,5 +75,5 @@
 { "item": "graphite", "amount":90}
 { "item": "titanium", "amount": 120 }
     ]
-    "buildVisibility":"campaignOnly"
+   // "buildVisibility":"campaignOnly"
 }

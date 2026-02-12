@@ -1,0 +1,153 @@
+{
+"type": "hover",
+    //"template": "ErekirUnitType",
+"name": "看护",
+"description": "简易的悬浮单位，能够高速移动，拥有高攻速，强力的反建筑机枪，不能攻击空中单位。\n\n[blue][超限技术特殊作战单元]",
+    "immunities": [
+		"wet","spore-slowed","tarred","甲板损坏"
+	],
+"outlineColor": "2E2F34FF",
+"healColor": "c0ecff"
+  "shieldColor": "c0ecff"
+"ammoCapacity": 50,
+"speed": 1.2,
+"hitSize": 25,
+"targetAir": true,
+"targetGround": true,
+"health": 90,
+"armor": 0,
+"itemCapacity": 10,
+"researchCostMultiplier": 0.4,
+"rotateSpeed": 1,
+"canDrown": false,
+  "parts": [
+    {
+      "type": "HoverPart",
+      "mirror": false,
+      //是否镜像
+      "x": 0,
+      "y": 0,
+      "radius": 15,
+      "phase": 90,
+      "stroke": 2,
+      "layerOffset": -1,
+      "color": "c0ecff"
+    },
+    ],
+"weapons": [
+{
+"name": "机枪1",
+"shoot": {
+"type": "ShootAlternate"
+"barrels":3,
+		"spread":0.5
+},
+"shootCone": 30,
+"parts": [
+{
+"type": "RegionPart",
+"suffix": "-底",
+"layer": 73
+},
+{
+"type": "RegionPart",
+"mirror": false,
+"x": 0.5,
+"y": 0,
+"suffix": "-管",
+"layer": 71,
+"moveX": -0.5,
+"moveY": 0,
+"moveRot": 0,
+"progress": "reload"
+},
+{
+"type": "RegionPart",
+"mirror": false,
+"x": 0,
+"y": 0,
+"suffix": "-管",
+"layer": 71,
+"moveX": -0.5,
+"moveY": 0,
+"moveRot": 0,
+"progress": "reload"
+},
+{
+"type": "RegionPart",
+"mirror": false,
+"x": -0.5,
+"y": 0,
+"suffix": "-管",
+"layer": 71,
+"moveX": 1,
+"moveY": 0,
+"moveRot": 0,
+"progress": "reload"
+},
+{
+"type": "RegionPart",
+"suffix": "-口",
+"x": 0,
+"y": 0,
+"layer": 72,
+"moves": [
+{
+"progress": "recoil",
+"y": -0.2
+}
+]
+}
+],
+"reload": 6,
+"recoil": 0,
+"x": 0,
+"y": 0,
+"rotate": true,
+"mirror": false,
+"shootY": 4,
+"rotateSpeed": 2,
+"inaccuracy": 0,
+"bullet": {
+"type": "BasicBulletType",
+"speed": 5,
+"lifetime": 30,
+"width": 1.5,
+"height": 5,
+"damage": 3,
+"hitSize": 4,
+"buildingDamageMultiplier": 5,
+"fragBullets": 3,			
+"fragBullet": {
+"damage": 3,
+"lifetime": 0,
+"width": 1,
+"height": 1,
+"splashDamageRadius": 32,
+"splashDamage": 6,
+"collidesGround": false,
+"collidesAir": true
+	"despawnEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 3,
+							"sizeFrom": 4,
+							"sizeTo": 8,
+							"sizeInterp": "pow10In",
+							"length": 8,
+							"baseLength": 9,
+							"lifetime": 20,
+							"colorFrom": "00000050",
+							"colorTo": "00000000",
+							"cone": 360
+						}
+					]
+				},
+}
+}
+}
+]
+"research": "BAAsHA步兵厂"
+}

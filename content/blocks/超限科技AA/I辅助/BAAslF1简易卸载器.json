@@ -1,0 +1,27 @@
+{
+    "health": 50,
+    "size": 1,
+    "speed": 10,
+    "update": "true",
+    "hasItems": "true",
+    "type": "Unloader",
+    "description": "能慢速卸载临近方块中的指定物品，但是极为廉价\n\n[blue][超限技术物流装置]",
+    "name": "简易卸载器",
+    "requirements": [
+        { "item": "0铜铅合金", "amount": 25 },
+        { "item": "lead", "amount": 20 }
+	{ "item": "silicon", "amount": 15 },
+    ],
+    "category": "effect",
+    "research": {
+	"parent":"BAAsCA1铜铅合金带传送带"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "陨石带"
+			}
+	]
+	}
+    "researchCostMultiplier": 0.5
+        //"canOverdrive": false,
+}

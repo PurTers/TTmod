@@ -1,0 +1,65 @@
+{
+    "name": "复式塑钢加工厂",
+    "type": "GenericCrafter",
+    "description": "无需电力快速加工塑钢，以求前期产量，但有大量损耗，尽管如此，它依旧被超限集团用于合成塑钢。\n\n[blue][超限技术低级工厂]",
+    "craftEffect": "pulverizeSmall"
+	"updateEffect": "pulverizeMedium",
+    "itemCapacity": 12,
+    "health": 400,
+    "size": 3,
+    "hasPower": false,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 40,
+    "updateEffect": "none",
+    "consumes": {
+        "items": {
+            "items": [
+                {"item": "titanium","amount": 5},
+            ]
+        },
+        "liquid": {"liquid": "oil","amount": 0.5}
+    },
+    "liquidCapacity": 60,
+    "outputItem": {
+        "item": "plastanium","amount": 2
+    }
+    "requirements": [
+    //建造需求
+        {
+            "item": "titanium",
+            //物品:铜
+            "amount": 80
+            //需求数量
+        },
+        {
+            "item": "graphite",
+            //物品:玻璃
+            "amount":90
+            //需求数量
+        },
+        {
+            "item": "silicon",
+            //物品:硅
+            "amount": 80
+            //需求数量
+        },
+        {
+            "item": "lead",
+            "amount": 70
+        }
+        { "item": "0铜铅合金", "amount": 60 },
+    ],
+    "category": "crafting",
+    	/*"research": {
+	"parent":"BAAsGT1A铜铅熔合炉"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "污染小道"
+			}
+			"plastanium-compressor"
+	]
+	}*/
+	"researchCostMultiplier": 0.1
+}

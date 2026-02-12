@@ -1,0 +1,49 @@
+{
+    "name": "复合相位合金熔炼炉",
+    "type": "GenericCrafter",
+    "description": "用于加工巨浪合金，产量更多，速度更快。\n\n[blue][超限技术高级工厂]",
+    "itemCapacity": 80,
+    "health": 400,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 60,
+    "updateEffect": "none",
+    	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+    "consumes": {
+    "power": 8,
+        "items": {
+            "items": [
+                { "item": "titanium", "amount": 5 },
+                { "item": "0铜铅合金",  "amount": 6 },
+                {"item": "silicon","amount": 8 },
+            ]
+        },
+    },
+    "outputItem": {"item": "surge-alloy", "amount": 3}
+    "requirements": [
+    {"item": "titanium","amount": 160},
+        { "item": "graphite","amount":120},
+        {"item": "1绝缘钢","amount": 150},
+        {"item": "0铜铅合金","amount": 220}
+        {"item": "1复合物","amount": 140}
+        { "amount": 140, "item": "1集成电路" }
+    ],
+    "category": "crafting",
+    /*"research": {
+    "parent":"BAAsGT1J电路装配厂",
+    "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "无风海湾"
+			}
+	]}*/
+    "researchCostMultiplier": 0.5
+}

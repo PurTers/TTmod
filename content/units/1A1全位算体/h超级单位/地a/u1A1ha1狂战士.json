@@ -1,6 +1,6 @@
 {
 	"type": "mech",
-	"name": "狂战士",
+	"name": "焰怒",
 	"description": "强力战斗单位，向附近的敌人发射火焰榴弹炮，榴弹炮可以直接飞过建筑，带四个机枪辅助攻击，近战可纵火。\n[orange][全位算体精英部队]",
 			"immunities": [
 		"burning","甲板损坏"
@@ -49,21 +49,21 @@
 	"statusDuration":300,
 	}	}
 		{	"name": "狂战士3",	
-		"reload":46,
+		"reload":20,
         "x": -3,  "y": -1.5, 
         "rotate": true,
         "rotateSpeed":24,
         "inaccuracy": 0,
 		"shoot":{
 			"shots":3,
-			"shotDelay":7.5
+			"shotDelay":15
 		},
 		"shootSound": "pew",
 		"rotateSpeed": 1,//炮台转头速度
 		"alternate": true,
 		"ejectEffect":"casing1",
 		"bullet":{
-	    "damage":7,	  
+	    "damage":12,	  
 	    "speed":3,
 	    "lifetime":50,
 	    "width":7,	 "height":10
@@ -71,14 +71,14 @@
 	"statusDuration":30,
 	}	}
 	{	"name": "狂战士3",	
-		"reload":46
+		"reload":20
         "x": -3,  "y": 1.5, 
         "rotate": true,
         "rotateSpeed":24,
         "inaccuracy": 0,
 		"shoot":{
 			"shots":3,
-			"shotDelay":7.5
+			"shotDelay":15
 		},
 		"shootStatusDuration": 10,//发射时给自己的状态时间
 	"shootStatus": "静止",//发射时给自己的状态
@@ -87,7 +87,7 @@
 		"alternate": true,
 		"ejectEffect":"casing1",
 		"bullet":{
-	    "damage":7	  
+	    "damage":12	  
 	    "speed":3,
 	    "lifetime":50,
 	    "width":7,	 "height":10
@@ -95,7 +95,7 @@
 	"statusDuration":30,
 	}	}
 	{	"name": "狂战士2",	
-		"reload":18,
+		"reload":9,
         "x": 8,  "y": 0, 
        "rotate": false,
         "inaccuracy": 6,
@@ -113,6 +113,7 @@
 			"collidesAir": false
         "collidesGround": true
         "makeFire": true,
+        "buildingDamageMultiplier":3.0,
 			"pierceCap": 3,
 			"shootEffect": {
 				"type": "ParticleEffect",

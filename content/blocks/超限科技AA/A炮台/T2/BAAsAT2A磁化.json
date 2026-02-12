@@ -1,0 +1,126 @@
+{
+    "type":"PowerTurret",
+    "name":"磁化", 
+    "description":"超限集团由电弧改造的更高功率的电炮，相较于电弧有更远的攻击距离，能在短时间内释放大量闪电攻击敌人\n \n[blue][超限技术炮台]", 
+    "health":600,
+	"reload":30,
+    "shootCone":60,
+    "rotateSpeed":2,
+	"consumes": {
+		"power":4.6
+	"coolant":{"amount":0.2,"optional":true}  
+		},
+		"liquidCapacity": 50,
+	"hasLiquids": false,
+    "targetAir" :true,
+	"targetGround": true,
+    "range":120,
+    "drawer":{"type":"DrawTurret",
+	    "basePrefix": "TT-"
+	    }
+    "shootEffect":[{"type": "ParticleEffect",
+    "particles": 4,
+    "length":45,
+    "baseLength": 0,
+    "lifetime": 26,
+    "line": true,
+    "lenFrom":8,
+    "lenTo":18,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+        "colorFrom": "ffffff",
+        "colorTo": "ffffff",
+        "cone": 60},
+        {"type": "ParticleEffect",
+    "particles": 4,
+    "length":10,
+    "baseLength": 0,
+    "lifetime": 26,
+    "line": true,
+    "lenFrom":8,
+    "lenTo":18,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+        "colorFrom": "ffffff",
+        "colorTo": "ffffff",
+        "cone": 360},
+        {"type": "ParticleEffect",
+    "particles": 4,
+    "length":10,
+    "baseLength": 0,
+    "lifetime": 26,
+    "line": true,
+    "lenFrom":8,
+    "lenTo":18,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+        "colorFrom": "7457ce",
+        "colorTo": "7457ce",
+        "cone": 360},
+        {"type": "ParticleEffect",
+    "particles": 4,
+    "length":10,
+    "baseLength": 0,
+    "lifetime": 26,
+    "line": true,
+    "lenFrom":8,
+    "lenTo":18,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "FFF8AFFF",
+        "cone": 360},]
+    "recoil": 2,
+	"recoilTime": 46
+    "size":2,
+	"inaccuracy": 0,
+    "shootSound":"spark",
+    "shootY":0,
+    "shootX":0,
+    "shootType":{
+    "type":"MultiBulletType"
+    "bullets":[
+    {
+    "type":"LightningBulletType",
+    "damage":24,
+    "lightningLength":20,
+    "collidesAir": true
+    },
+    {
+    "type":"LightningBulletType",
+    "damage":36,
+    "lightningLength":10,
+    "collidesAir": true
+    "lightningColor": "7457ce",
+	"status":"sapped",
+	"statusDuration":180,
+    },
+    {
+    "type":"LightningBulletType",
+    "damage":48,
+    "lightningLength":5,
+    "collidesAir": true
+	"lightningColor":"FFF8AFFF",
+	"status":"electrified",
+	"statusDuration":180,
+    },
+    ],
+    }
+	"requirements": [
+{ "item": "graphite", "amount":65},
+{ "item": "lead", "amount":160}
+{ "item": "0铜铅合金", "amount": 20 }
+],
+"category": "turret",
+"research": {
+	"parent":"BAAsAT1分离"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "陨石带"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.5
+  }

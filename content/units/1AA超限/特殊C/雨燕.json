@@ -38,7 +38,7 @@
 			"useAmmo": false,
 			"alwaysShooting": true,
 			"ejectEffect":"none",
-	        "shootSound":"none",
+	        "shootSound":"电风扇",
 			"recoil": 0,
 			"showStatSprite": false
 			"parts":[
@@ -81,7 +81,7 @@
 			"useAmmo": false,
 			"alwaysShooting": true,
 			"ejectEffect":"none",
-	        "shootSound":"none",
+	        "shootSound":"电风扇",
 			"recoil": 0,
 			"showStatSprite": false
 			"rotationLimit": 45

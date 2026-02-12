@@ -1,14 +1,14 @@
 {
 	"type": "flying",
 	"name":"砥梁",
-	"description": "超限集团研发出的用于在根据地稳定之后使用的重型采矿机，能够开采较高等级的矿物，效率高，储量大，但是移动缓慢。",
+	"description": "超限集团研发出的用于在根据地稳定之后使用的重型采矿机，能够开采较高等级的矿物，效率高，储量大，但是移动缓慢。\n \n[blue][超限集团辅助飞行器]",
 	"immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],
 	"details":"超级采矿机",
 	"speed": 0.28
 	"accel":0.05,"drag":0.03,
-	"rotateSpeed":0.75
+	"rotateSpeed":1.25
 	"ammoType":"titanium",
 	"ammoCapacity": 300,
 	"hitSize":24, 

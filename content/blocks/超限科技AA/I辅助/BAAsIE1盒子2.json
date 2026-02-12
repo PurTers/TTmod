@@ -1,0 +1,24 @@
+{
+    "description": "在突破资源壁垒之后，超限集团研究出的大型的储存器，可以使用卸载器取出物品，容量巨大。\n \n [超限集团储存单元]",
+    "requirements": [
+    {"amount": 300, "item": "titanium"}
+    { "amount": 200, "item": "thorium" }
+	{ "amount": 30, "item": "1绝缘钢" }
+	{ "item": "0铜铅合金", "amount": 100 }
+   ],
+    "type": "StorageBlock",
+    "name": "仓储笼",
+    "size": 4,
+    "itemCapacity": 4000,
+    /*"research": {
+	"parent":"BAAsIE1盒子"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+    "category": "effect"
+    "researchCostMultiplier": 0.5
+}

@@ -1,0 +1,52 @@
+{
+	"type": "GenericCrafter",
+	"name": "绝缘钢压制厂",
+	"description": "利用玻璃，硅，石油经过一系列手段制造绝缘钢\n\n[blue][超限技术中级工厂]",
+	"health": 920,
+	"outputItem": { "item": "1绝缘钢", "amount": 4},
+	"craftEffect": "pulverizeSmall"
+	"updateEffect": "pulverizeMedium",
+	"itemCapacity": 24,
+	"liquidCapacity":24
+	"size": 3,
+    "hasItems": true,
+	"hasLiquids": true,
+	"solid": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 30,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+		"power": 6,
+		"items":{
+		"items":[
+		{ "item": "plastanium", "amount": 3},
+		{"item":"metaglass","amount":5}
+		{"item":"silicon","amount":3}]}
+		},
+	"requirements": [
+	{ "item": "titanium", "amount": 200 }
+	{ "item": "1集成电路", "amount": 70 },
+	{ "item": "plastanium", "amount": 80},
+	{ "item": "0铜铅合金", "amount": 140 },
+	],
+	"category": "crafting",
+	/*"research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

@@ -1,0 +1,238 @@
+{
+    "type": "legs",
+    "name":"侧卫-B"
+    "description": "超限集团对于重工设计的便于生产的特殊机械，主炮可以发射激光，配备有导弹仓用于发射导弹。\n\n[blue][超限技术特战机甲]",
+    //"details":"",
+     "legCount": 4,
+  "legLength": 12,
+  "legForwardScl": 0.3,
+  "legExtension": -3,
+  
+  "legGroupSize": 3,
+  
+  "legMoveSpace": 0.6,
+  "lockLegBase": true,
+  
+  "hovering": false,
+  
+  "faceTarget": true,
+  "canDrown": true,
+	
+	"legSplashDamage":0
+	"legSplashRange":0
+    "immunities": [
+		"wet","甲板损坏"
+	],
+    "speed": 0.7
+    "hitSize": 6
+    "health": 1320,
+    "itemCapacity": 0
+    	"rotateSpeed": 2.1
+    	"ammoType":"copper",
+	"ammoCapacity": 300,
+        "targetAir":false,  
+        "healColor": "c0ecff"
+  "shieldColor": "c0ecff"
+    "targetGround":true,
+    "armor":8
+    	"abilities": [
+	/*{
+			"type": "SpawnDeathAbility",
+			"unit": "爆炸1",
+			"amount": 1,
+			"randAmount": 0
+			"spread": 0,
+	    "faceOutwards": false,
+	},*/
+    {
+    "type": "ShieldArcAbility",
+		"whenShooting":true,//是否射击时存在(Flash为一直存在)
+		"radius": 30,//半径
+		"width": 5,//宽度
+		"max": 400,//最大容量
+		"regen": 0.2,//再生速度
+		"cooldown": 160,//护盾冷却时间
+		"angle": 80,//护盾弧度
+		"angleOffset": -60//护盾角度
+		"pushUnits":false
+	}
+	{
+    "type": "ShieldArcAbility",
+		"whenShooting":true,//是否射击时存在(Flash为一直存在)
+		"radius": 30,//半径
+		"width": 5,//宽度
+		"max": 400,//最大容量
+		"regen": 5,//再生速度
+		"cooldown": 160,//护盾冷却时间
+		"angle": 80,//护盾弧度
+		"angleOffset": 60//护盾角度
+		"pushUnits":false
+	}
+    ]
+    "weapons": [
+    
+    {
+      "name": "侧卫B",
+      "reload": 33,
+      "shootSound": "blaster",
+      "x": 0,
+      "top": false,
+      "y": 0,
+      "rotate": false,
+      "mirror": false,
+      "minWarmup": 0.99
+      "shootWarmupSpeed": 0.005,
+      "linearWarmup": true,//开启线性计算
+      "alternate": true,
+      "recoil": 0,
+      "shootCone":35,
+      "recoilTime": 0,
+      "shootY":7
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-2",
+          "under":true
+          "mirror":true
+          "x": 0,
+          "y": 0
+          "layer": 60,
+           "moves": [
+        
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.3
+                        }
+                        "x":1
+                        "y":-1
+                        "rot":-30
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.3
+                            "end": 0.6
+                        }
+                        "x":-3
+                        "y":4
+                        "rot":-15,
+        		    },
+        		    ],},],
+      "ejectEffect": "casing1",
+      "bullet": {
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	}
+	"colors": ["1878BF","1878BF50","FFFFFF"],
+	"status": "unmoving",
+			"statusDuration": 46,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"damage": 24,
+	"pierceDamageFactor":0.4
+	"buildingDamageMultiplier":0.5
+	"pierce": true
+	"width": 6,	
+	"length": 142,
+	"lifetime": 20,
+	"collidesAir": true
+	"ejectEffect":"none"
+      }
+    }
+    
+    {
+      "name": "导弹仓1",
+      "reload": 220,
+      "shootSound": "blaster",
+      "x": 0,
+      "top": false,
+      "y": 0,
+      "rotate": false,
+      "mirror": true,
+      "minWarmup": 0.99
+      "shootWarmupSpeed": 0.005,
+      "linearWarmup": true,//开启线性计算
+      "recoil": 0,
+      "shootCone":360,
+      "recoilTime": 0,
+      "recoils": 3
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-2",
+          "under":true
+          "mirror":true
+          "x": 0,
+          "y": 4
+          "layer": 60,
+           "moves": [
+        
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":-4
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {
+          "type": "RegionPart",
+          "suffix": "-1",
+          "under":true
+          "mirror":false
+          "x": 0
+          "y": 0
+          "layer": 60,
+           "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":2
+                        "y":4
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    {
+						"progress": "recoil",
+						"y": -1
+					}
+        		    ]
+        }
+      ],
+      "shoot": {
+        "type": "ShootBarrel",
+        "barrels": 1
+		"barrels": [
+    -3, -3, -180, 
+  ]
+		"spread":0.75
+      },
+      "ejectEffect": "casing1",
+      "bullet": {
+ 	"type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (5)",
+             "speed": 0,
+      }
+    }
+    ]
+}

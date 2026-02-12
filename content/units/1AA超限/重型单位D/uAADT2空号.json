@@ -304,7 +304,7 @@
 			}
 		}
     ]
- "research": {
+ /*"research": {
 	"parent":"uAADT1天枭"
 	"objectives": [
             {
@@ -312,5 +312,5 @@
 				"preset": "遗忘河滩"
 			}
 	]
-	}
+	}*/
 }

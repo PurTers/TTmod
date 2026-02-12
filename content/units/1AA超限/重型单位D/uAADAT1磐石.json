@@ -174,7 +174,7 @@
 	}
 	}
 		]
-		"research": {
+		/*"research": {
 	"parent":"BAAsHH抑灾级装配厂"
 	"objectives": [
             {
@@ -182,6 +182,6 @@
 				"preset": "overgrowth"
 			}
 	]
-	}
+	}*/
 	"researchCostMultiplier": 0
 }

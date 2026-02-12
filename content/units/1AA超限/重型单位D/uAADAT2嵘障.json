@@ -268,7 +268,7 @@
 			}
 			}}
 		]
-		"research": {
+		/*"research": {
 	"parent":"BAAsHL低级装配厂"
 	"objectives": [
             {
@@ -276,5 +276,5 @@
 				"preset": "冰封菌落"
 			}
 	]
-	}
+	}*/
 }

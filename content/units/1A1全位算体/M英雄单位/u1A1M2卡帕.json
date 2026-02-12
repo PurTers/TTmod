@@ -15,9 +15,9 @@
 	"type":"PowerAmmoType",
 	"totalPower":2200},
 	"ammoCapacity": 700
-    "ammoResupplyAmount":1,/*弹药补给倍率 */
-    "health": 660,
-    "armor": 22
+    //"ammoResupplyAmount":1,/*弹药补给倍率 */
+    "health": 580,
+    "armor": 16
     "drag": 0.2,
     "rotateSpeed": 7.5,
     "buildSpeed":5

@@ -1,0 +1,28 @@
+{
+    "name":"战端核心",
+    "type":"CoreBlock",
+    "description": "次重型核心，装甲重，容量大。\n[red][泽塔议会次代核心]",
+    "requirements": [
+    {"amount": 4000, "item": "copper"},
+    {"amount": 4000, "item": "lead"},
+	{ "item": "silicon", "amount": 2500 },
+	 { "item":"titanium","amount":3000},
+	 { "amount": 3000, "item": "graphite" },
+    ],
+    "unitType":"uA0CCZ02贝塔",
+    "health": 6500,
+    "armor":15
+    "itemCapacity": 10000,
+    "size": 4,
+    "research": {
+	"parent":"BA0sID01烽火核心"
+	"objectives": [
+            {
+				"type": "SectorComp",
+				"preset": "盐碱荒滩"
+			}
+	]
+	}
+    "unitCapModifier": 24,
+    "category": "effect"
+}

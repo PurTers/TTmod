@@ -1,0 +1,20 @@
+{
+	"overrideLaunchDefaults": true,//进度覆盖
+    "planet":"serpulo"
+    "sector":175
+    "captureWave":25
+    "difficulty":2
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "冰冻森林",
+		"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冻森林"
+			}
+			{
+				"type": "SectorComplete",
+				"preset": "未知废墟"
+			}
+			]}
+}

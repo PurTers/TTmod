@@ -1,145 +1,181 @@
 {
 	"type": "flying",
-	"name":"扩张[移动]",
-	"description": "超限集团转移基地时会一并带走的移动兵工厂,部署之后会伸出底部的钻头,从地下挖掘部分矿物在经过简易加工建造的一些简单的战斗单位,同时开启回复立场,带有一定的建造能力，相较于重工有的攻击能力，部署之后40s之内不能收起工厂。\n \n[blue][超限集团移动兵工厂]",
-	"details":"他在飞行时还是个很好用的采矿机",
+	"name":"庇护",
+	"description": "超限集团为了应对前线战争选号和诞生的维修飞行器，可以为周围的单位提供高额的血量回复，同时对进入立场范围内的敌军进行压制。\n除此之外有基本的建造和开采能力。",
 	"immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],
-	"speed": 0.2
+	"details":"迷你要塞",
+	"speed": 1.45
 	"accel":0.05,"drag":0.03,
-	"rotateSpeed":0.5
+	"rotateSpeed":5
 	"ammoType":"titanium",
 	"ammoCapacity": 300,
 	"hitSize":24, 
-	"buildSpeed":1.2
+	"buildSpeed":0.75
 	"flying": true
-	"health":1280,
+	"health":6480,
+	"armor":8
+	"mineTier":4
+	"mineSpeed":3
+	//"engineOffset": 22,
+	//"engineSize": 6, 
+	"itemCapacity": 30
+	"engineColor": "c0ecff",
 	"healColor": "c0ecff"
   "shieldColor": "c0ecff"
-	"armor":0
-	"mineTier":4
-	"mineSpeed":5
-	"engineOffset": 0,
-	"engineSize": 0, 
-	"itemCapacity": 300
+  "parts":[
+{
+			"type": "ShapePart",
+			"colorTo":"c0ecff",
+			"color": "c0ecff",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 120
+			"radiusTo": 120
+			"x": 0,    "y": 0,
+},
+{
+		"type": "HaloPart",//多边形
+		"rotateSpeed":0//自转速度
+		"sides": 3,//多边形边数("tri":false时候可用)
+		"shapes": 3,//围绕旋转的图形数量
+		"color": "c0ecff",//开始时的颜色
+		"colorTo":"c0ecff",//结束时的颜色*/
+		"layer":110,//所在图层高度
+		"tri": true,//是否三角形
+		"radius": 14,//开始时的大小
+		"radiusTo": 14,//结束时的大小
+		"triLength": 10,//三角形开始时的尖锐程度
+		"triLengthTo":10,//三角形结束时的尖锐程度
+		"haloRadius": -120,//开始时的围绕半径
+		"haloRadiusTo": -120,//结束时的围绕半径
+		"haloRotation": 0,//开始时的角度
+		"haloRotateSpeed": 3//旋转速度
+    }
+    {
+		"type": "HaloPart",//多边形
+		"rotateSpeed":0//自转速度
+		"sides": 3,//多边形边数("tri":false时候可用)
+		"shapes": 3,//围绕旋转的图形数量
+		"color": "c0ecff",//开始时的颜色
+		"colorTo":"c0ecff",//结束时的颜色*/
+		"layer":110,//所在图层高度
+		"tri": true,//是否三角形
+		"radius": 14,//开始时的大小
+		"radiusTo": 14,//结束时的大小
+		"triLength": 10,//三角形开始时的尖锐程度
+		"triLengthTo":10,//三角形结束时的尖锐程度
+		"haloRadius": -120,//开始时的围绕半径
+		"haloRadiusTo": -120,//结束时的围绕半径
+		"haloRotation": 0,//开始时的角度
+		"haloRotateSpeed": -3//旋转速度
+    }
+    ]
+	"engines": [
+		{	"x": 0,"y":-13,"radius": 3, "rotation": 180},
+		{	"x": -7,"y":-5,"radius": 2, "rotation": -135},
+		{	"x": -7,"y":5,"radius": 2, "rotation": 135},
+		{	"x": 7,"y":-5,"radius": 2, "rotation": -45},
+		{	"x": 7,"y":5,"radius": 2, "rotation": 45},
+    ],
 	    "abilities": [
         {
         "type": "RepairFieldAbility"
-        "amount":324
+        "amount":360
         "reload": 300
-        "range": 64
+        "range": 120
+        "applyEffect":"none",
+    "activeEffect":"none"
     }
+    {
+"type": "RegenAbility",
+"amount": 0.6
+},
     ]
     "weapons": [
-	{
-            "name": "扩张",
-            "reload": 94
-            "x":0
-            "y":0
-             "inaccuracy": 0
-            "shootSound":"blaster",
-            "ejectEffect": "casing1",
-            "rotate": false
-			"baseRotation":0
-			"minWarmup": 0.99
-			"shootCone":15
-		    "rotationLimit": 0
-		    "mirror": false,
-		    "minWarmup": 0.99
-		    "linearWarmup": true,
-		    "shootWarmupSpeed": 0.0064,
-		    "shootCone": 360,
-    "parts": [
-        {"type":"RegionPart",
-        "mirror":true
-        "under":true
-        //"x": 0,"y": 0
-        "x":-10,"y":0,
-        "suffix":"-地"
-        "layer":69.9,
-        "moveX":10
-        "moveY":0
-        "moveRot":0
-        }
-        {"type":"RegionPart",
-        "mirror":true
-        "under":true
-        //"x": 0,"y": 0
-        "x":0,"y":0,
-        "suffix":"-空"
-        "layer":59.9,
-        "moveX":10
-        "moveY":0
-        "moveRot":0
-        }
-        {"type":"RegionPart",
-        "mirror":true
-        //"x": 0,"y": 0
-        "x":0,"y":0,
-        "suffix":"-顶"
-        "layer":199.9,
-        "moveX":5
-        "moveY":0
-        "moveRot":0
-        }
-			]
-			"showStatSprite": false
-			"shootStatusDuration": 600,
-	"shootStatus": "自毁",
+		{"name":"无",
+	"type":"PointDefenseWeapon",
+	"x":12
+	"y":0
+	"rotate": true,
+	"recoil":0,
+	"rotateSpeed":90
+    "reload":1
+    "targetInterval":6,
+    "targetSwitchInterval":6,
+			"parts":[
+{
+            "type": "FlarePart",
+            "rotation": 0,
+            "color1": "c0ecff",
+            "stroke": 2,
+            "radius": 3,
+            "radiusTo": 6,
+            "layer":130,
+            "progress": {
+            "type": "life",
+            "op": "curve",
+            "interp": "pow3Out"
+            }
+            "x": 0,    "y": 0,
+}
+{
+			"type": "ShapePart",
+			"colorTo":"c0ecff",
+			"color": "c0ecff",
+			"layer":130,
+			"stroke": 0.5,
+			"strokeTo": 0.5,
+			"circle": true,
+			"hollow": true,
+			"radius": 0
+			"radiusTo": 4
+			"x": 0,    "y": 0,
+},]
     "bullet":{
-	         "type": "BasicBulletType",
-             "spawnUnit": "uAABT3L扩张1",
-             "speed": 0,
-	               	}}
-	               	
-	{
-		"reload": 99999999, 
-		"x": 0,  "y": 0, 
-		"rotate": false,
-		"shootCone":360,
-		"ejectEffect":"none",
-		"shootSound":"explosionbig",
-		"alwaysShooting": true,
-		"mirror":false,
-		"inaccuracy": 0,
-		"alternate": true,
-		"shootStatusDuration": 180
-	"shootStatus": "静止",
-		"bullet":{
-		"width": 0,
-		"height": 0
-		"damage":0
-		"instantDisappear":true,
-		"collides": false,
-		"speed":9999,"lifetime":1,
-		"splashDamageRadius": 9999,
-				"splashDamage": 0,
-		}
-		}
-		{
-		"reload": 99999999, 
-		"x": 0,  "y": 0, 
-		"rotate": false,
-		"shootCone":360,
-		"ejectEffect":"none",
-		"shootSound":"explosionbig",
-		"alwaysShooting": true,
-		"mirror":false,
-		"inaccuracy": 0,
-		"alternate": true,
-		"shootStatusDuration": 2400
-	"shootStatus": "disarmed",
-		"bullet":{
-		"width": 0,
-		"height": 0
-		"damage":0
-		"instantDisappear":true,
-		"collides": false,
-		"speed":9999,"lifetime":1,
-		"splashDamageRadius": 9999,
-				"splashDamage": 0,
-		}
+	"speed": 30,"lifetime": 4
+    "shootEffect":"sparkShoot",
+    "hitEffect":"pointHit",
+    "maxRange":120,
+    "damage":2}},
+    {
+		    "name": "无"
+			"x": 0
+			"y": 0
+			"reload": 1,
+			"shootY": 0,
+			"mirror": true,
+			"rotate": true,
+			"rotateSpeed": 0,
+			"useAmmo": false,
+			"alwaysShooting": true,
+			"continuous": true,
+			"display":false
+			"ejectEffect":"none",
+	        "shootSound":"none",
+			"recoil": 0,
+			"bullet": {
+                "speed": 120
+                "lifetime":1
+                "width": 0,"height": 0,
+                "damage":0
+                "splashDamageRadius": 120,
+				"splashDamage": 1,
+                "shootEffect": "none",
+				"hitEffect": "none",
+				"despawnEffect": "none"
+				"smokeEffect": "none"
+				"despawnSound":"none",
+				"instantDisappear":true,
+				"collides": false,
+				"pierceArmor": true,
+				"status": "破甲",
+				"statusDuration": 10,
+				}
 		}
     ]
     /* "research": {

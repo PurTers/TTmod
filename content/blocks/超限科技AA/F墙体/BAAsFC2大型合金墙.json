@@ -1,0 +1,27 @@
+{
+	"name": "反应合金墙",
+	"description": "强大而坚固，吸收激光，同时可以反弹子弹\n\n[blue][超限技术中级装甲墙]",
+	"type": "Wall",
+	"health":4800 ,
+	"flashHit":true,
+	"absorbLasers":true,
+    "lightningChance":0.1/*方块放电几率*/
+    "lightningDamage":15/*方块放电伤害*/
+    "lightningLength":6/*方块放电长度*/
+    "flashHit":true
+    "chanceDeflect":10,
+	"size":2,
+	"armor":15
+	"insulated":true,//绝缘
+	"requirements": [
+	{ "item": "thorium", "amount":20 },
+	{ "item": "surge-alloy", "amount":12 }
+	{ "item": "metaglass", "amount":12}
+	{ "item": "plastanium", "amount":12 }
+	{ "item": "0铜铅合金", "amount":24 }
+	],
+	"category": "defense",
+	"research": "BAAsFC1合金墙"
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

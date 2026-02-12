@@ -1,0 +1,60 @@
+{
+    "type": "PowerTurret",
+    "name": "监管",
+    "description": "超限集团研发的一种可以发射发射修复激光修复友方建筑的炮台，适合延缓防线破坏程度，自动修复友方建筑。\n\n[blue][超限技术修复装置]",
+    "targetAir": false,
+    "targetGround": false,
+    "health": 800,
+    "size": 2,
+    "heatColor": "turretHeat",
+    "shootSound": "sap",
+    "shake": 0.2,
+    "inaccuracy": 3
+    "recoil": 0,
+    "shoot": {
+        "type": "ShootAlternate",
+        "barrels": 1,
+        "spread": 4
+    },
+    "recoilTime": 100,
+	"targetHealing":true,
+	"canOverdrive": false,
+    "shootType": {
+	"type":"BasicBulletType",/*子弹类型 */
+	"frontColor":"97FFA8FF",/*子弹颜色 正面颜色*/
+	"backColor":"97FFA8FF",/*背景色 */
+	"width": 5
+	"height": 10
+	"speed": 10,
+	"lifetime":28,
+      	"healPercent": 2.5
+        "damage":0
+        "collidesAir": false
+        "collidesGround": true
+                "collidesTeam":true,
+    },
+    "consumes": {
+        "power": 0.4
+    },
+    "reload": 12,
+    "rotateSpeed": 12,
+    "range": 280,
+    "category": "effect",
+    "research": "mend-projector",
+    "requirements": [
+        {"amount": 120, "item": "copper"},
+    {"amount": 80, "item": "lead"},
+    {"amount": 50, "item": "0铜铅合金"},
+    ]
+     "research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "陨石带"
+			}
+	]
+	}
+	    "researchCostMultiplier": 0.5,
+	        "canOverdrive": false,
+}

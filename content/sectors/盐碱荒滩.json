@@ -1,0 +1,25 @@
+{
+    "planet":"serpulo"//母星名字。
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":41//区块坐标
+    "difficulty":5
+    "research": {
+		"parent": "陨石带",
+		"objectives": [
+		"poly"
+		"horizon"
+		"atrax"
+		"mace"
+			{
+				"type": "SectorComplete",
+				"preset": "工业区0032"
+			}
+			]}
+	/*"TeamRule":{
+ "team": "blue"
+}
+"teams":{
+ "team": blue
+}*/
+//"defaultTeam":"blue"
+}

@@ -1,0 +1,108 @@
+    {
+    "type": "PowerTurret",
+    "name": "仰望",
+    "description": "对空高频高射炮，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
+    "targetAir": true,
+    "targetGround": false,
+    "health": 1600,
+    "insulated":true,
+    "size": 2,
+    "heatColor": "turretHeat",
+    "shake": 0.2,
+    "inaccuracy": 0,
+    "recoil": 4,
+    "shootSound": "artillery",//子弹音效
+    "recoilTime": 20,
+    "buildCostMultiplier":2
+    "minWarmup": 0.99
+	"shootWarmupSpeed": 0.064,
+	"shootY":6
+    "drawer":{"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {
+				"type": "RegionPart",
+				"suffix": "-r",
+				"under":true,
+				"recoilIndex": 0
+				"moves": [{
+						"progress": "recoil",
+						"y": -4
+					}
+					{
+                    "type": "warmup"
+                    "op": "compress"
+                    "y": 2
+                    "start": 0.5
+                    "end": 1}
+					],
+				"heatProgress": "heat"
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-l",
+				"under":true,
+				"recoilIndex": 1
+				"moves": [{
+						"progress": "recoil",
+						"y": -4
+					}
+					{
+                    "type": "warmup"
+                    "op": "compress"
+                    "y": 2
+                    "start": 0.5
+                    "end": 1}
+					],
+				"heatProgress": "heat"
+			}]
+			"type":"DrawTurret",
+	    "basePrefix": "cwst-"
+	    }]}
+	    "shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 2
+		"spread": 6
+	},
+    "shootType": {
+			"speed": 3,
+			"lifetime": 100,
+			"width": 5,
+			"height": 10,
+			"knockback": 0.1,
+			"backColor": "FFFFFF",
+			"frontColor": "FFFFFF",
+			"shootEffect": "shootBig",
+			"damage": 14,
+			"hitEffect": "explosion",
+			"despawnEffect": "explosion"
+			"collidesGround":false
+			"collidesAir":true,
+			"splashDamageRadius": 35
+			"splashDamage": 12,
+			}
+    "consumes": {
+    },
+    "reload": 5,
+    "rotateSpeed": 3,
+    "range": 300,
+    "category": "turret",
+   /* "research": {
+	"parent":"BA1sAT1A石锤"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "超限工艺-facility32m"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 1
+    "requirements": [
+        { "item": "copper", "amount":120},
+{ "item": "lead", "amount":220}
+{ "item": "graphite", "amount":110}
+{ "item": "titanium", "amount": 80 }
+    ]
+  //  "buildVisibility":"campaignOnly"
+}

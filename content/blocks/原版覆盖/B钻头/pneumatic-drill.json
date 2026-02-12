@@ -4,7 +4,7 @@
 	"objectives": [
             {
 				"type": "OnSector",
-				"preset": "frozenForest"
+				"preset": "冰冻森林"
 			}
 	]
 	}

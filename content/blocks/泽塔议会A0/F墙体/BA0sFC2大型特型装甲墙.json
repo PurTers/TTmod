@@ -1,0 +1,22 @@
+{
+	"name": "大型特型装甲墙",
+	"description": "强大而坚固，可以反弹子弹。\n[red][泽塔议会墙体]",
+	"type": "Wall",
+	"health":6400 ,
+    "lightningChance":0.3
+    "lightningDamage":55
+    "lightningLength":8
+    "flashHit":true
+    "chanceDeflect":60,
+    "deflectSound":"shieldHit"
+	"size":2,
+	"requirements": [
+	{ "item": "thorium", "amount":40 },
+	{ "item": "surge-alloy", "amount":32 }
+	{ "item": "phase-fabric", "amount":16 }
+	],
+	"category": "defense",
+	"research": "BA0sFC1特型装甲墙"
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

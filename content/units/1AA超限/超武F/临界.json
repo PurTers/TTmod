@@ -49,7 +49,7 @@
 	"healthMultiplier":2}
 	{
 			"type": "SpawnDeathAbility",
-			"unit": "侧卫-A",
+			"unit": "uAAC侧卫-A",
 			"amount": 1,
 			"randAmount": 0
 			"spread": 0,

@@ -1,0 +1,106 @@
+{
+	"type": "UnitFactory",
+	"name": "常规作战单位工厂",
+	"description": "制造标准机甲单位，正规的进攻部队，可以在超限集团的改装厂进行升级。\n \n[blue][超限集团标准兵工厂]",
+    "health":420,
+	"size":4,
+	"consumes":{"power":1.2,	},
+	"plans":[
+	{ "unit": "uAABT1A响应", 
+	"time": 900, 
+	"requirements": [ 
+{ "item": "0铜铅合金", "amount": 25},
+{ "item": "copper", "amount": 25}
+	]	},	
+	{ "unit": "uAABT1B卫兵", 
+	"time": 900, 
+	"requirements": [ 
+{ "item": "graphite", "amount": 10},
+{ "item": "0铜铅合金", "amount": 25}
+	]	},	
+	{ "unit": "uAABT1C列兵", 
+	"time": 900, 
+	"requirements": [
+{ "item": "0铜铅合金", "amount": 25},
+{ "item": "lead", "amount": 25}
+	]	},
+	{ "unit": "uAABT1H火花", 
+	"time": 920, 
+	"requirements": [
+{ "item": "silicon", "amount": 15}
+{ "item": "0铜铅合金", "amount": 15}
+{ "item": "graphite", "amount": 10},
+	]	},	
+	{ "unit": "uAABT1I掠影", 
+	"time": 1440, 
+	"requirements": [ 
+{ "item": "graphite", "amount": 15},
+{ "item": "silicon", "amount": 15}
+{ "item": "0铜铅合金", "amount": 15}
+	]	},	
+	{ "unit": "uAABT1K无形", 
+	"time": 1800, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 15},
+{ "item": "lead", "amount": 25}
+	]	},	
+	{ "unit": "uAABT1J预言", 
+	"time": 1080, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 35},
+{ "item": "0铜铅合金", "amount": 30}
+	]	},	
+	{ "unit": "uAABT1L基础基座移动", 
+	"time": 1500, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 25}
+{ "item": "0铜铅合金", "amount": 35}
+{ "item": "graphite", "amount": 35},
+	]	},	
+		{ "unit": "uAABT1N田螺", 
+	"time": 1200, 
+	"requirements": [ 
+{ "item": "metaglass", "amount": 45}
+{ "item": "silicon", "amount": 45}
+{ "item": "graphite", "amount": 55}
+	]	},	
+	{ "unit": "uAABT1O1海胆", 
+	"time": 1500, 
+	"requirements": [ 
+{ "item": "metaglass", "amount": 50}
+{ "item": "silicon", "amount": 35}
+{ "item": "0铜铅合金", "amount": 30}
+	]	},	
+	{ "unit": "uAABT1O鱿鱼", 
+	"time": 1200, 
+	"requirements": [ 
+{ "item": "graphite", "amount": 15},
+{ "item": "silicon", "amount": 15}
+{ "item": "0铜铅合金", "amount": 20}
+	]	},	
+	{ "unit": "uAABT1Q浮卵", 
+	"time": 1800, 
+	"requirements": [ 
+{ "item": "metaglass", "amount": 60}
+{ "item": "silicon", "amount": 65}
+{ "item": "0铜铅合金", "amount": 80}
+	]	},	
+	]
+	"requirements": [
+    { "item": "copper", "amount": 120},
+    { "item": "lead", "amount": 80},
+{ "item": "silicon", "amount": 45}
+    { "item": "0铜铅合金", "amount": 60},
+    ]
+ 	"category":"units",
+"research": {
+	"parent":"BAAsHA步兵厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "污染小道"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

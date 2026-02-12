@@ -1,0 +1,74 @@
+{
+	"type": "PowerTurret",
+	"name": "幕光",
+	"description": "超限集团针对越来越大的防空压力而研发出的超级防空炮，通过威力巨大的光幕激光炮来摧毁空中单位，那些空军如雪花般消逝。\n\n\n[cyan]防空这一块儿啊……\n \n[blue][超限技术炮台]",
+	"targetAir": true,
+	"targetGround": false,
+	"health": 1680,
+	"size": 4
+	"shootSound":"激光",
+	"shake":2,
+	"inaccuracy": 5
+	"recoil": 6
+	"recoilTime":10
+	"coolantMultiplier": 2.5
+	"liquidCapacity": 500,
+	"shoot":{
+		"shots":3
+	    "shotDelay":10
+		"type":"ShootAlternate",
+		"barrels":3,
+		"spread":6
+	},
+	"shootType": {	
+	"type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"status": "脆裂",
+			"statusDuration": 330,
+	//"pierceBuilding": true,
+		"collidesGround":false,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":6,
+	"lightningDelay":0.6,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":8,
+	"lightningColor":"FFFFFF",
+	"damage": 63,
+	//"buildingDamageMultiplier":0.35,
+	"pierceCap": 8
+	"width": 16,	"length": 360,
+	"lifetime": 40
+	},
+	   "consumes": {
+		"power":19.6,//耗电
+	"coolant":{"amount":1.6,"optional":true}  
+		},
+	"reload": 20,//发射间隔
+	"rotateSpeed": 12,//炮台转速
+	"range": 360,
+	"category": "turret",
+/*	    "research": {
+	"parent":"BAAsAT3AAA光轮"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰封菌落"
+			}
+	]
+	}*/
+	"requirements": [
+{"item": "1绝缘钢", "amount": 120  },
+{"item": "1集成电路", "amount": 240  },
+{ "item": "titanium", "amount": 270 }
+{ "item": "0铜铅合金", "amount":280},
+{ "item": "1共振石", "amount":120},
+{ "item": "metaglass", "amount": 160 }
+	]
+	"researchCostMultiplier": 0.5
+}

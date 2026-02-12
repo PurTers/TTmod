@@ -1,0 +1,1191 @@
+{
+    "type": "ItemTurret",
+    "name": "离析",
+    "description": "随着共振石的研发深入，超限集团决定将其放在离析上进行实验，最后造就了在拥有优美的弹道的同时，能够有效杀伤敌人的离析。\n\n\n[cyan]注：这个炮塔非常省弹药！\n \n[blue][超限技术炮台]",
+    "health": 6260,
+    "liquidCapacity": 500,
+    "size": 5
+    "reload": 420
+    "range": 480,
+    "maxAmmo": 150
+      "shootCone": 20,
+  "recoil": 2.5
+	"recoilTime": 60
+      "shake": 5,
+      "coolantMultiplier": 0.4125
+      "ammoPerShot": 8
+      "minWarmup": 0.99
+	"shootWarmupSpeed": 0.0153,
+	"linearWarmup": true,//开启线性计算
+	"rotateSpeed":3
+    "consumes": {
+    "power": 36
+        "coolant": {
+            "amount": 2.4
+            "optional": true
+        }
+    },
+        		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {"type":"RegionPart",
+        "mirror":true,
+        "under":true,
+        "x":0,"y":0,
+        "suffix":"-边"
+        "layer":50,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.3
+                        }
+                        "x":-2
+                        "y":0
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.3
+                            "end": 0.6
+                        }
+                        "x":8
+                        "y":4
+                        //"gy": 0
+                        //"gx": 4
+                        "rot":-60
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.75
+                        }
+                        "x":-2
+                        "y":4
+                        //"gy": 0
+                        //"gx": 4
+                        "rot":20
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.75
+                            "end": 0.9
+                        }
+                        "x":-2
+                        "y":3
+                        //"gy": 0
+                        //"gx": 4
+                        "rot":20
+        		    }
+        		],
+        }
+        {"type":"RegionPart",
+        "mirror":true,
+        "under":true,
+        "x":0,"y":0,
+        "suffix":"-边"
+        "layer":50,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.3
+                        }
+                        "x":-2
+                        "y":0
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.3
+                            "end": 0.6
+                        }
+                        "x":8
+                        "y":4
+                        //"gy": 0
+                        //"gx": 4
+                        "rot":-60
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.75
+                        }
+                        "x":-2
+                        "y":4
+                        //"gy": 0
+                        //"gx": 4
+                        "rot":20
+        		    }
+        		],
+        }
+        {"type":"RegionPart",
+        "mirror":true,
+        "under":true,
+        "x":0,"y":0,
+        "suffix":"-边"
+        "layer":50,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.3
+                        }
+                        "x":-2
+                        "y":0
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.3
+                            "end": 0.6
+                        }
+                        "x":8
+                        "y":4
+                        //"gy": 0
+                        //"gx": 4
+                        "rot":-60
+        		    }
+        		],
+        }
+        {"type":"RegionPart",
+        "mirror":true,
+        "under":true,
+        "x":0,"y":0,
+        "suffix":"-前"
+        "layer":50,
+        "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.1
+                            "end": 0.3
+                        }
+                        "x":0
+                        "y":2
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.7
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":4
+                        //"gy": 0
+                        //"gx": 4
+                        "rot":0
+        		    }
+        		],
+        }
+        {
+		"type": "ShapePart",
+			"colorTo":"FCF287",
+			"color": "FCF287",
+			"layer":110,
+			"stroke": 0,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 0
+			"radiusTo": 6
+			"x": 0,    
+			"y": 12
+		"progress": {
+                    "type": "warmup"
+                    "op": "compress"
+                    "start": 0.3
+                    "end": 0.6
+                }
+		}
+		{
+		"type": "ShapePart",
+			"colorTo":"FCF287",
+			"color": "FCF287",
+			"layer":110,
+			"stroke": 0,
+			"strokeTo": 1,
+			"circle": true,
+			"hollow": true,
+			"radius": 0
+			"radiusTo": 4
+			"x": 0,    
+			"y": 18
+		"progress": {
+                    "type": "warmup"
+                    "op": "compress"
+                    "start": 0.45
+                    "end": 0.75
+                }
+		}
+		{
+		"type": "ShapePart",
+			"colorTo":"FCF287",
+			"color": "FCF287",
+			"layer":110,
+			"stroke": 0,
+			"strokeTo": 0.5,
+			"circle": true,
+			"hollow": true,
+			"radius": 0
+			"radiusTo": 2
+			"x": 0,    
+			"y": 22
+		"progress": {
+                    "type": "warmup"
+                    "op": "compress"
+                    "start": 0.6
+                    "end": 0.9
+                }
+		}
+        
+			]
+			}
+			]
+   },
+    "shoot": {
+        "shots": 6
+        "shotDelay": 10
+    },
+    "ammoPerShot": 12
+    "shootSound": "shotgun",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 10,
+    "shake": 3,
+    "shootCone": 20,
+    "ammoTypes": {
+    "surge-alloy": {
+    "ammoMultiplier": 2
+    "reloadMultiplier":2
+        "sprite":"超限工艺-尖刺",
+        //"weaveScale": 3,//数字越大摆动越大
+        //"weaveMag": 9,//数字越大转的越快
+        //"weaveRandom": true,//随机
+        "speed": 6
+	    "lifetime":50
+		"width": 12,"height": 26
+		"trailLength": 666,"trailWidth": 3,
+		"damage":8
+		"shootEffect": "shootSmall",
+		"pierceCap": 2
+		"trailColor": "FF8E38FF",
+        "backColor": "FF8E38FF",
+		"frontColor": "F3E979FF",
+		"status": "脆裂",
+		"statusDuration": 240
+    
+    //"intervalLifeMax": 1
+    "fragVelocityMax": 0,
+    "bulletInterval":10
+    "intervalBullets":1
+    "intervalBullet":{
+    "absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹？
+    "weaveScale": 0,//数字越大摆动越大
+    "weaveMag": 0,//数字越大转的越快
+    "weaveRandom": false,//随机
+        "damage": 12
+      "width": 1
+      "pierce": true
+      "lifetime": 90
+      "speed":0
+      "height":1
+      //"serrations": 3,
+      "backColor": "FF8E38FF",
+      "frontColor": "F3E979FF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+      "statusDuration": 20
+      "parts":[
+			{
+		"type": "ShapePart",
+			"colorTo":"FCF287",
+			"color": "FCF287",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 1
+			"radiusTo": 1
+			}]
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
+      "lightning": 6
+      "lightningDamage": 22
+      "lightningLength": 4
+      "lightningCone": 360,
+      //"lightningLengthRand": 5
+      "fragLifeMin": 1
+    "fragLifeMax": 1
+    "fragVelocityMin": 1,
+    "fragVelocityMax": 1,
+    "fragRandomSpread": 0,
+	"fragSpread": 120,
+    "fragBullets":3
+	"fragBullet": {
+	"damage": 22
+      "width": 7
+      "pierce": true,
+      "type": "ShrapnelBulletType",
+      "lifetime": 18,
+      "length": 36
+      //"serrations": 8,
+      "fromColor": "FF8E38FF",
+      "toColor": "F3E979FF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+			"statusDuration": 180
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
+      "lightning": 2
+      "lightningDamage": 3
+      "lightningLength": 4
+      "lightningCone": 360,
+      //"lightningLengthRand": 13
+	
+   }
+      }
+    
+    
+    "fragLifeMin": 1
+    "fragLifeMax": 1
+    "fragVelocityMin": 1,
+    "fragVelocityMax": 1,
+    "fragRandomSpread": 120,
+	"fragSpread": 0,
+    "fragBullets":3
+	"fragBullet": {
+	"sprite":"超限工艺-尖刺",
+    "absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹？
+    "weaveScale": 0,//数字越大摆动越大
+    "weaveMag": 0,//数字越大转的越快
+    "weaveRandom": false,//随机
+        "damage": 12
+      "width": 12
+      //"pierce": true
+      "lifetime": 40
+      "speed":6
+      "height":26
+      "pierceCap": 2
+      "backColor": "FF8E38FF",
+      "frontColor": "F3E979FF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+      "statusDuration": 20
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
+      
+      
+    //"intervalLifeMax": 1
+    "fragVelocityMax": 0,
+    "bulletInterval":15
+    "intervalBullets":1
+    "intervalBullet":{
+    "absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹？
+    "weaveScale": 0,//数字越大摆动越大
+    "weaveMag": 0,//数字越大转的越快
+    "weaveRandom": false,//随机
+        "damage": 12
+      "width": 1
+      "pierce": true
+      "lifetime": 90
+      "speed":0
+      "height":1
+      //"serrations": 3,
+      "backColor": "FF8E38FF",
+      "frontColor": "F3E979FF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+      "statusDuration": 20
+      "parts":[
+			{
+		"type": "ShapePart",
+			"colorTo":"FCF287",
+			"color": "FCF287",
+			"layer":110,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 1
+			"radiusTo": 1
+			}]
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
+      "lightning": 3
+      "lightningDamage": 22
+      "lightningLength": 4
+      "lightningCone": 360,
+      //"lightningLengthRand": 5
+      
+      
+      "fragLifeMin": 1
+    "fragLifeMax": 1
+    "fragVelocityMin": 1,
+    "fragVelocityMax": 1,
+    "fragRandomSpread": 0,
+	"fragSpread": 120,
+    "fragBullets":3
+	"fragBullet": {
+	"damage": 22
+      "width": 7
+      "pierce": true
+      "type": "ShrapnelBulletType",
+      "lifetime": 18,
+      "length": 36
+      //"serrations": 8,
+      "ammoMultiplier":3,
+      "fromColor": "FF8E38FF",
+      "toColor": "F3E979FF",
+      "shootEffect": "explosion",
+      "status": "脆裂",
+			"statusDuration": 180
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
+      "lightning": 2
+      "lightningDamage": 3
+      "lightningLength": 4
+      "lightningCone": 360,
+      //"lightningLengthRand": 13
+	
+   }
+      }
+   }
+   }
+   	"1绝缘钢":{
+		"type":"BasicBulletType",
+	    "splashDamageRadius":80,
+	    "splashDamage":120
+	    "speed":20
+	    "damage":50
+	    "pierce": true
+	    "pierceCap": 2
+	    "reloadMultiplier":1.5
+	    "sprite":"超限工艺-尖刺1",
+		"status":"破甲",
+		"statusDuration": 120,
+	    "backColor":"B1B1B1",
+	    "frontColor":"E1E1E1",
+	    "lifetime":25
+		"width": 22
+		"height": 28
+        "ammoMultiplier": 6
+	    "hitEffect":"flakExplosion"
+	    "knockback":1
+	    "bulletInterval":2
+        "intervalBullets":1
+        "intervalBullet":{
+			"type": "ShrapnelBulletType",
+            "length": 3
+            "damage": 15
+            "width": 1
+            "fromColor": "E1E1E1",
+            "toColor": "aaaaaa",
+            "pierce": true,
+			"statusDuration":60
+			"status": "脆裂",
+        "fragLifeMin":0.1,
+    "fragBullets":4
+			"fragBullet": {
+            "type": "ShrapnelBulletType",
+            "length": 2
+            "damage": 10
+            "width": 0.5
+            "fromColor": "E1E1E1",
+            "toColor": "aaaaaa",
+            "pierce": true,
+			"statusDuration":60
+			"status": "脆裂",
+  }}
+	     "fragBullets": 8
+			"fragBullet": {
+			"type":"ShrapnelBulletType",
+	    "splashDamageRadius":60,
+	    "splashDamage":20
+	    "speed":15
+	    "damage":20
+		"status":"脆裂",
+        "statusDuration": 240,
+	    "fromColor":"FF7F24",
+	    "toColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":5,
+		"width": 0.25
+		"length":  0.1
+		"knockback":0.5
+	    "hitEffect":"none"
+	        "fragBullets": 4
+			"fragBullet": {
+			"type":"ShrapnelBulletType",
+	    "splashDamageRadius":40,
+	    "splashDamage":15
+	    "speed":5
+	    "damage":15
+		"status":"脆裂",
+		"statusDuration": 60,
+	    "fromColor":"FF7F24",
+	    "toColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":3,
+		"width": 0.125
+		"length":  0.075
+		"knockback":0.25
+	    "hitEffect":"none"
+			}
+			}
+	},
+   "6风暴催化剂": {
+    "ammoMultiplier": 13
+    "reloadMultiplier":0.7
+    "rangeChange": 120
+        "despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        ]
+            "hitEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   ]
+	   "status": "破甲",
+			"statusDuration": 120,
+	   "collidesGround": true
+	"collidesAir": true
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"pierceCap": 3
+		"splashDamage": 40
+				"splashDamageRadius": 36
+	    "damage":63,
+	    "speed":2
+	    //"drag":-0.00005
+	
+	    "lifetime":100
+	    "width":8,	 "height":8
+	"makeFire":true,
+	        "pierce": true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragVelocityMin": 1
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+            "intervalBullets": 1,
+		"bulletInterval": 20
+                            "intervalBullet":{
+    
+	   "status": "破甲",
+			"statusDuration": 120,
+	   "collidesGround": true
+	"collidesAir": true
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"pierceCap": 3
+		"splashDamage": 40
+				"splashDamageRadius": 36
+	    "damage":63,
+	    "speed":3
+	    //"drag":-0.00005
+	
+	    "lifetime":20
+	    "width":8,	 "height":8
+	"makeFire":true,
+	        "pierce": true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragVelocityMin": 1
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+            "intervalBullets": 1,
+		"bulletInterval": 1
+                            "intervalBullet":{
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["1878BF","1878BF50","FFFFFF"],
+	"status": "量子锁定",
+			"statusDuration": 46,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":3,
+	"lightningDelay":0.1,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":8,
+	"lightningColor":"1878BF",
+	"damage": 6,
+	"pierceDamageFactor":0.4
+	"pierce": true
+	"width": 6,	"length": 12
+	"lifetime": 30,
+	"collidesAir": true
+    }
+    }
+    "fragLifeMin": 1
+    "fragLifeMax": 1
+    "fragVelocityMin": 1,
+    "fragVelocityMax": 1,
+    "fragRandomSpread": 90,
+	"fragSpread": 0,
+    "fragBullets":3
+	"fragBullet": {
+	"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        ]
+            "hitEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   ]
+	   "status": "破甲",
+			"statusDuration": 120,
+	   "collidesGround": true
+	"collidesAir": true
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"pierceCap": 3
+		"splashDamage": 40
+				"splashDamageRadius": 36
+	    "damage":63,
+	    "speed":2
+	    //"drag":-0.00005
+	    "lifetime":80
+	    "width":8,	 "height":8
+	"makeFire":true,
+	        "pierce": true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragVelocityMin": 1
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+            "intervalBullets": 1,
+		"bulletInterval": 20
+                            "intervalBullet":{
+                            
+	   "status": "破甲",
+			"statusDuration": 120,
+	   "collidesGround": true
+	"collidesAir": true
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"pierceCap": 3
+		"splashDamage": 40
+				"splashDamageRadius": 36
+	    "damage":63,
+	    "speed":3
+	    //"drag":-0.00005
+	
+	    "lifetime":20
+	    "width":8,	 "height":8
+	"makeFire":true,
+	        "pierce": true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragVelocityMin": 1
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+            "intervalBullets": 1,
+		"bulletInterval": 1
+                            "intervalBullet":{
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["1878BF","1878BF50","FFFFFF"],
+	"status": "量子锁定",
+			"statusDuration": 46,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":3,
+	"lightningDelay":0.1,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":8,
+	"lightningColor":"1878BF",
+	"damage": 6,
+	"pierceDamageFactor":0.4
+	"pierce": true
+	"width": 6,	"length": 12
+	"lifetime": 30,
+	"collidesAir": true
+    }
+    }
+    "fragLifeMin": 1
+    "fragLifeMax": 1
+    "fragVelocityMin": 1,
+    "fragVelocityMax": 1,
+    "fragRandomSpread": 30,
+	"fragSpread": 0,
+    "fragBullets":3
+	"fragBullet": {
+	"despawnEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        ]
+            "hitEffect": [{
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 0,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 0,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        {
+            "type": "WaveEffect",
+            "lifetime": 15,
+            "sizeFrom": 12,
+            "sizeTo": 12,
+            "strokeFrom": 24,
+            "strokeTo": 24,
+            "colorFrom": "c0ecff",
+            "colorTo": "c0ecff00"
+        }
+        ]
+        "shootEffect": [{     
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 16,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "c0ecff",
+        "colorTo": "c0ecff00"
+	   }
+	   ]
+	   "status": "破甲",
+			"statusDuration": 120,
+	   "collidesGround": true
+	"collidesAir": true
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"pierceCap": 3
+		"splashDamage": 40
+				"splashDamageRadius": 36
+	    "damage":63,
+	    "speed":2
+	    //"drag":-0.00005
+	    "lifetime":80
+	    "width":8,	 "height":8
+	"makeFire":true,
+	        "pierce": true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragVelocityMin": 1
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+            "intervalBullets": 1,
+		"bulletInterval": 20
+                            "intervalBullet":{
+                            
+	   "status": "破甲",
+			"statusDuration": 120,
+	   "collidesGround": true
+	"collidesAir": true
+		"frontColor":"c0ecff"
+    "trailLength":12
+    "trailWidth":1.5,
+    "trailColor":"c0ecff",
+    "backColor":"c0ecff",
+    "frontColor":"c0ecff"
+		"pierceCap": 3
+		"splashDamage": 40
+				"splashDamageRadius": 36
+	    "damage":63,
+	    "speed":3
+	    //"drag":-0.00005
+	    "lifetime":20
+	    "width":8,	 "height":8
+	"makeFire":true,
+	        "pierce": true
+            "pierceArmor": true,
+            "pierceBuilding": true,
+            "fragVelocityMin": 1
+            "parts": [
+                    {
+                        "type": "FlarePart",
+                        "rotation": 0,
+                        "color1": "c0ecff",
+                        "stroke": 2,
+                        "radius": 0,
+                        "radiusTo": 12,
+                        "progress": {
+                            "type": "life",
+                            "op": "curve",
+                            "interp": "pow3Out"
+                        }
+                    }
+                ]
+            "intervalBullets": 1,
+		"bulletInterval": 1
+                            "intervalBullet":{
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["1878BF","1878BF50","FFFFFF"],
+	"status": "量子锁定",
+			"statusDuration": 46,
+	"pierceBuilding": true,
+		"collidesGround":true,
+			"collidesAir":true,
+	"despawnEffect":"none",
+	"lightningSpacing":25,
+	"lightningLength":3,
+	"lightningDelay":0.1,
+	"lightningLengthRand":1,
+	"lightningAngleRand":8,
+	"lightningDamage":8,
+	"lightningColor":"1878BF",
+	"damage": 6,
+	"pierceDamageFactor":0.4
+	"pierce": true
+	"width": 6,	"length": 12
+	"lifetime": 30,
+	"collidesAir": true
+    }
+    }
+	}
+	}
+    }
+   }
+    "requirements": [
+{"item": "thorium", "amount": 380}
+{"item": "1绝缘钢", "amount": 320  },
+{"item": "1集成电路", "amount": 360  },
+{"item": "0铜铅合金", "amount": 600  },
+{ "item": "titanium", "amount": 800 }
+{ "item": "2高能芯片", "amount":320},
+{"item": "plastanium", "amount": 480},
+    ],
+    "category": "turret",
+   /* "research": {
+	"parent":"BAAsAT4A破碎"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "无风海湾"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+}

@@ -1,0 +1,74 @@
+{
+	"name": "小型质量驱动器",
+	"description": "短距离发送物品包，收集一定物品后将其发射到另一个微型质量驱动器中。\n \n[blue][超限技术物流装置]",
+	"type": "MassDriver",
+	"size": 1,
+	"hasItems": true,
+	"itemCapacity": 5,
+	"reload": 2,
+	"range": 136,
+	"consumes": {
+		"power": 0.6
+	},
+	"minDistribute":1
+	"bullet": {
+    "type": "BasicBulletType",
+        "frontColor": "1878BF",
+        "backColor": "87CEEB",
+        "width": 4,
+        "height": 8,       
+        "trailLength": 2,
+        "trailWidth": 1.5,
+        "pierceCap": 6
+        "trailColor": "1878BF",
+        "speed": 1,
+        "lifetime": 136,
+	"hitEffect": {
+	"type": "ParticleEffect",
+	"particles": 5,
+	"line": true,
+	"strokeFrom": 0.7,
+	"strokeTo": 0.5,
+	"lenFrom": 4,
+	"lenTo": 2,
+	"length": 16,
+	"baseLength": 0,
+	"lifetime": 18,
+	"colorFrom": "87CEEB",
+	"colorTo": "87CEEB"
+	"interp": "pow3Out",
+	"sizeInterp": "pow3In",
+        "cone": 30,}
+	"despawnEffect": {
+	"type": "ParticleEffect",
+	"particles": 5,
+	"line": true,
+	"strokeFrom": 0.7,
+	"strokeTo": 0.5,
+	"lenFrom": 4,
+	"lenTo": 2,
+	"length": 16,
+	"baseLength": 0,
+	"lifetime": 18,
+	"colorFrom": "87CEEB",
+	"colorTo": "87CEEB"
+	"interp": "pow3Out",
+	"sizeInterp": "pow3In",
+        "cone": 30,}
+    }
+	"requirements": [
+	{ "item": "0铜铅合金", "amount": 45 },
+	{ "item": "silicon", "amount": 35 },
+	{ "item": "titanium", "amount": 60},
+	],
+	/*"research": {
+	"parent":"BAAsCA1铜铅合金带传送带"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+	"category": "distribution"
+}

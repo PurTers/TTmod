@@ -1,0 +1,64 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "低效反应堆",
+    "description": "低效率吸收裂变时所放的热，稳定，不会爆炸\n \n[blue][超限技术反应堆]",
+    "size": 3,
+    "health": 1280,
+    "hasLiquids": false,
+    "hasItems": true,
+    "itemDuration": 3600,
+    "powerProduction": 12,
+    "itemCapacity": 20,
+    "generateEffect": "generatespark",
+    "consumes": {
+   "liquid": {
+            "liquid": "water",
+            "amount": 0.2
+        }
+        "items": {
+        "items":[{
+            "item": "thorium",
+            "amount": 10
+        }],},
+    },
+    "requirements": [
+        {
+            "item": "plastanium",
+            "amount": 120
+        },
+        {
+            "item": "lead",
+            "amount": 250
+        },
+        {
+            "item": "graphite",
+            "amount": 280
+        },
+                {
+            "item": "silicon",
+            "amount": 140
+        },
+                        {
+            "item": "titanium",
+            "amount": 140
+        },
+        {
+            "item": "0铜铅合金",
+            "amount": 240
+        },
+    ],
+    "ambientSound": "smelter",
+    "ambientSoundVolume": 0.06,
+    "category": "power",
+    /*"research": {
+	"parent":"BAAsEA2强化涡轮发电机"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+    "researchCostMultiplier": 0.5
+    "buildCostMultiplier":0.5
+}

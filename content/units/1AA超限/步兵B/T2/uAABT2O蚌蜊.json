@@ -129,8 +129,7 @@
     }
     }
     ]
-   // "research":"uAABT1A响应"
-   "research": {
+   /*"research": {
 	"parent":"uAABT1O鱿鱼"
 	"objectives": [
             {
@@ -138,5 +137,5 @@
 				"preset": "遗忘河滩"
 			}
 	]
-	}
+	}*/
 }

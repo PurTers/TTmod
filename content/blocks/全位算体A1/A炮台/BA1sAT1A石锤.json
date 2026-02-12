@@ -27,6 +27,7 @@
 			"backColor": "FFFFFF",
 			"frontColor": "FFFFFF",
 			"shootEffect": "shootBig",
+			"damage": 8,
 			"splashDamageRadius": 35
 			"splashDamage": 18,
 			"hitEffect": "explosion",
@@ -36,7 +37,7 @@
 			}
     "consumes": {
     },
-    "reload": 96,
+    "reload": 72,
     "rotateSpeed": 12,
     "range": 200,
     "category": "turret",
@@ -45,7 +46,7 @@
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-facility32m"
+				"preset": "工业区0032"
 			}
 	]
 	}
@@ -54,5 +55,5 @@
         { "item": "copper", "amount":120},
 { "item": "lead", "amount":80}
     ]
-    "buildVisibility":"campaignOnly"
+   // "buildVisibility":"campaignOnly"
 }

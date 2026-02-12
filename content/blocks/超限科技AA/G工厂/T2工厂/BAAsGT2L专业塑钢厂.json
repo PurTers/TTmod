@@ -1,0 +1,88 @@
+{
+    "name": "专业塑钢加工厂"
+    "type": "GenericCrafter"
+    "description": "用于加工塑钢，相较于小型塑钢厂产量更多，速度更快。\n\n[blue][超限技术中级工厂]"
+    "itemCapacity": 50
+    "health": 1200,
+    "size": 3
+    "hasPower": true
+    "hasLiquids": true
+    "hasItems": true
+    "craftTime": 30,
+    "craftEffect": "pulverizeSmall"
+	"updateEffect": "fireballsmoke",
+	 "drawer":{
+	    "type":"DrawMulti",
+	    "drawers":[
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-bottom"
+	    },
+	    {
+	       "type":"DrawLiquidTile",
+	    "drawLiquid":"oil"
+	    },
+	    "DrawDefault"
+	    {
+	    "type":"DrawPistons"
+	    "sinMag":3
+        "sinScl":5
+	    }
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-lv2"
+	    },
+	    "DrawWarmupRegion"
+	]},
+    "consumes": {
+    "power": 8,
+        "items": {
+            "items": [
+                {
+                    "item": "titanium"
+                    "amount": 5
+                },
+            ]
+        },
+        "liquid": {
+            "liquid": "oil"
+            "amount": 0.9
+        }
+    },
+    "liquidCapacity": 60,
+    "outputItem": {
+        "item": "plastanium",
+        "amount": 6
+    }
+    "requirements": [
+        {
+            "item": "titanium",
+            "amount": 160
+        },
+        {
+            "item": "graphite"
+            "amount":120
+        },
+	{ "amount": 90, "item": "1绝缘钢" }
+        {
+            "item": "silicon"
+            "amount": 150
+        },
+        {
+            "item": "0铜铅合金",
+            "amount": 200
+        }
+        { "amount": 120, "item": "1集成电路" }
+    ],
+    "category": "crafting",
+    /*"research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "裂谷前哨"
+			}
+	]
+	}*/
+    "buildCostMultiplier":0.5
+}

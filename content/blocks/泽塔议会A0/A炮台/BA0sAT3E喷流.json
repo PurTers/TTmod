@@ -1,0 +1,130 @@
+{
+	"type": "ItemTurret",
+	"name": "喷流",
+	"description": "能够一次性发射多枚子弹，有效打击敌方装甲。\n[red][泽塔议会炮台]",
+	"health": 2460,
+	"size": 3,
+	"reload":70,
+	"range": 250,
+	"targetAir":true
+	"targetGround":true,
+		"maxAmmo":55,
+    "ammoPerShot": 5,
+	"consumes": {
+	"coolant":{"amount":1.4,"optional":true}  
+		},
+	"shoot":{
+		"shots":7,
+	    "shotDelay":16,
+	},
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 4
+	"rotateSpeed": 4,
+	"shake":1,
+	"ammoTypes": {
+	"copper": {
+	    "reloadMultiplier":1
+	    "ammoMultiplier":1
+			"speed": 5,
+			"damage": 22,
+			"lifetime":50,
+			"width": 12,
+			"height": 18,
+			"shootEffect":"shootSmall",
+	     	"statusDuration":360,	
+	     	"backColor":"d39169",
+			"frontColor":"eac1a8"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"d99d73",
+	    },
+	    "graphite": {
+	    "reloadMultiplier":0.7
+	    "ammoMultiplier":2
+			"speed": 5,
+			"damage": 54,
+			"lifetime":50,
+			"width": 12,
+			"height": 18,
+			"shootEffect":"shootSmall",
+	     	"statusDuration":360,	
+	     	"backColor":"7d89d8",
+			"frontColor":"dae1ee"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"b2c6d2",
+	    },
+	    "titanium": {
+	    "reloadMultiplier":1.5
+	    "ammoMultiplier":2,
+			"speed": 5,
+			"damage": 38,
+			"lifetime":50,
+			"width": 12,
+			"height": 18,
+			"shootEffect":"shootSmall",
+	     	"statusDuration":360,	
+	     	"backColor":"8da1e3",
+			"frontColor":"8da1e3"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"8da1e3",
+	    },
+	    "thorium": {
+	    "reloadMultiplier":1
+	    "ammoMultiplier":9
+			"speed": 5,
+			"damage": 48,
+			"lifetime":50,
+			"width": 12,
+			"height": 18,
+			"shootEffect":"shootSmall",
+	     	"statusDuration":360,	
+	     	"backColor":"f9a3c7",
+			"frontColor":"f9a3c7"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"f9a3c7",
+	    },
+	    "pyratite": {
+	    "reloadMultiplier":1
+	    "ammoMultiplier":4,
+			"speed": 5,
+			"damage": 12,
+			"lifetime":50,
+			"width": 12,
+			"height": 18,
+	    "makeFire":true,
+	    "splashDamageRadius": 35,
+				"splashDamage": 38,
+	    "rangeChange": 0
+			"shootEffect":"shootSmall",
+			"status":"burning",
+	     	"statusDuration":90,	
+	     	"backColor":"FFA95F",
+			"frontColor":"FFA95F"
+			"trailWidth":1.5,
+			"trailLength":8
+    "trailColor":"FFA95F",
+	    },
+	    
+	}, 
+	"requirements": [
+{"item": "copper", "amount": 185  },
+{ "item": "thorium", "amount": 125 }
+{ "item": "titanium", "amount": 185 }
+{ "item": "graphite", "amount": 205 }
+	],
+	"category": "turret",
+	"research": {
+        "parent":"BA0sAT3D天网"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "盐碱荒滩"
+			}
+	]
+    }
+	    "researchCostMultiplier": 1
+	        "canOverdrive": false
+}

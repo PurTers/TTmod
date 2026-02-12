@@ -1,0 +1,26 @@
+{
+    "name":"先锋核心",
+    "type":"CoreBlock",
+    "description": "为了应对资源短缺而研发的特殊核心，尽管并没有非常大的装载量，同时核心机失去战斗力，但是他无论是作为先遣侦查还是紧急撤离都是非常好用的存在。\n \n[blue][超限集团核心]",
+    "requirements": [
+    {"amount": 200, "item": "copper"},
+    {"amount": 140, "item": "lead"},
+    {"amount": 50, "item": "0铜铅合金"},
+    ],
+    "unitType":"uAACCZ1先驱",
+    "health": 800,
+    "itemCapacity": 1000,
+    "size": 2,
+    "research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "陨石带"
+			}
+	]
+	}
+    "unitCapModifier": 12,
+    "category": "effect"
+    "researchCostMultiplier": 0.5
+}

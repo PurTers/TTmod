@@ -1,0 +1,32 @@
+{"type": "BurstDrill"
+"name": "低端钻头I型"
+"category": "production"
+"description": "无损耗挖掘，只能开采最基础的矿物，甚至不能称之为矿物，需要电力。\n\n[orange][全位算体专业化采集设备]",
+"requirements": [
+    "copper/10", "lead/15"
+]
+"drillTime":  140
+"size": 2
+"hasPower": true
+"tier": 0
+//"liquidBoostIntensity":1.5,
+"drillEffect": [
+    "mineImpact", "drillSteam", "mineImpactWave"
+]
+"research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "工业区0032"
+			}
+	]
+	}
+"shake": 4
+"itemCapacity": 40
+"researchCostMultiplier": 0
+"consumes": {
+    "power":0.09
+}
+"canOverdrive": true
+}

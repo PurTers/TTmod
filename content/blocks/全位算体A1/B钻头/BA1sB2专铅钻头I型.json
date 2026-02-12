@@ -1,0 +1,33 @@
+{"type": "BurstDrill"
+"name": "专铅钻头I型"
+"category": "production"
+"description": "无损耗挖掘，只能开采铅，需要电力。\n\n[orange][全位算体专业化采集设备]",
+"requirements": [
+    "copper/10", "lead/15"
+]
+"drillTime":  300
+"size": 2
+"hasPower": true
+"tier": 1
+//"liquidBoostIntensity":1.5,
+"drillEffect": [
+    "mineImpact", "drillSteam", "mineImpactWave"
+]
+"research": {
+	"parent":"BA1sB1专铜钻头I型"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "工业区0032"
+			}
+	]
+	}
+"shake": 4
+"itemCapacity": 40
+"blockedItems": ["sand","scrap","copper"]
+"researchCostMultiplier": 1.5
+"consumes": {
+    "power":0.12
+}
+"canOverdrive": true
+}

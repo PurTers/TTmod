@@ -184,7 +184,7 @@
              "speed": 0,
              }}
 	]
-	"research": {
+	/*"research": {
 	"parent":"uAABT1Q浮卵"
 	"objectives": [
             {
@@ -192,6 +192,5 @@
 				"preset": "遗忘河滩"
 			}
 	]
-	}
-	//"controller": "DefenderAI"
+	}*/
 }

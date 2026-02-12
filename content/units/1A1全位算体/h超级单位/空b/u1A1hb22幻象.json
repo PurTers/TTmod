@@ -15,8 +15,8 @@
 	"hitSize":15, 
 	"flying": true
 	"health":680,
-	"armor":5
-	"buildSpeed":3.5
+	"armor":8
+	"buildSpeed":0.95
 	"engineOffset": 6,
 	"engineSize": 3, 
 	"itemCapacity": 120
@@ -40,7 +40,7 @@
 		"rotate": true,
 			"rotateSpeed": 0
 		"shootCone":30,
-		"inaccuracy": 10,
+		"inaccuracy": 360,
 		"mirror": false,
 		"shootSound": "missile",
 		"bullet":{   
@@ -62,7 +62,7 @@
     "trailColor":"7CF38990",
     "backColor":"97FFA880",
     "frontColor":"FFFFFF"
-    "buildingDamageMultiplier":0.1
+    "buildingDamageMultiplier":0.05
 	}	}
     ]
     "research": {

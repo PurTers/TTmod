@@ -1,0 +1,71 @@
+{
+	"type": "flying",
+	"name":"贝塔",
+	"description": "泽塔议会所研发的超代核心的防卫飞行器，能够以较快的速度建造，同时开采一些矿物，携带护盾及护盾回复立场，拥有两门机炮。\n[red][泽塔议会核心机]",
+	"speed": 1.9,
+	"accel":0.05,"drag":0.03,
+	"rotateSpeed":5,
+	"ammoType":"titanium",
+	"ammoCapacity": 300,
+	"hitSize":22, 
+	"buildSpeed":1
+	"flying": true,
+	"health":550,
+	"armor":12
+	"immunities": [
+		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+	],
+	"mineTier":3
+	"mineSpeed":5
+	"engineOffset": 8,
+	"engineSize": 2, 
+	"abilities": [
+        {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 1.2,
+        "max": 400.0,
+        "reload": 180
+        "range": 28.0,
+    }
+    {
+    "type":"ForceFieldAbility",
+    "radius": 80
+    "regen": 1.2
+    "max": 400
+    "cooldown": 360,}
+    ]
+	"weapons": [
+       {
+            "name": "贝塔1",
+            "reload": 24
+            "x":0
+            "y":0
+             "inaccuracy": 1,
+            "shootSound":"shootDuo",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": true
+		    "shootX":5
+		    "shootY":8
+		    "shoot":{
+			"shots":2,
+			"shotDelay":6
+		},
+            "bullet": {
+    "type":"BasicBulletType",
+    "speed": 6
+    "lifetime":30
+	"width": 8
+	"height": 12
+	"damage":12
+    "hitSize":4
+    "buildingDamageMultiplier":0.01
+    "collidesAir": true
+    "homingRange": 80
+    "homingPower": 0.03,
+    }}
+    ]
+}

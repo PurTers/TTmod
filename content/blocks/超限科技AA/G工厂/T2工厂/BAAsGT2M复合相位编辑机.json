@@ -1,0 +1,75 @@
+{
+	"type": "GenericCrafter",
+	"name": "复合式相位编辑机",
+	"description": "更快制作相织布\n\n[blue][超限技术中级工厂]",
+	"outputItem": { "item": "phase-fabric", "amount": 4 },
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 120,
+	"itemCapacity": 60,
+    "drawer": [
+        {
+            "type": "DrawRegion"
+            "suffix": "-bottom",
+        },
+            {
+                "type": "DrawRegion",
+                "suffix": "-weave",
+                "rotateSpeed":-2,
+                "rotation":45
+            },
+            {
+                "type":"DrawSpikes"
+                //"suffix": "-weave",
+                "color":"FFF1D2FF"
+                "stroke":1.5
+                "layers":2
+                "amount":12
+                "rotateSpeed":0.5
+                "layerSpeed":-0.9
+            },
+        "DrawWeave",
+        "DrawDefault",
+        "DrawWarmupRegion",
+        {
+				"type": "DrawFrames",
+				"frames": 7,
+				"interval": 7,
+		},
+    ],
+	"updateEffect":{"type": "WaveEffect",
+		"lifetime": 10,
+		"sizeFrom": 0,
+		"sizeTo": 18,
+		"strokeFrom": 2,
+		"strokeTo": 0,
+		"colorFrom": "FFF1D2FF",
+		"colorTo": "FFD197FF"},
+	"consumes": {
+    "power":8,
+    "items": {	 "items": [
+ { "item": "thorium", "amount": 8 }
+ { "item": "sand", "amount": 12 }	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 350 },
+	{ "item": "silicon", "amount": 200 },
+	{ "item": "thorium", "amount": 210 }
+	{ "item": "1绝缘钢", "amount": 150 },
+	{ "item": "1集成电路", "amount": 85 }
+
+	],
+	"category": "crafting",
+	/*"research": {
+	"parent":"BAAsGT2A复合物编织机"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "热力带"
+			}
+	]
+	}*/
+	"buildCostMultiplier":0.6
+}

@@ -1,0 +1,52 @@
+{
+	"type": "GenericCrafter",
+	"name": "专业石墨压缩机",
+	"health": 1040,
+	"description": "专业加工石墨，大大提高产量，同时你需要更加高的物品供应来让其正常运作\n\n[blue][超限技术中级工厂]",
+	"outputItem": { "item": "graphite", "amount": 6 },
+	"updateEffect": "pulverizeMedium",
+	"craftEffect": "blastsmoke"
+	"alwaysUnlocked": false,
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 22,
+	"itemCapacity": 40,
+	"drawer": [
+		"DrawDefault",
+		{
+				"type": "DrawFrames",
+				"frames": 6,
+				"interval": 4
+		}
+		"DrawWarmupRegion",
+    ],
+	"consumes": {
+	"power": 2,
+    	"liquid": 
+	{"liquid": "water", "amount": 0.2 }
+    "items": {	
+     "items": [
+    { "item": "coal", "amount": 8}
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 320 },
+	{ "item": "copper", "amount": 440 },
+	{ "amount": 25, "item": "1集成电路" }
+	{ "amount": 180, "item": "titanium" }
+	],
+	"category": "crafting",
+	/*"research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

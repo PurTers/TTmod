@@ -1,6 +1,7 @@
 {
-"maxBoost":10
-"research": {
+"maxBoost":20
+"placeableLiquid":true
+/*"research": {
 	"parent":"water-extractor"
 	"objectives": [
             {
@@ -8,5 +9,5 @@
 				"preset": "超限工艺-tarFields"
 			}
 	]
-	}
+	}*/
 }

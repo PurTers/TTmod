@@ -1,0 +1,306 @@
+{
+	"type": "ItemTurret",
+	"name": "分离",
+	"description": "由分裂炮改装而来的简易炮台，作为超限集团被驱逐之后早期的主要武器，这种炮台能将子弹反复分裂，形成大量的弹片打击敌人。\n \n[blue][超限技术炮台]",
+	"health": 500,
+	"size": 2,
+	"reload": 18
+	"range": 180,
+		"maxAmmo":20,
+    "ammoPerShot": 2
+    "recoils":3
+    "coolantMultiplier": 5
+    "liquidCapacity": 20,
+	"consumes": {
+	"coolant":{"amount":0.2,"optional":true}  
+		},
+	"shoot":{
+	    "type": "ShootAlternate",
+		"barrels": 3
+		"spread": 1
+	},
+	"recoil": 2,
+	//"recoils":2,
+	"shootCone":35,
+	"recoilTime": 18,
+	"cooldownTime": 90,
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 3
+	"rotateSpeed": 4,
+	"shake":1,
+			"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "basePrefix": "TT-"
+    "parts": [
+        {
+				"type": "RegionPart",
+				"suffix": "-1",
+				"under":true,
+				"recoilIndex": 0
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-2",
+				"under":true,
+				"recoilIndex": 1
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			}
+			{
+				"type": "RegionPart",
+				"suffix": "-3",
+				"under":true,
+				"recoilIndex": 2
+				"moves": [{
+						"progress": "recoil",
+						"y": -3
+					}],
+				"heatProgress": "heat"
+			}
+    ]}
+    ]
+   }
+	"ammoTypes": {
+			"lead":{
+			"ammoMultiplier": 7
+	    "speed": 3,  
+	    "lifetime":60
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":3
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":16
+		"splashDamage":12
+		"sprite":"large-orb"
+        "spin":2
+        
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 120,
+    "fragBullets":3
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
+			"speed": 4,  
+	    "lifetime":5
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":8
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":8
+		"splashDamage":6
+		"sprite":"large-bomb"
+        "spin":2
+}}
+		"graphite":{
+		"ammoMultiplier": 5
+	    "speed": 3,  
+	    "lifetime":60
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":28
+		"shootEffect": "shootSmall",
+		"trailColor": "dae1ee",
+        "backColor":"7d89d8",
+		"frontColor":"dae1ee"
+		"sprite":"large-orb"
+        "spin":2
+        
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 90,
+    "fragBullets":4
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
+			"speed": 1,  
+	    "lifetime":20
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"trailColor": "dae1ee",
+        "backColor":"7d89d8",
+		"frontColor":"dae1ee"
+		"damage":14
+		"shootEffect": "shootSmall",
+        "spin":2
+}}
+			"pyratite":{
+			"ammoMultiplier":  4
+	    "speed": 3,  
+	    "lifetime":60
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":8
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":16
+		"splashDamage":24
+		"makeFire":true,
+        "trailColor": "FFD700",
+        "backColor":"FFD700",
+		"frontColor":"FFD700"
+        "status":"burning",
+	    "statusDuration":120,	
+		"sprite":"large-orb"
+        "spin":2
+        
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 90,
+    "fragBullets":4
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
+			"speed": 4,  
+	    "lifetime":5
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":8
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":8
+		"splashDamage":12
+		"makeFire":true,
+        "trailColor": "FFD700",
+        "backColor":"FFD700",
+		"frontColor":"FFD700"
+        "status":"burning",
+	    "statusDuration":60,	
+		"sprite":"large-bomb"
+        "spin":2}}
+        
+		"silicon":{
+		"ammoMultiplier": 4
+	    "speed": 3,  
+	    "lifetime":35
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":0
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":16
+		"splashDamage":12
+		"sprite":"large-orb"
+        "spin":2
+        "homingDelay":1
+		"homingRange": 80
+        "homingPower": 0.3,
+        
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 30,
+    "fragBullets":12
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
+			"speed": 2,  
+	    "lifetime":50
+		"width": 3,"height": 3,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":6
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":4
+		"splashDamage":8
+		"sprite":"large-bomb"
+        "spin":2
+        "homingDelay":10
+		"homingRange": 80
+        "homingPower": 0.3,
+}}
+			"metaglass":{
+			"ammoMultiplier": 3
+			"speed": 3
+	    "lifetime":60
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":14
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":16
+		"splashDamage":12
+        "trailColor": "FFFFFF",
+        "backColor":"FFFFFF",
+		"frontColor":"FFFFFF"
+		"sprite":"large-orb"
+        "spin":2
+        
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 90,
+    "fragBullets":4
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
+			"speed": 0.5,  
+	    "lifetime":40
+		"width": 4,"height": 4,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":0
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":22
+		"splashDamage":16
+        "trailColor": "FFFFFF",
+        "backColor":"FFFFFF",
+		"frontColor":"FFFFFF"	
+		"sprite":"large-bomb"
+        "spin":2
+        
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 120,
+    "fragBullets":3
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
+			"speed": 4,  
+	    "lifetime":5
+		"width": 2,"height": 2,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":0
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":16
+		"splashDamage":8
+        "trailColor": "FFFFFF",
+        "backColor":"FFFFFF",
+		"frontColor":"FFFFFF"	
+		"sprite":"large-bomb"
+        "spin":2
+	   }
+	   }}
+	}, 
+	"researchCostMultiplier": 0.5,
+	"requirements": [
+{ "item": "copper", "amount": 35 }
+{ "item": "lead", "amount": 25 }
+{ "item": "0铜铅合金", "amount": 10}
+	],
+	"category": "turret",
+	"research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.05
+}

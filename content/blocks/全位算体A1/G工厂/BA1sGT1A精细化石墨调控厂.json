@@ -1,0 +1,38 @@
+{
+	"type": "GenericCrafter",
+	"name": "精细化石墨调控厂",
+	"health": 320,
+	"description": "通过精确调控与计算，新加工生产石墨，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
+	"outputItem": { "item": "graphite", "amount": 32 },
+	"updateEffect": "pulverizeMedium",
+	"alwaysUnlocked": false,
+	"size": 2,
+	"hasPower": false,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 600,
+	"itemCapacity": 100,
+	"consumes": {
+	"power":3.6,
+    "items": {	 "items": [
+    { "item": "coal", "amount": 48}
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 180 },
+	{ "item": "copper", "amount": 140 },
+	],
+	"category": "crafting",
+"research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "工业区0032"
+			}
+	]
+	}
+	"researchCostMultiplier": 0,
+	    "canOverdrive": false,
+	"researchCostMultiplier": 0.1
+}

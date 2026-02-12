@@ -1,0 +1,24 @@
+{
+	"type": "PayloadRouter",
+	"name":"大型载荷路由器"
+	"description": "将更大型的载荷平均分配到三个方向。\n[red][泽塔议会载荷装置]",
+	"size": 9,
+	"moveTime": 120,
+	"moveForce": 600,
+	"payloadLimit": 13,//有效载荷限制
+	"requirements": [
+		"titanium/150",
+		"thorium/100",
+		"graphite/150"
+	],
+	"category": "units",
+	/*"research": {
+	"parent":"BA0sHG01大型载荷传送带"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+}

@@ -1,7 +1,7 @@
 {
-    "type": "mech",
+    "type": "legs",
     "name":"闪流"
-    "description": "以列兵为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，通过激光以贯穿敌人，对电击有一定免疫\n\n[blue][超限技术作战中机甲]",
+    "description": "以列兵为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，通过激光以贯穿敌人，对电击有一定免疫，配备有导弹仓用于发射导弹。\n\n[blue][超限技术作战中机甲]",
     "immunities": [
 		"shocked","electrified","甲板损坏"
 	],
@@ -10,7 +10,24 @@
     "health": 920,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
-	"ammoCapacity": 300,
+	"ammoCapacity": 300
+  "speed": 0.65,
+  "drag": 0.2,
+  "rotateSpeed": 0.95,
+  
+  "legCount": 4,
+  "legLength": 18,
+  "legForwardScl": 0.3,
+  "legExtension": -3,
+  
+  "legGroupSize": 3,
+  
+  "legMoveSpace": 0.6,
+  "lockLegBase": true,
+  
+  "hovering": false,
+  
+  "faceTarget": true,
         "targetAir":false,  
         "itemCapacity": 30
     "targetGround":true,
@@ -44,55 +61,108 @@
 	}
     ]
     "weapons": [
-       {
-            "name": "闪流1",
-            "reload": 66
-            "x":0
-            "y":0
-             "inaccuracy": 5
-            "shootSound":"blaster",
-            "ejectEffect": "casing1",
-            "rotate": false
-			"baseRotation":0
-			"minWarmup": 0.99
-			"shootCone":15
-		    "rotationLimit": 0
-		    "mirror": false,
-		    "shootX":0
-	    "shootY":22
-    "parts": [
-        {"type": "RegionPart",
-        "mirror": false
-        "x": 6.8
-        "y": 2
-        "suffix": "-手1",
-        "layer": 59.9
-        "moveX": -1
-        "moveY": 2.7
-        "moveRot":20
+    
+    {
+      "name": "闪流",
+      "reload": 99,
+      "shootSound": "blaster",
+      "x": 0,
+      "top": false,
+      "y": 0,
+      "rotate": false,
+      "mirror": false,
+      "minWarmup": 0.99
+      "shootWarmupSpeed": 0.005,
+      "linearWarmup": true,//开启线性计算
+      "alternate": true,
+      "recoil": 0,
+      "shootCone":35,
+      "recoilTime": 0,
+      "shootY":7
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-2",
+          "under":true
+          "mirror":true
+          "x": 0,
+          "y": 0
+          "layer": 60,
+           "moves": [
+        
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0
+                            "end": 0.3
+                        }
+                        "x":1
+                        "y":-1
+                        "gy": -0.25
+                        "gx": -0.25
+                        "rot":-30
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.3
+                            "end": 0.6
+                        }
+                        "x":0
+                        "y":-1
+                        "gy": -0.25
+                        "gx": -0.25
+                        "rot":-60
+        		    }
+        		    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":0
+                        "gy": -0.5
+                        "gx": -0.5
+                        "rot":-90
+        		    }
+        		    ]
         }
-        {"type":"RegionPart",
-        "mirror":false
-        "under":true,
-        "x":-6.8,"y":2,
-        "suffix":"-手2"
-        "layer":59.9
-        "moveX":-1
-        "moveY":1.5
-        "moveRot":-55
+			{
+          "type": "RegionPart",
+          "suffix": "-1",
+          "under":true
+          "mirror":false
+          "x": 0
+          "y": -6
+          "layer": 60,
+           "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":6
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    
+        		    {
+						"progress": "recoil",
+						"y": -2
+					}
+        		    ]
         }
-        {"type":"RegionPart",
-        "mirror":false
-        "under":false
-        "x":0,"y":10
-        "suffix":"-炮"
-        "layer":60
-        "moveX":0
-        "moveY":0
-        "moveRot":90
-        }
-			]
-            "bullet": {
+      ],
+      "ejectEffect": "casing1",
+      "bullet": {    
     "type": "LaserBulletType",
 	"chargeEffect":{
 		"type":"MultiEffect",
@@ -114,7 +184,7 @@
 	"lightningColor":"1878BF",
 	"status": "脆裂",
 	"statusDuration": 186,
-	"damage": 24,
+	"damage": 84,
 	"pierceDamageFactor":0.4
 	"buildingDamageMultiplier":0.5
 	"pierce": true
@@ -122,7 +192,95 @@
 	"lifetime": 30,
 	"collidesAir": true
 	"ejectEffect":"none"
-    }}
+      }
+    }
+    
+    {
+      "name": "导弹仓",
+      "reload": 120,
+      "shootSound": "blaster",
+      "x": 0,
+      "top": false,
+      "y": 0,
+      "rotate": false,
+      "mirror": true,
+      "minWarmup": 0.99
+      "shootWarmupSpeed": 0.005,
+      "linearWarmup": true,//开启线性计算
+      "recoil": 0,
+      "shootCone":360,
+      "recoilTime": 0,
+      "recoils": 3
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-2",
+          "under":true
+          "mirror":true
+          "x": 0,
+          "y": 4
+          "layer": 60,
+           "moves": [
+        
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":0
+                        "y":-4
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    ]
+        }
+        {
+          "type": "RegionPart",
+          "suffix": "-1",
+          "under":true
+          "mirror":false
+          "x": 0
+          "y": 0
+          "layer": 60,
+           "moves": [
+                    {
+            		    "progress": {
+                            "type": "warmup"
+                            "op": "compress"
+                            "start": 0.6
+                            "end": 0.9
+                        }
+                        "x":2
+                        "y":4
+                        //"gy": -2
+                        //"gx": -2
+                        "rot":0
+        		    }
+        		    {
+						"progress": "recoil",
+						"y": -1
+					}
+        		    ]
+        }
+      ],
+      "shoot": {
+        "type": "ShootBarrel",
+        "barrels": 1
+		"barrels": [
+    -3, -3, -180, 
+  ]
+		"spread":0.75
+      },
+      "ejectEffect": "casing1",
+      "bullet": {
+ 	"type": "BasicBulletType",
+             "spawnUnit": "火箭弹 (5)",
+             "speed": 0,
+      }
+    }
     ]
-    "research":"uAABT1C列兵"
+    //"research":"uAABT1C列兵"
 }

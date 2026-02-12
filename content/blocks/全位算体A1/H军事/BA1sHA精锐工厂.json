@@ -50,11 +50,11 @@
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-facility32m"
+				"preset": "工业区0032"
 			}
 	]
 	}
-	"buildVisibility":"campaignOnly"
+	//"buildVisibility":"campaignOnly"
 	"researchCostMultiplier": 0
 	"canOverdrive": false,
 }

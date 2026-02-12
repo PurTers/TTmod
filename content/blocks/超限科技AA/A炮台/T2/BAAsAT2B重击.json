@@ -1,0 +1,192 @@
+{
+	"type": "ItemTurret",
+	"name": "重击",
+	"description": "超限集团由冰雹炮改装而来的榴弹炮，尽管相较于冰雹的射程相对降低，但是换来了更大的打击范围，能够一次发射单枚分榴弹，有效的对集群敌人造成威胁\n \n[blue][超限技术炮台]",
+	"health": 660,
+	"size": 2
+	"reload": 25,
+	"range": 200,
+	"maxAmmo":30
+	"shake":1,
+	"ammoUseEffect": "none",
+	"shootSound":"artillery",
+	"inaccuracy": 5,
+	"liquidCapacity": 50,
+	 "recoil": 2,
+	 "targetAir" :false
+	"targetGround": true,
+	"recoilTime": 66
+	"rotateSpeed": 10,
+	"ammoPerShot": 3
+	"consumes": {
+	"coolant":{"amount":0.1,"optional":true}  
+		},
+		"drawer":{"type":"DrawTurret",
+	    "basePrefix": "TT-"
+	    }
+	"ammoTypes": {
+	"graphite":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":24,
+	    "splashDamage":22
+	    "speed":2
+	    "damage":10, 
+	    "backColor":"B0C4DE",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"B0C4DE",
+	    "lifetime":100
+		"width": 16,
+		"height": 16,
+        "ammoMultiplier": 2,
+	    "hitEffect":"flakExplosion"
+	    "fragBullets": 3
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":24,
+	    "splashDamage":16
+	    "speed":0.5
+	    "damage":12
+	    "backColor":"B0C4DE",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"B0C4DE",
+	    "lifetime":60
+		"width": 8,
+		"height": 8,
+        "ammoMultiplier": 2,
+	    "hitEffect":"flakExplosion"
+	    }
+	},
+	"metaglass":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":24,
+	    "splashDamage":22
+	    "speed":2
+	    "damage":10, 
+	    "backColor":"FFFFFF",
+	    "frontColor":"FFFFFF", 
+	    "trailColor":"FFFFFF",
+	    "lifetime":100
+		"width": 16,
+		"height": 16,
+        "ammoMultiplier": 2,
+	    "hitEffect":"flakExplosion"
+	    "fragBullets": 4
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":24,
+	    "splashDamage":14
+	    "speed":0.5
+	    "damage":12
+	    "backColor":"FFFFFF",
+	    "frontColor":"FFFFFF", 
+	    "trailColor":"FFFFFF",
+	    "lifetime":25
+		"width": 8,
+		"height": 8,
+	    "hitEffect":"flakExplosion"
+	    "fragBullets": 3
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":12
+	    "splashDamage":4
+	    "speed":0.5
+	    "damage":12
+	    "backColor":"FFFFFF",
+	    "frontColor":"FFFFFF", 
+	    "trailColor":"FFFFFF",
+	    "lifetime":15
+		"width": 4
+		"height": 4
+	    "hitEffect":"flakExplosion"
+	    }
+	    }
+	},
+	"pyratite":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":20,
+	    "splashDamage":18
+	    "speed":2
+	    "damage":12,
+	    "makeFire":true,
+    "backColor":"FFB90F",
+    "frontColor":"E3E3E3",
+	"trailColor":"FFB90F",
+	    "lifetime":100
+	    "status":"burning",
+	    "statusDuration":180,
+		"width": 16,
+		"height": 16,
+        "ammoMultiplier": 3
+	    "hitEffect":"flakExplosion"
+	     "fragBullets": 3
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":20,
+	    "splashDamage":12
+	    "speed":2
+	    "damage":6
+	    "makeFire":true,
+    "backColor":"FFB90F",
+    "frontColor":"E3E3E3",
+	"trailColor":"FFB90F",
+	    "lifetime":25
+	    "status":"burning",
+	    "statusDuration":180,
+		"width": 8,
+		"height": 8,
+        "ammoMultiplier": 2,
+	    "hitEffect":"flakExplosion"
+			}
+	},
+	"blast-compound":{
+		"type":"ArtilleryBulletType",
+	    "splashDamageRadius":30,
+	    "splashDamage":35
+	    "speed":8,
+	    "damage":17,
+		"status":"blasted",
+	    "backColor":"FF7F24",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":25,
+		"width": 16,
+		"height": 16,
+        "ammoMultiplier": 4,
+	    "hitEffect":"flakExplosion"
+	     "fragBullets": 5
+			"fragBullet": {
+			"type":"ArtilleryBulletType",
+	    "splashDamageRadius":30,
+	    "splashDamage":12
+	    "speed":4,
+	    "damage":3
+		"status":"blasted",
+	    "backColor":"FF7F24",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":15,
+		"width": 8,
+		"height":  8,
+        "ammoMultiplier": 4,
+	    "hitEffect":"flakExplosion"
+			}
+	}
+	},
+	"requirements": [
+	{ "item": "copper", "amount": 120 },		
+	{ "item": "graphite", "amount": 105 }
+	{ "item": "0铜铅合金", "amount": 25 }
+	],
+	"category": "turret",
+	"research": {
+	"parent":"BAAsAT1分离"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "陨石带"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.5
+}

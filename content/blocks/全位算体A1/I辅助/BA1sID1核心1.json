@@ -1,0 +1,26 @@
+{
+    "name":"I型核心",
+    "type":"CoreBlock",
+    "description": "小型核心，装甲较为厚重，容量较大。\n\n[orange][全位算体初代核心]",
+    "requirements": [
+    {"amount": 1200, "item": "copper"},
+    {"amount": 1000, "item": "lead"},
+	{ "item": "silicon", "amount": 1000 },
+    ],
+    "unitType":"u1A1I1卡帕",
+    "health": 3000,
+    "armor":5
+    "itemCapacity": 5500,
+    "size": 3,
+   "research": {
+	"parent":"BA1s超位算体"
+	"objectives": [
+            {
+				"type": "SectorComp",
+				"preset": "工业区0032"
+			}
+	]
+	}
+    "unitCapModifier": 12,
+    "category": "effect"
+}

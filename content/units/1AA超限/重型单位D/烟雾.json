@@ -41,7 +41,7 @@
     "applyEffect":"none",
     "activeEffect":[{
         "type": "ParticleEffect",
-        "particles": 14,
+        "particles": 7,
         "sizeFrom": 12,
                 "sizeTo": 0,
         "length": 0,
@@ -54,7 +54,7 @@
             }
             {
         "type": "ParticleEffect",
-        "particles": 14,
+        "particles": 7,
         "sizeFrom": 12,
         "sizeTo": 0,
         "length": 0,

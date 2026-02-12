@@ -177,8 +177,7 @@
     }
     }
     ]
-   // "research":"uAABT1A响应"
-   "research": {
+   /*"research": {
 	"parent":"uAABT1O1海胆"
 	"objectives": [
             {
@@ -186,5 +185,5 @@
 				"preset": "遗忘河滩"
 			}
 	]
-	}
+	}*/
 }

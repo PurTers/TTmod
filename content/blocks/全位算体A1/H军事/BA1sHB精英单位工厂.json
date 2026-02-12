@@ -10,29 +10,30 @@
 	{ "unit": "u1A1ha1狂战士", 
 	"time": 3600, 
 	"requirements": [ 
-{ "item": "titanium", "amount": 220 }
-	{ "item": "metaglass", "amount": 110}
-	{ "item": "silicon", "amount": 250 },
-	{ "item": "graphite", "amount": 210},
-	{ "item": "plastanium", "amount": 145}
+{ "item": "titanium", "amount": 320 }
+{ "item": "silicon", "amount": 350 },
+{ "item": "graphite", "amount": 275},
+{ "item": "plastanium", "amount": 230}
+{ "item": "thorium", "amount": 150}
 	]	},	
 	{ "unit": "u1A1hb1扫荡者", 
 	"time": 3600, 
 	"requirements": [ 
-{ "item": "titanium", "amount": 180 }
-	{ "item": "metaglass", "amount": 110}
-	{ "item": "silicon", "amount": 320 },
-	{ "item": "graphite", "amount": 210},
-	{ "item": "plastanium", "amount": 145}
+{ "item": "titanium", "amount": 350 }
+{ "item": "silicon", "amount": 250 },
+{ "item": "graphite", "amount": 200},
+{ "item": "plastanium", "amount": 190}
+{ "item": "thorium", "amount": 225}
 	]	},	
 	{ "unit": "u1A1hc1猎杀者", 
 	"time": 3600, 
 	"requirements": [ 
-{ "item": "titanium", "amount": 180 }
-	{ "item": "metaglass", "amount": 180}
-	{ "item": "silicon", "amount": 250 },
-	{ "item": "graphite", "amount": 210},
-	{ "item": "plastanium", "amount": 145}
+{ "item": "titanium", "amount": 400 }
+{ "item": "metaglass", "amount": 350}
+{ "item": "silicon", "amount": 410 },
+{ "item": "graphite", "amount": 280},
+{ "item": "plastanium", "amount": 260}
+{ "item": "thorium", "amount": 75}
 	]	},	
 	]
 	"requirements": [
@@ -49,11 +50,11 @@
 	"objectives": [
             {
 				"type": "SectorComplete",
-				"preset": "超限工艺-废弃研究所"
+				"preset": "废弃研究所"
 			}
 	]
 	}
-	"buildVisibility":"campaignOnly"
+	//"buildVisibility":"campaignOnly"
 	"researchCostMultiplier": 0.5
 	"canOverdrive": false,
 }

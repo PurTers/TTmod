@@ -1,0 +1,26 @@
+{
+ "name":"共振传送带",
+ "type":"StackConveyor",
+ "description":"使用共振石使物品以极高的频率向前推进，物品的运输效率达到了一个可怕的程度\n\n[blue][超限技术特化传送带]",
+ "size":1,
+ "health":200,
+"itemCapacity":20
+ "category": "distribution",
+ "requirements":[
+  {"item":"1集成电路","amount":1}
+  {"item":"1共振石","amount":1}
+  {"item":"plastanium","amount":2}
+  ],
+ "speed":0.075
+ "rebuildable":true,
+/*"research": {
+	"parent":"BAAsCA2闪光传送带"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "desolateRift"
+			}
+	]
+	}*/
+	"buildCostMultiplier":1
+}

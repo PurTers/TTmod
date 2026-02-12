@@ -1,11 +1,12 @@
 {
-"maxBoost":10
+"maxBoost":20
+"placeableLiquid":true
 "research": {
 	"parent":"pneumatic-drill"
 	"objectives": [
             {
 				"type": "SectorComplete",
-				"preset": "超限工艺-saltflats"
+				"preset": "盐碱荒滩"
 			}
 	]
 	}

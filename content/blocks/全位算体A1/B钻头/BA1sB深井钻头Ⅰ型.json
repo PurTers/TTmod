@@ -3,12 +3,12 @@
 	"type":"Separator"
 	"description": "通过深度挖掘来开凿地下深处的矿物。\n\n[orange][全位算体深井钻头]",
 	"itemCapacity":40,
-	"health":240,
+	"health":80,
 	"size":2
 	"hasPower": false
 	"hasItems": true,
 	"craftTime":44,
-		"craftEffect":"smeltsmoke",
+	//"craftEffect":"smeltsmoke",
         	"drawer":{
         "type":"DrawMulti",
         "drawers":[
@@ -37,14 +37,14 @@
 		{ "item": "copper", "amount": 60 },
 	],
 	"category": "production",
-	"buildVisibility":"campaignOnly"
-	/*"research": {
+	//"buildVisibility":"campaignOnly"
+	"research": {
 	"parent":"BA1s超位算体"
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-facility32m"
+				"preset": "废弃研究所"
 			}
 	]
-	}*/
+	}
 }

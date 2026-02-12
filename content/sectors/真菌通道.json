@@ -1,0 +1,17 @@
+{
+    "planet":"serpulo"
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":223
+    "difficulty":4
+    "captureWave":30
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "陨石带",
+		"objectives": [
+		"core-foundation"
+            {
+				"type": "SectorComplete",
+				"preset": "污染小道"
+			}
+			]}
+}

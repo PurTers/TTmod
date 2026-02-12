@@ -1,0 +1,54 @@
+{
+    "type": "Reconstructor",
+	"name": "永恒级增工厂",
+	"description": "升级无量级单位为永恒级单位，这将会大提高单位各方面的属性，达到一个较为巅峰的水准，但是升级过程耗资巨大，而且时间极长，请务必保护好你的工厂。\n[red][泽塔议会军工厂]",
+	"size": 11,
+	"constructTime": 25200,
+	"health": 15000,
+	//"details":"传承不止\n生生不息\n至始至终\n皆为永恒",
+	"liquidCapacity": 20000,
+	"consumes": {
+		"power": 42,
+		"liquid": 
+	{"liquid":"cryofluid","amount":8,}
+	"items": [
+	{ "item": "phase-fabric", "amount": 2250 }
+	{ "item": "thorium", "amount": 3000 },
+	{ "item": "silicon", "amount": 8000 },
+	{ "item": "surge-alloy", "amount": 2400}
+	{ "item": "plastanium", "amount": 2200 }
+	{ "item": "metaglass", "amount": 5500 },
+	{ "item": "00磁暴合金", "amount": 1500 },
+	],}
+	"upgrades": [
+        ["reign", "uA0AA1胜冠"],
+        ["corvus","uA0AA2星寂"]
+        ["toxopid","uA0AA3阎蛏"]
+        
+        ["eclipse","uA0AB1耀龙"]
+        ["oct","uA0AB2神国"]
+        
+        ["omura","uA0AC1圣裁"]
+        ["navanax","uA0AC2应龙"]
+                
+	],
+	"requirements": [
+	{ "item": "phase-fabric", "amount": 1850 }
+	{ "item": "thorium", "amount": 3000 },
+	{ "item": "silicon", "amount": 7500 },
+	{ "item": "surge-alloy", "amount": 4200}
+	{ "item": "plastanium", "amount": 5500 }
+	{ "item": "metaglass", "amount": 9000 },
+	{ "item": "titanium", "amount": 6000 },
+	],
+	"category": "units",
+		/*"research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "tetrative-reconstructor"
+			}
+	]
+	}*/
+}

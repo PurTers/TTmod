@@ -11,7 +11,6 @@
       "shootCone": 20,
   "recoil": 2.5
 	"recoilTime": 60
-      "shootShake": 5,
       "coolantMultiplier": 2.5
       "ammoPerShot": 3
     "consumes": {
@@ -64,7 +63,6 @@
 			}
 			]
    },
-    "ammoPerShot": 4
     "shootSound": "shotgun",
     "targetGround": true,
     "targetAir": true,
@@ -73,7 +71,9 @@
     "shootCone": 20,
     "ammoTypes": {
     "surge-alloy": {
-    "ammoMultiplier": 1
+    "type":"MultiBulletType"
+    "ammoMultiplier":4,
+    "bullets":[{
     "reloadMultiplier":0.5
         "speed": 10
 	    "lifetime":23
@@ -82,12 +82,22 @@
 		"shootEffect": "shootSmall",
 		"splashDamageRadius":52
 		"splashDamage": 368
-        "ammoMultiplier":4,
         "backColor": "bf92f9",
-				"frontColor": "bf92f9",
-				"status": "脆裂",
-			"statusDuration": 240
-		
+		"frontColor": "bf92f9",
+		"status": "脆裂",
+		"statusDuration": 240
+		"hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FFF8AFFF",
+        "colorTo": "F3E979FF"
+      },
 		      "parts":[
       {
 		"type": "HaloPart",
@@ -170,23 +180,39 @@
 		"haloRotateSpeed": 0
 		"x": 0,    "y": 0,
 		}
-      ]
+      ]}
+		{
 		
-		"intervalRandomSpread": 15
-		"intervalSpread": 0
-		"bulletInterval":999
-        "intervalLifeMin":0
-        "intervalBullets":9
-        "intervalBullet":{
+	    "speed": 0,  
+	    "lifetime":1
+		"width": 6,"height": 6,
+		"trailLength": 6,"trailWidth": 1.5,
+		"damage":3
+		"shootEffect": "shootSmall",
+        "splashDamageRadius":16
+		"splashDamage":12
+		"makeFire":true,
+		"sprite":"large-orb"
+        "spin":2
+        
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 10,
+    "fragBullets":9
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
         "damage": 89
       "width": 3
       "pierce": true,
       "lifetime": 35
       "speed": 10
-      "length":16
-      "serrations": 8,
-      "fromColor": "FF8E38FF",
-      "toColor": "F3E979FF",
+      "height":16
+      //"serrations": 8,
+      "backColor": "FF8E38FF",
+      "frontColor": "F3E979FF",
       "shootEffect": "explosion",
       "status": "脆裂",
 			"statusDuration": 20
@@ -207,20 +233,11 @@
       "lightningLength": 4
       "lightningCone": 20,
       "lightningLengthRand": 5}
-      "hitEffect": {
-        "type": "ParticleEffect",
-        "line": true,
-        "particles": 7,
-        "lifetime": 10,
-        "length": 25,
-        "cone": -360,
-        "lenFrom": 5,
-        "lenTo": 0,
-        "colorFrom": "FFF8AFFF",
-        "colorTo": "F3E979FF"
-      },
-      "ammoMultiplier": 5,
-      }}
+      }
+      ]
+
+      }
+      }
     "rotateSpeed":3
     "requirements": [
         {"item": "plastanium", "amount": 300},

@@ -1,0 +1,93 @@
+{
+	"type": "ItemTurret",
+	"name": "刺蛇",
+	"description": "超限集团研发出的可以打击更远目标的导弹，也就是刺蛇导弹，该导弹发射井可以发射刺蛇导弹攻击敌人，相较于尾针导弹佣有更远的攻击范围以及更大的威力，但是装弹的时间明显更长，并且由于刺蛇导弹巨大的体型，我同意发射井无法同时发射多枚刺蛇导弹\n \n[blue][超限技术炮台]",
+	"underBullets":true
+	"health": 16080,
+	"targetable":false
+	"destructible":true
+	"solid":false
+	"size": 4
+	"reload":750
+	"range": 650,
+		"targetGround": true,
+	"targetAir": true,
+	"liquidCapacity": 500,
+		"maxAmmo":30
+    "ammoPerShot": 3
+    "rotateSpeed": 0
+    "shootCone":360
+     "minWarmup": 0.99
+     "recoilTime": 0
+    "recoil":0
+	"consumes": {
+	"power": 16.8
+       "coolant":{"amount":0.4,"optional":true}  
+		},
+		 "shootX":0
+	    "shootY":0
+	  		"drawer": {
+		"type": "DrawMulti",
+    "drawers": [
+    {"type": "DrawTurret",
+    "parts": [
+        {"type": "RegionPart",
+        "mirror": true,
+        "under":true,
+        "x": 0
+        "y": 0
+        "suffix": "-盖1",
+        "layer": 50,
+        "moveX": 8
+        "moveY": 8
+        }
+        {"type": "RegionPart",
+        "mirror": true,
+        "under":true,
+        "x": 0
+        "y": 0
+        "suffix": "-盖2",
+        "layer": 50,
+        "moveX": 8
+        "moveY": -8
+        }
+			]
+			}
+			]
+   },
+	"ammoUseEffect": "casing2Double",
+	"shootSound":"respawn",
+	"inaccuracy": 360
+	"shake":1,
+	"ammoTypes": {
+        "1绝缘钢": {
+	         "type": "BasicBulletType",
+             "spawnUnit": "刺蛇导弹",
+             "speed": 0,
+		 }
+		 "1共振石": {
+	         "type": "BasicBulletType",
+             "spawnUnit": "刺蛇导弹 (1)",
+             "speed": 0,
+		 }
+	}, 
+	"requirements": [
+{"item": "0铜铅合金", "amount": 270  },
+{"item": "1绝缘钢", "amount": 240  },
+{"item": "1集成电路", "amount": 200  },
+        { "item": "thorium", "amount": 480 }
+        { "item": "titanium", "amount": 300 }
+	],
+	"category": "turret",
+	/*"research": {
+	"parent":"BAAsAT3D尾针"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	    "researchCostMultiplier": 2,
+	    "canOverdrive": false,
+}

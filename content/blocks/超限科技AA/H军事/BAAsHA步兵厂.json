@@ -1,0 +1,38 @@
+{
+	"type": "UnitFactory",
+	"name": "轻机械工厂",
+	"description": "制造轻机甲单位，其廉价的价格和极快的生产速度使其可以在比较危急的时候用于救场，同时其中也有一些可以进行特殊作战的小型单位\n \n[blue][超限集团轻兵工厂]",
+    "health":340,
+	"size":2,
+	"consumes":{"power":1.2,	},
+	"plans":[
+	{ "unit": "uAABT0D看护", 
+	"time": 900, 
+	"requirements": [ 
+{ "item": "copper", "amount": 15},
+{ "item": "graphite", "amount": 10}
+]	},	
+	{ "unit": "uAABT0K候鸟", 
+	"time": 180, 
+	"requirements": [ 
+{ "item": "graphite", "amount": 5},
+{ "item": "lead", "amount": 5}
+	]	},	
+	]
+	"requirements": [
+    { "item": "copper", "amount": 80},
+    { "item": "lead", "amount": 60},
+{ "item": "graphite", "amount": 25}
+    ]
+ 	"category":"units",
+"research": {
+	"parent":"BAAs超限科技s"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "未知废墟"
+			}
+	]
+	}
+	"researchCostMultiplier": 0.5
+}

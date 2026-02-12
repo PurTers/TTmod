@@ -1,0 +1,16 @@
+{
+    "planet":"serpulo"
+    "overrideLaunchDefaults": true,//进度覆盖
+    "sector":97
+    "difficulty":3
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "盐碱荒滩",
+		"objectives": [
+		"kiln"
+			{
+				"type": "SectorComplete",
+				"preset": "盐碱荒滩"
+			}
+			]}
+}

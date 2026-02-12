@@ -3,7 +3,7 @@
 	"name": "利刃",
 	"description": "尖刀的强化版，向敌人一次性发射三枚标准子弹。\n\n[orange][全位算体常规部队]",
     "speed":  0.9,
-    "hitSize": 12,
+    "hitSize": 9,
     "immunities": ["甲板损坏"
     ],
 		"ammoType":{

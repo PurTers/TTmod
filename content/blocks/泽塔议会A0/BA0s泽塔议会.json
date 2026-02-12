@@ -1,6 +1,6 @@
 {
 	"name": "[red]泽塔议会",
-	"description": "目前赛博罗的主要掌控者，热衷于重型武器以及立场科技。",
+	"description": "以主脑泽塔主导的帝国，帝国决策主要由泽塔与其议会投票决定，热衷于重型武器以及立场科技。(红队)",
 	"details":"[red]真理只在大炮射程之内，权威只在利刃舰炮之上。",
 	"health":500,
 	"armor":0,
@@ -15,9 +15,7 @@
     { "item": "copper", "amount": 1000 }
     ]
 	"research": {
-        "root":true,
-        "name": "泽塔议会"
-       "planet":"serpulo"
+       "parent":"core-shard"
         },
             "canOverdrive": false,
             "researchCostMultiplier": 0

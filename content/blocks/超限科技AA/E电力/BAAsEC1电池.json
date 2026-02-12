@@ -1,0 +1,30 @@
+{
+    "name":"合成电池",
+	"health":300,
+    "description": "更高级的电池，更加坚硬，储电量也更大\n \n[blue][超限技术电池]",
+    "requirements": [
+  { "amount": 80, "item": "lead" },
+  { "amount": 60, "item": "silicon" },
+  { "amount": 20, "item": "0铜铅合金" }
+    ],
+	"consumesPower": true,
+	"outputsPower": true,
+    "consumes": 
+    {"powerBuffered": 4500},
+	"emptyLightColor":"FF000000",
+	"fullLightColor":"FFFFFFFF",
+    "size": 1,
+    "type": "Battery",
+	"category": "power",
+	/*"research": {
+	"parent":"BAAsEB1升级电力节点"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "污染小道"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.8
+}

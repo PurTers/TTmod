@@ -7,7 +7,7 @@
 	],
     "speed": 0.9
     "hitSize": 12
-    "health": 350,
+    "health": 420,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,
@@ -100,8 +100,7 @@
             "homingPower": 0.1,
 	}}
     ]
-   // "research":"uAABT1A响应"
-   "research": {
+   /*"research": {
 	"parent":"uAABT1O鱿鱼"
 	"objectives": [
             {
@@ -109,5 +108,5 @@
 				"preset": "overgrowth"
 			}
 	]
-	}
+	}*/
 }

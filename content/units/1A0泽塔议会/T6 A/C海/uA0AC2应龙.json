@@ -1,0 +1,1416 @@
+{
+	"type": "naval",
+	"name": "应龙",
+	"description": "永恒级海军单位，坚实可靠，可以进行海空转换，海军状态时被摧毁会自动转化为空军形态，空军形态会直接坠机，配备有一门扫荡式激光炮，两门球状闪电发生器，两门磁轨发生器。\n[red][泽塔议会永恒级单位]",
+    "ammoResupplyAmount":1,
+	"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":400},
+	"ammoCapacity": 1400,
+    "speed": 0.42
+    "hitSize": 88,
+    "targetAir":true,
+    "health": 42000,
+    "armor": 45,
+    "buildSpeed": 6.5,
+    "rotateSpeed": 0.5,
+    "itemCapacity": 350
+    "rotateShooting": "true",
+     "abilities": [
+    {
+        "type": "EnergyFieldAbility"
+        "damage": 72.0
+        "reload": 120.0
+        "range": 300.0
+        "status": "electrified"
+        "statusDuration": 360.0
+        "targetGround": true
+        "targetAir": true
+        "hitBuildings": true
+        "hitUnits": true
+        "healPercent": 0.5
+        "maxTargets": 16
+        "useAmmo": true
+        "color": "98ffa9"
+    }
+    {
+			"type": "SpawnDeathAbility",
+			"unit": "uA0AC2应龙 (1)",
+			"amount": 1,
+			"randAmount": 0
+			"spread": 0,
+	    "faceOutwards": false,
+	},]
+    	"weapons":[ 
+    	{
+            "name": "无",
+            "reload": 94
+            "x":0
+            "y":0
+             "inaccuracy": 0
+            "shootSound":"blaster",
+            "ejectEffect": "casing1",
+            "rotate": false
+			"baseRotation":0
+			"minWarmup": 0.99
+			"shootCone":15
+		    "rotationLimit": 0
+		    "mirror": false,
+		    "minWarmup": 0.99
+		    "shootWarmupSpeed": 0.032,
+		    "linearWarmup": true,
+		    "shootCone": 360,
+    "parts": [
+    	{
+	            "x":0,"y":0,
+			"type": "ShapePart",//图形特效
+			"sides": 4,//多边形边数
+			"progress": "warmup",
+            "color": "ffffff00"
+            "colorTo": "97FFA8"
+			"layer":60,//所在图层高度
+			"stroke": 0,//开始时的粗细
+			"strokeTo": 4,//结束时的粗细
+			"circle": false,//是否圆圈？
+			"hollow": true,//是否空心
+			"radius": 380,//开始时的大小
+			"radiusTo": 80//结束时的大小
+			    }
+			    {
+	            "x":0,"y":0,
+			"type": "ShapePart",//图形特效
+			"sides": 4,//多边形边数
+			"progress": "warmup",
+            "color": "ffffff00"
+            "colorTo": "97FFA8"
+			"layer":60,//所在图层高度
+			"stroke": 0,//开始时的粗细
+			"strokeTo": 4,//结束时的粗细
+			"circle": false,//是否圆圈？
+			"hollow": true,//是否空心
+			"radius": 360,//开始时的大小
+			"radiusTo": 60//结束时的大小
+			    }
+			    {
+	            "x":0,"y":0,
+			"type": "ShapePart",//图形特效
+			"sides": 4,//多边形边数
+			"progress": "warmup",
+            "color": "ffffff00"
+            "colorTo": "97FFA8"
+			"layer":60,//所在图层高度
+			"stroke": 0,//开始时的粗细
+			"strokeTo": 4,//结束时的粗细
+			"circle": false,//是否圆圈？
+			"hollow": true,//是否空心
+			"radius": 340,//开始时的大小
+			"radiusTo": 40//结束时的大小
+			    }
+			    {
+	            "x":0,"y":0,
+			"type": "ShapePart",//图形特效
+			"sides": 4,//多边形边数
+			"progress": "warmup",
+            "color": "ffffff00"
+            "colorTo": "97FFA8"
+			"layer":60,//所在图层高度
+			"stroke": 0,//开始时的粗细
+			"strokeTo": 4,//结束时的粗细
+			"circle": false,//是否圆圈？
+			"hollow": true,//是否空心
+			"radius": 320,//开始时的大小
+			"radiusTo": 20//结束时的大小
+			    }
+			    {
+	            "x":0,"y":0,
+			"type": "ShapePart",//图形特效
+			"sides": 4,//多边形边数
+			"progress": "warmup",
+            "color": "ffffff00"
+            "colorTo": "97FFA8"
+			"layer":60,//所在图层高度
+			"stroke": 0,//开始时的粗细
+			"strokeTo": 4,//结束时的粗细
+			"circle": false,//是否圆圈？
+			"hollow": true,//是否空心
+			"radius": 300,//开始时的大小
+			"radiusTo": 0//结束时的大小
+			    }
+			]
+			"showStatSprite": false
+			"shootStatusDuration": 600,
+	"shootStatus": "自毁",
+    "bullet":{
+        "speed": 0
+	    "lifetime":0
+		"width": 0,"height": 0
+		"trailLength": 0,
+		"trailWidth": 0
+		"damage":0
+		"shootEffect": "shootSmall",
+		"pierceCap": 3
+		"trailColor": "FF8E3800",
+        "backColor": "FF8E3800",
+		"frontColor": "F3E97900",
+	               	}}
+	{
+            "name": "龙炎",
+            "reload": 6
+            "x": -22
+            "y": -12
+            "ejectEffect": "casing1",
+            "shootSound":"laser",
+            "rotate":true
+            "mirror":true
+	"rotateSpeed":0.62,
+	"shootCone":30,
+            "bullet": {
+            "spin":18,
+            "sprite":"large-bomb"
+            "type":"BasicBulletType",
+    "speed":24
+    "lifetime":14
+	"width": 12
+	"height": 12
+	"damage":60
+	"pierceArmor": true,
+    "shootEffect": "shootBig"
+	"splashDamageRadius":80
+	"splashDamage":96
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "lightningDamage":32
+    "lightning":6
+    "lightningLength":18
+    "trailLength":66
+	"trailWidth":6
+	"trailColor":"7CF389",
+	"frontColor":"97FFA8",
+	"backColor":"FFFFFF",
+	"lightningColor":"7CF389",
+	"status": "electrified",
+	"statusDuration": 600,
+	"healPercent": 2
+	"bulletInterval":2
+    "intervalRandomSpread":0
+    "intervalAngle":0,
+    "intervalBullets":1
+    "intervalBullet":{
+    "spin":12
+        "weaveScale": 6,
+        "weaveMag": 9,
+        "weaveRandom": true,
+        "speed": 1
+	    "lifetime":30
+		"width": 1,"height": 1
+		"trailLength": 61,
+		"trailWidth": 6
+		"damage":0
+		"shootEffect": "shootSmall",
+		"pierceCap": 6
+		"trailColor": "7CF389",
+        "backColor": "FFFFFF",
+		"frontColor": "97FFA8",
+		"lightningColor":"7CF389",
+		"status": "slow",
+		"lightningDamage":32
+		"lightning":3
+		"lightningLength":8
+		"statusDuration": 300
+		"splashDamageRadius":24,
+		"splashDamage": 84,
+		"sprite":"large-bomb"
+        "shrinkX":6
+        "shrinkY":6
+		"hitEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"7CF389",
+					"rotation":24
+				},
+    }
+    "fragBullets":6
+        "fragBullet":{
+        "spin":24
+        "weaveScale": 3,
+        "weaveMag": 9,
+        "weaveRandom": true,
+        "speed": 6
+	    "lifetime":15
+		"width": 1,"height": 1
+		"trailLength": 61,
+		"trailWidth": 6
+		"damage":0
+		"shootEffect": "shootSmall",
+		"pierceCap": 3
+		"pierceBuilding": true,
+		"trailColor": "7CF389",
+        "backColor": "FFFFFF",
+		"frontColor": "97FFA8",
+		"lightningColor":"7CF389",
+		"status": "slow",
+		"lightningDamage":32
+		"lightning":3
+		"lightningLength":8
+		"statusDuration": 300
+		"splashDamageRadius":24,
+		"splashDamage": 84,
+		"sprite":"large-bomb"
+        "shrinkX":12
+        "shrinkY":12
+		"hitEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"7CF38900",
+					"rotation":24
+				},
+        }
+            }}
+    	{
+            "name": "龙息",
+            "reload": 180
+            "x": -32
+            "y": 0
+            "ejectEffect": "casing1",
+            "shootSound":"laser",
+            "rotate":true
+            "mirror":true
+	"rotateSpeed":0.62,
+	"shootCone":30,
+            "bullet": {
+            "sprite":"large-bomb"
+            "type":"BasicBulletType",
+    "speed":30
+    "lifetime":20
+	"width": 6
+	"height": 6
+	"damage":60
+	"pierceArmor": true,
+    "shootEffect": "shootBig"
+	"splashDamageRadius":80
+	"splashDamage":600
+	"hitEffect":"flakExplosionBig",
+    "despawnEffect":"flakExplosionBig",
+    "trailLength":66
+	"trailWidth":6
+	"trailColor":"7CF389",
+	"frontColor":"97FFA8",
+	"backColor":"FFFFFF",
+	"lightningColor":"7CF389",
+	"status": "electrified",
+	"statusDuration": 600,
+	"shake":12
+	"fragBullets":1
+        "fragBullet":{
+        "parts":[
+	{
+			"type": "ShapePart",
+			"colorTo":"FFFFFF",
+			"color": "FFFFFF",
+			"layer":112,
+			"stroke": 2,
+			"strokeTo": 2,
+			"circle": true,
+			"hollow": true,
+			"radius": 6
+			"radiusTo": 6
+			"x": 0,    
+			"y": 0
+			},
+	{
+			"type": "ShapePart",
+			"colorTo":"97FFA8",
+			"color": "97FFA8",
+			"layer":111,
+			"stroke": 4,
+			"strokeTo": 4,
+			"circle": true,
+			"hollow": true,
+			"radius": 7
+			"radiusTo": 7
+			"x": 0,    
+			"y": 0
+			},
+	{
+			"type": "ShapePart",
+			"colorTo":"7CF389",
+			"color": "7CF389",
+			"layer":110,
+			"stroke": 4,
+			"strokeTo": 4,
+			"circle": true,
+			"hollow": true,
+			"radius": 8
+			"radiusTo": 8
+			"x": 0,    
+			"y": 0
+			},
+]
+        "spin":12
+        "weaveScale": 3,
+        "weaveMag": 9,
+        "weaveRandom": true,
+        "speed": 0
+	    "lifetime":600
+		"width": 1,"height": 1
+		"trailLength": 61,
+		"trailWidth": 6
+		"damage":0
+		"shootEffect": "shootSmall",
+		"pierce": true
+		"pierceBuilding": true,
+		"pierceCap": 99999999
+		"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+		"trailColor": "7CF389",
+        "backColor": "FFFFFF",
+		"frontColor": "97FFA8",
+		"lightningColor":"7CF389",
+		"status": "slow",
+		"lightningDamage":32
+		"lightning":3
+		"lightningLength":12
+		"statusDuration": 300
+		"splashDamageRadius":24,
+		"splashDamage": 84,
+		"sprite":"large-bomb"
+        "shrinkX":24
+        "shrinkY":24
+		"despawnEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"7CF389",
+					"rotation":48
+				},
+				"bulletInterval":4
+    "intervalRandomSpread":360
+    "intervalAngle":1,
+    "intervalBullets":1
+    "intervalBullet":{
+    "type": "EmpBulletType",
+        "healPercent": 2.5
+        "collidesTeam":true,
+				"timeIncrease": 1.25
+				"collidesTiles": true
+				"collidesTeam": true
+				"timeDuration": 200,
+				"powerDamageScl": 3,
+				"powerSclDecrease": 0.25,
+				"radius": 80,
+				"pierce": true,
+				"splashDamageRadius": 16,
+				"splashDamage": 32,
+				"width": 0,
+				"height": 0,
+				"damage": 10,
+				"keepVelocity": true,
+				"trailEffect": "none",
+				"backColor": "97FFA8FF",
+				"frontColor": "97FFA8FF",
+				"instantDisappear": true,//瞬间消失
+				"hitSound": "plasmaboom",
+				"despawnEffect": "hitEmpSpark"
+				"hitPowerEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"97FFA8FF",
+					"rotation":8
+				},
+		    	"applyEffect": "none"
+		    	"hitEffect": "none"
+		    	"shootEffect": "none"
+    "despawnEffect": {
+    "type": "MultiEffect",
+	"effects": [
+	{
+            "type": "WaveEffect",
+            "lifetime": 40,
+            "sizeFrom": 70,
+            "sizeTo": 70,
+            "strokeFrom": 6,
+            "strokeTo": 0,
+            "colorTo": "7CF389",
+            "colorFrom": "7CF389"
+        },
+        ]    },
+        "fragBullets":6
+    "fragBullet":{
+        "type":"LightningBulletType",
+    "damage":44,
+    "lightningLength":14,
+    "lightningColor":"7CF389",
+    "collidesAir": true
+    }
+    }
+    "fragBullets":30
+        "fragBullet":{
+    "splashDamage":22,
+	"splashDamageRadius":32,
+	"status":"burning",
+	"speed":1
+	"lifetime":320,
+	"width":4,	 "height":12,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+	"sprite":"missile-back",
+    "homingRange": 180,
+    "homingPower": 0.1,
+    "homingDelay":30
+    "trailLength":12
+    "trailWidth":1.5
+    "trailColor": "7CF389",
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"lightningColor":"7CF389",
+	"status": "unmoving",
+	"lightningDamage":32
+	"lightning":3
+	"lightningLength":8
+	"statusDuration": 120
+        }
+        }
+            }}
+	
+	{
+            "name": "无",
+            "reload": 1200
+            "x": 0
+            "y": 22
+            "ejectEffect": "casing1",
+            "shootSound":"laser",
+            "rotate":false
+            "mirror":false
+	"rotateSpeed":0,
+	"shootCone":5,
+	"shootStatusDuration": 300,
+	"shootStatus": "静止",
+	"bullet":{
+ "type":"MultiBulletType"
+"bullets":[{
+            "keepVelocity":false,//受惯性影响
+            "shootSound":"laser",
+             "despawnSound":"laser",
+        "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF38900","97FFA800","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    	"hittable": false,//子弹是否会被激光裂解摧毁
+    	"reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 600
+	"lifetime": 10,
+	"speed": 0
+	"buildingDamageMultiplier":1
+},
+{
+	"speed":0
+	"lifetime":20,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 120
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":40,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 160
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":60,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 200
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":80,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 240
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":100,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 280
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":120,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 320
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":140,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 360
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":140,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 360
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":160,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 400
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":180,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 440
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":200,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 480
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":220,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 510
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":240,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 540
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":260,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 560
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":280,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 580
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":300,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 600
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":320,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 600
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":320,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 600
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+{
+	"speed":0
+	"lifetime":320,
+	"width":1,	 "height":1,
+	"hitEffect":"flakExplosion",
+	"despawnEffect":"flakExplosion"
+    "backColor": "FFFFFF",
+	"frontColor": "97FFA8",
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+    "keepVelocity":false,//受惯性影响
+    
+	"fragRandomSpread":0
+    "fragAngle":0,
+	"fragLifeMin": 1,
+    "fragLifeMax": 1,
+	"fragBullets":1
+	"fragBullet":{
+	"keepVelocity":false,//受惯性影响
+	"shootSound":"laser",
+    "despawnSound":"laser",
+    "type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors": ["7CF389","97FFA8","FFFFFF00"],
+	"removeAfterPierce":false
+	"pierceBuilding": true,
+	"collidesGround":true,
+	"collidesAir":true,
+	"absorbable": false,//是否可以被立场吸收
+    "hittable": false,//子弹是否会被激光裂解摧毁
+    "reflectable": false,//子弹是否会被反弹
+	"despawnEffect":"none",
+	"damage": 80,
+	"healPercent":2
+	"pierceDamageFactor":0.4
+	"pierceCap": 8,
+	"width": 64,	
+	"length": 600
+	"lifetime": 20,
+	"speed": 0
+	"buildingDamageMultiplier":1}
+}
+]
+}
+        }
+    ]
+    //"research":"navanax"
+}

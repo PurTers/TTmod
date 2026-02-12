@@ -1,0 +1,26 @@
+{
+    "name":"烽火核心",
+    "type":"CoreBlock",
+    "description": "中型核心，装甲较为厚重，容量较大。\n[red][泽塔议会初代核心]",
+    "requirements": [
+    {"amount": 1500, "item": "copper"},
+    {"amount": 800, "item": "lead"},
+	{ "item": "silicon", "amount": 1000 },
+    ],
+    "unitType":"uA0CCZ01阿尔法",
+    "health": 3000,
+    "armor":5
+    "itemCapacity": 5000,
+    "size": 3,
+    "research": {
+	"parent":"BA0s泽塔议会"
+	"objectives": [
+            {
+				"type": "SectorComp",
+				"preset": "盐碱荒滩"
+			}
+	]
+	}
+    "unitCapModifier": 12,
+    "category": "effect"
+}

@@ -1,0 +1,48 @@
+{
+	"type": "GenericCrafter",
+	"name": "专业基础合金厂",
+	"health": 1040,
+	"description": "专业生产基础合金，有更大产量同时需要更大的供应量以支持其正常生产\n\n[blue][超限技术中级工厂]",
+	"outputItem": { "item": "0铜铅合金", "amount": 9 },
+	"craftEffect": "smoke",
+	"alwaysUnlocked": false,
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false
+	"hasItems": true,
+	"craftTime": 40,
+	"itemCapacity": 40
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+	"power": 2.6
+    "items": {	 "items": [
+    { "item": "lead", "amount": 8}
+    { "item": "graphite", "amount": 8}
+ { "item": "copper", "amount": 12}
+ 	]
+  } },
+"requirements": [
+	{ "item": "lead", "amount": 240 },
+	{ "item": "copper", "amount": 220 },
+	{ "amount": 90, "item": "plastanium" }
+	{ "amount": 120, "item": "0铜铅合金" }
+	{ "amount": 40, "item": "1集成电路" }
+	],
+	"category": "crafting",
+	/*"research": {
+	"parent":"BAAsGT1J电路装配厂"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "overgrowth"
+			}
+	]
+	}*/
+	"buildCostMultiplier":0.6
+}

@@ -1,0 +1,33 @@
+{
+	"type":"BuildTurret",//类型:建造机
+	"name":"建造台",//不知道这个的建议，别写了
+    "description":"辅助玩家建造，会自动对附近受损建筑进行重建，尽管不能移动，但它并不会受到单位上限的影响\n\n[blue][超限技术建造装置]"
+	"size":2,//物品面积
+	"health":300,//建筑血量
+    "buildSpeed": 0.5
+    "buildBeamOffset": 3//建造光效偏移
+    "heatColor": "eeeeee"//建造时的光效
+	"rotateSpeed": 5,//旋转速度
+	"range": 300,//范围
+		"requirements":[
+	{ "item":"0铜铅合金","amount":180},
+	{ "item":"titanium","amount":120},
+	{ "item":"graphite","amount":150},
+	    ],
+ "consumes": {
+        "power": 5,
+    },
+/* "research": {
+	"parent":"BAAsIE1监管"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "冰冷山区"
+			}
+	]
+	}*/
+	 "researchCostMultiplier": 0.5,
+	        "canOverdrive": false,
+	"category": "effect"
+	"buildCostMultiplier":0.5
+}

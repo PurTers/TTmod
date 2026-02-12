@@ -3,13 +3,13 @@
 	"type":"Separator"
 	"description": "通过深度挖掘来开凿地下深处的矿物。\n\n[orange][全位算体深井钻头]",
 	"itemCapacity":40,
-	"health":240,
+	"health":400,
 	"size":4
 	"hasPower": true
 	"hasItems": true,
 	"craftTime":22,
 	"liquidCapacity":160,
-		"craftEffect":"smeltsmoke",
+	//"craftEffect":"smeltsmoke",
         	"drawer":{
         "type":"DrawMulti",
         "drawers":[
@@ -48,7 +48,7 @@
 		{"item": "titanium", "amount": 80},
 	],
 	"category": "production",
-	"buildVisibility":"campaignOnly"
+	//"buildVisibility":"campaignOnly"
 	/*"research": {
 	"parent":"BA1s超位算体"
 	"objectives": [

@@ -27,30 +27,9 @@
 	    "abilities": [/*能力（如力场防御等） */
         {
             "type": "UnitSpawnAbility",
-            "unit": "侧卫-A",
+            "unit": "uAAC侧卫-B",
             "spawnX": 0,
-            "spawnY": 10,
-            "spawnTime": 3600
-        },
-        {
-            "type": "UnitSpawnAbility",
-            "unit": "侧卫-A",
-            "spawnX": 10,
             "spawnY": 0,
-            "spawnTime": 3600
-        },
-        {
-            "type": "UnitSpawnAbility",
-            "unit": "侧卫-A",
-            "spawnX": -10,
-            "spawnY": 0,
-            "spawnTime": 3600
-        },
-        {
-            "type": "UnitSpawnAbility",
-            "unit": "侧卫-A",
-            "spawnX": 0,
-            "spawnY": -10,
             "spawnTime": 3600
         },
         {

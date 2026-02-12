@@ -1,0 +1,36 @@
+{
+"name":"石油抽取机" ,
+"description":"能够从深处掘少量石油。\n \n[blue][超限技术提取器]",
+"type": "SolidPump",
+"health": 350,
+"size": 2,
+"floating":true,
+"hasPower": true,
+"hasLiquids": true,
+"placeableLiquid":true
+"liquidCapacity": 20,
+	"requirements": [
+	    {"item": "0铜铅合金", "amount": 25},
+		{ "item": "1集成电路", "amount": 25 }
+		{"item": "metaglass", "amount":45},
+		{"item": "plastanium", "amount":25}
+],
+"consumes": { "power": 6},
+"pumpAmount": 0.11,
+"rotateSpeed": 0.75,
+"result":"oil",
+"baseEfficiency": 0.3,
+"maxBoost":10
+"attribute": "oil",
+"category": "production",
+/*"research": {
+	"parent":"BAAsBC1大型抽水机"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "裂谷前哨"
+			}
+	]
+	}*/
+	"researchCostMultiplier": 0.5
+}

@@ -96,7 +96,7 @@
     }
 	   	}
     ]
-   "research": {
+   /*"research": {
 	"parent":"uAABT1K无形"
 	"objectives": [
             {
@@ -104,5 +104,5 @@
 				"preset": "saltflats"
 			}
 	]
-	}
+	}*/
 }

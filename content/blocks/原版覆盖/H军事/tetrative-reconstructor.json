@@ -1,5 +1,5 @@
 {
-"research": {
+/*"research": {
 	"parent":"exponential-reconstructor"
 	"objectives": [
             {
@@ -7,5 +7,5 @@
 				"preset": "超限工艺-overgrowth"
 			}
 	]
-	}
+	}*/
 }

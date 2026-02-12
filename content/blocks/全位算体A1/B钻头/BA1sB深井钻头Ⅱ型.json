@@ -3,12 +3,12 @@
 	"type":"Separator"
 	"description": "通过深度挖掘来开凿地下深处的矿物。\n\n[orange][全位算体深井钻头]",
 	"itemCapacity":40,
-	"health":240,
+	"health":180,
 	"size":2
 	"hasPower": false
 	"hasItems": true,
 	"craftTime":42,
-		"craftEffect":"smeltsmoke",
+	//"craftEffect":"smeltsmoke",
         	"drawer":{
         "type":"DrawMulti",
         "drawers":[
@@ -39,14 +39,14 @@
 		{"item": "lead", "amount": 65},
 	],
 	"category": "production",
-	"buildVisibility":"campaignOnly"
-	/*"research": {
-	"parent":"BA1s超位算体"
+	//"buildVisibility":"campaignOnly"
+	"research": {
+	"parent":"BA1sB深井钻头Ⅰ型"
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-facility32m"
+				"preset": "废弃研究所"
 			}
 	]
-	}*/
+	}
 }

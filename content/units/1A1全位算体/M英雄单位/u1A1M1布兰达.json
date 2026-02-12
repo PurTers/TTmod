@@ -15,14 +15,14 @@
 	"type":"PowerAmmoType",
 	"totalPower":2200},
 	"ammoCapacity": 700
-    "ammoResupplyAmount":1,/*弹药补给倍率 */
+    //"ammoResupplyAmount":1,/*弹药补给倍率 */
     "health": 620,
     "armor": 26
     "drag": 0.2,
     "rotateSpeed": 7.5,
     "itemCapacity": 30,
-        "targetAir":true,  
-    "targetGround":true,
+        //"targetAir":true,  
+    //"targetGround":true,
         "abilities": [/*能力（如力场防御等） */
         {
 "type": "RegenAbility",
@@ -40,7 +40,7 @@
 	"weapons":[
 	{
 			"name": "尖刀队长3",
-			"reload": 15,
+			"reload": 28,
 			"recoil": 0,
 			"x": -5.2,
 			"y": 1.3,
@@ -61,13 +61,13 @@
 			"shotDelay":6
 		},
 			"bullet": {
-				"damage":18,
+				"damage":48,
 				"speed": 6,
 				"lifetime": 30,
 				"width": 5,
 				"height": 9
-				"pierceCap": 3,
-				"buildingDamageMultiplier":0.1,
+				"pierceCap": 8,
+				"buildingDamageMultiplier":0.01,
 				"pierceBuilding": true,
 		}}
 	{
@@ -82,8 +82,8 @@
 			"inaccuracy": 5,
 			"ejectEffect": "casing1",
 			"shootSound": "artillery",
-			"alternate": false,
-			"targetAir": false,
+			//"alternate": false,
+			//"targetAir": false,
 			"targetGround": true,
 			"rotationLimit":60
 				"recoilTime":120, //后坐力和后坐力恢复时间

@@ -6,4 +6,13 @@
 { "item": "silicon", "amount":20},
 { "item": "metaglass", "amount": 30 }
 	]
+	"research": {
+	"parent":"saltflats"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "遗迹海滩"
+			}
+	]
+	}
 }

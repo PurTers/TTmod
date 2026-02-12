@@ -1,7 +1,7 @@
 {
 	"name": "[blue]超限科技",
-	"description": "超限集团属于从赛普罗原势力中分裂出来的科学集团，受到以泽塔议会势力的迫害而被驱逐并且处于濒临剿灭的地步，",
-	"details":"但这就是真相？",
+	"description": "由宇普西龙和伊普西龙主导的科学集团，独裁统治，热衷于一些前沿性科技，对于电池内科技较为重视，或许他们早已偏离了最初的以科学为中心的初心。",
+	"details":"[blue]追求真理",
 	"health":500,
 	"hasShadow":false
 	"armor":0,
@@ -12,9 +12,7 @@
 	"requirements": [
     ]
 	"research": {
-        "root":true,
-        "name": "[blue]超限科技"
-       "planet":"serpulo"
+       "parent":"core-shard"
        "objectives": [
             {
 				"type": "OnSector",

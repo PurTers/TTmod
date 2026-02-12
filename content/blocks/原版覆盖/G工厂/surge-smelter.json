@@ -6,7 +6,7 @@
 { "item": "thorium", "amount": 55 }
 { "item": "phase-fabric", "amount":25},
 	]
-"research": {
+/*"research": {
 	"parent":"melter"
 	"objectives": [
             {
@@ -14,5 +14,5 @@
 				"preset": "超限工艺-extractionOutpost"
 			}
 	]
-	}
+	}*/
 }

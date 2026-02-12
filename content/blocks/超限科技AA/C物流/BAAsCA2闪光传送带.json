@@ -1,0 +1,23 @@
+{
+	"type": "Conveyor",
+	"name": "闪光传送带",
+	"description": "速度较快于钛带，《可以保护视力》。\n \n[blue][超限技术物流装置]",
+	"health": 120,
+	"requirements": [
+	{ "item": "titanium", "amount": 2 },
+	{"item": "phase-fabric", "amount": 2},
+	{"item": "1绝缘钢", "amount": 1},
+	],
+	"category": "distribution",
+	"speed": 0.38,
+	"displayedSpeed": 32.5
+	/*"research": {
+	"parent":"BAAsCA1铜铅合金带传送带"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "裂谷前哨"
+			}
+	]
+	}*/
+}

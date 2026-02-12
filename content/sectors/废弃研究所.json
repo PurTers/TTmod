@@ -1,0 +1,16 @@
+{
+    "planet":"serpulo"//母星名字。
+    "sector":6,//区块坐标
+    "captureWave":25//胜利波次
+    "difficulty":2//难度1一5
+    "overrideLaunchDefaults": true,//进度覆盖
+    "research": {
+		"parent": "盐碱荒滩",
+		"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "遗迹海滩"
+			}
+			"plastanium-compressor"
+			]}
+}
