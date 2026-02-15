@@ -1,0 +1,15 @@
+{
+    "planet":"serpulo"
+    "sector": 65
+    "captureWave":26
+    "difficulty":3
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "真菌通道",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "边陲哨站"
+			}
+			]}
+}

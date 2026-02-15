@@ -7,7 +7,7 @@
 	],
     "speed": 2.8
     "hitSize": 12
-    "health": 230,
+    "health": 320,
     	"rotateSpeed": 12
     	"ammoType":"copper",
 	"ammoCapacity": 300,
@@ -28,7 +28,7 @@
 	"itemCapacity": 0
     "weapons": [
    {	"name": "无",	
-		"reload": 22, 
+		"reload": 12, 
 		"x": 0,  "y": 0, 
 		"rotate": true,
 		"shootCone":360,
@@ -45,7 +45,7 @@
 	"width": 5
 	"height": 5
 	"trailLength": 6,"trailWidth": 1.5,
-	"damage":32
+	"damage":22
     "sprite":"large-bomb"
     "collidesGround": false
      "homingDelay":10

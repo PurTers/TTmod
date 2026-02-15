@@ -131,7 +131,7 @@
 	},
 	"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (1)",
+             "spawnUnit": "火箭弹 (3)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 	}

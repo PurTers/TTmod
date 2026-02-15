@@ -1,11 +1,11 @@
 {
 	"type": "naval",
 	"name": "猎杀",
-	"description": "装备有轨道炮的海军，可以精准高效的狙击敌人。\n[orange][全位算体精英部队]",
+	"description": "重装海军，装备有轨道炮，可以精准高效的狙击敌人，同时配备有两门蜂巢炮以及四门机炮进行辅助攻击。\n[orange][全位算体精英部队]",
 		"immunities": [
 "wet","freezing","tarred","甲板损坏"
 	],
-	"speed":0.7,
+	"speed":0.65,
 	"rotateSpeed":2.5,
 	"abilities": [
 	{
@@ -82,7 +82,7 @@
 	"bullet":{
 	"type": "RailBulletType",
       "damage": 925,
-      "length": 350,
+      "length": 280,
       "pointEffectSpace":60
       "hitShake": 10,
       "collidesTiles": true,

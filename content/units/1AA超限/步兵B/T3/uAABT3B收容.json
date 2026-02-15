@@ -1,6 +1,6 @@
 {
     "type": "mech",
-    "name":"收容"
+    "name":"静默"
     "description": "专业的狙击机甲，拥有极高的伤害，能够将被集中的单位定住一会儿\n\n[blue][超限技术作战大型机甲]",
     "immunities": [
 		"wet","spore-slowed","甲板损坏"

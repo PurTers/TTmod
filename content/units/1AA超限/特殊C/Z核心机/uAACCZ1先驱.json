@@ -21,4 +21,7 @@
 	"mineSpeed":1.5
 	"engineOffset": 0,
 	"engineSize": 0, 
+	"controller": "rebuildCommand",
+	"UnitController":"rebuildCommand"
+    //"aiController":"BuilderAI"
 }

@@ -7,28 +7,28 @@
 	"consumes":{"power":1.2,	},
 	"plans":[
 	{ "unit": "uAABT1A响应", 
-	"time": 900, 
+	"time": 1500, 
 	"requirements": [ 
 { "item": "0铜铅合金", "amount": 25},
 { "item": "copper", "amount": 25}
 	]	},	
 	{ "unit": "uAABT1B卫兵", 
-	"time": 900, 
+	"time": 1500, 
 	"requirements": [ 
 { "item": "graphite", "amount": 10},
 { "item": "0铜铅合金", "amount": 25}
 	]	},	
 	{ "unit": "uAABT1C列兵", 
-	"time": 900, 
+	"time": 1500, 
 	"requirements": [
 { "item": "0铜铅合金", "amount": 25},
 { "item": "lead", "amount": 25}
 	]	},
 	{ "unit": "uAABT1H火花", 
-	"time": 920, 
+	"time": 1200, 
 	"requirements": [
-{ "item": "silicon", "amount": 15}
-{ "item": "0铜铅合金", "amount": 15}
+{ "item": "silicon", "amount": 5}
+{ "item": "0铜铅合金", "amount": 5}
 { "item": "graphite", "amount": 10},
 	]	},	
 	{ "unit": "uAABT1I掠影", 
@@ -45,7 +45,7 @@
 { "item": "lead", "amount": 25}
 	]	},	
 	{ "unit": "uAABT1J预言", 
-	"time": 1080, 
+	"time": 2200, 
 	"requirements": [ 
 { "item": "silicon", "amount": 35},
 { "item": "0铜铅合金", "amount": 30}
@@ -58,28 +58,28 @@
 { "item": "graphite", "amount": 35},
 	]	},	
 		{ "unit": "uAABT1N田螺", 
-	"time": 1200, 
+	"time": 2400, 
 	"requirements": [ 
 { "item": "metaglass", "amount": 45}
 { "item": "silicon", "amount": 45}
 { "item": "graphite", "amount": 55}
 	]	},	
 	{ "unit": "uAABT1O1海胆", 
-	"time": 1500, 
+	"time": 1800, 
 	"requirements": [ 
 { "item": "metaglass", "amount": 50}
 { "item": "silicon", "amount": 35}
 { "item": "0铜铅合金", "amount": 30}
 	]	},	
 	{ "unit": "uAABT1O鱿鱼", 
-	"time": 1200, 
+	"time": 1800, 
 	"requirements": [ 
 { "item": "graphite", "amount": 15},
 { "item": "silicon", "amount": 15}
 { "item": "0铜铅合金", "amount": 20}
 	]	},	
 	{ "unit": "uAABT1Q浮卵", 
-	"time": 1800, 
+	"time": 3600, 
 	"requirements": [ 
 { "item": "metaglass", "amount": 60}
 { "item": "silicon", "amount": 65}

@@ -205,12 +205,12 @@
 			"shootY": 0,
 			"mirror": true,
 			"rotate": false,
-			"shootCone": 360,//允许射击角度
-			"rotationLimit": 0,//旋转最大角度
+			"shootCone": 360,
+			"rotationLimit": 0,
 			"baseRotation":-180
 			"useAmmo": false,
 			"shootSound": "laserbeam",
-			"continuous": true,//总是连续
+			"continuous": true,
 			"alternate": false
 			"shootStatusDuration": 300,
 	"shootStatus": "冲刺",

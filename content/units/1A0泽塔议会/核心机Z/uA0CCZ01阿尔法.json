@@ -55,4 +55,7 @@
 	     	"buildingDamageMultiplier":0.01
     }}
     ]
+    "controller":"rebuildCommand"
+    "UnitController":"rebuildCommand"
+    //"aiController":"BuilderAI"
 }

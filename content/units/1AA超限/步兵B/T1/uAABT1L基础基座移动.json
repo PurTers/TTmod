@@ -14,7 +14,7 @@
 	"hitSize":5, 
 	"buildSpeed":0.5
 	"flying": true
-	"health":380,
+	"health":280,
 	"armor":0
 	"mineTier":2
 	"healColor": "c0ecff"
@@ -27,6 +27,9 @@
 	"trailWidth": 2,
 	"engineSize": 1, 
 	"itemCapacity": 10
+	"controller": "rebuildCommand",
+	"UnitController":"rebuildCommand"
+	//"aiController":"BuilderAI"
     /*"research": {
 	"parent":"BAAsHA步兵厂"
 	"objectives": [

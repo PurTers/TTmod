@@ -1,7 +1,7 @@
 {
 	"type": "flying",
 	"name":"幻象",
-	"description": "更为强大的幻形，能够发射轻型修复导弹，更加高效的修复以及建造能力。\n\n[orange][全位算体支援部队]",
+	"description": "常规支援飞行器，能够发射轻型修复导弹，更加高效的修复以及建造能力。\n\n[orange][全位算体支援部队]",
 	"details":"所以他是幻形还是巨象",
 "immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
@@ -69,5 +69,7 @@
 	"parent":"BA1sHA精锐工厂"
 	}
 	"researchCostMultiplier": 0,
-	"UnitCommand": "rebuildCommand",
+	"controller": "rebuildCommand",
+	//"aiController":"BuilderAI"
+	"UnitController":"rebuildCommand"
 }

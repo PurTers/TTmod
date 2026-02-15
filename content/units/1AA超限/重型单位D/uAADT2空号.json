@@ -195,7 +195,7 @@
    "recoils": 1
 		"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (3)",
+             "spawnUnit": "火箭弹 (4)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 	}
@@ -224,7 +224,7 @@
    "recoils": 2,
 		"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (3)",
+             "spawnUnit": "火箭弹 (4)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 	}
@@ -253,7 +253,7 @@
    "recoils": 1
 		"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (3)",
+             "spawnUnit": "火箭弹 (4)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 	}

@@ -5,16 +5,16 @@
     "immunities": [
 		"wet","spore-slowed","tarred","甲板损坏"
 	],
-    "speed": 1.11
+    "speed": 1.6
     "hitSize": 18
-    "health": 620,
+    "health": 320,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,
         "targetAir":false,  
     "targetGround":true,
     "hovering":true
-    "armor":8
+    "armor":2
     "itemCapacity": 5
     "healColor": "c0ecff"
   "shieldColor": "c0ecff"
@@ -59,15 +59,15 @@
 		"alternate": true,
 		"shootOnDeath":true,
 		"bullet":{
-		"lightningDamage":23,
+		"lightningDamage":28,
             "lightningColor": "c0ecffFF",
     "lightning":5
     "lightningLength":12
 		"killShooter":true,
-		"splashDamageRadius":68,
+		"splashDamageRadius":48,
 		"instantDisappear":true,
 		"collides": false,
-		"splashDamage":32,
+		"splashDamage":24,
 		"speed":1,"lifetime":10,
 		"hitEffect":"massiveExplosion",
 		"despawnEffect":{"type": "MultiEffect",
@@ -102,16 +102,27 @@
 			"colorFrom": "c0ecff",
 			"colorTo": "c0ecff"}]},
 		"width":0,	 "height":0
+		"fragBullets":5
+        "fragBullet":{
+        "lightningDamage":28,
+            "lightningColor": "c0ecffFF",
+    "lightning":3
+    "lightningLength":6,
+		"splashDamageRadius":48,
+		"splashDamage":24,
+		"speed":6,"lifetime":10,
+		"hitEffect":"massiveExplosion",
+        }
 	   }
 	   	}
     ]
-   /*"research": {
-	"parent":"BAAsHA步兵厂"
+"research": {
+	"parent":"uAABT1A响应"
 	"objectives": [
             {
-				"type": "SectorComplete",
-				"preset": "冰冷山区"
+				"type": "OnSector",
+				"preset": "菌疫峡谷"
 			}
 	]
-	}*/
+	}
 }

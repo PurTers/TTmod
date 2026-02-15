@@ -1,7 +1,7 @@
 {
 	"type": "flying",
 	"name": "落星",
-	"description": "星辉的强化版，向地面的敌人一次性发射两枚标准子弹并发射一发导弹。\n\n[orange][全位算体常规部队]",
+	"description": "常规作战飞行器，向地面的敌人一次性发射两枚标准子弹并发射一发导弹。\n\n[orange][全位算体常规部队]",
 			"immunities": ["甲板损坏"
 	],
 	"speed": 2.7,	

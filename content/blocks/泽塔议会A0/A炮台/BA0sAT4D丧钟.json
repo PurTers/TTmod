@@ -619,7 +619,7 @@
         { "item": "metaglass", "amount":650},
         { "item": "00磁暴合金", "amount":650},
     ],//造价
-    "research": {
+    /*"research": {
 	"parent":"BA0sAT3D天网"
 	"objectives": [
             {
@@ -627,7 +627,7 @@
 				"preset": "overgrowth"
 			}
 	]
-	}
+	}*/
 	"category": "turret",//类型
 	"researchCostMultiplier": 0.75,
 	"buildCostMultiplier":0.6

@@ -18,7 +18,7 @@
     "waveTrailY":-6,
     "trailScl":2,
 	"hitSize":16 
-	"health": 620,
+	"health": 320,
 	"armor":5,
 	"faceTarget": false,
 	//"maxRange": 400,
@@ -35,7 +35,6 @@
 "mirror": false,
 "shootSound": "shoot",
 "rotate": true,
-"baseRotation":180
 "bullet": {
 "type": "ArtilleryBulletType",
 "speed": 2,
@@ -126,6 +125,7 @@
 		"shootY":4,
         "rotateSpeed":2,
         "inaccuracy": 0,
+        "baseRotation":180
 	"bullet":{
 	"type":"BasicBulletType",
     "speed": 5

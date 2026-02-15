@@ -1,0 +1,138 @@
+{
+    "type": "PowerTurret",
+    "name": "摘星",
+    "description": "对空的激光攻击，同时会发射干扰导弹，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 4500,
+    "insulated":true
+    "continuous": true,
+    "size": 3,
+    "heatColor": "turretHeat",
+    "shake": 0.2,
+    "inaccuracy": 5,
+    "recoil": 2,
+    //"hasPower": false,
+    "shootY":3
+    "shootSound": "shootAvert",//子弹音效
+    "recoilTime": 10,
+    "buildCostMultiplier":2
+    "drawer":{"type":"DrawTurret",
+	    "basePrefix": "cwst-"
+	    }
+    "shootType": {
+    "type":"MultiBulletType"
+    "bullets":[
+    {
+			"type": "LaserBulletType",
+	"chargeEffect":{
+		"type":"MultiEffect",
+		"effects":["lancerLaserCharge","lancerLaserChargeBegin"]
+	},
+	"colors":["FFB90F", "FF8C00", "FFB90F"],
+	"status": "melting",
+			"statusDuration": 120,
+		"collidesGround":false,
+			"collidesAir":true,
+	"shootEffect": "none",
+	"hitEffect": "none",
+	"despawnEffect": "none"
+	"smokeEffect": "none"
+	"despawnSound":"none",
+	"damage": 220,
+	"pierce": true
+	"width": 16,	"length": 300,
+	"lifetime": 40
+	"knockback":3
+      },
+	{
+		
+	    "speed": -0.5,  
+	    "lifetime":120
+		"width": 6,"height": 6,
+		"damage":0
+		"shootEffect": "shootSmall",
+		"sprite":"large-orb"
+        "spin":2
+        "collidesGround":false,
+			"collidesAir":false,
+        "fragLifeMin":0
+        "fragRandomSpread":10
+       "fragRandomSpread": 0,
+	"fragSpread": 0,
+    "fragBullets":1
+    "fragVelocityMin": 1,
+    "fragVelocityMax":1
+    "fragLifeMin":1
+			"fragBullet": {
+        "damage": 0
+      "width": 4
+      "pierce": true,
+      "lifetime": 160
+      "speed": 2
+      "height":12
+      "trailLength": 6,"trailWidth": 6,
+      "splashDamageRadius":48
+	   "splashDamage":30
+	   "homingRange": 420,
+       "homingPower": 0.4,
+       "homingDelay":1
+       "collidesGround":false,
+			"collidesAir":true,
+      //"serrations": 8,
+      "backColor": "FF8C00",
+      "frontColor": "FFB90F",
+      "shootEffect": "explosion",
+      "status": "slow",
+		"statusDuration": 300
+		"sprite":"missile"
+      "hitEffect": [{
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 10,
+        "length": 25,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "FF8C00",
+        "colorTo": "FFB90F"
+      },
+      {"type": "WaveEffect",
+    "lifetime": 60
+    "sizeFrom": 48
+    "sizeTo": 48
+    "strokeFrom": 3
+    "strokeTo": 0
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C0000"}]
+	},},
+	],}
+    "consumes": {
+    },
+    "reload": 66,
+    "rotateSpeed": 12,
+    "range": 300,
+    "category": "turret",
+    /*"research": {
+	"parent":"BA1sAT2A防卫"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "废弃研究所"
+			}
+	]
+	}*/
+    "researchCostMultiplier": 0.2,
+    "requirements": [
+{ "item": "copper", "amount":420},
+{ "item": "lead", "amount":320}
+{ "item": "graphite", "amount":210}
+{ "item": "titanium", "amount": 310 }
+{ "item": "plastanium", "amount":160},
+{ "item": "silicon", "amount":250},
+{ "item": "metaglass", "amount":240},
+    ]
+    "researchCostMultiplier": 0.5
+   // "buildVisibility":"campaignOnly"
+}

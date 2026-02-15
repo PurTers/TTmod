@@ -412,7 +412,7 @@
    "recoils": 2,
 		"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (8)",
+             "spawnUnit": "火箭弹 (3)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 			"collidesGround": false

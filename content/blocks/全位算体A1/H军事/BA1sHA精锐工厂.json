@@ -9,8 +9,8 @@
 	{ "unit": "u1A1ha11利刃", 
 	"time": 2400, 
 	"requirements": [ 
-    { "item": "titanium", "amount": 10 }
-	{ "item": "metaglass", "amount": 30}
+    { "item": "titanium", "amount": 15 }
+	{ "item": "lead", "amount": 30}
 	{ "item": "silicon", "amount": 50 },
 	{ "item": "graphite", "amount": 50},
 	]	},	
@@ -32,9 +32,17 @@
 	"time": 2400, 
 	"requirements": [ 
     { "item": "titanium", "amount": 45 }
-	{ "item": "metaglass", "amount": 45}
+	{ "item": "lead", "amount": 45}
 	{ "item": "silicon", "amount": 80 },
 	{ "item": "graphite", "amount": 70},
+	]	},	
+	{ "unit": "u1A1hc11青鲛", 
+	"time": 3600, 
+	"requirements": [ 
+    { "item": "titanium", "amount": 65 }
+	{ "item": "metaglass", "amount": 55}
+	{ "item": "silicon", "amount": 85 },
+	{ "item": "graphite", "amount": 60},
 	]	},	
 	]
 	"requirements": [

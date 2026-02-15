@@ -7,90 +7,98 @@
 	"consumes":{"power":5.8
 	"liquid": {"liquid":"00再构流体","amount":0.1,}},
 	"plans":[
+	{ "unit": "uAABT0D看护", 
+	"time": 900, 
+	"requirements": [ 
+{ "item": "copper", "amount": 10},
+{ "item": "graphite", "amount": 5}
+]	},	
 	{ "unit": "uAABT0K候鸟", 
 	"time": 60, 
 	"requirements": [ 
 { "item": "graphite", "amount": 3},
 { "item": "lead", "amount": 3}
-	]	},	
+	]	},		
+	
 	{ "unit": "uAABT1A响应", 
-	"time": 720, 
+	"time": 900, 
 	"requirements": [ 
 { "item": "0铜铅合金", "amount": 20},
 { "item": "copper", "amount": 20}
 	]	},	
 	{ "unit": "uAABT1B卫兵", 
-	"time": 720, 
+	"time": 900, 
 	"requirements": [ 
-{ "item": "graphite", "amount": 7},
+{ "item": "graphite", "amount": 5},
 { "item": "0铜铅合金", "amount": 20}
 	]	},	
 	{ "unit": "uAABT1C列兵", 
-	"time": 720, 
+	"time": 900, 
 	"requirements": [
 { "item": "0铜铅合金", "amount": 20},
 { "item": "lead", "amount": 20}
 	]	},
 	{ "unit": "uAABT1H火花", 
-	"time": 800, 
+	"time": 1200, 
 	"requirements": [
-{ "item": "silicon", "amount": 20}
-{ "item": "0铜铅合金", "amount": 30}
-{ "item": "coal", "amount": 40},
+{ "item": "silicon", "amount": 3}
+{ "item": "0铜铅合金", "amount": 3}
+{ "item": "graphite", "amount": 5},
 	]	},	
 	{ "unit": "uAABT1I掠影", 
-	"time": 1200, 
+	"time": 1440, 
 	"requirements": [ 
-{ "item": "graphite", "amount": 20},
-{ "item": "silicon", "amount": 20}
-{ "item": "0铜铅合金", "amount": 20}
-	]	},	
-	{ "unit": "uAABT1K无形", 
-	"time": 60, 
-	"requirements": [ 
-{ "item": "graphite", "amount": 3},
-{ "item": "lead", "amount": 3}
-	]	},	
-	{ "unit": "uAABT1J预言", 
-	"time": 1080, 
-	"requirements": [ 
-{ "item": "graphite", "amount": 15},
+{ "item": "graphite", "amount": 10},
+{ "item": "silicon", "amount": 10}
 { "item": "0铜铅合金", "amount": 10}
 	]	},	
+	{ "unit": "uAABT1K无形", 
+	"time": 1800, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 10},
+{ "item": "lead", "amount": 20}
+	]	},	
+	{ "unit": "uAABT1J预言", 
+	"time": 2200, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 30},
+{ "item": "0铜铅合金", "amount": 25}
+	]	},	
 	{ "unit": "uAABT1L基础基座移动", 
-	"time": 900, 
+	"time": 1500, 
 	"requirements": [ 
 { "item": "silicon", "amount": 20}
 { "item": "0铜铅合金", "amount": 30}
+{ "item": "graphite", "amount": 30},
 	]	},	
 		{ "unit": "uAABT1N田螺", 
-	"time": 600, 
+	"time": 2400, 
 	"requirements": [ 
-{ "item": "metaglass", "amount": 35}
-{ "item": "silicon", "amount": 35}
-{ "item": "graphite", "amount": 45}
+{ "item": "metaglass", "amount": 40}
+{ "item": "silicon", "amount": 40}
+{ "item": "graphite", "amount": 50}
 	]	},	
 	{ "unit": "uAABT1O1海胆", 
-	"time": 750, 
+	"time": 1800, 
 	"requirements": [ 
-{ "item": "metaglass", "amount": 30}
-{ "item": "silicon", "amount": 15}
-{ "item": "0铜铅合金", "amount": 20}
+{ "item": "metaglass", "amount": 45}
+{ "item": "silicon", "amount": 30}
+{ "item": "0铜铅合金", "amount": 25}
 	]	},	
 	{ "unit": "uAABT1O鱿鱼", 
-	"time": 600, 
+	"time": 1800, 
 	"requirements": [ 
 { "item": "graphite", "amount": 10},
 { "item": "silicon", "amount": 10}
 { "item": "0铜铅合金", "amount": 15}
 	]	},	
 	{ "unit": "uAABT1Q浮卵", 
-	"time": 900, 
+	"time": 3600, 
 	"requirements": [ 
-{ "item": "metaglass", "amount": 50}
+{ "item": "metaglass", "amount": 45}
 { "item": "silicon", "amount": 45}
 { "item": "0铜铅合金", "amount": 60}
-	]	},	
+	]	},		
 	
 	{ "unit": "uAABT2A压制", 
 	"time": 1680, 

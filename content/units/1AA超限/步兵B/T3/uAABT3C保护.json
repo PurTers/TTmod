@@ -1,6 +1,6 @@
 {
     "type": "mech",
-    "name":"保护"
+    "name":"雷渊"
     "description": "近战通过量子炮对敌人造成伤害，量子炮威力巨大，同时能将敌人的状态锁定，让他们变成极为脆弱的活靶子\n\n[blue][超限技术作战大型机甲]",
     "immunities": [
 		"wet","spore-slowed","甲板损坏"

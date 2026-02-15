@@ -1037,7 +1037,7 @@
    "recoil": 0
 		"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹",
+             "spawnUnit": "火箭弹 (5)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 	}

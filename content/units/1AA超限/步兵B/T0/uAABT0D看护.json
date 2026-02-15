@@ -11,7 +11,7 @@
   "shieldColor": "c0ecff"
 "ammoCapacity": 50,
 "speed": 1.2,
-"hitSize": 25,
+"hitSize": 8,
 "targetAir": true,
 "targetGround": true,
 "health": 90,

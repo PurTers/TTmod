@@ -1,7 +1,7 @@
 {
 	"type": "flying",
 	"name":"幽影",
-	"description": "更为强大的独影，能够发射轻型修复导弹，拥有更大的在互聊和更快的采矿速度。\n\n[orange][全位算体支援部队]",
+	"description": "常规采矿机，能够发射轻型修复导弹，拥有更大的在互聊和更快的采矿速度。\n\n[orange][全位算体支援部队]",
 	"details":"武装牛车",
 "immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
@@ -65,5 +65,7 @@
 	"parent":"BA1sHA精锐工厂"
 	}
 	"researchCostMultiplier": 0,
-	"UnitCommand": "mineCommand",
+	"controller": "mineCommand",
+	//"aiController":"MinerAI"
+	"UnitController":"mineCommand"
 }

@@ -40,7 +40,7 @@
 	"weapons":[
 	{
 			"name": "尖刀队长3",
-			"reload": 28,
+			"reload": 66,
 			"recoil": 0,
 			"x": -5.2,
 			"y": 1.3,
@@ -61,14 +61,14 @@
 			"shotDelay":6
 		},
 			"bullet": {
-				"damage":48,
-				"speed": 6,
+				"damage":188,
+				"speed": 8,
 				"lifetime": 30,
 				"width": 5,
 				"height": 9
 				"pierceCap": 8,
-				"buildingDamageMultiplier":0.01,
-				"pierceBuilding": true,
+				"buildingDamageMultiplier":0.1,
+				"pierceBuilding": false,
 		}}
 	{
 			"name": "尖刀队长2",
@@ -97,15 +97,15 @@
 			 "type": "ArtilleryBulletType",
 			"backColor": "FFFFFFFF",
 				"frontColor": "c1e8f5",
-				"damage":33,
+				"damage":66,
 				"splashDamageRadius":35,
-				"splashDamage":145
-				"speed": 3,
-				"lifetime": 40,
+				"splashDamage":175
+				"speed": 2,
+				"lifetime": 30,
 				"width": 12,
 				"height": 12
 				"maxDamageFraction":0.999999
-				"buildingDamageMultiplier":5.0,
+				"buildingDamageMultiplier":2.0,
 				//"sprite":"超限工艺-尖刺",
 				"collides":true
                 "collidesTiles":true

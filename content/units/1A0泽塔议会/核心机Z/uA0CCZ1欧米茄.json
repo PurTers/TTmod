@@ -62,7 +62,7 @@
 		},
             "bullet": {
     "type":"BasicBulletType",
-    "speed": 7.5
+    "speed": 7
     "lifetime":40
 	"width": 8
 	"height": 12
@@ -92,9 +92,9 @@
 		},
     "bullet":{
 		"sprite":"missile-large",
-			"speed":8
+			"speed":7
 			"damage": 8
-			"lifetime":50,
+			"lifetime":40,
 			"width": 4, 			
 			"height":9
 			"trailLength":12
@@ -106,4 +106,7 @@
 	     	"buildingDamageMultiplier":0.125
 	}}
     ]
+    "controller":"rebuildCommand"
+    "UnitController":"rebuildCommand"
+    //"aiController":"BuilderAI"
 }

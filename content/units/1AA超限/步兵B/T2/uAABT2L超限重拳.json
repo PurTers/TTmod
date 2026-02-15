@@ -39,6 +39,9 @@
         "range": 64
     }
     ]
+    "controller": "mineCommand",
+    "UnitController":"mineCommand"
+   // "aiController":"MinerAI"
     /* "research": {
 	"parent":"uAACCA1基础基座移动"
 	"objectives": [

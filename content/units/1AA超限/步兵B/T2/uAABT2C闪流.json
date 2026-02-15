@@ -1,6 +1,6 @@
 {
     "type": "legs",
-    "name":"闪流"
+    "name":"光斩"
     "description": "以列兵为基础研究出的特殊轻机甲，移动速度快，武器威力和装甲也更高，通过激光以贯穿敌人，对电击有一定免疫，配备有导弹仓用于发射导弹。\n\n[blue][超限技术作战中机甲]",
     "immunities": [
 		"shocked","electrified","甲板损坏"
@@ -277,7 +277,7 @@
       "ejectEffect": "casing1",
       "bullet": {
  	"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (5)",
+             "spawnUnit": "火箭弹 (1)",
              "speed": 0,
       }
     }

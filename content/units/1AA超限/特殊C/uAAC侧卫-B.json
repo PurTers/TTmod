@@ -230,7 +230,7 @@
       "ejectEffect": "casing1",
       "bullet": {
  	"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (5)",
+             "spawnUnit": "火箭弹 (2)",
              "speed": 0,
       }
     }

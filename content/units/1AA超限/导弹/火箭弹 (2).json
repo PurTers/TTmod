@@ -1,16 +1,16 @@
 {
 		"immunities": [
 	],
-	"name": "火箭弹",
+	"name": "T-F-03火箭弹",
 	"type": "missile",
 	"template": "MissileUnitType",
-	"description": "导弹",
+	//"description": "导弹",
 	"health": 240,
 	"armor": 6,
-	"speed": 7
-	"lifetime": 80
+	"speed": 3
+	"lifetime": 100
 	"maxRange": 20
-	"rotateSpeed": 9
+	"rotateSpeed": 0
 	"engineColor": "FEB380",
 	"trailColor": "FEB380",
 	"engineLayer": 100,
@@ -22,8 +22,7 @@
 	"lowAltitude": true,
 	"fogRadius": 8,
 	"outlineColor": "6E7080FF",
-	"weapons": [
-		{
+	"weapons": [{
 			"shootCone": 360,
 			"mirror": false,
 			"reload": 1,
@@ -36,27 +35,13 @@
 	"collidesAir": true
 				"type": "ExplosionBulletType",
 				"hitColor": "FFB381FF",
-				"splashDamage": 188,
-				"splashDamageRadius": 66,
+				"splashDamage": 88,
+				"splashDamageRadius": 48,
 				"despawnShake": 3,
 				"fragVelocityMin": 4
-				"buildingDamageMultiplier":3
+				"buildingDamageMultiplier":2
 				"status": "脆裂",
 			"statusDuration": 300
-			"fragBullets": 9
-				"fragBullet": {
-				"despawnEffect": "flakExplosionBig",
-				"width": 8,
-				"height": 9,
-				"buildingDamageMultiplier":0.1
-				"backColor": "FFFFFFFF",
-				"frontColor": "FFFFFFFF",
-				"splashDamageRadius": 36,
-				"splashDamage": 33,
-				"lifetime": 20,
-				"speed": 0.5
-				 "buildingDamageMultiplier":2
-			}
 		}
 		}
 	],

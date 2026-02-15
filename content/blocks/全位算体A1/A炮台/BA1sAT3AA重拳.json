@@ -1,0 +1,76 @@
+{
+    "type": "PowerTurret",
+    "name": "重拳",
+    "description": "对地迫击炮攻击，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
+    "targetAir": false,
+    "targetGround": true,
+    "health": 1600,
+    "insulated":true,
+    "size": 3,
+    "heatColor": "turretHeat",
+    "shake": 0.2,
+    "inaccuracy": 5,
+    "recoil": 2,
+   // "hasPower": false,
+   "velocityRnd":0.05
+    "shoot": {
+    "shots":8,
+        "shotDelay":0
+    },
+    "shootSound": "artillery",//子弹音效
+    "recoilTime": 10,
+    "buildCostMultiplier":2
+    "drawer":{"type":"DrawTurret",
+	    "basePrefix": "cwst-"
+	    }
+    "shootType": {
+        "type": "ArtilleryBulletType",
+			"speed": 4,
+			"lifetime": 90,
+			"width": 15,
+			"height": 15,
+			"knockback": 1,
+			"backColor": "FF8C00",
+			"frontColor": "FFB90F",
+			"shootEffect": "shootBig",
+			"splashDamageRadius": 35
+			"splashDamage": 32,
+			"status": "slow",
+			"statusDuration": 30,
+			"hitEffect": "explosion",
+			"despawnEffect": "explosion"
+			"makeFire":true,
+	"fragBullets": 4,
+	"fragRandomSpread": 12,
+			"fragBullet": {
+				"type": "FireBulletType",
+				"speed": 8,
+				"lifetime": 2,
+				"damage": 2,
+				"status": "burning",
+				"statusDuration": 360,
+				"makeFire": true
+	}}
+    "consumes": {
+    },
+    "reload": 180,
+    "rotateSpeed": 12,
+    "range": 360,
+    "category": "turret",
+   /* "research": {
+	"parent":"BA1sAT1A石锤"
+	"objectives": [
+	{
+				"type": "OnSector",
+				"preset": "废弃研究所"
+			}
+	]
+	}*/
+    "requirements": [
+        { "item": "copper", "amount":160},
+{ "item": "lead", "amount":180}
+{ "item": "graphite", "amount":90}
+{ "item": "titanium", "amount": 120 }
+    ]
+   // "buildVisibility":"campaignOnly"
+}

@@ -57,7 +57,7 @@
             "bullet": {
     "type":"BasicBulletType",
     "speed": 6
-    "lifetime":30
+    "lifetime":40
 	"width": 8
 	"height": 12
 	"damage":12
@@ -68,4 +68,7 @@
     "homingPower": 0.03,
     }}
     ]
+    "controller":"rebuildCommand"
+    "UnitController":"rebuildCommand"
+    //"aiController":"BuilderAI"
 }

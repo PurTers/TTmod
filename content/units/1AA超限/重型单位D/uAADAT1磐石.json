@@ -16,6 +16,7 @@
 	"legSplashRange":24
 	"healColor": "c0ecff"
   "shieldColor": "c0ecff"
+  	"name": "磐石",
 	"description": "重型单位，顶部配备导弹发射器以及两挺机枪，前端的大口径激光炮可以高频摧毁前方一小距离内的单位，可以踩过建筑，推荐用于攻城。\n\n[blue][超限技术重型单位]",
 				"immunities": [
 "burning","freezing","melting","wet","spore-slowed","shocked","electrified","列阵","甲板损坏"
@@ -49,7 +50,6 @@
 	"hovering": true,
 	"canDrown": false,
 		"maxRange": 400
-	"name": "磐石",
 	"canBoost": false,
 	"speed": 0.3
 	"hitSize": 42
@@ -168,7 +168,7 @@
    "recoils": 2,
 		"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹",
+             "spawnUnit": "火箭弹 (2)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 	}

@@ -1,16 +1,16 @@
 {
 		"immunities": [
 	],
-	"name": "火箭弹",
+	"name": "T-F-06火箭弹",
 	"type": "missile",
 	"template": "MissileUnitType",
 	"description": "导弹",
-	"health": 120,
+	"health": 360,
 	"armor": 6,
-	"speed": 4
-	"lifetime": 90
+	"speed": 3
+	"lifetime": 120
 	"maxRange": 20
-	"rotateSpeed": 12
+	"rotateSpeed": 9
 	"engineColor": "FEB380",
 	"trailColor": "FEB380",
 	"engineLayer": 100,
@@ -36,11 +36,27 @@
 	"collidesAir": true
 				"type": "ExplosionBulletType",
 				"hitColor": "FFB381FF",
-				"splashDamage": 22,
+				"splashDamage": 88,
 				"splashDamageRadius": 36,
 				"despawnShake": 3,
 				"fragVelocityMin": 4
-				"buildingDamageMultiplier":3
+				"buildingDamageMultiplier":4
+				"status": "脆裂",
+			"statusDuration": 300
+			"fragBullets": 5
+				"fragBullet": {
+				"despawnEffect": "flakExplosionBig",
+				"width": 8,
+				"height": 9,
+				"buildingDamageMultiplier":0.1
+				"backColor": "FFFFFFFF",
+				"frontColor": "FFFFFFFF",
+				"splashDamageRadius": 16,
+				"splashDamage": 33,
+				"lifetime": 20,
+				"speed": 0.5
+				 "buildingDamageMultiplier":2
+			}
 		}
 		}
 	],

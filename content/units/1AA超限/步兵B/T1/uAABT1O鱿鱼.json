@@ -7,7 +7,7 @@
 	],
     "speed": 1.9
     "hitSize": 12
-    "health": 320,
+    "health": 280,
     	"rotateSpeed": 2.1
     	"healColor": "c0ecff"
   "shieldColor": "c0ecff"

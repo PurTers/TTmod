@@ -1,6 +1,6 @@
 {
     "type": "mech",
-    "name":"控制"
+    "name":"默王"
     "description": "超限集团的主战机甲，通过音波炮对敌方进行伤害\n\n[blue][超限技术作战大型机甲]",
     "immunities": [
 		"wet","spore-slowed","甲板损坏"

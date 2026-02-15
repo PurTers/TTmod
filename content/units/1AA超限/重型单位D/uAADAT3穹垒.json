@@ -18,6 +18,7 @@
 	"lockLegBase":true
 	"healColor": "c0ecff"
   "shieldColor": "c0ecff"
+  	"name": "穹垒",
 	"description": "绝对强大的移动要塞，后部装有持续发射火箭弹的蜂巢炮，中部有一门将激光散射的光棱炮，前端拥有两门破碎炮负责辅助的攻击，近战可以将敌人切割。\n\n[blue][超限技术重型单位]",
 				"immunities": [
 "burning","freezing","melting","wet","spore-slowed","shocked","electrified","列阵","甲板损坏"
@@ -68,7 +69,6 @@
 	"hovering": true,
 	"canDrown": false,
 		"maxRange": 400
-	"name": "穹垒",
 	"canBoost": false,
 	"speed": 0.1
 	"hitSize": 48
@@ -277,7 +277,7 @@
    "recoils": 2,
 		"bullet":{
 		"type": "BasicBulletType",
-             "spawnUnit": "火箭弹",
+             "spawnUnit": "火箭弹 (4)",
              "speed": 0,
 			"shootEffect":"shootSmall",
 	}

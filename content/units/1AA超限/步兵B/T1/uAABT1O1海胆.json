@@ -7,7 +7,7 @@
 	],
     "speed": 0.9
     "hitSize": 12
-    "health": 420,
+    "health": 220,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,

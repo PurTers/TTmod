@@ -1,0 +1,162 @@
+{
+	"type": "mech",
+	"name": "斯帕德",
+	"description": "全位算体首席科学家斯帕德的专属机甲，以辅助型武器为主，能够发射将敌人瘫痪的电池脉冲的脉冲炮，同时近距离有高温喷火器防身。\n[orange][全位算体 英雄单位-斯帕德]",
+    "speed":  1.4,
+    "hitSize": 12,
+    "canBoost": true,
+    "hovering":true,
+    "canDrown": false,
+    		"immunities": [
+    		"freezing","burning","wet","tarred","spore-slowed","electrified","sapped","slow","脆裂","甲板损坏"
+    		
+	],
+		"ammoType":{
+	"type":"PowerAmmoType",
+	"totalPower":2200},
+	"ammoCapacity": 700
+    //"ammoResupplyAmount":1,/*弹药补给倍率 */
+    "health": 620,
+    "armor": 26
+    "drag": 0.2,
+    "rotateSpeed": 7.5,
+    "itemCapacity": 30,
+        //"targetAir":true,  
+    //"targetGround":true,
+        "abilities": [/*能力（如力场防御等） */
+        {
+"type": "RegenAbility",
+"amount": 0.8
+},
+{
+			"type": "SpawnDeathAbility",
+			"unit": "布兰达",
+			"amount": 1,
+			"randAmount": 0
+			"spread": 0,
+	    "faceOutwards": false,
+	}
+		]
+	"weapons":[
+	{
+			"name": "尖刀队长3",
+			"reload": 66,
+			"recoil": 0,
+			"x": -5.2,
+			"y": 1.3,
+			"rotate": true,
+			"rotateSpeed": 15,
+			"mirror": false,
+			"inaccuracy": 0.5,
+			"ejectEffect": "casing1",
+			"shootSound": "pew",
+			"alternate": false,
+			"rotationLimit":60
+			"shootY":6
+				"recoilTime":120, //后坐力和后坐力恢复时间
+				"baseRotation":30
+				"shootCone":30,
+				"shoot":{
+			"shots":6,
+			"shotDelay":6
+		},
+			"bullet": {
+				"damage":188,
+				"speed": 8,
+				"lifetime": 30,
+				"width": 5,
+				"height": 9
+				"pierceCap": 8,
+				"buildingDamageMultiplier":0.1,
+				"pierceBuilding": false,
+		}}
+	{
+			"name": "尖刀队长2",
+			"reload": 188,
+			"recoil": 0,
+			"x": 5.2,
+			"y": 1.3,
+			"rotate": true,
+			"rotateSpeed": 15,
+			"mirror": false,
+			"inaccuracy": 5,
+			"ejectEffect": "casing1",
+			"shootSound": "artillery",
+			//"alternate": false,
+			//"targetAir": false,
+			"targetGround": true,
+			"rotationLimit":60
+				"recoilTime":120, //后坐力和后坐力恢复时间
+				"baseRotation":-30
+				"shootCone":30,
+				"shoot":{
+			"shots":3,
+			"shotDelay":12
+		},
+			"bullet": {
+			 "type": "ArtilleryBulletType",
+			"backColor": "FFFFFFFF",
+				"frontColor": "c1e8f5",
+				"damage":66,
+				"splashDamageRadius":35,
+				"splashDamage":175
+				"speed": 2,
+				"lifetime": 30,
+				"width": 12,
+				"height": 12
+				"maxDamageFraction":0.999999
+				"buildingDamageMultiplier":2.0,
+				//"sprite":"超限工艺-尖刺",
+				"collides":true
+                "collidesTiles":true
+				"pierceBuilding": true,
+				"collidesGround":true
+				"collidesAir":false
+		}}
+	{	"name": "尖刀队长1",	
+		"reload":32,
+        "x": 3.4,  "y": -1, 
+        "rotate": true,
+       "rotationLimit":10,
+       "shootCone":30,
+		"shoot":{
+			"shots":6,
+			"shotDelay":6
+		},
+		"targetAir": true,
+		"targetGround": false,
+		"shootSound": "missile",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+	    "sprite":"missile",
+			"splashDamageRadius":35,
+	"splashDamage":18
+	    "damage":18
+	    "speed":5,
+	    "weaveMag":2,
+	"weaveScale":4,
+	    "lifetime":40,
+	    "width":2,	 "height":7
+	"trailLength":3,
+	"trailWidth":1,
+	"homingRange": 60,
+    "homingPower": 0.1,
+    "homingDelay":10
+    "collidesGround":false
+	"collidesAir":true,
+	}	}
+
+]
+	"researchCostMultiplier": 0,
+	"details":"谁不喜欢在上班的时候说些闲话",
+	"research": {
+	"parent":"BA1sHA1英雄单位修复工厂"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "未知废墟"
+			}
+	]
+	}
+}

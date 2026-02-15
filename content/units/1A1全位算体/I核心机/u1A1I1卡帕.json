@@ -52,4 +52,7 @@
 }
 }
 ]
+"controller": "rebuildCommand",
+"UnitController":"rebuildCommand"
+//"aiController":"BuilderAI"
 }

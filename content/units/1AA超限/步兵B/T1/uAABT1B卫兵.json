@@ -1,6 +1,6 @@
 {
     "type": "legs",
-    "name":"卫兵"
+    "name":"流隼"
     "description": "超限集团为了早期防御，研究出的特殊轻机甲，移动速度快，有较高对建筑的伤害，同时攻击空中单位会有额外的范围伤害，廉价，但是攻击速度偏慢且装甲偏低，其小巧的体型使其可以免疫一些异常状态。\n\n[blue][超限技术作战轻机甲]",
     "details":"筒子兵，但不是筒子超人",
     "immunities": [
@@ -29,7 +29,7 @@
   "hovering": false,
   
   "faceTarget": true,
-  "health": 540,
+  "health": 240,
   "armor": 4,
   "hitSize": 20,
   "canDrown": true,
@@ -175,7 +175,7 @@
       "ejectEffect": "casing1",
       "bullet": {
  	"type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (5)",
+             "spawnUnit": "火箭弹",
              "speed": 0,
       }
       }

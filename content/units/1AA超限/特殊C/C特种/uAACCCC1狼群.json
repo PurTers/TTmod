@@ -106,7 +106,7 @@
 	"shootStatus": "掩体无效",
     "bullet":{
 	         "type": "BasicBulletType",
-             "spawnUnit": "火箭弹 (4)",
+             "spawnUnit": "火箭弹 (1)",
              "speed": 0,
 	               	}}
 	{

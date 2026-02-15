@@ -1,16 +1,16 @@
 {
 		"immunities": [
 	],
-	"name": "火箭弹",
+	"name": "T-F-05火箭弹",
 	"type": "missile",
 	"template": "MissileUnitType",
 	"description": "导弹",
-	"health": 120,
+	"health": 360,
 	"armor": 6,
 	"speed": 3
-	"lifetime": 60
+	"lifetime": 120
 	"maxRange": 20
-	"rotateSpeed": 12
+	"rotateSpeed": 0
 	"engineColor": "FEB380",
 	"trailColor": "FEB380",
 	"engineLayer": 100,
@@ -43,7 +43,7 @@
 				"buildingDamageMultiplier":4
 				"status": "脆裂",
 			"statusDuration": 300
-			"fragBullets": 9
+			"fragBullets": 5
 				"fragBullet": {
 				"despawnEffect": "flakExplosionBig",
 				"width": 8,
