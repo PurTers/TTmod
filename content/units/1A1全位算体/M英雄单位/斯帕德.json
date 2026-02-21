@@ -1,6 +1,6 @@
 {
 	"type": "flying",
-	"name":"布兰达:.........\n(此英雄已损坏)",
+	"name":"斯帕德:**********\n(此英雄已损坏)",
 	"description": " ",
 	"speed": 5.8,
 	"immunities": [
@@ -12,8 +12,8 @@
 	"ammoType":"titanium",
 	"ammoCapacity": 300,
 	"hitSize":1, 
-	"hidden": true,
 	"buildSpeed":0
+	"hidden": true,
 	"flying": true,
 	"health":99999999,
 	"armor":20
@@ -28,11 +28,11 @@
 		]
 		"researchCostMultiplier": 0,
 	               	"research": {
-	"parent":"u1A1M1布兰达"
+	"parent":"u1A1M3斯帕德"
 	"objectives": [
             {
 				"type": "OnSector",
-				"preset": "未知废墟"
+				"preset": "facility32m"
 			}
 	]
 	}

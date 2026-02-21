@@ -2,7 +2,7 @@
 	"type": "legs",
 	"name": "斯帕德",
 	"description": "全位算体首席科学家斯帕德的专属机甲，以辅助型武器为主，能够发射将敌人瘫痪的电池脉冲的脉冲炮，同时近距离有高温喷火器防身。\n[orange][全位算体 英雄单位-斯帕德]",
-    "speed":  0.9,
+    "speed":  0.9
     "hitSize": 12,
     "hovering":true,
     "canDrown": false,
@@ -36,14 +36,6 @@
 "type": "RegenAbility",
 "amount": 0.8
 },
-{
-			"type": "SpawnDeathAbility",
-			"unit": "斯帕德",
-			"amount": 1,
-			"randAmount": 0
-			"spread": 0,
-	    "faceOutwards": false,
-	}
 		]
 	"weapons":[
 	

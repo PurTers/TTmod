@@ -38,9 +38,9 @@
     ]
     "weapons": [
     {
-		    "name": "天枭前"
-			"x": 6.5
-			"y": 9
+		    "name": "天枭"
+			"x": 9
+			"y": 0.5
 			"reload": 10,
 			"shootY": 0,
 			"mirror": true,
@@ -58,48 +58,7 @@
                     "mirror":false,
                     "x":0,"y":0,
                     "suffix":"叶"
-                    "layer":120,
-                    "moveX":0,
-                    "moveY":0
-                    "moveRot":360
-                    "outline": false,
-                    "progress":"reload",
-                }
-            ]
-			"bullet": {
-                "speed": 999
-                "lifetime":1
-                "width": 0,"height": 0,
-                "damage":0
-                "shootEffect": "none",
-				"hitEffect": "none",
-				"despawnEffect": "none"
-				"smokeEffect": "none"
-				"despawnSound":"none",
-			}
-		}
-		{
-		    "name": "天枭后"
-			"x": 1.75,
-			"y": -8.75
-			"reload": 10,
-			"shootY": 0,
-			"mirror": true,
-			"rotate": true,
-			"rotateSpeed": 0,
-			"useAmmo": false,
-			"alwaysShooting": true,
-			"continuous": true,
-			"ejectEffect":"none",
-	        "shootSound":"none",
-			"recoil": 0,
-			"parts":[
-        	    {
-                    "type":"RegionPart",
-                    "mirror":false,
-                    "x":0,"y":0,
-                    "suffix":"叶"
-                    "layer":120,
+                    "layer":115,
                     "moveX":0,
                     "moveY":0
                     "moveRot":360
@@ -120,15 +79,15 @@
 			}
 		}
     {	"name": "无",	
-	               	"shootCone":30,
+	               	"shootCone":20,
 	               	"baseRotation":0
-			"rotationLimit":10,
-		"reload":35
+			"rotationLimit":30,
+		"reload":44
         "x": 5
          "y": 15
         "rotate": true,
         "inaccuracy": 6
-		"shootSound": "missile",
+		"shootSound": "shootAfflict",
 		"rotateSpeed": 1
 		"alternate": true,
 		"mirror":true
@@ -143,10 +102,10 @@
    "recoils": 1
 		"bullet":{
 		"type":"BasicBulletType",
-    "speed": 3
-    "lifetime":60
-	"width": 2
-	"height": 6
+    "speed": 6
+    "lifetime":30
+	"width": 4
+	"height": 12
 	"damage":6,
     "hitSize":40,
     "pierceArmor": true,
@@ -163,7 +122,7 @@
 	}
 	}
    {	"name": "无",	
-	               	"shootCone":60
+	               	"shootCone":360
 		"reload":180
         "x": 0
          "y": 6
@@ -174,6 +133,8 @@
 		"alternate": true,
 		"mirror":true
 		"ejectEffect":"casing1",
+	    "baseRotation":120
+	    "rotationLimit":10,
 		"shoot":{
 		"shots":2
 	    "shotDelay":30

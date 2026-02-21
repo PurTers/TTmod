@@ -1,7 +1,7 @@
 {
 "type": "flying",
 "name": "卡帕",
-"description": "全位算体所研发的核心的防卫飞行器，无法锁定为攻击目标，能够以较快的速度建造，同时开采一些矿物，佣有一门修复炮修复友方建筑。\n[orange][全位算体核心机]",
+"description": "泽塔议会所研发的核心的防卫飞行器，能够以较快的速度建造，同时开采一些矿物，只有两门火箭炮。\n[red][泽塔议会核心机]",
 "targetPriority": -2,
 "lowAltitude": false,
 "mineWalls": false,

@@ -1,0 +1,19 @@
+{
+	"name": "泽塔重型装甲门",
+	"description": "强大而坚固，可以反弹子弹\n\n[red][泽塔议会装甲门]",
+	"type": "AutoDoor",
+	"health":8000 ,
+    "flashHit":true
+    "chanceDeflect":60,
+    "deflectSound":"shieldHit"
+	"size":2,
+	"requirements": [
+	{ "item": "thorium", "amount":80 },
+	{ "item": "surge-alloy", "amount":80 }
+	{ "item": "phase-fabric", "amount":40 }
+	],
+	"category": "defense",
+	//"research": "BA0s泽塔议会"
+	"researchCostMultiplier": 0.5
+	"buildCostMultiplier":0.6
+}

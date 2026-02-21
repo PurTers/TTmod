@@ -1,10 +1,9 @@
 {
 	"type": "mech",
-	"name": "布兰达",
+	"name": "布兰达(地下)",
 	"description": "全位算体第一渗透军团布兰达的专属机甲，火控强大且小巧，由于其对技术要求极高，极其难以量产。\n[orange][全位算体 英雄单位-布兰达]",
     "speed":  1.4,
     "hitSize": 12,
-    "canBoost": true,
     "hovering":true,
     "canDrown": false,
     		"immunities": [
@@ -28,14 +27,6 @@
 "type": "RegenAbility",
 "amount": 0.8
 },
-{
-			"type": "SpawnDeathAbility",
-			"unit": "布兰达",
-			"amount": 1,
-			"randAmount": 0
-			"spread": 0,
-	    "faceOutwards": false,
-	}
 		]
 	"weapons":[
 	{
@@ -57,13 +48,13 @@
 				"baseRotation":30
 				"shootCone":10,
 			"bullet": {
-				"damage":1128,
+				"damage":1528,
 				"speed": 8,
 				"lifetime": 40,
 				"width": 5,
 				"height": 9
 				"pierceCap": 8,
-				"buildingDamageMultiplier":0.5,
+				"buildingDamageMultiplier":0.01,
 				"pierceBuilding": false,
 		}}
 	{
@@ -86,22 +77,22 @@
 				"baseRotation":-30
 				"shootCone":30,
 				"shoot":{
-			"shots":3,
+			"shots":2,
 			"shotDelay":12
 		},
 			"bullet": {
 			 "type": "ArtilleryBulletType",
 			"backColor": "FFFFFFFF",
 				"frontColor": "c1e8f5",
-				"damage":66,
+				"damage":0,
 				"splashDamageRadius":35,
-				"splashDamage":275
-				"speed": 0.5,
-				"lifetime": 120,
+				"splashDamage":325
+				"speed": 0.125,
+				"lifetime": 360,
 				"width": 12,
 				"height": 12
-				"maxDamageFraction":0.999999
-				"buildingDamageMultiplier":2.0,
+				//"maxDamageFraction":0.999999
+				"buildingDamageMultiplier":3.0,
 				"collides":true
                 "collidesTiles":true
 				"pierceBuilding": true,
@@ -109,13 +100,13 @@
 				"collidesAir":false
 		}}
 	{	"name": "尖刀队长1",	
-		"reload":32,
+		"reload":58,
         "x": 3.4,  "y": -1, 
         "rotate": true,
        "rotationLimit":10,
        "shootCone":30,
 		"shoot":{
-			"shots":6,
+			"shots":3,
 			"shotDelay":6
 		},
 		"targetAir": true,
@@ -138,7 +129,7 @@
 	"homingRange": 60,
     "homingPower": 0.1,
     "homingDelay":10
-    "collidesGround":false
+    "collidesGround":true
 	"collidesAir":true,
 	}	}
 
