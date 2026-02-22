@@ -1,6 +1,4 @@
 {
-	"health": 20000
-	//"health":4500
+	"health":4500
 	"unitCapModifier": 36
-	"armor":40
 }

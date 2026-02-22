@@ -2,7 +2,7 @@
 	"type": "GenericCrafter",
 	"name": "尘埃收集器",
 	"health": 320,
-	"description": "超限集团为了应对资源匮乏且没有方法生产用于合成硅的沙子的区块而研发，这个装置吸收大气的尘埃，缓慢收集并将齐聚合，以及会慢的速度生产沙子低。\n\n[blue][超限技术收集装置]",
+	"description": "超限集团为了应对资源匮乏且没有方法生产用于合成硅的沙子的区块而研发，这个装置吸收大气的尘埃，缓慢收集并将他们聚合，以极慢的速度生产沙子低。\n\n[blue][超限技术收集装置]",
 	"outputItem": { "item": "sand", "amount": 1},
 	"alwaysUnlocked": false,
 	"size": 2,

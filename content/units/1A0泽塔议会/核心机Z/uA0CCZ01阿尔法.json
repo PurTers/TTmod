@@ -11,7 +11,7 @@
 	"buildSpeed":0.75
 	"flying": true,
 	"health":220,
-	"armor":6
+	"armor":3
 	"immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],

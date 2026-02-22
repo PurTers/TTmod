@@ -7,7 +7,7 @@
 { "item": "metaglass", "amount": 30 }
 	]
 	"research": {
-	"parent":"saltflats"
+	"parent":"pneumatic-drill"
 	"objectives": [
             {
 				"type": "OnSector",

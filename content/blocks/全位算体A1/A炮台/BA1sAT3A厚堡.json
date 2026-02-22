@@ -64,15 +64,15 @@
     "rotateSpeed": 12,
     "range": 240,
     "category": "turret",
-    /*"research": {
+    "research": {
 	"parent":"BA1sAT2A防卫"
 	"objectives": [
             {
 				"type": "SectorComplete",
-				"preset": "废弃研究所"
+				"preset": "萃取前哨"
 			}
 	]
-	}*/
+	}
     "researchCostMultiplier": 0.2,
     "requirements": [
 { "item": "copper", "amount":420},

@@ -1,11 +1,11 @@
 {
 "research": {
-	"parent":"multiplicative-reconstructor"
+        "parent":"advanced-launch-pad"
 	"objectives": [
             {
 				"type": "SectorComplete",
 				"preset": "萃取前哨"
 			}
 	]
-	}
+    }
 }

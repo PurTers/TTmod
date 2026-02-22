@@ -1,0 +1,15 @@
+{
+    "planet":"serpulo"
+    "sector": 226
+    "captureWave":26
+    "difficulty":3
+    //"alwaysUnlocked": true,
+    "research": {
+		"parent": "边陲哨站",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "菌疫峡谷"
+			}
+			]}
+}

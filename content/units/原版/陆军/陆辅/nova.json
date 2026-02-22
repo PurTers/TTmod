@@ -2,11 +2,11 @@
 "immunities": ["甲板损坏"
 	],
 	"research": {
-        "parent":"dagger"
+        "parent":"crawler"
 	"objectives": [
             {
 				"type": "SectorComplete",
-				"preset": "超限工艺-fungalPass"
+				"preset": "真菌通道"
 			}
 	]
     }

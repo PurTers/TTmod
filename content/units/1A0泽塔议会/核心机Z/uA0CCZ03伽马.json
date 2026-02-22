@@ -10,8 +10,8 @@
 	"hitSize":22, 
 	"buildSpeed":1.25
 	"flying": true,
-	"health":960,
-	"armor":12
+	"health":360,
+	"armor":8
 	"immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],
@@ -26,6 +26,8 @@
 "type": "RegenAbility",
 "amount": 1.2
 }
+{"type":"ArmorPlateAbility",
+	"healthMultiplier":2}
     ]
 	"mineTier":2
 	"mineSpeed":3

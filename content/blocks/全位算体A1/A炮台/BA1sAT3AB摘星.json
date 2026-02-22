@@ -3,7 +3,7 @@
     "name": "摘星",
     "description": "对空的激光攻击，同时会发射干扰导弹，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
     "targetAir": true,
-    "targetGround": true,
+    "targetGround": false,
     "health": 4500,
     "insulated":true
     "continuous": true,
@@ -114,15 +114,15 @@
     "rotateSpeed": 12,
     "range": 300,
     "category": "turret",
-    /*"research": {
+    "research": {
 	"parent":"BA1sAT2A防卫"
 	"objectives": [
             {
 				"type": "SectorComplete",
-				"preset": "废弃研究所"
+				"preset": "萃取前哨"
 			}
 	]
-	}*/
+	}
     "researchCostMultiplier": 0.2,
     "requirements": [
 { "item": "copper", "amount":420},

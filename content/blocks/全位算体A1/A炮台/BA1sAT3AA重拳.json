@@ -57,15 +57,15 @@
     "rotateSpeed": 12,
     "range": 360,
     "category": "turret",
-   /* "research": {
+    "research": {
 	"parent":"BA1sAT1A石锤"
 	"objectives": [
 	{
-				"type": "OnSector",
-				"preset": "废弃研究所"
+				"type": "SectorComplete",
+				"preset": "萃取前哨"
 			}
 	]
-	}*/
+	}
     "requirements": [
         { "item": "copper", "amount":160},
 { "item": "lead", "amount":180}

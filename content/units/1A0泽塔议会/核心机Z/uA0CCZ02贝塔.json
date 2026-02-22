@@ -10,8 +10,8 @@
 	"hitSize":22, 
 	"buildSpeed":1
 	"flying": true,
-	"health":550,
-	"armor":12
+	"health":250,
+	"armor":5
 	"immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],

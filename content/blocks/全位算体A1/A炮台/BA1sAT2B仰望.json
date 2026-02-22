@@ -88,15 +88,15 @@
     "rotateSpeed": 3,
     "range": 300,
     "category": "turret",
-   /* "research": {
+   "research": {
 	"parent":"BA1sAT1A石锤"
 	"objectives": [
 	{
 				"type": "OnSector",
-				"preset": "超限工艺-facility32m"
+				"preset": "废弃研究所"
 			}
 	]
-	}*/
+	}
 	"researchCostMultiplier": 1
     "requirements": [
         { "item": "copper", "amount":120},

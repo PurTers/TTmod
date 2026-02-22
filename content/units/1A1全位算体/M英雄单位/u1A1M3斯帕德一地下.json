@@ -40,78 +40,78 @@
 	"weapons":[
 	
 {
-		"mirror":false,//镜像，是否对称
-    "name": "斯帕德-1", // 武器名称
-    "reload": 10, // 装填时间（单位：帧）
-    "shootY": 2, // 射击时的Y轴偏移量
-    "rotate": false, // 是否随武器旋转
-    "inaccuracy": 0, // 射击误差（0为完全精准）
+		"mirror":false,
+    "name": "斯帕德-1",
+    "reload": 10, 
+    "shootY": 2, 
+    "rotate": false, 
+    "inaccuracy": 0, 
     "x":4,
     "y":0,
-    "top": false, // 是否为顶部武器
-    "shootSound": "火焰", // 射击音效
-    "ejectEffect": "none", // 弹壳抛出效果
+    "top": false, 
+    "shootSound": "火焰", 
+    "ejectEffect": "none", 
     "bullet": {
-        "type": "BulletType", // 子弹类型
-        "lifetime": 8, // 子弹生命周期（单位：帧）
-        "speed": 12, // 子弹飞行速度
-        "knockback": 1, // 子弹击退效果
-        "damage": 20, // 子弹基础伤害
-        "ammoMultiplier": 3, // 弹药消耗倍数
-        "incendAmount": 1, // 燃烧效果叠加层数
-        "incendSpread": 8, // 燃烧扩散范围
-        "incendChance": 0.5, // 触发燃烧的概率（20%）
-        "hittable": false, // 子弹是否可被敌方击中
-        "absorbable": false, // 子弹是否可被吸收
-        "pierce": true, // 子弹是否可穿透目标
-        "makeFire": true, // 子弹是否会造成火焰效果
-        "pierceBuilding": true, // 子弹是否可穿透建筑
-        "pierceCap": 12, // 子弹最大穿透数量
-        "shootEffect": "shootPyraFlame", // 子弹发射特效
-        "smokeEffect": { // 子弹飞行时的烟雾特效
-            "type": "ParticleEffect", // 特效类型
-            "particles": 7, // 粒子数量
-            "line": true, // 是否为线状粒子
-            "strokeFrom": 1, // 粒子初始宽度
-            "strokeTo": 0, // 粒子结束宽度
-            "lenFrom": 12, // 粒子初始长度
-            "lenTo": 8, // 粒子结束长度
-            "length": 66, // 粒子总长度
-            "baseLength": 0, // 粒子基础长度
-            "lifetime": 16, // 粒子生命周期
-            "colorFrom": "FFFFFF", // 粒子初始颜色（白色）
-            "colorTo": "FFE176FF", // 粒子结束颜色（金黄色）
-            "cone": 8 // 粒子扩散角度
+        "type": "BulletType", 
+        "lifetime": 8, 
+        "speed": 12, 
+        "knockback": 1, 
+        "damage": 20,
+        "ammoMultiplier": 3, 
+        "incendAmount": 1, 
+        "incendSpread": 8, 
+        "incendChance": 0.5, 
+        "hittable": false, 
+        "absorbable": false, 
+        "pierce": true, 
+        "makeFire": true, 
+        "pierceBuilding": true, 
+        "pierceCap": 12, 
+        "shootEffect": "shootPyraFlame", 
+        "smokeEffect": { 
+            "type": "ParticleEffect", 
+            "particles": 7, 
+            "line": true, 
+            "strokeFrom": 1, 
+            "strokeTo": 0, 
+            "lenFrom": 12,
+            "lenTo": 8,
+            "length": 66
+            "baseLength": 0, 
+            "lifetime": 16,
+            "colorFrom": "FFFFFF", 
+            "colorTo": "FFE176FF", 
+            "cone": 8 
         },
-        "hitEffect": { // 子弹命中目标时的特效
-            "type": "ParticleEffect", // 特效类型
-            "particles": 12, // 粒子数量
-            "lifetime": 12, // 粒子生命周期
-            "sizeFrom": 4, // 粒子初始大小
-            "sizeTo": 0, // 粒子结束大小
-            "colorFrom": "FF8C00", // 粒子初始颜色（橙色）
-            "colorTo": "FF8C00" // 粒子结束颜色（橙色）
+        "hitEffect": { 
+            "type": "ParticleEffect", 
+            "particles": 12, 
+            "lifetime": 12, 
+            "sizeFrom": 4, 
+            "sizeTo": 0, 
+            "colorFrom": "FF8C00", 
+            "colorTo": "FF8C00" 
         },
-        "despawnEffect": "none", // 子弹消失时的特效
-        "statusDuration": 180, // 异常状态持续时间（燃烧状态持续360帧）
-        "status": "burning" // 子弹附加的异常状态（燃烧）
+        "despawnEffect": "none", 
+        "statusDuration": 180, 
+        "status": "burning" 
     }
 }
         {
             "name": "斯帕德-2",
-            "reload": 60,
+            "reload": 43,
             "shootY": 1,
             "x": -4,
             "y": 0,
-                "rotate": false, // 是否随武器旋转
-    "inaccuracy": 0, // 射击误差（0为完全精准）
-            	"mirror":false,//镜像，是否对称
+                "rotate": false, 
+    "inaccuracy": 0, 
+            	"mirror":false,
             "alternate": false,
             "shootSound": "猎人",
             "bullet": {
                 "type": "BasicBulletType",
                 "width": 8,
-                "height": 14,
+                "height": 8,
                 "splashDamageRadius": 10,
                 "splashDamage": 30,
                 "speed": 4,
@@ -120,8 +120,41 @@
                 "trailLength": 4,
                 "trailWidth": 3,
                 "trailColor": "BF92F974"
-                                "despawnEffect": "none", // 消失效果
-                "hitEffect": "lancerLaserShoot" // 命中效果
+                "despawnEffect": "none", 
+                "hitEffect": "lancerLaserShoot" 
+                "hittable": false, 
+        "absorbable": false, 
+        "pierce": true, 
+        "makeFire": true, 
+        "pierceBuilding": true, 
+        "statusDuration": 600, 
+        "status": "burning" 
+        "pierceCap": 1, 
+        "sprite":"large-orb"
+                "fragBullets": 3,
+			"fragBullet": {
+			"type": "BasicBulletType",
+                "width": 4,
+                "height": 4,
+                "splashDamageRadius": 10,
+                "splashDamage": 10,
+                "speed": 3,
+                "lifetime": 10,
+                "status": "corroded",
+                "trailLength": 4,
+                "trailWidth": 3,
+                "trailColor": "BF92F974"
+                "despawnEffect": "none", 
+                "hitEffect": "lancerLaserShoot" 
+                "hittable": false, 
+        "absorbable": false, 
+        "pierce": true, 
+        "makeFire": true, 
+        "pierceBuilding": true, 
+        "pierceCap": 3, 
+        "statusDuration": 600, 
+        "status": "burning" 
+			}
             }
         }
 ]

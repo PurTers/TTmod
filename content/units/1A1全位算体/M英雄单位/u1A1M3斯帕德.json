@@ -107,7 +107,7 @@
 }
         {
             "name": "斯帕德-2",
-            "reload": 60,
+            "reload": 122,
             "shootY": 1,
             "x": -4,
             "y": 0,
@@ -119,17 +119,50 @@
             "bullet": {
                 "type": "BasicBulletType",
                 "width": 8,
-                "height": 14,
+                "height": 8,
                 "splashDamageRadius": 10,
-                "splashDamage": 30,
+                "splashDamage": 42,
                 "speed": 4,
                 "lifetime": 60,
                 "status": "corroded",
                 "trailLength": 4,
                 "trailWidth": 3,
                 "trailColor": "BF92F974"
-                                "despawnEffect": "none", // 消失效果
-                "hitEffect": "lancerLaserShoot" // 命中效果
+                "despawnEffect": "none", 
+                "hitEffect": "lancerLaserShoot" 
+                "hittable": false, 
+        "absorbable": false, 
+        "pierce": true, 
+        "makeFire": true, 
+        "pierceBuilding": true, 
+        "statusDuration": 600, 
+        "status": "electrified" 
+        "pierceCap": 1, 
+        "sprite":"large-orb"
+                "fragBullets": 8,
+			"fragBullet": {
+			"type": "BasicBulletType",
+                "width": 4,
+                "height": 4,
+                "splashDamageRadius": 10,
+                "splashDamage": 10,
+                "speed": 4,
+                "lifetime": 10,
+                "status": "corroded",
+                "trailLength": 4,
+                "trailWidth": 3,
+                "trailColor": "BF92F974"
+                "despawnEffect": "none", 
+                "hitEffect": "lancerLaserShoot" 
+                "hittable": false, 
+        "absorbable": false, 
+        "pierce": true, 
+        "makeFire": true, 
+        "pierceBuilding": true, 
+        "pierceCap": 3, 
+        "statusDuration": 600, 
+        "status": "burning" 
+			}
             }
         }
 ]
