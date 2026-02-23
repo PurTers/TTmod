@@ -1,105 +1,167 @@
 {
     "type": "mech",
     "name":"电光"
-    "description": "以火花为基础研究出的特殊轻机甲，移动速度快，近战，武器威力和装甲也更高，通过激光刃以贯穿敌人，特殊改造的外壳让他可以免疫绝大多数buff\n\n[blue][超限技术作战中机甲]",
+    "description": "以火花为基础研究出的特殊自爆单元，移动速度快，自杀式攻击，自爆会产生瘫痪敌军的EMP电波，对电器伤害加倍，特殊改造的外壳让他可以免疫绝大多数buff\n\n[blue][超限技术作战中机甲]",
     "immunities": [
 		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
 	],
-    "speed": 1.5
+    "speed": 0.9
     "hitSize": 18
-    "health": 2220,
+    "health": 1860,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
 	"ammoCapacity": 300,
         "targetAir":false,  
-        "itemCapacity": 30
     "targetGround":true,
-    "armor":12
+    "hovering":true
+    "armor":8
+    "itemCapacity": 5
     "healColor": "c0ecff"
   "shieldColor": "c0ecff"
-    "abilities": [
-    {
-    "type": "ShieldArcAbility",
-		"radius": 30,//半径
-		"width": 10,//宽度
-		"max": 2000,//最大容量
-		"regen": 5,//再生速度
-		"cooldown": 160,//护盾冷却时间
-		"angle": 190,//护盾弧度
-		"angleOffset": 0//护盾角度
-		"pushUnits":false
-	}
-	 {
-        "type": "RepairFieldAbility"
-        "amount":55
-        "reload":60
-        "range": 1
-    }
-	{
-"type": "RegenAbility",
-"amount": 1.2
-}
-    ]
-    "weapons": [
-       {
-            "name": "电光",
-            "reload": 16
-            "x":6
-            "y":0
-             "inaccuracy": 0
-            "shootSound":"blaster",
-            "ejectEffect": "casing1",
-            "rotate": false
-			"baseRotation":0
-			"minWarmup": 0.99
-			"shootCone":180
-		    "rotationLimit": 0
-		    "mirror": true,
-		    "shootX":10
-	    "shootY":-10
-	    "baseRotation":30
     "parts": [
-        {"type": "RegionPart",
-        "mirror": false
-        "x": 0
-        "y": 0
-        "suffix": "-手",
-        "layer": 59.9
-        "moveX": -1
-        "moveY": 2.7
-        "moveRot":-150
-        "progress":"reload",
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 12,//X位置
+			"y": 12,//Y位置
+			"radius": 15,//大小
+			"color": "1878BF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": false,//镜像对称
+			"x": 0,//X位置
+			"y": 0,//Y位置
+			"radius": 40,//大小
+			"color": "c0ecff",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		{
+			"type": "HoverPart",//悬浮特效
+			"layerOffset": -1,//图层偏移
+			"mirror": true,//镜像对称
+			"x": 12,//X位置
+			"y": -12,//Y位置
+			"radius": 15,//大小
+			"color": "1878BF",//颜色
+			"phase": 100,//相位，初始角度
+			"circles": 2,//圈子界限
+			"stroke": 2,//粗细
+			"minStroke": 0//最小粗细
+		}
+		]
+    "weapons": [
+   {	"name": "无",	
+		"reload": 10, 
+		"x": 0,  "y": 0, 
+		"rotate": false,
+		"shootCone":360,
+		"ejectEffect":"none",
+		"shootSound":"explosionbig",
+		"mirror":false,
+		"inaccuracy": 0,
+		"alternate": true,
+		"shootOnDeath":true,
+		"bullet":{
+		"lightningDamage":12,
+            "lightningColor": "c0ecffFF",
+    "lightning":5
+    "lightningLength":18
+		"killShooter":true,
+		"splashDamageRadius":48,
+		"instantDisappear":true,
+		"collides": false,
+		"splashDamage":124,
+		"speed":1,"lifetime":10,
+		"hitEffect":"massiveExplosion",
+		"despawnEffect":{"type": "MultiEffect",
+			"effects": [
+			{"type": "ParticleEffect",
+			"particles": 18,
+			"sizeFrom": 6,
+			"sizeTo": 0,
+			"length": 45,
+			"baseLength": 3,
+			"lifetime": 35,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "ParticleEffect",
+			"particles": 32,
+			"line":true,
+			"sizeFrom": 9,
+			"sizeTo": 0,
+			"length": 53,
+			"baseLength": 20,
+			"lifetime": 22,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff",
+			"cone": 360},
+			{"type": "WaveEffect",
+			"lifetime": 15,
+			"sizeFrom": 0,
+			"sizeTo": 70,
+			"strokeFrom": 4,
+			"strokeTo": 0,
+			"colorFrom": "c0ecff",
+			"colorTo": "c0ecff"}]},
+		"width":0,	 "height":0
+		"fragBullets":5
+        "fragBullet":{
+        "lightningDamage":9,
+            "lightningColor": "c0ecffFF",
+    "lightning":3
+    "lightningLength":6,
+		"splashDamageRadius":24,
+		"splashDamage":36,
+		"speed":6,"lifetime":10,
+		"hitEffect":"massiveExplosion",
+		"fragBullets":1
+        "fragBullet":{
+        "type": "EmpBulletType",
+				"timeIncrease": 0,//己方建筑加速倍率
+				"collidesTiles": "false",//碰撞方块
+				"collidesTeam": "false"//碰撞自己的队友
+				"timeDuration": 600,//加速持续时间
+				"powerDamageScl": 10,//敌方电器损坏倍率
+				"powerSclDecrease": 0.75,//敌方电器功率下降倍率
+				"buildingDamageMultiplier": 2
+				"radius": 28,
+				"pierce": true,//穿透单位
+				"splashDamageRadius": 16,
+				"splashDamage": 12,
+				"width": 0,
+				"height": 0,
+				"damage": 10,
+				"keepVelocity": true,
+				"trailEffect": "none",
+				"backColor": "c0ecff",
+				"frontColor": "c0ecff",
+				"instantDisappear": true,//瞬间消失
+				"hitSound": "plasmaboom",
+				"despawnEffect": "hitEmpSpark"
+				"hitPowerEffect": {
+					"type":"WrapEffect",
+					"effect":"dynamicSpikes",
+					"color":"c0ecff",
+					"rotation":8
+				},
+		    	"applyEffect": "none"
+		    	"hitEffect": "none"
+		    	"shootEffect": "none"
         }
-        {"type":"RegionPart",
-        "mirror":false
-        "x":12,"y":9,
-        "suffix":"-刀"
-        "progress":"reload",
-        "layer":59.9
-        "moveX":-12
-        "moveY":-24
-        "moveRot":-300
         }
-			]
-            "bullet": {
-            "type": "ShrapnelBulletType",
-	"status": "unmoving",
-			"statusDuration": 10,
-			"buildingDamageMultiplier":3.0,
-	"pierceBuilding": true,
-		"collidesGround":true,
-			"collidesAir":true,
-	"despawnEffect":"none",
-	"damage":288
-	"pierceDamageFactor":0.4
-	"ammoMultiplier":1,
-	"pierce": true
-	"width": 8
-	"length": 26
-	"lifetime": 18
-	"collidesAir": true
-	"ejectEffect":"none"
-    }}
+	   }
+	   	}
     ]
     /*"research": {
 	"parent":"uAABT1H火花"

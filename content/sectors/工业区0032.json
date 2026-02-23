@@ -3,6 +3,7 @@
     "sector": 65
     "captureWave":26
     "difficulty":3
+    "overrideLaunchDefaults": true,//进度覆盖
     //"alwaysUnlocked": true,
     "research": {
 		"parent": "真菌通道",

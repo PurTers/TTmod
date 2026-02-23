@@ -4,7 +4,7 @@
 	"description": "全位算体首席科学家斯帕德的专属机甲，以辅助型武器为主，能够发射将敌人瘫痪的电池脉冲的脉冲炮，同时近距离有高温喷火器防身。\n[orange][全位算体 英雄单位-斯帕德]",
     "speed":  0.9
     "hitSize": 12,
-    "hovering":true,
+    "hovering":false,
     "canDrown": false,
       "legCount": 4,
   "legLength": 12,

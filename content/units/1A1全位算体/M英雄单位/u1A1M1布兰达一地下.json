@@ -4,7 +4,7 @@
 	"description": "全位算体第一渗透军团布兰达的专属机甲，火控强大且小巧，由于其对技术要求极高，极其难以量产。\n[orange][全位算体 英雄单位-布兰达]",
     "speed":  1.4,
     "hitSize": 12,
-    "hovering":true,
+    "hovering":false,
     "canDrown": false,
     		"immunities": [
     		"freezing","burning","wet","tarred","spore-slowed","electrified","sapped","slow","脆裂","甲板损坏"

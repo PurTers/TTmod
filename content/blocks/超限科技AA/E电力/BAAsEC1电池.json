@@ -16,7 +16,7 @@
     "size": 1,
     "type": "Battery",
 	"category": "power",
-	/*"research": {
+	"research": {
 	"parent":"BAAsEB1升级电力节点"
 	"objectives": [
             {
@@ -24,7 +24,7 @@
 				"preset": "污染小道"
 			}
 	]
-	}*/
+	}
 	"researchCostMultiplier": 0.5
 	"buildCostMultiplier":0.8
 }

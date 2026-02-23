@@ -30,7 +30,7 @@
   "faceTarget": true,
   "health": 240,
   "armor": 4,
-  "hitSize": 20,
+  "hitSize": 15,
   "canDrown": true,
   "ammoType": {
     "type": "PowerAmmoType",

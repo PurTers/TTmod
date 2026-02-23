@@ -6,7 +6,7 @@
 		"wet","spore-slowed","tarred","甲板损坏"
 	],
     "speed": 1.6
-    "hitSize": 18
+    "hitSize": 12
     "health": 320,
     	"rotateSpeed": 2.1
     	"ammoType":"copper",
@@ -59,15 +59,15 @@
 		"alternate": true,
 		"shootOnDeath":true,
 		"bullet":{
-		"lightningDamage":28,
+		"lightningDamage":8,
             "lightningColor": "c0ecffFF",
     "lightning":5
     "lightningLength":12
 		"killShooter":true,
-		"splashDamageRadius":48,
+		"splashDamageRadius":36,
 		"instantDisappear":true,
 		"collides": false,
-		"splashDamage":24,
+		"splashDamage":33,
 		"speed":1,"lifetime":10,
 		"hitEffect":"massiveExplosion",
 		"despawnEffect":{"type": "MultiEffect",
@@ -102,15 +102,15 @@
 			"colorFrom": "c0ecff",
 			"colorTo": "c0ecff"}]},
 		"width":0,	 "height":0
-		"fragBullets":5
+		"fragBullets":3
         "fragBullet":{
-        "lightningDamage":28,
+        "lightningDamage":4,
             "lightningColor": "c0ecffFF",
     "lightning":3
     "lightningLength":6,
-		"splashDamageRadius":48,
+		"splashDamageRadius":18,
 		"splashDamage":24,
-		"speed":6,"lifetime":10,
+		"speed":4,"lifetime":10,
 		"hitEffect":"massiveExplosion",
         }
 	   }
