@@ -1,0 +1,11 @@
+{
+"research": {
+	"parent":"ripple"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "真菌通道"
+			}
+	]
+	}
+}

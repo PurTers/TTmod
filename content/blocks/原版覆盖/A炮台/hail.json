@@ -1,0 +1,11 @@
+{
+"research": {
+	"parent":"scatter"
+	"objectives": [
+            {
+				"type": "OnSector",
+				"preset": "陨石带"
+			}
+	]
+	}
+}

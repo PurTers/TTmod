@@ -1,0 +1,11 @@
+{
+"research": {
+	"parent":"cyclone"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "边陲哨站"
+			}
+	]
+	}
+}

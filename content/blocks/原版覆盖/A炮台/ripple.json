@@ -1,0 +1,11 @@
+{
+"research": {
+	"parent":"salvo"
+	"objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "盐碱荒滩"
+			}
+	]
+	}
+}
