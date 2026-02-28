@@ -1,87 +1,87 @@
 {
-	"type": "naval",
-	"name": "青鲛",
-	"description": "突击型炮艇，有一门火炮作为主炮，同时配备两门高速机枪。\n[orange][全位算体常规部队]",
-		"immunities": [
+"type":"naval",
+"immunities":[
 "wet","freezing","tarred","甲板损坏"
-	],
-	"speed":0.9,
-	"rotateSpeed":6.5,
-	"abilities": [
-	{
-"type": "RegenAbility",
-"amount": 0.3
-},]
-	"ammoType":{
-	"type":"PowerAmmoType",
-	"totalPower":100},
-	"ammoCapacity": 60,
-    "trailLength":24,
-    "waveTrailX":0,
-    "waveTrailY":-6,
-    "trailScl":2,
-	"hitSize":12
-	"health": 760,
-	"armor":4,
-	"faceTarget": false,
-	//"maxRange": 400,
-	"weapons":[
-	{
-"name": "青鲛1",
-"y": 0,
-"x": 0,
-"reload": 145,
-"recoil": 2,
-"shake": 1,
-"ejectEffect": "casing2",
-"mirror": false,
-"shootSound": "shoot",
-"rotateSpeed": 2,
-"rotate": true,
+],
+"speed":0.9,
+"rotateSpeed":6.5,
+"abilities":[
+{
+"type":"RegenAbility",
+"amount":0.3
+},
+]
+"ammoType":{
+"type":"PowerAmmoType",
+"totalPower":100},
+"ammoCapacity":60,
+"trailLength":24,
+"waveTrailX":0,
+"waveTrailY":-6,
+"trailScl":2,
+"hitSize":12
+"health":760,
+"armor":4,
+"faceTarget":false,
+//"maxRange":400,
+"weapons":[
+{
+"name":"青鲛1",
+"y":0,
+"x":0,
+"reload":145,
+"recoil":2,
+"shake":1,
+"ejectEffect":"casing2",
+"mirror":false,
+"shootSound":"shoot",
+"rotateSpeed":2,
+"rotate":true,
 "shoot":{
-			"shots":4,
-			"shotDelay":18
-		},
-"bullet": {
-"type": "ArtilleryBulletType",
-"speed": 2,
-"damage": 40,
-"sprite": "shell",
-"hitEffect": "blastExplosion",
-"knockback": 0.8,
-"lifetime": 100,
-"width": 10,
-"height": 10,
-"collides": true,
-"collidesTiles": true,
-"splashDamageRadius": 35,
-"splashDamage": 40
+"shots":4,
+"shotDelay":18
+},
+"bullet":{
+"type":"ArtilleryBulletType",
+"speed":2,
+"damage":40,
+"sprite":"shell",
+"hitEffect":"blastExplosion",
+"knockback":0.8,
+"lifetime":100,
+"width":10,
+"height":10,
+"collides":true,
+"collidesTiles":true,
+"splashDamageRadius":35,
+"splashDamage":40
 }
 },
-	{	"name": "青鲛2",	
-		"reload":28,
-        "x": 5,  "y": 2, 
-        "rotate": true,
-        "inaccuracy": 0,
-		"shoot":{
-			"shots":4,
-			"shotDelay":18
-		},
-		"shootSound": "pew",
-		"rotateSpeed": 9,
-		"alternate": true,
-		"ejectEffect":"casing1",
-		"bullet":{
-	    "damage":6,	  
-	    "speed":5,
-	    "lifetime":30,
-	    "width":7,	 "height":10
-	    "buildingDamageMultiplier":3.0,
-	}	}
-	]
-	"research": {
-	"parent":"BA1sHA精锐工厂"
-	}
-	"researchCostMultiplier": 0,
-	//"controller": "DefenderAI"
+{"name":"青鲛2",
+"reload":28,
+"x":5,"y":2,
+"rotate":true,
+"inaccuracy":0,
+"shoot":{
+"shots":4,
+"shotDelay":18
+},
+"shootSound":"pew",
+"rotateSpeed":9,
+"alternate":true,
+"ejectEffect":"casing1",
+"bullet":{
+"damage":6,
+"speed":5,
+"lifetime":30,
+"width":7,"height":10
+"buildingDamageMultiplier":3.0,
+}
+}
+]
+"research":{
+"parent":"BA1sHA精锐工厂"
+}
+"researchCostMultiplier":0,
+//"controller":"DefenderAI"
 }

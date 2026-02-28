@@ -1,142 +1,144 @@
 {
-	"type": "naval",
-	"name": "猎杀",
-	"description": "重装海军，装备有轨道炮，可以精准高效的狙击敌人，同时配备有两门蜂巢炮以及四门机炮进行辅助攻击。\n[orange][全位算体精英部队]",
-		"immunities": [
+"type":"naval",
+"immunities":[
 "wet","freezing","tarred","甲板损坏"
-	],
-	"speed":0.65,
-	"rotateSpeed":2.5,
-	"abilities": [
-	{
-"type": "RegenAbility",
-"amount": 0.3
-},]
-	"ammoType":{
-	"type":"PowerAmmoType",
-	"totalPower":100},
-	"ammoCapacity": 60,
-    "trailLength":24,
-    "waveTrailX":0,
-    "waveTrailY":-6,
-    "trailScl":2,
-	"hitSize":22 
-	"health": 1860,
-	"armor":11,
-	"faceTarget": false,
-	//"maxRange": 400,
-	"weapons":[
-	{	"name": "猎杀2",	
-		"reload":20,
-        "x": -4,  "y": 14, 
-        "rotate": true,
-        "inaccuracy": 0,
-		"shoot":{
-			"shots":3,
-			"shotDelay":15
-		},
-		"shootSound": "pew",
-		"rotateSpeed": 9,//炮台转头速度
-		"alternate": true,
-		"ejectEffect":"casing1",
-		"bullet":{
-	    "damage":16,	  
-	    "speed":5,
-	    "lifetime":30,
-	    "width":7,	 "height":10
-	    "buildingDamageMultiplier":3.0,
-	}	}
-	{	"name": "猎杀2",	
-		"reload":20,
-        "x": -8,  "y": 8, 
-        "rotate": true,
-        "inaccuracy": 0,
-		"shoot":{
-			"shots":3,
-			"shotDelay":15
-		},
-		"shootSound": "pew",
-		"rotateSpeed": 9,//炮台转头速度
-		"alternate": true,
-		"ejectEffect":"casing1",
-		"bullet":{
-	    "damage":16,	  
-	    "speed":5,
-	    "lifetime":30,
-	    "width":7,	 "height":10
-	    "buildingDamageMultiplier":3.0,
-	}	}
-		{"name": "猎杀1",	
-	"shootCone":0
-	"ammoUseEffect": "casing2Double",
-	"shootSound":"mediumCannon",
-	"reload":192,
-	"recoil":0
-        "x": 0
-        "y": 0
-        "rotate": true,
-        "mirror":false
-		"shootY":4,
-        "rotateSpeed":3,
-        "inaccuracy": 0,
-	"bullet":{
-	"type": "RailBulletType",
-      "damage": 925,
-      "length": 280,
-      "pointEffectSpace":60
-      "hitShake": 10,
-      "collidesTiles": true,
-      "pieces":true
-      "pierceDamageFactor":0.7
-    "buildingDamageMultiplier":0.5
-    "pointEffectSpace":30
-    //"trailEffect": "instTrail",
-    "pierceEffect":"railHit"
-    "pointEffect":"railHit"
-      "smokeEffect": "shootBig2",
-      "shootEffect": "railShoot",
-      "despawnEffect": "instHit",
-      "hitEffect": "massiveExplosion"
-      "maxDamageFraction":0.999999
-	               	}}
-	{	"name": "猎杀3",	
-		"reload":66
-        "x": 5,  "y": -11, 
-        "rotate": true,
-        "mirror":true,
-        "inaccuracy": 0
-		"shootSound": "missile",
-		"rotateSpeed": 5,//炮台转头速度
-		"alternate": true,
-		"ejectEffect":"casing1",
-		"shoot":{
-	    "type": "ShootAlternate",
-		"barrels": 3
-		"spread": 1
-		"shots":3,
-		"shotDelay":15
-	},
-		"bullet":{
-			"sprite":"missile",
-			"splashDamageRadius":25,
-	"splashDamage":15
-	    "damage":7
-	    "speed":6,
-	    "buildingDamageMultiplier":0.5,
-	    "weaveMag":2,
-	"weaveScale":4,
-	    "lifetime":40,
-	    "width":2,	 "height":4
-	"trailLength":6,
-	"trailWidth":3,
-	"homingRange": 80,
-    "homingPower": 0.1,
-    "homingDelay":10
-			}
-	}
-	]
-	"research": {
-	"parent":"BA1sHB精英单位工厂"
-	}
-	//"controller": "DefenderAI"
+],
+"speed":0.65,
+"rotateSpeed":2.5,
+"abilities":[
+{
+"type":"RegenAbility",
+"amount":0.3
+},
+]
+"ammoType":{
+"type":"PowerAmmoType",
+"totalPower":100},
+"ammoCapacity":60,
+"trailLength":24,
+"waveTrailX":0,
+"waveTrailY":-6,
+"trailScl":2,
+"hitSize":22
+"health":1860,
+"armor":11,
+"faceTarget":false,
+//"maxRange":400,
+"weapons":[
+{"name":"猎杀2",
+"reload":20,
+"x":-4,"y":14,
+"rotate":true,
+"inaccuracy":0,
+"shoot":{
+"shots":3,
+"shotDelay":15
+},
+"shootSound":"pew",
+"rotateSpeed":9,//炮台转头速度
+"alternate":true,
+"ejectEffect":"casing1",
+"bullet":{
+"damage":16,
+"speed":5,
+"lifetime":30,
+"width":7,"height":10
+"buildingDamageMultiplier":3.0,
+}
+}
+{"name":"猎杀2",
+"reload":20,
+"x":-8,"y":8,
+"rotate":true,
+"inaccuracy":0,
+"shoot":{
+"shots":3,
+"shotDelay":15
+},
+"shootSound":"pew",
+"rotateSpeed":9,//炮台转头速度
+"alternate":true,
+"ejectEffect":"casing1",
+"bullet":{
+"damage":16,
+"speed":5,
+"lifetime":30,
+"width":7,"height":10
+"buildingDamageMultiplier":3.0,
+}
+}
+{"name":"猎杀1",
+"shootCone":0
+"ammoUseEffect":"casing2Double",
+"shootSound":"mediumCannon",
+"reload":192,
+"recoil":0
+"x":0
+"y":0
+"rotate":true,
+"mirror":false
+"shootY":4,
+"rotateSpeed":3,
+"inaccuracy":0,
+"bullet":{
+"type":"RailBulletType",
+"damage":925,
+"length":280,
+"pointEffectSpace":60
+"hitShake":10,
+"collidesTiles":true,
+"pieces":true
+"pierceDamageFactor":0.7
+"buildingDamageMultiplier":0.5
+"pointEffectSpace":30
+//"trailEffect":"instTrail",
+"pierceEffect":"railHit"
+"pointEffect":"railHit"
+"smokeEffect":"shootBig2",
+"shootEffect":"railShoot",
+"despawnEffect":"instHit",
+"hitEffect":"massiveExplosion"
+"maxDamageFraction":0.999999
+}
+}
+{"name":"猎杀3",
+"reload":66
+"x":5,"y":-11,
+"rotate":true,
+"mirror":true,
+"inaccuracy":0
+"shootSound":"missile",
+"rotateSpeed":5,//炮台转头速度
+"alternate":true,
+"ejectEffect":"casing1",
+"shoot":{
+"type":"ShootAlternate",
+"barrels":3
+"spread":1
+"shots":3,
+"shotDelay":15
+},
+"bullet":{
+"sprite":"missile",
+"splashDamageRadius":25,
+"splashDamage":15
+"damage":7
+"speed":6,
+"buildingDamageMultiplier":0.5,
+"weaveMag":2,
+"weaveScale":4,
+"lifetime":40,
+"width":2,"height":4
+"trailLength":6,
+"trailWidth":3,
+"homingRange":80,
+"homingPower":0.1,
+"homingDelay":10
+}
+}
+]
+"research":{
+"parent":"BA1sHB精英单位工厂"
+}
+//"controller":"DefenderAI"
 }
