@@ -27,8 +27,8 @@
 	    }
     "shootType": {
         "type": "ArtilleryBulletType",
-			"speed": 3,
-			"lifetime": 83,
+			"speed": 2,
+			"lifetime": 133,
 			"width": 15,
 			"height": 15,
 			"knockback": 1,
@@ -57,7 +57,7 @@
     },
     "reload": 144,
     "rotateSpeed": 12,
-    "range": 240,
+    "range": 260,
     "category": "turret",
     "research": {
 	"parent":"BA1sAT1A石锤"

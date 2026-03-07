@@ -20,6 +20,7 @@
 	"trailWidth":2
 	"missileAccelTime": 0,
 	"lowAltitude": true,
+	"flying": true,
 	"fogRadius": 8,
 	"outlineColor": "000000",
 	"healColor": "000000"

@@ -13,11 +13,11 @@
     "recoil": 2,
     //"hasPower": false,
     "shoot": {
-    "shots":4,
+    "shots":6,
         "type": "ShootAlternate",
         "barrels": 2,
         "spread": 4
-        "shotDelay":22
+        "shotDelay":26
     },
     "shootSound": "artillery",//子弹音效
     "recoilTime": 10,
@@ -26,10 +26,10 @@
 	    "basePrefix": "cwst-"
 	    }
     "shootType": {
-			"speed": 3,
-			"lifetime": 83,
-			"width": 15,
-			"height": 15,
+			"speed": 6,
+			"lifetime": 42,
+			"width": 3,
+			"height": 8,
 			"knockback": 0.1,
 			"damage": 33,
 			"backColor": "FF8C00",
@@ -41,26 +41,12 @@
 			"despawnEffect": "explosion"
 			"makeFire":true,
 			"trailLength":4,
-			"trailWidth":1.5,
+			"trailWidth":1,
 			"trailColor":"FFB90F",
-	"fragBullets": 4,
-			"fragBullet": {
-			"type": "ArtilleryBulletType",
-			"backColor": "FF8C00",
-			"frontColor": "FFB90F",
-			"damage": 33,
-			"collidesAir": true
-			"width": 5,
-			"height": 5,
-			"splashDamageRadius": 30,
-			"splashDamage": 12,
-				"speed": 2,
-				"lifetime": 40,
-				"damage": 2,
-	}}
+			}
     "consumes": {
     },
-    "reload": 33,
+    "reload": 24,
     "rotateSpeed": 12,
     "range": 240,
     "category": "turret",

@@ -6,6 +6,8 @@
     "copper/18", "lead/20","graphite/10"
 ]
 "drillTime":  380
+"invertTime":600
+"invertedTime":600
 "size": 2
 "hasPower": true
 "tier": 3

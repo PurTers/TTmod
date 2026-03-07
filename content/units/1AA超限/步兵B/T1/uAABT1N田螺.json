@@ -171,13 +171,13 @@
 }
 }
 ]
-/*"research":{
-"parent":"BAAsHA步兵厂"
+"research":{
+"parent":"BAAsHB1常规单位工厂"
 "objectives":[
 {
 "type":"SectorComplete",
-"preset":"冰冷山区"
+"preset":"遗迹海滩"
 }
 ]
-}*/
+}
 }

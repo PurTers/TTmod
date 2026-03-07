@@ -6,6 +6,8 @@
     "copper/10", "lead/15"
 ]
 "drillTime":  340
+"invertTime":600
+"invertedTime":600
 "size": 2
 "hasPower": true
 "tier": 2

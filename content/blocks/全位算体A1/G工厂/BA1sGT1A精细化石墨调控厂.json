@@ -3,7 +3,7 @@
 	"name": "精细化石墨调控厂",
 	"health": 320,
 	"description": "通过精确调控与计算，新加工生产石墨，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
-	"outputItem": { "item": "graphite", "amount": 32 },
+	"outputItem": { "item": "graphite", "amount": 16 },
 	"updateEffect": "pulverizeMedium",
 	"alwaysUnlocked": false,
 	"size": 2,
@@ -13,9 +13,9 @@
 	"craftTime": 600,
 	"itemCapacity": 100,
 	"consumes": {
-	"power":3.6,
+	"power":2.4,
     "items": {	 "items": [
-    { "item": "coal", "amount": 48}
+    { "item": "coal", "amount": 28}
  	]
   } },
 "requirements": [

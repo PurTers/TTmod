@@ -1,39 +1,39 @@
 {
-	"type": "flying",
-	"name":"卡帕:没事的\n(此英雄已损坏)",
-	"description": " ",
-	"speed": 5.8,
-	"immunities": [
+"type":"flying",
+"name":"卡帕:没事的\n(此英雄已损坏)",
+"description":"",
+"speed":5.8,
+"immunities":[
 "甲板损坏"
-	],
-	"fogRadius":0
-	"accel":0.05,"drag":0.03,
-	"rotateSpeed":5,
-	"ammoType":"titanium",
-	"ammoCapacity": 300,
-	"hitSize":1, 
-	"buildSpeed":0
-	"hidden": true,
-	"flying": true,
-	"health":99999999,
-	"armor":20
-	"isEnemy":false
-	"engineOffset": 0,
-	"engineSize": 0, 
-	"abilities": [/*能力（如力场防御等） */
-	{
-"type": "RegenAbility",
-"amount": 99999
+],
+"fogRadius":0
+"accel":0.05,"drag":0.03,
+"rotateSpeed":5,
+"ammoType":"titanium",
+"ammoCapacity":300,
+"hitSize":1,
+"buildSpeed":0
+"hidden":true,
+"flying":true,
+"health":99999999,
+"armor":20
+"isEnemy":false
+"engineOffset":0,
+"engineSize":0,
+"abilities":[/*能力（如力场防御等）*/
+{
+"type":"RegenAbility",
+"amount":99999
 },
-		]
-		"researchCostMultiplier": 0,
-	               	"research": {
-	"parent":"u1A1M2卡帕"
-	"objectives": [
-            {
-				"type": "OnSector",
-				"preset": "facility32m"
-			}
-	]
-	}
+]
+"researchCostMultiplier":0,
+"research":{
+"parent":"u1A1M2卡帕"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"工业区0032"
+}
+]
+}
 }

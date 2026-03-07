@@ -1,6 +1,6 @@
 {
 	"type": "GenericCrafter",
-	"name": "复式硫化物合成器",
+	"name": "精细化硫调控厂",
 	"health": 320,
 	"description": "通过精确调控与计算，新加工生产硫，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
 	"outputItem": { "item": "pyratite", "amount": 9 },
@@ -10,11 +10,11 @@
 	"hasLiquids": false,
 	"hasItems": true,
 	"craftTime": 600,
-	"itemCapacity": 80,
+	"itemCapacity": 30,
 	"updateEffect": "fireballsmoke",
 	"craftEffect": "blastsmoke"
 	"consumes": {
-	"power":0.6,
+	"power":1.4,
     "items": {	 "items": [
     { "item": "coal", "amount": 7}
     { "item": "sand", "amount": 12 }

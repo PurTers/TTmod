@@ -1,42 +1,41 @@
 {
-	"type": "flying",
-	"name":"筑基",
-	"description": "超限集团为作战应急修复单位研发的机动飞行单位，能用于协助构造或采矿。\n \n[blue][超限集团辅助飞行器]",
-	"details":"他在飞行时还是个很好用的采矿机",
-	"immunities": [
-		"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
-	],
-	"speed": 3
-	"accel":0.05,"drag":0.03,
-	"rotateSpeed":20
-	"ammoType":"titanium",
-	"ammoCapacity": 300,
-	"hitSize":5, 
-	"buildSpeed":0.5
-	"flying": true
-	"health":280,
-	"armor":0
-	"mineTier":2
-	"healColor": "c0ecff"
-  "shieldColor": "c0ecff"
-	"mineSpeed":3
-	"engineOffset": 5,
-	"engineColor": "c0ecff",
-	"trailColor": "1878BF",
-	"trailLength": 18,
-	"trailWidth": 2,
-	"engineSize": 1, 
-	"itemCapacity": 10
-	"controller": "rebuildCommand",
-	"UnitController":"rebuildCommand"
-	//"aiController":"BuilderAI"
-    /*"research": {
-	"parent":"BAAsHA步兵厂"
-	"objectives": [
-            {
-				"type": "SectorComplete",
-				"preset": "overgrowth"
-			}
-	]
-	}*/
+"type":"flying",
+"name":"筑基",
+"description":"超限集团为作战应急修复单位研发的机动飞行单位，能用于协助构造或采矿。\n\n[blue][超限集团辅助飞行器]",
+"details":"他在飞行时还是个很好用的采矿机",
+"immunities":[
+"shocked","electrified","slow","freezing","burning","spore-slowed","脆裂","甲板损坏"
+],
+"speed":3
+"accel":0.05,"drag":0.03,
+"rotateSpeed":20
+"ammoType":"titanium",
+"ammoCapacity":300,
+"hitSize":5,
+"buildSpeed":0.5
+"flying":true
+"health":280,
+"armor":0
+"mineTier":2
+"healColor":"c0ecff"
+"shieldColor":"c0ecff"
+"mineSpeed":3
+"engineOffset":5,
+"engineColor":"c0ecff",
+"trailColor":"1878BF",
+"trailLength":18,
+"trailWidth":2,
+"engineSize":1,
+"itemCapacity":10
+"controller":"rebuildCommand",
+"UnitController":"rebuildCommand"
+"research":{
+"parent":"uAABT1K无形"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"菌疫峡谷"
+}
+]
+}
 }

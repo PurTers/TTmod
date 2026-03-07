@@ -17,7 +17,7 @@
 	"hasPower": false,
 	"hasLiquids": false,
 	"hasItems": true,
-	"craftTime": 40,
+	"craftTime": 70,
 	"itemCapacity": 15,
 	"consumes": {
     "items": {	 "items": [
