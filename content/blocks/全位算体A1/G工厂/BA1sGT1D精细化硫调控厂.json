@@ -1,41 +1,41 @@
 {
-	"type": "GenericCrafter",
-	"name": "精细化硫调控厂",
-	"health": 320,
-	"description": "通过精确调控与计算，新加工生产硫，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
-	"outputItem": { "item": "pyratite", "amount": 9 },
-	"alwaysUnlocked": false,
-	"size": 2,
-	"hasPower": true,
-	"hasLiquids": false,
-	"hasItems": true,
-	"craftTime": 600,
-	"itemCapacity": 30,
-	"updateEffect": "fireballsmoke",
-	"craftEffect": "blastsmoke"
-	"consumes": {
-	"power":1.4,
-    "items": {	 "items": [
-    { "item": "coal", "amount": 7}
-    { "item": "sand", "amount": 12 }
-    { "item": "lead", "amount": 12 }
- 	]
-  } },
-"requirements": [
-	{ "item": "lead", "amount": 220 },
-	{ "item": "copper", "amount": 180 },
-	{ "item": "graphite", "amount": 65},
-	],
-	"category": "crafting",
-"research": {
-	"parent":"BA1sGT1A精细化石墨调控厂"
-	"objectives": [
-	{
-				"type": "OnSector",
-				"preset": "工业区0032"
-			}
-	]
-	}
-	"researchCostMultiplier": 0,
-	    "canOverdrive": false,
+"type":"GenericCrafter",
+"name":"精细化硫调控厂",
+"health":320,
+"description":"通过精确调控与计算，新加工生产硫，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
+"outputItem":{"item":"pyratite","amount":9},
+"alwaysUnlocked":false,
+"size":2,
+"hasPower":true,
+"hasLiquids":false,
+"hasItems":true,
+"craftTime":600,
+"itemCapacity":30,
+"updateEffect":"fireballsmoke",
+"craftEffect":"blastsmoke"
+"consumes":{
+"power":1.4,
+"items":{"items":[
+{"item":"coal","amount":7}
+{"item":"sand","amount":12}
+{"item":"lead","amount":12}
+]
+}},
+"requirements":[
+{"item":"lead","amount":220},
+{"item":"copper","amount":180},
+{"item":"graphite","amount":65},
+],
+"category":"crafting",
+"research":{
+"parent":"BA1sGT1A精细化石墨调控厂"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"工业区0032"
+}
+]
+}
+"researchCostMultiplier":0,
+"canOverdrive":false,
 }

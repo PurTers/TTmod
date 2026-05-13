@@ -1,74 +1,74 @@
-    {
-    "type": "PowerTurret",
-    "name": "厚堡",
-    "description": "对空对地的重机炮攻击，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
-    "targetAir": true,
-    "targetGround": true,
-    "health": 4500,
-    "insulated":true,
-    "size": 3,
-    "heatColor": "turretHeat",
-    "shake": 0.2,
-    "inaccuracy": 5,
-    "recoil": 2,
-    //"hasPower": false,
-    "shoot": {
-    "shots":6,
-        "type": "ShootAlternate",
-        "barrels": 2,
-        "spread": 4
-        "shotDelay":26
-    },
-    "shootSound": "artillery",//子弹音效
-    "recoilTime": 10,
-    "buildCostMultiplier":2
-    "drawer":{"type":"DrawTurret",
-	    "basePrefix": "cwst-"
-	    }
-    "shootType": {
-			"speed": 6,
-			"lifetime": 42,
-			"width": 3,
-			"height": 8,
-			"knockback": 0.1,
-			"damage": 33,
-			"backColor": "FF8C00",
-			"frontColor": "FFB90F",
-			"shootEffect": "shootBig",
-			"status": "slow",
-			"statusDuration": 30,
-			"hitEffect": "explosion",
-			"despawnEffect": "explosion"
-			"makeFire":true,
-			"trailLength":4,
-			"trailWidth":1,
-			"trailColor":"FFB90F",
-			}
-    "consumes": {
-    },
-    "reload": 24,
-    "rotateSpeed": 12,
-    "range": 240,
-    "category": "turret",
-    "research": {
-	"parent":"BA1sAT2A防卫"
-	"objectives": [
-            {
-				"type": "SectorComplete",
-				"preset": "萃取前哨"
-			}
-	]
-	}
-    "researchCostMultiplier": 0.2,
-    "requirements": [
-{ "item": "copper", "amount":420},
-{ "item": "lead", "amount":320}
-{ "item": "graphite", "amount":210}
-{ "item": "titanium", "amount": 310 }
-{ "item": "plastanium", "amount":160},
-{ "item": "silicon", "amount":250},
-{ "item": "metaglass", "amount":240},
-    ]
-    "researchCostMultiplier": 0.5
-   // "buildVisibility":"campaignOnly"
+{
+"type":"PowerTurret",
+"name":"厚堡",
+"description":"对空对地的重机炮攻击，强大坚固难以破坏，弹药自给自足。\n\n[orange][全位算体要塞炮]",
+"targetAir":true,
+"targetGround":true,
+"health":4500,
+"insulated":true,
+"size":3,
+"heatColor":"turretHeat",
+"shake":0.2,
+"inaccuracy":5,
+"recoil":2,
+//"hasPower":false,
+"shoot":{
+"shots":6,
+"type":"ShootAlternate",
+"barrels":2,
+"spread":4
+"shotDelay":26
+},
+"shootSound":"artillery",//子弹音效
+"recoilTime":10,
+"buildCostMultiplier":2
+"drawer":{"type":"DrawTurret",
+"basePrefix":"cwst-"
+}
+"shootType":{
+"speed":6,
+"lifetime":42,
+"width":3,
+"height":8,
+"knockback":0.1,
+"damage":33,
+"backColor":"FF8C00",
+"frontColor":"FFB90F",
+"shootEffect":"shootBig",
+"status":"slow",
+"statusDuration":30,
+"hitEffect":"explosion",
+"despawnEffect":"explosion"
+"makeFire":true,
+"trailLength":4,
+"trailWidth":1,
+"trailColor":"FFB90F",
+}
+"consumes":{
+},
+"reload":24,
+"rotateSpeed":12,
+"range":240,
+"category":"turret",
+"research":{
+"parent":"BA1sAT2A防卫"
+"objectives":[
+{
+"type":"SectorComplete",
+"preset":"萃取前哨"
+}
+]
+}
+"researchCostMultiplier":0.2,
+"requirements":[
+{"item":"copper","amount":420},
+{"item":"lead","amount":320}
+{"item":"graphite","amount":210}
+{"item":"titanium","amount":310}
+{"item":"plastanium","amount":160},
+{"item":"silicon","amount":250},
+{"item":"metaglass","amount":240},
+]
+"researchCostMultiplier":0.5
+//"buildVisibility":"campaignOnly"
 }

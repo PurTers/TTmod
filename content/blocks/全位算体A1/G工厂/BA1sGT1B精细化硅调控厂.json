@@ -1,48 +1,48 @@
 {
-	"type": "GenericCrafter",
-	"name": "精细化硅调控厂",
-	"health": 320,
-	"description": "通过精确调控与计算，新加工生产硅，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
-	"craftEffect": "pulverizeSmall"
-	"outputItem": { "item": "silicon", "amount": 50 },
-	"alwaysUnlocked": false,
-		"drawer":{
-        "type":"DrawMulti",
-        "drawers":[
-            "DrawDefault",
-			"DrawFlame"
-            ]
-    },
-	"size": 2,
-	"hasPower": true,
-	"hasLiquids": false,
-	"hasItems": true,
-	"craftTime": 600,
-	"itemCapacity": 100,
-	"consumes": {
-	"power":6.2,
-    "items": {	 "items": [
-    { "item": "pyratite", "amount": 15}
-    { "item": "sand", "amount": 40}
- 	]
-  } },
-"requirements": [
-	{ "item": "lead", "amount": 220 },
-	{ "item": "copper", "amount": 180 },
-	{ "item": "graphite", "amount": 90 },
-	{ "item": "titanium", "amount": 60 },
-	],
-	"category": "crafting",
-	"research": {
-	"parent":"BA1sGT1A精细化石墨调控厂"
-	"objectives": [
-	{
-				"type": "OnSector",
-				"preset": "工业区0032"
-			}
-	]
-	}
-	"researchCostMultiplier": 0,
-	    "canOverdrive": false,
-	   // "buildVisibility":"campaignOnly"
+"type":"GenericCrafter",
+"name":"精细化硅调控厂",
+"health":320,
+"description":"通过精确调控与计算，新加工生产硅，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
+"craftEffect":"pulverizeSmall"
+"outputItem":{"item":"silicon","amount":50},
+"alwaysUnlocked":false,
+"drawer":{
+"type":"DrawMulti",
+"drawers":[
+"DrawDefault",
+"DrawFlame"
+]
+},
+"size":2,
+"hasPower":true,
+"hasLiquids":false,
+"hasItems":true,
+"craftTime":600,
+"itemCapacity":100,
+"consumes":{
+"power":6.2,
+"items":{"items":[
+{"item":"pyratite","amount":15}
+{"item":"sand","amount":40}
+]
+}},
+"requirements":[
+{"item":"lead","amount":220},
+{"item":"copper","amount":180},
+{"item":"graphite","amount":90},
+{"item":"titanium","amount":60},
+],
+"category":"crafting",
+"research":{
+"parent":"BA1sGT1A精细化石墨调控厂"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"工业区0032"
+}
+]
+}
+"researchCostMultiplier":0,
+"canOverdrive":false,
+//"buildVisibility":"campaignOnly"
 }

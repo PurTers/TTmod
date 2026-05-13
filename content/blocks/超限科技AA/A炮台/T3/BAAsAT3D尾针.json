@@ -59,12 +59,12 @@
 }
 "pyratite":{
 "type":"BasicBulletType",
-"spawnUnit":"尾针导弹(1)",
+"spawnUnit":"尾针导弹 (1)",
 "speed":0,
 }
 "graphite":{
 "type":"BasicBulletType",
-"spawnUnit":"尾针导弹(2)",
+"spawnUnit":"尾针导弹 (2)",
 "speed":0,
 }
 },

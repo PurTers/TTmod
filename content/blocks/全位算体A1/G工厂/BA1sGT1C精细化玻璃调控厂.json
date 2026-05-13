@@ -1,47 +1,47 @@
 {
-	"type": "GenericCrafter",
-	"name": "精细化玻璃调控厂",
-	"health": 320,
-	"description": "通过精确调控与计算，新加工生产钢化玻璃，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
-	"outputItem": { "item": "metaglass", "amount": 30 },
-	"alwaysUnlocked": false,
-	"size": 2,
-	"hasPower": true,
-	"hasLiquids": false,
-	"hasItems": true,
-	"craftTime": 600,
-	"itemCapacity": 70,
-	"craftEffect": "smoke",
-	"drawer":{
-        "type":"DrawMulti",
-        "drawers":[
-            "DrawDefault",
-			"DrawFlame"
-            ]
-    },
-	"consumes": {
-	"power":2.8,
-    "items": {	 "items": [
-    { "item": "lead", "amount": 25}
-    { "item": "sand", "amount": 25}
- 	]
-  } },
-"requirements": [
-	{ "item": "lead", "amount": 140 },
-	{ "item": "copper", "amount": 240}
-	{ "item": "graphite", "amount": 80 },
-	{ "item": "silicon", "amount": 90 },
-	],
-	"category": "crafting",
-"research": {
-	"parent":"BA1sGT1B精细化硅调控厂"
-	"objectives": [
-	{
-				"type": "OnSector",
-				"preset": "工业区0032"
-			}
-	]
-	}
-	"researchCostMultiplier": 0,
-	    "canOverdrive": false,
+"type":"GenericCrafter",
+"name":"精细化玻璃调控厂",
+"health":320,
+"description":"通过精确调控与计算，新加工生产钢化玻璃，能够高度利用资源，产量大，需要消耗电力。\n[orange][全位算体精加工厂]",
+"outputItem":{"item":"metaglass","amount":30},
+"alwaysUnlocked":false,
+"size":2,
+"hasPower":true,
+"hasLiquids":false,
+"hasItems":true,
+"craftTime":600,
+"itemCapacity":70,
+"craftEffect":"smoke",
+"drawer":{
+"type":"DrawMulti",
+"drawers":[
+"DrawDefault",
+"DrawFlame"
+]
+},
+"consumes":{
+"power":2.8,
+"items":{"items":[
+{"item":"lead","amount":25}
+{"item":"sand","amount":25}
+]
+}},
+"requirements":[
+{"item":"lead","amount":140},
+{"item":"copper","amount":240}
+{"item":"graphite","amount":80},
+{"item":"silicon","amount":90},
+],
+"category":"crafting",
+"research":{
+"parent":"BA1sGT1B精细化硅调控厂"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"工业区0032"
+}
+]
+}
+"researchCostMultiplier":0,
+"canOverdrive":false,
 }

@@ -1,26 +1,23 @@
 {
-	"name": "[blue]超限科技",
-	"description": "由宇普西龙和伊普西龙主导的科学集团，独裁统治，热衷于一些前沿性科技，对于电池内科技较为重视，或许他们早已偏离了最初的以科学为中心的初心。",
-	"details":"[blue]追求真理",
-	"health":500,
-	"hasShadow":false
-	"armor":0,
-	"size": 3
-	"category": "logic",
-	"type": "Wall",
-	"buildCostMultiplier":99999999
-	"requirements": [
-    ]
-	"research": {
-       "parent":"core-shard"
-       "objectives": [
-            {
-				"type": "OnSector",
-				"preset": "未知废墟"
-			}
-	]
-        },
-            "canOverdrive": false,
-            "researchCostMultiplier": 0
-            "buildVisibility": "sandboxOnly",
+"health":500,
+"hasShadow":false
+"armor":0,
+"size":3
+"category":"logic",
+"type":"Wall",
+"buildCostMultiplier":99999999
+"requirements":[
+]
+"research":{
+"parent":"core-shard"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"未知废墟"
+}
+]
+},
+"canOverdrive":false,
+"researchCostMultiplier":0
+"buildVisibility":"sandboxOnly",
 }

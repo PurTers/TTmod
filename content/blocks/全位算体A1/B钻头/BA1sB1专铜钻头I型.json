@@ -1,35 +1,35 @@
-{"type": "BurstDrill"
-"name": "专铜钻头I型"
-"category": "production"
-"description": "无损耗挖掘，只能开采铜，需要电力。\n\n[orange][全位算体专业化采集设备]",
-"requirements": [
-    "copper/10", "lead/15"
+{"type":"BurstDrill"
+"name":"专铜钻头I型"
+"category":"production"
+"description":"无损耗挖掘，只能开采铜，需要电力。\n\n[orange][全位算体专业化采集设备]",
+"requirements":[
+"copper/10","lead/15"
 ]
-"drillTime":  300
+"drillTime":300
 "invertTime":600
 "invertedTime":600
-"size": 2
-"hasPower": true
-"tier": 1
+"size":2
+"hasPower":true
+"tier":1
 //"liquidBoostIntensity":1.5,
-"drillEffect": [
-    "mineImpact", "drillSteam", "mineImpactWave"
+"drillEffect":[
+"mineImpact","drillSteam","mineImpactWave"
 ]
-"research": {
-	"parent":"BA1sB0低端钻头I型"
-	"objectives": [
-	{
-				"type": "OnSector",
-				"preset": "工业区0032"
-			}
-	]
-	}
-"shake": 4
-"itemCapacity": 40
-"blockedItems": ["sand","scrap","lead"]
-"researchCostMultiplier": 1.5
-"consumes": {
-    "power":0.12
+"research":{
+"parent":"BA1sB0低端钻头I型"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"工业区0032"
 }
-"canOverdrive": true
+]
+}
+"shake":4
+"itemCapacity":40
+"blockedItems":["sand","scrap","lead"]
+"researchCostMultiplier":1.5
+"consumes":{
+"power":0.12
+}
+"canOverdrive":true
 }

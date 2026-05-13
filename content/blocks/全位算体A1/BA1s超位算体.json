@@ -1,26 +1,23 @@
 {
-	"name": "[orange]全位算体",
-	"description": "以主脑欧米茄为主导的联盟，其内部有大大小小的势力组成，结合各个势力的长处与短处组成的超级联盟，第一次赛普罗战争的战败者。",
-	//"details":"[orange]",
-	"health":500,
-	"armor":0,
-	"size": 3
-	"category": "logic",
-	"type": "Wall",
-	"hasShadow":false
-	"buildCostMultiplier":99999999
-	"requirements": [
-    ]
-	"research": {
-       "parent":"core-shard"
-       "objectives": [
-     {
-				"type": "OnSector",
-				"preset": "孢染丛林"
-			}
-	]
-        },
-            "canOverdrive": false,
-            "researchCostMultiplier": 0
-            "buildVisibility": "sandboxOnly",
+"health":500,
+"armor":0,
+"size":3
+"category":"logic",
+"type":"Wall",
+"hasShadow":false
+"buildCostMultiplier":99999999
+"requirements":[
+]
+"research":{
+"parent":"core-shard"
+"objectives":[
+{
+"type":"OnSector",
+"preset":"孢染丛林"
+}
+]
+},
+"canOverdrive":false,
+"researchCostMultiplier":0
+"buildVisibility":"sandboxOnly",
 }
